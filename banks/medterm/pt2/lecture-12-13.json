@@ -3,7 +3,7 @@
  "subject": "Medical Terminology",
  "subjectId": "medical_terminology",
  "title": "Lecture 12 and 13 - Cardiovascular System",
- "formSize": 90,
+ "formSize": 95,
  "forms": [
   "A"
  ],
@@ -2089,6 +2089,862 @@
      }
     ],
     "explain": "Systemic circulation runs between the heart and the body tissues. Pulmonary circulation runs between the heart and the lungs. Coronary circulation runs between the heart and its own muscle. Flow across the septum is not a circulation. The septum partitions the sides. Heart and lungs is not the systemic path, heart and body tissues is not the pulmonary path, and neither of those is the coronary path."
+   },
+   {
+    "id": "MT12095",
+    "type": "label",
+    "cat": "MT_lec12-13",
+    "q": "Label each step of blood flow through the heart, lungs and body.",
+    "image": "banks/medterm/img/mt12-label-1.png",
+    "alt": "Circular flow diagram with arrows showing the path of blood: from the body tissues through the right side of the heart to the lungs, then back through the left side of the heart to the aorta and body. All 14 step labels are blank.",
+    "labels": [
+     {
+      "id": "q1-L1",
+      "answer": "Lungs",
+      "x": 37.95,
+      "y": 3.27,
+      "w": 11.51,
+      "h": 6.55
+     },
+     {
+      "id": "q1-L2",
+      "answer": "Pulmonary Veins",
+      "accept": [
+       "Pulmonary Vein"
+      ],
+      "x": 55.51,
+      "y": 19.15,
+      "w": 30.83,
+      "h": 6.55
+     },
+     {
+      "id": "q1-L3",
+      "answer": "Left Atrium",
+      "x": 60.49,
+      "y": 36.12,
+      "w": 19.61,
+      "h": 5.82
+     },
+     {
+      "id": "q1-L4",
+      "answer": "Bicuspid AV Valve",
+      "accept": [
+       "Bicuspid Valve",
+       "Mitral Valve",
+       "Left AV Valve",
+       "Left Atrioventricular Valve"
+      ],
+      "x": 72.68,
+      "y": 46.42,
+      "w": 22.54,
+      "h": 4.97
+     },
+     {
+      "id": "q1-L5",
+      "answer": "Left Ventricle",
+      "x": 59.41,
+      "y": 55.27,
+      "w": 23.8,
+      "h": 5.94
+     },
+     {
+      "id": "q1-L6",
+      "answer": "Aortic Semilunar Valve",
+      "accept": [
+       "Aortic Valve"
+      ],
+      "x": 70.34,
+      "y": 66.42,
+      "w": 27.9,
+      "h": 4.36
+     },
+     {
+      "id": "q1-L7",
+      "answer": "Aorta",
+      "x": 59.61,
+      "y": 71.76,
+      "w": 10.44,
+      "h": 5.45
+     },
+     {
+      "id": "q1-L8",
+      "answer": "Body Tissues",
+      "accept": [
+       "Body",
+       "Systemic Tissues"
+      ],
+      "x": 32.78,
+      "y": 90.79,
+      "w": 24.68,
+      "h": 6.67
+     },
+     {
+      "id": "q1-L9",
+      "answer": "Vena Cava",
+      "accept": [
+       "Venae Cavae",
+       "Superior and Inferior Vena Cava"
+      ],
+      "x": 12.68,
+      "y": 72.0,
+      "w": 21.07,
+      "h": 5.94
+     },
+     {
+      "id": "q1-L10",
+      "answer": "Right Atrium",
+      "x": 5.37,
+      "y": 56.48,
+      "w": 23.02,
+      "h": 6.67
+     },
+     {
+      "id": "q1-L11",
+      "answer": "Tricuspid AV Valve",
+      "accept": [
+       "Tricuspid Valve",
+       "Right AV Valve",
+       "Right Atrioventricular Valve"
+      ],
+      "x": 20.2,
+      "y": 49.82,
+      "w": 23.41,
+      "h": 4.36
+     },
+     {
+      "id": "q1-L12",
+      "answer": "Right Ventricle",
+      "x": 3.51,
+      "y": 38.91,
+      "w": 27.12,
+      "h": 6.91
+     },
+     {
+      "id": "q1-L13",
+      "answer": "Pulmonary Semilunar Valve",
+      "accept": [
+       "Pulmonary Valve",
+       "Pulmonic Valve"
+      ],
+      "x": 20.2,
+      "y": 26.42,
+      "w": 26.54,
+      "h": 8.12
+     },
+     {
+      "id": "q1-L14",
+      "answer": "Pulmonary Arteries",
+      "accept": [
+       "Pulmonary Artery",
+       "Pulmonary Trunk"
+      ],
+      "x": 1.95,
+      "y": 19.15,
+      "w": 35.02,
+      "h": 6.42
+     }
+    ],
+    "explain": "Deoxygenated blood returns from the body tissues through the vena cava into the right atrium, passes the tricuspid valve into the right ventricle, and is pumped through the pulmonary semilunar valve into the pulmonary arteries to the lungs. Oxygenated blood returns through the pulmonary veins to the left atrium, passes the bicuspid (mitral) valve into the left ventricle, and is pumped through the aortic semilunar valve into the aorta and out to the body tissues."
+   },
+   {
+    "id": "MT12096",
+    "type": "label",
+    "cat": "MT_lec12-13",
+    "q": "Label the structures of the heart.",
+    "image": "banks/medterm/img/mt12-label-2.png",
+    "alt": "Cutaway front view of the heart showing its four chambers, valves, septa, great vessels and wall layers, with 21 blank labels connected to the structures by leader lines.",
+    "labels": [
+     {
+      "id": "q2-L1",
+      "answer": "Superior Vena Cava",
+      "x": 10.52,
+      "y": 11.37,
+      "w": 15.73,
+      "h": 3.57
+     },
+     {
+      "id": "q2-L2",
+      "answer": "Aortic Arch",
+      "x": 48.44,
+      "y": 14.72,
+      "w": 9.1,
+      "h": 2.68
+     },
+     {
+      "id": "q2-L3",
+      "answer": "Aorta",
+      "x": 42.37,
+      "y": 23.86,
+      "w": 4.93,
+      "h": 2.68
+     },
+     {
+      "id": "q2-L4",
+      "answer": "Pulmonary Artery",
+      "accept": [
+       "Pulmonary Trunk",
+       "Pulmonary Arteries"
+      ],
+      "x": 56.21,
+      "y": 23.75,
+      "w": 8.72,
+      "h": 4.46
+     },
+     {
+      "id": "q2-L5",
+      "answer": "Interatrial Septum",
+      "x": 10.71,
+      "y": 24.53,
+      "w": 13.65,
+      "h": 2.68
+     },
+     {
+      "id": "q2-L6",
+      "answer": "Pulmonary Veins",
+      "accept": [
+       "Pulmonary Vein"
+      ],
+      "x": 10.71,
+      "y": 30.1,
+      "w": 8.91,
+      "h": 4.46
+     },
+     {
+      "id": "q2-L7",
+      "answer": "Right Atrium",
+      "x": 10.71,
+      "y": 54.18,
+      "w": 9.86,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L8",
+      "answer": "Tricuspid Valve",
+      "accept": [
+       "Tricuspid AV Valve",
+       "Right AV Valve",
+       "Right Atrioventricular Valve"
+      ],
+      "x": 10.71,
+      "y": 63.77,
+      "w": 11.75,
+      "h": 2.68
+     },
+     {
+      "id": "q2-L9",
+      "answer": "Right Ventricle",
+      "x": 10.71,
+      "y": 78.71,
+      "w": 11.37,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L10",
+      "answer": "Inferior Vena Cava",
+      "x": 10.71,
+      "y": 88.52,
+      "w": 13.84,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L11",
+      "answer": "Pulmonary Veins",
+      "accept": [
+       "Pulmonary Vein"
+      ],
+      "x": 85.59,
+      "y": 33.11,
+      "w": 13.18,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L12",
+      "answer": "Left Atrium",
+      "x": 85.59,
+      "y": 41.47,
+      "w": 8.91,
+      "h": 2.68
+     },
+     {
+      "id": "q2-L13",
+      "answer": "Mitral Valve",
+      "accept": [
+       "Bicuspid Valve",
+       "Bicuspid AV Valve",
+       "Left AV Valve",
+       "Left Atrioventricular Valve"
+      ],
+      "x": 85.59,
+      "y": 46.71,
+      "w": 9.29,
+      "h": 2.79
+     },
+     {
+      "id": "q2-L14",
+      "answer": "Aortic Valve",
+      "accept": [
+       "Aortic Semilunar Valve"
+      ],
+      "x": 85.59,
+      "y": 52.51,
+      "w": 9.57,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L15",
+      "answer": "Pulmonary Semilunar Valve",
+      "accept": [
+       "Pulmonary Valve",
+       "Pulmonic Valve"
+      ],
+      "x": 85.59,
+      "y": 56.74,
+      "w": 12.51,
+      "h": 4.57
+     },
+     {
+      "id": "q2-L16",
+      "answer": "Left Ventricle",
+      "x": 85.59,
+      "y": 61.76,
+      "w": 10.33,
+      "h": 2.45
+     },
+     {
+      "id": "q2-L17",
+      "answer": "Interventricular Septum",
+      "x": 85.59,
+      "y": 67.89,
+      "w": 12.04,
+      "h": 4.57
+     },
+     {
+      "id": "q2-L18",
+      "answer": "Endocardium",
+      "x": 85.59,
+      "y": 76.48,
+      "w": 10.62,
+      "h": 2.56
+     },
+     {
+      "id": "q2-L19",
+      "answer": "Myocardium",
+      "x": 85.59,
+      "y": 80.71,
+      "w": 10.05,
+      "h": 2.45
+     },
+     {
+      "id": "q2-L20",
+      "answer": "Epicardium",
+      "x": 85.59,
+      "y": 84.84,
+      "w": 9.29,
+      "h": 2.45
+     },
+     {
+      "id": "q2-L21",
+      "answer": "Pericardium",
+      "x": 85.59,
+      "y": 88.85,
+      "w": 9.76,
+      "h": 2.45
+     }
+    ],
+    "explain": "The right atrium receives blood from the superior and inferior venae cavae and sends it through the tricuspid valve to the right ventricle, which pumps it through the pulmonary semilunar valve into the pulmonary artery. The left atrium receives blood from the pulmonary veins and sends it through the mitral (bicuspid) valve to the left ventricle, which pumps it through the aortic valve into the aorta and aortic arch. The interatrial and interventricular septa separate the right and left sides. From the inside out, the wall layers are the endocardium, myocardium and epicardium, and the pericardium surrounds the heart."
+   },
+   {
+    "id": "MT12097",
+    "type": "label",
+    "cat": "MT_lec12-13",
+    "q": "Label the parts of the heart's electrical conduction system.",
+    "image": "banks/medterm/img/mt12-label-3.png",
+    "alt": "Cutaway drawing of the heart with the conduction system highlighted: the SA node in the right atrium, internodal pathways, the AV node, the bundle of His, the right and left bundle branches, and the Purkinje fibers in the ventricle walls. The four chambers are also marked. All 11 labels are blank.",
+    "credit": "\"Heart and electrical conduction system\" by Drj (CardioNetworks), blank version by YitzhakNat; CC BY-SA 3.0; via Wikimedia Commons. Leader lines and blank label areas added.",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Heart_and_electrical_conduction_system.svg",
+    "labels": [
+     {
+      "id": "q3-L1",
+      "answer": "Sinoatrial Node",
+      "accept": [
+       "SA Node",
+       "Sinus Node",
+       "S-A Node",
+       "Sinoatrial (SA) Node"
+      ],
+      "x": 1.67,
+      "y": 19.46,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 29.03,
+       "y": 34.27
+      }
+     },
+     {
+      "id": "q3-L2",
+      "answer": "Right Atrium",
+      "x": 1.67,
+      "y": 31.78,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 35.2,
+       "y": 42.91
+      }
+     },
+     {
+      "id": "q3-L3",
+      "answer": "Internodal Pathways",
+      "accept": [
+       "Internodal Tracts",
+       "Internodal Pathway"
+      ],
+      "x": 1.67,
+      "y": 44.1,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 26.14,
+       "y": 47.7
+      }
+     },
+     {
+      "id": "q3-L4",
+      "answer": "Atrioventricular Node",
+      "accept": [
+       "AV Node",
+       "A-V Node",
+       "Atrioventricular (AV) Node"
+      ],
+      "x": 1.67,
+      "y": 57.07,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 38.9,
+       "y": 56.34
+      }
+     },
+     {
+      "id": "q3-L5",
+      "answer": "Right Ventricle",
+      "x": 1.67,
+      "y": 70.69,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 45.68,
+       "y": 73.62
+      }
+     },
+     {
+      "id": "q3-L6",
+      "answer": "Right Bundle Branch",
+      "x": 1.67,
+      "y": 83.01,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 64.49,
+       "y": 75.25
+      }
+     },
+     {
+      "id": "q3-L7",
+      "answer": "Purkinje Fibers",
+      "accept": [
+       "Purkinje Fibres",
+       "Purkinje Fiber",
+       "Subendocardial Branches"
+      ],
+      "x": 1.67,
+      "y": 94.68,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 40.13,
+       "y": 82.26
+      }
+     },
+     {
+      "id": "q3-L8",
+      "answer": "Left Atrium",
+      "x": 84.17,
+      "y": 19.46,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 45.68,
+       "y": 31.39
+      }
+     },
+     {
+      "id": "q3-L9",
+      "answer": "Bundle of His",
+      "accept": [
+       "AV Bundle",
+       "Atrioventricular Bundle",
+       "His Bundle",
+       "A-V Bundle"
+      ],
+      "x": 84.17,
+      "y": 38.91,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 51.73,
+       "y": 53.94
+      }
+     },
+     {
+      "id": "q3-L10",
+      "answer": "Left Ventricle",
+      "x": 84.17,
+      "y": 54.47,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 74.98,
+       "y": 76.5
+      }
+     },
+     {
+      "id": "q3-L11",
+      "answer": "Left Bundle Branch",
+      "x": 84.17,
+      "y": 72.63,
+      "w": 14.17,
+      "h": 4.41,
+      "anchor": {
+       "x": 65.85,
+       "y": 70.64
+      }
+     }
+    ],
+    "explain": "Each heartbeat starts at the sinoatrial (SA) node, the heart's natural pacemaker in the right atrium. The impulse spreads across the atria and along the internodal pathways to the atrioventricular (AV) node, which delays it briefly so the ventricles can fill. It then travels down the bundle of His, splits into the right and left bundle branches in the interventricular septum, and spreads through the Purkinje fibers so the ventricles contract from the apex upward."
+   },
+   {
+    "id": "MT12098",
+    "type": "label",
+    "cat": "MT_lec12-13",
+    "q": "Label the coronary arteries and the surrounding structures of the heart.",
+    "image": "banks/medterm/img/mt12-label-4.png",
+    "alt": "Front view of the heart showing the right coronary artery and the left coronary artery with its branches on the heart's surface, along with the great vessels and chambers. All 14 labels are blank.",
+    "credit": "\"Coronary arteries\" by Patrick J. Lynch, Fred the Oyster, and Mikael Häggström; CC BY-SA 3.0; via Wikimedia Commons. Labels removed.",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Coronary_arteries.svg",
+    "labels": [
+     {
+      "id": "q4-L1",
+      "answer": "Superior Vena Cava",
+      "x": 10.83,
+      "y": 2.85,
+      "w": 12.17,
+      "h": 7.64
+     },
+     {
+      "id": "q4-L2",
+      "answer": "Aorta",
+      "accept": [
+       "Ascending Aorta"
+      ],
+      "x": 16.33,
+      "y": 18.65,
+      "w": 6.67,
+      "h": 3.89
+     },
+     {
+      "id": "q4-L3",
+      "answer": "Right Atrium",
+      "x": 9.08,
+      "y": 30.18,
+      "w": 13.92,
+      "h": 4.79
+     },
+     {
+      "id": "q4-L4",
+      "answer": "Right Coronary Artery",
+      "accept": [
+       "RCA"
+      ],
+      "x": 4.67,
+      "y": 42.23,
+      "w": 18.33,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L5",
+      "answer": "Posterior Descending Artery",
+      "accept": [
+       "PDA",
+       "Posterior Interventricular Artery"
+      ],
+      "x": 8.33,
+      "y": 56.22,
+      "w": 14.67,
+      "h": 12.56
+     },
+     {
+      "id": "q4-L6",
+      "answer": "Right Marginal Artery",
+      "accept": [
+       "RMA",
+       "Acute Marginal Artery",
+       "Marginal Artery"
+      ],
+      "x": 6.33,
+      "y": 73.83,
+      "w": 16.67,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L7",
+      "answer": "Right Ventricle",
+      "x": 6.67,
+      "y": 88.21,
+      "w": 16.33,
+      "h": 4.79
+     },
+     {
+      "id": "q4-L8",
+      "answer": "Left Pulmonary Artery",
+      "x": 74.5,
+      "y": 6.61,
+      "w": 17.25,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L9",
+      "answer": "Left Coronary Artery",
+      "accept": [
+       "LCA",
+       "Left Main Coronary Artery",
+       "Left Main Artery"
+      ],
+      "x": 74.5,
+      "y": 26.81,
+      "w": 16.67,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L10",
+      "answer": "Left Anterior Descending Artery",
+      "accept": [
+       "LAD",
+       "Left Anterior Descending",
+       "Anterior Interventricular Artery"
+      ],
+      "x": 74.5,
+      "y": 37.95,
+      "w": 21.67,
+      "h": 16.45
+     },
+     {
+      "id": "q4-L11",
+      "answer": "Circumflex Artery",
+      "accept": [
+       "Left Circumflex Artery",
+       "Circumflex",
+       "LCx",
+       "Cx"
+      ],
+      "x": 74.5,
+      "y": 57.12,
+      "w": 18.5,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L12",
+      "answer": "Left Marginal Arteries",
+      "accept": [
+       "Left Marginal Artery",
+       "Obtuse Marginal Arteries",
+       "Obtuse Marginal Artery",
+       "Marginal Arteries"
+      ],
+      "x": 74.5,
+      "y": 66.84,
+      "w": 19.75,
+      "h": 8.42
+     },
+     {
+      "id": "q4-L13",
+      "answer": "Diagonal Branches",
+      "accept": [
+       "Diagonal Arteries",
+       "Diagonal Branch",
+       "Diagonal Artery"
+      ],
+      "x": 74.5,
+      "y": 77.85,
+      "w": 15.42,
+      "h": 8.29
+     },
+     {
+      "id": "q4-L14",
+      "answer": "Left Ventricle",
+      "x": 74.5,
+      "y": 88.99,
+      "w": 14.67,
+      "h": 4.02
+     }
+    ],
+    "explain": "The coronary arteries branch off the aorta and supply the heart muscle itself. The right coronary artery runs along the right side and gives off the right marginal artery and, in most people, the posterior descending artery. The left coronary artery quickly divides into the left anterior descending artery (anterior interventricular artery), which gives off diagonal branches, and the circumflex artery, which gives off the left (obtuse) marginal arteries. A blockage in these vessels causes ischemia or a myocardial infarction (heart attack)."
+   },
+   {
+    "id": "MT12099",
+    "type": "label",
+    "cat": "MT_lec12-13",
+    "q": "Label the parts of the blood vessels and the layers of the vessel wall.",
+    "image": "banks/medterm/img/mt12-label-5.png",
+    "alt": "Diagram of an artery carrying blood from the heart, branching into arterioles, a capillary network and venules, which join a vein that returns blood to the heart. Cutaways show the layers of the artery wall and a valve inside the vein, and a close-up of a capillary shows a red blood cell. All 13 labels are blank.",
+    "credit": "\"Blood vessels\" by Kelvinsong; CC BY-SA 3.0; via Wikimedia Commons. Labels removed.",
+    "creditUrl": "https://commons.wikimedia.org/wiki/File:Blood_vessels-en.svg",
+    "labels": [
+     {
+      "id": "q5-L1",
+      "answer": "Artery",
+      "x": 16.58,
+      "y": 59.22,
+      "w": 9.08,
+      "h": 5.06
+     },
+     {
+      "id": "q5-L2",
+      "answer": "Vein",
+      "x": 78.58,
+      "y": 58.57,
+      "w": 6.33,
+      "h": 4.42
+     },
+     {
+      "id": "q5-L3",
+      "answer": "Arterioles",
+      "accept": [
+       "Arteriole"
+      ],
+      "x": 28.58,
+      "y": 62.08,
+      "w": 9.58,
+      "h": 3.51
+     },
+     {
+      "id": "q5-L4",
+      "answer": "Capillaries",
+      "accept": [
+       "Capillary",
+       "Capillary Bed"
+      ],
+      "x": 52.5,
+      "y": 24.81,
+      "w": 10.0,
+      "h": 4.16
+     },
+     {
+      "id": "q5-L5",
+      "answer": "Venules",
+      "accept": [
+       "Venule"
+      ],
+      "x": 66.33,
+      "y": 61.17,
+      "w": 7.83,
+      "h": 3.51
+     },
+     {
+      "id": "q5-L6",
+      "answer": "Lumen",
+      "x": 24.67,
+      "y": 5.45,
+      "w": 6.25,
+      "h": 3.12
+     },
+     {
+      "id": "q5-L7",
+      "answer": "Endothelium",
+      "accept": [
+       "Tunica Intima",
+       "Intima"
+      ],
+      "x": 3.67,
+      "y": 8.57,
+      "w": 11.5,
+      "h": 3.25
+     },
+     {
+      "id": "q5-L8",
+      "answer": "Smooth Muscle",
+      "accept": [
+       "Tunica Media",
+       "Smooth Muscle Layer"
+      ],
+      "x": 4.25,
+      "y": 15.45,
+      "w": 7.17,
+      "h": 5.84
+     },
+     {
+      "id": "q5-L9",
+      "answer": "Adventitia",
+      "accept": [
+       "Tunica Externa",
+       "Tunica Adventitia"
+      ],
+      "x": 3.0,
+      "y": 29.35,
+      "w": 9.58,
+      "h": 3.25
+     },
+     {
+      "id": "q5-L10",
+      "answer": "Internal Elastic Lamina",
+      "accept": [
+       "Internal Elastic Membrane"
+      ],
+      "x": 25.17,
+      "y": 12.86,
+      "w": 11.92,
+      "h": 5.84
+     },
+     {
+      "id": "q5-L11",
+      "answer": "External Elastic Lamina",
+      "accept": [
+       "External Elastic Membrane"
+      ],
+      "x": 0.42,
+      "y": 22.47,
+      "w": 12.0,
+      "h": 5.84
+     },
+     {
+      "id": "q5-L12",
+      "answer": "Valve",
+      "accept": [
+       "Venous Valve",
+       "Vein Valve"
+      ],
+      "x": 86.83,
+      "y": 5.58,
+      "w": 5.33,
+      "h": 3.25
+     },
+     {
+      "id": "q5-L13",
+      "answer": "Erythrocyte",
+      "accept": [
+       "Red Blood Cell",
+       "RBC",
+       "Erythrocytes",
+       "Red Blood Cells"
+      ],
+      "x": 34.42,
+      "y": 3.77,
+      "w": 12.58,
+      "h": 6.62
+     }
+    ],
+    "explain": "Arteries carry blood away from the heart and branch into arterioles and then capillaries, where gases and nutrients are exchanged. Capillaries drain into venules, which join to form veins that carry blood back to the heart. Valves in veins prevent backflow. From the lumen outward, the artery wall is made of the endothelium (tunica intima), the internal elastic lamina, a smooth muscle layer (tunica media), the external elastic lamina, and the adventitia (tunica externa). Erythrocytes (red blood cells) pass through capillaries in single file."
    }
   ]
  }

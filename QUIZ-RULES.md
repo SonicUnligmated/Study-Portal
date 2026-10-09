@@ -90,6 +90,7 @@ Each card shows:
 | Choice (`mcq`) | `q, options[], correct, explain` | Wrong pick: shake + "not that one · try again", then try again. Right pick: green, ✓ explanation, celebration. |
 | Linking (`matching`) | `q, leftItems[{id,text}], rightItems[{id,text}], correct_pairs{left:right}, explain` | Hold a term or meaning, drag the thread and let go on the other side. Correct links lock and glow. Wrong ones stay as loose lines. "Clear drawings" removes some loose lines but never locked ones. The lines stay attached to their boxes when the window size changes. |
 | Stepped (`stepped`) | `q, explain, steps[{id,prompt,options,correct}]` | See section 6. |
+| Labeling (`label`) | `q, image, alt, labels[{id, answer, accept[], x, y, w, h}], explain` (optional `credit`, `creditUrl`) | Put every label on the picture by dragging (or typing). See section 14. |
 | Short answer (`saq`) | `q, answer, explain` (optional `accept[]` for other exact forms) | A text box and a **Check** button. See section 13. |
 
 A question without an explanation just shows ✓ (never "undefined").
@@ -225,7 +226,7 @@ progress, run, Mastery and mood stamp (saved under its own file path, for exampl
       "bank": "banks/medterm/pt2/lecture-16-17.json", "status": "ready", "draft": true } ] }
 ```
 
-Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 656 questions).
+Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 661 questions).
 Lectures 14 & 15, 16 & 17 and 18–20 are marked Draft. No card is "coming soon" at
 the moment, but the option is still there for future lectures:
 
@@ -330,9 +331,53 @@ A material can have study notes next to its quiz:
 - The navigator pill shows ✎. Cards count these as "N short answer".
 - The results list shows what was typed ("Your answer: …") and the answer.
 - The typed answer is saved with the run, so leaving and coming back keeps it.
-- Party mode leaves `saq` out (section 6).
+- Party mode leaves `saq` out (section 6), and `label` too (section 14).
 
-## 14. Adding a question type
+## 14. Labeling questions (`label`)
+
+```json
+{ "id": "MT12096", "type": "label", "cat": "MT_lec12-13", "q": "Label the structures of the heart.",
+  "image": "banks/medterm/img/mt12-label-2.png", "alt": "…",
+  "labels": [ { "id": "q2-L1", "answer": "Superior Vena Cava", "accept": ["SVC"],
+                "x": 3.1, "y": 5.2, "w": 18.0, "h": 4.4 } ],
+  "explain": "…" }
+```
+
+- `x`, `y`, `w`, `h` are **percents of the picture**, so the blank slots stay in place
+  at any size. Images live in `banks/<subject>/img/`. `anchor` (a leader-line point)
+  may be kept in the data, but the lines are already drawn in the picture.
+- `credit` (with an optional `creditUrl`) is shown as a small caption under the
+  picture. Lectures 12 & 13 use it for the three CC BY-SA 3.0 Wikimedia Commons
+  pictures (MT12097–MT12099).
+- **Dragging (default):** a shuffled word bank shows one chip per label. A label that
+  appears twice (for example the two "Pulmonary Veins") gives two chips, and either
+  chip fits either slot. Drag a chip onto a slot with the mouse or a finger, or tap
+  a chip and then tap a slot. Dragging near the top or bottom edge scrolls the page.
+  A wrong drop bounces the chip back with the usual shake and "not that one · try again".
+- **Typing:** the "⌨ type labels" button hides the word bank and turns every open slot
+  into a text box ("✋ drag labels" switches back; the choice is remembered). Typing is
+  graded **strictly**, like short answers: capital letters and spelling must match the
+  answer or one of the `accept` forms exactly. Only spaces at the start and end, and
+  repeated spaces, are forgiven. While you type, a small note under the slot repeats
+  what you typed, letter by letter, and marks every letter with the wrong capital or
+  the wrong letter with a highlighter in the theme accent colour. It compares with the
+  answer (or accepted form) that matches the most letters from the start. Enter on a
+  wrong text shows the same lower-case hints as short answers (for example
+  "wrong capitalization · try again") and never goes to the next question.
+- The moment a slot is right (dropped or typed) it gets its own celebration and
+  reward, and it **locks for good**. It cannot be removed or edited.
+- The question is solved when every slot is filled. Then the explanation shows.
+- Progress is saved after every slot, under the question id with one entry per label
+  id. Coming back to a half-done picture restores the locked labels.
+- The navigator pill shows 🏷, and cards count these as "N labeling".
+- The results list shows the picture with the placed labels (labels never placed are
+  shown in red).
+- On narrow phones the picture keeps a readable minimum size and scrolls sideways
+  inside its frame, so the slots stay tappable. Pinch-zoom still works.
+- Party mode leaves labeling questions out. The Study screen only shows study notes
+  (Medical Physics), so it has no labeling pictures yet.
+
+## 15. Adding a question type
 
 Add a check next to `isMatching` / `isStepped` in `js/quiz-engine.js` and add it to `qType()`. Then:
 - give `renderQuestion()` a renderer;

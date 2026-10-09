@@ -55,7 +55,8 @@ function qid(q,i){ return String(q && (q.id!=null?q.id:('q_'+(q.q||'').slice(0,4
 function isStepped(q){ return !!(q && !isMatching(q) && (q.type==='stepped' || Array.isArray(q.steps))); }
 function isStep(q){ return !!(q && q.__step); }
 /* SAQ (short answer): {q, answer, explain} — typed answer, lenient match. */
-function isSaq(q){ return !!(q && !isMatching(q) && !isStepped(q) && (q.type==='saq' || (q.answer!=null && !Array.isArray(q.options)))); }
+function isLabel(q){ return !!(q && q.type==='label' && Array.isArray(q.labels)); }
+function isSaq(q){ return !!(q && !isMatching(q) && !isStepped(q) && !isLabel(q) && (q.type==='saq' || (q.answer!=null && !Array.isArray(q.options)))); }
 /* saq grading is STRICT: case, punctuation and slashes all count. Only leading/trailing
    whitespace is trimmed and runs of internal whitespace collapse to one space. */
 function saqNorm(s){ return String(s==null?'':s).trim().replace(/\s+/g,' '); }
@@ -72,11 +73,12 @@ function saqHint(q, typed){
   return 'not that one · try again';
 }
 function isSingleStep(q){ return isStep(q) && q.__stepCount===1; }
-function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':(isSaq(q)?'saq':'mcq')); }
+function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':(isSaq(q)?'saq':(isLabel(q)?'label':'mcq'))); }
 function isAnswered(val,q){
   if(val==null) return false;
   if(isMatching(q)) return !!(val && val.correct);
   if(isSaq(q)) return !!(val && val.correct);
+  if(isLabel(q)) return !!(val && val.correct);
   return val!==null && val!==undefined;
 }
 /* ADAPT: PT1 showToast defaults to 2200ms; the portal's showToast defaults to 2800ms. */
@@ -307,6 +309,8 @@ function prepareDeck(pool, opts){
       if(shC) shuffleMatchingSides(q);
     } else if(isStepped(q)){
       (q.steps||[]).forEach(st=>permuteChoices(st, shC));
+    } else if(isLabel(q)){
+      q.__chips=shuffle((q.labels||[]).map(l=>l.id)); // the word bank is always shuffled
     } else if(q.options){
       permuteChoices(q, shC);
     }
@@ -556,6 +560,7 @@ function serializeDeck(deck){
   return deck.map(q=>{
     if(isMatching(q)) return {id:q.__id, L:(q.leftItems||[]).map(x=>x.id), R:(q.rightItems||[]).map(x=>x.id)};
     if(isStepped(q)) return {id:q.__id, steps:(q.steps||[]).map(st=>st.__perm||null)};
+    if(isLabel(q)) return {id:q.__id, chips:Array.isArray(q.__chips)?q.__chips.slice():null};
     return {id:q.__id, perm:q.__perm||null};
   });
 }
@@ -563,9 +568,11 @@ function serializeAnswers(){
   const out={};
   questions.forEach((q,i)=>{
     const a=answers[i];
-    if(!isAnswered(a,q) && !(isMatching(q) && a && ((a.wires&&a.wires.length)||Object.keys(a.pairs||{}).length))) return;
+    if(!isAnswered(a,q) && !(isMatching(q) && a && ((a.wires&&a.wires.length)||Object.keys(a.pairs||{}).length))
+       && !(isLabel(q) && a && a.slots && Object.keys(a.slots).length)) return;
     if(isMatching(q)) out[entryKey(q)]={pairs:Object.assign({},a.pairs||{}), correct:!!a.correct, wires:(a.wires||[]).map(w=>Object.assign({},w,{points:(w.points||[]).map(p=>({x:+p.x.toFixed(1),y:+p.y.toFixed(1)}))}))};
     else if(isSaq(q)) out[entryKey(q)]={text:String(a.text||''), correct:true};
+    else if(isLabel(q)) out[entryKey(q)]={slots:Object.assign({},a.slots), correct:!!a.correct}; // partial progress too, per label id
     else out[entryKey(q)]=(q.__perm&&q.__perm[a]!=null)?q.__perm[a]:a;
   });
   return out;
@@ -604,6 +611,8 @@ function restoreRun(run){
       q.leftItems=order(q.leftItems||[], d.L); q.rightItems=order(q.rightItems||[], d.R);
     } else if(isStepped(q)){
       (q.steps||[]).forEach((st,k)=>applyPerm(st, d.steps&&d.steps[k]));
+    } else if(isLabel(q)){
+      q.__chips=Array.isArray(d.chips)?d.chips.slice():shuffle((q.labels||[]).map(l=>l.id));
     } else if(q.options){
       applyPerm(q, d.perm);
     }
@@ -623,6 +632,14 @@ function restoreRun(run){
     }
     if(isSaq(q)){
       if(a && typeof a==='object' && a.correct && saqMatches(q, a.text)) answers[i]={text:String(a.text), correct:true};
+      return;
+    }
+    if(isLabel(q)){
+      // keep only slots that still exist and still hold a right answer
+      if(a && typeof a==='object' && a.slots && typeof a.slots==='object'){
+        const slots={}; (q.labels||[]).forEach(l=>{ const t=a.slots[l.id]; if(t!=null && labelMatches(l, t)) slots[l.id]=String(t); });
+        if(Object.keys(slots).length) answers[i]={slots, correct:Object.keys(slots).length===(q.labels||[]).length};
+      }
       return;
     }
     // Choice / step answers are saved as one original option index. Anything else
@@ -645,7 +662,8 @@ function cardCounts(pool){
   const linking=pool.filter(isMatching).length;
   const stepped=pool.filter(isStepped).length;
   const saq=pool.filter(isSaq).length;
-  return {linking, stepped, saq, choice:pool.length-linking-stepped-saq};
+  const label=pool.filter(isLabel).length;
+  return {linking, stepped, saq, label, choice:pool.length-linking-stepped-saq-label};
 }
 function cardBadgesHTML(card){
   let h='';
@@ -671,7 +689,7 @@ function appendPoolCard(grid, label, pool, card){
   const btn=document.createElement('button'); btn.type='button'; btn.className='card';
   btn.dataset.card=card.id;
   // PT1 line "N linking · M choice" + STEPPED count when the card has any
-  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'');
+  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'')+(c.label?(' · '+c.label+' labeling'):'');
   btn.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(label)}</span><span class="mood-stamp">${escapeHtml(meta.mood||'')}</span></div>${cardBadgesHTML(card)}
     <div class="card-sub">${sub}</div>
     <div class="card-stats"><div class="card-pct">${left} left</div><div class="card-meta">${pool.length-left} solved / ${pool.length}${inProgress?' · in progress':''}</div></div>`;
@@ -1037,9 +1055,11 @@ function renderNav(){
       +((skipped && !markedUnanswered)?' skipped':'');
     b.classList.toggle('linking', isMatching(q));
     b.classList.toggle('saq', isSaq(q));
+    b.classList.toggle('label', isLabel(q));
     b.innerHTML=isMatching(q)
       ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">🔗</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
       : (isSaq(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">✎</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
+      : isLabel(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">🏷</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
       : '<span class=\"q-nav-number\">'+(i+1)+'</span>');
     b.title=isMatching(q)?'Linking question'+(skipped?' — skipped — unanswered':(done?' — answered':''))
       :((isSaq(q)?'Short answer':'')+(skipped?((isSaq(q)?' — ':'')+'Skipped — unanswered'):(done?((isSaq(q)?' — ':'')+'Answered'):'')));
@@ -1166,6 +1186,200 @@ function submitSaq(){
   pt1Confetti();
   rewardCorrect();
   afterAnswerProgress();
+}
+/* —— LABEL (image labeling) questions ——
+   q: {id, type:'label', cat, q, image, alt, credit?, creditUrl?, labels:[{id, answer, accept?, x, y, w, h}], explain}
+   x / y / w / h are percents of the image, so the slots scale with it.
+   Answer state: {slots:{<label id>: <text placed>}, correct:<every slot placed>}.
+   A slot locks the moment it is right (drag or typing) and never unlocks. */
+let labelTyping=(function(){ try{ return localStorage.getItem('sp_label_mode_v1')==='type'; }catch(e){ return false; } })();
+let labelSelectedChip=null;
+function labelCands(l){ return [l.answer].concat(Array.isArray(l.accept)?l.accept:[]).filter(x=>x!=null&&String(x).trim()!==''); }
+function labelMatches(l, text){ const t=saqNorm(text); return !!t && labelCands(l).some(c=>saqNorm(c)===t); }
+function labelState(i){
+  const a=answers[i];
+  if(a && typeof a==='object' && a.slots) return a;
+  const st={slots:{}, correct:false}; answers[i]=st; return st;
+}
+function labelDoneCount(q, a){ return (q.labels||[]).filter(l=>a && a.slots && a.slots[l.id]!=null).length; }
+/* Typing echo: compare with the answer (or accepted form) that shares the longest exact
+   prefix; every character that differs there (wrong letter or wrong case) is marked. */
+function labelEchoHTML(l, typed){
+  const t=String(typed||'').replace(/^\s+/,'').replace(/\s+/g,' ');
+  if(!t) return '';
+  let best='', bestN=-1;
+  labelCands(l).forEach(c=>{ c=saqNorm(c); let n=0; while(n<c.length && n<t.length && c[n]===t[n]) n++; if(n>bestN){ bestN=n; best=c; } });
+  let h='';
+  for(let k=0;k<t.length;k++){
+    const ch=escapeHtml(t[k]===' '?'\u00a0':t[k]);
+    h+= (best[k]===t[k]) ? ch : '<mark class="label-mark">'+ch+'</mark>';
+  }
+  return h;
+}
+function labelFigureHTML(q, a, review){
+  const slots=(a&&a.slots)||{};
+  let h='<div class="label-figure'+(review?' in-review':'')+'"><img class="label-img" src="'+escapeHtml(q.image||'')+'" alt="'+escapeHtml(q.alt||'')+'" draggable="false">';
+  (q.labels||[]).forEach(l=>{
+    const done=slots[l.id]!=null;
+    const style='left:'+l.x+'%;top:'+l.y+'%;width:'+l.w+'%;height:'+l.h+'%';
+    if(review){
+      h+='<div class="label-slot locked'+(done?'':' missed')+'" style="'+style+'"><span class="label-slot-text">'+escapeHtml(done?slots[l.id]:l.answer)+'</span></div>';
+    } else if(done){
+      h+='<div class="label-slot locked" data-id="'+escapeHtml(l.id)+'" style="'+style+'"><span class="label-slot-text">'+escapeHtml(slots[l.id])+'</span></div>';
+    } else if(labelTyping){
+      h+='<div class="label-slot typing" data-id="'+escapeHtml(l.id)+'" style="'+style+'"><input class="label-input" type="text" autocomplete="off" spellcheck="false" autocapitalize="off" aria-label="Label '+escapeHtml(l.id)+'"><div class="label-echo" aria-live="polite"></div></div>';
+    } else {
+      h+='<div class="label-slot open" data-id="'+escapeHtml(l.id)+'" style="'+style+'" role="button" tabindex="0" aria-label="Empty label"></div>';
+    }
+  });
+  return h+'</div>';
+}
+function labelChipOrder(q){
+  const ids=(q.labels||[]).map(l=>l.id);
+  const o=Array.isArray(q.__chips)?q.__chips.filter(id=>ids.includes(id)):[];
+  ids.forEach(id=>{ if(!o.includes(id)) o.push(id); });
+  return o;
+}
+function renderLabel(q, ans){
+  const opts=document.getElementById('options');
+  const a=(ans && ans.slots)?ans:{slots:{},correct:false};
+  const n=(q.labels||[]).length, k=labelDoneCount(q,a);
+  labelSelectedChip=null;
+  const wrap=document.createElement('div'); wrap.className='label-wrap'+(labelTyping?' is-typing':'');
+  let h='<div class="label-tools"><span class="label-progress" id="labelProgress">'+k+' / '+n+' labels</span>';
+  if(!a.correct) h+='<button type="button" class="nav-btn label-mode" id="labelModeBtn" aria-pressed="'+(labelTyping?'true':'false')+'">'+(labelTyping?'✋ drag labels':'⌨ type labels')+'</button>';
+  h+='</div><div class="label-stage">'+labelFigureHTML(q,a,false)+'</div>';
+  if(q.credit) h+='<div class="label-credit">Image: '+escapeHtml(q.credit)+(q.creditUrl?' <a href="'+escapeHtml(q.creditUrl)+'" target="_blank" rel="noopener">source</a>':'')+'</div>';
+  if(!labelTyping && !a.correct){
+    // one chip per label that is still open (two "Pulmonary Veins" slots → two chips)
+    h+='<div class="label-bank" id="labelBank" aria-label="Word bank">';
+    labelChipOrder(q).forEach(id=>{ const l=q.labels.find(x=>x.id===id); if(!l || a.slots[l.id]!=null) return; h+='<button type="button" class="label-chip" data-for="'+escapeHtml(l.id)+'" data-text="'+escapeHtml(l.answer)+'">'+escapeHtml(l.answer)+'</button>'; });
+    h+='</div>';
+  }
+  wrap.innerHTML=h;
+  opts.appendChild(wrap);
+  const mb=wrap.querySelector('#labelModeBtn');
+  if(mb) mb.addEventListener('click',()=>{ labelTyping=!labelTyping; try{ localStorage.setItem('sp_label_mode_v1', labelTyping?'type':'drag'); }catch(e){} renderQuestion(); });
+  wrap.querySelectorAll('.label-chip').forEach(chip=>{
+    chip.addEventListener('pointerdown',e=>labelPointerDown(e,chip));
+    chip.addEventListener('click',()=>{ if(chip.__suppressClick) return; labelSelect(labelSelectedChip===chip?null:chip); });
+  });
+  wrap.querySelectorAll('.label-slot.open').forEach(slot=>{
+    const go=()=>{ if(labelSelectedChip) labelTryPlace(labelSelectedChip, slot, null); };
+    slot.addEventListener('click',go);
+    slot.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); e.stopPropagation(); go(); } });
+  });
+  wrap.querySelectorAll('.label-slot.typing').forEach(slot=>{
+    const input=slot.querySelector('input'), echo=slot.querySelector('.label-echo');
+    const l=q.labels.find(x=>x.id===slot.dataset.id);
+    input.addEventListener('input',()=>{
+      echo.innerHTML=labelEchoHTML(l, input.value);
+      slot.classList.toggle('has-echo', !!echo.innerHTML);
+      if(labelMatches(l, input.value)) labelLock(l, saqNorm(input.value), slot);
+    });
+    input.addEventListener('keydown',e=>{
+      if(e.key!=='Enter') return;
+      e.preventDefault(); e.stopPropagation();
+      if(!saqNorm(input.value)) return;
+      if(!labelMatches(l, input.value)) labelWrong(input, null, saqHint({answer:l.answer, accept:l.accept}, input.value));
+    });
+  });
+}
+function labelSelect(chip){
+  document.querySelectorAll('.label-chip.selected').forEach(c=>c.classList.remove('selected'));
+  labelSelectedChip=chip||null;
+  if(chip) chip.classList.add('selected');
+  const fig=document.querySelector('.label-figure'); if(fig) fig.classList.toggle('picking', !!chip);
+}
+function labelPointerDown(e, chip){
+  if(!quizActive || locked) return;
+  if(e.pointerType==='mouse' && e.button!==0) return;
+  const sx=e.clientX, sy=e.clientY; let ghost=null, over=null;
+  const move=ev=>{
+    if(!ghost){
+      if(Math.hypot(ev.clientX-sx, ev.clientY-sy)<6) return;
+      ghost=chip.cloneNode(true); ghost.classList.add('label-ghost'); ghost.classList.remove('selected');
+      document.body.appendChild(ghost); chip.classList.add('dragging'); labelSelect(null);
+    }
+    ev.preventDefault();
+    ghost.style.left=ev.clientX+'px'; ghost.style.top=ev.clientY+'px';
+    // drag near the top/bottom edge scrolls the page so far-away slots can be reached
+    if(ev.clientY<48) window.scrollBy(0,-14); else if(ev.clientY>window.innerHeight-48) window.scrollBy(0,14);
+    const el=document.elementFromPoint(ev.clientX, ev.clientY);
+    const s=el && el.closest ? el.closest('.label-slot.open') : null;
+    if(s!==over){ if(over) over.classList.remove('drop-over'); over=s; if(over) over.classList.add('drop-over'); }
+  };
+  const end=ev=>{
+    window.removeEventListener('pointermove',move); window.removeEventListener('pointerup',end); window.removeEventListener('pointercancel',end);
+    if(over) over.classList.remove('drop-over');
+    if(!ghost) return; // a tap: the click handler selects the chip
+    chip.__suppressClick=true; setTimeout(()=>{ chip.__suppressClick=false; },60);
+    chip.classList.remove('dragging');
+    if(ev.type==='pointerup' && over) labelTryPlace(chip, over, ghost);
+    else labelBounce(chip, ghost);
+  };
+  window.addEventListener('pointermove',move,{passive:false});
+  window.addEventListener('pointerup',end); window.addEventListener('pointercancel',end);
+}
+function labelBounce(chip, ghost){
+  if(!ghost) return;
+  const r=chip.getBoundingClientRect();
+  ghost.classList.add('returning');
+  ghost.style.left=(r.left+r.width/2)+'px'; ghost.style.top=(r.top+r.height/2)+'px';
+  setTimeout(()=>ghost.remove(), 320);
+}
+function labelWrong(el, ghost, msg){
+  if(window.StudyAchievements && typeof StudyAchievements.recordWrong==='function') StudyAchievements.recordWrong();
+  if(el){ el.classList.remove('soft-wrong'); void el.offsetWidth; el.classList.add('soft-wrong'); setTimeout(()=>el.classList.remove('soft-wrong'),480); }
+  const fb=document.getElementById('feedback');
+  fb.className='feedback soft'; fb.textContent=msg||'not that one · try again';
+  clearTimeout(selectAnswer._t); selectAnswer._t=setTimeout(()=>{ if(!locked){ fb.className='feedback idle'; fb.textContent=''; } },1400);
+}
+function labelTryPlace(chip, slot, ghost){
+  if(!quizActive || locked || !chip || !slot || !slot.classList.contains('open')) return;
+  const q=questions[current]; if(!isLabel(q)) return;
+  const l=q.labels.find(x=>x.id===slot.dataset.id); if(!l) return;
+  const text=chip.dataset.text;
+  if(!labelMatches(l, text)){
+    labelBounce(chip, ghost);
+    labelWrong(chip, null); slot.classList.remove('soft-wrong'); void slot.offsetWidth; slot.classList.add('soft-wrong'); setTimeout(()=>slot.classList.remove('soft-wrong'),480);
+    labelSelect(null);
+    return;
+  }
+  if(ghost) ghost.remove();
+  chip.remove(); labelSelect(null);
+  labelLock(l, text, slot);
+}
+function labelLock(l, text, slot){
+  const q=questions[current]; const a=labelState(current);
+  if(a.slots[l.id]!=null) return;
+  a.slots[l.id]=String(text);
+  // the slot is now permanent: swap it for a locked label
+  const done=document.createElement('div');
+  done.className='label-slot locked just-locked'; done.dataset.id=l.id; done.setAttribute('style', slot.getAttribute('style'));
+  done.innerHTML='<span class="label-slot-text">'+escapeHtml(String(text))+'</span>';
+  const hadFocus=slot.contains(document.activeElement);
+  slot.replaceWith(done);
+  const r=done.getBoundingClientRect();
+  if(typeof spawnFireworkBurst==='function') spawnFireworkBurst(r.left+r.width/2, r.top+r.height/2, 14);
+  rewardCorrect();
+  const n=q.labels.length, k=labelDoneCount(q,a);
+  const pr=document.getElementById('labelProgress'); if(pr) pr.textContent=k+' / '+n+' labels';
+  const fb=document.getElementById('feedback');
+  if(k>=n){
+    a.correct=true; locked=true; onQuestionSolved(q);
+    fb.className='feedback good'; fb.textContent=correctFeedbackText(q);
+    const mb=document.getElementById('labelModeBtn'); if(mb) mb.remove();
+    const bank=document.getElementById('labelBank'); if(bank) bank.remove();
+    document.getElementById('mainPanel').classList.add('correct-pulse');
+    setTimeout(()=>document.getElementById('mainPanel').classList.remove('correct-pulse'),650);
+    pt1Confetti();
+    afterAnswerProgress();
+    return;
+  }
+  fb.className='feedback good'; fb.textContent='✓ '+k+' of '+n+' labels';
+  renderNav(); updateCounters(); saveRunState();
+  if(hadFocus){ const nx=document.querySelector('.label-slot.typing input'); if(nx) try{ nx.focus({preventScroll:true}); }catch(e){} }
 }
 function renderMcq(q, answered){
   const opts=document.getElementById('options');
@@ -1956,12 +2170,13 @@ function renderQuestion(){
   }
   renderNav();
   updateCounters();
-  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':((isStep(q)&&!isSingleStep(q))?'stepped · ':(isSaq(q)?'short answer · ':'')))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
+  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':((isStep(q)&&!isSingleStep(q))?'stepped · ':(isSaq(q)?'short answer · ':(isLabel(q)?'labeling · ':''))))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
   const opts=document.getElementById('options'); opts.innerHTML='';
   const answered=isAnswered(answers[current], q);
   locked=answered;
   if(isMatching(q)) renderMatching(q, answers[current]||{pairs:{},wires:[],checked:false,correct:false});
   else if(isSaq(q)) renderSaq(q, answers[current]);
+  else if(isLabel(q)) renderLabel(q, answers[current]);
   else renderMcq(q, answered);
   const fb=document.getElementById('feedback');
   if(answered){ fb.className='feedback good'; fb.textContent=correctFeedbackText(q); }
@@ -1996,7 +2211,7 @@ function onQuestionSolved(q){
 /* PT1 3850–3890 (formula branches removed) */
 function selectAnswer(idx){
   if(!quizActive||locked) return;
-  const q=questions[current]; if(isMatching(q) || isSaq(q)) return;
+  const q=questions[current]; if(isMatching(q) || isSaq(q) || isLabel(q)) return;
   if(isStep(q) && !isUnlocked(current)) return;
   const fb=document.getElementById('feedback');
   if(idx!==q.correct){
@@ -2071,13 +2286,17 @@ function jumpToQuestion(i, dir){
   }
   stepTo(i);
 }
-function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)||isSaq(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
+function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)||isSaq(q)||isLabel(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
 
 /* —— PT1 3928–3949 finishQuiz + portal extras (elapsed, mood stamp, Mastery box, review) —— */
 function resultItemHTML(q,i){
   if(isMatching(q)){
     const ok=answers[i]&&answers[i].correct;
     return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">'+(ok?'All links locked':'Incomplete')+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
+  }
+  if(isLabel(q)){
+    const a=answers[i], n=(q.labels||[]).length, k=labelDoneCount(q,a);
+    return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(k===n?'rok':'rbad')+'">Labels placed: '+k+' / '+n+'</div><div class="label-review">'+labelFigureHTML(q,a,true)+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
   }
   if(isSaq(q)){
     const a=answers[i], ok=!!(a&&a.correct);
