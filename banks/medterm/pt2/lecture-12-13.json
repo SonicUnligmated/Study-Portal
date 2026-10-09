@@ -3,7 +3,7 @@
  "subject": "Medical Terminology",
  "subjectId": "medical_terminology",
  "title": "Lecture 12 and 13 - Cardiovascular System",
- "formSize": 95,
+ "formSize": 104,
  "forms": [
   "A"
  ],
@@ -2945,6 +2945,359 @@
      }
     ],
     "explain": "Arteries carry blood away from the heart and branch into arterioles and then capillaries, where gases and nutrients are exchanged. Capillaries drain into venules, which join to form veins that carry blood back to the heart. Valves in veins prevent backflow. From the lumen outward, the artery wall is made of the endothelium (tunica intima), the internal elastic lamina, a smooth muscle layer (tunica media), the external elastic lamina, and the adventitia (tunica externa). Erythrocytes (red blood cells) pass through capillaries in single file."
+   },
+   {
+    "id": "MT12100",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Pulmonary Circulation",
+    "q": "Pulmonary circulation: put the stages in the order blood flows from the right ventricle to the lungs and back to the heart.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Right Ventricle",
+      "part": "rv"
+     },
+     {
+      "id": "s2",
+      "text": "Pulmonary Semilunar Valve",
+      "part": "psv"
+     },
+     {
+      "id": "s3",
+      "text": "Pulmonary Arteries",
+      "part": "pa"
+     },
+     {
+      "id": "s4",
+      "text": "Lungs",
+      "part": "lungs"
+     },
+     {
+      "id": "s5",
+      "text": "Pulmonary Veins",
+      "part": "pvn"
+     },
+     {
+      "id": "s6",
+      "text": "Left Atrium",
+      "part": "la"
+     }
+    ],
+    "explain": "Pulmonary circulation carries blood from the heart to the lungs and back. The right ventricle contracts and pushes deoxygenated blood through the pulmonary semilunar valve, which opens into the pulmonary arteries. The pulmonary arteries carry that blood to the lungs, so they come before the lungs (some slides wrongly list the lungs before the pulmonary artery). In the lungs the blood picks up oxygen and gives off carbon dioxide. The pulmonary veins then carry the oxygenated blood back to the left atrium, where pulmonary circulation ends. The pulmonary arteries carry deoxygenated blood and the pulmonary veins carry oxygenated blood, the opposite of the rest of the body."
+   },
+   {
+    "id": "MT12101",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Systemic Circulation",
+    "q": "Systemic circulation: put the stages in the order blood flows from the left ventricle to the body and back to the heart.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Left Ventricle",
+      "part": "lv"
+     },
+     {
+      "id": "s2",
+      "text": "Aortic Semilunar Valve",
+      "part": "av"
+     },
+     {
+      "id": "s3",
+      "text": "Aorta",
+      "part": "aorta"
+     },
+     {
+      "id": "s4",
+      "text": "Body Tissues",
+      "part": "body"
+     },
+     {
+      "id": "s5",
+      "text": "Vena Cava",
+      "part": "vc"
+     },
+     {
+      "id": "s6",
+      "text": "Right Atrium",
+      "part": "ra"
+     }
+    ],
+    "explain": "Systemic circulation carries blood from the heart to all parts of the body and back. The left ventricle contracts and pushes oxygenated blood through the aortic semilunar valve into the aorta, the largest artery. The aorta and its branches deliver the blood to the body tissues, where oxygen is given up and carbon dioxide is picked up. The deoxygenated blood then returns through the superior and inferior vena cava to the right atrium, where systemic circulation ends."
+   },
+   {
+    "id": "MT12102",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Full Loop",
+    "q": "Full loop: put the stages in the order blood flows from the body tissues, through both sides of the heart and the lungs, and out again in the aorta.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Body Tissues",
+      "part": "body"
+     },
+     {
+      "id": "s2",
+      "text": "Vena Cava",
+      "part": "vc"
+     },
+     {
+      "id": "s3",
+      "text": "Right Atrium",
+      "part": "ra"
+     },
+     {
+      "id": "s4",
+      "text": "Tricuspid AV Valve",
+      "part": "tv"
+     },
+     {
+      "id": "s5",
+      "text": "Right Ventricle",
+      "part": "rv"
+     },
+     {
+      "id": "s6",
+      "text": "Pulmonary Semilunar Valve",
+      "part": "psv"
+     },
+     {
+      "id": "s7",
+      "text": "Pulmonary Arteries",
+      "part": "pa"
+     },
+     {
+      "id": "s8",
+      "text": "Lungs",
+      "part": "lungs"
+     },
+     {
+      "id": "s9",
+      "text": "Pulmonary Veins",
+      "part": "pvn"
+     },
+     {
+      "id": "s10",
+      "text": "Left Atrium",
+      "part": "la"
+     },
+     {
+      "id": "s11",
+      "text": "Bicuspid AV Valve",
+      "part": "mv"
+     },
+     {
+      "id": "s12",
+      "text": "Left Ventricle",
+      "part": "lv"
+     },
+     {
+      "id": "s13",
+      "text": "Aortic Semilunar Valve",
+      "part": "av"
+     },
+     {
+      "id": "s14",
+      "text": "Aorta",
+      "part": "aorta"
+     }
+    ],
+    "explain": "Deoxygenated blood leaves the body tissues and returns through the vena cava into the right atrium. It passes the tricuspid AV valve into the right ventricle, which pumps it through the pulmonary semilunar valve into the pulmonary arteries. The pulmonary arteries carry the deoxygenated blood to the lungs, where it picks up oxygen. The pulmonary veins carry the oxygenated blood back to the left atrium. It passes the bicuspid AV valve (also called the mitral valve) into the left ventricle, which pumps it through the aortic semilunar valve into the aorta and on to the body tissues again. The right side of the heart always handles deoxygenated blood and the left side oxygenated blood."
+   },
+   {
+    "id": "MT12103",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Heart Valves",
+    "q": "Put the four heart valves in the order blood passes through them, starting from the right atrium.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Tricuspid AV Valve",
+      "part": "tv"
+     },
+     {
+      "id": "s2",
+      "text": "Pulmonary Semilunar Valve",
+      "part": "psv"
+     },
+     {
+      "id": "s3",
+      "text": "Bicuspid AV Valve",
+      "part": "mv"
+     },
+     {
+      "id": "s4",
+      "text": "Aortic Semilunar Valve",
+      "part": "av"
+     }
+    ],
+    "explain": "Blood meets the tricuspid AV valve first, between the right atrium and the right ventricle. Leaving the right ventricle, it passes the pulmonary semilunar valve into the pulmonary arteries. After the lungs it returns to the left atrium and passes the bicuspid AV valve, also called the mitral valve, into the left ventricle. Last, it leaves through the aortic semilunar valve into the aorta. The AV (atrioventricular) valves sit between each atrium and ventricle, and the semilunar valves sit at the exits of the ventricles."
+   },
+   {
+    "id": "MT12104",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Heart Chambers",
+    "q": "Put the four heart chambers in the order blood passes through them.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Right Atrium",
+      "part": "ra"
+     },
+     {
+      "id": "s2",
+      "text": "Right Ventricle",
+      "part": "rv"
+     },
+     {
+      "id": "s3",
+      "text": "Left Atrium",
+      "part": "la"
+     },
+     {
+      "id": "s4",
+      "text": "Left Ventricle",
+      "part": "lv"
+     }
+    ],
+    "explain": "Blood from the body enters the right atrium, then drops into the right ventricle, which pumps it to the lungs. The oxygenated blood comes back through the pulmonary veins to the left atrium, then drops into the left ventricle, which pumps it out to the body. The atria receive blood, and the ventricles pump it out of the heart."
+   },
+   {
+    "id": "MT12105",
+    "type": "order",
+    "cat": "MT_lec12-13",
+    "title": "Coronary Circulation",
+    "q": "Coronary circulation: put the stages in the order oxygenated blood reaches the heart muscle itself.",
+    "stages": [
+     {
+      "id": "s1",
+      "text": "Left Ventricle",
+      "part": "lv"
+     },
+     {
+      "id": "s2",
+      "text": "Aortic Semilunar Valve",
+      "part": "av"
+     },
+     {
+      "id": "s3",
+      "text": "Aorta",
+      "part": "aorta"
+     },
+     {
+      "id": "s4",
+      "text": "Coronary Arteries",
+      "part": "cor"
+     },
+     {
+      "id": "s5",
+      "text": "Myocardium (heart muscle)",
+      "part": "myo"
+     }
+    ],
+    "explain": "The left ventricle pumps oxygenated blood through the aortic semilunar valve into the aorta. The first branches of the aorta, right at its root, are the right and left coronary arteries, so the heart is the first organ to receive oxygenated blood. The coronary arteries spread over the surface of the heart and supply the myocardium, the heart muscle itself, which needs a constant supply of oxygen to keep pumping."
+   },
+   {
+    "id": "MT12106",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each type of circulation to its description. One description stays unmatched.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Pulmonary circulation"
+     },
+     {
+      "id": "2",
+      "text": "Systemic circulation"
+     },
+     {
+      "id": "3",
+      "text": "Coronary circulation"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Carries blood from the heart to all parts of the body and back to the heart"
+     },
+     {
+      "id": "B",
+      "text": "Supplies the heart muscle itself through the right and left coronary arteries"
+     },
+     {
+      "id": "C",
+      "text": "Carries blood from the lungs straight to the body without passing through the heart"
+     },
+     {
+      "id": "D",
+      "text": "Carries blood from the heart to the lungs for oxygenation and back to the heart"
+     }
+    ],
+    "correct_pairs": {
+     "1": "D",
+     "2": "A",
+     "3": "B"
+    },
+    "explain": "Pulmonary circulation carries blood from the heart to the lungs for oxygenation and back to the heart. Systemic circulation carries blood from the heart to all parts of the body and back to the heart. Coronary circulation supplies the heart muscle itself through the right and left coronary arteries. \"Carries blood from the lungs straight to the body without passing through the heart\" matches none of them: blood from the lungs always returns to the left atrium before the left ventricle pumps it to the body."
+   },
+   {
+    "id": "MT12107",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "q": "Follow the blood as it leaves the right ventricle. Answer each step.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Leaving the right ventricle, which circulation does the blood enter first?",
+      "options": [
+       "Pulmonary circulation",
+       "Systemic circulation",
+       "Coronary circulation"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Back on the left side of the heart, which circulation does it enter next?",
+      "options": [
+       "Systemic circulation",
+       "Pulmonary circulation",
+       "Coronary circulation"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which organ receives oxygenated blood first?",
+      "options": [
+       "The heart, through the right and left coronary arteries",
+       "The lungs, through the pulmonary veins",
+       "The brain, through the carotid arteries",
+       "The body tissues, through the lower branches of the aorta"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "From the right ventricle, blood enters pulmonary circulation: the pulmonary arteries take it to the lungs, and the pulmonary veins bring it back to the left atrium. From the left ventricle it enters systemic circulation through the aorta to the rest of the body. The first branches of the aorta are the right and left coronary arteries, so the heart is the first organ to receive oxygenated blood (coronary circulation). The lungs exchange gases but are not fed by the pulmonary veins, and the brain and body tissues are reached only after the coronary branches."
+   },
+   {
+    "id": "MT12108",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes which vessels carry deoxygenated and oxygenated blood in pulmonary and systemic circulation?",
+    "options": [
+     "In pulmonary circulation the pulmonary arteries carry deoxygenated blood and the pulmonary veins carry oxygenated blood; in systemic circulation the aorta and arteries carry oxygenated blood and the vena cava and veins carry deoxygenated blood.",
+     "In pulmonary circulation the pulmonary arteries carry oxygenated blood and the pulmonary veins carry deoxygenated blood; in systemic circulation the arteries carry deoxygenated blood and the veins carry oxygenated blood.",
+     "In both circulations every artery carries oxygenated blood and every vein carries deoxygenated blood, with no exceptions.",
+     "In pulmonary circulation both the pulmonary arteries and the pulmonary veins carry oxygenated blood; only the vena cava carries deoxygenated blood."
+    ],
+    "correct": 0,
+    "explain": "Arteries carry blood away from the heart and veins carry it back, whatever its oxygen content. In pulmonary circulation the pulmonary arteries take deoxygenated blood to the lungs and the pulmonary veins bring oxygenated blood back to the left atrium. In systemic circulation the aorta and arteries carry oxygenated blood to the body, and the vena cava and veins return deoxygenated blood to the right atrium. \"In pulmonary circulation the pulmonary arteries carry oxygenated blood…\" swaps both circulations. \"In both circulations every artery carries oxygenated blood…\" ignores the pulmonary exception. \"In pulmonary circulation both the pulmonary arteries and the pulmonary veins carry oxygenated blood…\" forgets that blood reaches the lungs deoxygenated."
    }
   ]
  }

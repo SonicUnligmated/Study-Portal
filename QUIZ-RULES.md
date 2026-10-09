@@ -91,6 +91,7 @@ Each card shows:
 | Linking (`matching`) | `q, leftItems[{id,text}], rightItems[{id,text}], correct_pairs{left:right}, explain` | Hold a term or meaning, drag the thread and let go on the other side. Correct links lock and glow. Wrong ones stay as loose lines. "Clear drawings" removes some loose lines but never locked ones. The lines stay attached to their boxes when the window size changes. |
 | Stepped (`stepped`) | `q, explain, steps[{id,prompt,options,correct}]` | See section 6. |
 | Labeling (`label`) | `q, image, alt, labels[{id, answer, accept[], x, y, w, h}], explain` (optional `credit`, `creditUrl`) | Put every label on the picture by dragging (or typing). See section 14. |
+| Ordering (`order`) | `q, title, stages[{id, text, part}], explain` (stages listed in the right order) | Shuffled cards; drag them or use ▲▼, then **Check**. See section 15. |
 | Short answer (`saq`) | `q, answer, explain` (optional `accept[]` for other exact forms) | A text box and a **Check** button. See section 13. |
 
 A question without an explanation just shows ✓ (never "undefined").
@@ -226,7 +227,7 @@ progress, run, Mastery and mood stamp (saved under its own file path, for exampl
       "bank": "banks/medterm/pt2/lecture-16-17.json", "status": "ready", "draft": true } ] }
 ```
 
-Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 661 questions).
+Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 670 questions).
 Lectures 14 & 15, 16 & 17 and 18–20 are marked Draft. No card is "coming soon" at
 the moment, but the option is still there for future lectures:
 
@@ -331,7 +332,7 @@ A material can have study notes next to its quiz:
 - The navigator pill shows ✎. Cards count these as "N short answer".
 - The results list shows what was typed ("Your answer: …") and the answer.
 - The typed answer is saved with the run, so leaving and coming back keeps it.
-- Party mode leaves `saq` out (section 6), and `label` too (section 14).
+- Party mode leaves `saq` out (section 6), `label` (section 14) and `order` (section 15) too.
 
 ## 14. Labeling questions (`label`)
 
@@ -377,7 +378,43 @@ A material can have study notes next to its quiz:
 - Party mode leaves labeling questions out. The Study screen only shows study notes
   (Medical Physics), so it has no labeling pictures yet.
 
-## 15. Adding a question type
+## 15. Ordering questions (`order`) — "put the stages in order"
+
+```json
+{"id":"MT12100","type":"order","cat":"MT_lec12-13","title":"Pulmonary Circulation",
+ "q":"Pulmonary circulation: put the stages in the order blood flows ...",
+ "stages":[{"id":"s1","text":"Right Ventricle","part":"rv"}, ...],
+ "explain":"..."}
+```
+
+- The bank lists `stages` in the right order. The run shows them as shuffled cards, and
+  the shuffle never starts in the right order.
+- Move a card by dragging it (mouse: anywhere on the card; touch: the ⠿ grip, so the
+  rest of the card still scrolls the page) or with its ▲ / ▼ buttons.
+- **Check** grades the order. Cards in the right place lock (🔒, green) and celebrate
+  like a right PT1 answer. Wrong cards shake with "not that one · try again" and stay
+  movable. Locked cards never move; the other cards move around them.
+- When every card is locked the question is solved: ✓ explanation, celebration, and the
+  blood-flow animation.
+- **Animation.** Our own schematic heart (four chambers, the four valves, vena cava,
+  pulmonary arteries and veins, aorta, coronary arteries, myocardium, and "Lungs" /
+  "Body Tissues" boxes). A pulse travels the question's own stages only (each stage's
+  `part` names the drawing piece: `body, vc, ra, tv, rv, psv, pa, lungs, pvn, la, mv, lv,
+  av, aorta, cor, myo`). It is blue (deoxygenated) until it leaves the lungs and red
+  (oxygenated) after; it turns blue again after the body tissues or the myocardium. The
+  current stage's card and drawing piece light up together. **↻ replay** plays it again.
+  Revisiting a solved question shows the whole path without playing.
+- With `prefers-reduced-motion` there is no moving pulse: the whole path is shown at once
+  (blue and red lines, the question's parts highlighted).
+- Progress is saved under the question id after every move and every Check: the current
+  arrangement and the locked cards. Coming back restores both (a lock only counts if that
+  card really is in its right place).
+- The navigator pill shows ⇅, and cards count these as "N ordering". The results list
+  shows the correct order. Party mode leaves ordering questions out.
+- Lectures 12 & 13 have six: Pulmonary Circulation, Systemic Circulation, Full Loop,
+  Heart Valves, Heart Chambers, Coronary Circulation.
+
+## 16. Adding a question type
 
 Add a check next to `isMatching` / `isStepped` in `js/quiz-engine.js` and add it to `qType()`. Then:
 - give `renderQuestion()` a renderer;

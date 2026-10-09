@@ -55,8 +55,9 @@ function qid(q,i){ return String(q && (q.id!=null?q.id:('q_'+(q.q||'').slice(0,4
 function isStepped(q){ return !!(q && !isMatching(q) && (q.type==='stepped' || Array.isArray(q.steps))); }
 function isStep(q){ return !!(q && q.__step); }
 /* SAQ (short answer): {q, answer, explain} — typed answer, lenient match. */
+function isOrder(q){ return !!(q && q.type==='order' && Array.isArray(q.stages)); }
 function isLabel(q){ return !!(q && q.type==='label' && Array.isArray(q.labels)); }
-function isSaq(q){ return !!(q && !isMatching(q) && !isStepped(q) && !isLabel(q) && (q.type==='saq' || (q.answer!=null && !Array.isArray(q.options)))); }
+function isSaq(q){ return !!(q && !isMatching(q) && !isStepped(q) && !isLabel(q) && !isOrder(q) && (q.type==='saq' || (q.answer!=null && !Array.isArray(q.options)))); }
 /* saq grading is STRICT: case, punctuation and slashes all count. Only leading/trailing
    whitespace is trimmed and runs of internal whitespace collapse to one space. */
 function saqNorm(s){ return String(s==null?'':s).trim().replace(/\s+/g,' '); }
@@ -73,12 +74,13 @@ function saqHint(q, typed){
   return 'not that one · try again';
 }
 function isSingleStep(q){ return isStep(q) && q.__stepCount===1; }
-function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':(isSaq(q)?'saq':(isLabel(q)?'label':'mcq'))); }
+function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':(isSaq(q)?'saq':(isLabel(q)?'label':(isOrder(q)?'order':'mcq')))); }
 function isAnswered(val,q){
   if(val==null) return false;
   if(isMatching(q)) return !!(val && val.correct);
   if(isSaq(q)) return !!(val && val.correct);
   if(isLabel(q)) return !!(val && val.correct);
+  if(isOrder(q)) return !!(val && val.correct);
   return val!==null && val!==undefined;
 }
 /* ADAPT: PT1 showToast defaults to 2200ms; the portal's showToast defaults to 2800ms. */
@@ -311,6 +313,8 @@ function prepareDeck(pool, opts){
       (q.steps||[]).forEach(st=>permuteChoices(st, shC));
     } else if(isLabel(q)){
       q.__chips=shuffle((q.labels||[]).map(l=>l.id)); // the word bank is always shuffled
+    } else if(isOrder(q)){
+      q.__order=orderShuffle(q); // never starts already in the right order
     } else if(q.options){
       permuteChoices(q, shC);
     }
@@ -561,6 +565,7 @@ function serializeDeck(deck){
     if(isMatching(q)) return {id:q.__id, L:(q.leftItems||[]).map(x=>x.id), R:(q.rightItems||[]).map(x=>x.id)};
     if(isStepped(q)) return {id:q.__id, steps:(q.steps||[]).map(st=>st.__perm||null)};
     if(isLabel(q)) return {id:q.__id, chips:Array.isArray(q.__chips)?q.__chips.slice():null};
+    if(isOrder(q)) return {id:q.__id, order:Array.isArray(q.__order)?q.__order.slice():null};
     return {id:q.__id, perm:q.__perm||null};
   });
 }
@@ -569,10 +574,12 @@ function serializeAnswers(){
   questions.forEach((q,i)=>{
     const a=answers[i];
     if(!isAnswered(a,q) && !(isMatching(q) && a && ((a.wires&&a.wires.length)||Object.keys(a.pairs||{}).length))
-       && !(isLabel(q) && a && a.slots && Object.keys(a.slots).length)) return;
+       && !(isLabel(q) && a && a.slots && Object.keys(a.slots).length)
+       && !(isOrder(q) && a && Array.isArray(a.order))) return;
     if(isMatching(q)) out[entryKey(q)]={pairs:Object.assign({},a.pairs||{}), correct:!!a.correct, wires:(a.wires||[]).map(w=>Object.assign({},w,{points:(w.points||[]).map(p=>({x:+p.x.toFixed(1),y:+p.y.toFixed(1)}))}))};
     else if(isSaq(q)) out[entryKey(q)]={text:String(a.text||''), correct:true};
     else if(isLabel(q)) out[entryKey(q)]={slots:Object.assign({},a.slots), correct:!!a.correct}; // partial progress too, per label id
+    else if(isOrder(q)) out[entryKey(q)]={order:a.order.slice(), locked:Object.keys(a.locked||{}).filter(k=>a.locked[k]), correct:!!a.correct};
     else out[entryKey(q)]=(q.__perm&&q.__perm[a]!=null)?q.__perm[a]:a;
   });
   return out;
@@ -613,6 +620,8 @@ function restoreRun(run){
       (q.steps||[]).forEach((st,k)=>applyPerm(st, d.steps&&d.steps[k]));
     } else if(isLabel(q)){
       q.__chips=Array.isArray(d.chips)?d.chips.slice():shuffle((q.labels||[]).map(l=>l.id));
+    } else if(isOrder(q)){
+      q.__order=(orderValid(q,d.order) && !d.order.every((id,k)=>id===orderIds(q)[k]))?d.order.slice():orderShuffle(q);
     } else if(q.options){
       applyPerm(q, d.perm);
     }
@@ -632,6 +641,15 @@ function restoreRun(run){
     }
     if(isSaq(q)){
       if(a && typeof a==='object' && a.correct && saqMatches(q, a.text)) answers[i]={text:String(a.text), correct:true};
+      return;
+    }
+    if(isOrder(q)){
+      // keep the saved arrangement; a lock only counts if that card really sits in its right place
+      if(a && typeof a==='object' && orderValid(q,a.order)){
+        const ids=orderIds(q), lk={};
+        (Array.isArray(a.locked)?a.locked:[]).forEach(id=>{ const k=a.order.indexOf(id); if(k>=0 && ids[k]===id) lk[id]=true; });
+        answers[i]={order:a.order.slice(), locked:lk, correct:Object.keys(lk).length===ids.length};
+      }
       return;
     }
     if(isLabel(q)){
@@ -663,7 +681,8 @@ function cardCounts(pool){
   const stepped=pool.filter(isStepped).length;
   const saq=pool.filter(isSaq).length;
   const label=pool.filter(isLabel).length;
-  return {linking, stepped, saq, label, choice:pool.length-linking-stepped-saq-label};
+  const order=pool.filter(isOrder).length;
+  return {linking, stepped, saq, label, order, choice:pool.length-linking-stepped-saq-label-order};
 }
 function cardBadgesHTML(card){
   let h='';
@@ -689,7 +708,7 @@ function appendPoolCard(grid, label, pool, card){
   const btn=document.createElement('button'); btn.type='button'; btn.className='card';
   btn.dataset.card=card.id;
   // PT1 line "N linking · M choice" + STEPPED count when the card has any
-  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'')+(c.label?(' · '+c.label+' labeling'):'');
+  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'')+(c.label?(' · '+c.label+' labeling'):'')+(c.order?(' · '+c.order+' ordering'):'');
   btn.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(label)}</span><span class="mood-stamp">${escapeHtml(meta.mood||'')}</span></div>${cardBadgesHTML(card)}
     <div class="card-sub">${sub}</div>
     <div class="card-stats"><div class="card-pct">${left} left</div><div class="card-meta">${pool.length-left} solved / ${pool.length}${inProgress?' · in progress':''}</div></div>`;
@@ -1056,10 +1075,12 @@ function renderNav(){
     b.classList.toggle('linking', isMatching(q));
     b.classList.toggle('saq', isSaq(q));
     b.classList.toggle('label', isLabel(q));
+    b.classList.toggle('order', isOrder(q));
     b.innerHTML=isMatching(q)
       ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">🔗</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
       : (isSaq(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">✎</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
       : isLabel(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">🏷</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
+      : isOrder(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">⇅</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
       : '<span class=\"q-nav-number\">'+(i+1)+'</span>');
     b.title=isMatching(q)?'Linking question'+(skipped?' — skipped — unanswered':(done?' — answered':''))
       :((isSaq(q)?'Short answer':'')+(skipped?((isSaq(q)?' — ':'')+'Skipped — unanswered'):(done?((isSaq(q)?' — ':'')+'Answered'):'')));
@@ -1380,6 +1401,284 @@ function labelLock(l, text, slot){
   fb.className='feedback good'; fb.textContent='✓ '+k+' of '+n+' labels';
   renderNav(); updateCounters(); saveRunState();
   if(hadFocus){ const nx=document.querySelector('.label-slot.typing input'); if(nx) try{ nx.focus({preventScroll:true}); }catch(e){} }
+}
+/* —— ORDER (put the stages in order) questions + original blood-flow animation ——
+   q: {id, type:'order', cat, title?, q, stages:[{id, text, part?}], explain}
+   The stages are listed in the right order in the bank; the run shows them shuffled
+   (never already solved). Answer state: {order:[stage ids as shown], locked:{id:true}, correct}. */
+function orderIds(q){ return (q.stages||[]).map(s=>s.id); }
+function orderShuffle(q){
+  const ids=orderIds(q); if(ids.length<2) return ids;
+  let o; do{ o=shuffle(ids); } while(o.every((id,k)=>id===ids[k]));
+  return o;
+}
+function orderValid(q, o){ const ids=orderIds(q); return Array.isArray(o) && o.length===ids.length && ids.every(id=>o.includes(id)); }
+function orderState(i){
+  const q=questions[i]; let a=answers[i];
+  if(!(a && typeof a==='object' && Array.isArray(a.order))){
+    a={order:orderValid(q,q.__order)?q.__order.slice():orderShuffle(q), locked:{}, correct:false};
+    answers[i]=a;
+  }
+  return a;
+}
+function orderStage(q,id){ return (q.stages||[]).find(s=>s.id===id); }
+const REDUCED_MOTION=()=>!!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+/* Schematic heart: our own drawing. Each part has waypoints the pulse travels through. */
+const FLOW_PARTS={
+  body:{pts:[[360,272],[300,272],[230,272],[170,272],[140,272]], oxyIn:true, oxyOut:false},
+  vc:{pts:[[140,272],[40,272],[40,120],[100,120]], oxy:false},
+  ra:{pts:[[100,120],[145,120]], oxy:false},
+  tv:{pts:[[145,145],[145,160]], oxy:false},
+  rv:{pts:[[145,170],[145,192]], oxy:false},
+  psv:{pts:[[120,192],[100,192]], oxy:false},
+  pa:{pts:[[100,192],[70,192],[70,30],[140,30]], oxy:false},
+  lungs:{pts:[[140,30],[175,30],[225,30],[260,30]], oxyIn:false, oxyOut:true},
+  pvn:{pts:[[260,30],[330,30],[330,120],[300,120]], oxy:true},
+  la:{pts:[[300,120],[255,120]], oxy:true},
+  mv:{pts:[[255,145],[255,160]], oxy:true},
+  lv:{pts:[[255,170],[255,192]], oxy:true},
+  av:{pts:[[280,192],[300,192]], oxy:true},
+  aorta:{pts:[[300,192],[340,192],[360,192],[360,272]], oxy:true},
+  cor:{pts:[[340,192],[340,246],[300,246],[250,246]], oxy:true},
+  myo:{pts:[[250,246],[200,240],[150,240]], oxyIn:true, oxyOut:false}
+};
+function flowSVG(){
+  const L=(x,y,t,cls)=>'<text x="'+x+'" y="'+y+'" class="flow-label'+(cls?' '+cls:'')+'">'+t+'</text>';
+  return '<svg class="flow-svg" viewBox="0 0 400 300" role="img" aria-label="Schematic heart showing the path of blood">'
+   +'<rect data-part="myo" class="flow-part flow-wall" x="88" y="86" width="224" height="160" rx="26"/>'
+   +'<rect data-part="lungs" class="flow-part flow-box" x="140" y="10" width="120" height="40" rx="10"/>'+L(200,25,'Lungs')
+   +'<rect data-part="body" class="flow-part flow-box" x="140" y="255" width="120" height="36" rx="10"/>'+L(200,287,'Body Tissues')
+   +'<rect data-part="ra" class="flow-part flow-chamber" x="100" y="95" width="90" height="50" rx="10"/>'+L(145,124,'RA')
+   +'<rect data-part="rv" class="flow-part flow-chamber" x="100" y="160" width="90" height="66" rx="12"/>'+L(145,200,'RV')
+   +'<rect data-part="la" class="flow-part flow-chamber" x="210" y="95" width="90" height="50" rx="10"/>'+L(255,124,'LA')
+   +'<rect data-part="lv" class="flow-part flow-chamber" x="210" y="160" width="90" height="66" rx="12"/>'+L(255,200,'LV')
+   +'<rect data-part="tv" class="flow-part flow-valve" x="125" y="147" width="40" height="10" rx="5"/>'
+   +'<rect data-part="mv" class="flow-part flow-valve" x="235" y="147" width="40" height="10" rx="5"/>'
+   +'<rect data-part="psv" class="flow-part flow-valve" x="93" y="182" width="10" height="20" rx="5"/>'
+   +'<rect data-part="av" class="flow-part flow-valve" x="297" y="182" width="10" height="20" rx="5"/>'
+   +'<path data-part="vc" class="flow-part flow-vessel deoxy" d="M140 272 H40 V120 H100"/>'+L(28,200,'Vena Cava','vert')
+   +'<path data-part="pa" class="flow-part flow-vessel deoxy" d="M100 192 H70 V30 H140"/>'+L(102,22,'Pulmonary Arteries','small')
+   +'<path data-part="pvn" class="flow-part flow-vessel oxy" d="M260 30 H330 V120 H300"/>'+L(298,22,'Pulmonary Veins','small')
+   +'<path data-part="aorta" class="flow-part flow-vessel oxy" d="M307 192 H360 V272"/>'+L(373,235,'Aorta','vert')
+   +'<path data-part="cor" class="flow-part flow-vessel oxy thin" d="M340 192 V246 H250"/>'
+   +L(295,262,'Coronary','small')+L(200,238,'Myocardium','small')
+   +L(145,141,'Tricuspid','tiny')+L(255,141,'Bicuspid (mitral)','tiny')
+   +'<path class="flow-trail deoxy-trail" d=""/><path class="flow-trail oxy-trail" d=""/>'
+   +'<circle class="flow-dot" r="7" cx="-20" cy="-20"/>'
+   +'</svg>';
+}
+/* waypoint list for a question's stages, each point tagged with stage + oxygenation */
+function flowRoute(q){
+  const out=[];
+  (q.stages||[]).forEach(st=>{
+    const P=FLOW_PARTS[st.part]; if(!P) return;
+    P.pts.forEach((pt,k)=>{
+      const oxy=('oxy' in P)?P.oxy:(k<P.pts.length-1?P.oxyIn:P.oxyOut);
+      out.push({x:pt[0],y:pt[1],stage:st.id,part:st.part,oxy});
+    });
+  });
+  return out;
+}
+let flowAnim=null;
+function flowHighlight(box, q, stageId){
+  box.querySelectorAll('.flow-part.flow-on').forEach(e=>e.classList.remove('flow-on'));
+  document.querySelectorAll('.order-card.flow-on').forEach(e=>e.classList.remove('flow-on'));
+  if(!stageId) return;
+  const st=orderStage(q,stageId); if(!st) return;
+  box.querySelectorAll('.flow-part[data-part="'+st.part+'"]').forEach(e=>e.classList.add('flow-on'));
+  const card=document.querySelector('.order-card[data-id="'+stageId+'"]'); if(card) card.classList.add('flow-on');
+}
+function flowStatic(box, q){
+  // reduced motion: the whole route at once, blue then red, with every part highlighted
+  const route=flowRoute(q);
+  const deoxy=[], oxy=[];
+  for(let k=1;k<route.length;k++){ const a=route[k-1], b=route[k]; (b.oxy?oxy:deoxy).push('M'+a.x+' '+a.y+'L'+b.x+' '+b.y); }
+  box.querySelector('.deoxy-trail').setAttribute('d',deoxy.join(''));
+  box.querySelector('.oxy-trail').setAttribute('d',oxy.join(''));
+  box.classList.add('is-static');
+  (q.stages||[]).forEach(st=>box.querySelectorAll('.flow-part[data-part="'+st.part+'"]').forEach(e=>e.classList.add('flow-path')));
+  const dot=box.querySelector('.flow-dot'); dot.setAttribute('cx',-20); dot.setAttribute('cy',-20);
+}
+function flowPlay(box, q){
+  if(flowAnim){ cancelAnimationFrame(flowAnim.raf); flowAnim=null; }
+  box.classList.remove('is-static','is-done');
+  box.querySelectorAll('.flow-part.flow-path').forEach(e=>e.classList.remove('flow-path'));
+  box.querySelector('.deoxy-trail').setAttribute('d',''); box.querySelector('.oxy-trail').setAttribute('d','');
+  if(REDUCED_MOTION()){ flowStatic(box,q); return; }
+  const route=flowRoute(q); if(route.length<2){ flowStatic(box,q); return; }
+  const segs=[]; let total=0;
+  for(let k=1;k<route.length;k++){ const a=route[k-1], b=route[k]; const len=Math.hypot(b.x-a.x,b.y-a.y); segs.push({a,b,len,start:total}); total+=len; }
+  const speed=110; // svg units per second
+  const dur=Math.max(2.5, total/speed)*1000;
+  const dot=box.querySelector('.flow-dot');
+  const trails={deoxy:[],oxy:[]};
+  let t0=null, lastStage=null;
+  box.classList.add('is-playing');
+  const frame=ts=>{
+    if(!box.isConnected){ flowAnim=null; return; }
+    if(t0==null) t0=ts;
+    const d=Math.min(1,(ts-t0)/dur)*total;
+    let s=segs.find(x=>d<=x.start+x.len) || segs[segs.length-1];
+    const f=s.len? Math.min(1,(d-s.start)/s.len) : 1;
+    const x=s.a.x+(s.b.x-s.a.x)*f, y=s.a.y+(s.b.y-s.a.y)*f;
+    // a segment takes the colour of where it ends: blue until the blood leaves the lungs, then red
+    const oxy=s.b.oxy;
+    dot.setAttribute('cx',x.toFixed(1)); dot.setAttribute('cy',y.toFixed(1));
+    dot.classList.toggle('oxy',oxy); dot.classList.toggle('deoxy',!oxy);
+    const stage=(f<1||s===segs[segs.length-1])?s.b.stage:s.b.stage;
+    if(stage!==lastStage){ lastStage=stage; flowHighlight(box,q,stage); box.dataset.stage=stage; }
+    const pts=[]; segs.forEach(g=>{ if(g.start<=d) pts.push(g); });
+    const dpts=[], opts=[];
+    pts.forEach(g=>{ const arr=g.b.oxy?opts:dpts; const end=(g===s)?{x,y}:g.b; arr.push('M'+g.a.x+' '+g.a.y+'L'+end.x.toFixed(1)+' '+end.y.toFixed(1)); });
+    box.querySelector('.deoxy-trail').setAttribute('d',dpts.join(''));
+    box.querySelector('.oxy-trail').setAttribute('d',opts.join(''));
+    if(d<total){ flowAnim={raf:requestAnimationFrame(frame)}; }
+    else { flowAnim=null; box.classList.remove('is-playing'); box.classList.add('is-done'); setTimeout(()=>{ if(box.isConnected){ flowHighlight(box,q,null); } },700); }
+  };
+  flowAnim={raf:requestAnimationFrame(frame)};
+}
+function flowPanelHTML(q){
+  return '<div class="flow-panel" id="flowPanel"><div class="flow-head"><span class="flow-title">Blood flow'+(q.title?' · '+escapeHtml(q.title):'')+'</span>'
+    +'<span class="flow-legend"><i class="lg deoxy"></i>deoxygenated <i class="lg oxy"></i>oxygenated</span>'
+    +'<button type="button" class="nav-btn flow-replay" id="flowReplay">↻ replay</button></div>'+flowSVG()+'</div>';
+}
+function mountFlowPanel(q, play){
+  const old=document.getElementById('flowPanel'); if(old) old.remove();
+  const wrap=document.querySelector('.order-wrap'); if(!wrap) return;
+  wrap.insertAdjacentHTML('beforeend', flowPanelHTML(q));
+  const box=document.getElementById('flowPanel');
+  box.querySelector('#flowReplay').addEventListener('click',()=>flowPlay(box,q));
+  if(play) flowPlay(box,q); else flowStatic(box,q);
+}
+function renderOrder(q, ans){
+  const opts=document.getElementById('options');
+  const a=(ans && Array.isArray(ans.order))?ans:{order:orderValid(q,q.__order)?q.__order.slice():orderIds(q), locked:{}, correct:false};
+  const wrap=document.createElement('div'); wrap.className='order-wrap';
+  let h='<ol class="order-list" id="orderList">';
+  a.order.forEach((id,k)=>{
+    const st=orderStage(q,id); if(!st) return;
+    const lk=!!a.locked[id];
+    h+='<li class="order-card'+(lk?' locked':'')+'" data-id="'+escapeHtml(id)+'"><span class="order-pos">'+(k+1)+'</span>'
+      +'<span class="order-grip" aria-hidden="true">'+(lk?'🔒':'⠿')+'</span><span class="order-text">'+escapeHtml(st.text)+'</span>'
+      +'<span class="order-btns"><button type="button" class="order-up" aria-label="Move '+escapeHtml(st.text)+' up"'+(lk?' disabled':'')+'>▲</button>'
+      +'<button type="button" class="order-down" aria-label="Move '+escapeHtml(st.text)+' down"'+(lk?' disabled':'')+'>▼</button></span></li>';
+  });
+  h+='</ol>';
+  if(!a.correct) h+='<div class="order-actions"><span class="order-progress" id="orderProgress">'+Object.keys(a.locked).length+' / '+a.order.length+' locked</span><button type="button" class="nav-btn primary order-check" id="orderCheck">Check</button></div>';
+  wrap.innerHTML=h;
+  opts.appendChild(wrap);
+  if(!a.correct){
+    wrap.querySelector('#orderCheck').addEventListener('click',()=>checkOrder());
+    wrap.querySelectorAll('.order-card:not(.locked)').forEach(li=>{
+      li.querySelector('.order-up').addEventListener('click',e=>{ e.stopPropagation(); orderMoveBy(li.dataset.id,-1); });
+      li.querySelector('.order-down').addEventListener('click',e=>{ e.stopPropagation(); orderMoveBy(li.dataset.id,1); });
+      li.addEventListener('pointerdown',e=>orderPointerDown(e,li));
+    });
+    orderUpdateButtons();
+  } else {
+    mountFlowPanel(q,false);
+  }
+}
+/* move inside the unlocked cards only: locked cards keep their place, the rest flow around them */
+function orderMoveTo(id, targetU){
+  const a=orderState(current);
+  const P=[], U=[]; a.order.forEach((x,k)=>{ if(!a.locked[x]){ P.push(k); U.push(x); } });
+  const from=U.indexOf(id); if(from<0) return false;
+  targetU=Math.max(0,Math.min(U.length-1,targetU));
+  if(targetU===from) return false;
+  U.splice(from,1); U.splice(targetU,0,id);
+  P.forEach((pos,k)=>{ a.order[pos]=U[k]; });
+  return true;
+}
+function orderMoveBy(id, dir){
+  if(!quizActive || locked) return;
+  const a=orderState(current);
+  const U=a.order.filter(x=>!a.locked[x]);
+  if(orderMoveTo(id, U.indexOf(id)+dir)){ orderRelayout(); saveRunState(); const b=document.querySelector('.order-card[data-id="'+id+'"] .order-'+(dir<0?'up':'down')); if(b && !b.disabled) b.focus({preventScroll:true}); else { const c=document.querySelector('.order-card[data-id="'+id+'"] .order-'+(dir<0?'down':'up')); if(c) c.focus({preventScroll:true}); } }
+}
+function orderRelayout(){
+  const a=answers[current]; const list=document.getElementById('orderList'); if(!a||!list) return;
+  a.order.forEach((id,k)=>{ const li=list.querySelector('.order-card[data-id="'+id+'"]'); if(li){ list.appendChild(li); li.querySelector('.order-pos').textContent=k+1; } });
+  orderUpdateButtons();
+}
+function orderUpdateButtons(){
+  const a=answers[current]; const q=questions[current];
+  const order=(a&&a.order)||q.__order||orderIds(q); const lk=(a&&a.locked)||{};
+  const U=order.filter(x=>!lk[x]);
+  document.querySelectorAll('.order-card:not(.locked)').forEach(li=>{
+    const u=U.indexOf(li.dataset.id);
+    li.querySelector('.order-up').disabled=(u<=0); li.querySelector('.order-down').disabled=(u>=U.length-1);
+  });
+}
+function orderPointerDown(e, li){
+  if(!quizActive || locked) return;
+  if(e.target.closest('button')) return;
+  if(e.pointerType==='mouse' && e.button!==0) return;
+  if(e.pointerType!=='mouse' && !e.target.closest('.order-grip')) return; // touch: drag by the grip, the rest scrolls
+  const list=document.getElementById('orderList');
+  const id=li.dataset.id; const sy=e.clientY; const grab=e.clientY-li.getBoundingClientRect().top;
+  let dragging=false;
+  const move=ev=>{
+    if(!dragging){ if(Math.abs(ev.clientY-sy)<6) return; dragging=true; li.classList.add('dragging'); orderState(current); }
+    ev.preventDefault();
+    if(ev.clientY<48) window.scrollBy(0,-14); else if(ev.clientY>window.innerHeight-48) window.scrollBy(0,14);
+    const a=answers[current];
+    const others=[...list.querySelectorAll('.order-card:not(.locked)')].filter(x=>x!==li);
+    let target=0; others.forEach(o=>{ const r=o.getBoundingClientRect(); if(ev.clientY>r.top+r.height/2) target++; });
+    if(orderMoveTo(id,target)) orderRelayout();
+    li.style.transform='translateY(0)';
+    const nat=li.getBoundingClientRect().top;
+    li.style.transform='translateY('+((ev.clientY-grab)-nat).toFixed(1)+'px)';
+  };
+  const end=()=>{
+    window.removeEventListener('pointermove',move); window.removeEventListener('pointerup',end); window.removeEventListener('pointercancel',end);
+    if(!dragging) return;
+    li.classList.remove('dragging'); li.style.transform='';
+    saveRunState();
+  };
+  window.addEventListener('pointermove',move,{passive:false});
+  window.addEventListener('pointerup',end); window.addEventListener('pointercancel',end);
+}
+function checkOrder(){
+  if(!quizActive || locked) return;
+  const q=questions[current]; if(!isOrder(q)) return;
+  const a=orderState(current); const ids=orderIds(q);
+  const fb=document.getElementById('feedback');
+  let newly=0, wrong=0;
+  a.order.forEach((id,k)=>{
+    if(a.locked[id]) return;
+    const li=document.querySelector('.order-card[data-id="'+id+'"]');
+    if(id===ids[k]){
+      a.locked[id]=true; newly++;
+      if(li){ li.classList.add('locked','just-locked'); li.querySelector('.order-grip').textContent='🔒'; li.querySelectorAll('button').forEach(b=>b.disabled=true);
+        const r=li.getBoundingClientRect(); if(typeof spawnFireworkBurst==='function') spawnFireworkBurst(r.left+r.width/2, r.top+r.height/2, 12); }
+      rewardCorrect();
+    } else {
+      wrong++;
+      if(li){ li.classList.remove('soft-wrong'); void li.offsetWidth; li.classList.add('soft-wrong'); setTimeout(()=>li.classList.remove('soft-wrong'),480); }
+    }
+  });
+  const n=ids.length, k=Object.keys(a.locked).length;
+  const pr=document.getElementById('orderProgress'); if(pr) pr.textContent=k+' / '+n+' locked';
+  if(k>=n){
+    a.correct=true; locked=true; onQuestionSolved(q);
+    fb.className='feedback good'; fb.textContent=correctFeedbackText(q);
+    const act=document.querySelector('.order-actions'); if(act) act.remove();
+    document.getElementById('mainPanel').classList.add('correct-pulse');
+    setTimeout(()=>document.getElementById('mainPanel').classList.remove('correct-pulse'),650);
+    pt1Confetti();
+    mountFlowPanel(q,true);
+    afterAnswerProgress();
+    return;
+  }
+  if(wrong){
+    if(window.StudyAchievements && typeof StudyAchievements.recordWrong==='function') StudyAchievements.recordWrong();
+    fb.className='feedback soft'; fb.textContent='not that one · try again';
+    clearTimeout(selectAnswer._t); selectAnswer._t=setTimeout(()=>{ if(!locked){ fb.className='feedback idle'; fb.textContent=''; } },1400);
+  }
+  orderUpdateButtons();
+  renderNav(); updateCounters(); saveRunState();
 }
 function renderMcq(q, answered){
   const opts=document.getElementById('options');
@@ -2170,13 +2469,14 @@ function renderQuestion(){
   }
   renderNav();
   updateCounters();
-  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':((isStep(q)&&!isSingleStep(q))?'stepped · ':(isSaq(q)?'short answer · ':(isLabel(q)?'labeling · ':''))))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
+  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':((isStep(q)&&!isSingleStep(q))?'stepped · ':(isSaq(q)?'short answer · ':(isLabel(q)?'labeling · ':(isOrder(q)?'ordering · ':'')))))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
   const opts=document.getElementById('options'); opts.innerHTML='';
   const answered=isAnswered(answers[current], q);
   locked=answered;
   if(isMatching(q)) renderMatching(q, answers[current]||{pairs:{},wires:[],checked:false,correct:false});
   else if(isSaq(q)) renderSaq(q, answers[current]);
   else if(isLabel(q)) renderLabel(q, answers[current]);
+  else if(isOrder(q)) renderOrder(q, answers[current]);
   else renderMcq(q, answered);
   const fb=document.getElementById('feedback');
   if(answered){ fb.className='feedback good'; fb.textContent=correctFeedbackText(q); }
@@ -2211,7 +2511,7 @@ function onQuestionSolved(q){
 /* PT1 3850–3890 (formula branches removed) */
 function selectAnswer(idx){
   if(!quizActive||locked) return;
-  const q=questions[current]; if(isMatching(q) || isSaq(q) || isLabel(q)) return;
+  const q=questions[current]; if(isMatching(q) || isSaq(q) || isLabel(q) || isOrder(q)) return;
   if(isStep(q) && !isUnlocked(current)) return;
   const fb=document.getElementById('feedback');
   if(idx!==q.correct){
@@ -2286,13 +2586,17 @@ function jumpToQuestion(i, dir){
   }
   stepTo(i);
 }
-function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)||isSaq(q)||isLabel(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
+function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)||isSaq(q)||isLabel(q)||isOrder(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
 
 /* —— PT1 3928–3949 finishQuiz + portal extras (elapsed, mood stamp, Mastery box, review) —— */
 function resultItemHTML(q,i){
   if(isMatching(q)){
     const ok=answers[i]&&answers[i].correct;
     return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">'+(ok?'All links locked':'Incomplete')+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
+  }
+  if(isOrder(q)){
+    const a=answers[i], ok=!!(a&&a.correct);
+    return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">'+(ok?'Put in order':'Not finished')+'</div><div class="rline rok">Correct order:</div><ol class="order-review">'+(q.stages||[]).map(s=>'<li>'+escapeHtml(s.text)+'</li>').join('')+'</ol><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
   }
   if(isLabel(q)){
     const a=answers[i], n=(q.labels||[]).length, k=labelDoneCount(q,a);
@@ -2536,4 +2840,4 @@ placeSettingsGear();
 
 window.StudyQuiz={ loadBank, ingestBank, startRun, resumeRun, startMasteryPlusRun, goHub, goPortal, renderHub, refreshHubCards,
   get bankKey(){ return BANK_KEY; }, get cards(){ return CARDS; }, get questions(){ return questions; }, get answers(){ return answers; },
-  get current(){ return current; }, get active(){ return quizActive; }, jumpToQuestion, selectAnswer, submitSaq, saqMatches, saqHint, goNext, goBack, idReport:()=>ID_REPORT, get lectureSet(){ return LECTURE_SET; } };
+  get current(){ return current; }, get active(){ return quizActive; }, jumpToQuestion, selectAnswer, submitSaq, saqMatches, saqHint, orderShuffle, goNext, goBack, idReport:()=>ID_REPORT, get lectureSet(){ return LECTURE_SET; } };
