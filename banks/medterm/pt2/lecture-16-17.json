@@ -249,7 +249,8 @@
             "prompt": "How many lobes are on the left?",
             "options": [
               "Two lobes",
-              "Three lobes"
+              "Three lobes",
+              "One lobe"
             ],
             "correct": 0
           },
@@ -258,12 +259,13 @@
             "prompt": "How many lobes are on the right?",
             "options": [
               "Three lobes",
-              "Two lobes"
+              "Two lobes",
+              "One lobe"
             ],
             "correct": 0
           }
         ],
-        "explain": "The lungs are two spongy organs in the thoracic cavity, enclosed by the diaphragm and rib cage. The left lung has two lobes and the right lung has three. Three and four are not the organ count. The abdominal cavity is not where they lie. The palate and uvula are mouth structures, and the larynx and trachea are airway tubes, not the enclosure. Two lobes is the left lung, not the right. Three lobes is the right lung, not the left."
+        "explain": "The lungs are two spongy organs in the thoracic cavity, enclosed by the diaphragm and rib cage. The left lung has two lobes and the right lung has three. Three and four are not the organ count. The abdominal cavity is not where they lie. The palate and uvula are mouth structures, and the larynx and trachea are airway tubes, not the enclosure. Two lobes is the left lung, not the right. Three lobes is the right lung, not the left. One lobe is not the count for either lung."
       },
       {
         "id": "MT16014",
@@ -1239,10 +1241,10 @@
         "cat": "MT_lec16-17",
         "q": "In the term aerosinusitis, which element carries the meaning of air?",
         "options": [
-          "The element aer, because it is the combining form for air",
-          "The element sinus, because it is the combining form for air",
-          "The element itis, because it is the combining form for air",
-          "The element capn, because it is the combining form for air"
+          "The element aer",
+          "The element sinus",
+          "The element itis",
+          "The element capn"
         ],
         "correct": 0,
         "explain": "Aerosinusitis contains aer, the combining form for air, with sinus and -itis. Sinus names the skull cavity, not air. The ending -itis names inflammation. Capn/o names carbon dioxide and is not in this word."
