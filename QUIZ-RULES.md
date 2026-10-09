@@ -216,7 +216,7 @@ progress, run, Mastery and mood stamp (saved under its own file path, for exampl
       "bank": "banks/medterm/pt2/lecture-16-17.json", "status": "ready", "draft": true } ] }
 ```
 
-Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 614 questions).
+Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 656 questions).
 Lectures 14 & 15, 16 & 17 and 18–20 are marked Draft. No card is "coming soon" at
 the moment, but the option is still there for future lectures:
 
