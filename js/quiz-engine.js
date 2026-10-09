@@ -371,18 +371,25 @@ function placeSettingsGear(){
     var lines=titleLineRects(title);
     if(!lines.length) return;
     var gr=gear.getBoundingClientRect();
+    if(def.side==='left'){
+      // ADAPT: left-side buttons go above the title. Besides the title lines,
+      // the hub's "← Study Portal" button above the title is checked too.
+      var targets=lines.slice();
+      view.querySelectorAll('.hub-back button').forEach(function(btn){ var r=btn.getBoundingClientRect(); if(r.width&&r.height) targets.push(r); });
+      var hitTop=Infinity;
+      targets.forEach(function(r){ if(rectsHit(gr,r)) hitTop=Math.min(hitTop,r.top); });
+      if(hitTop===Infinity) return;
+      var down=Math.ceil(gr.bottom-hitTop+10);
+      var pad=parseFloat(getComputedStyle(view).paddingTop)||0;
+      view.style.setProperty('--corner-top-push', (pad+down)+'px');
+      view.classList.add('corner-pushed');
+      return;
+    }
     var hit=false;
     for(var i=0;i<lines.length;i++){
       if(rectsHit(gr, lines[i])){ hit=true; break; }
     }
     if(!hit) return;
-    if(def.side==='left'){
-      // left-side buttons go above the title
-      var down=Math.ceil(gr.bottom-lines[0].top+10);
-      view.style.setProperty('--corner-top-push', down+'px');
-      view.classList.add('corner-pushed');
-      return;
-    }
     var lineH=lines[0].height;
     var naturalRight=lines[0].right;
     var naturalBottom=lines[0].bottom;
