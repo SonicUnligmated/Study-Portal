@@ -109,6 +109,15 @@ A question without an explanation just shows ✓ (never "undefined").
   achievements. Before the last step you see "✓ step k of n · next step unlocked".
 - The explanation appears after the **last** step. Only then is the question
   solved, both for the card and for Mastery.
+- **Series recap:** when the last open step of a stepped question is answered
+  correctly, a "Series recap" card appears under the explanation. It lists every step
+  in order, each with its prompt ("Step 1 …") and its correct answer in the success
+  colour, joined by ↓ arrows like a small flowchart. The usual explanation, celebration
+  and reward still happen. The recap shows again whenever you revisit any step of a
+  finished series (Back, the navigator, or a resumed saved run). It never shows while
+  a step is still open, and not for one-step questions. The results list shows the same
+  recap under each finished stepped question. It uses the theme colours, so it follows
+  the mood themes and light/dark mode, and it wraps to fit narrow phone screens.
 - The `group` / `groupOrder` fields are ignored, so stepped questions shuffle like any other question.
 - A stepped question with **only one step** behaves like a normal question: one plain
   numbered pill (no 🦴 range), no "Step 1 / 1" badge and no "stepped ·" tag. It is

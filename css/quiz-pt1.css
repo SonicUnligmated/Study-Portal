@@ -514,3 +514,21 @@ html.bg-edit-hide-glows body{
 .pt1q .card.card-soon{opacity:.6;cursor:not-allowed;filter:saturate(.7)}
 .pt1q .card.card-soon:hover{transform:none;border-color:rgba(var(--accent-0-rgb),.22);box-shadow:0 10px 28px -18px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.04)}
 .pt1q .card.card-soon .card-sub{color:var(--text-dim)}
+
+/* —— STEPPED series recap (shown once every step of a stepped question is answered) —— */
+.pt1q .step-recap,.step-recap{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:rgba(var(--accent-0-rgb),.06);color:var(--text);font-family:var(--body);box-sizing:border-box;max-width:100%;overflow-wrap:anywhere;animation:stepRecapIn .35s ease both}
+.step-recap-title{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px}
+.step-recap-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;align-items:stretch}
+.step-recap-item{padding:8px 10px;border-radius:10px;border:1px solid var(--border);background:rgba(var(--accent-0-rgb),.04);min-width:0}
+.step-recap-item.is-current{border-color:rgba(var(--accent-0-rgb),.45)}
+.step-recap-label{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;font-size:.9rem;line-height:1.35;color:var(--text-dim)}
+.step-recap-num{flex:none;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:999px;color:var(--accent-0);border:1px solid rgba(var(--accent-0-rgb),.4);background:rgba(var(--accent-0-rgb),.08)}
+.step-recap-prompt{min-width:0}
+.step-recap-answer{margin-top:5px;display:flex;gap:6px;align-items:baseline;font-weight:600;color:var(--success);line-height:1.35}
+.step-recap-check{flex:none}
+.step-recap-arrow{display:flex;justify-content:center;padding:2px 0;color:rgba(var(--accent-0-rgb),.7);line-height:0}
+.step-recap.in-review{margin:8px 0 2px;padding:10px 12px}
+.step-recap.in-review .step-recap-item{padding:6px 8px}
+@keyframes stepRecapIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.step-recap{animation:none}}
+@media (max-width:480px){.pt1q .step-recap,.step-recap{padding:10px}.step-recap-label{font-size:.85rem}}

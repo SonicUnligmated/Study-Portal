@@ -1893,6 +1893,29 @@ function correctFeedbackText(q){
   }
   return '✓ '+(q.explain||'');
 }
+/* STEPPED series recap: once every step of a stepped question is answered, show the
+   whole series as a small vertical flowchart (step prompt → its correct answer → ↓ next step).
+   Never shown while a step is still open; one-step questions read as normal questions. */
+function stepRecapHTML(i, inReview){
+  const q=questions[i];
+  if(!isStep(q) || isSingleStep(q) || !boneDone(i)) return '';
+  const a=boneStart(i), b=boneEnd(i);
+  let h='<div class="step-recap'+(inReview?' in-review':'')+'"'+(inReview?'':' id="stepRecap"')+' role="group" aria-label="Series recap"><div class="step-recap-title">Series recap</div><ol class="step-recap-list">';
+  for(let j=a;j<=b;j++){
+    const s=questions[j], ans=(s.options||[])[s.correct];
+    h+='<li class="step-recap-item'+(j===i?' is-current':'')+'"><div class="step-recap-label"><span class="step-recap-num">Step '+(s.__stepIdx+1)+'</span><span class="step-recap-prompt">'+escapeHtml(s.prompt||'')+'</span></div>'
+      +'<div class="step-recap-answer"><span class="step-recap-check" aria-hidden="true">✓</span><span class="step-recap-text">'+escapeHtml(ans==null?'':String(ans))+'</span></div></li>';
+    if(j<b) h+='<li class="step-recap-arrow" aria-hidden="true"><svg viewBox="0 0 16 22" width="16" height="22"><path d="M8 1v17M3 13l5 6 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>';
+  }
+  return h+'</ol></div>';
+}
+function renderStepRecap(){
+  const old=document.getElementById('stepRecap'); if(old) old.remove();
+  const html=quizActive && questions[current] ? stepRecapHTML(current) : '';
+  if(!html) return;
+  const fb=document.getElementById('feedback'); if(!fb) return;
+  fb.insertAdjacentHTML('afterend', html);
+}
 function renderQuestion(){
   const q=questions[current];
   drawState=null;
@@ -1943,6 +1966,7 @@ function renderQuestion(){
   const fb=document.getElementById('feedback');
   if(answered){ fb.className='feedback good'; fb.textContent=correctFeedbackText(q); }
   else { fb.className='feedback idle'; fb.textContent=''; }
+  renderStepRecap();
   document.getElementById('backBtn').disabled=(prevTarget()<0);
   updateBackSkipGlow();
   updateNextActionButton();
@@ -1990,6 +2014,7 @@ function selectAnswer(idx){
   locked=true; answers[current]=idx; onQuestionSolved(q);
   document.querySelectorAll('.opt').forEach((o,i)=>{ o.disabled=true; if(i===idx) o.classList.add('correct'); });
   fb.className='feedback good'; fb.textContent=correctFeedbackText(q);
+  renderStepRecap();
   document.getElementById('mainPanel').classList.add('correct-pulse');
   setTimeout(()=>document.getElementById('mainPanel').classList.remove('correct-pulse'),650);
   pt1Confetti();
@@ -2064,7 +2089,7 @@ function resultItemHTML(q,i){
     ? '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rstep">Step '+(q.__stepIdx+1)+' / '+q.__stepCount+' · '+escapeHtml(q.prompt||'')+'</div>'
     : '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div>';
   const showEx=!isStep(q) || q.__stepIdx===q.__stepCount-1;
-  return head+'<div class="rline '+(ok?'rok':'rbad')+'">Your pick: '+(pick==null?'—':escapeHtml(opts[pick]))+'</div><div class="rline rok">Correct: '+escapeHtml(opts[q.correct]==null?'':opts[q.correct])+'</div>'+(showEx?'<div class="rex">'+escapeHtml(q.explain||'')+'</div>':'');
+  return head+'<div class="rline '+(ok?'rok':'rbad')+'">Your pick: '+(pick==null?'—':escapeHtml(opts[pick]))+'</div><div class="rline rok">Correct: '+escapeHtml(opts[q.correct]==null?'':opts[q.correct])+'</div>'+(showEx?'<div class="rex">'+escapeHtml(q.explain||'')+'</div>':'')+((isStep(q) && q.__stepIdx===q.__stepCount-1)?stepRecapHTML(i,true):'');
 }
 function fillResults(list){
   list.innerHTML='';
