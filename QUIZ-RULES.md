@@ -131,6 +131,12 @@ A question without an explanation just shows ✓ (never "undefined").
   - Every id in a bank should be unique.
   - A missing id falls back to PT1's `qid()` (start of the question text + position).
   - Duplicates get a "~2" suffix and are reported in the browser console.
+  - If a question keeps its id but **changes type** (for example MT18009, which went
+    from a choice question to a 2-step question), a half-finished run still resumes.
+    A saved answer of the wrong shape is ignored, so the question just shows as
+    unanswered. Steps are saved as `<id>#<step id>`, so an old choice answer saved
+    under the plain id never fills a step. Solved marks and Mastery counts stay,
+    because they are kept by id.
 - Local storage: one key per bank, `sp_bank_v1:<bank>` (for example `sp_bank_v1:medphys/pt1`).
 - Cloud: inside the existing `forms` part of your profile as `b_<bank>` entries
   (the database rules only allow the old top-level fields). The drawn linking

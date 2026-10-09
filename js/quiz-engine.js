@@ -625,6 +625,10 @@ function restoreRun(run){
       if(a && typeof a==='object' && a.correct && saqMatches(q, a.text)) answers[i]={text:String(a.text), correct:true};
       return;
     }
+    // Choice / step answers are saved as one original option index. Anything else
+    // (an object saved for another type, or an id whose question changed type)
+    // is ignored, so the question simply shows as unanswered.
+    if(!Number.isInteger(a) || !q.options || a<0 || a>=q.options.length) return;
     const idx=(q.__perm||[]).indexOf(a);
     if(idx>=0 && idx===q.correct) answers[i]=idx;
   });

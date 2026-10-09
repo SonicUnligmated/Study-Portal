@@ -123,17 +123,34 @@
       },
       {
         "id": "MT18009",
-        "type": "mcq",
+        "type": "stepped",
         "cat": "MT_lec18-20",
-        "q": "Which pair of counts correctly gives the cranial nerves and the spinal nerves?",
-        "options": [
-          "31 pairs of cranial nerves and 12 pairs of spinal nerves.",
-          "12 pairs of cranial nerves and 30 pairs of spinal nerves.",
-          "12 pairs of cranial nerves and 31 pairs of spinal nerves.",
-          "31 pairs of cranial nerves and 31 pairs of spinal nerves."
+        "q": "The peripheral nervous system has nerves arising from the brain and from the spinal cord. Answer each step.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "How many pairs of cranial nerves arise from the brain?",
+            "options": [
+              "11 pairs",
+              "12 pairs",
+              "30 pairs",
+              "31 pairs"
+            ],
+            "correct": 1
+          },
+          {
+            "id": "2",
+            "prompt": "How many pairs of spinal nerves arise from the spinal cord?",
+            "options": [
+              "11 pairs",
+              "12 pairs",
+              "30 pairs",
+              "31 pairs"
+            ],
+            "correct": 3
+          }
         ],
-        "correct": 2,
-        "explain": "There are 12 pairs of cranial nerves arising from the brain and 31 pairs of spinal nerves arising from the spinal cord. \"31 pairs of cranial nerves and 12 pairs of spinal nerves\" swaps the two counts. \"12 pairs of cranial nerves and 30 pairs of spinal nerves\" miscounts the spinal nerves. \"31 pairs of cranial nerves and 31 pairs of spinal nerves\" gives the spinal count to both sets."
+        "explain": "There are 12 pairs of cranial nerves arising from the brain and 31 pairs of spinal nerves arising from the spinal cord. 11 and 30 are close but wrong counts, and 31 cranial or 12 spinal swaps the two numbers."
       },
       {
         "id": "MT18010",
@@ -1339,7 +1356,7 @@
             "correct": 0
           }
         ],
-        "explain": "This relay chamber is the thalamus. Thalamas, Thalmus, and Thallamus miss that spelling. The thalamus lies in the diencephalon, the region that contains both the thalamus and the hypothalamus. The mesencephalon is the mid-brain level of the brainstem, the cerebellum coordinates skeletal muscle below the occipital lobes, and the cerebral cortex is the outer gray layer of the cerebrum. The hypothalamus, the autonomic control center, lies below it. Above it is not where that center lies. Inside its cortex and lateral in the skull are not the position taught for the hypothalamus."
+        "explain": "This relay chamber is the thalamus. Thalamas, Thalmus, and Thallamus miss that spelling. The thalamus lies in the diencephalon, the region that contains both the thalamus and the hypothalamus. The mesencephalon is the mid-brain level of the brainstem, the cerebellum coordinates skeletal muscle below the occipital lobes, and the cerebral cortex is the outer gray layer of the cerebrum. The hypothalamus, the autonomic control center, lies below the thalamus. Above it is not where that center lies. Inside its cortex and lateral in the skull are not the position taught for the hypothalamus."
       },
       {
         "id": "MT18068",
