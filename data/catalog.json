@@ -96,7 +96,7 @@
         {
           "id": "pt2",
           "title": "Periodic Test 2",
-          "subtitle": "5 lecture sets · 466 questions · choice, linking, stepped & short answer · 2 coming soon",
+          "subtitle": "7 lecture sets · 615 questions · choice, linking, stepped & short answer",
           "draft": true,
           "locked": false,
           "lectures": [
@@ -146,16 +146,16 @@
             },
             {
               "id": "lec16-17",
-              "title": "Lectures 16 & 17",
-              "bank": null,
-              "status": "soon",
+              "title": "Lectures 16 & 17 – Respiratory System",
+              "bank": "banks/medterm/pt2/lecture-16-17.json",
+              "status": "ready",
               "draft": true
             },
             {
               "id": "lec18-20",
-              "title": "Lectures 18, 19 & 20",
-              "bank": null,
-              "status": "soon",
+              "title": "Lectures 18, 19 & 20 – Nervous System",
+              "bank": "banks/medterm/pt2/lecture-18-20.json",
+              "status": "ready",
               "draft": true
             }
           ]

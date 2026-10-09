@@ -206,13 +206,18 @@ progress, run, Mastery and mood stamp (saved under its own file path, for exampl
   "lectures": [
     { "id": "lec09", "title": "Lecture 9 – Combining Forms (Part 2 of 2)",
       "bank": "banks/medterm/pt2/lecture-09.json", "status": "ready", "draft": false },
-    { "id": "lec16-17", "title": "Lectures 16 & 17", "bank": null,
-      "status": "soon", "draft": true } ] }
+    { "id": "lec16-17", "title": "Lectures 16 & 17 – Respiratory System",
+      "bank": "banks/medterm/pt2/lecture-16-17.json", "status": "ready", "draft": true } ] }
 ```
 
+Periodic Test 2 now has all seven lecture sets (Lectures 9 to 20, 615 questions).
+Lectures 14 & 15, 16 & 17 and 18–20 are marked Draft. No card is "coming soon" at
+the moment, but the option is still there for future lectures:
+
 - `status: "ready"` needs a `bank`. Its card shows the counts per type and plays as usual.
-- `status: "soon"` (or `bank: null`) gives a dimmed card that **cannot be clicked**.
-  It shows only the title and its badges.
+- `status: "soon"` (or `bank: null`) gives a dimmed "Coming soon" card that
+  **cannot be clicked**. It shows only the title and its badges. Example:
+  `{ "id": "lec21", "title": "Lecture 21", "bank": null, "status": "soon", "draft": true }`.
 - `note` is optional and only for people editing the catalog.
 - To add a lecture later, put its file in `banks/medterm/pt2/`, set `bank`, and
   change `status` to `"ready"`.
