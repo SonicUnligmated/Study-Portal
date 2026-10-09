@@ -2013,6 +2013,39 @@ document.addEventListener('keydown', e=>{
   }
 });
 
+/* —— FIX: the fixed connection pill (top right) must not sit on top of the
+   run's header buttons (Return / Fullscreen) when the page is scrolled. While
+   its normal spot would cover one of those buttons, it slides down just below
+   them; once the buttons scroll away it returns to its corner. —— */
+function dodgeHeaderButtons(){
+  const pill=document.getElementById('netStatus');
+  if(!pill) return;
+  const clear=()=>{ if(pill.style.top){ pill.style.top=''; } pill.classList.remove('corner-dodged'); };
+  if(pill.classList.contains('corner-parked') || pill.hidden){ clear(); return; }
+  const view=document.querySelector('.app.view.active');
+  const btns=view?[...view.querySelectorAll('.header-right button')]:[];
+  if(!btns.length){ clear(); return; }
+  // where the pill sits when not dodging
+  const cur=pill.getBoundingClientRect();
+  const homeTop=parseFloat(getComputedStyle(pill).getPropertyValue('--net-home-top'))||cur.top-(pill.classList.contains('corner-dodged')?(parseFloat(pill.dataset.dodge)||0):0);
+  const home={left:cur.left,right:cur.right,top:homeTop,bottom:homeTop+cur.height};
+  let bottom=-Infinity;
+  btns.forEach(btn=>{ const r=btn.getBoundingClientRect(); if(r.width && r.height && r.bottom>0 && rectsHit(home,r)) bottom=Math.max(bottom,r.bottom); });
+  if(bottom===-Infinity){ clear(); return; }
+  const top=Math.round(bottom+6)+'px';
+  if(pill.style.top!==top){ pill.style.top=top; }
+  pill.dataset.dodge=String(Math.round(bottom+6)-homeTop);
+  pill.classList.add('corner-dodged');
+}
+(function wireDodge(){
+  let raf=0;
+  const go=()=>{ cancelAnimationFrame(raf); raf=requestAnimationFrame(dodgeHeaderButtons); };
+  addEventListener('scroll',go,{passive:true,capture:true});
+  addEventListener('resize',go);
+  const _place=placeSettingsGear;
+  placeSettingsGear=function(){ _place(); dodgeHeaderButtons(); };
+})();
+
 /* —— gear/corner placement triggers (PT1 3990–3994 + portal buttons appearing late) —— */
 window.addEventListener('resize', placeSettingsGear);
 if(document.fonts&&document.fonts.ready){
@@ -2031,7 +2064,7 @@ if(document.fonts&&document.fonts.ready){
       watched.add(el);
       new MutationObserver(m=>{
         // ignore the class flip placeSettingsGear itself makes
-        if(m.every(r=>r.type==='attributes' && r.attributeName==='class' && /corner-parked/.test(String(r.oldValue||'')+' '+el.className))) return;
+        if(m.every(r=>r.type==='attributes' && ((r.attributeName==='class' && /corner-(parked|dodged)/.test(String(r.oldValue||'')+' '+el.className)) || r.attributeName==='style' || r.attributeName==='data-dodge'))) return;
         again();
       }).observe(el,{attributes:true,attributeOldValue:true,attributeFilter:['hidden','style','class'],childList:true,characterData:true,subtree:true});
       again();
