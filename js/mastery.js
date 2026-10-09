@@ -1,4 +1,19 @@
-/* Study Portal — Mastery / Mastery+ / DNSA (ATC-inspired, form-bank adapted) */
+/* Study Portal — Mastery / Mastery+ / DNSA (ATC-inspired).
+ *
+ * v2 (pt1-quiz-upgrade): everything is stored by QUESTION ID, not by position.
+ *   data[bankKey] = {
+ *     q:      { <questionId>: clearCount },          // how many layers cleared
+ *     cards:  { <cardId>: { masteryPlusLevel, timeSpent } },
+ *     timeSpent, masteryPlusLevel,
+ *     forms:  { ... }   // legacy v1 position data, kept read-only for safety
+ *     migratedForms: true                             // set once v1 → v2 done
+ *   }
+ *   dnsa[bankKey] = { "id:<questionId>": true }     // legacy "A_3" keys are migrated
+ *
+ * A "card" is a hub card (category or chunk). The quiz engine registers each
+ * card's question ids with registerCard(), so percentages are computed from
+ * the real bank contents.
+ */
 (function (global) {
   const STORAGE_KEY = 'study_portal_mastery_v1';
   const DNSA_KEY = 'study_portal_dnsa_v1';
@@ -10,11 +25,13 @@
     'linear-gradient(90deg,#fbbf24,#34d399,#a78bfa,#22d3ee)'
   ];
 
-  let data = {}; // bankKey -> { forms: { A: { clearCount:[], total, masteryPlusLevel, timeSpent } }, timeSpent, masteryPlusLevel }
-  let dnsa = {}; // bankKey -> { "form_qIndex": true }
+  let data = {};
+  let dnsa = {};
+  const registry = {}; // bankKey -> cardId -> [ids]   (runtime only)
   let session = {
     bankKey: null,
-    form: null,
+    form: null, // = cardId (name kept for older callers)
+    ids: [],
     masteryPlusLevel: 0,
     timerStart: null,
     accumulated: 0,
@@ -59,6 +76,10 @@
     data = masteryData && typeof masteryData === 'object' ? masteryData : {};
     dnsa = dnsaData && typeof dnsaData === 'object' ? dnsaData : {};
     save({ skipCloud: !!opts.skipCloud });
+    // Cloud copies from older app versions may still carry position data.
+    if (global.StudyMigrate && typeof StudyMigrate.migrateMastery === 'function') {
+      StudyMigrate.migrateMastery().catch(function () {});
+    }
   }
 
   function bankKeyFromPath(path) {
@@ -68,78 +89,94 @@
     return String(path || 'unknown').replace(/^banks\//, '').replace(/\.json$/, '');
   }
 
-  function formKey(bankKey, form) {
-    return bankKey + '::' + form;
-  }
-
-  function getOrInitForm(bankKey, form, totalQs) {
-    if (!data[bankKey]) data[bankKey] = { forms: {}, timeSpent: 0, masteryPlusLevel: 0 };
-    const bk = data[bankKey];
-    if (!bk.forms[form]) {
-      const n = Math.max(0, totalQs | 0);
-      bk.forms[form] = {
-        clearCount: Array(n).fill(0),
-        total: n,
-        masteryPlusLevel: 0,
-        timeSpent: 0
-      };
-    } else if (totalQs && bk.forms[form].clearCount.length !== totalQs) {
-      // resize carefully
-      const old = bk.forms[form].clearCount;
-      const next = Array(totalQs).fill(0);
-      for (let i = 0; i < Math.min(old.length, totalQs); i++) next[i] = old[i] | 0;
-      bk.forms[form].clearCount = next;
-      bk.forms[form].total = totalQs;
-    }
-    return bk.forms[form];
-  }
-
   function getOrInitBank(bankKey) {
-    if (!data[bankKey]) data[bankKey] = { forms: {}, timeSpent: 0, masteryPlusLevel: 0 };
-    return data[bankKey];
-  }
-
-  /** masteryPct 0–100 from first clears */
-  function getPct(bankKey, form) {
-    const f = data[bankKey] && data[bankKey].forms && data[bankKey].forms[form];
-    if (!f || !f.total) return 0;
-    const cleared = f.clearCount.filter((c) => c > 0).length;
-    return Math.min(100, (cleared / f.total) * 100);
-  }
-
-  /** Effective % allowing 100+/150/200 via min clearCount layers (ATC getSectionEffectivePct) */
-  function getEffectivePct(bankKey, form) {
-    const f = data[bankKey] && data[bankKey].forms && data[bankKey].forms[form];
-    if (!f || !f.clearCount || !f.clearCount.length) return 0;
-    const arr = f.clearCount;
-    let minCC = Infinity;
-    for (let i = 0; i < arr.length; i++) minCC = Math.min(minCC, arr[i] | 0);
-    if (minCC === Infinity) return 0;
-    if (minCC === 0) return Math.min(99, getPct(bankKey, form));
-    let beyond = 0;
-    for (let i = 0; i < arr.length; i++) if ((arr[i] | 0) > minCC) beyond++;
-    return minCC * 100 + (beyond / arr.length) * 100;
-  }
-
-  /** Aggregate bank effective = average of forms with data, or max */
-  function getBankEffectivePct(bankKey) {
+    if (!data[bankKey]) data[bankKey] = { q: {}, cards: {}, timeSpent: 0, masteryPlusLevel: 0 };
     const bk = data[bankKey];
-    if (!bk || !bk.forms) return 0;
-    const forms = Object.keys(bk.forms);
-    if (!forms.length) return 0;
-    let sum = 0;
-    forms.forEach((f) => (sum += getEffectivePct(bankKey, f)));
-    return sum / forms.length;
+    if (!bk.q || typeof bk.q !== 'object') bk.q = {};
+    if (!bk.cards || typeof bk.cards !== 'object') bk.cards = {};
+    return bk;
   }
 
-  function getDisplayInfo(bankKey, form) {
-    const pct = form ? getPct(bankKey, form) : Math.min(100, getBankEffectivePct(bankKey));
+  function getOrInitCard(bankKey, cardId) {
+    const bk = getOrInitBank(bankKey);
+    const k = String(cardId || '');
+    if (!bk.cards[k]) bk.cards[k] = { masteryPlusLevel: 0, timeSpent: 0 };
+    return bk.cards[k];
+  }
+
+  /** Engine tells Mastery which ids belong to a card. */
+  function registerCard(bankKey, cardId, ids) {
+    if (!registry[bankKey]) registry[bankKey] = {};
+    registry[bankKey][String(cardId)] = (ids || []).map(String);
+  }
+  function cardIds(bankKey, cardId) {
+    if (Array.isArray(cardId)) return cardId.map(String);
+    const r = registry[bankKey] && registry[bankKey][String(cardId)];
+    return r ? r.slice() : [];
+  }
+  function countOf(bankKey, id) {
+    const bk = data[bankKey];
+    return (bk && bk.q && (bk.q[id] | 0)) || 0;
+  }
+
+  /** Mastery % 0–100 (first clears) for a card */
+  function getPct(bankKey, cardId) {
+    const ids = cardIds(bankKey, cardId);
+    if (!ids.length) return 0;
+    let cleared = 0;
+    ids.forEach((id) => { if (countOf(bankKey, id) > 0) cleared++; });
+    return Math.min(100, (cleared / ids.length) * 100);
+  }
+
+  /** Effective % allowing 100+/150/200 via min clearCount layers */
+  function getEffectivePct(bankKey, cardId) {
+    const ids = cardIds(bankKey, cardId);
+    if (!ids.length) return 0;
+    let minCC = Infinity;
+    ids.forEach((id) => { minCC = Math.min(minCC, countOf(bankKey, id)); });
+    if (minCC === Infinity) return 0;
+    if (minCC === 0) return Math.min(99, getPct(bankKey, cardId));
+    let beyond = 0;
+    ids.forEach((id) => { if (countOf(bankKey, id) > minCC) beyond++; });
+    return minCC * 100 + (beyond / ids.length) * 100;
+  }
+
+  /** Bank effective = average over registered cards (or over all cleared ids) */
+  function getBankEffectivePct(bankKey) {
+    const reg = registry[bankKey];
+    if (reg && Object.keys(reg).length) {
+      const cards = Object.keys(reg);
+      let sum = 0;
+      cards.forEach((c) => (sum += getEffectivePct(bankKey, c)));
+      return sum / cards.length;
+    }
+    const bk = data[bankKey];
+    if (!bk || !bk.q) return 0;
+    const ids = Object.keys(bk.q);
+    if (!ids.length) return 0;
+    // Without the bank loaded we only know cleared ids: report layers reached.
+    let min = Infinity;
+    ids.forEach((id) => (min = Math.min(min, bk.q[id] | 0)));
+    return Math.max(0, min) * 100;
+  }
+
+  function isBankFullyCleared(bankKey) {
+    const reg = registry[bankKey];
+    if (!reg) return false;
+    const all = {};
+    Object.keys(reg).forEach((c) => reg[c].forEach((id) => (all[id] = true)));
+    const ids = Object.keys(all);
+    return ids.length > 0 && ids.every((id) => countOf(bankKey, id) > 0);
+  }
+
+  function getDisplayInfo(bankKey, cardId) {
+    const pct = cardId ? getPct(bankKey, cardId) : Math.min(100, getBankEffectivePct(bankKey));
     if (pct <= 0) return null;
     return { pct: Math.round(pct) };
   }
 
-  function badgeHTML(bankKey, form) {
-    const eff = form ? getEffectivePct(bankKey, form) : getBankEffectivePct(bankKey);
+  function badgeHTML(bankKey, cardId) {
+    const eff = cardId ? getEffectivePct(bankKey, cardId) : getBankEffectivePct(bankKey);
     if (eff <= 0) return '';
     const str = parseFloat(eff.toFixed(2)) + '%';
     let label = '';
@@ -159,30 +196,36 @@
     return '<span class="section-mastery-badge" style="color:' + color + '">' + label + '</span>';
   }
 
-  /** First correct lock-in (or Mastery+ re-clear) */
-  function recordClear(bankKey, form, qIndex, totalQs) {
-    const f = getOrInitForm(bankKey, form, totalQs);
-    const i = qIndex | 0;
-    if (i < 0 || i >= f.clearCount.length) return f;
-    const level = session.masteryPlusLevel | 0;
-    // Increment clearCount when answering at current mastery layer
-    if ((f.clearCount[i] | 0) <= level) {
-      f.clearCount[i] = (f.clearCount[i] | 0) + 1;
-    }
-    // Track DNSA if toggled for this question
-    if (session.dnsaActive && level >= 1) {
+  /** Correct lock-in of a whole question (a stepped question counts once). */
+  function recordClearId(bankKey, id) {
+    const bk = getOrInitBank(bankKey);
+    const k = String(id);
+    const level = session.bankKey === bankKey ? session.masteryPlusLevel | 0 : 0;
+    if ((bk.q[k] | 0) <= level) bk.q[k] = (bk.q[k] | 0) + 1;
+    if (session.dnsaActive && level >= 1 && session.bankKey === bankKey) {
       if (!dnsa[bankKey]) dnsa[bankKey] = {};
-      dnsa[bankKey][form + '_' + i] = true;
+      dnsa[bankKey]['id:' + k] = true;
       session.dnsaActive = false;
+      const btn = document.getElementById('dnsaToggleBtn');
+      if (btn) {
+        btn.textContent = '☐ Do not show this question again';
+        btn.classList.remove('active');
+      }
     }
-    const cleared = f.clearCount.filter((c) => c > 0).length;
-    getOrInitBank(bankKey);
     save();
-    return { cleared, total: f.total, clearCount: f.clearCount[i] };
+    return { clearCount: bk.q[k] };
   }
 
-  function isDNSA(bankKey, form, qIndex) {
-    return !!(dnsa[bankKey] && dnsa[bankKey][form + '_' + qIndex]);
+  /** v1 compatibility: (bankKey, form, qIndex) → needs the engine's id lookup. */
+  function recordClear(bankKey, form, qIndex) {
+    const resolver = global.StudyMastery && StudyMastery._idForPosition;
+    const id = resolver ? resolver(bankKey, form, qIndex) : null;
+    if (id == null) return null;
+    return recordClearId(bankKey, id);
+  }
+
+  function isDNSA(bankKey, id) {
+    return !!(dnsa[bankKey] && dnsa[bankKey]['id:' + id]);
   }
 
   function toggleDNSA() {
@@ -197,15 +240,17 @@
     save();
   }
 
-  function beginSession(bankKey, form, totalQs) {
+  /** cardId + ids of the card; masteryPlusLevel comes from the card record. */
+  function beginSession(bankKey, cardId, ids) {
     session.bankKey = bankKey;
-    session.form = form;
-    const f = getOrInitForm(bankKey, form, totalQs);
-    session.masteryPlusLevel = f.masteryPlusLevel | 0;
+    session.form = String(cardId);
+    if (Array.isArray(ids)) registerCard(bankKey, cardId, ids);
+    session.ids = cardIds(bankKey, cardId);
+    const c = getOrInitCard(bankKey, cardId);
+    session.masteryPlusLevel = c.masteryPlusLevel | 0;
     session.timerStart = Date.now();
     session.accumulated = 0;
     session.dnsaActive = false;
-    updateProgressBar();
     updateDNSAUI();
   }
 
@@ -214,10 +259,10 @@
     const elapsed = Date.now() - session.timerStart;
     session.timerStart = Date.now();
     session.accumulated += elapsed;
-    const f = getOrInitForm(session.bankKey, session.form);
-    f.timeSpent = (f.timeSpent || 0) + elapsed;
-    getOrInitBank(session.bankKey).timeSpent =
-      (getOrInitBank(session.bankKey).timeSpent || 0) + elapsed;
+    const c = getOrInitCard(session.bankKey, session.form);
+    c.timeSpent = (c.timeSpent || 0) + elapsed;
+    const bk = getOrInitBank(session.bankKey);
+    bk.timeSpent = (bk.timeSpent || 0) + elapsed;
     save();
   }
 
@@ -226,40 +271,33 @@
     session.timerStart = null;
   }
 
-  function activateMasteryPlus(bankKey, form) {
-    const f = getOrInitForm(bankKey, form);
-    f.masteryPlusLevel = (f.masteryPlusLevel | 0) + 1;
-    session.masteryPlusLevel = f.masteryPlusLevel;
-    getOrInitBank(bankKey).masteryPlusLevel = Math.max(
-      getOrInitBank(bankKey).masteryPlusLevel | 0,
-      f.masteryPlusLevel
-    );
+  function activateMasteryPlus(bankKey, cardId) {
+    const c = getOrInitCard(bankKey, cardId);
+    c.masteryPlusLevel = (c.masteryPlusLevel | 0) + 1;
+    session.masteryPlusLevel = c.masteryPlusLevel;
+    const bk = getOrInitBank(bankKey);
+    bk.masteryPlusLevel = Math.max(bk.masteryPlusLevel | 0, c.masteryPlusLevel);
     save();
-    return f.masteryPlusLevel;
+    return c.masteryPlusLevel;
   }
 
-  /** Questions still needing clear at current Mastery+ layer (skip DNSA) */
-  function progressiveQueue(bankKey, form) {
-    const f = getOrInitForm(bankKey, form);
-    const level = f.masteryPlusLevel | 0;
-    const out = [];
-    for (let i = 0; i < f.clearCount.length; i++) {
-      if ((f.clearCount[i] | 0) <= level && !isDNSA(bankKey, form, i)) out.push(i);
-    }
-    return out;
+  /** Ids still needing a clear at the card's current Mastery+ layer (skips DNSA). */
+  function progressiveQueue(bankKey, cardId) {
+    const c = getOrInitCard(bankKey, cardId);
+    const level = c.masteryPlusLevel | 0;
+    return cardIds(bankKey, cardId).filter((id) => countOf(bankKey, id) <= level && !isDNSA(bankKey, id));
   }
 
-  function layerProgress(bankKey, form) {
-    const f = getOrInitForm(bankKey, form);
+  function layerProgress(bankKey, cardId) {
+    const ids = cardIds(bankKey, cardId);
     const level = session.masteryPlusLevel | 0;
-    const total = f.clearCount.length || 1;
+    const total = ids.length || 1;
     let cleared = 0;
-    for (let i = 0; i < f.clearCount.length; i++) {
-      if ((f.clearCount[i] | 0) > level) cleared++;
-    }
+    ids.forEach((id) => { if (countOf(bankKey, id) > level) cleared++; });
     return { cleared, total, level, basePct: (cleared / total) * 100 };
   }
 
+  /** Only used for Mastery+ runs (level ≥ 1); normal runs keep PT1's run bar. */
   function updateProgressBar() {
     const bar = document.getElementById('progressBar');
     const wrap = bar && bar.parentElement;
@@ -272,10 +310,8 @@
       bar.title = cleared + ' / ' + total + ' cleared (Mastery+ L' + level + ')';
     } else {
       if (wrap) wrap.classList.remove('mastery-plus');
-      const pct = Math.min(99.99, basePct);
-      bar.style.width = pct + '%';
       bar.style.background = '';
-      bar.title = Math.round(pct) + '% mastery';
+      bar.title = '';
     }
   }
 
@@ -310,7 +346,7 @@
     if (hint) hint.style.display = unlocked ? 'none' : 'inline';
   }
 
-  function injectResultsMasteryUI(bankKey, form, container) {
+  function injectResultsMasteryUI(bankKey, cardId, container, cardLabel) {
     if (!container) return;
     let box = document.getElementById('masteryResultsBox');
     if (!box) {
@@ -319,49 +355,37 @@
       box.className = 'mastery-results-box';
       container.appendChild(box);
     }
-    const eff = getEffectivePct(bankKey, form);
-    const f = getOrInitForm(bankKey, form);
-    const pct = getPct(bankKey, form);
-    const queue = progressiveQueue(bankKey, form);
+    const ids = cardIds(bankKey, cardId);
+    const eff = getEffectivePct(bankKey, cardId);
+    const c = getOrInitCard(bankKey, cardId);
+    const level = c.masteryPlusLevel | 0;
+    const cleared = ids.filter((id) => countOf(bankKey, id) > 0).length;
     let html =
-      '<div class="mastery-results-title">Mastery · Form ' +
-      form +
-      '</div>' +
-      '<div class="mastery-results-pct">' +
-      parseFloat(eff.toFixed(2)) +
-      '%</div>' +
-      '<div class="mastery-results-sub">' +
-      f.clearCount.filter((c) => c > 0).length +
-      ' / ' +
-      f.total +
-      ' cleared · Mastery+ L' +
-      (f.masteryPlusLevel | 0) +
-      '</div>';
-    if (pct >= 100 || (f.clearCount.every((c) => c > (f.masteryPlusLevel | 0)) && f.total)) {
-      html +=
-        '<button type="button" class="btn-gold mastery-plus-btn" id="unlockMasteryPlusBtn">Unlock Mastery+(100%+) ✦</button>';
+      '<div class="mastery-results-title">Mastery · ' + String(cardLabel || cardId).replace(/[<>&"]/g, '') + '</div>' +
+      '<div class="mastery-results-pct">' + parseFloat(eff.toFixed(2)) + '%</div>' +
+      '<div class="mastery-results-sub">' + cleared + ' / ' + ids.length + ' cleared · Mastery+ L' + level + '</div>';
+    if (ids.length && ids.every((id) => countOf(bankKey, id) > level)) {
+      html += '<button type="button" class="btn-gold mastery-plus-btn" id="unlockMasteryPlusBtn">Unlock Mastery+(100%+) ✦</button>';
     }
     if (Object.keys(dnsa[bankKey] || {}).length) {
-      html +=
-        '<button type="button" class="btn-ghost" id="resetDnsaBtn" style="margin-top:8px">Reset DNSA filters</button>';
+      html += '<button type="button" class="btn-ghost" id="resetDnsaBtn" style="margin-top:8px">Reset DNSA filters</button>';
     }
     box.innerHTML = html;
     const unlock = box.querySelector('#unlockMasteryPlusBtn');
     if (unlock) {
       unlock.onclick = () => {
-        const lvl = activateMasteryPlus(bankKey, form);
+        const lvl = activateMasteryPlus(bankKey, cardId);
         if (typeof showToast === 'function') showToast('Mastery+ level ' + lvl + ' — progressive queue ready', 2800);
-        injectResultsMasteryUI(bankKey, form, container);
-        // Start progressive re-run of remaining layer questions
+        injectResultsMasteryUI(bankKey, cardId, container, cardLabel);
         if (global.StudyMastery._onMasteryPlusActivate) {
-          global.StudyMastery._onMasteryPlusActivate(bankKey, form, progressiveQueue(bankKey, form));
+          global.StudyMastery._onMasteryPlusActivate(bankKey, cardId, progressiveQueue(bankKey, cardId));
         }
       };
     }
     const reset = box.querySelector('#resetDnsaBtn');
     if (reset) reset.onclick = () => {
       resetDNSA(bankKey);
-      injectResultsMasteryUI(bankKey, form, container);
+      injectResultsMasteryUI(bankKey, cardId, container, cardLabel);
     };
   }
 
@@ -376,23 +400,15 @@
 
   function profileMasteryHTML() {
     const keys = Object.keys(data);
-    if (!keys.length) return '<p class="profile-mastery-text">No mastery data yet — clear questions in a form.</p>';
+    if (!keys.length) return '<p class="profile-mastery-text">No mastery data yet — clear questions in a set.</p>';
     return keys
       .map((k) => {
         const eff = getBankEffectivePct(k);
-        const cls =
-          eff >= 100 ? 'high-mastery' : eff >= 40 ? 'mid-mastery' : '';
+        const cls = eff >= 100 ? 'high-mastery' : eff >= 40 ? 'mid-mastery' : '';
         const ts = formatDuration((data[k] && data[k].timeSpent) || 0);
         return (
-          '<div class="profile-mastery-row"><span class="profile-mastery-text ' +
-          cls +
-          '">' +
-          k +
-          ' · ' +
-          parseFloat(eff.toFixed(1)) +
-          '%</span><span class="profile-mastery-time">' +
-          ts +
-          '</span></div>'
+          '<div class="profile-mastery-row"><span class="profile-mastery-text ' + cls + '">' + k + ' · ' +
+          parseFloat(eff.toFixed(1)) + '%</span><span class="profile-mastery-time">' + ts + '</span></div>'
         );
       })
       .join('');
@@ -413,8 +429,21 @@
     host.innerHTML = '<div class="profile-label">Bank mastery</div>' + profileMasteryHTML();
   }
 
+  /** Migration helper: merge a v1 position record into id counts (max wins). */
+  function absorbLegacy(bankKey, idCounts, dnsaIds) {
+    const bk = getOrInitBank(bankKey);
+    Object.keys(idCounts || {}).forEach((id) => {
+      bk.q[id] = Math.max(bk.q[id] | 0, idCounts[id] | 0);
+    });
+    if (dnsaIds && dnsaIds.length) {
+      if (!dnsa[bankKey]) dnsa[bankKey] = {};
+      dnsaIds.forEach((id) => (dnsa[bankKey]['id:' + id] = true));
+    }
+    bk.migratedForms = true;
+  }
+
   load();
-  // Accumulate time while quiz active
+  // Accumulate time while a quiz run is on screen
   setInterval(() => {
     if (session.timerStart && document.getElementById('quizView') &&
         document.getElementById('quizView').classList.contains('active') &&
@@ -430,12 +459,18 @@
     getDnsa,
     importData,
     bankKeyFromPath,
-    getOrInitForm,
+    getOrInitBank,
+    getOrInitCard,
+    registerCard,
+    cardIds,
+    countOf,
     getPct,
     getEffectivePct,
     getBankEffectivePct,
+    isBankFullyCleared,
     getDisplayInfo,
     badgeHTML,
+    recordClearId,
     recordClear,
     isDNSA,
     toggleDNSA,
@@ -450,9 +485,11 @@
     injectResultsMasteryUI,
     renderProfileSection,
     formatDuration,
+    absorbLegacy,
     getData: () => data,
     getSession: () => session,
     _MC,
-    _onMasteryPlusActivate: null
+    _onMasteryPlusActivate: null,
+    _idForPosition: null
   };
 })(window);

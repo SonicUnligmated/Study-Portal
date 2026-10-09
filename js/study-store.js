@@ -1,0 +1,330 @@
+/* Study Portal — per-bank progress store + one-time migration (pt1-quiz-upgrade).
+ *
+ * localStorage key per bank:  sp_bank_v1:<bankKey>     (bankKey = "medphys/pt1")
+ *   {
+ *     solved: { <questionId>: <timestamp> },          // PT1 "solved set" (decks skip these)
+ *     cards:  { <cardId>: { mood, score, total, done, at } },
+ *     runs:   { <cardId>: <run state, by question id> },
+ *     resets: { <cardId>: { at, ids:[...] } }          // so a reset is not undone by sync
+ *   }
+ * Cloud: progress/{uid}.forms["b_<slug>_<hash>"] = same object (+ bank, wires removed).
+ * Old keys (pt1_form_<L>_*) are never deleted; StudyMigrate copies them once.
+ */
+(function (global) {
+  var PREFIX = 'sp_bank_v1:';
+  var LEGACY_PREFIX = 'pt1_form_';
+  var LEGACY_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+  var LEGACY_FLAG = 'sp_legacy_migrated_v1';
+
+  function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+  function hash(s) {
+    var h = 2166136261 >>> 0;
+    s = String(s);
+    for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    return ('0000000' + h.toString(16)).slice(-8);
+  }
+  function safeKey(s) {
+    return String(s).replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 48) + '_' + hash(s);
+  }
+  function cloudKey(bankKey) { return 'b_' + safeKey(bankKey); }
+
+  function blank() { return { solved: {}, cards: {}, runs: {}, resets: {} }; }
+  function norm(st) {
+    st = st && typeof st === 'object' ? st : {};
+    var out = blank();
+    if (st.solved && typeof st.solved === 'object') {
+      if (Array.isArray(st.solved)) st.solved.forEach(function (id) { out.solved[String(id)] = 1; });
+      else Object.keys(st.solved).forEach(function (id) { out.solved[id] = Number(st.solved[id]) || 1; });
+    }
+    ['cards', 'runs', 'resets'].forEach(function (k) {
+      if (st[k] && typeof st[k] === 'object' && !Array.isArray(st[k])) out[k] = st[k];
+    });
+    return out;
+  }
+  function load(bankKey) {
+    var raw = lsGet(PREFIX + bankKey);
+    if (!raw) return blank();
+    try { return norm(JSON.parse(raw)); } catch (e) { return blank(); }
+  }
+  function save(bankKey, st, opts) {
+    lsSet(PREFIX + bankKey, JSON.stringify(norm(st)));
+    if (!(opts && opts.skipCloud) && global.StudyProgress && typeof StudyProgress.syncFormsFromLocal === 'function') {
+      StudyProgress.syncFormsFromLocal();
+    }
+  }
+  function bankKeys() {
+    var out = [];
+    try {
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k && k.indexOf(PREFIX) === 0) out.push(k.slice(PREFIX.length));
+      }
+    } catch (e) {}
+    return out;
+  }
+  function solvedSet(bankKey) { return new Set(Object.keys(load(bankKey).solved)); }
+  function markSolved(bankKey, id, opts) {
+    var st = load(bankKey);
+    if (!st.solved[id]) st.solved[String(id)] = Date.now();
+    save(bankKey, st, opts);
+  }
+
+  /* —— merge (local ⊕ cloud). Max/newest wins; resets remove older solves. —— */
+  function newer(a, b, field) {
+    if (!a) return b;
+    if (!b) return a;
+    return (Number(a[field]) || 0) >= (Number(b[field]) || 0) ? a : b;
+  }
+  function mergeEntries(a, b) {
+    a = norm(a); b = norm(b);
+    var out = blank();
+    [a.solved, b.solved].forEach(function (s) {
+      Object.keys(s).forEach(function (id) { out.solved[id] = Math.max(out.solved[id] || 0, Number(s[id]) || 1); });
+    });
+    var rk = {};
+    Object.keys(a.resets).concat(Object.keys(b.resets)).forEach(function (k) { rk[k] = 1; });
+    Object.keys(rk).forEach(function (k) { out.resets[k] = newer(a.resets[k], b.resets[k], 'at'); });
+    var ck = {};
+    Object.keys(a.cards).concat(Object.keys(b.cards)).forEach(function (k) { ck[k] = 1; });
+    Object.keys(ck).forEach(function (k) {
+      var pick = newer(a.cards[k], b.cards[k], 'at');
+      var other = pick === a.cards[k] ? b.cards[k] : a.cards[k];
+      out.cards[k] = Object.assign({}, other || {}, pick || {});
+      if (!out.cards[k].mood && other && other.mood) out.cards[k].mood = other.mood;
+    });
+    var nk = {};
+    Object.keys(a.runs).concat(Object.keys(b.runs)).forEach(function (k) { nk[k] = 1; });
+    Object.keys(nk).forEach(function (k) {
+      var ra = a.runs[k], rb = b.runs[k];
+      var pick = newer(ra, rb, 'updated');
+      // a local run with wires beats an identical cloud copy without them
+      if (ra && rb && (ra.updated || 0) === (rb.updated || 0)) pick = ra;
+      out.runs[k] = pick;
+    });
+    Object.keys(out.resets).forEach(function (k) {
+      var r = out.resets[k];
+      if (!r) return;
+      (r.ids || []).forEach(function (id) {
+        if (out.solved[id] && out.solved[id] <= (r.at || 0)) delete out.solved[id];
+      });
+      if (out.runs[k] && (out.runs[k].updated || 0) <= (r.at || 0)) delete out.runs[k];
+    });
+    return out;
+  }
+  function stripWires(run) {
+    if (!run || typeof run !== 'object') return run;
+    var c = JSON.parse(JSON.stringify(run));
+    if (c.ans && typeof c.ans === 'object') {
+      Object.keys(c.ans).forEach(function (k) {
+        var v = c.ans[k];
+        if (v && typeof v === 'object' && v.wires) delete v.wires;
+      });
+    }
+    return c;
+  }
+  /** forms-map entries for Firestore (rules only allow the existing top-level keys). */
+  function collectForCloud() {
+    var out = {};
+    bankKeys().forEach(function (bk) {
+      var st = load(bk);
+      var runs = {};
+      Object.keys(st.runs).forEach(function (k) { runs[k] = stripWires(st.runs[k]); });
+      out[cloudKey(bk)] = { bank: bk, solved: st.solved, cards: st.cards, runs: runs, resets: st.resets };
+    });
+    return out;
+  }
+  function isCloudEntry(key, entry) {
+    return /^b_/.test(String(key)) && entry && typeof entry === 'object' && typeof entry.bank === 'string';
+  }
+  function applyFromCloud(forms) {
+    if (!forms || typeof forms !== 'object') return false;
+    var changed = false;
+    Object.keys(forms).forEach(function (k) {
+      var e = forms[k];
+      if (!isCloudEntry(k, e)) return;
+      var merged = mergeEntries(load(e.bank), e);
+      save(e.bank, merged, { skipCloud: true });
+      changed = true;
+    });
+    return changed;
+  }
+
+  /* —— migration —— */
+  var bankCache = {};
+  function fetchBank(bankKey) {
+    if (!bankCache[bankKey]) {
+      bankCache[bankKey] = fetch('banks/' + bankKey + '.json', { cache: 'no-cache' })
+        .then(function (r) { if (!r.ok) throw new Error('bank ' + r.status); return r.json(); })
+        .catch(function (e) { delete bankCache[bankKey]; throw e; });
+    }
+    return bankCache[bankKey];
+  }
+  function idAt(bank, letter, i) {
+    var qs = (bank && bank.bank && bank.bank[letter]) || [];
+    var q = qs[i];
+    if (!q) return null;
+    return String(q.id != null ? q.id : ('q_' + String(q.q || '').slice(0, 48) + '_' + i));
+  }
+  function legacySignature() {
+    var parts = [];
+    LEGACY_LETTERS.forEach(function (L) {
+      ['best_pct', 'run_pct', 'run_state', 'done', 'score'].forEach(function (f) {
+        var v = lsGet(LEGACY_PREFIX + L + '_' + f);
+        if (v != null && v !== '') parts.push(L + f + '=' + v);
+      });
+    });
+    return parts.length ? hash(parts.join('|')) : '';
+  }
+
+  /**
+   * Copy old pt1_form_<L>_* progress into the per-bank solved sets.
+   * Ownership (medphys and studyskills shared these keys):
+   *   - run_state answers with 20 entries → medphys/pt1 (20-question forms),
+   *     21 entries → studyskills/ss1 (21-question forms); each stored answer is
+   *     checked against that bank's correct option, falling back to the other bank.
+   *   - "done"/best 100% without answers → medphys/pt1 (the original owner).
+   * Old keys stay untouched. Re-runs only if the old keys change (idempotent).
+   */
+  function migrateLegacy() {
+    var sig = legacySignature();
+    if (!sig) return Promise.resolve({ skipped: 'no legacy data' });
+    if (lsGet(LEGACY_FLAG) === sig) return Promise.resolve({ skipped: 'already migrated' });
+    var owners = ['medphys/pt1', 'studyskills/ss1'];
+    return Promise.all(owners.map(function (bk) { return fetchBank(bk).catch(function () { return null; }); }))
+      .then(function (banks) {
+        var byKey = {};
+        owners.forEach(function (bk, i) { byKey[bk] = banks[i]; });
+        var report = { solved: {}, unmatched: 0 };
+        function add(bk, id) {
+          if (!id) return;
+          report.solved[bk] = report.solved[bk] || {};
+          report.solved[bk][id] = 1;
+        }
+        LEGACY_LETTERS.forEach(function (L) {
+          var rsRaw = lsGet(LEGACY_PREFIX + L + '_run_state');
+          var done = lsGet(LEGACY_PREFIX + L + '_done') === '1';
+          var best = parseInt(lsGet(LEGACY_PREFIX + L + '_best_pct') || '0', 10) || 0;
+          var answers = null;
+          if (rsRaw) { try { var rs = JSON.parse(rsRaw); if (rs && Array.isArray(rs.answers)) answers = rs.answers; } catch (e) {} }
+          if (answers) {
+            var guess = answers.length === 21 ? 'studyskills/ss1' : 'medphys/pt1';
+            var order = guess === 'medphys/pt1' ? ['medphys/pt1', 'studyskills/ss1'] : ['studyskills/ss1', 'medphys/pt1'];
+            answers.forEach(function (a, i) {
+              if (a === null || a === undefined) return;
+              var placed = false;
+              for (var k = 0; k < order.length && !placed; k++) {
+                var bank = byKey[order[k]];
+                var q = bank && bank.bank && bank.bank[L] && bank.bank[L][i];
+                if (q && q.correct === a) {
+                  add(order[k], idAt(bank, L, i));
+                  placed = true;
+                }
+              }
+              if (!placed) report.unmatched++;
+            });
+          }
+          if (done || best >= 100) {
+            var owner = answers && answers.length === 21 ? 'studyskills/ss1' : 'medphys/pt1';
+            var b2 = byKey[owner];
+            ((b2 && b2.bank && b2.bank[L]) || []).forEach(function (q, i) { add(owner, idAt(b2, L, i)); });
+          }
+        });
+        Object.keys(report.solved).forEach(function (bk) {
+          var st = load(bk);
+          var now = Date.now();
+          Object.keys(report.solved[bk]).forEach(function (id) { if (!st.solved[id]) st.solved[id] = now; });
+          save(bk, st, { skipCloud: true });
+        });
+        lsSet(LEGACY_FLAG, sig);
+        var counts = {};
+        Object.keys(report.solved).forEach(function (bk) { counts[bk] = Object.keys(report.solved[bk]).length; });
+        report.counts = counts;
+        try { console.info('[StudyMigrate] legacy pt1_form_* progress copied', counts, 'unmatched answers skipped:', report.unmatched); } catch (e) {}
+        if (global.StudyProgress && StudyProgress.syncFormsFromLocal) StudyProgress.syncFormsFromLocal();
+        return report;
+      });
+  }
+
+  /** Mastery v1 (position clearCount arrays per form) → v2 (per question id). */
+  function migrateMastery() {
+    var M = global.StudyMastery;
+    if (!M || typeof M.getData !== 'function') return Promise.resolve({});
+    var data = M.getData() || {};
+    var dn = (M.getDnsa && M.getDnsa()) || {};
+    var todo = Object.keys(data).filter(function (bk) {
+      var b = data[bk];
+      if (!b || !b.forms || typeof b.forms !== 'object' || !Object.keys(b.forms).length) return false;
+      var sig = hash(JSON.stringify(b.forms) + JSON.stringify(dn[bk] || {}));
+      return b.migratedSig !== sig;
+    });
+    if (!todo.length) return Promise.resolve({});
+    return Promise.all(todo.map(function (bk) {
+      return fetchBank(bk).then(function (bank) {
+        var b = data[bk];
+        var counts = {};
+        var skipped = 0;
+        Object.keys(b.forms).forEach(function (L) {
+          var cc = (b.forms[L] && b.forms[L].clearCount) || [];
+          cc.forEach(function (n, i) {
+            if (!(n | 0)) return;
+            var id = idAt(bank, L, i);
+            if (!id) { skipped++; return; }
+            counts[id] = Math.max(counts[id] | 0, n | 0);
+          });
+        });
+        var dIds = [];
+        Object.keys(dn[bk] || {}).forEach(function (k) {
+          var m = /^([A-Za-z]+)_(\d+)$/.exec(k);
+          if (!m) return;
+          var id = idAt(bank, m[1], parseInt(m[2], 10));
+          if (id) dIds.push(id); else skipped++;
+        });
+        M.absorbLegacy(bk, counts, dIds);
+        data[bk].migratedSig = hash(JSON.stringify(b.forms) + JSON.stringify(dn[bk] || {}));
+        if (skipped) try { console.info('[StudyMigrate] mastery ' + bk + ': skipped ' + skipped + ' old entries with no matching question'); } catch (e) {}
+        return { bk: bk, ids: Object.keys(counts).length, skipped: skipped };
+      }).catch(function (e) {
+        try { console.info('[StudyMigrate] mastery ' + bk + ' not migrated (bank unavailable)', e && e.message); } catch (x) {}
+        return { bk: bk, error: true };
+      });
+    })).then(function (res) {
+      M.save();
+      return res;
+    });
+  }
+
+  var running = null;
+  function runAll() {
+    if (running) return running;
+    running = Promise.all([
+      migrateLegacy().catch(function (e) { console.warn('legacy migration', e); }),
+      migrateMastery().catch(function (e) { console.warn('mastery migration', e); })
+    ]).then(function (r) { running = null; return r; }, function (e) { running = null; throw e; });
+    return running;
+  }
+
+  global.StudyStore = {
+    PREFIX: PREFIX,
+    load: load,
+    save: save,
+    bankKeys: bankKeys,
+    solvedSet: solvedSet,
+    markSolved: markSolved,
+    mergeEntries: mergeEntries,
+    collectForCloud: collectForCloud,
+    applyFromCloud: applyFromCloud,
+    isCloudEntry: isCloudEntry,
+    cloudKey: cloudKey,
+    safeKey: safeKey,
+    stripWires: stripWires
+  };
+  global.StudyMigrate = {
+    migrateLegacy: migrateLegacy,
+    migrateMastery: migrateMastery,
+    runAll: runAll,
+    fetchBank: fetchBank,
+    LEGACY_FLAG: LEGACY_FLAG
+  };
+})(window);

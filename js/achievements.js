@@ -229,21 +229,10 @@
   }
 
   function tryBankMastery(bankKey) {
-    if (!window.StudyMastery || typeof StudyMastery.getData !== 'function') return;
-    const allData = StudyMastery.getData() || {};
-    const bk = allData[bankKey];
-    if (!bk || !bk.forms) return;
-    const forms = Object.keys(bk.forms);
-    if (!forms.length) return;
-    let all = true;
-    for (let i = 0; i < forms.length; i++) {
-      const f = bk.forms[forms[i]];
-      if (!f || !f.total) continue;
-      const cleared = (f.clearCount || []).filter(function (c) { return c > 0; }).length;
-      if (cleared < f.total) { all = false; break; }
-    }
-    // Require at least A–H shape (8 forms) or every known form cleared
-    if (all && forms.length >= 8) unlockAchievement('mastery_bank');
+    // pt1-quiz-upgrade: Mastery is stored per question id; the bank counts as
+    // mastered when every question of every hub card has been cleared once.
+    if (!window.StudyMastery || typeof StudyMastery.isBankFullyCleared !== 'function') return;
+    if (StudyMastery.isBankFullyCleared(bankKey)) unlockAchievement('mastery_bank');
   }
 
   function recordMasteryPlus() {

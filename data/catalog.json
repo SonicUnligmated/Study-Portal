@@ -10,7 +10,7 @@
         {
           "id": "pt1",
           "title": "Periodic Test 1",
-          "subtitle": "Forms A–H · 20 MCQs each",
+          "subtitle": "4 sets by topic · 160 questions",
           "bank": "banks/medphys/pt1.json",
           "locked": false
         },
@@ -31,7 +31,7 @@
         {
           "id": "ss1",
           "title": "Periodic Test 1",
-          "subtitle": "Forms A–H · 21 MCQs each",
+          "subtitle": "4 sets by topic · 168 questions",
           "bank": "banks/studyskills/ss1.json",
           "locked": false
         },
@@ -68,8 +68,15 @@
     {
       "id": "medterm",
       "name": "Medical Terminology",
-      "locked": true,
+      "locked": false,
       "materials": [
+        {
+          "id": "lecture-11-msk",
+          "title": "Lecture 11 · Musculoskeletal System",
+          "subtitle": "93 questions · choice, linking & stepped",
+          "bank": "banks/medterm/lecture-11-msk.json",
+          "locked": false
+        },
         {
           "id": "mt1",
           "title": "Foundations Quiz",

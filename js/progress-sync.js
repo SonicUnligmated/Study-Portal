@@ -144,7 +144,18 @@
       }
       forms[L] = entry;
     });
+    // pt1-quiz-upgrade: per-bank progress (solved ids, card stamps, runs, resets)
+    // rides inside the existing `forms` map as "b_<bank>" entries, because the
+    // Firestore rules only allow the existing top-level keys.
+    if (global.StudyStore && typeof StudyStore.collectForCloud === 'function') {
+      Object.assign(forms, StudyStore.collectForCloud());
+    }
     return forms;
+  }
+  function isBankEntry(k, v) {
+    return global.StudyStore && typeof StudyStore.isCloudEntry === 'function'
+      ? StudyStore.isCloudEntry(k, v)
+      : /^b_/.test(String(k));
   }
 
   function applyFormsToLocal(forms) {
@@ -152,6 +163,7 @@
     Object.keys(forms).forEach(function (L) {
       const f = forms[L];
       if (!f || typeof f !== 'object') return;
+      if (isBankEntry(L, f) || /^b_/.test(L)) return; // handled by StudyStore below
       const best = Math.max(0, Math.min(100, Math.round(Number(f.bestPct) || 0)));
       const prev = Math.max(0, parseInt(lsGet(FORM_PREFIX + L + '_best_pct') || '0', 10) || 0);
       lsSet(FORM_PREFIX + L + '_best_pct', String(Math.max(prev, best)));
@@ -180,9 +192,20 @@
         if (keep) lsSet(FORM_PREFIX + L + '_run_state', JSON.stringify(f.runState));
       }
     });
-    if (typeof global.renderFormCards === 'function') {
+    if (global.StudyStore && typeof StudyStore.applyFromCloud === 'function') {
+      StudyStore.applyFromCloud(forms);
+    }
+    // Old pt1_form_* values that arrived from the cloud are converted once more.
+    if (global.StudyMigrate && typeof StudyMigrate.migrateLegacy === 'function') {
+      StudyMigrate.migrateLegacy().catch(function () {}).then(refreshHubSafe);
+    }
+    refreshHubSafe();
+  }
+  function refreshHubSafe() {
+    var fn = global.refreshHubCards || global.renderFormCards;
+    if (typeof fn === 'function') {
       try {
-        global.renderFormCards();
+        fn();
       } catch (e) {}
     }
   }
@@ -251,11 +274,33 @@
           timeSpent: Math.max(lf.timeSpent || 0, cf.timeSpent || 0)
         };
       });
+      // v2 id-based data: clear counts per question id + per-card levels
+      const q = {};
+      [L.q || {}, C.q || {}].forEach(function (src) {
+        Object.keys(src).forEach(function (id) {
+          q[id] = Math.max(q[id] | 0, src[id] | 0);
+        });
+      });
+      const cards = {};
+      [L.cards || {}, C.cards || {}].forEach(function (src) {
+        Object.keys(src).forEach(function (c) {
+          const a = cards[c] || {};
+          const b = src[c] || {};
+          cards[c] = {
+            masteryPlusLevel: Math.max(a.masteryPlusLevel | 0, b.masteryPlusLevel | 0),
+            timeSpent: Math.max(a.timeSpent || 0, b.timeSpent || 0)
+          };
+        });
+      });
       out[bankKey] = {
+        q: q,
+        cards: cards,
         forms: forms,
         timeSpent: Math.max(L.timeSpent || 0, C.timeSpent || 0),
         masteryPlusLevel: Math.max(L.masteryPlusLevel | 0, C.masteryPlusLevel | 0)
       };
+      if (L.migratedForms || C.migratedForms) out[bankKey].migratedForms = true;
+      if (L.migratedSig || C.migratedSig) out[bankKey].migratedSig = L.migratedSig || C.migratedSig;
     });
     return out;
   }
@@ -345,6 +390,14 @@
     Object.keys(keys).forEach(function (L) {
       const a = (localF && localF[L]) || {};
       const b = (cloudF && cloudF[L]) || {};
+      if (/^b_/.test(L)) {
+        if (global.StudyStore && typeof StudyStore.mergeEntries === 'function') {
+          const m = StudyStore.mergeEntries(a, b);
+          m.bank = a.bank || b.bank;
+          if (m.bank) out[L] = m;
+        }
+        return;
+      }
       const bestPct = Math.max(Number(a.bestPct) || 0, Number(b.bestPct) || 0);
       const entry = {
         bestPct: Math.max(0, Math.min(100, bestPct)),
@@ -408,11 +461,7 @@
     if (Array.isArray(bundle.friends)) {
       setFriendsLocal(bundle.friends);
     }
-    if (opts.refreshHub && typeof global.renderFormCards === 'function') {
-      try {
-        global.renderFormCards();
-      } catch (e) {}
-    }
+    if (opts.refreshHub) refreshHubSafe();
   }
 
   async function fetchCloud(uid) {

@@ -79,9 +79,27 @@
     if (!res.ok) throw new Error('bank HTTP ' + res.status);
     const data = await res.json();
     const bank = data.bank || data.FORM_BANK || {};
-    const qs = bank[form] || bank[String(form).toUpperCase()];
+    // pt1-quiz-upgrade: banks may have fewer forms than the picker's A–H list;
+    // a missing form falls back to the bank's first form.
+    let qs = bank[form] || bank[String(form).toUpperCase()];
+    if (!qs || !qs.length) {
+      const first = (data.forms && data.forms[0]) || Object.keys(bank)[0];
+      qs = first ? bank[first] : null;
+    }
     if (!qs || !qs.length) throw new Error('Form ' + form + ' missing');
-    const copy = qs.slice();
+    // Party/split mode shows plain multiple-choice only. Linking (matching)
+    // and stepped questions need the full quiz screen, so they are left out.
+    const copy = qs
+      .map(function (q, i) {
+        const c = Object.assign({}, q);
+        c.__id = q.id != null ? String(q.id) : 'q_' + String(q.q || '').slice(0, 48) + '_' + i;
+        return c;
+      })
+      .filter(function (q) {
+        const t = q.type;
+        return (!t || t === 'mcq') && !q.steps && !q.correct_pairs && Array.isArray(q.options) && typeof q.correct === 'number';
+      });
+    if (!copy.length) throw new Error('No multiple-choice questions in this set');
     state.questionsByKey[key] = copy;
     return copy;
   }
@@ -148,7 +166,11 @@
       const bankKeyM = StudyMastery.bankKeyFromPath(
         (seat && seat.bank) || state.bankPath
       );
-      StudyMastery.beginSession(bankKeyM, (seat && seat.form) || state.form, state.questions.length);
+      StudyMastery.beginSession(
+        bankKeyM,
+        'party:' + ((seat && seat.form) || state.form),
+        state.questions.map(function (q) { return q.__id; })
+      );
     }
 
     // Ensure my pane exists (participants + spectators)
@@ -494,33 +516,15 @@
       toast('Pane complete');
     }
 
+    // pt1-quiz-upgrade: progress is saved by question id (same store as the
+    // normal quiz), not by form letter / position.
     if (window.StudyMastery) {
       const bk = StudyMastery.bankKeyFromPath(pane.bank || state.bankPath);
-      const form = pane.form || state.form;
-      StudyMastery.recordClear(bk, form, qIndex, qs.length);
-      const pct = StudyMastery.getPct(bk, form);
-      if (typeof setBestPct === 'function' && typeof setRunPct === 'function') {
-        setBestPct(form, pct);
-        setRunPct(form, pct);
-      } else {
-        try {
-          const bestKey = 'pt1_form_' + form + '_best_pct';
-          const runKey = 'pt1_form_' + form + '_run_pct';
-          const existingBest = parseInt(localStorage.getItem(bestKey) || '0', 10) || 0;
-          const nextPct = Math.round(pct);
-          localStorage.setItem(bestKey, String(Math.max(existingBest, nextPct)));
-          localStorage.setItem(runKey, String(nextPct));
-        } catch (e) {}
-      }
-      if (pct >= 100) {
-        try {
-          localStorage.setItem('pt1_form_' + form + '_done', '1');
-        } catch (e) {}
+      if (q && q.__id != null) {
+        StudyMastery.recordClearId(bk, q.__id);
+        if (window.StudyStore) StudyStore.markSolved(bk, q.__id);
       }
       if (typeof StudyMastery.updateProgressBar === 'function') StudyMastery.updateProgressBar();
-      if (window.StudyAchievements && typeof StudyAchievements.recordFormMastery === 'function' && pct >= 100) {
-        StudyAchievements.recordFormMastery(form, bk);
-      }
       refreshHub();
     }
     if (window.StudyProfiles) StudyProfiles.bumpQuestionsAnswered(1);

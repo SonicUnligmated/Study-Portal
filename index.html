@@ -399,78 +399,13 @@ html.mood-sad[data-skin], html.mood-crying[data-skin], html.mood-sleepy[data-ski
 .modal-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .modal-actions .btn-ghost,.modal-actions .btn-gold{min-width:120px}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{display:block;text-decoration:none;color:inherit;background:rgba(14,22,40,.55);border:1.5px solid var(--border);border-radius:20px;padding:24px 22px;transition:transform var(--transition-ms),border-color var(--transition-ms),box-shadow var(--transition-ms);box-shadow:0 18px 40px -16px rgba(0,0,0,.55);text-align:left;width:100%;font:inherit;backdrop-filter:blur(16px);position:relative}
-.card:hover{transform:translateY(-4px);border-color:var(--cyan-bright);box-shadow:0 0 28px var(--mood-glow),0 18px 40px -12px rgba(0,0,0,.55)}
-.card:active{transform:translateY(-1px) scale(.985)}
-.card:focus-visible{outline:2px solid var(--cyan-bright);outline-offset:3px;box-shadow:0 0 0 4px var(--mood-glow),0 0 28px var(--mood-glow)}
-.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
-.form-letter{font-family:var(--mono);font-weight:800;font-size:1.05rem;color:var(--gold)}
+/* Quiz view styles now live in css/quiz-pt1.css (copied from Med Physics PT1, scoped to .pt1q). */
 .mood-stamp{font-size:1.7rem;min-height:1.7rem}
-.card-title{font-weight:800;font-size:1.2rem;margin-bottom:4px}
-.card-sub{color:var(--text-dim);font-size:.88rem;font-family:var(--mono)}
-.card-pct{margin-top:14px;font-family:var(--mono);font-size:1.15rem;font-weight:700;color:var(--cyan-bright);letter-spacing:.3px}
-.card-meta{margin-top:6px;font-family:var(--mono);font-size:.78rem;color:var(--cyan);opacity:.85}
 .note{margin-top:28px;padding:18px 20px;border-radius:16px;background:rgba(14,22,40,.42);border:1px solid var(--border);color:var(--text-dim);font-size:.95rem;line-height:1.55;backdrop-filter:blur(14px)}
 .foot{margin-top:24px;text-align:center;font-family:var(--mono);font-size:.62rem;color:var(--text-dim);opacity:.4}
 
-.header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:18px;gap:18px;flex-wrap:wrap}
-.header-left h1{font-size:1.85rem;font-weight:900;background:linear-gradient(120deg,var(--cyan-bright) 0%,var(--cyan) 40%,var(--teal) 70%,var(--gold) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.header-left .sub{color:var(--text-dim);font-size:.92rem;margin-top:6px;font-family:var(--mono)}
-.header-right{display:flex;gap:10px;flex-wrap:wrap}
-.fs-btn{font-family:var(--mono);font-size:.88rem;color:var(--cyan-bright);border:1px solid var(--border);padding:10px 18px;border-radius:999px;background:color-mix(in srgb, var(--cyan) 12%, transparent);transition:transform .2s,background .2s,border-color .2s,box-shadow .2s,color .2s}
-.fs-btn:hover{background:var(--mood-glow);border-color:var(--cyan);transform:translateY(-2px);box-shadow:0 0 22px var(--mood-glow)}
-.fs-btn:active{transform:scale(.97)}
-.fs-btn:focus-visible{outline:2px solid var(--cyan-bright);outline-offset:3px}
-.panel{background:rgba(14,22,40,.58);backdrop-filter:blur(22px) saturate(1.1);border:1.5px solid var(--border);border-radius:22px;box-shadow:0 28px 64px -18px rgba(0,0,0,.65);transition:box-shadow var(--transition-ms)}
-.panel.correct-pulse{box-shadow:0 0 0 1px rgba(52,211,153,.55),0 0 56px rgba(52,211,153,.32)}
-.panel.wrong-pulse{box-shadow:0 0 0 1px rgba(251,113,133,.5),0 0 40px rgba(251,113,133,.22);animation:softReject calc(420ms / var(--anim-speed)) ease}
 @keyframes softReject{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
-.status-bar{display:flex;align-items:center;gap:12px;padding:14px 28px;border-bottom:1px solid var(--border);background:rgba(0,0,0,.55);font-family:var(--mono);font-size:.88rem;color:var(--text-dim)}
-.status-dot{width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--cyan-bright),var(--cyan) 50%,#0e7490);box-shadow:0 0 18px var(--mood-glow);animation:pulse var(--pulse-ms) ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.35);opacity:.6}}
-.panel-body{padding:32px 36px}
-.quiz-meta{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
-.elapsed{font-family:var(--mono);font-size:1.05rem;font-weight:600;color:var(--lavender);min-width:70px}
-.track{flex:1;height:8px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden;min-width:120px}
-.track-fill{height:100%;width:0%;background:linear-gradient(90deg,var(--cyan),var(--teal),var(--gold));border-radius:99px;transition:width .35s}
-.q-count{font-family:var(--mono);font-size:.95rem;color:var(--text-dim)}
-.cat-tag{font-family:var(--mono);font-size:.72rem;padding:4px 10px;border-radius:999px;border:1px solid rgba(167,139,250,.4);color:var(--violet);background:rgba(167,139,250,.1)}
-.question{font-size:1.55rem;font-weight:650;line-height:1.55;margin-bottom:22px}
-.options{display:flex;flex-direction:column;gap:14px}
-.opt{position:relative;background:rgba(0,0,0,.42);border:1.5px solid var(--border);border-radius:14px;padding:18px 20px 18px 58px;font-size:1.22rem;line-height:1.45;text-align:left;color:var(--text);width:100%;font-family:inherit;transition:transform var(--transition-ms),border-color var(--transition-ms),background var(--transition-ms),box-shadow var(--transition-ms)}
-.opt::before{content:attr(data-key);position:absolute;left:16px;top:50%;transform:translateY(-50%);font-family:var(--mono);font-size:.85rem;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(0,0,0,.45);border:1px solid var(--border);color:var(--text-dim);transition:border-color var(--transition-ms),color var(--transition-ms),background var(--transition-ms)}
-.opt:hover:not(:disabled){border-color:var(--cyan);background:var(--mood-glow);transform:translateX(5px);box-shadow:0 0 20px var(--mood-glow)}
-.opt:active:not(:disabled){transform:translateX(3px) scale(.985)}
-.opt:focus-visible{outline:2px solid var(--cyan-bright);outline-offset:2px;box-shadow:0 0 0 3px var(--mood-glow)}
-.opt.correct{border-color:var(--success);background:rgba(52,211,153,.15);color:var(--success)}
-.opt.soft-wrong{border-color:rgba(251,113,133,.55);background:rgba(251,113,133,.1);animation:softReject calc(420ms / var(--anim-speed)) ease}
-.opt.wrong{border-color:var(--error);background:rgba(251,113,133,.12);color:var(--error)}
-.feedback{margin-top:16px;padding:16px 18px;border-radius:12px;font-size:1.08rem;line-height:1.55;min-height:52px}
-.feedback.good{background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.3);color:var(--success)}
-.feedback.soft{background:rgba(251,113,133,.08);border:1px solid rgba(251,113,133,.28);color:var(--error)}
-.feedback.bad{background:rgba(251,113,133,.1);border:1px solid rgba(251,113,133,.3);color:var(--error)}
-.feedback.idle{background:transparent;border:none;color:var(--text-dim);font-family:var(--mono);font-size:.88rem}
-.nav{display:flex;gap:12px;justify-content:center;margin-top:20px;flex-wrap:wrap}
-.nav-btn{font-family:var(--mono);font-size:.95rem;padding:12px 20px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);transition:transform .2s,border-color .2s,box-shadow .2s,background .2s,color .2s}
-.nav-btn:hover:not(:disabled){border-color:var(--gold);color:var(--gold);transform:translateY(-2px);box-shadow:0 8px 22px var(--mood-glow)}
-.nav-btn:active:not(:disabled){transform:scale(.97)}
-.nav-btn:focus-visible{outline:2px solid var(--cyan-bright);outline-offset:3px}
-.nav-btn:disabled{opacity:.28}
-.nav-btn.primary{background:linear-gradient(135deg,var(--cyan),var(--gold));color:#0a0e17;border:none;font-weight:800;position:relative;overflow:hidden;box-shadow:0 12px 32px color-mix(in srgb, var(--cyan) 28%, transparent),0 0 0 1px color-mix(in srgb, var(--gold) 45%, transparent)}
-.nav-btn.primary::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.28) 45%,transparent 70%);transform:translateX(-120%);pointer-events:none}
-.nav-btn.primary:hover:not(:disabled){transform:translateY(-2px) scale(1.015);box-shadow:0 18px 42px color-mix(in srgb, var(--gold) 35%, transparent),0 0 0 1px color-mix(in srgb, var(--gold) 65%, transparent);color:#0a0e17;border:none}
-.nav-btn.primary:hover:not(:disabled)::after{animation:btnShimmer .85s ease}
-.nav-btn.primary:active:not(:disabled){transform:scale(.98)}
-.kbd-hint{margin-top:16px;text-align:center;font-family:var(--mono);font-size:.8rem;color:var(--text-dim)}
-.kbd{display:inline-block;padding:2px 6px;border-radius:4px;border:1px solid var(--border);background:rgba(0,0,0,.45);font-size:.62rem}
-.final,.review{display:none}
-.final{text-align:center;padding:22px 10px 12px}
-.final h2{font-size:1.75rem;background:linear-gradient(120deg,var(--cyan-bright),var(--cyan),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px}
-.final p{color:var(--text-dim);font-family:var(--mono);font-size:1rem;margin-bottom:6px}
-.final .score-big{font-size:2.8rem;font-weight:900;color:var(--gold);font-family:var(--mono);margin:12px 0}
-.final-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
-.final-actions button,.review-actions button{padding:13px 22px;border:none;border-radius:12px;font-weight:800;font-family:var(--mono);font-size:.95rem}
 .btn-gold{background:linear-gradient(135deg,var(--cyan),var(--gold));color:#0a0e17;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:0 12px 36px color-mix(in srgb, var(--cyan) 30%, transparent),0 0 0 1px color-mix(in srgb, var(--gold) 40%, transparent)}
 .btn-gold::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.3) 45%,transparent 70%);transform:translateX(-120%);pointer-events:none}
 .btn-gold:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 18px 48px color-mix(in srgb, var(--gold) 38%, transparent),0 0 0 1px color-mix(in srgb, var(--gold) 70%, transparent)}
@@ -489,14 +424,6 @@ html.mood-sad[data-skin], html.mood-crying[data-skin], html.mood-sleepy[data-ski
 .mood-btn:hover{transform:scale(1.2);filter:grayscale(0);opacity:1}
 .mood-btn.selected{filter:grayscale(0);opacity:1;background:rgba(255,255,255,.08)}
 .mood-label{text-align:center;font-size:.85rem;opacity:.4;margin-top:.15rem;font-family:var(--mono)}
-.review h2{font-size:1.45rem;margin-bottom:14px;color:var(--cyan)}
-.review-item{text-align:left;background:rgba(0,0,0,.35);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin-bottom:12px}
-.review-item .rq{font-weight:650;margin-bottom:8px;font-size:1.1rem}
-.review-item .rline{font-size:.95rem;margin:4px 0;font-family:var(--mono)}
-.review-item .rok{color:var(--success)}
-.review-item .rbad{color:var(--error)}
-.review-item .rex{color:var(--text-dim);margin-top:8px;font-size:.95rem;line-height:1.45}
-.review-actions{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
 .confetti{position:fixed;width:8px;height:8px;border-radius:2px;pointer-events:none;z-index:99;animation:fall 1.3s ease-out forwards}
 @keyframes fall{0%{transform:translateY(0) rotate(0);opacity:1}100%{transform:translateY(110vh) rotate(720deg);opacity:0}}
 
@@ -1204,6 +1131,7 @@ body.split-quiz-active #chatDock{z-index:60}
 .achievement-popup-desc{font-size:.8em;opacity:.92;color:#4a3500}
 
 </style>
+<link rel="stylesheet" href="css/quiz-pt1.css?v=1">
 </head>
 <body>
 <canvas id="fxCanvas"></canvas>
@@ -1297,117 +1225,75 @@ body.split-quiz-active #chatDock{z-index:60}
   </div>
 </div>
 
-<!-- ========== HUB VIEW ========== -->
-<div class="app view" id="hubView">
-  <div class="hub-wrap">
+<!-- ========== HUB VIEW (PT1 hub markup, portal back button) ========== -->
+<div class="app view pt1q" id="hubView">
+  <div class="hub-view hub-wrap">
     <div class="hub-back"><button type="button" id="portalBackBtn">← Study Portal</button></div>
-    <h1 id="hubTitle">Periodic Test 1</h1>
-    <p class="hub-kicker">Practice exam hub · Forms A–H</p>
-    <div class="sub">Medical Physics · Periodic Test 1 · Phys101 · practice simulation (not official)</div>
-    <div class="grid" id="formGrid">
-      <button class="card" type="button" data-form="A">
-        <div class="card-top"><span class="form-letter">Form A</span><span class="mood-stamp" id="stamp_A"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_A">0%</div>
-        <div class="card-meta" id="meta_A">not started</div>
-      </button>
-      <button class="card" type="button" data-form="B">
-        <div class="card-top"><span class="form-letter">Form B</span><span class="mood-stamp" id="stamp_B"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_B">0%</div>
-        <div class="card-meta" id="meta_B">not started</div>
-      </button>
-      <button class="card" type="button" data-form="C">
-        <div class="card-top"><span class="form-letter">Form C</span><span class="mood-stamp" id="stamp_C"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_C">0%</div>
-        <div class="card-meta" id="meta_C">not started</div>
-      </button>
-      <button class="card" type="button" data-form="D">
-        <div class="card-top"><span class="form-letter">Form D</span><span class="mood-stamp" id="stamp_D"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_D">0%</div>
-        <div class="card-meta" id="meta_D">not started</div>
-      </button>
-      <button class="card" type="button" data-form="E">
-        <div class="card-top"><span class="form-letter">Form E</span><span class="mood-stamp" id="stamp_E"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_E">0%</div>
-        <div class="card-meta" id="meta_E">not started</div>
-      </button>
-      <button class="card" type="button" data-form="F">
-        <div class="card-top"><span class="form-letter">Form F</span><span class="mood-stamp" id="stamp_F"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_F">0%</div>
-        <div class="card-meta" id="meta_F">not started</div>
-      </button>
-      <button class="card" type="button" data-form="G">
-        <div class="card-top"><span class="form-letter">Form G</span><span class="mood-stamp" id="stamp_G"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_G">0%</div>
-        <div class="card-meta" id="meta_G">not started</div>
-      </button>
-      <button class="card" type="button" data-form="H">
-        <div class="card-top"><span class="form-letter">Form H</span><span class="mood-stamp" id="stamp_H"></span></div>
-        <div class="card-sub">20 MCQs</div>
-        <div class="card-pct" id="pct_H">0%</div>
-        <div class="card-meta" id="meta_H">not started</div>
-      </button>
+    <h1 id="hubTitle">Practice</h1>
+    <p class="hub-kicker" id="hubKicker">Practice hub</p>
+    <div class="sub" id="hubSub"></div>
+    <div class="quiz-settings-wrap" id="quizSettingsWrap">
+      <button type="button" class="quiz-settings-btn" id="quizSettingsBtn" aria-expanded="false" aria-controls="quizSettingsPanel">⚙ Quiz settings</button>
+      <div class="quiz-settings-panel" id="quizSettingsPanel">
+        <div class="settings-title">Shuffle &amp; order</div>
+        <div class="pref-row">
+          <label><input type="checkbox" id="prefShuffleQ" checked> Shuffle questions</label>
+          <label><input type="checkbox" id="prefShuffleC" checked> Shuffle choices</label>
+          <label><input type="checkbox" id="prefLinkFirst" checked> Insert linking questions randomly</label>
+        </div>
+      </div>
     </div>
-    <div class="note">
-      Each form has <strong>exactly 20</strong> questions covering the <strong>whole exam</strong>
-      (~4 fundamentals, ~4–6 elasticity, ~7 fluids-static, ~3–4 fluids-flow — balanced mix, not topic-specialized).
-      Chapter 3 exclusions: viscosity, Poiseuille, Laplace, Reynolds.
-      Hub shows completion % (best progress kept after Restart). Timer auto-starts (25:00 focus → break → 5:00 → focus).
-      Hover/click the dock emoji for a mood tray (themes background + motion). Bank: 160 · Forms A–H · zero question-ID overlap.
-    </div>
-    <div class="foot" id="hubFoot">Forms A–H · progress saved on this device</div>
+    <button class="fs-btn" type="button" id="resetSolvedBtn" hidden>Reset solved</button>
+    <p class="foot bank-meta" id="bankMeta">Loading bank…</p>
+    <div id="hubSections"></div>
   </div>
 </div>
 
-<!-- ========== QUIZ VIEW ========== -->
-<div class="app view" id="quizView">
+<!-- ========== QUIZ VIEW (PT1 markup + portal results extras) ========== -->
+<div class="app view pt1q" id="quizView">
   <div class="header">
     <div class="header-left">
-      <h1 id="quizTitle">Medical Physics · Periodic Test 1 · Form A</h1>
-      <div class="sub">Phys101 · practice simulation (not official) · 20 MCQs</div>
+      <h1 id="quizTitle">Quiz</h1>
+      <div class="sub" id="quizSub">practice run</div>
     </div>
     <div class="header-right">
-      <button class="fs-btn" type="button" id="hubBtn">← Main Menu</button>
+      <button class="fs-btn" type="button" id="hubBtn">← Return to interface</button>
       <button class="fs-btn" type="button" id="fsBtn">Fullscreen · F</button>
     </div>
   </div>
   <div class="panel" id="mainPanel">
     <div class="status-bar">
-      <div class="status-dot"></div>
-      <span id="statusText">form A</span>
-      <span>·</span>
-      <span id="statusDetail">ready</span>
+      <div class="status-lead">
+        <div class="status-dot"></div>
+        <span id="statusText">ready</span>
+      </div>
+      <div class="q-nav" id="qNav" aria-label="Question navigator"></div>
     </div>
     <div class="panel-body">
       <div id="quizScreen">
         <div class="quiz-meta">
           <div class="elapsed" id="elapsed">00:00</div>
           <div class="track"><div class="track-fill" id="progressBar"></div></div>
-          <div class="q-count"><span id="qNum">1</span> / 20</div>
+          <div class="q-count"><span id="qNum">1</span> / <span id="qTotal">0</span></div>
           <span class="cat-tag" id="catTag">—</span>
         </div>
         <div class="question" id="qText"></div>
         <div class="options" id="options"></div>
-        <div class="feedback idle" id="feedback"></div>
         <div class="nav">
           <button class="nav-btn" id="backBtn" type="button" disabled>← Back</button>
           <button class="nav-btn primary" id="nextBtn" type="button" disabled>Next →</button>
         </div>
-        <div class="kbd-hint"><span class="kbd">A–D</span> / <span class="kbd">1–4</span> choose · <span class="kbd">Enter</span> next · <span class="kbd">F</span> fullscreen · <span class="kbd">Esc</span> menu</div>
+        <div class="feedback idle" id="feedback"></div>
+        <div class="kbd-hint"><span class="kbd">← →</span> move · <span class="kbd">Enter</span> next · <span class="kbd">F</span> fullscreen · <span class="kbd">Esc</span> hub</div>
       </div>
-      <div class="final" id="finalScreen">
-        <h2 id="finalHeading">Form A complete</h2>
-        <div class="score-big" id="scoreBig">0 / 20</div>
+      <div class="final" id="finalScreen" style="display:none">
+        <h2 id="finalHeading">Run complete</h2>
+        <div class="score-big" id="scoreBig">0 / 0</div>
         <p id="finalStats"></p>
-        <p style="opacity:.55;font-size:.78rem;margin-top:4px">practice simulation · not an official grade</p>
+        <div class="results-heading">All questions</div>
+        <div class="results-scroll" id="resultsScroll"></div>
         <div class="mood-wrap">
-          <div class="mood-prompt">how did that form feel?</div>
+          <div class="mood-prompt">how did that set feel?</div>
           <div class="mood-row" id="moodContainer">
             <button class="mood-btn" type="button" data-mood="😊">😊</button>
             <button class="mood-btn" type="button" data-mood="😐">😐</button>
@@ -1418,26 +1304,43 @@ body.split-quiz-active #chatDock{z-index:60}
             <button class="mood-btn" type="button" data-mood="😭">😭</button>
             <button class="mood-btn" type="button" data-mood="🥱">🥱</button>
           </div>
-          <div class="mood-label" id="moodLabel">tap one · stamps this form on the hub</div>
+          <div class="mood-label" id="moodLabel">tap one · stamps this set on the hub</div>
         </div>
         <div class="final-actions">
           <button class="btn-ghost" type="button" id="reviewBtn">Stay &amp; review answers</button>
-          <button class="btn-ghost" type="button" id="restartBtn">Restart form</button>
-          <button class="btn-gold" type="button" id="menuBtn">Main Menu</button>
+          <button class="btn-ghost" type="button" id="restartBtn">Restart</button>
+          <button class="btn-gold" type="button" id="againHubBtn">← Return to interface</button>
         </div>
       </div>
-      <div class="review" id="reviewScreen">
-        <h2 id="reviewHeading">Answer review · Form A</h2>
+      <div class="review" id="reviewScreen" style="display:none">
+        <h2 id="reviewHeading">Answer review</h2>
         <div id="reviewList"></div>
         <div class="review-actions">
           <button class="btn-ghost" type="button" id="reviewBackBtn">← Results</button>
-          <button class="btn-gold" type="button" id="reviewMenuBtn">Main Menu</button>
+          <button class="btn-gold" type="button" id="reviewMenuBtn">← Return to interface</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="foot" id="quizFoot">Phys101 Medical Physics · PT1 practice</div>
 </div>
+
+<!-- PT1 card reset dialog (id changed: the pomodoro already uses #resetModal) -->
+<div class="pt1q">
+  <div class="modal-overlay" id="cardResetModal">
+    <div class="modal-card">
+      <h3 id="resetModalTitle">Reset this set?</h3>
+      <p id="resetModalText">This clears solved progress for this card.</p>
+      <div class="modal-actions">
+        <button class="btn-ghost" type="button" id="resetModalCancel">Cancel</button>
+        <button class="btn-gold" type="button" id="resetModalConfirm">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PT1 theme settings: included but HIDDEN and NOT active (see pt1-theme/README.md).
+     The template is inert: nothing inside runs or renders. -->
+<template id="pt1ThemeSettingsTemplate" data-source="pt1-theme/settings-modal.html"></template>
 
 
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
@@ -1445,59 +1348,25 @@ body.split-quiz-active #chatDock{z-index:60}
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
 <script src="js/firebase-config.js?v=4"></script>
-<script src="js/progress-sync.js?v=2"></script>
+<script src="js/quiz-accent-bridge.js?v=1"></script>
+<script src="js/study-store.js?v=1"></script>
+<script src="js/progress-sync.js?v=3"></script>
 <script src="js/prefs.js?v=1"></script>
 <script src="js/profiles.js?v=6"></script>
-<script src="js/achievements.js?v=2"></script>
-<script src="js/mastery.js?v=2"></script>
+<script src="js/achievements.js?v=3"></script>
+<script src="js/mastery.js?v=3"></script>
 <script src="js/party.js?v=3"></script>
 <script src="js/party-timers.js?v=1"></script>
 <script src="js/cursors.js?v=3"></script>
 <script src="js/net-status.js?v=1"></script>
 <script src="js/bank-picker.js?v=1"></script>
 <script src="js/lobby.js?v=4"></script>
-<script src="js/split-quiz.js?v=5"></script>
+<script src="js/split-quiz.js?v=6"></script>
 <script src="js/chat.js?v=6"></script>
 <script>
-let FORM_BANK = {};
-let FORMS = [];
-let __bankMeta = {};
-let __activeMaterial = null;
-
-async function loadBank(path){
-  const res = await fetch(path, { cache: 'no-cache' });
-  if(!res.ok) throw new Error('bank HTTP ' + res.status);
-  const data = await res.json();
-  FORM_BANK = data.bank || data.FORM_BANK || {};
-  FORMS = data.forms || Object.keys(FORM_BANK).sort();
-  __bankMeta = data;
-  const hubTitle = document.getElementById('hubTitle') || document.querySelector('#hubView h1');
-  if(hubTitle) hubTitle.textContent = data.title || (__activeMaterial && __activeMaterial.title) || 'Practice exam';
-  const hubKicker = document.querySelector('#hubView .hub-kicker');
-  if(hubKicker){
-    const subj = data.subject || (__activeMaterial && __activeMaterial.subjectName) || 'Medical Physics';
-    hubKicker.textContent = subj + ' · Forms ' + (FORMS.length ? (FORMS[0] + '–' + FORMS[FORMS.length-1]) : '—');
-  }
-  const hubSub = document.querySelector('#hubView .hub-wrap > .sub');
-  if(hubSub){
-    hubSub.textContent = (data.subject || 'Medical Physics') + ' · ' + (data.title || 'Periodic Test 1') + ' · practice simulation (not official)';
-  }
-  const hubFoot = document.getElementById('hubFoot');
-  if(hubFoot){
-    const range = FORMS.length ? ('Forms ' + FORMS[0] + '–' + FORMS[FORMS.length-1]) : 'Forms';
-    hubFoot.textContent = range + ' · progress saved on this device';
-  }
-  return data;
-}
-
-let currentForm = null;
-let questions = [];
-let current = 0;
-let answers = [];
-let locked = false;
-let startTime = 0;
-let elapsedTimer = null;
-let quizActive = false;
+/* Bank loading + quiz state now live in js/quiz-engine.js (PT1 engine port). */
+var __activeMaterial = null; // read by the engine and party mode (window property on purpose)
+var __bankMeta = {};
 let timerMode = 'focus'; // hoisted for mood quote init
 
 /* —— FX canvas (speed from --particle-speed) —— */
@@ -1517,14 +1386,33 @@ function moodFxColors(){
 }
 function resize(){ W=canvas.width=innerWidth; H=canvas.height=innerHeight; }
 addEventListener('resize', resize); resize();
-for (let i=0;i<14;i++) streams.push({x:Math.random()*W,y:Math.random()*H,len:30+Math.random()*70,speed:.45+Math.random()*1.1,a:.07+Math.random()*.14,color:Math.random()>.4?'#22d3ee':'#fbbf24'});
-for (let i=0;i<22;i++) orbs.push({x:Math.random()*W,y:Math.random()*H,r:2+Math.random()*6,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.22,a:.12+Math.random()*.28,color:FX_COLS[i%FX_COLS.length],pulse:Math.random()*6});
+/* PT1 2234–2251: per-layer background switches (window.BgQuizFx). The portal
+   keeps its own particle look/physics; only the on/off + density control is PT1's. */
+const BASE_STREAM_COUNT=14, BASE_ORB_COUNT=22;
+const quizFxCtl={streams:true,orbs:true,fireworks:true,streamDensity:1,orbDensity:1,skinPattern:true,radialGlows:true};
+function rebuildStreams(){
+  streams.length=0;
+  const n=Math.max(0,Math.round(BASE_STREAM_COUNT*Math.max(0,Math.min(2,quizFxCtl.streamDensity||1))));
+  for (let i=0;i<n;i++) streams.push({x:Math.random()*W,y:Math.random()*H,len:30+Math.random()*70,speed:.45+Math.random()*1.1,a:.07+Math.random()*.14,color:Math.random()>.4?'#22d3ee':'#fbbf24'});
+}
+function rebuildOrbs(){
+  orbs.length=0;
+  const n=Math.max(0,Math.round(BASE_ORB_COUNT*Math.max(0,Math.min(2,quizFxCtl.orbDensity||1))));
+  for (let i=0;i<n;i++) orbs.push({x:Math.random()*W,y:Math.random()*H,r:2+Math.random()*6,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.22,a:.12+Math.random()*.28,color:FX_COLS[i%FX_COLS.length],pulse:Math.random()*6});
+}
+(function initFxParticles(){ rebuildStreams(); rebuildOrbs(); })();
+function applyQuizCssLayers(){
+  document.documentElement.classList.toggle('bg-edit-hide-skin', !quizFxCtl.skinPattern);
+  document.documentElement.classList.toggle('bg-edit-hide-glows', !quizFxCtl.radialGlows);
+  if(canvas) canvas.style.display=(fxAllowed() && (quizFxCtl.streams||quizFxCtl.orbs||quizFxCtl.fireworks||quizFxCtl.radialGlows))?'':'none';
+}
 function spawnFireworkBurst(cx,cy,count=28){
+  if(!quizFxCtl.fireworks) return;
   FX_COLS = moodFxColors();
   for(let i=0;i<count;i++){const angle=(Math.PI*2*i)/count+Math.random()*.3,speed=2.2+Math.random()*4.5;
     sparks.push({x:cx,y:cy,vx:Math.cos(angle)*speed,vy:Math.sin(angle)*speed,life:1,decay:.012+Math.random()*.018,color:FX_COLS[i%FX_COLS.length],r:1.5+Math.random()*2.5});}
 }
-setInterval(()=>{var basic=document.documentElement.getAttribute('data-quality')==='basic'; if(basic)return; if(Math.random()>.55)spawnFireworkBurst(Math.random()*W,Math.random()*H*.7,14);},2800);
+setInterval(()=>{var basic=document.documentElement.getAttribute('data-quality')==='basic'; if(basic)return; if(!quizFxCtl.fireworks) return; if(Math.random()>.55)spawnFireworkBurst(Math.random()*W,Math.random()*H*.7,14);},2800);
 var __fxRunning=false;
 function fxAllowed(){
   if(window.StudyPrefs&&typeof StudyPrefs.isBasic==='function') return !StudyPrefs.isBasic();
@@ -1539,9 +1427,10 @@ function draw(){
   const glow = getComputedStyle(document.documentElement).getPropertyValue('--bg-glow').trim() || 'rgba(12,40,70,.32)';
   const g=ctx.createRadialGradient(W*.5,H*.15,0,W*.5,H*.5,Math.max(W,H)*.9);
   g.addColorStop(0, glow); g.addColorStop(1,'rgba(0,0,0,.55)');
-  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
-  streams.forEach(s=>{s.y+=s.speed*spd;if(s.y>H+s.len){s.y=-s.len;s.x=Math.random()*W;}ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(s.x,s.y-s.len);ctx.strokeStyle=s.color;ctx.globalAlpha=s.a;ctx.lineWidth=1.5;ctx.stroke();});
-  orbs.forEach((o,i)=>{o.x+=o.vx*spd;o.y+=o.vy*spd;o.pulse+=.024*spd;o.color=FX_COLS[i%FX_COLS.length];if(o.x<-20)o.x=W+20;if(o.x>W+20)o.x=-20;if(o.y<-20)o.y=H+20;if(o.y>H+20)o.y=-20;ctx.beginPath();ctx.arc(o.x,o.y,o.r*(.7+.35*Math.sin(o.pulse)),0,Math.PI*2);ctx.fillStyle=o.color;ctx.globalAlpha=o.a*(.5+.5*Math.sin(o.pulse));ctx.fill();});
+  if(quizFxCtl.radialGlows){ ctx.fillStyle=g;ctx.fillRect(0,0,W,H); }
+  if(quizFxCtl.streams) streams.forEach(s=>{s.y+=s.speed*spd;if(s.y>H+s.len){s.y=-s.len;s.x=Math.random()*W;}ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(s.x,s.y-s.len);ctx.strokeStyle=s.color;ctx.globalAlpha=s.a;ctx.lineWidth=1.5;ctx.stroke();});
+  if(quizFxCtl.orbs) orbs.forEach((o,i)=>{o.x+=o.vx*spd;o.y+=o.vy*spd;o.pulse+=.024*spd;o.color=FX_COLS[i%FX_COLS.length];if(o.x<-20)o.x=W+20;if(o.x>W+20)o.x=-20;if(o.y<-20)o.y=H+20;if(o.y>H+20)o.y=-20;ctx.beginPath();ctx.arc(o.x,o.y,o.r*(.7+.35*Math.sin(o.pulse)),0,Math.PI*2);ctx.fillStyle=o.color;ctx.globalAlpha=o.a*(.5+.5*Math.sin(o.pulse));ctx.fill();});
+  if(!quizFxCtl.fireworks && sparks.length) sparks.length=0;
   for(let i=sparks.length-1;i>=0;i--){const s=sparks[i];s.x+=s.vx*spd;s.y+=s.vy*spd;s.vy+=.06*spd;s.life-=s.decay*Math.max(.5,spd);if(s.life<=0){sparks.splice(i,1);continue;}ctx.beginPath();ctx.arc(s.x,s.y,s.r*s.life,0,Math.PI*2);ctx.fillStyle=s.color;ctx.globalAlpha=s.life*.9;ctx.fill();}
   ctx.globalAlpha=1;
   requestAnimationFrame(draw);
@@ -1549,13 +1438,35 @@ function draw(){
 draw();
 window.addEventListener('study-prefs-changed',function(){
   var basic=!fxAllowed();
-  if(canvas) canvas.style.display=basic?'none':'';
+  applyQuizCssLayers();
   if(!basic && !__fxRunning) requestAnimationFrame(draw);
 });
+window.BgQuizFx={
+  getState:function(){ return { streams:!!quizFxCtl.streams, orbs:!!quizFxCtl.orbs, fireworks:!!quizFxCtl.fireworks, streamDensity:quizFxCtl.streamDensity, orbDensity:quizFxCtl.orbDensity, skinPattern:!!quizFxCtl.skinPattern, radialGlows:!!quizFxCtl.radialGlows, streamCount:streams.length, orbCount:orbs.length }; },
+  setEnabled:function(key,on){
+    if(key in quizFxCtl && typeof quizFxCtl[key]==='boolean') quizFxCtl[key]=!!on;
+    applyQuizCssLayers();
+  },
+  setDensity:function(key,d){
+    const v=Math.max(0,Math.min(2,Number(d)||0));
+    if(key==='streamDensity'){ quizFxCtl.streamDensity=v; rebuildStreams(); }
+    else if(key==='orbDensity'){ quizFxCtl.orbDensity=v; rebuildOrbs(); }
+  },
+  applyState:function(st){
+    if(!st) return;
+    ['streams','orbs','fireworks','skinPattern','radialGlows'].forEach(function(k){ if(k in st) quizFxCtl[k]=!!st[k]; });
+    if('streamDensity' in st) quizFxCtl.streamDensity=Math.max(0,Math.min(2,Number(st.streamDensity)||0));
+    if('orbDensity' in st) quizFxCtl.orbDensity=Math.max(0,Math.min(2,Number(st.orbDensity)||0));
+    rebuildStreams(); rebuildOrbs(); applyQuizCssLayers();
+  }
+};
+applyQuizCssLayers();
 
 /* —— Custom cursor —— */
 const cursor=document.getElementById('cursor'), core=document.querySelector('#cursor.core');
 function customCursorOn(){
+  // PT1 2291: never draw the custom cursor while the last input was touch
+  if(document.documentElement.getAttribute('data-pointer-input')==='touch') return false;
   if(window.StudyPrefs && typeof StudyPrefs.isCustomCursorEnabled==='function') return StudyPrefs.isCustomCursorEnabled();
   return document.documentElement.getAttribute('data-custom-cursor')!=='off';
 }
@@ -2428,469 +2339,7 @@ window.__timerUiReady = true;
 refreshTimerQuote(false);
 if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true);
 
-/* —— Progress storage (best ever + current run) —— */
-function lsGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
-function lsSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
-function formBestPct(L){
-  const v = parseInt(lsGet('pt1_form_'+L+'_best_pct')||'0',10);
-  return Number.isFinite(v)? Math.max(0,Math.min(100,v)) : 0;
-}
-function formRunPct(L){
-  const v = parseInt(lsGet('pt1_form_'+L+'_run_pct')||'0',10);
-  return Number.isFinite(v)? Math.max(0,Math.min(100,v)) : 0;
-}
-function formHubPct(L){
-  return Math.max(formBestPct(L), formRunPct(L));
-}
-function setBestPct(L, pct){
-  const next = Math.max(formBestPct(L), Math.max(0,Math.min(100, Math.round(pct))));
-  lsSet('pt1_form_'+L+'_best_pct', String(next));
-  if(window.StudyProgress && typeof StudyProgress.syncFormsFromLocal==='function'){
-    StudyProgress.syncFormsFromLocal();
-  }
-  return next;
-}
-function setRunPct(L, pct){
-  const p = Math.max(0,Math.min(100, Math.round(pct)));
-  lsSet('pt1_form_'+L+'_run_pct', String(p));
-  return p;
-}
-function runStateKey(L){ return 'pt1_form_'+L+'_run_state'; }
-function clearRunProgress(L){
-  lsSet('pt1_form_'+L+'_run_pct', '0');
-  try{ localStorage.removeItem(runStateKey(L)); }catch(e){}
-  // do NOT touch best_pct / done / score / mood stamp
-}
-function saveRunState(){
-  if(!currentForm || !questions.length) return;
-  const lockedCount = answers.filter(a=>a!==null).length;
-  const pct = Math.round((lockedCount / Math.max(1,questions.length)) * 100);
-  setRunPct(currentForm, pct);
-  // mid-run best tracks progress; finished 100% stays forever via setBestPct on finish
-  if(pct < 100) setBestPct(currentForm, pct);
-  const payload = {
-    answers: answers.slice(),
-    current: current,
-    lockedCount: lockedCount,
-    updated: Date.now()
-  };
-  lsSet(runStateKey(currentForm), JSON.stringify(payload));
-}
-function loadRunState(L){
-  const raw = lsGet(runStateKey(L));
-  if(!raw) return null;
-  try{
-    const data = JSON.parse(raw);
-    if(!data || !Array.isArray(data.answers)) return null;
-    return data;
-  }catch(e){ return null; }
-}
-function firstUnansweredIndex(ans){
-  for(let i=0;i<ans.length;i++){ if(ans[i]===null) return i; }
-  return Math.max(0, ans.length-1);
-}
-function updateRunFromAnswers(){
-  if(!currentForm) return;
-  saveRunState();
-}
-
-function refreshHubCards(){
-  FORMS.forEach(L=>{
-    let mood=null, done=null, score=null;
-    mood=lsGet('pt1_form_'+L+'_mood');
-    done=lsGet('pt1_form_'+L+'_done');
-    score=lsGet('pt1_form_'+L+'_score');
-    const stamp=document.getElementById('stamp_'+L);
-    // mastery badge on form card
-    if(window.StudyMastery){
-      const card = stamp && stamp.closest('.card');
-      if(card){
-        let badge = card.querySelector('.section-mastery-badge');
-        const bk = StudyMastery.bankKeyFromPath((__activeMaterial && __activeMaterial.bank) || 'banks/medphys/pt1.json');
-        const htmlBadge = StudyMastery.badgeHTML(bk, L);
-        if(htmlBadge){
-          if(!badge){ const sub = card.querySelector('.card-sub'); if(sub) sub.insertAdjacentHTML('afterend', htmlBadge); }
-          else badge.outerHTML = htmlBadge;
-        } else if(badge) badge.remove();
-      }
-    }
-
-    const meta=document.getElementById('meta_'+L);
-    const pctEl=document.getElementById('pct_'+L);
-    stamp.textContent=mood||'';
-    const hubPct = formHubPct(L);
-    const best = formBestPct(L);
-    const run = formRunPct(L);
-    const answeredApprox = Math.round(hubPct/100*20);
-    pctEl.textContent = answeredApprox+'/20 · '+hubPct+'%';
-    if(hubPct>=100 || done){
-      meta.textContent='complete'+(score!=null?(' · last '+score+'/20'):'')+(mood?(' · '+mood):'');
-    } else if(hubPct>0 || run>0){
-      meta.textContent='in progress'+(best>=100?' · best 100%':' · best '+best+'%');
-    } else {
-      meta.textContent='not started';
-    }
-  });
-}
-refreshHubCards();
-
-document.querySelectorAll('.card[data-form]').forEach(card=>{
-  card.addEventListener('click',()=>{ unlockAudio(); openForm(card.dataset.form); });
-});
-
-function showView(id){
-  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  window.scrollTo(0,0);
-}
-
-function openForm(letter, opts){
-  opts = opts || {};
-  const forceFresh = !!opts.fresh; // Restart path
-  currentForm = letter;
-  if(window.StudyChat && StudyChat.setLocalRoom) StudyChat.setLocalRoom('form_'+letter);
-  questions = FORM_BANK[letter].slice();
-  if(window.StudyMastery){
-    const bk = StudyMastery.bankKeyFromPath((__activeMaterial && __activeMaterial.bank) || 'banks/medphys/pt1.json');
-    StudyMastery.beginSession(bk, letter, questions.length);
-  }
-  // Mastery+ progressive: keep full bank indices via clearCount; skip DNSA / already-cleared-at-layer by rebuilding answers/current from queue
-  if(opts.masteryPlus && window.__masteryPlusQueue && window.__masteryPlusQueue.length && window.StudyMastery){
-    // Keep questions array intact for scoring; jump to first uncleared index
-    const q0 = window.__masteryPlusQueue[0];
-    // Mark already-cleared-at-layer as locked answers so user only plays remaining
-    const sess = StudyMastery.getSession();
-    const f = StudyMastery.getOrInitForm(sess.bankKey, letter, questions.length);
-    const level = sess.masteryPlusLevel|0;
-    answers = questions.map((_,i)=>{
-      if((f.clearCount[i]|0) > level) return questions[i].correct;
-      if(StudyMastery.isDNSA(sess.bankKey, letter, i)) return questions[i].correct;
-      return null;
-    });
-    current = answers.findIndex(a=>a===null);
-    if(current<0) current = 0;
-    locked = answers[current]!==null;
-  }
-  const n = questions.length;
-  const done = lsGet('pt1_form_'+letter+'_done');
-  const saved = forceFresh ? null : loadRunState(letter);
-
-  // Finished form with no active mid-run → show results + Restart (don't wipe best %)
-  if(!forceFresh && done && (!saved || (saved.answers||[]).every(a=>a!==null))){
-    current = n-1;
-    answers = (saved && saved.answers && saved.answers.length===n) ? saved.answers.slice() : new Array(n).fill(0);
-    // if no answer detail, still show results from last score
-    quizActive = false;
-    startTime = Date.now();
-    document.getElementById('quizTitle').textContent='Form '+letter;
-    document.getElementById('finalHeading').textContent='Form '+letter+' complete';
-    document.getElementById('reviewHeading').textContent='Answer review · Form '+letter;
-    document.getElementById('quizFoot').textContent='Phys101 Medical Physics · PT1 practice · Form '+letter;
-    document.getElementById('statusText').textContent='form '+letter;
-    document.getElementById('quizScreen').style.display='none';
-    document.getElementById('reviewScreen').style.display='none';
-    document.getElementById('finalScreen').style.display='block';
-    const sc = lsGet('pt1_form_'+letter+'_score');
-    const s = sc!=null ? parseInt(sc,10) : score();
-    document.getElementById('scoreBig').textContent = s+' / '+questions.length;
-    document.getElementById('finalStats').textContent = (Number.isFinite(s)?Math.round(s/questions.length*100):0)+'%  ·  already finished · Restart keeps hub 100%';
-    document.getElementById('statusText').textContent='results';
-    document.getElementById('statusDetail').textContent='finished · restart available';
-    showView('quizView');
-    refreshHubCards();
-    return;
-  }
-
-  if(opts.masteryPlus && Array.isArray(answers) && answers.length===n){
-    // keep Mastery+ prefilled answers/current from above
-    if(current==null || current<0) current = firstUnansweredIndex(answers);
-  } else if(saved && Array.isArray(saved.answers) && saved.answers.length===n){
-    answers = saved.answers.map(a => (a===null || a===undefined) ? null : a);
-    // Resume at first unanswered so Back walks answered queue
-    current = firstUnansweredIndex(answers);
-    // If everything answered but not marked done, go to finish
-    if(answers.every(a=>a!==null)){
-      current = n-1;
-    }
-  } else {
-    answers = new Array(n).fill(null);
-    current = 0;
-  }
-  locked = answers[current]!==null;
-  startTime = Date.now();
-  quizActive = true;
-  refreshHubCards();
-  if(elapsedTimer) clearInterval(elapsedTimer);
-  elapsedTimer = setInterval(()=>{
-    const e=Math.floor((Date.now()-startTime)/1000);
-    document.getElementById('elapsed').textContent=String(Math.floor(e/60)).padStart(2,'0')+':'+String(e%60).padStart(2,'0');
-  },1000);
-  document.getElementById('quizTitle').textContent='Form '+letter;
-  document.getElementById('finalHeading').textContent='Form '+letter+' complete';
-  document.getElementById('reviewHeading').textContent='Answer review · Form '+letter;
-  document.getElementById('quizFoot').textContent='Phys101 Medical Physics · PT1 practice · Form '+letter;
-  document.getElementById('statusText').textContent='form '+letter;
-  document.getElementById('quizScreen').style.display='block';
-  document.getElementById('finalScreen').style.display='none';
-  document.getElementById('reviewScreen').style.display='none';
-  showView('quizView');
-  // If all answered mid-restore, finish
-  if(answers.every(a=>a!==null)){
-    finishQuiz(true);
-    return;
-  }
-  renderQuestion();
-  saveRunState();
-}
-
-function goHub(){
-  if(quizActive && currentForm){
-    saveRunState();
-  }
-  quizActive = false;
-  if(elapsedTimer){clearInterval(elapsedTimer);elapsedTimer=null;}
-  if(window.StudyMastery) StudyMastery.endSession();
-  if(window.StudyChat && StudyChat.setActivity) StudyChat.setActivity({ activity:'hub', quiz:null, localRoom:'hub', force:true });
-  refreshHubCards();
-  showView('hubView');
-}
-
-function goPortal(){
-  if(quizActive && currentForm){
-    saveRunState();
-  }
-  quizActive = false;
-  if(elapsedTimer){clearInterval(elapsedTimer);elapsedTimer=null;}
-  if(window.StudyMastery) StudyMastery.endSession();
-  if(window.StudyChat && StudyChat.setLocalRoom) StudyChat.setLocalRoom('lobby');
-  if(window.StudyChat && StudyChat.setActivity) StudyChat.setActivity({ activity:'hub', quiz:null, force:true });
-  showView('portalView');
-  document.title = 'Study Portal';
-}
-
-function restartForm(){
-  if(!currentForm) return;
-  // Restart clears ONLY current run; best completion % stays
-  const L = currentForm;
-  clearRunProgress(L);
-  // keep done/best; allow a new attempt from Q1
-  lsSet('pt1_form_'+L+'_done', ''); // clear done flag for new attempt UI, best_pct untouched
-  // Actually: user wants 100% on hub to remain — keep done flag for hub display
-  // Re-set done if best is 100 so hub still shows complete
-  if(formBestPct(L)>=100) lsSet('pt1_form_'+L+'_done', '1');
-  openForm(L, {fresh:true});
-  showToast('Restarted · hub best % kept', 2600);
-}
-
-const catLabel={fundamentals:'fundamentals',elasticity:'elasticity',fluids_static:'fluids · static',fluids_flow:'fluids · flow'};
-
-function renderQuestion(){
-  const q=questions[current];
-  document.getElementById('qText').textContent=q.q;
-  document.getElementById('qNum').textContent=current+1;
-  const answeredN = answers.filter(a=>a!==null).length;
-  if(window.StudyMastery && StudyMastery.getSession && (StudyMastery.getSession().masteryPlusLevel|0)>=1){
-    StudyMastery.updateProgressBar();
-  } else {
-    document.getElementById('progressBar').style.width=Math.round((answeredN/questions.length)*100)+'%';
-  }
-  document.getElementById('statusDetail').textContent='item '+(current+1)+' / 20 · '+answeredN+' locked';
-  document.getElementById('catTag').textContent=catLabel[q.cat]||q.cat;
-  const opts=document.getElementById('options'); opts.innerHTML='';
-  const answered=answers[current]!==null;
-  locked = answered;
-  q.options.forEach((opt,i)=>{
-    const btn=document.createElement('button');
-    btn.className='opt'; btn.type='button'; btn.dataset.key=String.fromCharCode(65+i);
-    btn.textContent=opt; btn.onclick=()=>selectAnswer(i);
-    if(answered){
-      btn.disabled=true;
-      if(i===q.correct) btn.classList.add('correct');
-      // do not grey/spoil other options as "wrong reveal" — only mark correct after lock
-    }
-    opts.appendChild(btn);
-  });
-  const fb=document.getElementById('feedback');
-  if(answered){
-    fb.className='feedback good';
-    fb.textContent='✓ '+q.explain;
-    document.getElementById('nextBtn').disabled=false;
-  } else {
-    fb.className='feedback idle';
-    fb.textContent='';
-    document.getElementById('nextBtn').disabled=true;
-  }
-  // Back walks the answered queue (any earlier index)
-  document.getElementById('backBtn').disabled = current===0;
-  document.getElementById('nextBtn').textContent=current===questions.length-1?'Finish ✓':'Next →';
-}
-
-function selectAnswer(idx){
-  if(!quizActive || locked || answers[current]!==null) return;
-  if(document.getElementById('quizScreen').style.display==='none') return;
-  const q=questions[current];
-  const panel=document.getElementById('mainPanel');
-  const fb=document.getElementById('feedback');
-  const opts=[...document.querySelectorAll('.opt')];
-
-  // REFUSE wrong — soft reject, do not advance, do not reveal correct by greying others
-  if(idx !== q.correct){
-    if(window.StudyAchievements && typeof StudyAchievements.recordWrong==='function'){
-      StudyAchievements.recordWrong();
-    }
-    const btn = opts[idx];
-    if(btn){
-      btn.classList.remove('soft-wrong');
-      void btn.offsetWidth;
-      btn.classList.add('soft-wrong');
-      setTimeout(()=>btn.classList.remove('soft-wrong'), 480);
-    }
-    panel.classList.remove('wrong-pulse'); void panel.offsetWidth;
-    panel.classList.add('wrong-pulse');
-    setTimeout(()=>panel.classList.remove('wrong-pulse'), 500);
-    fb.className='feedback soft';
-    fb.textContent='not that one · try again';
-    clearTimeout(selectAnswer._softT);
-    selectAnswer._softT=setTimeout(()=>{
-      if(!locked){ fb.className='feedback idle'; fb.textContent=''; }
-    }, 900);
-    return;
-  }
-
-  // Correct — lock in, show explain, allow Next
-  locked = true;
-  answers[current] = idx;
-  opts.forEach((o,i)=>{ o.disabled=true; if(i===idx) o.classList.add('correct'); });
-  fb.className='feedback good';
-  fb.textContent='✓ '+q.explain;
-  panel.classList.add('correct-pulse');
-  setTimeout(()=>panel.classList.remove('correct-pulse'),650);
-  spawnConfetti();
-  spawnFireworkBurst(W*.5,H*.35,22);
-  document.getElementById('nextBtn').disabled=false;
-  if(window.StudyProfiles && typeof StudyProfiles.bumpQuestionsAnswered==='function'){
-    StudyProfiles.bumpQuestionsAnswered(1);
-  }
-  if(window.StudyAchievements && typeof StudyAchievements.recordCorrect==='function'){
-    StudyAchievements.recordCorrect();
-  }
-  if(window.StudyMastery){
-    const bk = StudyMastery.bankKeyFromPath((__activeMaterial && __activeMaterial.bank) || 'banks/medphys/pt1.json');
-    StudyMastery.recordClear(bk, currentForm, current, questions.length);
-    StudyMastery.updateProgressBar();
-    StudyMastery.updateDNSAUI();
-    if(window.StudyAchievements && typeof StudyAchievements.recordFormMastery==='function'){
-      const pct = StudyMastery.getPct(bk, currentForm);
-      if(pct >= 100) StudyAchievements.recordFormMastery(currentForm, bk);
-    }
-  }
-  updateRunFromAnswers();
-  refreshHubCards();
-}
-
-function goNext(){
-  if(!locked || answers[current]===null) return;
-  if(current<questions.length-1){
-    current++;
-    locked = answers[current]!==null;
-    renderQuestion();
-    saveRunState();
-  } else finishQuiz();
-}
-function goBack(){
-  if(current>0){
-    current--;
-    locked = answers[current]!==null;
-    renderQuestion();
-    saveRunState();
-  }
-}
-function score(){ let c=0; answers.forEach((a,i)=>{ if(a===questions[i].correct) c++; }); return c; }
-
-function finishQuiz(){
-  document.getElementById('quizScreen').style.display='none';
-  document.getElementById('reviewScreen').style.display='none';
-  document.getElementById('finalScreen').style.display='block';
-  const s=score(), e=Math.floor((Date.now()-startTime)/1000);
-  document.getElementById('scoreBig').textContent=s+' / '+questions.length;
-  document.getElementById('finalStats').textContent=Math.round(s/questions.length*100)+'%  ·  elapsed '+String(Math.floor(e/60)).padStart(2,'0')+':'+String(e%60).padStart(2,'0');
-  document.getElementById('statusText').textContent='results';
-  document.getElementById('progressBar').style.width='100%';
-  const FORM_ID='pt1_form_'+currentForm;
-  lsSet(FORM_ID+'_score', String(s));
-  lsSet(FORM_ID+'_done', '1');
-  setRunPct(currentForm, 100);
-  setBestPct(currentForm, 100); // lock hub at 100% after first finish
-  // keep full answers so Back/review/resume still know the queue
-  lsSet(runStateKey(currentForm), JSON.stringify({answers:answers.slice(), current:questions.length-1, lockedCount:questions.length, updated:Date.now(), finished:true}));
-  quizActive = false;
-  if(window.StudyMastery){
-    const bk = StudyMastery.bankKeyFromPath((__activeMaterial && __activeMaterial.bank) || 'banks/medphys/pt1.json');
-    StudyMastery.endSession();
-    const finalCard = document.getElementById('finalScreen');
-    StudyMastery.injectResultsMasteryUI(bk, currentForm, finalCard);
-  }
-  spawnFireworkBurst(W*.5,H*.3,36);
-  restoreMoodUI();
-  refreshHubCards();
-}
-
-function showReview(){
-  document.getElementById('finalScreen').style.display='none';
-  document.getElementById('reviewScreen').style.display='block';
-  const list=document.getElementById('reviewList'); list.innerHTML='';
-  questions.forEach((q,i)=>{
-    const pick=answers[i], ok=pick===q.correct;
-    const div=document.createElement('div'); div.className='review-item';
-    div.innerHTML='<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div>'+
-      '<div class="rline '+(ok?'rok':'rbad')+'">Your pick: '+(pick==null?'—':String.fromCharCode(65+pick)+') '+escapeHtml(q.options[pick]))+'</div>'+
-      '<div class="rline rok">Correct: '+String.fromCharCode(65+q.correct)+') '+escapeHtml(q.options[q.correct])+'</div>'+
-      '<div class="rex">'+escapeHtml(q.explain)+'</div>';
-    list.appendChild(div);
-  });
-  document.getElementById('statusText').textContent='review';
-}
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-
-function restoreMoodUI(){
-  const MOOD_KEY='pt1_form_'+currentForm+'_mood';
-  let saved=null; try{saved=localStorage.getItem(MOOD_KEY);}catch(e){}
-  document.querySelectorAll('.mood-btn').forEach(btn=>btn.classList.toggle('selected',!!(saved&&btn.dataset.mood===saved)));
-  document.getElementById('moodLabel').textContent=saved?('stamped '+saved+' · saved on hub'):'tap one · stamps this form on the hub';
-}
-document.getElementById('moodContainer').addEventListener('click',e=>{
-  const btn=e.target.closest('.mood-btn'); if(!btn||!currentForm)return;
-  unlockAudio();
-  const mood=btn.dataset.mood;
-  try{localStorage.setItem('pt1_form_'+currentForm+'_mood',mood);}catch(err){}
-  document.querySelectorAll('.mood-btn').forEach(b=>b.classList.toggle('selected',b===btn));
-  document.getElementById('moodLabel').textContent='stamped '+mood+' · saved on hub';
-});
-
-function spawnConfetti(n=16){
-  const colors=moodFxColors();
-  for(let i=0;i<n;i++){const el=document.createElement('div');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=colors[i%colors.length];document.body.appendChild(el);setTimeout(()=>el.remove(),1400);}
-}
-function toggleFullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>{});else document.exitFullscreen();}
-
-document.getElementById('fsBtn').onclick=toggleFullscreen;
-document.getElementById('hubBtn').onclick=goHub;
-document.getElementById('menuBtn').onclick=goHub;
-document.getElementById('reviewMenuBtn').onclick=goHub;
-document.getElementById('reviewBtn').onclick=showReview;
-document.getElementById('restartBtn').onclick=restartForm;
-document.getElementById('reviewBackBtn').onclick=()=>{document.getElementById('reviewScreen').style.display='none';document.getElementById('finalScreen').style.display='block';document.getElementById('statusText').textContent='results';};
-document.getElementById('backBtn').onclick=goBack;
-document.getElementById('nextBtn').onclick=goNext;
-
-document.addEventListener('keydown',e=>{
-  if(e.key==='f'||e.key==='F'){ if(document.getElementById('quizView').classList.contains('active')) toggleFullscreen(); }
-  if(e.key==='Escape' && document.getElementById('quizView').classList.contains('active')){
-    if(moodWrap.classList.contains('open')){ openMoodTray(false); return; }
-    goHub(); return;
-  }
-  /* Answer-key shortcuts removed so chat / inputs never collide with quiz */
-});
+/* —— Quiz engine: see js/quiz-engine.js (loaded after this script). —— */
 
 /* —— Portal SPA navigation (catalog + in-page bank load) —— */
 (function initPortalSpa(){
@@ -3046,10 +2495,9 @@ document.addEventListener('keydown',e=>{
           if(window.StudyPartyTimers) StudyPartyTimers.syncFromParty();
           if(window.StudyParty && StudyParty.applyNavLock) StudyParty.applyNavLock();
           if(window.StudyMastery){
-            StudyMastery._onMasteryPlusActivate = function(bk, form, queue){
-              if(!queue || !queue.length){ portalToast('Mastery+ complete for this form'); return; }
-              window.__masteryPlusQueue = queue.slice();
-              openForm(form, {fresh:true, masteryPlus:true});
+            StudyMastery._onMasteryPlusActivate = function(bk, cardId, queue){
+              if(!queue || !queue.length){ portalToast('Mastery+ complete for this set'); return; }
+              startMasteryPlusRun(bk, cardId, queue);
             };
           }
         }).catch(err=>{
@@ -3077,5 +2525,6 @@ document.addEventListener('keydown',e=>{
 })();
 
 </script>
+<script src="js/quiz-engine.js?v=1"></script>
 </body>
 </html>
