@@ -204,7 +204,31 @@ function remainingOf(pool){
    - one category with ≤100 questions → one card. */
 const CARD_SPLIT_OVER=100, CARD_CHUNK_TARGET=40;
 function catLabelOf(c){ return String(c).replace(/_/g,' '); }
-function buildCards(all){
+/* Optional card grouping (PT1 QUIZ_FORMS "category mode"):
+   catalog material `cards` or bank `cards` = [{id?, title, cats:[...]}].
+   Each entry is one card holding every question whose cat is listed (PT1
+   poolForForm). Categories not named by any entry still get their own card,
+   so no question can disappear. Catalog wins over bank. */
+function cardGroupsFor(data){
+  const m=window.__activeMaterial;
+  const g=(m && Array.isArray(m.cards) && m.cards.length)?m.cards:(data && Array.isArray(data.cards) && data.cards.length?data.cards:null);
+  return g;
+}
+function buildGroupedCards(all, groups){
+  const norm=c=>catLabelOf(c==null||c===''?'general':c);
+  const cards=[], taken=new Set();
+  groups.forEach((g,i)=>{
+    const set=new Set((g.cats||[]).map(norm));
+    const pool=all.filter(q=>set.has(norm(q.cat)));
+    pool.forEach(q=>taken.add(q.__id));
+    cards.push({id:'grp:'+(g.id||g.title||('card'+(i+1))), label:String(g.title||g.id||('Set '+(i+1))), pool, cats:[...set]});
+  });
+  const rest=all.filter(q=>!taken.has(q.__id));
+  if(rest.length) buildCards(rest, true).forEach(c=>cards.push(c));
+  return cards;
+}
+function buildCards(all, noGroups){
+  if(!noGroups){ const g=cardGroupsFor(BANK); if(g) return buildGroupedCards(all, g); }
   const cats=[], byCat={};
   all.forEach(q=>{
     const c=(q.cat==null||q.cat==='')?'general':String(q.cat);
@@ -643,6 +667,14 @@ function ingestBank(data, path){
   BANK_KEY=window.StudyMastery?StudyMastery.bankKeyFromPath(BANK_PATH):String(BANK_PATH||data.id||data.title||'anon');
   ALLQ=buildAllQuestions(data);
   CARDS=buildCards(ALLQ);
+  // Bank replaced by a newer one: move saved progress from old ids to new ids.
+  if(data.legacy && data.legacy.idMap){
+    const valid={ids:new Set(ALLQ.map(q=>q.__id)), cards:new Set(CARDS.map(c=>c.id))};
+    try{
+      if(window.StudyStore && StudyStore.remapIds) StudyStore.remapIds(BANK_KEY, data.legacy.idMap, valid);
+      if(window.StudyMastery && StudyMastery.remapIds) StudyMastery.remapIds(BANK_KEY, data.legacy.idMap, valid.ids);
+    }catch(e){ console.warn('[quiz] id remap skipped', e); }
+  }
   if(window.StudyMastery) CARDS.forEach(c=>StudyMastery.registerCard(BANK_KEY, c.id, c.pool.map(q=>q.__id)));
   // PORTAL: legacy globals other scripts read
   window.FORM_BANK=data.bank; window.FORMS=data.forms||Object.keys(data.bank||{}); window.__bankMeta=data;

@@ -442,6 +442,35 @@
     bk.migratedForms = true;
   }
 
+  /** Bank replaced: move clear counts and "do not show again" to the new ids. */
+  function remapIds(bankKey, map, validIds) {
+    map = map || {};
+    let changed = false;
+    const bk = data[bankKey];
+    if (bk && bk.q) {
+      Object.keys(bk.q).forEach((id) => {
+        if (validIds.has(id)) return;
+        const to = map[id];
+        if (to && validIds.has(to)) bk.q[to] = Math.max(bk.q[to] | 0, bk.q[id] | 0);
+        delete bk.q[id];
+        changed = true;
+      });
+    }
+    const d = dnsa[bankKey];
+    if (d) {
+      Object.keys(d).forEach((k) => {
+        const m = /^id:(.*)$/.exec(k);
+        if (!m || validIds.has(m[1])) return;
+        const to = map[m[1]];
+        if (to && validIds.has(to)) d['id:' + to] = d[k];
+        delete d[k];
+        changed = true;
+      });
+    }
+    if (changed) save();
+    return changed;
+  }
+
   load();
   // Accumulate time while a quiz run is on screen
   setInterval(() => {
@@ -486,6 +515,7 @@
     renderProfileSection,
     formatDuration,
     absorbLegacy,
+    remapIds,
     getData: () => data,
     getSession: () => session,
     _MC,

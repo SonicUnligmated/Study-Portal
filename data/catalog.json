@@ -10,9 +10,32 @@
         {
           "id": "pt1",
           "title": "Periodic Test 1",
-          "subtitle": "4 sets by topic · 160 questions",
+          "subtitle": "4 sets by chapter · 185 questions · choice & linking · study notes",
           "bank": "banks/medphys/pt1.json",
-          "locked": false
+          "locked": false,
+          "study": {
+            "title": "Study Interface",
+            "chapters": [
+              {
+                "id": "ch1",
+                "src": "content/medphys/pt1/chapter-1.md",
+                "title": "Chapter 1 · Matter & mechanics",
+                "meta": "Units · phases · Hooke · moduli · bone"
+              },
+              {
+                "id": "ch2",
+                "src": "content/medphys/pt1/chapter-2.md",
+                "title": "Chapter 2 · Fluids at rest",
+                "meta": "Density · pressure · Pascal · buoyancy"
+              },
+              {
+                "id": "ch3",
+                "src": "content/medphys/pt1/chapter-3.md",
+                "title": "Chapter 3 · Mass flow & continuity",
+                "meta": "Flow types · mass & volume flow · continuity"
+              }
+            ]
+          }
         },
         {
           "id": "pt2",

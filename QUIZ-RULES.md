@@ -15,6 +15,27 @@ PT1 quiz, with the Study Portal extras kept on top.
 - Old banks still work. They still have Forms A–H inside the file; forms are now
   only a storage detail, and the cards follow the topics.
 
+### Your own card grouping (PT1 "category mode")
+
+A bank (or its material in `data/catalog.json`) can list the cards itself.
+This replaces the one-card-per-topic rule above:
+
+```json
+"cards": [
+  { "id": "ch1-matter", "title": "Chapter 1: Matter and Mechanical Properties",
+    "cats": ["Chapter 1: Matter and Mechanical Properties"] },
+  { "id": "ch2", "title": "Chapter 2: Fluids at Rest",
+    "cats": ["Chapter 2: Density", "Chapter 2: Pressure in Fluids", "…"] }
+]
+```
+
+- Each entry is one card holding every question whose `cat` is in its `cats` list. This is PT1's `QUIZ_FORMS` / `poolForForm`.
+- Cards appear in the order listed. `id` is optional, but keep it stable,
+  because progress, runs and Mastery for the card are saved under `grp:<id>`.
+- If the catalog material has `cards`, they win over the bank's `cards`.
+- A topic that no entry names still gets its own card after the listed ones, so no question can go missing.
+- Medical Physics PT1 uses this: four cards, the same as PT1.
+
 Each card shows:
 - the PT1 line "N linking · M choice", plus "K stepped" when the card has stepped questions;
 - "X left", meaning questions not solved yet;
@@ -119,6 +140,27 @@ A question without an explanation just shows ✓ (never "undefined").
   - The old keys are never deleted. The conversion runs again only if they change.
   - Old per-form mood stamps are not carried over, because the form cards no longer exist.
 
+### When a bank is replaced by a newer one
+
+The new bank can say where it came from:
+
+```json
+"legacy": { "bank": "banks/medphys/pt1-v1.json", "idMap": { "<old id>": "<new id>" } }
+```
+
+- Every time the bank opens, saved progress under old ids is moved to the new
+  ids: the solved list, Mastery clears and "do not show again".
+  - Old ids with no entry in `idMap` are dropped, because the question no longer exists or has changed.
+  - Half-done runs of cards that no longer exist are dropped.
+  - This is safe to repeat. Old ids that come back from an older cloud copy are moved again.
+- Old position-based saves (`pt1_form_A…H_*`, Mastery v1) are read against the
+  old bank file (`legacy.bank`) and then translated through `idMap`.
+- Medical Physics PT1 (October 2026) was replaced by PT1's own bank. The map was built by question text:
+  - same text: 79 questions;
+  - reworded with the same correct answer: 8 questions;
+  - total: 84 old ids mapped.
+  - Old questions whose numbers or answers changed, and the 2 old Bernoulli questions, are not carried over.
+
 ## 9. Buttons in the top corners
 
 The connection pill (top right) and your profile chip (top left) float over the
@@ -147,7 +189,30 @@ orbs, fireworks, glow and skin pattern.
 
 That is all: the cards, counts and progress come from the file.
 
-## 12. Adding a question type
+## 12. Study notes (PT1 study interface)
+
+A material can have study notes next to its quiz:
+
+```json
+"study": { "title": "Study Interface",
+  "chapters": [ { "id": "ch1", "src": "content/medphys/pt1/chapter-1.md",
+                  "title": "Chapter 1 · Matter & mechanics", "meta": "Units · phases · …" } ] }
+```
+
+- The material card gets a **📖 Study** button and the practice hub gets a
+  **📖 Study notes** button. Both open the notes inside the portal page, so mood themes apply.
+- The notes view is PT1's `study.html` page. It shows one foldable card per
+  chapter, and a chapter loads the first time you open it.
+- The notes are written in Markdown and shown by PT1's own renderer (`js/study-app.js`). It handles:
+  - headings, lists, tables, code/formula blocks and quotes;
+  - HTML blocks such as the phase diagram.
+- **Esc** or **Backspace** goes back to wherever the notes were opened from.
+  "Open Quiz" opens the material's practice hub.
+- Medical Physics PT1 notes are in `content/medphys/pt1/`.
+  - Chapters 1 and 2 are PT1's files, unchanged.
+  - Chapter 3 has the Bernoulli parts removed: they were not in the PT1 exam.
+
+## 13. Adding a question type
 
 Add a check next to `isMatching` / `isStepped` in `js/quiz-engine.js` and add it to `qType()`. Then:
 - give `renderQuestion()` a renderer;

@@ -1,0 +1,189 @@
+/* Study notes view — copied from medphysics-pt1 css/app.css (commit 75cf785):
+ * "Study page" block (study-app, study-header, .btn), folded chapter accordion,
+ * .md typography, .phase-diagram, and the html.study-page header/button rules.
+ * ADAPT (portal): scoped to #studyView; PT1's fixed "Quantum Vault" colours are
+ * replaced by the mood accents (--accent-N from js/quiz-accent-bridge.js on
+ * .pt1q) so every mood theme recolours the notes. Page background, cursor and
+ * fonts stay the portal's own. */
+#studyView {
+  --col-text-main: var(--text);
+  --col-text-muted: var(--text-dim);
+  --col-gold: var(--gold);
+  --border: rgba(var(--accent-0-rgb), 0.28);
+  --border-strong: rgba(var(--accent-0-rgb), 0.55);
+  --col-bg-card-rgb: 10, 14, 22;
+}
+
+/* —— Study page —— */
+#studyView .study-app {
+  position: relative; z-index: 5;
+  max-width: 960px; margin: 0 auto;
+  padding: 36px 24px 72px;
+}
+#studyView .study-header {
+  display: flex; flex-wrap: wrap; align-items: flex-end;
+  justify-content: space-between; gap: 16px; margin-bottom: 28px;
+}
+#studyView .study-header h1 {
+  font-family: var(--head); font-style: normal; font-weight: 700;
+  letter-spacing: -0.035em;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: transparent;
+  background: linear-gradient(120deg, var(--text) 0%, var(--accent-0) 35%, var(--accent-5) 65%, var(--accent-1) 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  animation: study-sheen 8s ease-in-out infinite;
+}
+@keyframes study-sheen {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+#studyView .study-header .sub {
+  color: var(--col-text-muted); font-family: var(--mono);
+  font-size: 0.85rem; margin-top: 6px; letter-spacing: 0.04em;
+}
+#studyView .study-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+
+#studyView .btn {
+  font-family: var(--mono); font-size: 0.82rem;
+  color: var(--accent-0); border: 1px solid var(--border-strong);
+  padding: 10px 18px; border-radius: 999px;
+  background: rgba(var(--accent-0-rgb), 0.08);
+  transition: all 0.2s; letter-spacing: 0.03em;
+  text-decoration: none; display: inline-flex; align-items: center;
+}
+#studyView .btn:hover {
+  background: rgba(var(--accent-0-rgb), 0.18);
+  border-color: var(--accent-0);
+  box-shadow: 0 0 20px rgba(var(--accent-0-rgb), 0.3);
+}
+#studyView .btn.primary {
+  color: #05080f; font-family: var(--head); font-weight: 700; letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--text), var(--accent-0) 40%, var(--accent-5) 75%, var(--accent-1));
+  border: none;
+  box-shadow: 0 16px 44px rgba(var(--accent-0-rgb), 0.28), 0 0 0 1px rgba(var(--accent-0-rgb), 0.4);
+}
+#studyView .btn.primary:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 22px 54px rgba(var(--accent-0-rgb), 0.4), 0 0 0 1px rgba(var(--accent-0-rgb), 0.6);
+}
+
+/* Folded chapter accordion */
+#studyView .chapter-list { display: flex; flex-direction: column; gap: 12px; }
+#studyView .chapter-card {
+  border: 1px solid var(--border);
+  border-left: 4px solid rgba(var(--accent-0-rgb), 0.4);
+  border-radius: 8px;
+  background: rgba(var(--col-bg-card-rgb), 0.85);
+  backdrop-filter: blur(14px) saturate(1.05);
+  overflow: hidden;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+#studyView .chapter-card.open {
+  border-left-color: var(--accent-0);
+  box-shadow: 0 0 24px rgba(var(--accent-0-rgb), 0.18);
+}
+#studyView .chapter-toggle {
+  width: 100%; text-align: left;
+  display: flex; align-items: center; gap: 14px;
+  padding: 16px 18px;
+  background: transparent; border: none;
+  color: var(--col-text-main);
+  font-family: var(--body); font-size: 1.05rem; font-weight: 600;
+  letter-spacing: 0.02em;
+}
+#studyView .chapter-toggle:hover { background: rgba(var(--accent-0-rgb), 0.06); }
+#studyView .chapter-toggle .chev {
+  color: var(--accent-0); font-family: var(--mono);
+  transition: transform 0.25s; flex-shrink: 0;
+}
+#studyView .chapter-card.open .chapter-toggle .chev { transform: rotate(90deg); }
+#studyView .chapter-toggle .meta {
+  margin-left: auto; font-family: var(--mono);
+  font-size: 0.72rem; color: var(--col-text-muted); font-weight: 400;
+}
+#studyView .chapter-body {
+  display: none;
+  padding: 0 20px 24px;
+  border-top: 1px solid rgba(var(--accent-0-rgb), 0.12);
+}
+#studyView .chapter-card.open .chapter-body { display: block; }
+
+#studyView .md { line-height: 1.68; font-size: 1.05rem; animation: studyFadeIn 0.35s ease; }
+@keyframes studyFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#studyView .md h1, #studyView .md h2, #studyView .md h3, #studyView .md h4 {
+  font-family: var(--head); font-weight: 400; line-height: 1.25;
+  margin: 1.35em 0 0.55em;
+}
+#studyView .md h1 { font-size: 1.85rem; margin-top: 0.6em; color: var(--accent-0); }
+#studyView .md h2 { font-size: 1.4rem; color: var(--accent-0); }
+#studyView .md h3 { font-size: 1.18rem; color: var(--accent-1); font-style: italic; }
+#studyView .md h4 { font-size: 1.05rem; color: var(--col-gold); }
+#studyView .md p, #studyView .md li { color: var(--col-text-main); }
+#studyView .md ul, #studyView .md ol { margin: 8px 0 8px 22px; }
+#studyView .md li { margin-bottom: 5px; }
+#studyView .md a { color: var(--accent-1); }
+#studyView .md strong { color: var(--accent-0); font-weight: 600; }
+#studyView .md em { color: var(--accent-1); font-style: italic; }
+#studyView .md code, #studyView .md pre { font-family: var(--mono); font-size: 0.9em; }
+#studyView .md code {
+  background: rgba(0,0,0,0.45); border: 1px solid var(--border);
+  border-radius: 4px; padding: 0.12em 0.4em; color: var(--accent-0);
+}
+#studyView .md pre {
+  background: rgba(0,0,0,0.45); border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-0); border-radius: 0 4px 4px 0;
+  padding: 14px 20px; overflow-x: auto; white-space: pre-wrap;
+  margin: 14px 0; color: var(--accent-0); line-height: 1.7;
+}
+#studyView .md pre code { background: none; border: none; padding: 0; color: inherit; }
+#studyView .md table { width: 100%; border-collapse: collapse; margin: 1em 0; font-size: 0.95rem; display: block; overflow-x: auto; }
+#studyView .md th, #studyView .md td { border: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
+#studyView .md th {
+  font-family: var(--mono); font-size: 0.78rem; color: var(--accent-0);
+  background: rgba(0,0,0,0.35); letter-spacing: 0.04em;
+}
+#studyView .md blockquote {
+  margin: 1em 0; padding: 0.35em 0 0.35em 1em;
+  border-left: 3px solid var(--accent-0); color: var(--col-text-muted);
+  background: linear-gradient(90deg, rgba(var(--accent-0-rgb), 0.06), transparent);
+}
+#studyView .md hr { border: none; border-top: 1px solid rgba(var(--accent-0-rgb), 0.22); margin: 1.6em 0; }
+
+#studyView .phase-diagram {
+  margin: 1.2em 0; padding: 12px;
+  border: 1px solid var(--border); border-radius: 10px;
+  background: rgba(var(--accent-0-rgb), 0.04);
+  overflow-x: auto;
+}
+#studyView .phase-diagram svg { display: block; min-width: 520px; max-width: 100%; }
+
+@media (max-width: 640px) {
+  #studyView .study-app { padding: 24px 14px 72px; }
+  #studyView .chapter-toggle .meta { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #studyView .study-header h1, #studyView .md { animation: none; }
+}
+
+/* —— portal entry points —— */
+.portal-card-wrap { position: relative; display: flex; }
+.portal-card-wrap > .portal-card { flex: 1; padding-bottom: 58px; }
+.portal-card-wrap .study-chip {
+  position: absolute; right: 18px; bottom: 18px; z-index: 2;
+  font-family: var(--mono); font-size: 0.8rem; color: var(--cyan-bright);
+  border: 1px solid var(--border); border-radius: 999px;
+  padding: 7px 14px; background: rgba(255,255,255,0.04);
+  transition: background .2s, border-color .2s, box-shadow .2s, transform .2s;
+}
+.portal-card-wrap .study-chip:hover { border-color: var(--cyan-bright); box-shadow: 0 0 18px var(--mood-glow); transform: translateY(-2px); }
+.portal-card-wrap .study-chip:focus-visible { outline: 2px solid var(--cyan-bright); outline-offset: 3px; }
+.pt1q .hub-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.pt1q .hub-tools .quiz-settings-wrap { margin: 0; }
+.pt1q .hub-tools { margin: 0 0 18px; }
+#studyNotesBtn[hidden]{display:none!important}

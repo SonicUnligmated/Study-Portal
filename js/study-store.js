@@ -151,6 +151,41 @@
     return changed;
   }
 
+  /**
+   * A bank was replaced by a newer one (bank.legacy.idMap: old id -> new id).
+   * Solved ids are moved to their new ids; old ids with no new question are
+   * dropped. Half-done runs of cards that no longer exist are dropped (their
+   * order and answers belong to the old cards). Idempotent: runs on every load,
+   * so old ids that come back from an older cloud copy are moved again.
+   */
+  function remapIds(bankKey, map, valid) {
+    map = map || {};
+    var st = load(bankKey);
+    var changed = false;
+    var report = { moved: 0, dropped: 0, runsDropped: 0 };
+    Object.keys(st.solved).forEach(function (id) {
+      if (valid.ids.has(id)) return;
+      var to = map[id];
+      if (to && valid.ids.has(to)) {
+        st.solved[to] = Math.max(Number(st.solved[to]) || 0, Number(st.solved[id]) || 1);
+        report.moved++;
+      } else report.dropped++;
+      delete st.solved[id];
+      changed = true;
+    });
+    Object.keys(st.runs).forEach(function (cid) {
+      if (valid.cards.has(cid)) return;
+      delete st.runs[cid];
+      report.runsDropped++;
+      changed = true;
+    });
+    if (changed) {
+      save(bankKey, st);
+      try { console.info('[StudyStore] ' + bankKey + ' progress moved to the new bank ids', report); } catch (e) {}
+    }
+    return report;
+  }
+
   /* —— migration —— */
   var bankCache = {};
   function fetchBank(bankKey) {
@@ -165,7 +200,26 @@
     var qs = (bank && bank.bank && bank.bank[letter]) || [];
     var q = qs[i];
     if (!q) return null;
-    return String(q.id != null ? q.id : ('q_' + String(q.q || '').slice(0, 48) + '_' + i));
+    var id = String(q.id != null ? q.id : ('q_' + String(q.q || '').slice(0, 48) + '_' + i));
+    if (bank.__idMap) return bank.__idMap[id] || null; // old bank position -> new bank id
+    return id;
+  }
+  /**
+   * Bank used to read OLD position-based saves (forms A-H by index). When the
+   * current bank declares legacy.bank, positions refer to that old file, and
+   * ids are translated through legacy.idMap.
+   */
+  var posCache = {};
+  function fetchPositionBank(bankKey) {
+    if (!posCache[bankKey]) {
+      posCache[bankKey] = fetchBank(bankKey).then(function (b) {
+        if (!b || !b.legacy || !b.legacy.bank) return b;
+        return fetch(b.legacy.bank, { cache: 'no-cache' })
+          .then(function (r) { if (!r.ok) throw new Error('legacy bank ' + r.status); return r.json(); })
+          .then(function (old) { old.__idMap = b.legacy.idMap || {}; return old; });
+      }).catch(function (e) { delete posCache[bankKey]; throw e; });
+    }
+    return posCache[bankKey];
   }
   function legacySignature() {
     var parts = [];
@@ -192,7 +246,7 @@
     if (!sig) return Promise.resolve({ skipped: 'no legacy data' });
     if (lsGet(LEGACY_FLAG) === sig) return Promise.resolve({ skipped: 'already migrated' });
     var owners = ['medphys/pt1', 'studyskills/ss1'];
-    return Promise.all(owners.map(function (bk) { return fetchBank(bk).catch(function () { return null; }); }))
+    return Promise.all(owners.map(function (bk) { return fetchPositionBank(bk).catch(function () { return null; }); }))
       .then(function (banks) {
         var byKey = {};
         owners.forEach(function (bk, i) { byKey[bk] = banks[i]; });
@@ -261,7 +315,7 @@
     });
     if (!todo.length) return Promise.resolve({});
     return Promise.all(todo.map(function (bk) {
-      return fetchBank(bk).then(function (bank) {
+      return fetchPositionBank(bk).then(function (bank) {
         var b = data[bk];
         var counts = {};
         var skipped = 0;
@@ -318,13 +372,15 @@
     isCloudEntry: isCloudEntry,
     cloudKey: cloudKey,
     safeKey: safeKey,
-    stripWires: stripWires
+    stripWires: stripWires,
+    remapIds: remapIds
   };
   global.StudyMigrate = {
     migrateLegacy: migrateLegacy,
     migrateMastery: migrateMastery,
     runAll: runAll,
     fetchBank: fetchBank,
+    fetchPositionBank: fetchPositionBank,
     LEGACY_FLAG: LEGACY_FLAG
   };
 })(window);
