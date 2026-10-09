@@ -128,6 +128,40 @@ A question without an explanation just shows ✓ (never "undefined").
 - Party/split mode leaves out linking, stepped and short-answer questions and plays
   only choice questions. Party panes have no room for drawing, steps or typing.
 
+### Typed steps and pictures in stepped questions
+
+```json
+{"id":"MT11077","type":"stepped","q":"Answer each part in order, then the next bone follows.",
+ "image":"banks/medterm/img/bones/bone-mt11077.png","alt":"…",
+ "credit":"Bone image: BodyParts3D/Anatomography © DBCLS · CC BY-SA 2.1 JP (adapted)",
+ "creditUrl":"https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+ "steps":[{"id":"1", …}, …,
+   {"id":"name","type":"saq","showFirst":true,"prompt":"Name this bone.","answer":"Humerus","accept":[]}]}
+```
+
+- **Picture:** `image` / `alt` on a stepped question shows the picture at the top of
+  every step, with the `credit` caption (linked to `creditUrl`) under it. It is also shown,
+  small, in the results list next to the typed step.
+- **Typed step:** a step with `"type":"saq"` (`answer`, optional `accept[]`) is a text box
+  with **Check**, graded exactly like short answer (section 13): capitals and slashes
+  must match, spaces are only trimmed and collapsed, and the same hints show
+  ("wrong capitalization", "missing slash", both, or "not that one · try again"). While
+  you type, the labeling highlighter (section 14) under the box marks every wrong letter
+  or wrong capital in the accent colour. Later steps stay locked until it is solved.
+- **`showFirst`:** a step marked `showFirst` is displayed first, wherever it sits in the
+  file. New steps are appended with a new id (here `"name"`), so the saved keys of the
+  older steps (`MT11077#1` …) and their saved choice orders (stored by position) stay
+  valid. The typed step is saved as `MT11077#name`.
+- **Older saved runs:** answers saved for the older steps before the new first step
+  existed are kept but stay hidden (the steps are locked). Once the first step is solved
+  they come back, and the run continues at the first step still open.
+- Lecture 11's 21 bone questions use this: the bone picture is the clue (the bone's name
+  was taken out of the question text), step 1 is "Name this bone.", then the earlier
+  steps follow. Each bone has one more step, so its pill range is one longer.
+- Pictures: `banks/medterm/img/bones/`, named by question id so the file name never gives
+  the answer away. Credits and source pages: `banks/medterm/img/bones/CREDITS.md`
+  (BodyParts3D/Anatomography CC BY-SA 2.1 JP; the patella, Patrick J. Lynch, CC BY 2.5).
+
 ## 7. Shuffle settings
 
 "⚙ Quiz settings" on the hub has three switches. All are on by default and saved on this device:

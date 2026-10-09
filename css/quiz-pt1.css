@@ -627,3 +627,12 @@ html.bg-edit-hide-glows body{
 .flow-panel.is-static .flow-dot{display:none}
 @media (prefers-reduced-motion:reduce){.order-card.just-locked,.order-card.soft-wrong{animation:none}.flow-part{transition:none}}
 @media (max-width:480px){.order-card{gap:6px;padding:8px 6px}.order-btns button{width:36px;height:36px}.order-pos{width:22px;height:22px}}
+
+/* —— stepped questions: picture + typed step highlighter —— */
+.step-figure{margin:0 0 12px;display:flex;flex-direction:column;align-items:center;gap:4px}
+.step-img{display:block;max-width:100%;max-height:300px;width:auto;height:auto;border-radius:12px;border:1px solid var(--border);background:#fff;object-fit:contain}
+.step-figure.in-review .step-img{max-height:150px}
+.step-credit{text-align:center}
+.pt1q .saq-echo{position:static;transform:none;display:block;flex-basis:100%;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;padding:4px 8px;min-height:0}
+.pt1q .saq-echo:empty{display:none}
+@media (max-width:480px){.step-img{max-height:220px}}

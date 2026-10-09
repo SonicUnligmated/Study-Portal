@@ -54,6 +54,9 @@ function qid(q,i){ return String(q && (q.id!=null?q.id:('q_'+(q.q||'').slice(0,4
 /* STEPPED: question-type layer */
 function isStepped(q){ return !!(q && !isMatching(q) && (q.type==='stepped' || Array.isArray(q.steps))); }
 function isStep(q){ return !!(q && q.__step); }
+/* a typed (short-answer) step inside a stepped question */
+function isTypedStepDef(st){ return !!(st && (st.type==='saq' || (st.answer!=null && !Array.isArray(st.options)))); }
+function isTypedStep(q){ return isStep(q) && isSaq(q); }
 /* SAQ (short answer): {q, answer, explain} — typed answer, lenient match. */
 function isOrder(q){ return !!(q && q.type==='order' && Array.isArray(q.stages)); }
 function isLabel(q){ return !!(q && q.type==='label' && Array.isArray(q.labels)); }
@@ -310,7 +313,7 @@ function prepareDeck(pool, opts){
     if(isMatching(q)){
       if(shC) shuffleMatchingSides(q);
     } else if(isStepped(q)){
-      (q.steps||[]).forEach(st=>permuteChoices(st, shC));
+      (q.steps||[]).forEach(st=>{ if(!isTypedStepDef(st)) permuteChoices(st, shC); });
     } else if(isLabel(q)){
       q.__chips=shuffle((q.labels||[]).map(l=>l.id)); // the word bank is always shuffled
     } else if(isOrder(q)){
@@ -344,14 +347,20 @@ function expandDeck(deck){
   const out=[];
   deck.forEach(q=>{
     if(!isStepped(q)){ out.push(q); return; }
-    const steps=q.steps||[];
+    // display order: steps marked showFirst lead (they can be appended to the file with a new
+    // id, so the saved step keys and the per-index choice orders of older steps stay valid)
+    const raw=q.steps||[];
+    const steps=raw.filter(st=>st&&st.showFirst).concat(raw.filter(st=>!(st&&st.showFirst)));
     steps.forEach((st,k)=>{
-      out.push({
+      const e={
         __step:true, __id:q.__id, __boneId:q.__id, __stepIdx:k, __stepCount:steps.length,
-        __stepId:String(st.id!=null?st.id:('s'+(k+1))), __bone:q, __form:q.__form,
+        __stepId:String(st.id!=null?st.id:('s'+(raw.indexOf(st)+1))), __bone:q, __form:q.__form,
         q:q.q, prompt:st.prompt||'', options:st.options||[], correct:st.correct, __perm:st.__perm,
         cat:q.cat, explain:q.explain
-      });
+      };
+      if(isTypedStepDef(st)){ e.type='saq'; e.answer=st.answer; e.accept=Array.isArray(st.accept)?st.accept.slice():[]; delete e.options; delete e.correct; delete e.__perm; }
+      if(q.image){ e.image=q.image; e.alt=q.alt||''; e.credit=q.credit||''; e.creditUrl=q.creditUrl||''; }
+      out.push(e);
     });
   });
   return out;
@@ -572,6 +581,8 @@ function serializeDeck(deck){
 function serializeAnswers(){
   const out={};
   questions.forEach((q,i)=>{
+    // a step answer saved before a new first step existed waits (hidden) until that step is solved
+    if(answers[i]==null && q.__pending!=null){ out[entryKey(q)]=q.__pending; return; }
     const a=answers[i];
     if(!isAnswered(a,q) && !(isMatching(q) && a && ((a.wires&&a.wires.length)||Object.keys(a.pairs||{}).length))
        && !(isLabel(q) && a && a.slots && Object.keys(a.slots).length)
@@ -617,7 +628,7 @@ function restoreRun(run){
       const order=(arr,ids)=>{ if(!Array.isArray(ids)) return arr; const m={}; arr.forEach(x=>{ m[x.id]=x; }); const out=ids.map(id=>m[id]).filter(Boolean); arr.forEach(x=>{ if(!out.includes(x)) out.push(x); }); return out; };
       q.leftItems=order(q.leftItems||[], d.L); q.rightItems=order(q.rightItems||[], d.R);
     } else if(isStepped(q)){
-      (q.steps||[]).forEach((st,k)=>applyPerm(st, d.steps&&d.steps[k]));
+      (q.steps||[]).forEach((st,k)=>{ if(!isTypedStepDef(st)) applyPerm(st, d.steps&&d.steps[k]); });
     } else if(isLabel(q)){
       q.__chips=Array.isArray(d.chips)?d.chips.slice():shuffle((q.labels||[]).map(l=>l.id));
     } else if(isOrder(q)){
@@ -668,7 +679,10 @@ function restoreRun(run){
     if(idx>=0 && idx===q.correct) answers[i]=idx;
   });
   // enforce sequential steps
-  questions.forEach((q,i)=>{ if(isStep(q) && answers[i]!=null && !isUnlocked(i)) answers[i]=null; });
+  // A step behind an unsolved earlier step stays locked. Its restored answer is kept aside
+  // (q.__pending, raw saved form) and comes back once the steps before it are solved —
+  // e.g. the bone questions' new first "Name this bone." step.
+  questions.forEach((q,i)=>{ if(isStep(q) && answers[i]!=null && !isUnlocked(i)){ q.__pending=ans[entryKey(q)]; q.__pendingVal=answers[i]; answers[i]=null; } });
   current=Math.max(0, Math.min(questions.length-1, run.cur|0));
   if(!isUnlocked(current)) current=firstOpenStep(current);
   unansweredMarkersVisible=!!run.uv;
@@ -1160,6 +1174,12 @@ const LINK_PENCIL_SVG='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 3
 
 /* SAQ: text box + Check. Enter in the box checks (the global Enter → Next
    handler ignores keys typed in inputs, so one press never does both). */
+/* picture on a stepped question (shown on every step), with its license caption */
+function stepFigureHTML(q, review){
+  if(!q || !q.image) return '';
+  const cr=q.credit?('<figcaption class="label-credit step-credit">'+(q.creditUrl?'<a href="'+escapeHtml(q.creditUrl)+'" target="_blank" rel="noopener">'+escapeHtml(q.credit)+'</a>':escapeHtml(q.credit))+'</figcaption>'):'';
+  return '<figure class="step-figure'+(review?' in-review':'')+'"><img class="step-img" src="'+escapeHtml(q.image)+'" alt="'+escapeHtml(q.alt||'')+'" draggable="false">'+cr+'</figure>';
+}
 function renderSaq(q, ans){
   const opts=document.getElementById('options');
   const done=!!(ans && ans.correct);
@@ -1179,6 +1199,14 @@ function renderSaq(q, ans){
   });
   wrap.append(input,btn);
   opts.appendChild(wrap);
+  // typed step in a stepped question: the labeling highlighter under the box
+  // (each wrong letter or wrong capital is marked in the accent colour as you type)
+  if(isTypedStep(q) && !done){
+    const echo=document.createElement('div'); echo.className='label-echo saq-echo'; echo.id='saqEcho'; echo.setAttribute('aria-live','polite');
+    wrap.appendChild(echo);
+    const cand={answer:q.answer, accept:q.accept};
+    input.addEventListener('input',()=>{ echo.innerHTML=labelEchoHTML(cand, input.value); });
+  }
   if(!done && quizActive) setTimeout(()=>{ if(document.activeElement!==input && document.getElementById('quizView').classList.contains('active')) try{ input.focus({preventScroll:true}); }catch(e){} },0);
 }
 function submitSaq(){
@@ -2415,7 +2443,7 @@ function stepRecapHTML(i, inReview){
   const a=boneStart(i), b=boneEnd(i);
   let h='<div class="step-recap'+(inReview?' in-review':'')+'"'+(inReview?'':' id="stepRecap"')+' role="group" aria-label="Series recap"><div class="step-recap-title">Series recap</div><ol class="step-recap-list">';
   for(let j=a;j<=b;j++){
-    const s=questions[j], ans=(s.options||[])[s.correct];
+    const s=questions[j], ans=isTypedStep(s)?saqAccepts(s)[0]:(s.options||[])[s.correct];
     h+='<li class="step-recap-item'+(j===i?' is-current':'')+'"><div class="step-recap-label"><span class="step-recap-num">Step '+(s.__stepIdx+1)+'</span><span class="step-recap-prompt">'+escapeHtml(s.prompt||'')+'</span></div>'
       +'<div class="step-recap-answer"><span class="step-recap-check" aria-hidden="true">✓</span><span class="step-recap-text">'+escapeHtml(ans==null?'':String(ans))+'</span></div></li>';
     if(j<b) h+='<li class="step-recap-arrow" aria-hidden="true"><svg viewBox="0 0 16 22" width="16" height="22"><path d="M8 1v17M3 13l5 6 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></li>';
@@ -2447,6 +2475,7 @@ function renderQuestion(){
     copy.textContent=q.q;
     qText.append(icon,copy);
   }else if(isStep(q)){
+    if(q.image) qText.insertAdjacentHTML('beforeend', stepFigureHTML(q,false));
     const stem=document.createElement('div'); stem.className='step-stem'; stem.textContent=q.q||'';
     const pr=document.createElement('div'); pr.className='step-prompt';
     const txt=document.createElement('span'); txt.textContent=q.prompt||'';
@@ -2494,8 +2523,18 @@ function rewardCorrect(){
   if(window.StudyAchievements && typeof StudyAchievements.recordCorrect==='function') StudyAchievements.recordCorrect();
 }
 /* Whole question solved (a stepped question only after its last step). */
+function releasePendingSteps(i){
+  const q=questions[i]; if(!isStep(q)) return;
+  for(let j=i+1;j<=boneEnd(i);j++){
+    const s=questions[j];
+    if(answers[j]!=null) continue;
+    if(s.__pendingVal==null || !isUnlocked(j)) break;
+    answers[j]=s.__pendingVal; delete s.__pending; delete s.__pendingVal;
+  }
+}
 function onQuestionSolved(q){
   const id=(q&&q.__id);
+  if(isStep(q)) releasePendingSteps(current);
   if(isStep(q) && !boneDone(current)) return;
   markSolved(isStep(q)?q.__bone:q);
   if(window.StudyMastery && id!=null){
@@ -2579,7 +2618,7 @@ function goNext(){
 }
 function goBack(){ const t=prevTarget(); if(t>=0) stepTo(t); }
 function jumpToQuestion(i, dir){
-  if(!quizActive || i<0 || i>=questions.length) return;
+  if(!quizActive || !Number.isInteger(i) || i<0 || i>=questions.length) return;
   if(!isUnlocked(i)){
     i=dir?nextUnlockedFrom(i,dir):firstOpenStep(i);
     if(i<0) return;
@@ -2604,7 +2643,9 @@ function resultItemHTML(q,i){
   }
   if(isSaq(q)){
     const a=answers[i], ok=!!(a&&a.correct);
-    return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">Your answer: '+(ok?escapeHtml(a.text):'—')+'</div><div class="rline rok">Answer: '+escapeHtml(saqAccepts(q)[0]||'')+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
+    const sh=isTypedStep(q)?'<div class="rstep">Step '+(q.__stepIdx+1)+' / '+q.__stepCount+' · '+escapeHtml(q.prompt||'')+'</div>':'';
+    const ex=(!isTypedStep(q) || q.__stepIdx===q.__stepCount-1)?'<div class="rex">'+escapeHtml(q.explain||'')+'</div>':'';
+    return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div>'+sh+(isTypedStep(q)&&q.__stepIdx===0?stepFigureHTML(q,true):'')+'<div class="rline '+(ok?'rok':'rbad')+'">Your answer: '+(ok?escapeHtml(a.text):'—')+'</div><div class="rline rok">Answer: '+escapeHtml(saqAccepts(q)[0]||'')+'</div>'+ex;
   }
   const pick=answers[i], ok=pick===q.correct;
   const opts=q.options||[];
