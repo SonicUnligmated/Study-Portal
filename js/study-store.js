@@ -186,6 +186,51 @@
     return report;
   }
 
+  /**
+   * Copy progress from an OLD bank key into a NEW bank key once (a bank that
+   * moved, e.g. Lecture 11 into PT2). mapId(oldId) → new id; ids that do not
+   * land in validIds are skipped. cardMap {oldCardId: newCardId} carries the
+   * card's mood/score and its half-done run (ids rewritten). The old key is
+   * left untouched. Runs once per old→new pair (flag sp_import_v1:<old>><new>),
+   * so a later reset of the new card is never undone.
+   */
+  var IMPORT_FLAG = 'sp_import_v1:';
+  function importFrom(oldKey, newKey, mapId, validIds, cardMap) {
+    var flag = IMPORT_FLAG + oldKey + '>' + newKey;
+    if (lsGet(flag)) return { skipped: 'already imported' };
+    var raw = lsGet(PREFIX + oldKey);
+    if (!raw) { lsSet(flag, String(Date.now())); return { skipped: 'nothing stored under ' + oldKey }; }
+    var old = load(oldKey);
+    var st = load(newKey);
+    var rep = { solved: 0, skipped: 0, cards: 0, runs: 0 };
+    Object.keys(old.solved).forEach(function (id) {
+      var to = mapId(id);
+      if (to && validIds.has(to)) { st.solved[to] = Math.max(Number(st.solved[to]) || 0, Number(old.solved[id]) || 1); rep.solved++; }
+      else rep.skipped++;
+    });
+    cardMap = cardMap || {};
+    Object.keys(cardMap).forEach(function (oc) {
+      var nc = cardMap[oc];
+      if (old.cards[oc] && !st.cards[nc]) { st.cards[nc] = old.cards[oc]; rep.cards++; }
+      var run = old.runs[oc];
+      if (run && !st.runs[nc] && run.v === 2 && Array.isArray(run.deck)) {
+        var r = JSON.parse(JSON.stringify(run));
+        r.card = nc;
+        r.deck = r.deck.map(function (d) { d.id = mapId(d.id) || d.id; return d; }).filter(function (d) { return validIds.has(d.id); });
+        var ans = {};
+        Object.keys(r.ans || {}).forEach(function (k) {
+          var parts = k.split('#'); var to = mapId(parts[0]);
+          if (to && validIds.has(to)) ans[to + (parts.length > 1 ? '#' + parts.slice(1).join('#') : '')] = r.ans[k];
+        });
+        r.ans = ans;
+        if (r.deck.length) { st.runs[nc] = r; rep.runs++; }
+      }
+    });
+    save(newKey, st);
+    lsSet(flag, String(Date.now()));
+    return rep;
+  }
+
   /* —— migration —— */
   var bankCache = {};
   function fetchBank(bankKey) {
@@ -373,7 +418,8 @@
     cloudKey: cloudKey,
     safeKey: safeKey,
     stripWires: stripWires,
-    remapIds: remapIds
+    remapIds: remapIds,
+    importFrom: importFrom
   };
   global.StudyMigrate = {
     migrateLegacy: migrateLegacy,

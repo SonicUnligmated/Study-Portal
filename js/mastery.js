@@ -471,6 +471,36 @@
     return changed;
   }
 
+  /** Copy Mastery clears / "do not show again" from an old bank key (once). */
+  function importFrom(oldKey, newKey, mapId, validIds, cardMap) {
+    const flag = 'sp_mastery_import_v1:' + oldKey + '>' + newKey;
+    try { if (localStorage.getItem(flag)) return false; } catch (e) {}
+    let changed = false;
+    const ob = data[oldKey];
+    if (ob && ob.q) {
+      const nb = getOrInitBank(newKey);
+      Object.keys(ob.q).forEach((id) => {
+        const to = mapId(id);
+        if (to && validIds.has(to)) { nb.q[to] = Math.max(nb.q[to] | 0, ob.q[id] | 0); changed = true; }
+      });
+      Object.keys(cardMap || {}).forEach((oc) => {
+        if (ob.cards && ob.cards[oc] && !nb.cards[cardMap[oc]]) { nb.cards[cardMap[oc]] = Object.assign({}, ob.cards[oc]); changed = true; }
+      });
+    }
+    const od = dnsa[oldKey];
+    if (od) {
+      if (!dnsa[newKey]) dnsa[newKey] = {};
+      Object.keys(od).forEach((k) => {
+        const m = /^id:(.*)$/.exec(k);
+        const to = m && mapId(m[1]);
+        if (to && validIds.has(to)) { dnsa[newKey]['id:' + to] = od[k]; changed = true; }
+      });
+    }
+    if (changed) save();
+    try { localStorage.setItem(flag, String(Date.now())); } catch (e) {}
+    return changed;
+  }
+
   load();
   // Accumulate time while a quiz run is on screen
   setInterval(() => {
@@ -516,6 +546,7 @@
     formatDuration,
     absorbLegacy,
     remapIds,
+    importFrom,
     getData: () => data,
     getSession: () => session,
     _MC,

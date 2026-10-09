@@ -87,8 +87,9 @@
       qs = first ? bank[first] : null;
     }
     if (!qs || !qs.length) throw new Error('Form ' + form + ' missing');
-    // Party/split mode shows plain multiple-choice only. Linking (matching)
-    // and stepped questions need the full quiz screen, so they are left out.
+    // Party/split mode shows plain multiple-choice only. Linking (matching),
+    // stepped and short-answer (saq) questions need the full quiz screen,
+    // so they are left out.
     const copy = qs
       .map(function (q, i) {
         const c = Object.assign({}, q);
@@ -584,6 +585,7 @@
   global.StudySplitQuiz = {
     joinLobbySession,
     leave,
+    loadBank, // read-only: the multiple-choice questions party mode would use
     MAX_SLOTS
   };
 })(window);

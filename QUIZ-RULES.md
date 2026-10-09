@@ -90,6 +90,7 @@ Each card shows:
 | Choice (`mcq`) | `q, options[], correct, explain` | Wrong pick: shake + "not that one · try again", then try again. Right pick: green, ✓ explanation, celebration. |
 | Linking (`matching`) | `q, leftItems[{id,text}], rightItems[{id,text}], correct_pairs{left:right}, explain` | Hold a term or meaning, drag the thread and let go on the other side. Correct links lock and glow. Wrong ones stay as loose lines. "Clear drawings" removes some loose lines but never locked ones. The lines stay attached to their boxes when the window size changes. |
 | Stepped (`stepped`) | `q, explain, steps[{id,prompt,options,correct}]` | See section 6. |
+| Short answer (`saq`) | `q, answer, explain` (optional `accept[]` for other exact forms) | A text box and a **Check** button. See section 13. |
 
 A question without an explanation just shows ✓ (never "undefined").
 
@@ -109,8 +110,12 @@ A question without an explanation just shows ✓ (never "undefined").
 - The explanation appears after the **last** step. Only then is the question
   solved, both for the card and for Mastery.
 - The `group` / `groupOrder` fields are ignored, so stepped questions shuffle like any other question.
-- Party/split mode leaves out linking and stepped questions and plays only choice
-  questions. Party panes have no room for drawing or steps.
+- A stepped question with **only one step** behaves like a normal question: one plain
+  numbered pill (no 🦴 range), no "Step 1 / 1" badge and no "stepped ·" tag. It is
+  solved, and its explanation shows, after that one step. It still counts as
+  "stepped" on the card line. Lecture 10 of Periodic Test 2 has 14 of these.
+- Party/split mode leaves out linking, stepped and short-answer questions and plays
+  only choice questions. Party panes have no room for drawing, steps or typing.
 
 ## 7. Shuffle settings
 
@@ -189,6 +194,62 @@ orbs, fireworks, glow and skin pattern.
 
 That is all: the cards, counts and progress come from the file.
 
+### Lecture sets: one card per lecture (Medical Terminology Periodic Test 2)
+
+A material can list its lectures instead of having one `bank`. The hub then shows
+**one card per lecture, in the order listed**, and each lecture keeps its own
+progress, run, Mastery and mood stamp (saved under its own file path, for example
+`medterm/pt2/lecture-11`).
+
+```json
+{ "id": "pt2", "title": "Periodic Test 2", "draft": true,
+  "lectures": [
+    { "id": "lec09", "title": "Lecture 9 – Combining Forms (Part 2 of 2)",
+      "bank": "banks/medterm/pt2/lecture-09.json", "status": "ready", "draft": false },
+    { "id": "lec16-17", "title": "Lectures 16 & 17", "bank": null,
+      "status": "soon", "draft": true } ] }
+```
+
+- `status: "ready"` needs a `bank`. Its card shows the counts per type and plays as usual.
+- `status: "soon"` (or `bank: null`) gives a dimmed card that **cannot be clicked**.
+  It shows only the title and its badges.
+- `note` is optional and only for people editing the catalog.
+- To add a lecture later, put its file in `banks/medterm/pt2/`, set `bank`, and
+  change `status` to `"ready"`.
+- Question ids must be unique across **all** lectures of the set. The loader checks
+  this and reports any duplicates in `StudyQuiz.idReport()`.
+- The bank picker (party/lobby) lists each ready lecture as "Periodic Test 2 · Lecture …".
+
+### Draft marks
+
+- `"draft": true` on a **material** puts a gold "Draft" badge on its portal card.
+  The card stays clickable.
+- `"draft": true` on a **lecture** puts a "Draft" badge on its hub card. A lecture
+  that is both draft and "soon" shows "Draft" and "Coming soon".
+- To clear a mark, set `draft` to `false` (or delete it). Nothing else changes.
+- The badges use the theme's accent colours, so they follow the mood themes.
+
+### Moving progress to a new file or new ids (`migrateFrom`)
+
+When a bank moves into a lecture set, add `migrateFrom` to its lecture entry, so
+earlier progress is not lost:
+
+```json
+"migrateFrom": { "bankKey": "medterm/lecture-11-msk",
+                 "idPrefix": ["MSK11", "MT11"], "cardId": "cat:MSK11_lec11" }
+```
+
+On first load this copies solved questions, the saved run, the card's mood stamp,
+Mastery counts and "do not show again" marks from the old key to the new one,
+renaming the ids (`idPrefix` changes the start of each id; `idMap` can list ids
+one by one instead). It runs once per pair and leaves the old data as it was.
+Ids that have no match in the new bank are dropped.
+
+Lecture 11 (Musculoskeletal) used to be a material of its own
+(`banks/medterm/lecture-11-msk.json`, ids `MSK11001`…, topic `MSK11_lec11`). It now
+lives only inside Periodic Test 2 as `banks/medterm/pt2/lecture-11.json`, with ids
+`MT11001`… and topic `MT_lec11`; nothing else in it changed.
+
 ## 12. Study notes (PT1 study interface)
 
 A material can have study notes next to its quiz:
@@ -212,7 +273,46 @@ A material can have study notes next to its quiz:
   - Chapters 1 and 2 are PT1's files, unchanged.
   - Chapter 3 has the Bernoulli parts removed: they were not in the PT1 exam.
 
-## 13. Adding a question type
+## 13. Short-answer questions (`saq`)
+
+```json
+{ "id": "MT12045", "type": "saq", "cat": "…", "q": "…", "answer": "Thromb/o", "explain": "…" }
+```
+
+- The student types into a box and presses **Check** or **Enter**.
+- Grading is **strict**: capital letters, punctuation and slashes all count. For the
+  answer "Thromb/o", only `Thromb/o` is right; `thromb/o`, `Thrombo`, `thrombo`,
+  `THROMB/O`, `Thromb/o.` and `Thromb / o` are all wrong.
+  The only thing forgiven is spacing: spaces before and after are ignored, and several
+  spaces in a row count as one (`  Thromb/o ` is right, and `Phleb/o,   vein` matches
+  `Phleb/o, vein`).
+- `answer` can also be a list, and `accept[]` can add other exact forms. Each is
+  graded the same strict way.
+- A wrong answer works like a wrong choice: the box shakes, a short message shows in
+  the feedback line, and the text is selected for another try. Tries are unlimited
+  and the answer is **never shown**. The message gives a hint when the attempt is close:
+
+  | Attempt (answer "Thromb/o") | Message |
+  | --- | --- |
+  | only the capital letters differ (`thromb/o`, `THROMB/O`) | `wrong capitalization · try again` |
+  | right once the answer's `/` is dropped (`Thrombo`) | `missing slash · try again` |
+  | both (`thrombo`, `THROMBO`) | `missing slash and wrong capitalization · try again` |
+  | anything else (`thrombus`, `Thromb o`, `Thromb-o`) | `not that one · try again` |
+
+  The messages are always lower case, in the same spot and style as the choice
+  questions' "not that one · try again". The checks run in the order of the table.
+  Spacing is trimmed first, as above. When `accept[]` is used, a hint is given if
+  any accepted form is close.
+- A right answer locks the box and turns it green. It gets the full reward
+  (celebration, counter, achievements) and the ✓ explanation, and the question is solved.
+- The Enter that checks the answer does **not** also go to the next question. Once
+  the box is locked, Enter (or →) moves on as usual. PT1's keyboard guards still apply.
+- The navigator pill shows ✎. Cards count these as "N short answer".
+- The results list shows what was typed ("Your answer: …") and the answer.
+- The typed answer is saved with the run, so leaving and coming back keeps it.
+- Party mode leaves `saq` out (section 6).
+
+## 14. Adding a question type
 
 Add a check next to `isMatching` / `isStepped` in `js/quiz-engine.js` and add it to `qType()`. Then:
 - give `renderQuestion()` a renderer;
@@ -225,4 +325,4 @@ Party mode only plays types whose shape it knows.
 ---
 Note: the Medical Terminology bank says `subjectId: "medical_terminology"`, while
 the catalog uses the id `medterm`. The catalog id was kept so nothing else breaks.
-Progress is saved under the file path (`medterm/lecture-11-msk`), so the mismatch does not matter.
+Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mismatch does not matter.

@@ -1,0 +1,2095 @@
+{
+ "id": "lecture-12-13---cardiovascular-system",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 12 and 13 - Cardiovascular System",
+ "formSize": 90,
+ "forms": [
+  "A"
+ ],
+ "bank": {
+  "A": [
+   {
+    "id": "MT12001",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the position and shape of the heart?",
+    "options": [
+     "It lies slightly left of centre in the chest and is pear-shaped or an inverted cone.",
+     "It lies slightly right of centre in the chest and is spherical or a rounded cone.",
+     "It lies centrally behind the sternum and is oval-shaped or a flattened cone.",
+     "It lies low in the abdomen and is bean-shaped or a curved cone."
+    ],
+    "correct": 0,
+    "explain": "The heart lies slightly left of centre in the chest and is described as pear-shaped or an inverted cone. Positions to the right, centrally behind the sternum, or low in the abdomen do not match its anatomical location, and spherical, oval, or bean shapes do not match its gross form."
+   },
+   {
+    "id": "MT12002",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly distinguishes the heart from the blood vessels?",
+    "options": [
+     "The heart delivers blood to the lungs and body, while the blood vessels pump blood out to the heart and back again.",
+     "The heart pumps blood out to the lungs and body, while the blood vessels deliver and receive blood to and from the body.",
+     "The heart receives blood from the lungs and body, while the blood vessels pump blood out to the heart and back again.",
+     "The heart regulates one-way flow through valves, while the blood vessels contract to produce body heat and movement."
+    ],
+    "correct": 1,
+    "explain": "The heart is the muscular pump sending blood to the lungs and body, while arteries and veins are the vessels that deliver and receive blood to and from the body. Describing the heart as a receiver or regulator of one-way flow, or assigning pumping to the vessels, reverses the roles; blood vessels do not generate the main propulsive force of circulation."
+   },
+   {
+    "id": "MT12003",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the cardiac chambers and septa?",
+    "options": [
+     "The atria are the lower chambers, the ventricles are the upper chambers, and the septa join the right and left sides.",
+     "The atria are the upper chambers, the ventricles are the lower chambers, and the septa join the right and left sides.",
+     "The atria are the upper chambers, the ventricles are the lower chambers, and the septa partition the right and left sides.",
+     "The atria are the lower chambers, the ventricles are the upper chambers, and the septa partition the right and left sides."
+    ],
+    "correct": 2,
+    "explain": "Atria are upper chambers, ventricles are lower chambers, and septa partition the right and left sides. Calling atria lower or ventricles upper reverses chamber position, and saying septa join rather than partition sides misstates their role."
+   },
+   {
+    "id": "MT12004",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which sequence lists the heart wall layers from outer to inner?",
+    "options": [
+     "Endocardium, myocardium, epicardium",
+     "Myocardium, epicardium, endocardium",
+     "Epicardium, endocardium, myocardium",
+     "Epicardium, myocardium, endocardium"
+    ],
+    "correct": 3,
+    "explain": "From outer to inner, the wall runs epicardium, myocardium, endocardium. The epicardium is the outer layer, the myocardium the middle muscle layer, and the endocardium the inner lining. Other orders place the muscle layer outside the epithelial lining or put the endocardium superficial to the myocardium."
+   },
+   {
+    "id": "MT12005",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the pericardium and its parts?",
+    "options": [
+     "The pericardium is a two-layered sac with fluid between, the visceral layer lies closest to the heart, and the parietal layer forms the outer wall.",
+     "The pericardium is a single muscular wall of the heart, the visceral layer lines the chambers, and the parietal layer covers the valves and septa.",
+     "The pericardium is a fluid cavity within the ventricles, the visceral layer forms the outer sac, and the parietal layer lies closest to the heart muscle.",
+     "The pericardium is a one-way valve at the aorta, the visceral layer opens with systole, and the parietal layer closes during diastole and relaxation."
+    ],
+    "correct": 0,
+    "explain": "The pericardium is a two-layered protective sac with fluid in the pericardial cavity. The visceral pericardium is the layer closest to the heart, corresponding to the epicardium, and the parietal pericardium lines the outer wall. Descriptions that make it a single muscular wall, an internal ventricular cavity, or an aortic valve confuse it with heart wall layers or valves."
+   },
+   {
+    "id": "MT12006",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly defines heart valves?",
+    "options": [
+     "They are partitions between the right and left atria that prevent mixing of oxygenated and deoxygenated blood.",
+     "They are structures that open and close with the heartbeat to regulate the one-way flow of blood through the heart.",
+     "They are muscular layers of the heart wall that generate the force needed to pump blood to the lungs.",
+     "They are receptors in the veins that sense pressure changes and trigger contraction of the cardiac muscle."
+    ],
+    "correct": 1,
+    "explain": "Heart valves open and close with the heartbeat to maintain one-way blood flow. Septa partition chambers, myocardium generates force, and venous receptors sense pressure; none of these are valves."
+   },
+   {
+    "id": "MT12007",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes valves in veins?",
+    "options": [
+     "They lie at intervals in the lining of arteries, especially in the arms, and force blood away from the heart.",
+     "They lie continuously around the heart chambers, especially in the atria, and stop blood entering the ventricles.",
+     "They lie at intervals in the lining of veins, especially in the legs, and help move blood returning to the heart.",
+     "They lie between the ventricles and great arteries, especially in the lungs, and regulate one-way flow from the heart."
+    ],
+    "correct": 2,
+    "explain": "Venous valves occur at intervals in the lining of veins, particularly in the legs, and assist the return of blood to the heart. Placing them in arteries, around chambers, or between ventricles and arteries assigns them the wrong vessels or structures."
+   },
+   {
+    "id": "MT12008",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which event immediately follows contraction of the right atrium?",
+    "options": [
+     "The aortic valve opens and blood enters the aorta from the left ventricle.",
+     "The pulmonary valve opens and blood enters the pulmonary artery from the right ventricle.",
+     "The mitral valve opens and blood enters the left ventricle from the left atrium.",
+     "The tricuspid valve opens and blood enters the right ventricle from the right atrium."
+    ],
+    "correct": 3,
+    "explain": "Contraction of the right atrium opens the tricuspid valve so blood passes into the right ventricle. The pulmonary semilunar valve opens after right ventricular contraction, while the mitral and aortic valves belong to the left side of the heart."
+   },
+   {
+    "id": "MT12009",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which vessel carries deoxygenated blood away from the heart?",
+    "options": [
+     "The pulmonary artery, which carries deoxygenated blood to the lungs.",
+     "The pulmonary vein, which carries oxygenated blood from the lungs.",
+     "The aorta, which carries oxygenated blood to all parts of the body.",
+     "The coronary vein, which returns deoxygenated blood from the myocardium."
+    ],
+    "correct": 0,
+    "explain": "The pulmonary artery carries deoxygenated blood away from the right ventricle to the lungs. The pulmonary vein carries oxygenated blood to the left atrium, the aorta carries oxygenated blood to the body, and coronary veins return deoxygenated blood from the heart muscle."
+   },
+   {
+    "id": "MT12010",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which vessel returns oxygenated blood to the left atrium?",
+    "options": [
+     "The superior vena cava, which returns deoxygenated blood from the body.",
+     "The pulmonary vein, which returns oxygenated blood back from the lungs.",
+     "The pulmonary artery, which carries deoxygenated blood to the lungs.",
+     "The aorta, which carries oxygenated blood to all parts of the body."
+    ],
+    "correct": 1,
+    "explain": "The pulmonary vein returns oxygenated blood from the lungs to the left atrium. The superior vena cava returns deoxygenated blood from the body, the pulmonary artery carries deoxygenated blood to the lungs, and the aorta distributes oxygenated blood systemically."
+   },
+   {
+    "id": "MT12011",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which chamber receives deoxygenated blood returning from the body?",
+    "options": [
+     "Left atrium, which receives oxygenated blood from the pulmonary veins.",
+     "Left ventricle, which pumps oxygenated blood into the aorta and body.",
+     "Right atrium, which receives deoxygenated blood from the venae cavae.",
+     "Right ventricle, which pumps deoxygenated blood to the pulmonary artery."
+    ],
+    "correct": 2,
+    "explain": "Deoxygenated blood from the body enters the right atrium through the superior and inferior venae cavae. The left atrium receives oxygenated pulmonary venous blood, the left ventricle ejects into the aorta, and the right ventricle ejects into the pulmonary artery."
+   },
+   {
+    "id": "MT12012",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which chamber pumps oxygenated blood into the systemic circulation?",
+    "options": [
+     "Right atrium, which receives deoxygenated blood from the venae cavae.",
+     "Right ventricle, which pumps deoxygenated blood to the pulmonary artery.",
+     "Left atrium, which receives oxygenated blood from the pulmonary veins.",
+     "Left ventricle, which pumps oxygenated blood into the aorta and body."
+    ],
+    "correct": 3,
+    "explain": "The left ventricle pumps oxygenated blood through the aortic valve into the aorta for systemic circulation. The right atrium receives venous blood, the right ventricle sends blood to the lungs, and the left atrium receives pulmonary venous blood."
+   },
+   {
+    "id": "MT12013",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "What is the circulation of blood between the heart and its muscle tissue called?",
+    "answer": "Coronary circulation",
+    "explain": "Coronary circulation is blood flow between the heart and its own muscular wall, through the right and left coronary arteries. Systemic circulation serves the body tissues, and pulmonary circulation serves the lungs."
+   },
+   {
+    "id": "MT12014",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which set consists entirely of combining forms that mean vessel?",
+    "options": [
+     "Aort/o, Arteri/o, and Ven/o",
+     "Angi/o, Vas/o, and Vascul/o",
+     "Cardi/o, My/o, and Atri/o",
+     "Coron/o, Sphygm/o, and Thromb/o"
+    ],
+    "correct": 1,
+    "explain": "Angi/o, Vas/o, and Vascul/o all mean vessel, as in angiogram, vasospasm, and vasculopathy. Aort/o names the aorta, Arteri/o an artery, Ven/o a vein, Cardi/o the heart, My/o muscle, Atri/o atrium, Coron/o circle or crown, Sphygm/o pulse, and Thromb/o clot, so those sets mix structures rather than the general vessel sense."
+   },
+   {
+    "id": "MT12015",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which two combining forms both mean chest?",
+    "options": [
+     "Aort/o and Arteri/o",
+     "My/o and Cardi/o",
+     "Pector/o and Steth/o",
+     "Ven/o and Phleb/o"
+    ],
+    "correct": 2,
+    "explain": "Pector/o and Steth/o both mean chest, as in pectoral and stethoscope. Aort/o and Arteri/o name great vessels, My/o and Cardi/o name muscle and heart, and Ven/o and Phleb/o name vein."
+   },
+   {
+    "id": "MT12016",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "In the term myocardial, the element myo refers to which structure?",
+    "options": [
+     "Heart, as the pumping organ of the circulation",
+     "Vessel, as the tube that carries the blood",
+     "Chest, as the cavity that contains the heart",
+     "Muscle, as the middle layer of the heart wall"
+    ],
+    "correct": 3,
+    "explain": "In myocardial, myo means muscle, referring to the middle muscular layer of the heart wall. The heart sense belongs to cardi/o, the vessel sense to angi/o or vas/o, and the chest sense to pector/o or steth/o."
+   },
+   {
+    "id": "MT12017",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "In the term cardioangiology, the element cardio refers to which structure?",
+    "options": [
+     "Heart, as the muscular organ that pumps blood",
+     "Vessel, as the tube that carries blood to tissues",
+     "Atrium, as the upper chamber receiving venous blood",
+     "Chest, as the body region containing the heart"
+    ],
+    "correct": 0,
+    "explain": "In cardioangiology, cardio means heart, while angi/o means vessel. The term concerns heart and vessels, not the atrium or chest alone."
+   },
+   {
+    "id": "MT12018",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "In the term atherosclerosis, the element ather refers to which substance?",
+    "options": [
+     "Clot, as a mass formed within flowing blood",
+     "Fatty or lipid paste, as vessel wall material",
+     "Pulse, as the pressure wave felt in an artery",
+     "Vein, as a vessel returning blood toward the heart"
+    ],
+    "correct": 1,
+    "explain": "In atherosclerosis, ather means fatty or lipid paste, and the term describes hardening associated with fatty material in vessel walls. Clot is thromb/o, pulse is sphygm/o, and vein is ven/o or phleb/o."
+   },
+   {
+    "id": "MT12019",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "In the term sphygmomanometer, the element sphygm refers to what?",
+    "options": [
+     "Clot, as a mass formed within flowing blood",
+     "Vessel, as the tube that carries blood through body",
+     "Pulse, as the arterial pressure wave measured",
+     "Heart, as the muscular organ that pumps blood"
+    ],
+    "correct": 2,
+    "explain": "In sphygmomanometer, sphygm means pulse, and the device measures arterial pressure. Clot, vessel, and heart are named by other forms and are not the element carried by sphygm."
+   },
+   {
+    "id": "MT12020",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "In the term varicose veins, the element varic refers to what?",
+    "options": [
+     "A normal vein returning blood to the heart",
+     "A fatty deposit within an arterial wall",
+     "A clot forming inside a damaged vessel",
+     "A swollen or twisted vein, usually in legs"
+    ],
+    "correct": 3,
+    "explain": "In varicose veins, varic means swollen or twisted vein, and the suffix ose conveys full of. A normal vein, fatty deposit, and clot are named by ven/o, ather/o, and thromb/o, not by varic/o."
+   },
+   {
+    "id": "MT12021",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which structure is the partition between the right and left atria?",
+    "options": [
+     "The inter-atrial septum.",
+     "The inter-ventricular septum.",
+     "The pericardial cavity.",
+     "The atrioventricular valve."
+    ],
+    "correct": 0,
+    "explain": "The inter-atrial septum is the partition between the right and left atria. The inter-ventricular septum separates the ventricles, the pericardial cavity is the fluid-filled space around the heart, and the atrioventricular valve lies between an atrium and a ventricle."
+   },
+   {
+    "id": "MT12022",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which structure is the partition between the right and left ventricles?",
+    "options": [
+     "The inter-atrial septum.",
+     "The inter-ventricular septum.",
+     "The pericardial cavity.",
+     "The semilunar valve."
+    ],
+    "correct": 1,
+    "explain": "The inter-ventricular septum is the partition between the right and left ventricles. The inter-atrial septum separates the atria, the pericardial cavity is the fluid-filled space around the heart, and a semilunar valve guards the outflow of a ventricle."
+   },
+   {
+    "id": "MT12023",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which layer is the outer layer of the heart wall?",
+    "options": [
+     "Myocardium",
+     "Endocardium",
+     "Epicardium",
+     "Pericardium"
+    ],
+    "correct": 2,
+    "explain": "The epicardium is the outer layer of the heart wall. The myocardium is the middle muscular layer, the endocardium is the inner lining, and the pericardium is the protective sac that encloses the heart rather than a wall layer."
+   },
+   {
+    "id": "MT12024",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What is the heart's muscular tissue called?",
+    "options": [
+     "Pericardium",
+     "Epicardium",
+     "Endocardium",
+     "Myocardium"
+    ],
+    "correct": 3,
+    "explain": "The myocardium is the middle muscular layer of the heart wall, the tissue that contracts. The epicardium is the outer layer, the endocardium is the inner lining, and the pericardium is the protective sac around the heart rather than a wall muscle."
+   },
+   {
+    "id": "MT12025",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which layer is the inner lining of the heart wall?",
+    "options": [
+     "Epicardium",
+     "Myocardium",
+     "Endocardium",
+     "Pericardium"
+    ],
+    "correct": 2,
+    "explain": "The endocardium is the inner lining of the heart wall. The epicardium is the outer layer, the myocardium is the middle muscular layer, and the pericardium is the protective sac around the heart."
+   },
+   {
+    "id": "MT12026",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which layer of the pericardium lies closest to the heart?",
+    "options": [
+     "The parietal pericardium.",
+     "The fibrous pericardium.",
+     "The visceral pericardium.",
+     "The pericardial cavity."
+    ],
+    "correct": 2,
+    "explain": "The visceral pericardium is the layer closest to the heart, corresponding to the epicardium. The parietal pericardium is the outer wall layer, the fibrous pericardium is part of the outer sac, and the pericardial cavity is the fluid-filled space between the layers."
+   },
+   {
+    "id": "MT12027",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which layer of the pericardium forms the outer wall of the sac?",
+    "options": [
+     "The visceral pericardium.",
+     "The parietal pericardium.",
+     "The myocardium.",
+     "The endocardium."
+    ],
+    "correct": 1,
+    "explain": "The parietal pericardium is the outer layer of the pericardial sac, pertaining to the wall. The visceral pericardium is the layer closest to the heart, while the myocardium and endocardium are heart wall layers rather than pericardial layers."
+   },
+   {
+    "id": "MT12028",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What is the pericardial cavity?",
+    "options": [
+     "The fluid-filled space between parietal and visceral layers.",
+     "The muscular chamber that pumps blood out into the aorta.",
+     "The inner lining that covers the chambers and the valves.",
+     "The partition that divides the two upper heart chambers."
+    ],
+    "correct": 0,
+    "explain": "The pericardial cavity is the fluid-filled space between the parietal and visceral layers of the pericardium. The chamber that pumps into the aorta is the left ventricle, the inner lining of the chambers is the endocardium, and the partition between the upper chambers is the inter-atrial septum."
+   },
+   {
+    "id": "MT12029",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which valve lies between the right atrium and the right ventricle?",
+    "options": [
+     "The bicuspid or mitral valve.",
+     "The tricuspid valve.",
+     "The pulmonary semilunar valve.",
+     "The aortic valve."
+    ],
+    "correct": 1,
+    "explain": "The tricuspid valve lies between the right atrium and the right ventricle. The bicuspid or mitral valve is between the left atrium and left ventricle, the pulmonary semilunar valve is between the right ventricle and pulmonary artery, and the aortic valve is between the left ventricle and aorta."
+   },
+   {
+    "id": "MT12030",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which valve lies between the right ventricle and the pulmonary artery?",
+    "options": [
+     "The tricuspid valve.",
+     "The bicuspid or mitral valve.",
+     "The pulmonary semilunar valve.",
+     "The aortic valve."
+    ],
+    "correct": 2,
+    "explain": "The pulmonary semilunar valve lies between the right ventricle and the pulmonary artery. The tricuspid valve is between the right atrium and right ventricle, the bicuspid or mitral valve is between the left atrium and left ventricle, and the aortic valve is between the left ventricle and aorta."
+   },
+   {
+    "id": "MT12031",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which valve lies between the left atrium and the left ventricle?",
+    "options": [
+     "The tricuspid valve.",
+     "The pulmonary semilunar valve.",
+     "The aortic valve.",
+     "The bicuspid or mitral valve."
+    ],
+    "correct": 3,
+    "explain": "The bicuspid or mitral valve lies between the left atrium and the left ventricle. The tricuspid valve is between the right atrium and right ventricle, the pulmonary semilunar valve is between the right ventricle and pulmonary artery, and the aortic valve is between the left ventricle and aorta."
+   },
+   {
+    "id": "MT12032",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which valve lies between the left ventricle and the aorta?",
+    "options": [
+     "The aortic valve.",
+     "The tricuspid valve.",
+     "The pulmonary semilunar valve.",
+     "The bicuspid or mitral valve."
+    ],
+    "correct": 0,
+    "explain": "The aortic valve lies between the left ventricle and the aorta. The tricuspid valve is between the right atrium and right ventricle, the pulmonary semilunar valve is between the right ventricle and pulmonary artery, and the bicuspid or mitral valve is between the left atrium and left ventricle."
+   },
+   {
+    "id": "MT12033",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "The tricuspid valve takes its name from cuspis, and the pulmonary semilunar valve from luna. Which pairing of element to meaning is correct?",
+    "options": [
+     "Cuspis means moon, and luna means point.",
+     "Cuspis means point, and luna means moon.",
+     "Cuspis means three, and luna means half.",
+     "Cuspis means valve, and luna means artery."
+    ],
+    "correct": 1,
+    "explain": "Cuspis means point, which is why the tricuspid valve is named for its pointed leaflets, and luna means moon, which is why the pulmonary semilunar valve is named for its half-moon cusps. Pairing cuspis with moon and luna with point reverses the two roots. Pairing cuspis with three and luna with half, or cuspis with valve and luna with artery, assigns senses those roots do not carry."
+   },
+   {
+    "id": "MT12034",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which vessels bring deoxygenated blood from the body into the right atrium?",
+    "options": [
+     "The pulmonary veins from the lungs.",
+     "The coronary arteries of the heart wall.",
+     "The superior and inferior venae cavae.",
+     "The aorta and its systemic branches."
+    ],
+    "correct": 2,
+    "explain": "The superior and inferior venae cavae bring deoxygenated blood from the body into the right atrium. The pulmonary veins return oxygenated blood from the lungs, the coronary arteries supply the heart muscle, and the aorta carries oxygenated blood out to the body."
+   },
+   {
+    "id": "MT12035",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the combining form Angi/o mean?",
+    "options": [
+     "Vessel.",
+     "Aorta.",
+     "Artery.",
+     "Vein."
+    ],
+    "correct": 0,
+    "explain": "Angi/o means vessel, as in angiogram. Aorta is Aort/o, artery is Arteri/o, and vein is Ven/o or Phleb/o."
+   },
+   {
+    "id": "MT12036",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the combining form Aort/o mean?",
+    "options": [
+     "Vessel.",
+     "The aorta.",
+     "An artery.",
+     "A clot."
+    ],
+    "correct": 1,
+    "explain": "Aort/o means the aorta, the main trunk leaving the left ventricle, as in aortalgia. Vessel is Angi/o or Vas/o, artery is Arteri/o, and clot is Thromb/o."
+   },
+   {
+    "id": "MT12037",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the combining form Arteri/o mean?",
+    "options": [
+     "The aorta, the trunk leaving the left ventricle.",
+     "A vessel in general, without naming a type.",
+     "An artery, a vessel carrying blood away from the heart.",
+     "A vein, a vessel returning blood toward the heart."
+    ],
+    "correct": 2,
+    "explain": "Arteri/o means artery, a vessel carrying blood away from the heart, as in arteriostenosis. The aorta is named by Aort/o, the general vessel sense by Angi/o or Vas/o, and a vein by Ven/o or Phleb/o."
+   },
+   {
+    "id": "MT12039",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the combining form Atri/o mean?",
+    "options": [
+     "An upper heart chamber, the atrium.",
+     "A lower heart chamber, the ventricle.",
+     "A valve of the heart.",
+     "A septum of the heart."
+    ],
+    "correct": 0,
+    "explain": "Atri/o means atrium, the upper heart chamber, as in atrioventricular. Ventricul/o means the lower chamber, while valves and septa are named by other terms."
+   },
+   {
+    "id": "MT12041",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the combining form Coron/o mean?",
+    "options": [
+     "A valve.",
+     "A septum.",
+     "Circle or crown.",
+     "A chamber."
+    ],
+    "correct": 2,
+    "explain": "Coron/o means circle or crown, which is why the coronary arteries encircle the heart. Valve and septum are structural terms, and chamber is named by Atri/o or Ventricul/o."
+   },
+   {
+    "id": "MT12043",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What do the combining forms Pector/o and Steth/o both mean?",
+    "options": [
+     "Chest.",
+     "Heart.",
+     "Pulse.",
+     "Clot."
+    ],
+    "correct": 0,
+    "explain": "Pector/o and Steth/o both mean chest, as in pectoral and stethoscope. Heart is Cardi/o, pulse is Sphygm/o, and clot is Thromb/o."
+   },
+   {
+    "id": "MT12044",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What is the combining form which means pulse?",
+    "options": [
+     "Steth/o",
+     "Pector/o",
+     "Sphygm/o",
+     "Arteri/o"
+    ],
+    "correct": 2,
+    "explain": "Sphygm/o means pulse, as in sphygmomanometer, the instrument that measures arterial pressure. Steth/o and Pector/o both mean chest, and Arteri/o means artery."
+   },
+   {
+    "id": "MT12045",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "What is the combining form meaning clot?",
+    "answer": "Thromb/o",
+    "explain": "Thromb/o means clot, as in thrombosis, the condition in which a clot forms in a vessel. Pulse is Sphygm/o, muscle is My/o, and heart is Cardi/o."
+   },
+   {
+    "id": "MT12046",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What do the combining forms Ven/o and Phleb/o both mean?",
+    "options": [
+     "Artery.",
+     "Vein.",
+     "Aorta.",
+     "Ventricle."
+    ],
+    "correct": 1,
+    "explain": "Ven/o and Phleb/o both mean vein, as in venosclerosis and phlebitis. Artery is Arteri/o, the aorta is Aort/o, and the ventricle is Ventricul/o."
+   },
+   {
+    "id": "MT12078",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "The term phlebotomist comes from the combining form __________________ meaning _________________.",
+    "answer": "Phleb/o, vein",
+    "explain": "Phlebotomist is built from phleb/o, which means vein, plus tom/o (to cut) and -ist (one who specializes). Ven/o is the other combining form for vein. Artery is arteri/o, and clot is thromb/o."
+   },
+   {
+    "id": "MT12048",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "What is the combining form for ventricle?",
+    "answer": "Ventricul/o",
+    "explain": "Ventricul/o means ventricle or pouch, the lower heart chamber, as in ventriculoatriostomy. The atrium is Atri/o, the aorta is Aort/o, and a valve is named by other terms."
+   },
+   {
+    "id": "MT12049",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "Formed from angi/o, an ______________ is an x-ray record of a blood vessel.",
+    "answer": "Angiogram",
+    "explain": "Angiogram is built from angi/o (vessel) and -gram (record), so it is an x-ray record of a blood vessel. A cardiograph records the heart, angioplasty is surgical repair of a vessel, and angiogenesis is the formation of new vessels."
+   },
+   {
+    "id": "MT12050",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term vasospasm mean?",
+    "options": [
+     "A clot forming inside a vessel.",
+     "An involuntary contraction of a vessel.",
+     "A surgical opening made in a vessel.",
+     "A recorded image made of a vessel."
+    ],
+    "correct": 1,
+    "explain": "Vasospasm is built from Vas/o (vessel) and spasm (involuntary contraction), so it denotes an involuntary contraction of a vessel. A clot is thrombosis, a surgical opening uses -stomy, and a record uses -gram."
+   },
+   {
+    "id": "MT12051",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term vasculopathy mean?",
+    "options": [
+     "A record of a vessel.",
+     "An inflammation of a vessel.",
+     "A disease of vessels.",
+     "A surgical repair of a vessel."
+    ],
+    "correct": 2,
+    "explain": "Vasculopathy is built from Vascul/o (vessel) and -pathy (disease), so it denotes a disease of vessels. A record would use -gram, inflammation would use -itis, and surgical repair would use -plasty."
+   },
+   {
+    "id": "MT12052",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term aortalgia mean?",
+    "options": [
+     "Pain in the aorta.",
+     "Inflammation of the aorta.",
+     "A narrowing of the aorta.",
+     "A record of the aorta."
+    ],
+    "correct": 0,
+    "explain": "Aortalgia is built from Aort/o (aorta) and -algia (pain), so it denotes pain in the aorta. Inflammation would use -itis, narrowing would use -stenosis, and a record would use -gram."
+   },
+   {
+    "id": "MT12053",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term arteriostenosis mean?",
+    "options": [
+     "Pain in an artery.",
+     "A narrowing of an artery.",
+     "A surgical opening in an artery.",
+     "Inflammation of an artery."
+    ],
+    "correct": 1,
+    "explain": "Arteriostenosis is built from Arteri/o (artery) and -stenosis (narrowing), so it denotes a narrowing of an artery. Pain would use -algia, a surgical opening would use -stomy, and inflammation would use -itis."
+   },
+   {
+    "id": "MT12054",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What is the meaning of atherosclerosis?",
+    "options": [
+     "Inflammation of the veins along their course.",
+     "Hardening of the arteries due to fatty deposits.",
+     "Narrowing of the heart valves at the outlets.",
+     "Enlargement of the heart muscle in the wall."
+    ],
+    "correct": 1,
+    "explain": "Atherosclerosis is built from ather/o (fatty or lipid paste) and -sclerosis (hardening), so it means hardening of the arteries due to fatty deposits. Inflammation of veins uses phleb/o with -itis, narrowing of valves is a stenotic valve lesion, and enlargement of heart muscle is hypertrophy of the myocardium."
+   },
+   {
+    "id": "MT12055",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term atherectomy mean?",
+    "options": [
+     "A record of fatty deposits in a vessel.",
+     "Surgical removal of fatty plaque from a vessel.",
+     "Inflammation of fatty tissue in a vessel.",
+     "Narrowing caused by fatty deposits in a vessel."
+    ],
+    "correct": 1,
+    "explain": "Atherectomy is built from Athero (fatty or lipid paste) and -ectomy (surgical removal), so it denotes surgical removal of fatty plaque from a vessel. A record uses -gram, inflammation uses -itis, and narrowing uses -stenosis."
+   },
+   {
+    "id": "MT12056",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term atrioventricular mean?",
+    "options": [
+     "Pertaining to an atrium and a ventricle.",
+     "Pertaining to the aorta and a ventricle.",
+     "Pertaining to a vein and an artery.",
+     "Pertaining to the heart and the chest."
+    ],
+    "correct": 0,
+    "explain": "Atrioventricular is built from Atri/o (atrium) and ventricul/o (ventricle) with -ar (pertaining to), so it means pertaining to an atrium and a ventricle. The other options pair structures that are not named together in this term."
+   },
+   {
+    "id": "MT12057",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term cardioangiology mean?",
+    "options": [
+     "The study of the heart and vessels.",
+     "The study of the heart and lungs.",
+     "The study of the chest and muscles.",
+     "The study of blood and clots."
+    ],
+    "correct": 0,
+    "explain": "Cardioangiology is built from Cardi/o (heart), Angi/o (vessel), and -logy (study), so it denotes the study of the heart and vessels. The lungs, chest muscles, blood, and clots are named by other forms, none of which appears here."
+   },
+   {
+    "id": "MT12058",
+    "type": "saq",
+    "cat": "MT_lec12-13",
+    "q": "The _________________ arteries are so named because they seem to encircle the heart like a crown.",
+    "answer": "Coronary",
+    "explain": "Coronary is built from coron/o, which means circle or crown, and -ary, pertaining to. The right and left coronary arteries encircle the heart and supply its muscle."
+   },
+   {
+    "id": "MT12059",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term myocardial mean?",
+    "options": [
+     "Pertaining to the heart lining.",
+     "Pertaining to the heart muscle.",
+     "Pertaining to the chest wall.",
+     "Pertaining to the pericardial sac."
+    ],
+    "correct": 1,
+    "explain": "Myocardial is built from My/o (muscle) and cardi/o (heart) with -al (pertaining to), so it means pertaining to the heart muscle. The heart lining is the endocardium, the chest wall is Pector/o, and the pericardial sac is Pericardi/o."
+   },
+   {
+    "id": "MT12060",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term pectoral mean?",
+    "options": [
+     "Pertaining to the pulse.",
+     "Pertaining to the chest.",
+     "Pertaining to a clot.",
+     "Pertaining to a vessel."
+    ],
+    "correct": 1,
+    "explain": "Pectoral is built from Pector/o (chest) and -al (pertaining to), so it means pertaining to the chest. Pulse is Sphygm/o, clot is Thromb/o, and vessel is Angi/o or Vas/o."
+   },
+   {
+    "id": "MT12061",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term stethoscope mean?",
+    "options": [
+     "An instrument for examining the chest.",
+     "An instrument for measuring the pulse.",
+     "An instrument for recording the heart.",
+     "An instrument for opening a vessel."
+    ],
+    "correct": 0,
+    "explain": "Stethoscope is built from Steth/o (chest) and -scope (instrument for examining), so it denotes an instrument for examining the chest. Measuring the pulse uses Sphygm/o, recording the heart uses Cardi/o with -graph, and opening a vessel uses Vas/o with -stomy."
+   },
+   {
+    "id": "MT12062",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term sphygmomanometer mean?",
+    "options": [
+     "An instrument for recording the heart sounds.",
+     "An instrument for measuring pulse or blood pressure.",
+     "An instrument for examining the chest wall.",
+     "An instrument for opening a closed vessel."
+    ],
+    "correct": 1,
+    "explain": "Sphygmomanometer is built from Sphygm/o (pulse), man/o (pressure), and -meter (measuring instrument), so it denotes a pressure-measuring instrument, the blood pressure cuff. Recording the heart uses Cardi/o with -graph, examining the chest uses Steth/o with -scope, and opening a vessel uses Vas/o with -stomy."
+   },
+   {
+    "id": "MT12063",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term thrombosis mean?",
+    "options": [
+     "A recorded image of a vessel.",
+     "A condition in which a clot forms in a vessel.",
+     "A narrowing along the course of an artery.",
+     "An inflammation along the course of a vein."
+    ],
+    "correct": 1,
+    "explain": "Thrombosis is built from Thromb/o (clot) and -osis (condition), so it denotes the condition in which a clot forms within a vessel. A record uses -gram, narrowing uses -stenosis, and inflammation uses -itis."
+   },
+   {
+    "id": "MT12077",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What is the meaning of thrombocyte?",
+    "options": [
+     "Formation of a blood clot.",
+     "Cell involved in clotting.",
+     "Destruction of a blood clot.",
+     "Inflammation of a clotted vein."
+    ],
+    "correct": 1,
+    "explain": "Thrombocyte is built from thromb/o (clot) and -cyte (cell), so it is a cell involved in clotting. Formation of a clot is thrombosis, destruction of a clot is thrombolysis, and inflammation of a clotted vein is thrombophlebitis."
+   },
+   {
+    "id": "MT12064",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term venosclerosis mean?",
+    "options": [
+     "A hardening of a vein.",
+     "A widening of a vein.",
+     "A clot inside a vein.",
+     "A surgical removal of a vein."
+    ],
+    "correct": 0,
+    "explain": "Venosclerosis is built from Ven/o (vein) and -sclerosis (hardening), so it denotes a hardening of a vein. Widening would use -ectasis, a clot would use Thromb/o, and surgical removal would use -ectomy."
+   },
+   {
+    "id": "MT12065",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term varicose veins mean?",
+    "options": [
+     "Veins that are narrowed and hardened inside.",
+     "Veins that are swollen or twisted in the legs.",
+     "Veins that are blocked by a clot inside them.",
+     "Veins that are inflamed by a local infection."
+    ],
+    "correct": 1,
+    "explain": "Varicose veins is built from Varic/o (swollen or twisted vein) and -ose (full of), so it denotes veins that are swollen or twisted, usually in the legs. Narrowed and hardened veins are venosclerosis, a blocking clot is thrombosis, and inflammation uses -itis."
+   },
+   {
+    "id": "MT12066",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "What does the term ventriculoatriostomy mean?",
+    "options": [
+     "A surgical opening between a ventricle and an atrium.",
+     "A recorded image of a ventricle and an atrium.",
+     "An inflammation of a ventricle and an atrium.",
+     "A narrowing between a ventricle and an atrium."
+    ],
+    "correct": 0,
+    "explain": "Ventriculoatriostomy is built from Ventricul/o (ventricle), Atri/o (atrium), and -stomy (surgical opening), so it denotes a surgical opening between a ventricle and an atrium. A record uses -gram, inflammation uses -itis, and narrowing uses -stenosis."
+   },
+   {
+    "id": "MT12067",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each heart valve to the flow it guards.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Tricuspid valve"
+     },
+     {
+      "id": "2",
+      "text": "Pulmonary semilunar valve"
+     },
+     {
+      "id": "3",
+      "text": "Bicuspid or mitral valve"
+     },
+     {
+      "id": "4",
+      "text": "Aortic valve"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Guards the outlet from the left ventricle into the systemic trunk"
+     },
+     {
+      "id": "B",
+      "text": "Guards the inlet from the right atrium into the right ventricle"
+     },
+     {
+      "id": "C",
+      "text": "Guards the outlet from the right ventricle into the pulmonary trunk"
+     },
+     {
+      "id": "D",
+      "text": "Guards the inlet from the left atrium into the left ventricle"
+     },
+     {
+      "id": "E",
+      "text": "Guards the return from the body veins into the right atrium"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "C",
+     "3": "D",
+     "4": "A"
+    },
+    "explain": "The tricuspid valve guards flow from the right atrium into the right ventricle, the pulmonary semilunar valve guards flow from the right ventricle into the pulmonary trunk, the bicuspid or mitral valve guards flow from the left atrium into the left ventricle, and the aortic valve guards flow from the left ventricle into the aorta. The return from the body veins into the right atrium is the vena caval inlet, which none of these four valves guards."
+   },
+   {
+    "id": "MT12068",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each type of circulation to the path it describes.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Systemic circulation"
+     },
+     {
+      "id": "2",
+      "text": "Pulmonary circulation"
+     },
+     {
+      "id": "3",
+      "text": "Coronary circulation"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Flow between the heart and the body tissues"
+     },
+     {
+      "id": "B",
+      "text": "Flow between the heart and the gas exchange organs"
+     },
+     {
+      "id": "C",
+      "text": "Flow between the heart and its own muscular wall"
+     },
+     {
+      "id": "D",
+      "text": "Flow between the atria across the dividing septum"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C"
+    },
+    "explain": "Systemic circulation is flow between the heart and the body tissues, pulmonary circulation is flow between the heart and the lungs, and coronary circulation is flow between the heart and its own muscular wall. Flow across the inter-atrial septum is not a named circulation: the septum partitions the atria rather than carrying a circuit."
+   },
+   {
+    "id": "MT12076",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each suffix to the meaning it adds in a cardiovascular term.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-gram"
+     },
+     {
+      "id": "2",
+      "text": "-stenosis"
+     },
+     {
+      "id": "3",
+      "text": "-ectomy"
+     },
+     {
+      "id": "4",
+      "text": "-algia"
+     },
+     {
+      "id": "5",
+      "text": "-stomy"
+     },
+     {
+      "id": "6",
+      "text": "-sclerosis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Record or image"
+     },
+     {
+      "id": "B",
+      "text": "Narrowing of a passage"
+     },
+     {
+      "id": "C",
+      "text": "Surgical removal"
+     },
+     {
+      "id": "D",
+      "text": "Pain"
+     },
+     {
+      "id": "E",
+      "text": "Surgical opening"
+     },
+     {
+      "id": "F",
+      "text": "Hardening of tissue"
+     },
+     {
+      "id": "G",
+      "text": "Inflammation of a structure"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "-gram means a record or image, -stenosis means narrowing, -ectomy means surgical removal, -algia means pain, -stomy means a surgical opening, and -sclerosis means hardening. Inflammation is the sense of -itis, which is not among these suffixes, so that line matches none of them."
+   },
+   {
+    "id": "MT12069",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each combining form to the structure or idea it denotes.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Aort/o"
+     },
+     {
+      "id": "2",
+      "text": "Arteri/o"
+     },
+     {
+      "id": "3",
+      "text": "Coron/o"
+     },
+     {
+      "id": "4",
+      "text": "Atri/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Upper heart chamber"
+     },
+     {
+      "id": "B",
+      "text": "Main trunk leaving the left ventricle"
+     },
+     {
+      "id": "C",
+      "text": "Vessel carrying blood away from the heart"
+     },
+     {
+      "id": "D",
+      "text": "Ring or wreath"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "C",
+     "3": "D",
+     "4": "A"
+    },
+    "explain": "Aort/o means aorta, the main trunk leaving the left ventricle. Arteri/o means artery, a vessel carrying blood away from the heart. Coron/o means circle or crown, giving coronary its sense of encircling the heart. Atri/o means atrium, an upper heart chamber."
+   },
+   {
+    "id": "MT12070",
+    "type": "matching",
+    "cat": "MT_lec12-13",
+    "q": "Match each remaining combining form to the structure or idea it denotes.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Thromb/o"
+     },
+     {
+      "id": "2",
+      "text": "Ven/o, Phleb/o"
+     },
+     {
+      "id": "3",
+      "text": "Ventricul/o"
+     },
+     {
+      "id": "4",
+      "text": "Varic/o"
+     },
+     {
+      "id": "5",
+      "text": "Athero"
+     },
+     {
+      "id": "6",
+      "text": "Sphygm/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Lower heart chamber or pouch"
+     },
+     {
+      "id": "B",
+      "text": "Vessel returning blood to the heart"
+     },
+     {
+      "id": "C",
+      "text": "Mass formed in flowing blood"
+     },
+     {
+      "id": "D",
+      "text": "Pulse wave felt in an artery"
+     },
+     {
+      "id": "E",
+      "text": "Fatty or lipid paste"
+     },
+     {
+      "id": "F",
+      "text": "Swollen or twisted vein"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "B",
+     "3": "A",
+     "4": "F",
+     "5": "E",
+     "6": "D"
+    },
+    "explain": "Thromb/o means clot, a mass formed in flowing blood. Ven/o and Phleb/o mean vein, a vessel returning blood to the heart. Ventricul/o means ventricle or pouch, the lower heart chamber. Varic/o means a swollen or twisted vein. Athero means fatty or lipid paste. Sphygm/o means pulse, the pressure wave felt in an artery."
+   },
+   {
+    "id": "MT12071",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which name is also used for the atria?",
+    "options": [
+     "Auricles, the upper right and left chambers.",
+     "Ventricles, the lower right and left chambers.",
+     "Septa, the partitions between the two sides.",
+     "Cusps, the pointed leaflets of the inlet valves."
+    ],
+    "correct": 0,
+    "explain": "The atria are also called auricles, and they are the upper right and left chambers. Ventricles are the lower chambers, septa are the partitions between the sides, and cusps are the pointed leaflets of the atrioventricular valves."
+   },
+   {
+    "id": "MT12072",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the ventricles?",
+    "options": [
+     "They are the upper right and left chambers of the heart.",
+     "They are the lower right and left chambers of the heart.",
+     "They are the valves between the atria and the ventricles.",
+     "They are the septa that partition the right and left sides."
+    ],
+    "correct": 1,
+    "explain": "The ventricles are the lower right and left chambers of the heart. The upper chambers are the atria, the valves between atria and ventricles are the atrioventricular valves, and the septa are the partitions between the right and left sides."
+   },
+   {
+    "id": "MT12073",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the flow of oxygenated blood from the lungs back to the heart?",
+    "options": [
+     "It returns through the pulmonary vein into the left atrium, then through the mitral valve into the left ventricle.",
+     "It returns through the pulmonary artery into the right atrium, then through the tricuspid valve into the right ventricle.",
+     "It returns through the superior vena cava into the right atrium, then through the tricuspid valve into the right ventricle.",
+     "It returns through the aorta into the left atrium, then through the aortic valve into the left ventricle."
+    ],
+    "correct": 0,
+    "explain": "Oxygenated blood returns from the lungs through the pulmonary vein into the left atrium, and contraction of the left atrium opens the mitral or bicuspid valve so blood flows into the left ventricle. The pulmonary artery carries deoxygenated blood to the lungs, the superior vena cava returns deoxygenated blood from the body, and the aorta carries blood away from the left ventricle rather than returning it to the left atrium."
+   },
+   {
+    "id": "MT12074",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the flow of blood from the left ventricle into the systemic circulation?",
+    "options": [
+     "Contraction of the left ventricle opens the aortic valve and blood flows into the aorta and to all parts of the body.",
+     "Contraction of the left ventricle opens the pulmonary semilunar valve and blood flows into the pulmonary artery and lungs.",
+     "Contraction of the left ventricle opens the tricuspid valve and blood flows back into the right atrium.",
+     "Contraction of the left ventricle opens the mitral valve and blood flows back into the left atrium."
+    ],
+    "correct": 0,
+    "explain": "Contraction of the left ventricle opens the aortic valve and blood flows into the aorta and to all parts of the body, which is the systemic circulation. The pulmonary semilunar valve is the right ventricular outlet, and the tricuspid and mitral valves are inlet valves rather than outlets from the left ventricle."
+   },
+   {
+    "id": "MT12075",
+    "type": "mcq",
+    "cat": "MT_lec12-13",
+    "q": "Which statement correctly describes the flow of blood from the right ventricle into the pulmonary circulation?",
+    "options": [
+     "Contraction of the right ventricle opens the pulmonary valve and blood flows to the lungs by the pulmonary artery.",
+     "Contraction of the right ventricle opens the aortic valve and blood flows into the aorta and onward to the body.",
+     "Contraction of the right ventricle opens the mitral valve and blood flows across the heart into the left atrium.",
+     "Contraction of the right ventricle opens the tricuspid valve and blood flows backward into the right atrium again."
+    ],
+    "correct": 0,
+    "explain": "Contraction of the right ventricle opens the pulmonary valve, and blood flows to the lungs by the pulmonary artery, where it is oxygenated. The aortic valve is the left ventricular outlet, and the mitral and tricuspid valves are inlet valves rather than outlets from the right ventricle."
+   },
+   {
+    "id": "MT12079",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "chamber-drill",
+    "groupOrder": 1,
+    "q": "This upper chamber receives the venae cavae. Answer each step, then the next chamber follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this chamber?",
+      "options": [
+       "Right atrium",
+       "Right atreium",
+       "Right atrum",
+       "Right atrim"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which valve borders this chamber?",
+      "options": [
+       "Tricuspid valve",
+       "Mitral valve",
+       "Pulmonary semilunar valve",
+       "Aortic valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Where does the other atrium lie relative to this chamber?",
+      "options": [
+       "To its left",
+       "To its right",
+       "Inferior to it",
+       "Inside its ventricle"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the ventricle it feeds lie?",
+      "options": [
+       "Inferior to it",
+       "Superior to it",
+       "Medial inside the septum",
+       "On the opposite side of the chest"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "5",
+      "prompt": "What lies on its medial side?",
+      "options": [
+       "The inter-atrial septum",
+       "The aortic valve",
+       "The pericardial cavity",
+       "The pulmonary vein"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This upper chamber is the right atrium, also called an auricle. The tricuspid valve is its outlet into the right ventricle. The left atrium lies to its left, the right ventricle lies inferior to it, and the inter-atrial septum is medial. Mitral, pulmonary semilunar, and aortic name other borders. To its right is the side of the other atrium, not this one. Superior to it is not where its ventricle lies. The aortic valve, the pericardial cavity, and the pulmonary vein are not the medial partition."
+   },
+   {
+    "id": "MT12080",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "chamber-drill",
+    "groupOrder": 2,
+    "q": "This upper chamber receives the pulmonary veins. Answer each step, then the next chamber follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this chamber?",
+      "options": [
+       "Left atrium",
+       "Left atreium",
+       "Left atrum",
+       "Left atrim"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which valve borders this chamber?",
+      "options": [
+       "Mitral valve",
+       "Tricuspid valve",
+       "Pulmonary semilunar valve",
+       "Aortic valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Where does the other atrium lie relative to this chamber?",
+      "options": [
+       "To its right",
+       "To its left",
+       "Inferior to it",
+       "Inside its ventricle"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the ventricle it feeds lie?",
+      "options": [
+       "Inferior to it",
+       "Superior to it",
+       "Medial inside the septum",
+       "On the opposite side of the chest"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "5",
+      "prompt": "What lies on its medial side?",
+      "options": [
+       "The inter-atrial septum",
+       "The pulmonary semilunar valve",
+       "The pericardial cavity",
+       "The vena cava"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This upper chamber is the left atrium, also called an auricle. The mitral valve is its outlet into the left ventricle. The right atrium lies to its right, the left ventricle lies inferior to it, and the inter-atrial septum is medial. Tricuspid, pulmonary semilunar, and aortic name other borders. To its left is not the side of the other atrium. Superior to it is not where its ventricle lies. The pulmonary semilunar valve, the pericardial cavity, and the vena cava are not the medial partition."
+   },
+   {
+    "id": "MT12081",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "chamber-drill",
+    "groupOrder": 3,
+    "q": "This lower chamber sends blood into the pulmonary artery. Answer each step, then the next chamber follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this chamber?",
+      "options": [
+       "Right ventricle",
+       "Right ventrical",
+       "Right ventrucle",
+       "Right ventricale"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which valve is its inlet?",
+      "options": [
+       "Tricuspid valve",
+       "Mitral valve",
+       "Pulmonary semilunar valve",
+       "Aortic valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which valve is its outlet?",
+      "options": [
+       "Pulmonary semilunar valve",
+       "Aortic valve",
+       "Tricuspid valve",
+       "Mitral valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the atrium that feeds it lie?",
+      "options": [
+       "Superior to it",
+       "Inferior to it",
+       "Medial inside the septum",
+       "On the left side of the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "5",
+      "prompt": "Where does the other ventricle lie relative to this chamber?",
+      "options": [
+       "To its left",
+       "To its right",
+       "Superior to its atrium",
+       "Inside the pericardial cavity"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This lower chamber is the right ventricle. The tricuspid valve is the inlet from the right atrium, and the pulmonary semilunar valve is the outlet into the pulmonary artery. The right atrium lies superior to it. The left ventricle lies to its left, with the inter-ventricular septum medial. Mitral and aortic are left-sided valves. Inferior to it is not where its atrium lies. To its right is not the side of the other ventricle."
+   },
+   {
+    "id": "MT12082",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "chamber-drill",
+    "groupOrder": 4,
+    "q": "This lower chamber sends blood into the aorta. Answer each step, then the valve run follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this chamber?",
+      "options": [
+       "Left ventricle",
+       "Left ventrical",
+       "Left ventrucle",
+       "Left ventricale"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which valve is its inlet?",
+      "options": [
+       "Mitral valve",
+       "Tricuspid valve",
+       "Aortic valve",
+       "Pulmonary semilunar valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which valve is its outlet?",
+      "options": [
+       "Aortic valve",
+       "Pulmonary semilunar valve",
+       "Mitral valve",
+       "Tricuspid valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the atrium that feeds it lie?",
+      "options": [
+       "Superior to it",
+       "Inferior to it",
+       "Medial inside the septum",
+       "On the right side of the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "5",
+      "prompt": "Where does the other ventricle lie relative to this chamber?",
+      "options": [
+       "To its right",
+       "To its left",
+       "Superior to its atrium",
+       "Inside the pericardial cavity"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This lower chamber is the left ventricle. The mitral valve is the inlet from the left atrium, and the aortic valve is the outlet into the aorta. The left atrium lies superior to it. The right ventricle lies to its right. Tricuspid and pulmonary semilunar are right-sided valves. Inferior to it is not where its atrium lies. To its left is not the side of the other ventricle."
+   },
+   {
+    "id": "MT12083",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "valve-drill",
+    "groupOrder": 1,
+    "q": "This valve stands between the right atrium and the right ventricle. Answer each step, then the next valve follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this valve?",
+      "options": [
+       "Tricuspid valve",
+       "Tricupsid valve",
+       "Tricuspide valve",
+       "Tricuspidal valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which role is this valve?",
+      "options": [
+       "Inlet valve",
+       "Outlet valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Where does the atrium lie relative to this valve?",
+      "options": [
+       "Superior to it",
+       "Inferior to it",
+       "Medial inside the septum",
+       "On the left side of the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the ventricle lie relative to this valve?",
+      "options": [
+       "Inferior to it",
+       "Superior to it",
+       "On the left side of the heart",
+       "Inside the pericardial cavity"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the tricuspid valve, the right inlet. The right atrium lies superior to it and the right ventricle lies inferior to it. Outlet valve is the opposite role. Inferior to it is not where the atrium lies, and superior to it is not where the ventricle lies. The left side of the heart is the mitral and aortic side."
+   },
+   {
+    "id": "MT12084",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "valve-drill",
+    "groupOrder": 2,
+    "q": "This valve stands between the right ventricle and the pulmonary artery. Answer each step, then the next valve follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this valve?",
+      "options": [
+       "Pulmonary semilunar valve",
+       "Pulmonery semilunar valve",
+       "Pulmonarie semilunar valve",
+       "Pulmonarry semilunar valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which role is this valve?",
+      "options": [
+       "Outlet valve",
+       "Inlet valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which chamber lies inferior to this valve?",
+      "options": [
+       "Right ventricle",
+       "Left ventricle",
+       "Right atrium",
+       "Left atrium"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which vessel leaves through this valve?",
+      "options": [
+       "Pulmonary artery",
+       "Aorta",
+       "Pulmonary vein",
+       "Vena cava"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the pulmonary semilunar valve, the right outlet. The right ventricle lies inferior to it, and the pulmonary artery leaves through it. Inlet valve is the opposite role. Left ventricle, right atrium, and left atrium meet other valves. The aorta, pulmonary vein, and vena cava meet other chambers."
+   },
+   {
+    "id": "MT12085",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "valve-drill",
+    "groupOrder": 3,
+    "q": "This valve stands between the left atrium and the left ventricle. Answer each step, then the next valve follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this valve?",
+      "options": [
+       "Mitral valve",
+       "Miteral valve",
+       "Mytral valve",
+       "Mitrale valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which other name belongs to this valve?",
+      "options": [
+       "Bicuspid valve",
+       "Tricuspid valve",
+       "Semilunar valve",
+       "Coronary valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which role is this valve?",
+      "options": [
+       "Inlet valve",
+       "Outlet valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Where does the ventricle lie relative to this valve?",
+      "options": [
+       "Inferior to it",
+       "Superior to it",
+       "On the right side of the heart",
+       "Inside the pericardial cavity"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the mitral valve, also called the bicuspid valve, the left inlet. The left ventricle lies inferior to it. Tricuspid valve, semilunar valve, and coronary valve name other structures. Outlet valve is the opposite role. Superior to it is not where the ventricle lies, and the right side of the heart is not this border."
+   },
+   {
+    "id": "MT12086",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "valve-drill",
+    "groupOrder": 4,
+    "q": "This valve stands between the left ventricle and the aorta. Answer each step, then the vessel run follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this valve?",
+      "options": [
+       "Aortic valve",
+       "Aortik valve",
+       "Aortick valve",
+       "Aorticc valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which role is this valve?",
+      "options": [
+       "Outlet valve",
+       "Inlet valve"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which chamber lies inferior to this valve?",
+      "options": [
+       "Left ventricle",
+       "Right ventricle",
+       "Left atrium",
+       "Right atrium"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which vessel leaves through this valve?",
+      "options": [
+       "Aorta",
+       "Pulmonary artery",
+       "Pulmonary vein",
+       "Vena cava"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the aortic valve, the left outlet. The left ventricle lies inferior to it, and the aorta leaves through it. Inlet valve is the opposite role. Right ventricle, left atrium, and right atrium meet other valves. The pulmonary artery, pulmonary vein, and vena cava meet other chambers."
+   },
+   {
+    "id": "MT12087",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "vessel-drill",
+    "groupOrder": 1,
+    "q": "This vessel leaves the right ventricle carrying deoxygenated blood to the lungs. Answer each step, then the next vessel follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this vessel?",
+      "options": [
+       "Pulmonary artery",
+       "Pulmonary arterie",
+       "Pulmonary atery",
+       "Pulmonery artery"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which direction does this vessel run?",
+      "options": [
+       "Away from the heart",
+       "Toward the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which blood does this vessel carry?",
+      "options": [
+       "Deoxygenated blood",
+       "Oxygenated blood"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which chamber does this vessel leave?",
+      "options": [
+       "Right ventricle",
+       "Left atrium",
+       "Left ventricle",
+       "Right atrium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the pulmonary artery. It runs away from the heart, carries deoxygenated blood, and leaves the right ventricle. Toward the heart is the direction of the pulmonary veins and the venae cavae. Oxygenated blood in a vessel leaving the heart is the aorta. The left atrium receives the pulmonary veins, the left ventricle feeds the aorta, and the right atrium receives the venae cavae."
+   },
+   {
+    "id": "MT12088",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "vessel-drill",
+    "groupOrder": 2,
+    "q": "This vessel returns oxygenated blood from the lungs to an upper chamber. Answer each step, then the next vessel follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this vessel?",
+      "options": [
+       "Pulmonary vein",
+       "Pulminary vein",
+       "Pulminery vein",
+       "Pulmonery vein"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which direction does this vessel run?",
+      "options": [
+       "Toward the heart",
+       "Away from the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which blood does this vessel carry?",
+      "options": [
+       "Oxygenated blood",
+       "Deoxygenated blood"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which chamber does this vessel enter?",
+      "options": [
+       "Left atrium",
+       "Right ventricle",
+       "Left ventricle",
+       "Right atrium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the pulmonary vein. It runs toward the heart, carries oxygenated blood, and enters the left atrium. Away from the heart is the direction of the pulmonary artery and the aorta. Deoxygenated blood returning to the heart arrives by the venae cavae. The right ventricle feeds the pulmonary artery, the left ventricle feeds the aorta, and the right atrium receives the venae cavae."
+   },
+   {
+    "id": "MT12089",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "vessel-drill",
+    "groupOrder": 3,
+    "q": "This vessel leaves a lower chamber and carries oxygenated blood to the body. Answer each step, then the next vessel follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this vessel?",
+      "options": [
+       "Aorta",
+       "Aortta",
+       "Aortae",
+       "Aortah"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which direction does this vessel run?",
+      "options": [
+       "Away from the heart",
+       "Toward the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which blood does this vessel carry?",
+      "options": [
+       "Oxygenated blood",
+       "Deoxygenated blood"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which chamber does this vessel leave?",
+      "options": [
+       "Left ventricle",
+       "Right ventricle",
+       "Left atrium",
+       "Right atrium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the aorta. It runs away from the heart, carries oxygenated blood, and leaves the left ventricle. Toward the heart is the direction of the pulmonary veins and the venae cavae. Deoxygenated blood leaving the heart is the pulmonary artery. The right ventricle feeds the pulmonary artery, the left atrium receives the pulmonary veins, and the right atrium receives the venae cavae."
+   },
+   {
+    "id": "MT12090",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "vessel-drill",
+    "groupOrder": 4,
+    "q": "These vessels return deoxygenated blood from the body to an upper chamber. Answer each step, then the next vessel follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of this vessel?",
+      "options": [
+       "Vena cava",
+       "Venae cava",
+       "Vena cavae",
+       "Venae cavae"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which direction does this vessel run?",
+      "options": [
+       "Toward the heart",
+       "Away from the heart"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which blood does this vessel carry?",
+      "options": [
+       "Deoxygenated blood",
+       "Oxygenated blood"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which chamber does this vessel enter?",
+      "options": [
+       "Right atrium",
+       "Left atrium",
+       "Right ventricle",
+       "Left ventricle"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "This is the vena cava. Venae cava moves the plural onto the first word, Vena cavae moves it onto the second, and Venae cavae is the plural pair, not the singular vessel asked here. It runs toward the heart, carries deoxygenated blood, and enters the right atrium. Away from the heart is the direction of the aorta and the pulmonary artery. Oxygenated blood returning to the heart arrives by the pulmonary veins. The left atrium receives those veins, and the ventricles are the pumping chambers rather than this inlet."
+   },
+   {
+    "id": "MT12091",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "vessel-drill",
+    "groupOrder": 5,
+    "q": "These arteries encircle the heart like a crown and supply its muscle. Answer each step, then the wall cluster follows.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Which is the correct spelling of these arteries?",
+      "options": [
+       "Coronary arteries",
+       "Corronary arteries",
+       "Coronery arteries",
+       "Coronorry arteries"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Which sense gives these arteries their name?",
+      "options": [
+       "Circle or crown",
+       "Fatty paste",
+       "Clot in a vessel",
+       "Pulse in an artery"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Which tissue do these arteries supply?",
+      "options": [
+       "The heart muscle",
+       "The lung tissue",
+       "The body tissues",
+       "The venous valves"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Which circulation do these arteries serve?",
+      "options": [
+       "Coronary circulation",
+       "Pulmonary circulation",
+       "Systemic circulation",
+       "Septal circulation"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "These are the coronary arteries, named from coron/o, circle or crown. They supply the heart muscle, which is coronary circulation. Fatty paste is athero, a clot is thromb/o, and a pulse is sphygm/o. Lung tissue is the pulmonary path, body tissues are the systemic path, and venous valves are not the tissue these arteries supply. Septal circulation is not a named circuit."
+   },
+   {
+    "id": "MT12092",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "wall-cluster",
+    "groupOrder": 1,
+    "q": "Which layer belongs at each depth of the heart wall? At each step, choose, then continue.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Outer layer",
+      "options": [
+       "Epicardium",
+       "Myocardium",
+       "Endocardium",
+       "Pericardium"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Middle muscle",
+      "options": [
+       "Myocardium",
+       "Epicardium",
+       "Endocardium",
+       "Pericardium"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Inner lining",
+      "options": [
+       "Endocardium",
+       "Epicardium",
+       "Myocardium",
+       "Pericardium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "From outer to inner the wall is epicardium, myocardium, endocardium. The myocardium is the muscle. The pericardium is the sac around the heart, not a wall layer. Epicardium is not the middle or inner layer, myocardium is not the outer or inner layer, and endocardium is not the outer or middle layer."
+   },
+   {
+    "id": "MT12093",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "pericardium-cluster",
+    "groupOrder": 1,
+    "q": "Which part of the pericardium is being named? At each step, choose, then continue.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Layer closest to the heart",
+      "options": [
+       "Visceral pericardium",
+       "Parietal pericardium",
+       "Pericardial cavity",
+       "Myocardium"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Outer wall of the sac",
+      "options": [
+       "Parietal pericardium",
+       "Visceral pericardium",
+       "Endocardium",
+       "Pericardial cavity"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Fluid space between the layers",
+      "options": [
+       "Pericardial cavity",
+       "Visceral pericardium",
+       "Parietal pericardium",
+       "Myocardium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "The visceral pericardium lies closest to the heart and corresponds to the epicardium. The parietal pericardium forms the outer wall of the sac. The pericardial cavity is the fluid space between them. Myocardium and endocardium are wall layers, not parts of the sac. Parietal is not the layer closest to the heart, and visceral is not the outer wall."
+   },
+   {
+    "id": "MT12094",
+    "type": "stepped",
+    "cat": "MT_lec12-13",
+    "group": "circulation-cluster",
+    "groupOrder": 1,
+    "q": "Which path belongs to each circulation? At each step, choose, then continue.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Systemic circulation",
+      "options": [
+       "Heart and body tissues",
+       "Heart and lungs",
+       "Heart and its own muscle",
+       "Atrium across the septum"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Pulmonary circulation",
+      "options": [
+       "Heart and lungs",
+       "Heart and body tissues",
+       "Heart and its own muscle",
+       "Atrium across the septum"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Coronary circulation",
+      "options": [
+       "Heart and its own muscle",
+       "Heart and lungs",
+       "Heart and body tissues",
+       "Atrium across the septum"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "Systemic circulation runs between the heart and the body tissues. Pulmonary circulation runs between the heart and the lungs. Coronary circulation runs between the heart and its own muscle. Flow across the septum is not a circulation. The septum partitions the sides. Heart and lungs is not the systemic path, heart and body tissues is not the pulmonary path, and neither of those is the coronary path."
+   }
+  ]
+ }
+}

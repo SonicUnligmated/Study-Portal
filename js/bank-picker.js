@@ -49,8 +49,20 @@
     return (catalog.subjects || []).filter((s) => !s.locked);
   }
 
+  /* Lecture-set materials (material.lectures) are offered lecture by lecture. */
+  function flatMaterials(subject) {
+    const out = [];
+    (subject.materials || []).forEach((m) => {
+      if (Array.isArray(m.lectures)) {
+        m.lectures.forEach((l) => {
+          if (l && l.bank && (l.status || 'ready') === 'ready') out.push({ id: m.id + ':' + (l.id || ''), title: (m.title || m.id) + ' · ' + (l.title || l.id), bank: l.bank, locked: !!m.locked });
+        });
+      } else out.push(m);
+    });
+    return out;
+  }
   function openMaterials(subject) {
-    return (subject.materials || []).filter((m) => !m.locked && m.bank);
+    return flatMaterials(subject).filter((m) => !m.locked && m.bank);
   }
 
   function parseValue(val) {
@@ -69,7 +81,7 @@
     let subjectName = '';
     let materialTitle = '';
     (catalog.subjects || []).forEach((s) => {
-      (s.materials || []).forEach((m) => {
+      flatMaterials(s).forEach((m) => {
         if (m.bank === bank) {
           subjectName = s.name || '';
           materialTitle = m.title || m.id || '';
@@ -156,7 +168,7 @@
       if (preferVal) {
         const parsed = parseValue(preferVal);
         subjects.forEach((s) => {
-          if ((s.materials || []).some((m) => m.bank === parsed.bank)) preferSubject = s.id;
+          if (flatMaterials(s).some((m) => m.bank === parsed.bank)) preferSubject = s.id;
         });
       }
       subjSel.value = preferSubject || 'medphys';

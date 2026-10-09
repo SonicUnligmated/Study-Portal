@@ -494,3 +494,23 @@ html.bg-edit-hide-glows body{
   background-image:none!important;
   background-color:var(--bg)!important;
 }
+
+/* —— PORTAL: short-answer (saq) questions — same look as PT1 options —— */
+.pt1q .saq-wrap{display:flex;gap:12px;align-items:stretch;flex-wrap:wrap}
+.pt1q .saq-input{flex:1 1 260px;min-width:0;font-family:var(--font-choice,var(--body));font-size:1.12rem;line-height:1.45;color:var(--text);padding:16px 18px;border-radius:14px;border:1px solid rgba(var(--accent-0-rgb),.28);border-left:3px solid rgba(var(--accent-0-rgb),.42);background:linear-gradient(165deg,rgba(var(--accent-0-rgb),.08) 0%,rgba(10,14,22,.62) 48%,rgba(8,10,16,.82) 100%);box-shadow:0 8px 22px -16px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.04);transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;cursor:text}
+.pt1q .saq-input::placeholder{color:var(--text-dim);opacity:.8}
+.pt1q .saq-input:focus{outline:none;border-color:rgba(var(--accent-0-rgb),.6);border-left-color:var(--accent-0);box-shadow:0 0 0 3px rgba(var(--accent-0-rgb),.18),0 0 20px rgba(var(--accent-0-rgb),.22)}
+.pt1q .saq-input.soft-wrong{border-color:rgba(var(--accent-0-rgb),.5);border-left-color:var(--accent-0);background:rgba(var(--accent-0-rgb),.06);animation:softReject calc(420ms / var(--anim-speed)) ease}
+.pt1q .saq-input.correct,.pt1q .saq-input:disabled.correct{border-color:var(--success);border-left-color:var(--success);background:rgba(52,211,153,.12);color:var(--success);opacity:1;-webkit-text-fill-color:var(--success)}
+.pt1q .saq-check{flex:0 0 auto;min-width:110px}
+.pt1q .q-nav-btn.saq .q-nav-icon{font-size:.8em;opacity:.85}
+@media (prefers-reduced-motion: reduce){ .pt1q .saq-input.soft-wrong{animation:none} }
+
+/* —— PORTAL: card badges (Draft / Coming soon) + coming-soon lecture cards —— */
+.pt1q .card-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:-2px}
+.pt1q .card-badge{display:inline-flex;align-items:center;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid rgba(var(--accent-0-rgb),.35);color:var(--accent-1);background:rgba(var(--accent-0-rgb),.1);line-height:1.3}
+.pt1q .card-badge.draft{border-color:rgba(var(--accent-3-rgb),.5);color:var(--accent-3);background:rgba(var(--accent-3-rgb),.1)}
+.pt1q .card-badge.soon{border-style:dashed;color:var(--text-dim);border-color:rgba(var(--accent-0-rgb),.3);background:transparent}
+.pt1q .card.card-soon{opacity:.6;cursor:not-allowed;filter:saturate(.7)}
+.pt1q .card.card-soon:hover{transform:none;border-color:rgba(var(--accent-0-rgb),.22);box-shadow:0 10px 28px -18px rgba(0,0,0,.65),inset 0 1px 0 rgba(255,255,255,.04)}
+.pt1q .card.card-soon .card-sub{color:var(--text-dim)}

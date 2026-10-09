@@ -94,11 +94,71 @@
       "locked": false,
       "materials": [
         {
-          "id": "lecture-11-msk",
-          "title": "Lecture 11 · Musculoskeletal System",
-          "subtitle": "93 questions · choice, linking & stepped",
-          "bank": "banks/medterm/lecture-11-msk.json",
-          "locked": false
+          "id": "pt2",
+          "title": "Periodic Test 2",
+          "subtitle": "5 lecture sets · 466 questions · choice, linking, stepped & short answer · 2 coming soon",
+          "draft": true,
+          "locked": false,
+          "lectures": [
+            {
+              "id": "lec09",
+              "title": "Lecture 9 – Combining Forms (Part 2 of 2)",
+              "bank": "banks/medterm/pt2/lecture-09.json",
+              "status": "ready",
+              "draft": false,
+              "note": "Part 1 of 2 is Lecture 8, in Periodic Test 1 (not here)."
+            },
+            {
+              "id": "lec10",
+              "title": "Lecture 10 – Disease, Abbreviation, Pharmaceutical, Treatment & Dental Terms",
+              "bank": "banks/medterm/pt2/lecture-10.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec11",
+              "title": "Lecture 11 – Musculoskeletal System",
+              "bank": "banks/medterm/pt2/lecture-11.json",
+              "status": "ready",
+              "draft": false,
+              "migrateFrom": {
+                "bankKey": "medterm/lecture-11-msk",
+                "idPrefix": [
+                  "MSK11",
+                  "MT11"
+                ],
+                "cardId": "cat:MSK11_lec11"
+              }
+            },
+            {
+              "id": "lec12-13",
+              "title": "Lectures 12 & 13 – Cardiovascular System",
+              "bank": "banks/medterm/pt2/lecture-12-13.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec14-15",
+              "title": "Lectures 14 & 15 – Blood & Lymphatic System",
+              "bank": "banks/medterm/pt2/lecture-14-15.json",
+              "status": "ready",
+              "draft": true
+            },
+            {
+              "id": "lec16-17",
+              "title": "Lectures 16 & 17",
+              "bank": null,
+              "status": "soon",
+              "draft": true
+            },
+            {
+              "id": "lec18-20",
+              "title": "Lectures 18, 19 & 20",
+              "bank": null,
+              "status": "soon",
+              "draft": true
+            }
+          ]
         },
         {
           "id": "mt1",

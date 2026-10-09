@@ -54,10 +54,29 @@ function qid(q,i){ return String(q && (q.id!=null?q.id:('q_'+(q.q||'').slice(0,4
 /* STEPPED: question-type layer */
 function isStepped(q){ return !!(q && !isMatching(q) && (q.type==='stepped' || Array.isArray(q.steps))); }
 function isStep(q){ return !!(q && q.__step); }
-function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':'mcq'); }
+/* SAQ (short answer): {q, answer, explain} — typed answer, lenient match. */
+function isSaq(q){ return !!(q && !isMatching(q) && !isStepped(q) && (q.type==='saq' || (q.answer!=null && !Array.isArray(q.options)))); }
+/* saq grading is STRICT: case, punctuation and slashes all count. Only leading/trailing
+   whitespace is trimmed and runs of internal whitespace collapse to one space. */
+function saqNorm(s){ return String(s==null?'':s).trim().replace(/\s+/g,' '); }
+function saqAccepts(q){ const a=q&&q.answer; return (Array.isArray(a)?a:[a]).concat(Array.isArray(q&&q.accept)?q.accept:[]).filter(x=>x!=null&&String(x).trim()!==''); }
+function saqMatches(q, typed){ const t=saqNorm(typed); return !!t && saqAccepts(q).some(a=>saqNorm(a)===t); }
+/* Hint for a wrong short answer (the answer itself is never shown). Lower case, PT1 style. */
+function saqHint(q, typed){
+  const t=saqNorm(typed), lc=x=>x.toLowerCase();
+  const acc=saqAccepts(q).map(saqNorm);
+  if(acc.some(a=>lc(a)===lc(t))) return 'wrong capitalization · try again';
+  const noSlash=acc.filter(a=>a.includes('/')).map(a=>a.replace(/\//g,''));
+  if(noSlash.some(a=>a===t)) return 'missing slash · try again';
+  if(noSlash.some(a=>lc(a)===lc(t))) return 'missing slash and wrong capitalization · try again';
+  return 'not that one · try again';
+}
+function isSingleStep(q){ return isStep(q) && q.__stepCount===1; }
+function qType(q){ return isMatching(q)?'matching':(isStepped(q)?'stepped':(isSaq(q)?'saq':'mcq')); }
 function isAnswered(val,q){
   if(val==null) return false;
   if(isMatching(q)) return !!(val && val.correct);
+  if(isSaq(q)) return !!(val && val.correct);
   return val!==null && val!==undefined;
 }
 /* ADAPT: PT1 showToast defaults to 2200ms; the portal's showToast defaults to 2800ms. */
@@ -140,6 +159,12 @@ let runCard=null, runMastery=0;
 let currentForm=null; // PORTAL: kept for older callers (chat/party); = active card id
 
 function bankId(){ return BANK_KEY || (BANK && (BANK.id||BANK.title)) || 'anon'; }
+/* LECTURE SETS: one material made of several banks, one card per bank.
+   Each card carries its own bank; the store / Mastery / runs follow the card
+   that is being shown or played (cardCtx). Plain banks never set bankKey. */
+let LECTURE_SET=null;
+function cardCtx(card){ if(card && card.bankKey){ BANK_KEY=card.bankKey; BANK=card.bankData; BANK_PATH=card.bankPath; } }
+function lectureSolvedTotal(){ return CARDS.reduce((n,c)=>n+(c.bankKey&&window.StudyStore?StudyStore.solvedSet(c.bankKey).size:0),0); }
 /* ADAPT: PT1 kept skel_solved:<bank> as a JSON array; the portal keeps the same
    solved set inside the per-bank store (sp_bank_v1:<bankKey>) so it can sync. */
 function loadSolved(){ return window.StudyStore ? StudyStore.solvedSet(bankId()) : new Set(); }
@@ -155,7 +180,7 @@ function syncResetSolvedBtn(){
   btn.hidden = true; /* permanently hidden — use per-card reset */
 }
 function updateCounters(){
-  if(BANK) document.getElementById('bankMeta').textContent=(allQuestions().length)+' questions · '+loadSolved().size+' solved';
+  if(BANK) document.getElementById('bankMeta').textContent=(allQuestions().length)+' questions · '+(LECTURE_SET?lectureSolvedTotal():loadSolved().size)+' solved';
   syncResetSolvedBtn();
   if(quizActive){
     const answeredCount=answers.filter((a,i)=>isAnswered(a,questions[i])).length;
@@ -492,6 +517,7 @@ function closeCardResetConfirm(){
   document.getElementById('cardResetModal').classList.remove('show');
 }
 function resetPoolProgress(pool,label,card){
+  cardCtx(card);
   const st=StudyStore.load(bankId());
   const ids=pool.map(q=>q.__id);
   ids.forEach(id=>{ delete st.solved[id]; });
@@ -539,6 +565,7 @@ function serializeAnswers(){
     const a=answers[i];
     if(!isAnswered(a,q) && !(isMatching(q) && a && ((a.wires&&a.wires.length)||Object.keys(a.pairs||{}).length))) return;
     if(isMatching(q)) out[entryKey(q)]={pairs:Object.assign({},a.pairs||{}), correct:!!a.correct, wires:(a.wires||[]).map(w=>Object.assign({},w,{points:(w.points||[]).map(p=>({x:+p.x.toFixed(1),y:+p.y.toFixed(1)}))}))};
+    else if(isSaq(q)) out[entryKey(q)]={text:String(a.text||''), correct:true};
     else out[entryKey(q)]=(q.__perm&&q.__perm[a]!=null)?q.__perm[a]:a;
   });
   return out;
@@ -594,6 +621,10 @@ function restoreRun(run){
       if(typeof a==='object') answers[i]={pairs:Object.assign({},a.pairs||{}), wires:Array.isArray(a.wires)?a.wires:[], checked:!!a.correct, correct:!!a.correct, __needWires:!Array.isArray(a.wires)};
       return;
     }
+    if(isSaq(q)){
+      if(a && typeof a==='object' && a.correct && saqMatches(q, a.text)) answers[i]={text:String(a.text), correct:true};
+      return;
+    }
     const idx=(q.__perm||[]).indexOf(a);
     if(idx>=0 && idx===q.correct) answers[i]=idx;
   });
@@ -609,10 +640,24 @@ function restoreRun(run){
 function cardCounts(pool){
   const linking=pool.filter(isMatching).length;
   const stepped=pool.filter(isStepped).length;
-  return {linking, stepped, choice:pool.length-linking-stepped};
+  const saq=pool.filter(isSaq).length;
+  return {linking, stepped, saq, choice:pool.length-linking-stepped-saq};
+}
+function cardBadgesHTML(card){
+  let h='';
+  if(card && card.draft) h+='<span class="card-badge draft" title="Unfinished · still being written">Draft</span>';
+  if(card && card.soon) h+='<span class="card-badge soon">Coming soon</span>';
+  return h?'<div class="card-badges">'+h+'</div>':'';
+}
+function appendSoonCard(grid, card){
+  const el=document.createElement('div'); el.className='card card-soon'; el.setAttribute('aria-disabled','true');
+  el.dataset.card=card.id;
+  el.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(card.label)}</span></div>${cardBadgesHTML(card)}`; // nothing beyond the lecture numbers + badges
+  grid.appendChild(el);
 }
 function bankMasteryKey(){ return BANK_KEY; }
 function appendPoolCard(grid, label, pool, card){
+  cardCtx(card);
   const left=remainingOf(pool).length;
   const c=cardCounts(pool);
   const st=window.StudyStore?StudyStore.load(bankId()):{cards:{},runs:{}};
@@ -622,8 +667,8 @@ function appendPoolCard(grid, label, pool, card){
   const btn=document.createElement('button'); btn.type='button'; btn.className='card';
   btn.dataset.card=card.id;
   // PT1 line "N linking · M choice" + STEPPED count when the card has any
-  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'');
-  btn.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(label)}</span><span class="mood-stamp">${escapeHtml(meta.mood||'')}</span></div>
+  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'');
+  btn.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(label)}</span><span class="mood-stamp">${escapeHtml(meta.mood||'')}</span></div>${cardBadgesHTML(card)}
     <div class="card-sub">${sub}</div>
     <div class="card-stats"><div class="card-pct">${left} left</div><div class="card-meta">${pool.length-left} solved / ${pool.length}${inProgress?' · in progress':''}</div></div>`;
   // PORTAL: Mastery badge
@@ -634,6 +679,7 @@ function appendPoolCard(grid, label, pool, card){
   if(left===0) btn.style.opacity='.55';
   btn.addEventListener('click',()=>{
     if(typeof unlockAudio==='function') unlockAudio();
+    cardCtx(card);
     if(left===0){ handleLockedCardClick(label,pool,card); return; }
     if(inProgress && resumeRun(card)) return;
     startRun(pool, label, {card});
@@ -648,13 +694,15 @@ function renderHub(){
     return;
   }
   // ADAPT: PT1 had hardcoded QUIZ_FORMS; cards now come from the bank (decision 2).
-  const h=document.createElement('div'); h.className='section-h'; h.textContent=CARDS.length>1?'Sets':'Set'; host.appendChild(h);
+  const h=document.createElement('div'); h.className='section-h'; h.textContent=LECTURE_SET?'Lectures':(CARDS.length>1?'Sets':'Set'); host.appendChild(h);
   const grid=document.createElement('div'); grid.className='grid';
   CARDS.forEach(card=>{
+    if(card.soon){ appendSoonCard(grid, card); return; }
     if(!card.pool.length) return;
     appendPoolCard(grid, card.label, card.pool, card);
   });
   host.appendChild(grid);
+  if(runCard) cardCtx(runCard); // keep the open run's bank active
 }
 /* PORTAL name kept: other modules call refreshHubCards() */
 function refreshHubCards(){ if(BANK){ updateCounters(); renderHub(); placeSettingsGear(); } }
@@ -662,6 +710,7 @@ function refreshHubCards(){ if(BANK){ updateCounters(); renderHub(); placeSettin
 function ingestBank(data, path){
   if(!data || !data.bank){ pt1Toast('JSON needs a bank object'); return; }
   normalizeBankMatching(data);
+  LECTURE_SET=null;
   BANK=data;
   BANK_PATH=path||BANK_PATH;
   BANK_KEY=window.StudyMastery?StudyMastery.bankKeyFromPath(BANK_PATH):String(BANK_PATH||data.id||data.title||'anon');
@@ -687,6 +736,73 @@ function ingestBank(data, path){
   document.getElementById('bankMeta').textContent=(allQuestions().length)+' questions · '+loadSolved().size+' solved';
   renderHub();
   placeSettingsGear();
+}
+/* LECTURE SET loader: material.lectures = [{id, title, bank|null, status, draft, migrateFrom?}] */
+function bankKeyOfPath(p){ return window.StudyMastery?StudyMastery.bankKeyFromPath(p):String(p); }
+function importOldBankProgress(entry, card){
+  const mf=entry && entry.migrateFrom;
+  if(!mf || !mf.bankKey || !window.StudyStore) return;
+  const pre=Array.isArray(mf.idPrefix)?mf.idPrefix:null;
+  const map=id=>{ id=String(id); if(mf.idMap && mf.idMap[id]) return mf.idMap[id]; if(pre && id.indexOf(pre[0])===0) return pre[1]+id.slice(pre[0].length); return id; };
+  const valid=new Set(card.pool.map(q=>q.__id));
+  try{
+    const r=StudyStore.importFrom(mf.bankKey, card.bankKey, map, valid, mf.cardId?{[mf.cardId]:card.id}:{});
+    if(window.StudyMastery && StudyMastery.importFrom) StudyMastery.importFrom(mf.bankKey, card.bankKey, map, valid, mf.cardId?{[mf.cardId]:card.id}:{});
+    if(r && !r.skipped) console.info('[quiz] progress copied from '+mf.bankKey+' to '+card.bankKey, r);
+  }catch(e){ console.warn('[quiz] import from '+mf.bankKey+' skipped', e); }
+}
+function ingestLectureSet(material, entries, datas){
+  const cards=[], all=[], seen={}, dups=[]; let missing=0;
+  entries.forEach((e,i)=>{
+    const base={id:'lec:'+(e.id||('l'+(i+1))), label:String(e.title||('Lecture set '+(i+1))), draft:!!e.draft, status:e.status||(e.bank?'ready':'soon')};
+    const data=datas[i];
+    if(!data || base.status!=='ready'){ cards.push(Object.assign(base,{soon:true, pool:[]})); return; }
+    normalizeBankMatching(data);
+    const bk=bankKeyOfPath(e.bank);
+    BANK=data; BANK_KEY=bk; BANK_PATH=e.bank;
+    const qs=buildAllQuestions(data);
+    missing+=ID_REPORT.missing; ID_REPORT.duplicates.forEach(d=>dups.push(d+' (inside '+bk+')'));
+    qs.forEach(q=>{ if(seen[q.__id]) dups.push(q.__id+' ('+seen[q.__id]+' and '+bk+')'); else seen[q.__id]=bk; q.__bankKey=bk; });
+    all.push(...qs);
+    const card=Object.assign(base,{pool:qs, bankKey:bk, bankPath:e.bank, bankData:data});
+    cards.push(card);
+    if(data.legacy && data.legacy.idMap){
+      const valid={ids:new Set(qs.map(q=>q.__id)), cards:new Set([card.id])};
+      try{ if(window.StudyStore && StudyStore.remapIds) StudyStore.remapIds(bk, data.legacy.idMap, valid);
+           if(window.StudyMastery && StudyMastery.remapIds) StudyMastery.remapIds(bk, data.legacy.idMap, valid.ids); }catch(err){ console.warn(err); }
+    }
+    importOldBankProgress(e, card);
+    if(window.StudyMastery) StudyMastery.registerCard(bk, card.id, qs.map(q=>q.__id));
+  });
+  LECTURE_SET={material, entries};
+  ALLQ=all; CARDS=cards;
+  ID_REPORT={duplicates:dups, missing, banks:cards.filter(c=>c.bankKey).length};
+  window.__bankIdReport=ID_REPORT;
+  if(dups.length) console.warn('[quiz] duplicate question ids across '+(material.title||'lecture set')+':', dups);
+  const first=cards.find(c=>c.bankKey);
+  if(first) cardCtx(first);
+  const subj=(material && material.subjectName) || (BANK && BANK.subject) || '';
+  window.FORM_BANK=BANK?BANK.bank:{}; window.FORMS=BANK?(BANK.forms||Object.keys(BANK.bank||{})):[];
+  window.__bankMeta={title:material.title, subject:subj, lectureSet:true};
+  setTitleText('hubTitle', (subj?subj+' · ':'')+(material.title||'Practice'));
+  const soon=cards.filter(c=>c.soon).length;
+  const kick=document.getElementById('hubKicker');
+  const ready=cards.length-soon; if(kick) kick.textContent='Lecture hub · '+ready+' lecture set'+(ready===1?'':'s')+(soon?(' · '+soon+' coming soon'):'');
+  document.getElementById('hubSub').textContent='practice simulation (not official)';
+  updateCounters();
+  renderHub();
+  placeSettingsGear();
+}
+async function loadLectureSet(material){
+  if(window.StudyMigrate && typeof StudyMigrate.runAll==='function'){
+    try{ await StudyMigrate.runAll(); }catch(e){ console.warn('[quiz] migration skipped', e); }
+  }
+  const entries=material.lectures||[];
+  const datas=await Promise.all(entries.map(e=>(e.bank && (e.status||'ready')==='ready')
+    ? fetch(e.bank,{cache:'no-cache'}).then(r=>{ if(!r.ok) throw new Error(e.bank+' HTTP '+r.status); return r.json(); })
+    : Promise.resolve(null)));
+  ingestLectureSet(material, entries, datas);
+  return datas;
 }
 async function loadBank(path){
   if(window.StudyMigrate && typeof StudyMigrate.runAll==='function'){
@@ -761,6 +877,7 @@ function beginMasterySession(){
 }
 function startRun(pool, label, opts){
   opts=opts||{};
+  cardCtx(opts.card);
   const deck=prepareDeck(pool, opts);
   if(!deck.length){ pt1Toast('Nothing left in this set · reset solved to replay'); return; }
   runCard=opts.card||{id:'adhoc', label, pool};
@@ -776,6 +893,7 @@ function startRun(pool, label, opts){
 }
 /* PORTAL: resume a half-done run (by question id). */
 function resumeRun(card){
+  cardCtx(card);
   const run=loadRunState(card.id);
   if(!run) return false;
   runCard=card; currentForm=card.id; runMastery=run.mp|0; runLabel=card.label;
@@ -793,7 +911,8 @@ function resumeRun(card){
 /* PORTAL: Mastery+ "Unlock" on the results screen starts a progressive run. */
 function startMasteryPlusRun(bk, cardId, queue){
   const card=cardById(cardId);
-  if(!card || bk!==BANK_KEY){ pt1Toast('Open this bank first'); return; }
+  if(!card || bk!==(card.bankKey||BANK_KEY)){ pt1Toast('Open this bank first'); return; }
+  cardCtx(card);
   if(!queue || !queue.length){ pt1Toast('Mastery+ complete for this set'); return; }
   const set=new Set(queue.map(String));
   const pool=card.pool.filter(q=>set.has(q.__id));
@@ -901,7 +1020,7 @@ function renderNav(){
   const markUnanswered=unansweredMarkersVisible && !allQuestionsAnswered();
   for(let i=0;i<questions.length;i++){
     const q=questions[i];
-    if(isStep(q)){ nav.appendChild(renderBonePill(i, markUnanswered)); i=boneEnd(i); continue; }
+    if(isStep(q) && !isSingleStep(q)){ nav.appendChild(renderBonePill(i, markUnanswered)); i=boneEnd(i); continue; }
     const done=isAnswered(answers[i],q);
     const skipped=!done && isSkippedIndex(i);
     const markedUnanswered=markUnanswered && !done && i!==questions.length-1;
@@ -913,11 +1032,13 @@ function renderNav(){
       +(markedUnanswered?' unanswered':'')
       +((skipped && !markedUnanswered)?' skipped':'');
     b.classList.toggle('linking', isMatching(q));
+    b.classList.toggle('saq', isSaq(q));
     b.innerHTML=isMatching(q)
       ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">🔗</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
-      : '<span class=\"q-nav-number\">'+(i+1)+'</span>';
+      : (isSaq(q) ? '<span class=\"q-nav-icon\" aria-hidden=\"true\">✎</span><span class=\"q-nav-number\">'+(i+1)+'</span>'
+      : '<span class=\"q-nav-number\">'+(i+1)+'</span>');
     b.title=isMatching(q)?'Linking question'+(skipped?' — skipped — unanswered':(done?' — answered':''))
-      :(skipped?'Skipped — unanswered':(done?'Answered':''));
+      :((isSaq(q)?'Short answer':'')+(skipped?((isSaq(q)?' — ':'')+'Skipped — unanswered'):(done?((isSaq(q)?' — ':'')+'Answered'):'')));
     const idx=i;
     b.addEventListener('click',()=>{ current=idx; locked=isAnswered(answers[idx],q); renderQuestion(); });
     nav.appendChild(b);
@@ -992,6 +1113,56 @@ const LINK_PENCIL_SVG='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 3
   '<stop offset="86%" stop-color="var(--text)"/><stop offset="100%" stop-color="var(--text)"/></linearGradient></defs>'+
   '<path d="M3.6 0H8.4V3.8H9.36V7.22H8.4V25.08L6 38L3.6 25.08V7.22H2.64V3.8H3.6Z" fill="url(#link-pencil-gradient)"/></svg>';
 
+/* SAQ: text box + Check. Enter in the box checks (the global Enter → Next
+   handler ignores keys typed in inputs, so one press never does both). */
+function renderSaq(q, ans){
+  const opts=document.getElementById('options');
+  const done=!!(ans && ans.correct);
+  const wrap=document.createElement('div'); wrap.className='saq-wrap';
+  const input=document.createElement('input');
+  input.type='text'; input.className='saq-input'+(done?' correct':''); input.id='saqInput';
+  input.autocomplete='off'; input.spellcheck=false; input.setAttribute('autocapitalize','off');
+  input.placeholder='Type your answer'; input.setAttribute('aria-label','Your answer');
+  input.value=done?ans.text:'';
+  input.disabled=done;
+  const btn=document.createElement('button');
+  btn.type='button'; btn.className='nav-btn primary saq-check'; btn.id='saqCheck'; btn.textContent='Check';
+  btn.disabled=done;
+  btn.addEventListener('click',()=>submitSaq());
+  input.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){ e.preventDefault(); e.stopPropagation(); submitSaq(); }
+  });
+  wrap.append(input,btn);
+  opts.appendChild(wrap);
+  if(!done && quizActive) setTimeout(()=>{ if(document.activeElement!==input && document.getElementById('quizView').classList.contains('active')) try{ input.focus({preventScroll:true}); }catch(e){} },0);
+}
+function submitSaq(){
+  if(!quizActive||locked) return;
+  const q=questions[current]; if(!isSaq(q)) return;
+  const input=document.getElementById('saqInput'); if(!input) return;
+  const typed=input.value;
+  const fb=document.getElementById('feedback');
+  if(!saqNorm(typed)){ input.focus(); return; }
+  if(!saqMatches(q, typed)){
+    if(window.StudyAchievements && typeof StudyAchievements.recordWrong==='function') StudyAchievements.recordWrong();
+    input.classList.remove('soft-wrong'); void input.offsetWidth;
+    input.classList.add('soft-wrong');
+    setTimeout(()=>input.classList.remove('soft-wrong'), 480);
+    fb.className='feedback soft'; fb.textContent=saqHint(q, typed);
+    clearTimeout(selectAnswer._t); selectAnswer._t=setTimeout(()=>{ if(!locked){ fb.className='feedback idle'; fb.textContent=''; } },1400);
+    input.select();
+    return;
+  }
+  locked=true; answers[current]={text:saqNorm(typed), correct:true}; onQuestionSolved(q);
+  input.disabled=true; input.classList.add('correct');
+  const cb=document.getElementById('saqCheck'); if(cb) cb.disabled=true;
+  fb.className='feedback good'; fb.textContent=correctFeedbackText(q);
+  document.getElementById('mainPanel').classList.add('correct-pulse');
+  setTimeout(()=>document.getElementById('mainPanel').classList.remove('correct-pulse'),650);
+  pt1Confetti();
+  rewardCorrect();
+  afterAnswerProgress();
+}
 function renderMcq(q, answered){
   const opts=document.getElementById('options');
   (q.options||[]).forEach((opt,i)=>{
@@ -1738,9 +1909,10 @@ function renderQuestion(){
   }else if(isStep(q)){
     const stem=document.createElement('div'); stem.className='step-stem'; stem.textContent=q.q||'';
     const pr=document.createElement('div'); pr.className='step-prompt';
-    const badge=document.createElement('span'); badge.className='step-badge'; badge.textContent='Step '+(q.__stepIdx+1)+' / '+q.__stepCount;
     const txt=document.createElement('span'); txt.textContent=q.prompt||'';
-    pr.append(badge,txt);
+    // a one-step question reads like a normal question: no "Step 1 / 1" badge
+    if(!isSingleStep(q)){ const badge=document.createElement('span'); badge.className='step-badge'; badge.textContent='Step '+(q.__stepIdx+1)+' / '+q.__stepCount; pr.append(badge); }
+    pr.append(txt);
     qText.append(stem,pr);
   }else{
     qText.textContent=q.q;
@@ -1757,11 +1929,12 @@ function renderQuestion(){
   }
   renderNav();
   updateCounters();
-  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':(isStep(q)?'stepped · ':''))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
+  document.getElementById('catTag').textContent=(isMatching(q)?'linking · ':((isStep(q)&&!isSingleStep(q))?'stepped · ':(isSaq(q)?'short answer · ':'')))+((q.cat||q.__form||'').toString().replace(/_/g,' '));
   const opts=document.getElementById('options'); opts.innerHTML='';
   const answered=isAnswered(answers[current], q);
   locked=answered;
   if(isMatching(q)) renderMatching(q, answers[current]||{pairs:{},wires:[],checked:false,correct:false});
+  else if(isSaq(q)) renderSaq(q, answers[current]);
   else renderMcq(q, answered);
   const fb=document.getElementById('feedback');
   if(answered){ fb.className='feedback good'; fb.textContent=correctFeedbackText(q); }
@@ -1795,7 +1968,7 @@ function onQuestionSolved(q){
 /* PT1 3850–3890 (formula branches removed) */
 function selectAnswer(idx){
   if(!quizActive||locked) return;
-  const q=questions[current]; if(isMatching(q)) return;
+  const q=questions[current]; if(isMatching(q) || isSaq(q)) return;
   if(isStep(q) && !isUnlocked(current)) return;
   const fb=document.getElementById('feedback');
   if(idx!==q.correct){
@@ -1869,7 +2042,7 @@ function jumpToQuestion(i, dir){
   }
   stepTo(i);
 }
-function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
+function score(){ let c=0; answers.forEach((a,i)=>{ const q=questions[i]; if(isMatching(q)||isSaq(q)){ if(a&&a.correct)c++; } else if(a===q.correct)c++; }); return c; }
 
 /* —— PT1 3928–3949 finishQuiz + portal extras (elapsed, mood stamp, Mastery box, review) —— */
 function resultItemHTML(q,i){
@@ -1877,9 +2050,13 @@ function resultItemHTML(q,i){
     const ok=answers[i]&&answers[i].correct;
     return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">'+(ok?'All links locked':'Incomplete')+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
   }
+  if(isSaq(q)){
+    const a=answers[i], ok=!!(a&&a.correct);
+    return '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rline '+(ok?'rok':'rbad')+'">Your answer: '+(ok?escapeHtml(a.text):'—')+'</div><div class="rline rok">Answer: '+escapeHtml(saqAccepts(q)[0]||'')+'</div><div class="rex">'+escapeHtml(q.explain||'')+'</div>';
+  }
   const pick=answers[i], ok=pick===q.correct;
   const opts=q.options||[];
-  const head=isStep(q)
+  const head=(isStep(q) && !isSingleStep(q))
     ? '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div><div class="rstep">Step '+(q.__stepIdx+1)+' / '+q.__stepCount+' · '+escapeHtml(q.prompt||'')+'</div>'
     : '<div class="rq">'+(i+1)+'. '+escapeHtml(q.q)+'</div>';
   const showEx=!isStep(q) || q.__stepIdx===q.__stepCount-1;
@@ -1985,6 +2162,7 @@ let restartAfterReset=null;
 function restartCard(){
   if(!runCard) return;
   const card=runCard;
+  cardCtx(card);
   leaveRun();
   clearRunState(card.id);
   if(remainingOf(card.pool).length){ startRun(card.pool, card.label, {card}); return; }
@@ -2110,4 +2288,4 @@ placeSettingsGear();
 
 window.StudyQuiz={ loadBank, ingestBank, startRun, resumeRun, startMasteryPlusRun, goHub, goPortal, renderHub, refreshHubCards,
   get bankKey(){ return BANK_KEY; }, get cards(){ return CARDS; }, get questions(){ return questions; }, get answers(){ return answers; },
-  get current(){ return current; }, get active(){ return quizActive; }, jumpToQuestion, selectAnswer, goNext, goBack, idReport:()=>ID_REPORT };
+  get current(){ return current; }, get active(){ return quizActive; }, jumpToQuestion, selectAnswer, submitSaq, saqMatches, saqHint, goNext, goBack, idReport:()=>ID_REPORT, get lectureSet(){ return LECTURE_SET; } };
