@@ -2751,7 +2751,14 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
       return;
     }
     materials.forEach(m=>{
-      const locked = subject.locked || m.locked || !(m.bank || (Array.isArray(m.lectures) && m.lectures.length));
+      const hasQuiz = !!(m.bank || (Array.isArray(m.lectures) && m.lectures.length));
+      // study-only material (notes ready, quiz bank not yet): open, the card itself opens the notes
+      const studyOnly = !hasQuiz && !!(m.study && Array.isArray(m.study.chapters) && m.study.chapters.length);
+      const locked = subject.locked || m.locked || !(hasQuiz || studyOnly);
+      const openStudy = ()=>{
+        if(!window.StudyNotes){ portalToast('Study notes are still loading'); return; }
+        StudyNotes.open(Object.assign({}, m, { subjectName: subject && subject.name }), { from:'portalView', openQuiz: hasQuiz ? ()=> openMaterial(m, subject) : null });
+      };
       const card = document.createElement('button');
       card.type = 'button';
       card.className = 'portal-card' + (locked ? ' locked' : '');
@@ -2769,8 +2776,9 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
             matBadges(m).map(b=>'<span class="note-badge ' + b.tone + (b.cls ? ' ' + b.cls : '') + '" title="' + esc(b.tip) + '" data-tip="' + esc(b.tip) + '"' + (b.note && b.tip ? ' aria-describedby="badgeNote-' + esc(m.id) + '-' + b.i + '"' : '') + '>' + esc(b.text) + '</span>').join('') + '</h3>' +
             matBadges(m).filter(b=>b.note && b.tip).map(b=>'<p class="badge-note ' + b.tone + (b.cls === 'exam-differs-badge' ? ' exam-differs-note' : '') + '" id="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.tip) + '</p>').join('') +
           '<p class="sub">' + esc(m.subtitle || '') + '</p>' +
-          '<span class="go">' + (m.study ? 'Quiz →' : 'Open in portal →') + '</span>';
-        card.addEventListener('click', ()=> openMaterial(m, subject));
+          '<span class="go">' + (studyOnly ? 'Quiz coming soon · study notes →' : m.study ? 'Quiz →' : 'Open in portal →') + '</span>';
+        if(studyOnly) card.classList.add('study-only');
+        card.addEventListener('click', ()=> studyOnly ? openStudy() : openMaterial(m, subject));
       }
       // Study notes (PT1 study interface) sit beside the quiz on the same material
       if(!locked && m.study){
@@ -2784,8 +2792,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
         sb.title = (m.study.title || 'Study notes');
         sb.addEventListener('click', e=>{
           e.stopPropagation();
-          if(!window.StudyNotes){ portalToast('Study notes are still loading'); return; }
-          StudyNotes.open(Object.assign({}, m, { subjectName: subject && subject.name }), { from:'portalView', openQuiz: ()=> openMaterial(m, subject) });
+          openStudy();
         });
         wrap.appendChild(sb);
         cardsEl.appendChild(wrap);

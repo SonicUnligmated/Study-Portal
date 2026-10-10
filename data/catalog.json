@@ -40,9 +40,21 @@
         {
           "id": "pt2",
           "title": "Periodic Test 2",
-          "subtitle": "Coming soon",
+          "subtitle": "Study notes · quiz coming soon",
           "bank": null,
-          "locked": true
+          "locked": false,
+          "draft": true,
+          "study": {
+            "title": "Study Interface",
+            "chapters": [
+              {
+                "id": "ch5",
+                "src": "content/medphys/pt2/chapter-5.md",
+                "title": "Chapter 5 · Ray optics",
+                "meta": "Mirrors · refraction · TIR · fibres · thin lenses"
+              }
+            ]
+          }
         },
         {
           "id": "medphys-oif",

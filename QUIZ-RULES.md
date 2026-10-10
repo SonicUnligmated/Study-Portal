@@ -400,6 +400,14 @@ A material can have a picture study instead of Markdown notes:
   own SVG (`lec12-13/heart-flow-{labeled,blank}.svg`, animated with SMIL).
 - Catalog: a material with `"hidden": true` stays in `data/catalog.json` but is not shown
   on the portal (the Only In Finals and Finals placeholders use this).
+- Catalog: a material with a `study` block (Markdown chapters) but no `bank` / `lectures`
+  is **study-only** (Med Physics Periodic Test 2 until its quiz bank arrives). Its card is
+  open, says "Quiz coming soon · study notes →", and both the card and its 📖 Study button
+  open the notes; the notes hide "Open Quiz". Adding a `bank` later turns it into a normal
+  quiz card with the Study button beside it.
+- Med Physics PT2 chapters live in `content/medphys/pt2/chapter-N.md` (same renderer and
+  style as PT1). Diagrams are our own inline SVGs using only `var(--col-text-main)`,
+  `var(--col-text-muted)` and `--accent-0` … `--accent-6`, so they follow the mood theme.
 
 ## 13. Short-answer questions (`saq`)
 
