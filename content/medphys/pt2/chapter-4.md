@@ -32,9 +32,11 @@ Chapter 4 has two parts. **Waves and oscillation:** what a wave is, sound waves,
 
 A **wave** is a **disturbance that propagates** (moves) from the place where it was created.
 
+**Propagation** of a wave simply means the **travel of the wave** through space or through a medium.
+
 There are **three types of waves**:
-1. **Mechanical waves** (need a material to travel through, e.g. sound, water waves)
-2. **Electromagnetic waves** (e.g. light, X-rays; can travel through vacuum)
+1. **Mechanical waves** **need a medium** (a material such as air, water or a solid) to travel through, e.g. sound, water waves.
+2. **Electromagnetic waves** **need no medium**: they can travel through vacuum, at the **speed of light** (3 × 10⁸ m/s in vacuum), e.g. light, X-rays.
 3. **Matter waves** (waves linked to moving particles such as electrons)
 
 ### Sound waves
@@ -42,11 +44,15 @@ There are **three types of waves**:
 - Sound waves are **longitudinal mechanical waves** produced by **vibrating objects**.
 - They can travel through **solids, liquids or gases (air)**. **Sound does not travel through vacuum.**
 - A vibrating object, such as a **tuning fork**, disturbs the surrounding air, and the disturbance is passed on from air molecule to air molecule. This moving disturbance is a **sound wave**.
+- In class the tuning fork is made to vibrate by striking it with a **rubber hammer**.
+- As the medium is pushed back and forth, it forms a repeating pattern of **compressions** (squeezed, higher-pressure zones) and **rarefactions** (stretched, lower-pressure zones) that travels outward.
 
 ### Longitudinal vs transverse
 
 - **Longitudinal wave** (sound): the particles of the medium vibrate **in the direction the wave travels** (back and forth). This makes **compressions** (particles bunched) and **rarefactions** (particles spread out, also called expansions).
-- **Transverse wave** (e.g. visible light): the particles vibrate **at right angles** to the direction the wave travels. This makes **crests** and **troughs**.
+- **Transverse wave** (e.g. visible light; the lecture also gave **water waves** as an example): the particles vibrate **at right angles** to the direction the wave travels. This makes **crests** and **troughs**.
+
+> **Small note:** waves on a water surface are really a **mix** of transverse and longitudinal motion (the water particles move in small circles), but they are a common simple example of a transverse wave.
 
 <div class="optics-diagram" role="img" aria-label="Longitudinal sound waves with compressions and rarefactions compared with a transverse wave">
 <svg viewBox="0 0 640 286" xmlns="http://www.w3.org/2000/svg" width="100%" style="height:auto;display:block;max-width:640px;margin:0.6rem auto">
@@ -60,15 +66,32 @@ There are **three types of waves**:
 - **Higher frequency → higher pitch** (e.g. a police siren). **Lower frequency → lower pitch.**
 - Clinical use (slide picture): a **tuning fork** is used to test a patient's **hearing** and **vibration sense** (for example in nerve damage).
 
+### Sine wave vs sawtooth wave (extra note, not in the slides)
+
+The lecture compared these two shapes. They are **not the same**:
+- A **sine wave** is a **smooth**, rounded wave that rises and falls in the same gentle way (this is the wave drawn on the slides).
+- A **sawtooth wave** **rises in a straight line** (a steady ramp) and then **drops sharply** back down, like the teeth of a saw.
+
+| | Sine wave | Sawtooth wave |
+|---|---|---|
+| Shape | Smooth, rounded curve | Straight ramps with sudden drops |
+| Rising part | Gentle and curved | Steady straight-line rise |
+| Falling part | Gentle and curved (same as the rise) | Sudden, almost vertical drop |
+| Edges | No sharp corners | Sharp corner at each drop |
+| Harmonics | Only one frequency (a pure tone) | The main frequency plus many harmonics |
+| Sound | Pure, soft tone | Bright, buzzy, harsh tone |
+
 ---
 
 ## 3. Frequency, wavelength & wave velocity
 
 ### Definitions
 
-- **Wavelength (λ):** the length of **one cycle**, i.e. the distance between two neighbouring identical points of a wave (crest to crest).
+- **Crest:** the **highest point** of a wave.
+- **Trough:** the **lowest point** of a wave.
+- **Wavelength (λ):** the length of **one cycle**, i.e. the distance between two neighbouring identical points of a wave (crest to crest, or trough to trough).
 - **Amplitude (A):** the height of the wave above the **rest position** (undisturbed state).
-- **Frequency (f):** how often a vibration (cycle) happens: the **number of cycles per unit time**. SI unit: **hertz (Hz)**; **1 Hz = 1 vibration/s = 1 cycle/s**.
+- **Frequency (f):** how often a vibration (cycle) happens: the **number of cycles per unit time**, f = cycles / time. SI unit: **hertz (Hz)**; **1 Hz = 1 vibration/s = 1 cycle/s = 1/s = s⁻¹**.
 - **Time period (T):** the time to complete **one** vibration (cycle). It is the **inverse of frequency**.
 - **Wave velocity (v):** the speed at which the disturbance moves (also called **propagation velocity** or propagation speed).
 
@@ -79,10 +102,14 @@ There are **three types of waves**:
 </div>
 
 ```
+Frequency:     f = number of cycles / time      (unit 1/s = s⁻¹ = Hz)
 Time period:   T = 1 / f
 Wave speed:    v = λ × f
 At a fixed speed:   f ∝ 1 / λ
+Intensity:     I ∝ A²      (double the amplitude → 4 × the intensity)
 ```
+
+**Intensity and amplitude (from the lecture):** the **intensity** of a wave (the energy it carries) is proportional to the **square of its amplitude**. A louder sound has a bigger amplitude.
 
 **How v = λf is made:** in one period T the wave moves forward by one wavelength λ. Speed = distance ÷ time = λ / T, and 1/T = f, so v = λ × f. If the speed stays the same, a **higher frequency** means a **shorter wavelength** (f ∝ 1/λ).
 
@@ -99,7 +126,10 @@ B = bulk modulus of the medium (how hard it is to compress),  ρ = density
 
 - Sound waves **do not travel through vacuum**.
 - Sound waves travel **much slower than light** (electromagnetic waves).
+- The **bulk modulus B** of the medium (its resistance to being squeezed) affects the speed of sound: v = √(B/ρ).
 - The speed of sound **depends on the medium**: in **air at 20 °C** it is **343 m/s**; in **water at 20 °C** it is **1482 m/s**; in **steel** it is **5941 m/s**.
+
+> **Remember:** the speed of sound in **air at 20 °C = 343 m/s**. Most problems use this number.
 
 ### The speed of sound (Table 17-1)
 
@@ -220,6 +250,24 @@ v = speed of sound in air,  v_S = speed of the source,  v_D = speed of the detec
 - Observer moving **towards** the source → **+ v_D** on top; **away** → **− v_D**.
 - Source moving **towards** the observer → **− v_S** on the bottom; **away** → **+ v_S**.
 
+**Source and detector moving towards each other** (both signs chosen to raise f′):
+
+```
+f′ = f × (v + v_D) / (v − v_S)
+```
+
+All the cases:
+
+| Situation | Top (detector) | Bottom (source) | Effect on f′ |
+|---|---|---|---|
+| Detector moves **towards** the source | v **+** v_D | | f′ higher |
+| Detector moves **away** from the source | v **−** v_D | | f′ lower |
+| Source moves **towards** the detector | | v **−** v_S | f′ higher |
+| Source moves **away** from the detector | | v **+** v_S | f′ lower |
+| Detector or source **at rest** | v (v_D = 0) | v (v_S = 0) | no change from that body |
+
+In the slide example the **source** is the **ambulance** (moving, v_S) and the **detector** is the **person standing** on the street (at rest, so v_D = 0).
+
 Observer at rest (v_D = 0), as on the slides:
 
 ```
@@ -259,6 +307,14 @@ Higher pitch as it comes, lower pitch as it leaves.
 </svg>
 </div>
 
+**The Shock Waves slide picture explained:** each circle is a wavefront the source sent out at an earlier moment, so the **oldest** front is the **biggest**. Because the source (for example a **jet plane**) moves almost as fast as its own sound, new fronts are made before the old ones can move away. Near the source the fronts **pile up** into one strong front, so the **pressure there is very high**. Farther from the source the fronts are **spread out**, so the pressure change is **lower**. (In the slide picture the fronts all touch at the source, which is the edge case vₛ ≈ v; when vₛ > v they fall behind into the cone shown above.)
+
+<div class="optics-diagram" role="img" aria-label="Slide picture explained: wavefronts pile up at the moving source (high pressure) and spread out farther away">
+<svg viewBox="0 0 640 292" xmlns="http://www.w3.org/2000/svg" width="100%" style="height:auto;display:block;max-width:640px;margin:0.6rem auto">
+<circle cx="460.0" cy="140" r="10" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="450.0" cy="140" r="20" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="440.0" cy="140" r="30" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="430.0" cy="140" r="40" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="420.0" cy="140" r="50" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="410.0" cy="140" r="60" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="400.0" cy="140" r="70" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="390.0" cy="140" r="80" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="380.0" cy="140" r="90" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="370.0" cy="140" r="100" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="360.0" cy="140" r="110" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><circle cx="350.0" cy="140" r="120" fill="none" stroke="var(--accent-1)" stroke-width="1.3"/><rect x="467" y="24" width="10" height="232" fill="rgba(var(--accent-0-rgb),0.25)"/><circle cx="470" cy="140" r="6" fill="var(--accent-0)"/><line x1="478" y1="140" x2="530" y2="140" stroke="var(--accent-0)" stroke-width="2"/><polygon points="534.8,140 525.2,143.6 525.2,136.4" fill="var(--accent-0)"/><text x="490" y="128" text-anchor="start" fill="var(--accent-0)" font-family="Outfit,sans-serif" font-size="11">source, speed vₛ</text><text x="490" y="60" text-anchor="start" fill="var(--accent-0)" font-family="Outfit,sans-serif" font-size="11" font-weight="600">fronts pile up here:</text><text x="490" y="76" text-anchor="start" fill="var(--accent-0)" font-family="Outfit,sans-serif" font-size="11" font-weight="600">high pressure</text><text x="150" y="136" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">fronts spread out:</text><text x="150" y="152" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">lower pressure</text><text x="320" y="282" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">each circle = one wavefront sent out earlier; the oldest is the biggest</text>
+</svg>
+</div>
+
 ### Mach number
 
 ```
@@ -286,6 +342,24 @@ Speed of a plane at Mach 2.3 in air at 20 °C:
 vₛ = Ma × v = 2.3 × 343 ≈ 789 m/s
 ```
 
+### Shock waves in medicine: breaking kidney stones (ESWL)
+
+> **From the lecture, not in the shared slides.**
+
+**ESWL** stands for **extracorporeal shock wave lithotripsy**: *extracorporeal* = **outside the body**, *lithotripsy* = **stone crushing**.
+
+- A machine **outside the body** makes strong **shock waves** (short, high-pressure pulses).
+- They pass into the body through a **water cushion or gel** (sound passes well through water and soft tissue).
+- The waves are **focused** onto the **kidney stone**, which is found with **X-ray or ultrasound** imaging.
+- Many shocks **break the stone into small pieces**, which then **leave the body in the urine**.
+- It is **non-invasive**: no cut in the skin is needed.
+
+<div class="optics-diagram" role="img" aria-label="ESWL: shock waves made outside the body are focused through a water cushion onto a kidney stone">
+<svg viewBox="0 0 640 290" xmlns="http://www.w3.org/2000/svg" width="100%" style="height:auto;display:block;max-width:640px;margin:0.6rem auto">
+<ellipse cx="400" cy="130" rx="190" ry="95" fill="rgba(var(--accent-1-rgb),0.12)" stroke="var(--accent-1)" stroke-width="2"/><text x="570" y="34" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">patient (body)</text><ellipse cx="400" cy="130" rx="44" ry="62" fill="rgba(var(--accent-2-rgb),0.3)" stroke="var(--accent-2)" stroke-width="2"/><text x="400" y="206" text-anchor="middle" fill="var(--accent-2)" font-family="Outfit,sans-serif" font-size="11">kidney</text><polygon points="392,120 408,116 414,132 400,142 388,134" fill="var(--accent-0)"/><text x="448" y="128" text-anchor="start" fill="var(--accent-0)" font-family="Outfit,sans-serif" font-size="11" font-weight="600">stone</text><path d="M60,60 Q30,130 60,200" fill="none" stroke="var(--accent-4)" stroke-width="4"/><text x="30" y="226" text-anchor="start" fill="var(--accent-4)" font-family="Outfit,sans-serif" font-size="11">shock wave source</text><text x="30" y="242" text-anchor="start" fill="var(--accent-4)" font-family="Outfit,sans-serif" font-size="11">(outside the body)</text><rect x="196" y="85" width="22" height="90" rx="6" fill="rgba(var(--accent-6-rgb),0.35)" stroke="var(--accent-6)" stroke-width="1.5"/><text x="207" y="72" text-anchor="middle" fill="var(--accent-6)" font-family="Outfit,sans-serif" font-size="10.5">water cushion / gel</text><line x1="60" y1="60" x2="398" y2="130" stroke="var(--accent-4)" stroke-width="1.4" stroke-dasharray="6 4"/><line x1="48" y1="95" x2="398" y2="130" stroke="var(--accent-4)" stroke-width="1.4" stroke-dasharray="6 4"/><line x1="45" y1="130" x2="398" y2="130" stroke="var(--accent-4)" stroke-width="1.4" stroke-dasharray="6 4"/><line x1="48" y1="165" x2="398" y2="130" stroke="var(--accent-4)" stroke-width="1.4" stroke-dasharray="6 4"/><line x1="60" y1="200" x2="398" y2="130" stroke="var(--accent-4)" stroke-width="1.4" stroke-dasharray="6 4"/><path d="M118.9,107.2 A54,54 0 0 1 118.9,152.8" fill="none" stroke="var(--accent-4)" stroke-width="1.6"/><path d="M131.6,101.3 A68,68 0 0 1 131.6,158.7" fill="none" stroke="var(--accent-4)" stroke-width="1.6"/><path d="M144.3,95.3 A82,82 0 0 1 144.3,164.7" fill="none" stroke="var(--accent-4)" stroke-width="1.6"/><text x="320" y="262" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="11.5">many focused shock waves → stone breaks into small pieces → passed in urine</text><text x="320" y="280" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">no cut in the skin (non-invasive)</text>
+</svg>
+</div>
+
 ---
 
 ## 9. The zeroth law of thermodynamics
@@ -300,7 +374,21 @@ Two bodies are in **thermal equilibrium** if they are at the **same temperature*
 </svg>
 </div>
 
-**Why it matters:** this is why a **thermometer** works. The thermometer (body T) reaches the same temperature as the patient, so its reading is the patient's temperature.
+### The slide picture explained
+
+<div class="optics-diagram" role="img" aria-label="Zeroth law set-up: thermoscope T touches A, then B, then A and B touch each other">
+<svg viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" width="100%" style="height:auto;display:block;max-width:640px;margin:0.6rem auto">
+<rect x="20" y="40" width="190" height="170" rx="6" fill="rgba(var(--accent-1-rgb),0.12)" stroke="var(--accent-1)" stroke-width="10"/><rect x="109.0" y="40" width="12" height="170" fill="rgba(var(--accent-1-rgb),0.35)" stroke="var(--accent-1)" stroke-width="1.5"/><text x="115" y="129" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="11" font-weight="700">S</text><rect x="44" y="148" width="36" height="50" rx="3" fill="rgba(var(--accent-3-rgb),0.55)" stroke="var(--accent-3)" stroke-width="1.5"/><text x="62" y="178" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">A</text><rect x="134" y="154" width="52" height="44" rx="3" fill="rgba(var(--accent-5-rgb),0.55)" stroke="var(--accent-5)" stroke-width="1.5"/><text x="160" y="181" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">B</text><rect x="42" y="90" width="40" height="52" rx="4" fill="rgba(var(--accent-6-rgb),0.35)" stroke="var(--accent-6)" stroke-width="1.5"/><text x="62" y="120" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">T</text><rect x="42" y="140" width="40" height="6" fill="var(--accent-0)"/><text x="115" y="236" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="12">(a) T touches A</text><rect x="225" y="40" width="190" height="170" rx="6" fill="rgba(var(--accent-1-rgb),0.12)" stroke="var(--accent-1)" stroke-width="10"/><rect x="314.0" y="40" width="12" height="170" fill="rgba(var(--accent-1-rgb),0.35)" stroke="var(--accent-1)" stroke-width="1.5"/><text x="320" y="129" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="11" font-weight="700">S</text><rect x="249" y="148" width="36" height="50" rx="3" fill="rgba(var(--accent-3-rgb),0.55)" stroke="var(--accent-3)" stroke-width="1.5"/><text x="267" y="178" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">A</text><rect x="339" y="154" width="52" height="44" rx="3" fill="rgba(var(--accent-5-rgb),0.55)" stroke="var(--accent-5)" stroke-width="1.5"/><text x="365" y="181" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">B</text><rect x="345" y="96" width="40" height="52" rx="4" fill="rgba(var(--accent-6-rgb),0.35)" stroke="var(--accent-6)" stroke-width="1.5"/><text x="365" y="126" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">T</text><rect x="345" y="146" width="40" height="6" fill="var(--accent-0)"/><text x="320" y="236" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="12">(b) T touches B</text><rect x="430" y="40" width="190" height="170" rx="6" fill="rgba(var(--accent-1-rgb),0.12)" stroke="var(--accent-1)" stroke-width="10"/><rect x="482" y="148" width="36" height="50" rx="3" fill="rgba(var(--accent-3-rgb),0.55)" stroke="var(--accent-3)" stroke-width="1.5"/><text x="500" y="178" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">A</text><rect x="522" y="154" width="52" height="44" rx="3" fill="rgba(var(--accent-5-rgb),0.55)" stroke="var(--accent-5)" stroke-width="1.5"/><text x="548" y="181" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="13" font-weight="700">B</text><text x="525" y="236" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="12">(c) A touches B</text><text x="320" y="22" text-anchor="middle" fill="var(--col-text-muted)" font-family="Outfit,sans-serif" font-size="11">thick border = insulating box (no heat in or out)</text><line x1="115" y1="215" x2="115" y2="268" stroke="var(--col-text-muted)" stroke-width="1" stroke-dasharray="3 3"/><text x="20" y="282" text-anchor="start" fill="var(--accent-1)" font-family="Outfit,sans-serif" font-size="11">S = insulating wall: blocks heat transfer between the two chambers</text><text x="20" y="300" text-anchor="start" fill="var(--accent-0)" font-family="Outfit,sans-serif" font-size="11">strip under T = conducting face of the thermoscope: heat can pass through it</text><text x="20" y="318" text-anchor="start" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="11">(c): T read the same for A and B, so nothing changes when A and B touch</text>
+</svg>
+</div>
+
+- The thick border is an **insulating box**: no heat gets in or out.
+- **S** is an **insulating wall**: **this wall blocks heat transfer between the two chambers**, so A and B cannot exchange heat while S is there.
+- **T** is a **thermoscope** (a simple thermometer). Its bottom face (the coloured strip) is **conducting**: a conducting wall **lets heat pass**, so T and the body it touches can reach the **same temperature**.
+- **(a)** T touches **A** and settles at a reading. **(b)** T touches **B** and shows the **same reading**. So A and B are each in equilibrium with T.
+- **(c)** The wall is removed and **A touches B**: **nothing changes**, no heat flows, because A and B were already at the same temperature. This is the zeroth law.
+
+**Why it matters:** **thermometers work using thermal equilibrium**. The thermometer (body T) reaches the same temperature as the patient, so its reading is the patient's temperature.
 
 ---
 
@@ -308,7 +396,14 @@ Two bodies are in **thermal equilibrium** if they are at the **same temperature*
 
 ### Triple point of water
 
-The **triple point of water** (or of any other substance) is the one particular **pressure and temperature** at which **solid ice, liquid water and water vapour coexist** in thermal equilibrium. For water it is **273.16 K** (0.01 °C, about 0.6 kPa).
+The **triple point of water** (or of any other substance) is the **single** temperature and pressure at which **solid ice, liquid water and water vapour** all **coexist in equilibrium**. For water:
+
+```
+Triple point of water:  273.16 K  =  0.01 °C
+at a pressure of about 611.657 Pa  (≈ 0.6 kPa ≈ 0.006 atm)
+```
+
+**Which pressure?** Boiling and freezing points are given at **standard atmospheric pressure**, 1 atm = **101 325 Pa**. So "at a particular pressure" is true for them: water boils at 100 °C and freezes at 0 °C **at 1 atm**. The triple point is **different**: it happens only at a **much lower pressure**, about **611.657 Pa** (roughly 1/166 of 1 atm). That is why the triple point (0.01 °C) is not the same as the normal freezing point (0 °C).
 
 <div class="optics-diagram" role="img" aria-label="Phase diagram of water with the triple point and critical point">
 <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" width="100%" style="height:auto;display:block;max-width:640px;margin:0.6rem auto">
@@ -317,6 +412,17 @@ The **triple point of water** (or of any other substance) is the one particular 
 </div>
 
 The **phase diagram of water** (slide) shows the three regions **ice (solid)**, **water (liquid)** and **water vapour (gas)**, meeting at the **triple point**, and the liquid–gas line ending at the **critical point** (374 °C, 22 089 kPa). At normal air pressure (101 kPa) water freezes at 0 °C and boils at 100 °C.
+
+### Fixed points to remember
+
+| Point | Kelvin | Celsius | Fahrenheit |
+|---|---|---|---|
+| **Boiling point of water** (at 1 atm) | **373.15 K** | **100 °C** | **212 °F** |
+| **Freezing point of water** (at 1 atm) | **273.15 K** | **0 °C** | **32 °F** |
+| Triple point of water (at ≈ 611.657 Pa) | 273.16 K | 0.01 °C | 32.02 °F |
+| **Absolute zero** | **0 K** | **−273.15 °C** | **−459.67 °F** |
+
+**Degree sign:** Celsius and Fahrenheit use **degrees** (**°C**, **°F**). Kelvin does **not**: write **K** with no degree sign (300 K, not 300 °K).
 
 ### Defining the scales
 
@@ -396,6 +502,7 @@ T_C = T_K − 273 = 300 − 273 = 27 °C
 | Low vs high ultrasound frequency | Deep abdomen / pregnancy (2.5–3.5 MHz) vs thyroid, breast, muscles (7.5–15 MHz) |
 | v = λf | Higher frequency → shorter wavelength → finer detail |
 | Doppler effect | Doppler ultrasound: speed and direction of blood flow |
+| Shock waves | ESWL: focused shock waves break kidney stones without surgery |
 | Tuning fork | Hearing and vibration-sense tests |
 | Zeroth law | How a clinical thermometer reads body temperature |
 | Temperature scales | Body temperature 37 °C = 98.6 °F = 310 K; fever checks |
@@ -405,13 +512,16 @@ T_C = T_K − 273 = 300 − 273 = 27 °C
 ## 12. Formula sheet — Chapter 4
 
 ```
+Frequency: f = cycles / time              ← unit Hz = 1/s = s⁻¹
 Period: T = 1 / f                         ← time for one cycle [s]
+Intensity: I ∝ A²                         ← amplitude squared
 Wave speed: v = λ × f                     ← f ∝ 1/λ at fixed speed
 Speed of sound: v = √(B / ρ)              ← stiffer → faster; denser → slower
 Air 20 °C: 343 m/s · water: 1482 m/s · steel: 5941 m/s
 Ranges: infrasound < 20 Hz < audible < 20 000 Hz < ultrasound
 Medical ultrasound: 2–15 MHz
 Doppler: f′ = f (v ± v_D) / (v ± v_S)     ← towards → f′ up; away → f′ down
+Towards each other: f′ = f (v + v_D) / (v − v_S)
 Source towards (observer still): f′ = f v / (v − v_S)
 Source away (observer still):    f′ = f v / (v + v_S)
 Mach number: Ma = vₛ / v                  ← > 1 supersonic → shock waves
@@ -425,11 +535,13 @@ Absolute zero: 0 K = −273.15 °C = −459.67 °F
 ### Key numbers at a glance
 
 - Speed of sound in air (20 °C): **343 m/s**  
+- 1 Hz = 1/s = **s⁻¹**; intensity ∝ **A²**  
 - Human hearing: **20 Hz – 20 000 Hz**  
 - Medical ultrasound: **2 – 15 MHz**  
 - Body temperature: **37 °C = 98.6 °F**  
 - −40 °C = **−40 °F** (the scales meet)  
-- Triple point: **273.16 K**; absolute zero: **0 K**  
+- Water boils at **100 °C = 212 °F = 373.15 K** and freezes at **0 °C = 32 °F = 273.15 K** (at 1 atm = 101 325 Pa)  
+- Triple point: **273.16 K = 0.01 °C** at ≈ **611.657 Pa**; absolute zero: **0 K = −273.15 °C = −459.67 °F**  
 
 ### Memory anchors
 
@@ -438,7 +550,8 @@ Absolute zero: 0 K = −273.15 °C = −459.67 °F
 - Pitch follows **frequency**; loudness follows **amplitude**  
 - Doppler: **coming → higher, going → lower**  
 - Faster than sound → **cone** → **sonic boom**; Ma > 1  
-- Same temperature → **no heat flow** (zeroth law)  
+- Same temperature → **no heat flow** (zeroth law); insulating wall blocks heat, conducting wall lets it through  
+- Kelvin has **no degree sign** (K); °C and °F do  
 - °F = **9/5 × °C + 32**; K = **°C + 273**  
 
 ### Medical anchors
@@ -446,4 +559,5 @@ Absolute zero: 0 K = −273.15 °C = −459.67 °F
 - Ultrasound: non-ionizing, unlike X-ray / CT  
 - Deep organs → **low** MHz; superficial organs → **high** MHz  
 - Doppler ultrasound → blood **speed and direction**  
-- Thermometer works because of the **zeroth law**  
+- ESWL → shock waves from **outside the body** crush **kidney stones**  
+- Thermometer works because of the **zeroth law** (thermal equilibrium)  

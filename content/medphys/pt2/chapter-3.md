@@ -61,6 +61,17 @@ P₁ + ½ ρ v₁² + ρ g h₁ = P₂ + ½ ρ v₂² + ρ g h₂
 3. **ρgh**: potential energy. It is mgh with ρ in place of m.
 4. An ideal fluid loses no energy to friction, so the sum is the same at point 1 and point 2.
 
+**From the lecture (whiteboard):** Bernoulli's equation is an **energy** statement:
+
+```
+pressure energy + kinetic energy + potential energy = constant
+P₁ + ½ ρ v₁² + ρ g h₁ = P₂ + ½ ρ v₂² + ρ g h₂
+```
+
+> **Note:** the board wrote KE = ½mv² and PE = mgh. In Bernoulli's equation every term is **per unit volume**, so the mass m becomes the density ρ: **½mv² → ½ρv²** and **mgh → ρgh**.
+
+For an **ideal fluid**: **P + ½ρv² + ρgh = constant**. Where **v increases, P decreases**, and where v decreases, P increases: **P and v change in opposite directions** (P ↑ v ↓). The board also linked this to continuity: **A₁v₁ = A₂v₂** and the flow rate **Q = Av**.
+
 ### The key consequence
 
 **As fluid velocity increases, fluid pressure decreases, and vice versa.**
@@ -167,6 +178,19 @@ Shear stress (F/A) = coefficient of viscosity × velocity gradient
 ```
 
 **How F = ηAv/y is made:** start from F ∝ Av/y and put in a constant to make it an equation. That constant of proportionality, **η (eta)**, is the **viscosity**. Divide both sides by A to get the shear stress form.
+
+**From the lecture (whiteboard): three ways to write the same law**
+
+```
+F ∝ A,   F ∝ v,   F ∝ 1/y
+(1) Force due to viscosity:   F = η A v / y
+(2) Viscosity:                η = (F/A) / (v/y) = F y / (A v)
+(3) Shear stress:             F/A = η × (v / y)
+```
+
+- In form (3), **F/A is shear stress**, not pressure. Both have the unit Pa (N/m²), but the force in shear stress acts **along** the surface (sideways), while pressure pushes **at right angles** to it.
+- **Unit of η from form (2):** η = (F/A) × (y/v) → Pa × m ÷ (m/s) = **Pa·s**.
+- **Blood vs an ideal fluid:** an **ideal fluid** ignores viscosity (η = 0), as in Bernoulli's equation. **Blood is not ideal**: it has viscosity, so η, the viscous force F and the pressure P needed to push it all matter (this leads to Poiseuille's law).
 
 ### Units
 
