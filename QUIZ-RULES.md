@@ -540,9 +540,11 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
 - Badge labels are **Title Case** (like subtitles): "Draft", "Coming Soon",
   "Real Exam Is Trickier", "Excessive", "Not In Exam". No CSS uppercase. Tooltips
   are normal sentences.
-- Data-driven, one component (`.note-badge` / `.card-badge.note-badge`, tones `amber`
-  and `grey`, fixed colours with an opaque light tint so they read the same in every
-  mood theme: amber #f59e0b / #fef3c7 / #92400e, grey #9ca3af / #f3f4f6 / #374151):
+- Data-driven, one component (`.note-badge` / `.card-badge.note-badge`, tones `amber`,
+  `grey` and `green`, fixed colours with an opaque light tint so they read the same in every
+  mood theme: amber #f59e0b / #fef3c7 / #92400e, grey #9ca3af / #f3f4f6 / #374151,
+  green (positive) #22c55e / #dcfce7 / #166534). Medical Terminology · Periodic Test 1 has a
+  green "Reliable" badge on its portal card only (tip "Matches the real exam well."):
   - catalog material `badges: [{text, tip, tone}]` → on its portal card (with the tip as a
     small note under the title) and on **every** form/lecture card inside it;
   - bank card group `cards[].badges` → on that card only;

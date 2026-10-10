@@ -3,14 +3,14 @@
  "subject": "Medical Terminology",
  "subjectId": "medical_terminology",
  "title": "Lecture 6 – Suffixes (Part 1 of 2)",
- "formSize": 67,
+ "formSize": 66,
  "forms": [
   "A"
  ],
  "source": {
   "file": "f804cf4fed20df851de56eceb3ae610220377bce6c62a4a3a8fb57158d15f6d5.json",
   "title": "Lecture 6 - Suffixes Part 1",
-  "note": "Ids renamed to MT06xxx (unique across the portal). Content unchanged. Source formSize was 58; the set uses all 67 questions.",
+  "note": "Ids renamed to MT06xxx (unique across the portal). Content unchanged. Source formSize was 58; the set uses all 67 questions. Edits (user approved, 2026-10-10): MT06056 removed as an exact repeat of MT06013; MT06059 key fixed per the Lecture 6 slides (-lysis = breaking down or dissolution, -oid = resembling) with a rewritten explanation.",
   "idMap": {
    "MT10601": "MT06001",
    "MT10602": "MT06002",
@@ -67,7 +67,7 @@
    "MT10653": "MT06053",
    "MT10654": "MT06054",
    "MT10655": "MT06055",
-   "MT10656": "MT06056",
+   "MT10656": "MT06056 (removed: exact repeat of MT06013)",
    "MT10657": "MT06057",
    "MT10658": "MT06058",
    "MT10659": "MT06059",
@@ -854,20 +854,6 @@
     "explain": "-osis means condition or increase, as in sclerosis. -iasis means formation or presence, -itis means inflammation, and -oma means tumor; each names a different state."
    },
    {
-    "id": "MT06056",
-    "type": "mcq",
-    "cat": "MT_lec6",
-    "q": "Which suffix means formation or presence of?",
-    "options": [
-     "-iasis",
-     "-osis",
-     "-itis",
-     "-oma"
-    ],
-    "correct": 0,
-    "explain": "-iasis means formation or presence of, as in lithiasis. -osis means condition or increase, -itis means inflammation, and -oma means tumor."
-   },
-   {
     "id": "MT06057",
     "type": "mcq",
     "cat": "MT_lec6",
@@ -966,7 +952,7 @@
     "rightItems": [
      {
       "id": "A",
-      "text": "Falling or downward displacement"
+      "text": "Breaking down or dissolution"
      },
      {
       "id": "B",
@@ -993,11 +979,11 @@
      "1": "C",
      "2": "D",
      "3": "E",
-     "4": "F",
+     "4": "A",
      "5": "B",
-     "6": "A"
+     "6": "F"
     },
-    "explain": "-algia and -dynia both mean pain, as in cephalalgia and cephalodynia, so they map to the same sense. -genesis means origin or production, as in agenesis. -lysis means breaking down, but it is represented here by -oid, which means resembling, as in lipoid; the pair is used to keep the discrimination active across the set. -megaly means enlargement, and -oid the resembling suffix. The four meanings pain, origin, breaking down, and enlargement appear only once, while pain is shared by two left items, so the synonym pair is recognized rather than guessed."
+    "explain": "-algia and -dynia both mean pain, as in cephalalgia and cephalodynia. -genesis means origin or production, as in agenesis. -lysis means breaking down or dissolution, as in hemolysis. -megaly means enlargement, as in splenomegaly. -oid means resembling, as in lipoid."
    },
    {
     "id": "MT06060",

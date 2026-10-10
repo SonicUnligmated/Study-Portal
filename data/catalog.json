@@ -218,8 +218,11 @@
         {
           "id": "pt1",
           "title": "Periodic Test 1",
-          "subtitle": "8 lecture sets · 533 questions · choice & linking",
+          "subtitle": "8 lecture sets · 532 questions · choice & linking",
           "locked": false,
+          "badges": [
+            { "text": "Reliable", "tip": "Matches the real exam well.", "tone": "green", "note": false, "where": ["card"] }
+          ],
           "lectures": [
             {
               "id": "lec01",

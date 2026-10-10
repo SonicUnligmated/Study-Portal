@@ -74,6 +74,8 @@ Mass flow rate = ρ A (ℓ / t) = ρ A v
 
 Unit check: (kg/m³)·(m²)·(m/s) = **kg/s**.
 
+> **Note:** mass flow rate ṁ may also be written as **Q**, as in the slides: Q = ρAv.
+
 ### Volume flow rate
 
 ```

@@ -719,7 +719,7 @@ function cardCounts(pool){
 const EXAM_DIFFERS_BADGE={text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge'};
 function noteBadgeHTML(b, extraCls){
   if(!b || !b.text) return '';
-  const tone=(b.tone==='grey'||b.tone==='gray')?'grey':'amber';
+  const tone=(b.tone==='grey'||b.tone==='gray')?'grey':(b.tone==='green'?'green':'amber');
   return '<span class="card-badge note-badge '+tone+(b.cls?' '+b.cls:'')+(extraCls?' '+extraCls:'')+(b.tip?'':' no-tip')+'"'+(b.tip?' title="'+escapeHtml(b.tip)+'" data-tip="'+escapeHtml(b.tip)+'" aria-label="'+escapeHtml(b.text+': '+b.tip)+'"':'')+'>'+escapeHtml(b.text)+'</span>';
 }
 /* where a material badge shows: 'card' (portal card), 'forms' (every hub card), 'hub' (next to ⚙ Quiz settings).

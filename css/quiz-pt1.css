@@ -512,6 +512,7 @@ html.bg-edit-hide-glows body{
 .pt1q .card-badge.draft{border-color:rgba(var(--accent-3-rgb),.5);color:var(--accent-3);background:rgba(var(--accent-3-rgb),.1)}
 .pt1q .card-badge.note-badge{margin-left:0;font-weight:700;border-color:#f59e0b;color:#92400e;-webkit-text-fill-color:#92400e;background:#fef3c7;cursor:help}
 .pt1q .card-badge.note-badge.grey{border-color:#9ca3af;color:#374151;-webkit-text-fill-color:#374151;background:#f3f4f6}
+.pt1q .card-badge.note-badge.green{border-color:#22c55e;color:#166534;-webkit-text-fill-color:#166534;background:#dcfce7}
 .pt1q .card-badge.note-badge.no-tip{cursor:default}
 .pt1q .hub-badges{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px}
 .pt1q .hub-badges .note-badge{font-size:.78rem;padding:5px 11px}

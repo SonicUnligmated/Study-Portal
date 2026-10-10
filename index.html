@@ -487,11 +487,15 @@ html.mood-sad[data-skin], html.mood-crying[data-skin], html.mood-sleepy[data-ski
 .portal-card .go{font-family:var(--mono);font-size:.82rem;color:var(--cyan-bright)}
 .portal-card .lock-badge{position:absolute;top:14px;right:16px;font-size:1.1rem}
 .portal-card .draft-badge{display:inline-flex;align-items:center;vertical-align:middle;margin-left:8px;font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.02em;text-transform:none;padding:3px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,transparent);line-height:1.3}
-/* Note badges (catalog examDiffers / badges[]): fixed colours with an opaque light tint so they read the same in every mood theme. amber = caution, grey = neutral. */
+/* Note badges (catalog examDiffers / badges[]): fixed colours with an opaque light tint so they read the same in every mood theme. amber = caution, grey = neutral, green = positive. */
 .note-badge{display:inline-flex;align-items:center;vertical-align:middle;margin-left:8px;font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.02em;text-transform:none;padding:3px 9px;border-radius:999px;border:1px solid #f59e0b;color:#92400e;background:#fef3c7;line-height:1.3;cursor:help;-webkit-text-fill-color:#92400e}
 .note-badge.grey{border-color:#9ca3af;color:#374151;background:#f3f4f6;-webkit-text-fill-color:#374151}
+.note-badge.green{border-color:#22c55e;color:#166534;background:#dcfce7;-webkit-text-fill-color:#166534}
 .portal-card .badge-note{display:block;width:fit-content;margin:-2px 0 8px;padding:2px 8px;border-radius:6px;border-left:3px solid #f59e0b;background:#fffbeb;color:#92400e;-webkit-text-fill-color:#92400e;font-family:var(--mono);font-size:.7rem;line-height:1.4}
 .portal-card .badge-note.grey{border-left-color:#9ca3af;background:#f9fafb;color:#374151;-webkit-text-fill-color:#374151}
+.portal-card .badge-note.green{border-left-color:#22c55e;background:#f0fdf4;color:#166534;-webkit-text-fill-color:#166534}
+#examTip.green{border-color:#22c55e;background:#f0fdf4;color:#166534;-webkit-text-fill-color:#166534}
+#examTip.grey{border-color:#9ca3af;background:#f9fafb;color:#374151;-webkit-text-fill-color:#374151}
 #examTip{position:fixed;z-index:100001;max-width:min(280px,calc(100vw - 24px));padding:8px 11px;border-radius:10px;border:1px solid #f59e0b;background:#fffbeb;color:#92400e;-webkit-text-fill-color:#92400e;font-family:var(--mono);font-size:.74rem;line-height:1.45;box-shadow:0 10px 24px -12px rgba(0,0,0,.6);pointer-events:none}
 #examTip[hidden]{display:none}
 .online-panel{margin-top:8px;padding:20px 22px;border-radius:18px;background:rgba(14,22,40,.42);border:1px solid var(--border);backdrop-filter:blur(14px)}
@@ -1154,7 +1158,7 @@ body.split-quiz-active #chatDock{z-index:60}
 .achievement-popup-desc{font-size:.8em;opacity:.92;color:#4a3500}
 
 </style>
-<link rel="stylesheet" href="css/quiz-pt1.css?v=2">
+<link rel="stylesheet" href="css/quiz-pt1.css?v=3">
 <link rel="stylesheet" href="css/study-pt1.css?v=2">
 </head>
 <body>
@@ -2729,7 +2733,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
     const out=[];
     // examDiffers: badge on the portal card (tooltip only, no note line) and next to ⚙ Quiz settings in the hub
     if(m && m.examDiffers === true) out.push({text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge', note:false});
-    if(m && Array.isArray(m.badges)) m.badges.forEach(b=>{ if(b && b.text && (!Array.isArray(b.where) || b.where.includes('card'))) out.push({text:String(b.text), tip:String(b.tip||''), tone:(b.tone==='grey'||b.tone==='gray')?'grey':'amber', cls:b.cls||'', note:b.note!==false}); });
+    if(m && Array.isArray(m.badges)) m.badges.forEach(b=>{ if(b && b.text && (!Array.isArray(b.where) || b.where.includes('card'))) out.push({text:String(b.text), tip:String(b.tip||''), tone:(b.tone==='grey'||b.tone==='gray')?'grey':(b.tone==='green'?'green':'amber'), cls:b.cls||'', note:b.note!==false}); });
     return out.map((b,i)=>Object.assign(b,{i}));
   }
 
@@ -2887,7 +2891,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
 })();
 
 </script>
-<script src="js/quiz-engine.js?v=3"></script>
+<script src="js/quiz-engine.js?v=4"></script>
 <script src="js/study-images.js?v=2"></script>
 <script src="js/study-app.js?v=1"></script>
 <script>
@@ -2910,7 +2914,7 @@ document.getElementById('studyNotesBtn').addEventListener('click', ()=>{
     e.preventDefault(); e.stopPropagation();
     var t=tip(); var text=b.getAttribute('data-tip')||b.title||'';
     if(!t.hidden && t.dataset.for===text && t.__badge===b){ hide(); return; }
-    t.textContent=text; t.dataset.for=text; t.__badge=b; t.hidden=false;
+    t.textContent=text; t.dataset.for=text; t.__badge=b; t.className=b.classList.contains('green')?'green':(b.classList.contains('grey')?'grey':''); t.hidden=false;
     var r=b.getBoundingClientRect(), w=t.offsetWidth, h=t.offsetHeight;
     var left=Math.max(12, Math.min(r.left, innerWidth-w-12));
     var top=r.bottom+8; if(top+h>innerHeight-8) top=Math.max(8, r.top-h-8);
