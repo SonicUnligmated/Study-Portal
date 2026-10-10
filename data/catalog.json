@@ -48,6 +48,12 @@
             "title": "Study Interface",
             "chapters": [
               {
+                "id": "ch3",
+                "src": "content/medphys/pt2/chapter-3.md",
+                "title": "Chapter 3 (continued) · Bernoulli to surface tension",
+                "meta": "Bernoulli · viscosity · Poiseuille · Reynolds · Laplace · surface tension"
+              },
+              {
                 "id": "ch5",
                 "src": "content/medphys/pt2/chapter-5.md",
                 "title": "Chapter 5 · Ray optics",
