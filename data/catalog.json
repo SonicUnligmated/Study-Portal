@@ -43,6 +43,20 @@
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true
+        },
+        {
+          "id": "medphys-oif",
+          "title": "Only In Finals",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "medphys-finals",
+          "title": "Finals",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
         }
       ]
     },
@@ -62,6 +76,20 @@
         {
           "id": "ss2",
           "title": "Periodic Test 2",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "studyskills-oif",
+          "title": "Only In Finals",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "studyskills-finals",
+          "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true
@@ -154,8 +182,22 @@
           ]
         },
         {
-          "id": "en2",
-          "title": "Practice set",
+          "id": "english-pt2",
+          "title": "Periodic Test 2",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "english-oif",
+          "title": "Only In Finals",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "english-finals",
+          "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true
@@ -167,6 +209,13 @@
       "name": "Medical Terminology",
       "locked": false,
       "materials": [
+        {
+          "id": "medterm-pt1",
+          "title": "Periodic Test 1",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
         {
           "id": "pt2",
           "title": "Periodic Test 2",
@@ -239,15 +288,15 @@
           ]
         },
         {
-          "id": "mt1",
-          "title": "Foundations Quiz",
+          "id": "medterm-oif",
+          "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true
         },
         {
-          "id": "mt2",
-          "title": "Systems Review",
+          "id": "medterm-finals",
+          "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true
@@ -273,8 +322,22 @@
           ]
         },
         {
-          "id": "iths2",
-          "title": "Practice set",
+          "id": "iths-pt2",
+          "title": "Periodic Test 2",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "iths-oif",
+          "title": "Only In Finals",
+          "subtitle": "Coming soon",
+          "bank": null,
+          "locked": true
+        },
+        {
+          "id": "iths-finals",
+          "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
           "locked": true

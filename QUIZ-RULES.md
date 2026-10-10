@@ -581,3 +581,13 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
   material's real forms by title (ITHS: "Lectures 1–4"; English: the 16 forms) instead
   of the default A–H. Party mode plays the mcqs only.
 - The bank (603 KB minified, 137 KB gzipped) is fetched only when its card is opened.
+
+## 19. Catalog slots
+
+- Every subject lists exactly four material cards, in this order: **Periodic Test 1**,
+  **Periodic Test 2**, **Only In Finals**, **Finals**.
+- A slot with content keeps its bank/lectures, badges, Draft flag and Study button.
+  An empty slot is a locked "Coming soon" placeholder (`bank: null`, `locked: true`).
+- Real content that fits none of the four slots is kept after them (none today).
+- Current content: Medical Physics PT1, Study Skills PT1, English PT1, ITHS PT1 and
+  Medical Terminology PT2 (Medical Terminology PT1 is a placeholder).
