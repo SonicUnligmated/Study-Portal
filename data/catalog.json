@@ -184,14 +184,20 @@
     {
       "id": "iths",
       "name": "ITHS",
-      "locked": true,
+      "locked": false,
       "materials": [
         {
           "id": "iths1",
-          "title": "Information Technology for Health Sciences",
-          "subtitle": "Coming soon",
-          "bank": null,
-          "locked": true
+          "title": "Periodic Test 1",
+          "subtitle": "Lectures 1–4 · 64 questions · choice & linking",
+          "bank": "banks/iths/pt1.json",
+          "locked": false,
+          "forms": [
+            {
+              "id": "A",
+              "title": "Lectures 1–4"
+            }
+          ]
         },
         {
           "id": "iths2",

@@ -542,3 +542,20 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
   fallback). Its content scrolls inside, and the action bar (Close/Save) is sticky.
   Modals do not lock background scroll (no existing pattern for it); the overlay
   covers the page and `overscroll-behavior: contain` stops scroll chaining.
+
+## 17. ITHS Periodic Test 1 (`banks/iths/pt1.json`)
+
+- Source: "ITHS 101 Periodic Test 1" (id `ITHS_Lecture1-4`, subjectId `iths_101`), 64 questions
+  ITHS0001–ITHS0064, all cat `ITHS_L1_L4`: 60 mcq (no `type`) + 4 `matching`
+  (ITHS0061–0064, from source form E).
+- The source split them into forms A–D (13 each) and E (12). They are merged in source
+  order into ONE form: `forms: ["A"]`, `bank.A` = all 64, `formSize: 64`. The original
+  split is recorded under `source.forms`. Question content is unchanged.
+- Card rule: one category with ≤ 100 questions gives one card. The bank's
+  `cards: [{id:"lec1-4", title:"Lectures 1–4", cats:["ITHS_L1_L4"]}]` gives it a readable label
+  in the hub and in party mode. Card id is `grp:lec1-4`.
+- Catalog: subject `iths` is unlocked. `iths1` is "Periodic Test 1" (Lectures 1–4 · 64
+  questions) wired to this bank; `iths2` "Practice set" stays locked.
+- Progress and mastery are namespaced by bank path (`iths/pt1`). The party/lobby bank
+  picker lists it automatically because the subject is unlocked. Question ids are
+  unique across all banks (checked by the test suite).

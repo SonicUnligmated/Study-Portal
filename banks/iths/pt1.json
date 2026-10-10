@@ -1,0 +1,1150 @@
+{
+ "id": "ITHS_Lecture1-4",
+ "subject": "Information Technology in Health Sciences",
+ "subjectId": "iths_101",
+ "title": "ITHS 101 Periodic Test 1",
+ "formSize": 64,
+ "forms": [
+  "A"
+ ],
+ "cards": [
+  {
+   "id": "lec1-4",
+   "title": "Lectures 1–4",
+   "cats": [
+    "ITHS_L1_L4"
+   ]
+  }
+ ],
+ "source": {
+  "note": "Merged from source forms A–E (13+13+13+13+12) into one form; question content unchanged.",
+  "forms": {
+   "A": [
+    "ITHS0001",
+    "ITHS0002",
+    "ITHS0003",
+    "ITHS0004",
+    "ITHS0005",
+    "ITHS0006",
+    "ITHS0007",
+    "ITHS0008",
+    "ITHS0009",
+    "ITHS0010",
+    "ITHS0011",
+    "ITHS0012",
+    "ITHS0013"
+   ],
+   "B": [
+    "ITHS0014",
+    "ITHS0015",
+    "ITHS0016",
+    "ITHS0017",
+    "ITHS0018",
+    "ITHS0019",
+    "ITHS0020",
+    "ITHS0021",
+    "ITHS0022",
+    "ITHS0023",
+    "ITHS0024",
+    "ITHS0025",
+    "ITHS0026"
+   ],
+   "C": [
+    "ITHS0027",
+    "ITHS0028",
+    "ITHS0029",
+    "ITHS0030",
+    "ITHS0031",
+    "ITHS0032",
+    "ITHS0033",
+    "ITHS0034",
+    "ITHS0035",
+    "ITHS0036",
+    "ITHS0037",
+    "ITHS0038",
+    "ITHS0039"
+   ],
+   "D": [
+    "ITHS0040",
+    "ITHS0041",
+    "ITHS0042",
+    "ITHS0043",
+    "ITHS0044",
+    "ITHS0045",
+    "ITHS0046",
+    "ITHS0047",
+    "ITHS0048",
+    "ITHS0049",
+    "ITHS0050",
+    "ITHS0051",
+    "ITHS0052"
+   ],
+   "E": [
+    "ITHS0053",
+    "ITHS0054",
+    "ITHS0055",
+    "ITHS0056",
+    "ITHS0057",
+    "ITHS0058",
+    "ITHS0059",
+    "ITHS0060",
+    "ITHS0061",
+    "ITHS0062",
+    "ITHS0063",
+    "ITHS0064"
+   ]
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "ITHS0001",
+    "cat": "ITHS_L1_L4",
+    "q": "What is e-learning?",
+    "explain": "E-learning uses electronic and digital technologies, usually with connected devices and network access. The records system choice describes student information software. The browser component choice describes plug-in support. The storage service choice describes cloud storage.",
+    "options": [
+     "A records system for enrollment, grades, and aid.",
+     "Learning delivered through digital devices and networks.",
+     "A browser component for websites and attached files.",
+     "A storage service for folders on remote servers."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0002",
+    "cat": "ITHS_L1_L4",
+    "q": "Which item is not a basic requirement for e-learning?",
+    "explain": "A printer is not a basic requirement. Updated hardware, updated software, internet access, a microphone, office applications, and a prepared browser support e-learning.",
+    "options": [
+     "Updated computer hardware and current software.",
+     "A strong internet connection and working microphone.",
+     "A printer for producing hard copies of lessons.",
+     "Microsoft Office applications and a prepared browser."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0003",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement describes the concept of e-learning?",
+    "explain": "The concept centers on accessibility, flexibility, interactivity, and convenience. Substituting automatic scoring, requiring campus attendance, or storing printed textbooks offline does not describe that concept.",
+    "options": [
+     "It substitutes teacher feedback with automatic scoring.",
+     "It requires campus attendance for graded activities and materials.",
+     "It stores printed textbooks in local folders without network access.",
+     "It uses technology to make learning accessible, flexible, and interactive."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0004",
+    "cat": "ITHS_L1_L4",
+    "q": "Which set consists entirely of e-learning platforms?",
+    "explain": "Moodle, Canvas, edX, and Coursera deliver online education. The other sets name browsers, storage or records tools, and messaging services.",
+    "options": [
+     "Moodle, Canvas, edX, and Coursera.",
+     "Chrome, Firefox, Safari, and Opera.",
+     "Dropbox, OneDrive, Google Drive, and Banner.",
+     "Skype, WhatsApp, Viber, and Snapchat."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0005",
+    "cat": "ITHS_L1_L4",
+    "q": "What is the primary function of a web browser?",
+    "explain": "A web browser finds and displays websites published on servers. Registration, quiz creation, and folder synchronization belong to other systems.",
+    "options": [
+     "It manages student registration and financial aid.",
+     "It finds and displays websites published on servers.",
+     "It creates quizzes and collects assignment files.",
+     "It synchronizes local folders with cloud storage."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0006",
+    "cat": "ITHS_L1_L4",
+    "q": "Which browser plugin is matched to the function it supports?",
+    "explain": "Adobe PDF Reader supports viewing and printing PDF files inside a browser window. Java supports applets, Adobe Flash Player supports Flash video and rich interactive media, and Apple QuickTime supports audio and video formats.",
+    "options": [
+     "Java displays PDF documents and submits online forms.",
+     "Adobe Flash Player stores files on remote servers and syncs devices.",
+     "Apple QuickTime delivers live classes and breakout rooms.",
+     "Adobe PDF Reader views and prints PDF files in a browser window."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0007",
+    "cat": "ITHS_L1_L4",
+    "q": "What does Apple QuickTime provide in an e-learning setting?",
+    "explain": "Apple QuickTime provides access to multiple audio and video formats. Flash media, PDF form submission, and student records belong to other tools.",
+    "options": [
+     "Access to Flash video and rich interactive media.",
+     "Filling and submitting PDF forms online.",
+     "Access to multiple audio and video formats.",
+     "Management of registration and financial aid."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0008",
+    "cat": "ITHS_L1_L4",
+    "q": "How does a bookmark differ from a hyperlink?",
+    "explain": "A bookmark stores a link for later access, while a hyperlink connects to another place in the same document or to another document. Image saving, password storage, folder opening, and file transfer describe other operations.",
+    "options": [
+     "A bookmark stores a link for later access, and a hyperlink connects to another location.",
+     "A bookmark saves a page image, and a hyperlink links to a different browser.",
+     "A bookmark opens a local folder, and a hyperlink stores a password.",
+     "A hyperlink sends a file to the internet, and a bookmark receives a file."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0009",
+    "cat": "ITHS_L1_L4",
+    "q": "What is a learning management system?",
+    "explain": "A learning management system creates, manages, organizes, and delivers online learning. Student records, browser plug-ins, and cloud storage describe other tools.",
+    "options": [
+     "A records system for enrollment, grades, and financial aid.",
+     "Software that creates, manages, organizes, and delivers online learning.",
+     "A browser component that opens websites and attached files.",
+     "A storage service that copies folders across remote servers."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0010",
+    "cat": "ITHS_L1_L4",
+    "q": "Which action is typically performed by a teacher in a learning management system?",
+    "explain": "Teachers post announcements and create quizzes. Downloading presentation files, following a course, and submitting work are learner actions.",
+    "options": [
+     "Downloading presentation files for revision.",
+     "Following a course after enrollment.",
+     "Submitting a video clip for grading.",
+     "Posting announcements and creating quizzes."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0011",
+    "cat": "ITHS_L1_L4",
+    "q": "Which action is typically performed by a student in a learning management system?",
+    "explain": "Students download presentation files and PDF files. Managing files and URLs, adding resources, and creating quizzes are teacher actions.",
+    "options": [
+     "Managing files and URLs.",
+     "Adding resources and activities.",
+     "Downloading presentation files and PDF files.",
+     "Creating a quiz with a passing score."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0012",
+    "cat": "ITHS_L1_L4",
+    "q": "Which practice strengthens an e-learning account?",
+    "explain": "A strong unique password and two-factor authentication reduce unauthorized access. Sharing credentials, staying logged in on shared machines, and using unfamiliar login pages increase risk.",
+    "options": [
+     "Use a strong unique password and enable two-factor authentication.",
+     "Share the password with a trusted classmate.",
+     "Stay logged in on a shared laboratory computer.",
+     "Enter credentials on an unfamiliar login page."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0013",
+    "cat": "ITHS_L1_L4",
+    "q": "After valid login details are entered, what normally appears?",
+    "explain": "After sign-in, the dashboard presents courses and account areas. Compatibility notices, the Quick Access Toolbar, and Backstage view belong to document software.",
+    "options": [
+     "A compatibility notice for older file formats.",
+     "A dashboard with courses and account areas.",
+     "A Quick Access Toolbar with save commands.",
+     "A Backstage view for pinning documents."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0014",
+    "cat": "ITHS_L1_L4",
+    "q": "Which e-learning advantage refers to reduced travel and printing expenses?",
+    "explain": "Reduced travel and printing expenses describe savings in time and cost. Device access, quick feedback, and digital skill growth are other advantages.",
+    "options": [
+     "Easy access through computers, tablets, and phones.",
+     "Quick feedback from quizzes and online assignments.",
+     "Digital skill growth through online communication.",
+     "Time and cost savings from reduced travel and printing."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0015",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement defines uploading?",
+    "explain": "Uploading sends data from a local computer to an internet destination. Downloading receives data from the internet. Printing and cache deletion are local operations.",
+    "options": [
+     "Receiving data from the internet onto a local device.",
+     "Printing a document from a local drive.",
+     "Sending data or a file from a computer to the internet.",
+     "Deleting a cached copy from a browser."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0016",
+    "cat": "ITHS_L1_L4",
+    "q": "Which files can students submit in an assignment activity?",
+    "explain": "Assignments accept electronic files such as word documents, spreadsheets, images, audio, and video clips. Executable programs, paper materials, and browser plugins are not assignment submission types.",
+    "options": [
+     "Word documents, spreadsheets, images, audio, and video clips.",
+     "Executable programs, device drivers, and system files.",
+     "Printed photographs, handwritten notes, and paper forms.",
+     "Browser plugins, operating system updates, and fonts."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0017",
+    "cat": "ITHS_L1_L4",
+    "q": "Which quiz setting is matched to its function?",
+    "explain": "Passing Score sets the minimum result needed to pass. Time Limits control duration, Randomize Answers changes choice order, and Answer Feedback explains responses.",
+    "options": [
+     "Time Limits change the order of questions for each learner.",
+     "Passing Score sets the minimum result needed to pass.",
+     "Randomize Answers explains why a response is correct or wrong.",
+     "Answer Feedback controls how long an attempt may last."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0018",
+    "cat": "ITHS_L1_L4",
+    "q": "Which quiz setting changes the order of answer choices for each learner?",
+    "explain": "Randomize Answers changes the order of answer choices. Randomize Questions changes question order, while Passing Score and Time Limits control scoring and duration.",
+    "options": [
+     "Randomize Questions",
+     "Passing Score",
+     "Time Limits",
+     "Randomize Answers"
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0019",
+    "cat": "ITHS_L1_L4",
+    "q": "What is a survey used for in a learning management system?",
+    "explain": "Surveys collect opinions about pace, level, and technical quality. Graded submission, video hosting, and document creation belong to other tools.",
+    "options": [
+     "Submitting graded files for teacher review.",
+     "Storing videos on remote servers.",
+     "Collecting opinions about pace, level, and technical quality.",
+     "Creating a blank document with a cover page."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0020",
+    "cat": "ITHS_L1_L4",
+    "q": "Which feature enables private written communication between selected users?",
+    "explain": "Messages provide private written communication between selected users. Forums support group discussion, quizzes assess knowledge, and calendars track dates.",
+    "options": [
+     "Message",
+     "Forum",
+     "Quiz",
+     "Calendar"
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0021",
+    "cat": "ITHS_L1_L4",
+    "q": "Which e-learning content type is a recorded demonstration of a computer screen?",
+    "explain": "A screencast records a computer screen to demonstrate a task. A webinar is a live meeting, a simulation imitates a process, and an ebook is a digital book.",
+    "options": [
+     "Webinar",
+     "Screencast",
+     "Simulation",
+     "eBook"
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0022",
+    "cat": "ITHS_L1_L4",
+    "q": "Which component of digital learning includes quizzes, assignments, tests, and electronic feedback?",
+    "explain": "Online assessment covers quizzes, assignments, tests, and electronic feedback. Materials, communication, and interactive learning name other components.",
+    "options": [
+     "Digital learning materials",
+     "Online communication",
+     "Interactive learning",
+     "Online assessment"
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0023",
+    "cat": "ITHS_L1_L4",
+    "q": "Which learning management system benefit describes serving growing numbers of learners and varied schedules?",
+    "explain": "Scalability and flexibility describe capacity for growing numbers of learners and varied schedules. Centralized management, outcomes, and efficiency name other benefits.",
+    "options": [
+     "Centralized management",
+     "Improved learning outcomes",
+     "Scalability and flexibility",
+     "Increased efficiency"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0024",
+    "cat": "ITHS_L1_L4",
+    "q": "What is Banner in a college setting?",
+    "explain": "Banner manages registration, academic history, course and section data, scheduling, and financial aid records. Cloud storage, video conferencing, and course delivery belong to other tools.",
+    "options": [
+     "A student information system for registration, history, scheduling, and aid.",
+     "A cloud service that stores files on remote servers.",
+     "A video conferencing platform for live meetings and chat.",
+     "A learning management system for assignments and quizzes."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0025",
+    "cat": "ITHS_L1_L4",
+    "q": "What is required to open Banner?",
+    "explain": "Banner requires its own account, separate from other computer accounts. A generic email password, a survey, and a Zoom license do not establish that identity.",
+    "options": [
+     "A generic college email password.",
+     "A Banner account established separately from other accounts.",
+     "A completed teacher evaluation survey.",
+     "An active Zoom meeting license."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0026",
+    "cat": "ITHS_L1_L4",
+    "q": "Which mobile application opens Banner on a phone or tablet?",
+    "explain": "Ellucian Go provides mobile access to Banner. Google Meet, BigBlueButton, and U Meeting are conferencing tools.",
+    "options": [
+     "Google Meet",
+     "BigBlueButton",
+     "U Meeting",
+     "Ellucian Go"
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0027",
+    "cat": "ITHS_L1_L4",
+    "q": "Which item is not a Banner feature?",
+    "explain": "File synchronization belongs to cloud storage. Academic history, course registration, and request for services are Banner functions.",
+    "options": [
+     "Academic history stores completed coursework records.",
+     "Course registration handles enrollment in sections.",
+     "File synchronization keeps cloud copies identical.",
+     "Request for services supports administrative petitions."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0028",
+    "cat": "ITHS_L1_L4",
+    "q": "Why move from paper to electronic communication?",
+    "explain": "Electronic communication helps connections occur while saving time and money. Printing volume, legal risk, and webcam requirements describe costs or unrelated needs.",
+    "options": [
+     "It helps connections occur while saving time and money.",
+     "It increases printing volume and physical storage needs.",
+     "It removes legal value from transmitted data.",
+     "It requires a webcam for every written message."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0029",
+    "cat": "ITHS_L1_L4",
+    "q": "What is a website?",
+    "explain": "A website is a collection of pages and related content under a common domain, published on a server. Real-time messaging, cloud folders, and webcam meetings describe other tools.",
+    "options": [
+     "A real-time message sent from one user to another.",
+     "A collection of web pages identified by a domain and published on a server.",
+     "A cloud folder synchronized across devices.",
+     "A video meeting requiring a webcam for each participant."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0030",
+    "cat": "ITHS_L1_L4",
+    "q": "What is instant messaging?",
+    "explain": "Instant messaging sends real-time messages from one user to another over a network. Websites, social spaces, and voice calls describe other services.",
+    "options": [
+     "A collection of pages under a common domain.",
+     "A social space for reconnecting with friends.",
+     "A voice connection using microphones and speakers.",
+     "A process of sending real-time messages from one user to another."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0031",
+    "cat": "ITHS_L1_L4",
+    "q": "What is social networking used for?",
+    "explain": "Social networking helps members reconnect and meet people with similar interests. Text exchange, file storage, and voice calls describe other services.",
+    "options": [
+     "Sending real-time text messages across a network.",
+     "Storing files on remote servers and syncing devices.",
+     "Reconnecting with friends and meeting members with similar interests.",
+     "Holding audio meetings with microphones and speakers."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0032",
+    "cat": "ITHS_L1_L4",
+    "q": "What additional device is required for video conferencing?",
+    "explain": "Video conferencing requires a webcam so participants can see each other. Printers, scanners, and projectors do not provide visual capture.",
+    "options": [
+     "Webcam",
+     "Printer",
+     "Scanner",
+     "Projector"
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0033",
+    "cat": "ITHS_L1_L4",
+    "q": "How can a user join a Zoom meeting?",
+    "explain": "Zoom meetings can be joined by entering a meeting ID, clicking an invitation link, or using a web browser. Plugins, cloud sync, and Banner registration do not provide meeting access.",
+    "options": [
+     "By installing Adobe Flash Player.",
+     "By entering a meeting ID or clicking an invitation link.",
+     "By syncing Dropbox folders.",
+     "By registering through Banner."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0034",
+    "cat": "ITHS_L1_L4",
+    "q": "Which Microsoft Teams area organizes conversations and tasks into specific topics or projects?",
+    "explain": "Channels organize conversations and tasks by topic or project. Activity shows notifications, Chats holds conversations, and Teams lists memberships.",
+    "options": [
+     "Activity",
+     "Chats",
+     "Teams",
+     "Channels"
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0035",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement describes an advantage of electronic communication?",
+    "explain": "Speedy transmission and wide coverage are advantages. Infrastructure cost, distorted faxed data, and undelivered data are disadvantages.",
+    "options": [
+     "High investment is needed for infrastructural development.",
+     "Faxed data may be distorted and weaken legal value.",
+     "Messages move quickly and reach wide coverage.",
+     "Data may remain unretrieved after a system fault."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0036",
+    "cat": "ITHS_L1_L4",
+    "q": "Which disadvantage concerns the legal status of electronic communication?",
+    "explain": "Distorted faxed data can weaken legal value. Fast transmission, wide coverage, and feedback exchange are advantages.",
+    "options": [
+     "Faxed data may be distorted and weaken legal value.",
+     "Messages may travel quickly across networks.",
+     "Coverage may extend to remote locations.",
+     "Feedback may be exchanged with distant users."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0037",
+    "cat": "ITHS_L1_L4",
+    "q": "What causes undelivered data in electronic communication?",
+    "explain": "Undelivered data results from system error or technology fault. Coverage, cost, and feedback exchange describe benefits.",
+    "options": [
+     "Wide coverage across regions.",
+     "System error or fault with the technology.",
+     "Low cost of sending messages.",
+     "Exchange of feedback through forums."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0038",
+    "cat": "ITHS_L1_L4",
+    "q": "What is Dropbox?",
+    "explain": "Dropbox stores, accesses, shares, and synchronizes files across devices through remote servers. Student records, webinars, and course delivery belong to other systems.",
+    "options": [
+     "A student information system for academic records.",
+     "A video conferencing tool for webinars and chat.",
+     "A learning management system for quizzes and forums.",
+     "A cloud storage and sharing service that syncs files across devices."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0039",
+    "cat": "ITHS_L1_L4",
+    "q": "What is file synchronization?",
+    "explain": "File synchronization keeps copies identical across devices, so an update on one device appears on the others. Uploading, downloading, and format conversion describe other operations.",
+    "options": [
+     "Sending a file from a computer to the internet.",
+     "Receiving a file from the internet onto a computer.",
+     "Keeping multiple copies of files identical across devices.",
+     "Converting a document into a portable format."
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0040",
+    "cat": "ITHS_L1_L4",
+    "q": "Which Google Drive file type is used to collect and organize data?",
+    "explain": "Forms collect and organize response data. Documents compose text, Drawings create graphics, and Presentations build slideshows.",
+    "options": [
+     "Forms",
+     "Drawings",
+     "Presentations",
+     "Documents"
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0041",
+    "cat": "ITHS_L1_L4",
+    "q": "Which Google Drive file type is used to create simple vector graphics or diagrams?",
+    "explain": "Drawings create simple vector graphics or diagrams. Documents compose text, Spreadsheets organize rows and columns, and Forms collect responses.",
+    "options": [
+     "Documents",
+     "Drawings",
+     "Spreadsheets",
+     "Forms"
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0042",
+    "cat": "ITHS_L1_L4",
+    "q": "Which OneDrive feature lets multiple users edit Office documents together?",
+    "explain": "Real-time coauthoring lets multiple users edit Office documents together. Backup, search, and remote storage keep files available but do not define simultaneous editing.",
+    "options": [
+     "Automatic backup",
+     "Quick file search",
+     "Remote storage",
+     "Real-time coauthoring"
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0043",
+    "cat": "ITHS_L1_L4",
+    "q": "Which cloud productivity platform includes Word, Excel, PowerPoint, Outlook, OneDrive, and Teams?",
+    "explain": "Microsoft 365 is the cloud productivity platform containing Word, Excel, PowerPoint, Outlook, OneDrive, and Teams. Banner, Moodle, and Zoom serve records, courses, and meetings.",
+    "options": [
+     "Banner",
+     "Moodle",
+     "Microsoft 365",
+     "Zoom"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0044",
+    "cat": "ITHS_L1_L4",
+    "q": "What is Microsoft Word used to do?",
+    "explain": "Word creates, edits, formats, saves, prints, and shares documents. Records, meetings, and cloud storage belong to other systems.",
+    "options": [
+     "Create, edit, format, save, print, and share documents.",
+     "Manage registration, academic history, and financial aid.",
+     "Host video meetings and instant messaging chats.",
+     "Store files on remote servers and sync devices."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0045",
+    "cat": "ITHS_L1_L4",
+    "q": "Which documents is Microsoft Word commonly used to manage in medical settings?",
+    "explain": "Word supports patient records, treatment plans, reports, forms, and administrative paperwork. Webinar transcripts, sync logs, and quiz reports belong to other systems.",
+    "options": [
+     "Live webinar recordings and breakout room transcripts.",
+     "Patient records, treatment plans, reports, forms, and paperwork.",
+     "Cloud synchronization logs and device backups.",
+     "Quiz randomization reports and passing scores."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0046",
+    "cat": "ITHS_L1_L4",
+    "q": "Which action belongs to text editing rather than text formatting?",
+    "explain": "Pasting text moves existing content, which is editing. Font size, bold, and highlighting change appearance, which is formatting.",
+    "options": [
+     "Change font size.",
+     "Apply bold.",
+     "Highlight text.",
+     "Paste text."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0047",
+    "cat": "ITHS_L1_L4",
+    "q": "Adjusting indentation belongs to which Microsoft Word feature?",
+    "explain": "Indentation controls paragraph position. Editing moves content, text formatting changes character appearance, and insert features add objects.",
+    "options": [
+     "Text editing",
+     "Text formatting",
+     "Paragraph formatting",
+     "Insert features"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0048",
+    "cat": "ITHS_L1_L4",
+    "q": "Which item belongs to Insert features in Microsoft Word?",
+    "explain": "Header and footer are inserted page elements. Line spacing belongs to paragraph formatting, bold belongs to text formatting, and undo belongs to editing.",
+    "options": [
+     "Header and footer",
+     "Line spacing",
+     "Bold",
+     "Undo"
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0049",
+    "cat": "ITHS_L1_L4",
+    "q": "What does Ctrl+N do in Microsoft Word?",
+    "explain": "Ctrl+N creates a new document. Ctrl+S saves, Ctrl+P prints, and Ctrl+Z undoes.",
+    "options": [
+     "Saves the current document.",
+     "Creates a new document.",
+     "Prints the current document.",
+     "Undoes the last action."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0050",
+    "cat": "ITHS_L1_L4",
+    "q": "Which feature saves time when starting a new project by providing a ready-made layout?",
+    "explain": "A template supplies a ready-made layout, which speeds the start of a project. Zooming changes magnification, the ruler guides margins, and Read Mode changes viewing style.",
+    "options": [
+     "Zooming",
+     "Ruler",
+     "Template",
+     "Read Mode"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0051",
+    "cat": "ITHS_L1_L4",
+    "q": "What is a cover page in a document?",
+    "explain": "A cover page is the first page of a document. Last, middle, and second page positions describe other locations.",
+    "options": [
+     "The last page of a document.",
+     "The middle page of a document.",
+     "The second page of a document.",
+     "The first page of a document."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0052",
+    "cat": "ITHS_L1_L4",
+    "q": "Which command creates a copy while keeping the original document unchanged?",
+    "explain": "Save As writes a separate copy and leaves the original intact. Save updates the current file, pinning adds quick access, and zooming changes display size.",
+    "options": [
+     "Save As",
+     "Save",
+     "Pin",
+     "Zoom"
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0053",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement about pinning and compatibility mode is correct?",
+    "explain": "Pinning adds a frequent document to Backstage view, and compatibility mode appears for files created in earlier versions. PDF conversion, deletion, ribbon maximization, font changes, and cover page creation describe other operations.",
+    "options": [
+     "Pinning converts a file to PDF, and compatibility mode deletes the original.",
+     "Pinning adds a frequent document to Backstage view, and compatibility mode appears for files created in earlier versions.",
+     "Pinning creates a copy with a new name, and compatibility mode maximizes the Ribbon.",
+     "Pinning hides the ruler, and compatibility mode changes the font size."
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0054",
+    "cat": "ITHS_L1_L4",
+    "q": "Which commands appear by default on the Quick Access Toolbar?",
+    "explain": "The Quick Access Toolbar shows Save, Undo, and Redo by default. Clipboard, character styling, and file commands are not the default trio.",
+    "options": [
+     "Cut, Copy, and Paste",
+     "Bold, Italic, and Underline",
+     "Save, Undo, and Redo",
+     "New, Open, and Print"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0055",
+    "cat": "ITHS_L1_L4",
+    "q": "Auto-hide Ribbon is mainly useful when you want to:",
+    "explain": "Auto-hide Ribbon displays the document full screen and hides the Ribbon, maximizing viewing space. Table insertion, margin changes, and printing are separate commands.",
+    "options": [
+     "Insert a table.",
+     "Change margins.",
+     "Print a document.",
+     "Maximize document viewing space."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0056",
+    "cat": "ITHS_L1_L4",
+    "q": "In a Microsoft Word document, where is the ruler located?",
+    "explain": "The Ruler sits at the top and left of the document and supports precise adjustment. The bottom bar is the Status Bar, and middle or right positions do not define it.",
+    "options": [
+     "Top and to the left of the document.",
+     "Middle and to the right of the document window.",
+     "Middle of the document window.",
+     "Bottom of the document window."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0057",
+    "cat": "ITHS_L1_L4",
+    "q": "Which item is not a key Microsoft Word toolbar?",
+    "explain": "The key toolbars are Ribbon, Quick Access Toolbar, and Status Bar. Backstage view handles file commands and is not a key toolbar.",
+    "options": [
+     "Ribbon",
+     "Backstage view",
+     "Quick Access Toolbar",
+     "Status Bar"
+    ],
+    "correct": 1
+   },
+   {
+    "id": "ITHS0058",
+    "cat": "ITHS_L1_L4",
+    "q": "Which view is best for reading large amounts of text in full screen?",
+    "explain": "Read Mode opens the document full screen for reading large amounts of text. Print Layout mirrors printed pages, Web Layout mimics a webpage, and Backstage view handles file commands.",
+    "options": [
+     "Print Layout",
+     "Web Layout",
+     "Read Mode",
+     "Backstage view"
+    ],
+    "correct": 2
+   },
+   {
+    "id": "ITHS0059",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement matches a Word view to its purpose?",
+    "explain": "Read Mode suits full-screen reading. Print Layout shows printed page appearance, Web Layout displays a webpage, and Backstage view handles file-level commands.",
+    "options": [
+     "Print Layout displays the document as a webpage.",
+     "Web Layout shows the default printed page.",
+     "Backstage view is mainly for reading long passages.",
+     "Read Mode opens the document full screen for reading."
+    ],
+    "correct": 3
+   },
+   {
+    "id": "ITHS0060",
+    "cat": "ITHS_L1_L4",
+    "q": "Which statement matches a Word interface element to its purpose?",
+    "explain": "The Status Bar shows page number and word count, and the Ribbon contains tabs with command groups. Pinning, margin adjustment, and Quick Access Toolbar commands belong to other elements.",
+    "options": [
+     "Status Bar shows page count, and Ribbon holds command tabs.",
+     "Status Bar stores pinned files, and Ribbon adjusts margins.",
+     "Ruler shows page count, and Quick Access holds command tabs.",
+     "Quick Access adjusts margins, and Ruler stores pinned files."
+    ],
+    "correct": 0
+   },
+   {
+    "id": "ITHS0061",
+    "cat": "ITHS_L1_L4",
+    "q": "Match each e-learning type to its defining feature.",
+    "explain": "Synchronous learning happens in real time, asynchronous learning uses recorded materials at chosen times, blended learning joins classroom and online work, mobile learning uses handheld devices, self-paced learning controls rate and order, and collaborative learning relies on shared online work.",
+    "type": "matching",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Synchronous e-learning"
+     },
+     {
+      "id": "2",
+      "text": "Asynchronous e-learning"
+     },
+     {
+      "id": "3",
+      "text": "Blended learning"
+     },
+     {
+      "id": "4",
+      "text": "Mobile learning"
+     },
+     {
+      "id": "5",
+      "text": "Self-paced learning"
+     },
+     {
+      "id": "6",
+      "text": "Collaborative e-learning"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Learner controls rate and order."
+     },
+     {
+      "id": "B",
+      "text": "Classroom sessions join online tasks."
+     },
+     {
+      "id": "C",
+      "text": "Handheld devices deliver lessons."
+     },
+     {
+      "id": "D",
+      "text": "Live sessions allow immediate exchange."
+     },
+     {
+      "id": "E",
+      "text": "Recorded materials support study at chosen times."
+     },
+     {
+      "id": "F",
+      "text": "Shared online work builds group products."
+     }
+    ],
+    "correct_pairs": {
+     "1": "D",
+     "2": "E",
+     "3": "B",
+     "4": "C",
+     "5": "A",
+     "6": "F"
+    }
+   },
+   {
+    "id": "ITHS0062",
+    "cat": "ITHS_L1_L4",
+    "q": "Match each learning management system area or path to its role.",
+    "explain": "The dashboard is the main page, My Courses lists enrollments, Calendar tracks deadlines and events, Notifications display alerts, User Profile stores account settings, and course access moves from dashboard to My Courses to the chosen course.",
+    "type": "matching",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Dashboard"
+     },
+     {
+      "id": "2",
+      "text": "My Courses"
+     },
+     {
+      "id": "3",
+      "text": "Calendar"
+     },
+     {
+      "id": "4",
+      "text": "Notifications"
+     },
+     {
+      "id": "5",
+      "text": "User Profile"
+     },
+     {
+      "id": "6",
+      "text": "Course access path"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Stores personal information and account settings."
+     },
+     {
+      "id": "B",
+      "text": "Lists enrolled courses."
+     },
+     {
+      "id": "C",
+      "text": "Moves from dashboard to My Courses to the chosen course."
+     },
+     {
+      "id": "D",
+      "text": "Main page presenting courses and account areas."
+     },
+     {
+      "id": "E",
+      "text": "Displays alerts from teachers and the platform."
+     },
+     {
+      "id": "F",
+      "text": "Shows assignment deadlines, quiz dates, and course events."
+     }
+    ],
+    "correct_pairs": {
+     "1": "D",
+     "2": "B",
+     "3": "F",
+     "4": "E",
+     "5": "A",
+     "6": "C"
+    }
+   },
+   {
+    "id": "ITHS0063",
+    "cat": "ITHS_L1_L4",
+    "q": "Match each learning management system activity to its function.",
+    "explain": "Assignments collect files for review and grades, forums support threaded discussion, quizzes score attempts with limits and feedback, surveys gather opinions, chat supports live clarification, and messages provide private communication.",
+    "type": "matching",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Assignment"
+     },
+     {
+      "id": "2",
+      "text": "Forum"
+     },
+     {
+      "id": "3",
+      "text": "Quiz"
+     },
+     {
+      "id": "4",
+      "text": "Survey"
+     },
+     {
+      "id": "5",
+      "text": "Chat"
+     },
+     {
+      "id": "6",
+      "text": "Message"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Private notes move between chosen users."
+     },
+     {
+      "id": "B",
+      "text": "Threaded posts support group discussion."
+     },
+     {
+      "id": "C",
+      "text": "Collected files receive review and grades."
+     },
+     {
+      "id": "D",
+      "text": "Scored items use limits and feedback."
+     },
+     {
+      "id": "E",
+      "text": "Opinions gauge pace, level, and quality."
+     },
+     {
+      "id": "F",
+      "text": "Live text room clarifies questions."
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "B",
+     "3": "D",
+     "4": "E",
+     "5": "F",
+     "6": "A"
+    }
+   },
+   {
+    "id": "ITHS0064",
+    "cat": "ITHS_L1_L4",
+    "q": "Match each electronic communication or cloud process to its description.",
+    "explain": "A website is a domain-based collection of pages, instant messaging is real-time text exchange, social networking supports shared interests, audio conferencing uses microphones and speakers, video conferencing adds webcams, and file synchronization keeps copies identical.",
+    "type": "matching",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Website"
+     },
+     {
+      "id": "2",
+      "text": "Instant messaging"
+     },
+     {
+      "id": "3",
+      "text": "Social networking"
+     },
+     {
+      "id": "4",
+      "text": "Audio conferencing"
+     },
+     {
+      "id": "5",
+      "text": "Video conferencing"
+     },
+     {
+      "id": "6",
+      "text": "File synchronization"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Voice links rely on microphones and speakers."
+     },
+     {
+      "id": "B",
+      "text": "Domain-linked pages sit on a server."
+     },
+     {
+      "id": "C",
+      "text": "Visual calls require webcams for participants."
+     },
+     {
+      "id": "D",
+      "text": "Copies stay identical across linked devices."
+     },
+     {
+      "id": "E",
+      "text": "Real-time text crosses a network."
+     },
+     {
+      "id": "F",
+      "text": "Members meet around shared interests."
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "E",
+     "3": "F",
+     "4": "A",
+     "5": "C",
+     "6": "D"
+    }
+   }
+  ]
+ }
+}
