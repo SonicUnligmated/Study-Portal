@@ -345,33 +345,61 @@ A material can have a picture study instead of Markdown notes:
   with a thin progress bar; a summary bar above the chapters shows all solved labels.
   A chapter (and its pictures) loads the first time it is opened; pictures are lazy-loaded.
   Inside a chapter, a row of chips lists the pictures with their counts (click to jump).
-- Each picture is a section: title, picture, solved count (e.g. 5 / 12), 👁 toggle,
-  teaching caption and a credit line (author · license link · source link).
-- **Labels shown** (default): the labeled picture.
-- **Labels hidden** (👁): the blank picture with a typing slot at every hotspot. Typing
-  uses the quiz engine's labeling logic (section 14): exact capitals and spelling, `accept`
+- Each picture is a section: title, picture, solved count (e.g. 5 / 12), three mode
+  buttons (**🧩 Word bank · ⌨ Type · 👁 Labels**), teaching caption and a credit line
+  (author · license link · source link; "Animation:" for our own animated drawing).
+- **Word bank** (default for every picture except the bones): the blank picture with an
+  empty slot at every hotspot and a shuffled chip for every open label under it. Drag a
+  chip onto a slot, or tap a chip then a slot (or a slot then a chip). A wrong drop
+  bounces back with "not that one · try again"; a right one locks for good with the PT1
+  celebration and the chip leaves the bank. Duplicate answers (e.g. two "Molars") get one
+  chip each. A picture can limit its modes with `modes` (Blood Cells: `["bank","show"]`).
+- **Type**: the same blank picture with a typing slot at every hotspot. Typing uses the
+  quiz engine's labeling logic (section 14): exact capitals and spelling, `accept`
   alternatives, spaces trimmed/collapsed, the live highlighter marking wrong letters or
   capitals in the accent colour, and the lowercase hints on Enter ("wrong capitalization",
-  "missing slash", "not that one · try again"). A right slot locks for good with the PT1
-  celebration; finishing a picture adds the confetti. Tab moves between slots, Enter checks.
-- **↺ restart** sits at the bottom right of the picture. It only appears once at least one
-  slot of that picture is solved, and it clears that picture's slots only.
-- **Bone pictures** (`kind: "single-structure"`, one `answer` + `accept`, no hotspots):
-  labels shown → the answer as a caption under the picture; labels hidden → one
-  "Name this bone" box under the picture with the same strict logic. While hidden, the
-  title, caption and source link (which would give the name away) are not shown, and the
-  chapter chips call them "Bone 1", "Bone 2", ….
-- Progress is saved in `localStorage` (`sp_study_images_v1`), per picture and label, and
-  is separate from quiz progress (no solved questions, Mastery or rewards). The 👁 choice
-  is not saved: pictures open with labels shown.
+  "missing slash", "not that one · try again"). Tab moves between slots, Enter checks.
+- **Labels**: the labeled picture.
+- **Hints**: a label can carry a lowercase `hint` ("direction term", "muscle",
+  "division", "bone region") for slots that are ambiguous on the picture. It shows inside
+  the empty slot (word bank) or as the placeholder (type).
+- **Progress per mode**: word-bank and typed progress are stored separately; the solved
+  count shows labels solved in either. **↺ restart** (bottom right of the picture) only
+  appears when the current mode has progress and clears only that mode for that picture.
+- **XP**: +2 XP for each correct word-bank drop, through the normal profile XP
+  (`StudyProfiles.bumpQuestionsAnswered`). Each slot pays once per profile, ever: a
+  separate ledger (`sp_study_images_xp_v1`, keyed by profile uid or "local") is never
+  cleared by restart, so restart-and-redrag cannot farm XP. Typing gives no XP.
+- **Hover / tap highlight**: a label can carry `anchor` (leader-line end, in %) and
+  `region` (list of polygons in % of the picture). Hovering or focusing a slot, its leader
+  line or the region lights the whole region in the accent colour (tap toggles it on touch).
+  Regions are drawn for the respiratory tract, blood-flow heart, meninges, tooth, teeth
+  types, side-view skull and body planes, and for the 3 skin layers; leader-line hover
+  works wherever an anchor exists.
+- **Extra pictures** (`extra: true`, e.g. Parts of a Cell, which the lectures do not cover)
+  come last in their chapter with a grey "Extra (Not In Lecture)" badge and do not count
+  in the chapter or overall totals.
+- **Bone pictures** (`kind: "single-structure"`, one `answer` + `accept`, no hotspots) are
+  one paged card per lecture: "Bone Anatomy  i / n" with ‹ Previous / Next ›. They start in
+  Type mode with "What is this bone called?" ("What are these bones called?" when
+  `plural: true`); the word bank (toggle) offers the answer plus 5 other bone names and a
+  drop box. Labels mode shows the name under the picture. There are no captions, and the
+  source link (which names the bone) is shown only in Labels mode.
+- Progress is saved in `localStorage` (`sp_study_images_v1`:
+  `{set:{picture:{m:{bank:{slots},type:{slots}}}}}`; the older `{slots}` form is read as
+  typed progress) and is separate from quiz progress (no solved questions, Mastery or
+  rewards). The chosen mode is not saved.
 - PT2 is draft-marked, so the study header shows the Draft badge, and so do the chapters of
   draft lectures (14–15, 16–17, 18–20), matching the hub.
 - At narrow widths a labeled diagram keeps a readable minimum size and scrolls sideways
   inside its frame, like the labeling type.
 - Files: `banks/medterm/study/study-images.json` (chapters by lecture id) and
   `banks/medterm/study/<lecture>/` for the new pictures, with `CREDITS.md`. The Lectures
-  12 & 13 blank hearts reuse `banks/medterm/img/mt12-label-*.png` and the bones reuse
-  `banks/medterm/img/bones/`, so nothing is duplicated.
+  12 & 13 blank hearts (q2–q5) reuse `banks/medterm/img/mt12-label-*.png` and the bones
+  reuse `banks/medterm/img/bones/`, so nothing is duplicated. The blood-flow heart is our
+  own SVG (`lec12-13/heart-flow-{labeled,blank}.svg`, animated with SMIL).
+- Catalog: a material with `"hidden": true` stays in `data/catalog.json` but is not shown
+  on the portal (the Only In Finals and Finals placeholders use this).
 
 ## 13. Short-answer questions (`saq`)
 
@@ -521,6 +549,11 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
   - `"examDiffers": true` on a material is shorthand for the amber "Real Exam Is
     Trickier" badge, tip "Good for practice. Some definitions overlap, so learn each
     term's function exactly as the slides word it." (Study Skills · Periodic Test 1).
+    It shows on the portal card with the tooltip only (no note line under the title) and
+    **once** in the hub, next to the ⚙ Quiz settings button (`#hubBadges`), not on each
+    form card.
+  - A `badges[]` entry may set `"note": false` (no note line on the portal card) and
+    `"where": ["card"]` (portal card only, not the form cards).
 - Per-question badges: a question may carry `badges: [{text, tone, tip?}]`; they show above
   the question text in the quiz (same component; no tip → no tooltip). ITHS0006/0007 carry
   the amber "Discontinued", and their explanations end with "Note: Adobe Flash Player

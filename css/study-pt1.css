@@ -210,8 +210,6 @@
 #studyView .simg-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
 #studyView .simg-title{margin:0;font-family:var(--head);font-size:1.15rem;font-weight:600;flex:1;min-width:0;color:var(--col-text-main)}
 #studyView .simg-count{font-family:var(--mono);font-size:.78rem;color:var(--col-text-muted);padding:3px 8px;border-radius:999px;border:1px solid var(--border)}
-#studyView .simg-eye{font-family:var(--mono);font-size:.76rem;padding:6px 12px;border-radius:999px;border:1px solid var(--border-strong,var(--border));background:rgba(var(--accent-0-rgb),.08);color:var(--accent-0);cursor:pointer}
-#studyView .simg-eye[aria-pressed="true"]{background:rgba(var(--accent-0-rgb),.22);border-color:var(--accent-0)}
 #studyView .simg-frame{position:relative}
 #studyView .simg-figure.single{min-width:0;max-width:440px;margin:0 auto}
 #studyView .simg-stage.single{display:flex;justify-content:center}
@@ -230,6 +228,33 @@
 #studyView .simg-caption{margin:8px 0 6px;line-height:1.6;color:var(--col-text-main)}
 #studyView .simg-credit{margin:0;font-size:.72rem;color:var(--col-text-muted)}
 #studyView .simg-credit a{color:var(--accent-0)}
+/* picture study modes: 🧩 word bank · ⌨ type · 👁 labels */
+#studyView .simg-modes{display:inline-flex;gap:0;border:1px solid var(--border-strong,var(--border));border-radius:999px;overflow:hidden}
+#studyView .simg-mode{font-family:var(--mono);font-size:.74rem;padding:6px 11px;border:0;border-right:1px solid var(--border);background:rgba(var(--accent-0-rgb),.05);color:var(--col-text-main);cursor:pointer;white-space:nowrap}
+#studyView .simg-mode:last-child{border-right:0}
+#studyView .simg-mode:hover{background:rgba(var(--accent-0-rgb),.14)}
+#studyView .simg-mode[aria-pressed="true"]{background:rgba(var(--accent-0-rgb),.26);color:var(--accent-0);font-weight:700}
+#studyView .simg-mode:focus-visible{outline:2px solid var(--accent-0);outline-offset:-2px}
+#studyView .simg-figure .label-slot{z-index:2}
+#studyView .simg-regions{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;pointer-events:none;overflow:visible}
+#studyView .simg-reg-poly{fill:transparent;stroke:transparent;pointer-events:all;transition:fill .15s,stroke .15s}
+#studyView .simg-leader-hit{stroke:transparent;stroke-width:16px;vector-effect:non-scaling-stroke;pointer-events:stroke}
+#studyView .simg-reg.hl .simg-reg-poly{fill:rgba(var(--accent-0-rgb),.42);stroke:var(--accent-0);stroke-width:3px;vector-effect:non-scaling-stroke}
+#studyView .simg-reg.hl .simg-leader-hit{stroke:rgba(var(--accent-0-rgb),.35);stroke-width:6px}
+#studyView .label-slot.hl,#studyView .simg-hot.hl{outline:3px solid var(--accent-0);outline-offset:1px}
+#studyView .simg-hot{position:absolute;z-index:2;border-radius:6px;cursor:help}
+#studyView .label-slot.slot-picked{outline:3px dashed var(--accent-0);outline-offset:1px}
+#studyView .simg-slot-hint{font-size:clamp(8px,1.05cqw,12px);font-style:italic;color:#475569;pointer-events:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;padding:0 2px}
+#studyView .label-slot.typing .label-input::placeholder{font-style:italic;color:#64748b;opacity:1}
+#studyView .simg-bank{margin-top:10px}
+#studyView .simg-name-slot{position:relative;left:auto;top:auto;min-height:44px;width:100%;max-width:440px;margin:0 auto;font-size:.9rem;color:var(--col-text-muted)}
+#studyView .simg-name .simg-name-label{text-align:center}
+#studyView .simg-page-no{font-family:var(--mono);font-size:.78rem;font-weight:400;color:var(--col-text-muted);margin-left:6px}
+#studyView .simg-pager-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+#studyView .simg-page{font-family:var(--mono);font-size:.8rem;color:var(--col-text-muted)}
+#studyView .simg-index-chip.extra{border-style:dashed}
+#studyView .simg-title .note-badge{vertical-align:middle;margin-left:6px}
+@media (max-width:480px){#studyView .simg-mode{padding:6px 8px;font-size:.7rem}#studyView .simg-modes{width:100%}#studyView .simg-mode{flex:1}}
 /* lecture cards in the PT2 hub: card + its own 📖 Study button */
 .card-study-wrap{position:relative;display:flex}
 .card-study-wrap>.card{flex:1;padding-bottom:52px}
