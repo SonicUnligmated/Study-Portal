@@ -71,14 +71,87 @@
     {
       "id": "english",
       "name": "English",
-      "locked": true,
+      "locked": false,
       "materials": [
         {
           "id": "en1",
-          "title": "Reading & vocab",
-          "subtitle": "Coming soon",
-          "bank": null,
-          "locked": true
+          "title": "Periodic Test 1",
+          "subtitle": "14 forms + 2 video sets · 1,712 questions · choice & linking",
+          "bank": "banks/english/pt1.json",
+          "locked": false,
+          "badges": [
+            {
+              "text": "Excessive",
+              "tip": "Far more questions than the exam needs. Use it for extra practice, not as a guide to the exam's size.",
+              "tone": "amber"
+            }
+          ],
+          "forms": [
+            {
+              "id": "A",
+              "title": "Form 1 · Present simple"
+            },
+            {
+              "id": "B",
+              "title": "Form 2 · Don’t/doesn’t, questions & frequency adverbs"
+            },
+            {
+              "id": "C",
+              "title": "Form 3 · Time clauses, memory reading & present progressive"
+            },
+            {
+              "id": "D",
+              "title": "Form 4 · Simple vs. progressive & stative verbs"
+            },
+            {
+              "id": "E",
+              "title": "Form 5 · Stative verbs & pronouns"
+            },
+            {
+              "id": "F",
+              "title": "Form 6 · Pronouns & reflexive pronouns"
+            },
+            {
+              "id": "G",
+              "title": "Form 7 · Possessive & object pronouns"
+            },
+            {
+              "id": "H",
+              "title": "Form 8 · Pronouns in context & medical definitions"
+            },
+            {
+              "id": "I",
+              "title": "Form 9 · Medical definitions & vocabulary"
+            },
+            {
+              "id": "J",
+              "title": "Form 10 · Medical vocabulary (2)"
+            },
+            {
+              "id": "K",
+              "title": "Form 11 · Medical vocabulary (3)"
+            },
+            {
+              "id": "L",
+              "title": "Form 12 · Medical vocabulary (4)"
+            },
+            {
+              "id": "M",
+              "title": "Form 13 · Medical vocabulary & nouns"
+            },
+            {
+              "id": "N",
+              "title": "Form 14 · Word forms, verbs, surgery & affixes"
+            },
+            {
+              "id": "O",
+              "title": "Video: Insomnia"
+            },
+            {
+              "id": "P",
+              "title": "Video: Healers"
+            }
+          ]
         },
         {
           "id": "en2",

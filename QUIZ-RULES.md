@@ -559,3 +559,25 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
 - Progress and mastery are namespaced by bank path (`iths/pt1`). The party/lobby bank
   picker lists it automatically because the subject is unlocked. Question ids are
   unique across all banks (checked by the test suite).
+
+## 18. English Periodic Test 1 (`banks/english/pt1.json`)
+
+- Source `eng1pt1` (subjectId `English1`): 1712 questions with unique ids
+  (Eng1PT10001–Eng1PT11712), 1701 mcq + 11 matching, 31 categories, 72 source forms of 23–24.
+- Regrouped (content unchanged) into the portal's forms, overriding one-card-per-category:
+  - forms **A–N**: 14 balanced forms (112–120, ≤ 120, 1638 questions) with the categories in
+    unit order U1 grammar → U2 → U9 → medical vocabulary units. A category is only split
+    when the size cap forces it (Medical-Vocabulary spans forms 9–13);
+  - forms **O** and **P**: the two video categories on their own ("Video: Insomnia" 36,
+    "Video: Healers" 38), each with the grey "Not In Exam" badge
+    ("These video questions weren't part of the exam.").
+- The bank's `cards: [{id, title, forms:["A"], badges?}]` maps each form to one hub card
+  (the engine's group spec takes `forms` as well as `cats`). `showCardCounts: true` puts the
+  question count first on each card ("117 questions · …").
+- Catalog `en1` carries `badges: [{text:"Excessive", tone:"amber", tip:"Far more questions
+  than the exam needs. Use it for extra practice, not as a guide to the exam's size."}]`,
+  so the portal card and every form show it (video forms show both badges). `en2` stays locked.
+- Catalog `forms: [{id, title}]` on a material lets the party/lobby picker list that
+  material's real forms by title (ITHS: "Lectures 1–4"; English: the 16 forms) instead
+  of the default A–H. Party mode plays the mcqs only.
+- The bank (603 KB minified, 137 KB gzipped) is fetched only when its card is opened.

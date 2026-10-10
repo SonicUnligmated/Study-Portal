@@ -45,6 +45,14 @@
     return catalogPromise;
   }
 
+  /* A material may list its own forms ([{id, title}] in the catalog); otherwise A–H. */
+  function formsOf(m) {
+    if (m && Array.isArray(m.forms) && m.forms.length) {
+      return m.forms.map((f) => (typeof f === 'string' ? { id: f, title: 'Form ' + f } : { id: String(f.id), title: String(f.title || 'Form ' + f.id) }));
+    }
+    return FORMS.map((f) => ({ id: f, title: 'Form ' + f }));
+  }
+
   function openSubjects(catalog) {
     return (catalog.subjects || []).filter((s) => !s.locked);
   }
@@ -80,16 +88,21 @@
   function labelFor(bank, form, catalog) {
     let subjectName = '';
     let materialTitle = '';
+    let formTitle = '';
     (catalog.subjects || []).forEach((s) => {
       flatMaterials(s).forEach((m) => {
         if (m.bank === bank) {
           subjectName = s.name || '';
           materialTitle = m.title || m.id || '';
+          if (Array.isArray(m.forms)) {
+            const hit = formsOf(m).find((f) => f.id === String(form || 'A').toUpperCase());
+            if (hit) formTitle = hit.title;
+          }
         }
       });
     });
     const mat = materialTitle || bank.split('/').pop() || 'Bank';
-    return (subjectName ? subjectName + ' · ' : '') + mat + ' · Form ' + (form || 'A');
+    return (subjectName ? subjectName + ' · ' : '') + mat + ' · ' + (formTitle || 'Form ' + (form || 'A'));
   }
 
   /**
@@ -135,10 +148,10 @@
       const mats = subject ? openMaterials(subject) : [];
       const options = [];
       mats.forEach((m) => {
-        FORMS.forEach((f) => {
+        formsOf(m).forEach((f) => {
           options.push({
-            value: encodeValue(m.bank, f),
-            label: (m.title || m.id) + ' · Form ' + f
+            value: encodeValue(m.bank, f.id),
+            label: (m.title || m.id) + ' · ' + f.title
           });
         });
       });
@@ -228,14 +241,14 @@
       if (!mats.length) return;
       chunks.push('<optgroup label="' + (s.name || s.id) + '">');
       mats.forEach((m) => {
-        FORMS.forEach((f) => {
+        formsOf(m).forEach((f) => {
           chunks.push(
             '<option value="' +
-              encodeValue(m.bank, f) +
+              encodeValue(m.bank, f.id) +
               '">' +
               (m.title || m.id) +
-              ' · Form ' +
-              f +
+              ' · ' +
+              f.title +
               '</option>'
           );
         });
@@ -255,6 +268,7 @@
     parseValue,
     encodeValue,
     labelFor,
+    formsOf,
     optionsHtml
   };
 })(window);
