@@ -506,3 +506,39 @@ Party mode only plays types whose shape it knows.
 Note: the Medical Terminology bank says `subjectId: "medical_terminology"`, while
 the catalog uses the id `medterm`. The catalog id was kept so nothing else breaks.
 Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mismatch does not matter.
+
+### Note badges ("Real Exam Is Trickier", "Excessive", "Not In Exam")
+
+- Badge labels are **Title Case** (like subtitles): "Draft", "Coming Soon",
+  "Real Exam Is Trickier", "Excessive", "Not In Exam". No CSS uppercase. Tooltips
+  are normal sentences.
+- Data-driven, one component (`.note-badge` / `.card-badge.note-badge`, tones `amber`
+  and `grey`, fixed colours with an opaque light tint so they read the same in every
+  mood theme: amber #f59e0b / #fef3c7 / #92400e, grey #9ca3af / #f3f4f6 / #374151):
+  - catalog material `badges: [{text, tip, tone}]` → on its portal card (with the tip as a
+    small note under the title) and on **every** form/lecture card inside it;
+  - bank card group `cards[].badges` → on that card only;
+  - `"examDiffers": true` on a material is shorthand for the amber "Real Exam Is
+    Trickier" badge, tip "Good for practice. Some definitions overlap, so learn each
+    term's function exactly as the slides word it." (Study Skills · Periodic Test 1).
+- Desktop shows the tip on hover (title). On touch devices a tap on any note badge opens
+  it in a small body-level bubble (`#examTip`) without opening the card; tapping
+  elsewhere or Esc closes it.
+
+### Hidden catalog items
+
+- `"hidden": true` on an `online` item keeps it in the catalog but renders its tile
+  hidden, disabled, `tabindex=-1` and `aria-hidden` (not visible, not focusable).
+  Chat is parked this way; `js/chat.js` stays loaded. Delete the flag to bring it back.
+
+### Modal layering
+
+- Overlays open through `StudyLayers.raise(el)` (js/profiles.js), which moves the overlay
+  to the end of `<body>` and sets its z-index above every other open overlay. A panel
+  opened from another panel (e.g. Achievements from the Profile) is always on top.
+- Esc closes the top-most layer first (Achievements, then Profile). Closing
+  Achievements returns focus to the Profile's Achievements button.
+- The Profile card fits the viewport (`max-height: calc(100dvh - 40px)` with a 100vh
+  fallback). Its content scrolls inside, and the action bar (Close/Save) is sticky.
+  Modals do not lock background scroll (no existing pattern for it); the overlay
+  covers the page and `overscroll-behavior: contain` stops scroll chaining.

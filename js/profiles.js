@@ -702,6 +702,7 @@
       wireAuthUI(overlay);
     }
     fillModal();
+    raise(overlay);
     overlay.classList.add('show');
     setTimeout(function () {
       const input = overlay.querySelector('#profileNameInput');
@@ -772,6 +773,40 @@
     const overlay = document.getElementById('profileModal');
     if (overlay) overlay.classList.remove('show');
   }
+
+  /* —— stacked panels (profile → achievements) ——
+     Overlays are siblings at <body> level with the same z-index, so whichever was created
+     last used to win. raise() moves the overlay being opened to the end of <body> and one
+     z-index step above every other open overlay, so the newest panel is always on top. */
+  function overlayZ(el) { return parseInt(getComputedStyle(el).zIndex, 10) || 0; }
+  function openOverlays() {
+    return Array.prototype.slice.call(document.querySelectorAll('.modal-overlay.show'))
+      .map(function (el, i) { return { el: el, z: overlayZ(el), i: i }; })
+      .sort(function (a, b) { return (a.z - b.z) || (a.i - b.i); })
+      .map(function (x) { return x.el; });
+  }
+  function raise(el) {
+    if (!el) return;
+    if (el.parentNode !== document.body || el !== document.body.lastElementChild) document.body.appendChild(el);
+    el.style.zIndex = '';
+    let z = overlayZ(el) || 80;
+    openOverlays().forEach(function (o) { if (o !== el) z = Math.max(z, overlayZ(o) + 1); });
+    el.style.zIndex = String(z);
+  }
+  function topOverlay() { const all = openOverlays(); return all[all.length - 1] || null; }
+  const LAYERED = { profileModal: '#profileCloseBtn', achievementsModal: '#achievementsCloseBtn' };
+  // Esc closes the top-most layer first (achievements before the profile under it).
+  // Registered on window in the capture phase before the quiz engine's own Esc handler.
+  global.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    const top = topOverlay();
+    if (!top || !LAYERED[top.id]) return;
+    const btn = top.querySelector(LAYERED[top.id]);
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    if (btn) btn.click(); else top.classList.remove('show');
+  }, true);
+  global.StudyLayers = { raise: raise, top: topOverlay, open: openOverlays };
 
   global.StudyProfiles = {
     start: start,

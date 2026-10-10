@@ -398,6 +398,21 @@ html.mood-sad[data-skin], html.mood-crying[data-skin], html.mood-sleepy[data-ski
 }
 .modal-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
 .modal-actions .btn-ghost,.modal-actions .btn-gold{min-width:120px}
+.online-tile[hidden],.online-tile.is-hidden-tile{display:none!important}
+/* Profile panel fits the viewport: the card scrolls inside itself, the hero sits at its top
+   and the Close / Save row stays pinned to its bottom (always reachable). */
+#profileModal{overflow:hidden}
+#profileModal .profile-card{max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding-bottom:0}
+#profileModal .profile-card > .modal-actions{position:sticky;bottom:0;z-index:2;margin:18px -28px 0;padding:12px 28px 14px;background:linear-gradient(180deg,rgba(14,22,40,.0),rgba(14,22,40,.92) 30%);backdrop-filter:blur(10px)}
+#profileModal .profile-card > .profile-foot{margin-bottom:12px}
+#achievementsModal .achievements-card{max-height:calc(100vh - 40px);max-height:min(calc(100dvh - 40px),720px);overscroll-behavior:contain}
+#achievementsModal .achievements-list{overscroll-behavior:contain}
+@media (max-width:480px){
+  #profileModal,#achievementsModal{padding:12px}
+  #profileModal .profile-card{max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);padding:22px 16px 0}
+  #profileModal .profile-card > .modal-actions{margin:14px -16px 0;padding:10px 16px 12px;gap:8px}
+  #profileModal .modal-actions .btn-ghost,#profileModal .modal-actions .btn-gold{min-width:0;flex:1 1 auto}
+}
 
 /* Quiz view styles now live in css/quiz-pt1.css (copied from Med Physics PT1, scoped to .pt1q). */
 .mood-stamp{font-size:1.7rem;min-height:1.7rem}
@@ -471,7 +486,14 @@ html.mood-sad[data-skin], html.mood-crying[data-skin], html.mood-sleepy[data-ski
 .portal-card .sub{color:var(--text-dim);font-size:.88rem;font-family:var(--mono);margin:0 0 14px}
 .portal-card .go{font-family:var(--mono);font-size:.82rem;color:var(--cyan-bright)}
 .portal-card .lock-badge{position:absolute;top:14px;right:16px;font-size:1.1rem}
-.portal-card .draft-badge{display:inline-flex;align-items:center;vertical-align:middle;margin-left:8px;font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,transparent);line-height:1.3}
+.portal-card .draft-badge{display:inline-flex;align-items:center;vertical-align:middle;margin-left:8px;font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.02em;text-transform:none;padding:3px 9px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,transparent);line-height:1.3}
+/* Note badges (catalog examDiffers / badges[]): fixed colours with an opaque light tint so they read the same in every mood theme. amber = caution, grey = neutral. */
+.note-badge{display:inline-flex;align-items:center;vertical-align:middle;margin-left:8px;font-family:var(--mono);font-size:.68rem;font-weight:700;letter-spacing:.02em;text-transform:none;padding:3px 9px;border-radius:999px;border:1px solid #f59e0b;color:#92400e;background:#fef3c7;line-height:1.3;cursor:help;-webkit-text-fill-color:#92400e}
+.note-badge.grey{border-color:#9ca3af;color:#374151;background:#f3f4f6;-webkit-text-fill-color:#374151}
+.portal-card .badge-note{display:block;width:fit-content;margin:-2px 0 8px;padding:2px 8px;border-radius:6px;border-left:3px solid #f59e0b;background:#fffbeb;color:#92400e;-webkit-text-fill-color:#92400e;font-family:var(--mono);font-size:.7rem;line-height:1.4}
+.portal-card .badge-note.grey{border-left-color:#9ca3af;background:#f9fafb;color:#374151;-webkit-text-fill-color:#374151}
+#examTip{position:fixed;z-index:100001;max-width:min(280px,calc(100vw - 24px));padding:8px 11px;border-radius:10px;border:1px solid #f59e0b;background:#fffbeb;color:#92400e;-webkit-text-fill-color:#92400e;font-family:var(--mono);font-size:.74rem;line-height:1.45;box-shadow:0 10px 24px -12px rgba(0,0,0,.6);pointer-events:none}
+#examTip[hidden]{display:none}
 .online-panel{margin-top:8px;padding:20px 22px;border-radius:18px;background:rgba(14,22,40,.42);border:1px solid var(--border);backdrop-filter:blur(14px)}
 .online-panel h2{font-size:1.05rem;font-weight:800;margin:0 0 6px;background:linear-gradient(120deg,var(--cyan-bright),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .online-panel .hint{font-family:var(--mono);font-size:.78rem;color:var(--text-dim);margin:0 0 14px}
@@ -1220,7 +1242,7 @@ body.split-quiz-active #chatDock{z-index:60}
     <div class="portal-cards" id="materialCards"></div>
     <section class="online-panel" aria-label="Online features">
       <h2>Online</h2>
-      <p class="hint">Achievements, chat &amp; lobbies are live · tap the top-left chip for your profile.</p>
+      <p class="hint">Achievements &amp; lobbies are live · tap the top-left chip for your profile.</p>
       <div class="online-grid" id="onlineGrid"></div>
     </section>
     <div class="foot" id="portalFoot">Study Portal · progress saved on this device</div>
@@ -2700,6 +2722,15 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
     }
   }
 
+  // Data-driven material badges (catalog): examDiffers:true and badges:[{text, tip, tone}].
+  // Labels are Title Case; tips are sentences. Same component as the hub cards (js/quiz-engine.js).
+  function matBadges(m){
+    const out=[];
+    if(m && m.examDiffers === true) out.push({text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge'});
+    if(m && Array.isArray(m.badges)) m.badges.forEach(b=>{ if(b && b.text) out.push({text:String(b.text), tip:String(b.tip||''), tone:(b.tone==='grey'||b.tone==='gray')?'grey':'amber', cls:b.cls||''}); });
+    return out.map((b,i)=>Object.assign(b,{i}));
+  }
+
   function renderMaterials(){
     const subject = (catalog.subjects||[]).find(s=>s.id===activeSubjectId);
     if(!subject) return;
@@ -2728,7 +2759,9 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
         card.addEventListener('click', e=>{ e.preventDefault(); portalToast('This material is locked'); });
       } else {
         card.innerHTML =
-          '<h3>' + esc(m.title) + (m.draft ? '<span class="draft-badge" title="Unfinished · still being written">Draft</span>' : '') + '</h3>' +
+          '<h3>' + esc(m.title) + (m.draft ? '<span class="draft-badge" title="Unfinished · still being written">Draft</span>' : '') +
+            matBadges(m).map(b=>'<span class="note-badge ' + b.tone + (b.cls ? ' ' + b.cls : '') + '" title="' + esc(b.tip) + '" data-tip="' + esc(b.tip) + '" aria-describedby="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.text) + '</span>').join('') + '</h3>' +
+            matBadges(m).map(b=>'<p class="badge-note ' + b.tone + (b.cls === 'exam-differs-badge' ? ' exam-differs-note' : '') + '" id="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.tip) + '</p>').join('') +
           '<p class="sub">' + esc(m.subtitle || '') + '</p>' +
           '<span class="go">' + (m.study ? 'Quiz →' : 'Open in portal →') + '</span>';
         card.addEventListener('click', ()=> openMaterial(m, subject));
@@ -2762,6 +2795,17 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
       const lockedFinal = item.locked === true;
       const btn = document.createElement('button');
       btn.type = 'button';
+      // "hidden": true in the catalog keeps a tile in the page but out of sight and out of
+      // the Tab order, with no click action (chat is parked this way; its code stays loaded)
+      if(item.hidden === true){
+        btn.className = 'online-tile is-hidden-tile';
+        btn.dataset.id = item.id;
+        btn.hidden = true; btn.tabIndex = -1; btn.disabled = true;
+        btn.setAttribute('aria-hidden', 'true');
+        onlineEl.appendChild(btn);
+        return;
+      }
+      btn.dataset.id = item.id;
       if(lockedFinal){
         btn.className = 'online-tile';
         btn.innerHTML =
@@ -2849,6 +2893,30 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
 document.getElementById('studyNotesBtn').addEventListener('click', ()=>{
   if(window.StudyNotes && window.__activeMaterial) StudyNotes.open(__activeMaterial, { from:'hubView', openQuiz: ()=> showView('hubView') });
 });
+</script>
+<script>
+/* "Real exam is trickier" badge: on touch devices a tap shows the tooltip text (desktop keeps hover/title). */
+(function(){
+  var lastPointer='mouse';
+  document.addEventListener('pointerdown',function(e){ lastPointer=e.pointerType||'mouse'; },true);
+  function tip(){ var t=document.getElementById('examTip'); if(!t){ t=document.createElement('div'); t.id='examTip'; t.setAttribute('role','tooltip'); t.hidden=true; document.body.appendChild(t); } return t; }
+  function hide(){ var t=document.getElementById('examTip'); if(t && !t.hidden){ t.hidden=true; return true; } return false; }
+  document.addEventListener('click',function(e){
+    var b=e.target && e.target.closest && e.target.closest('.note-badge');
+    var touch=lastPointer==='touch' || lastPointer==='pen';
+    if(!b || !touch){ hide(); return; }
+    e.preventDefault(); e.stopPropagation();
+    var t=tip(); var text=b.getAttribute('data-tip')||b.title||'';
+    if(!t.hidden && t.dataset.for===text && t.__badge===b){ hide(); return; }
+    t.textContent=text; t.dataset.for=text; t.__badge=b; t.hidden=false;
+    var r=b.getBoundingClientRect(), w=t.offsetWidth, h=t.offsetHeight;
+    var left=Math.max(12, Math.min(r.left, innerWidth-w-12));
+    var top=r.bottom+8; if(top+h>innerHeight-8) top=Math.max(8, r.top-h-8);
+    t.style.left=left+'px'; t.style.top=top+'px';
+  },true);
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape' && hide()){ e.preventDefault(); e.stopImmediatePropagation(); } },true);
+  window.addEventListener('scroll',hide,true);
+})();
 </script>
 </body>
 </html>

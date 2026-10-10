@@ -457,12 +457,22 @@
       overlay.querySelector('#achievementsCloseBtn').addEventListener('click', closePanel);
     }
     renderAchievementsPanel();
+    // always above whatever is open (e.g. the profile panel it was opened from)
+    if (window.StudyLayers) StudyLayers.raise(overlay);
     overlay.classList.add('show');
+    const cb = overlay.querySelector('#achievementsCloseBtn');
+    if (cb) setTimeout(function () { try { cb.focus({ preventScroll: true }); } catch (e) {} }, 30);
   }
 
   function closePanel() {
     const overlay = document.getElementById('achievementsModal');
     if (overlay) overlay.classList.remove('show');
+    // back to the profile it was opened from (still open underneath)
+    const prof = document.getElementById('profileModal');
+    if (prof && prof.classList.contains('show')) {
+      const b = prof.querySelector('#profileAchievementsBtn');
+      if (b) try { b.focus({ preventScroll: true }); } catch (e) {}
+    }
   }
 
   /** Inject Achievements button into Profiles modal when present */

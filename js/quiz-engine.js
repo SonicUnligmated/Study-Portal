@@ -251,9 +251,11 @@ function buildGroupedCards(all, groups){
   const cards=[], taken=new Set();
   groups.forEach((g,i)=>{
     const set=new Set((g.cats||[]).map(norm));
-    const pool=all.filter(q=>set.has(norm(q.cat)));
+    // a group may also name whole bank forms (forms:["A"]) — used when one category spans several cards
+    const fset=new Set((g.forms||[]).map(String));
+    const pool=all.filter(q=>!taken.has(q.__id) && (set.has(norm(q.cat)) || fset.has(String(q.__form))));
     pool.forEach(q=>taken.add(q.__id));
-    cards.push({id:'grp:'+(g.id||g.title||('card'+(i+1))), label:String(g.title||g.id||('Set '+(i+1))), pool, cats:[...set]});
+    cards.push({id:'grp:'+(g.id||g.title||('card'+(i+1))), label:String(g.title||g.id||('Set '+(i+1))), pool, cats:[...set], badges:Array.isArray(g.badges)?g.badges:null});
   });
   const rest=all.filter(q=>!taken.has(q.__id));
   if(rest.length) buildCards(rest, true).forEach(c=>cards.push(c));
@@ -698,10 +700,30 @@ function cardCounts(pool){
   const order=pool.filter(isOrder).length;
   return {linking, stepped, saq, label, order, choice:pool.length-linking-stepped-saq-label-order};
 }
+/* Badges are data-driven: card.draft / card.soon, material flags (examDiffers) and
+   badge lists [{text, tip, tone:'amber'|'grey'}] on the catalog material (every card)
+   and on a bank card group (that card only). Labels are Title Case; tips are sentences. */
+const EXAM_DIFFERS_BADGE={text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge'};
+function noteBadgeHTML(b, extraCls){
+  if(!b || !b.text) return '';
+  const tone=(b.tone==='grey'||b.tone==='gray')?'grey':'amber';
+  return '<span class="card-badge note-badge '+tone+(b.cls?' '+b.cls:'')+(extraCls?' '+extraCls:'')+'"'+(b.tip?' title="'+escapeHtml(b.tip)+'" data-tip="'+escapeHtml(b.tip)+'" aria-label="'+escapeHtml(b.text+': '+b.tip)+'"':'')+'>'+escapeHtml(b.text)+'</span>';
+}
+function materialBadges(m){
+  if(!m) return [];
+  const out=[];
+  if(m.examDiffers===true) out.push(EXAM_DIFFERS_BADGE);
+  if(Array.isArray(m.badges)) m.badges.forEach(b=>b&&b.text&&out.push(b));
+  return out;
+}
+window.StudyBadges={html:noteBadgeHTML, forMaterial:materialBadges, EXAM_DIFFERS:EXAM_DIFFERS_BADGE};
 function cardBadgesHTML(card){
   let h='';
   if(card && card.draft) h+='<span class="card-badge draft" title="Unfinished · still being written">Draft</span>';
-  if(card && card.soon) h+='<span class="card-badge soon">Coming soon</span>';
+  if(card && card.soon) h+='<span class="card-badge soon">Coming Soon</span>';
+  // material badges (every card inside it), then this card's own badges
+  materialBadges(window.__activeMaterial).forEach(b=>{ h+=noteBadgeHTML(b); });
+  if(card && Array.isArray(card.badges)) card.badges.forEach(b=>{ h+=noteBadgeHTML(b); });
   return h?'<div class="card-badges">'+h+'</div>':'';
 }
 function appendSoonCard(grid, card){
@@ -722,7 +744,7 @@ function appendPoolCard(grid, label, pool, card){
   const btn=document.createElement('button'); btn.type='button'; btn.className='card';
   btn.dataset.card=card.id;
   // PT1 line "N linking · M choice" + STEPPED count when the card has any
-  const sub=c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'')+(c.label?(' · '+c.label+' labeling'):'')+(c.order?(' · '+c.order+' ordering'):'');
+  const sub=(BANK && BANK.showCardCounts?pool.length+' questions · ':'')+c.linking+' linking · '+c.choice+' choice'+(c.stepped?(' · '+c.stepped+' stepped'):'')+(c.saq?(' · '+c.saq+' short answer'):'')+(c.label?(' · '+c.label+' labeling'):'')+(c.order?(' · '+c.order+' ordering'):'');
   btn.innerHTML=`<div class="card-top"><span class="form-letter">${escapeHtml(label)}</span><span class="mood-stamp">${escapeHtml(meta.mood||'')}</span></div>${cardBadgesHTML(card)}
     <div class="card-sub">${sub}</div>
     <div class="card-stats"><div class="card-pct">${left} left</div><div class="card-meta">${pool.length-left} solved / ${pool.length}${inProgress?' · in progress':''}</div></div>`;

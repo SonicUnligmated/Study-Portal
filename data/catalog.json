@@ -56,7 +56,8 @@
           "title": "Periodic Test 1",
           "subtitle": "4 sets by topic · 168 questions",
           "bank": "banks/studyskills/ss1.json",
-          "locked": false
+          "locked": false,
+          "examDiffers": true
         },
         {
           "id": "ss2",
@@ -216,7 +217,9 @@
       "title": "Chat",
       "icon": "💬",
       "locked": false,
-      "blurb": "Dock · channels · party (max 4)"
+      "blurb": "Dock · channels · party (max 4)",
+      "hidden": true,
+      "hiddenNote": "Chat is switched off for now. Delete \"hidden\" to bring the tile back."
     },
     {
       "id": "live",
