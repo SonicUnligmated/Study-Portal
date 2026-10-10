@@ -43,7 +43,6 @@
           "subtitle": "Study notes · quiz coming soon",
           "bank": null,
           "locked": false,
-          "draft": true,
           "study": {
             "title": "Study Interface",
             "chapters": [
