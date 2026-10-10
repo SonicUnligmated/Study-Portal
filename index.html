@@ -1268,6 +1268,7 @@ body.split-quiz-active #chatDock{z-index:60}
     </div>
   </header>
 
+  <div class="study-summary" id="studySummary" hidden></div>
   <div class="chapter-list" id="chapterList"></div>
 </div>
 </div>
@@ -2690,7 +2691,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
       if(typeof refreshHubCards === 'function') refreshHubCards();
       document.title = ((__bankMeta && __bankMeta.title) || m.title || 'Exam') + ' · Study Portal';
       const snb = document.getElementById('studyNotesBtn');
-      if(snb) snb.hidden = !m.study;
+      if(snb){ snb.hidden = !m.study; snb.textContent = (m.study && m.study.images) ? '📖 Picture study' : '📖 Study notes'; }
       showView('hubView');
     }catch(err){
       console.error(err);
@@ -2841,6 +2842,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
 
 </script>
 <script src="js/quiz-engine.js?v=1"></script>
+<script src="js/study-images.js?v=1"></script>
 <script src="js/study-app.js?v=1"></script>
 <script>
 /* Hub "📖 Study notes" → PT1 study interface for the open material */

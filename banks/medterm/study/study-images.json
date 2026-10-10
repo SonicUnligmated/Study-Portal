@@ -1,0 +1,4056 @@
+{
+ "title": "Study Interface",
+ "note": "Generated from /workspace/study-images/study-images.json; image paths point at the portal copies.",
+ "chapters": [
+  {
+   "lecture": "lec09",
+   "cat": "MT_lec9",
+   "images": [
+    {
+     "id": "endocrine-glands",
+     "title": "Endocrine Glands",
+     "caption": "The endocrine glands release hormones straight into the blood. Crin/o means to secrete: endocrine glands secrete inward, into the blood, and exocrine glands secrete outward through ducts.",
+     "alt": "Female and male body outlines showing the endocrine glands: pineal and pituitary glands in the brain, thyroid and parathyroid glands in the neck, adrenal glands on the kidneys, pancreas, ovaries and testes.",
+     "kind": "labeled-diagram",
+     "credit": "OpenStax & Tomáš Kebert & umimeto.org, via Wikimedia Commons",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Endocrine_English.svg",
+     "labeled": "banks/medterm/study/lec09/endocrine-glands-labeled.png",
+     "blank": "banks/medterm/study/lec09/endocrine-glands-blank.png",
+     "width": 1100,
+     "height": 1084,
+     "labels": [
+      {
+       "id": "endocrine-glands-L1",
+       "answer": "Pineal Gland",
+       "accept": [
+        "Pineal Body"
+       ],
+       "x": 17.55,
+       "y": 3.51,
+       "w": 18.73,
+       "h": 4.06
+      },
+      {
+       "id": "endocrine-glands-L2",
+       "answer": "Pituitary Gland",
+       "accept": [
+        "Hypophysis"
+       ],
+       "x": 59.18,
+       "y": 7.01,
+       "w": 21.64,
+       "h": 3.97
+      },
+      {
+       "id": "endocrine-glands-L3",
+       "answer": "Parathyroid Gland",
+       "accept": [
+        "Parathyroid Glands"
+       ],
+       "x": 39.55,
+       "y": 24.72,
+       "w": 26.73,
+       "h": 4.06
+      },
+      {
+       "id": "endocrine-glands-L4",
+       "answer": "Thyroid Gland",
+       "accept": [],
+       "x": 44.18,
+       "y": 49.82,
+       "w": 10.73,
+       "h": 7.38
+      },
+      {
+       "id": "endocrine-glands-L5",
+       "answer": "Adrenal Gland",
+       "accept": [
+        "Suprarenal Gland",
+        "Adrenal Glands"
+       ],
+       "x": 43.73,
+       "y": 60.61,
+       "w": 11.73,
+       "h": 7.38
+      },
+      {
+       "id": "endocrine-glands-L6",
+       "answer": "Pancreas",
+       "accept": [],
+       "x": 42.45,
+       "y": 70.02,
+       "w": 14.45,
+       "h": 3.23
+      },
+      {
+       "id": "endocrine-glands-L7",
+       "answer": "Ovary",
+       "accept": [
+        "Ovaries"
+       ],
+       "x": 45.27,
+       "y": 79.61,
+       "w": 8.91,
+       "h": 3.32
+      },
+      {
+       "id": "endocrine-glands-L8",
+       "answer": "Testis",
+       "accept": [
+        "Testes",
+        "Testicle"
+       ],
+       "x": 45.36,
+       "y": 88.56,
+       "w": 8.45,
+       "h": 3.23
+      }
+     ]
+    },
+    {
+     "id": "digestive-tract",
+     "title": "Digestive Tract",
+     "caption": "Food passes from the mouth through the pharynx, esophagus (Esophag/o) and stomach (Gastr/o) into the small intestine (Enter/o). The liver (Hepat/o), gallbladder and pancreas add digestive juices.",
+     "alt": "Front view of the digestive system from the mouth to the rectum, showing the salivary glands, pharynx, esophagus, stomach, liver, gallbladder, pancreas, small intestine, large intestine and appendix.",
+     "kind": "labeled-diagram",
+     "credit": "Mariana Ruiz, Jmarchn, via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Digestive_system_diagram_en.svg",
+     "labeled": "banks/medterm/study/lec09/digestive-tract-labeled.png",
+     "blank": "banks/medterm/study/lec09/digestive-tract-blank.png",
+     "width": 1060,
+     "height": 1014,
+     "labels": [
+      {
+       "id": "digestive-tract-L1",
+       "answer": "Mouth",
+       "accept": [
+        "Oral Cavity"
+       ],
+       "x": 0.94,
+       "y": 11.05,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L2",
+       "answer": "Liver",
+       "accept": [],
+       "x": 0.94,
+       "y": 50.49,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L3",
+       "answer": "Gallbladder",
+       "accept": [
+        "Gall Bladder"
+       ],
+       "x": 0.94,
+       "y": 58.38,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L4",
+       "answer": "Duodenum",
+       "accept": [],
+       "x": 0.94,
+       "y": 66.27,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L5",
+       "answer": "Large Intestine",
+       "accept": [
+        "Colon"
+       ],
+       "x": 0.94,
+       "y": 77.12,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L6",
+       "answer": "Appendix",
+       "accept": [
+        "Vermiform Appendix"
+       ],
+       "x": 0.94,
+       "y": 86.98,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L7",
+       "answer": "Salivary Glands",
+       "accept": [
+        "Parotid Gland",
+        "Salivary Gland"
+       ],
+       "x": 81.66,
+       "y": 10.06,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L8",
+       "answer": "Pharynx",
+       "accept": [
+        "Throat"
+       ],
+       "x": 81.66,
+       "y": 20.91,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L9",
+       "answer": "Esophagus",
+       "accept": [
+        "Oesophagus",
+        "Gullet"
+       ],
+       "x": 81.66,
+       "y": 37.67,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L10",
+       "answer": "Stomach",
+       "accept": [],
+       "x": 81.66,
+       "y": 53.45,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L11",
+       "answer": "Pancreas",
+       "accept": [],
+       "x": 81.66,
+       "y": 63.81,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L12",
+       "answer": "Small Intestine",
+       "accept": [
+        "Small Bowel"
+       ],
+       "x": 81.66,
+       "y": 80.08,
+       "w": 17.4,
+       "h": 3.55
+      },
+      {
+       "id": "digestive-tract-L13",
+       "answer": "Rectum",
+       "accept": [],
+       "x": 81.66,
+       "y": 90.93,
+       "w": 17.4,
+       "h": 3.55
+      }
+     ]
+    },
+    {
+     "id": "skin-layers",
+     "title": "Layers of the Skin",
+     "caption": "Derm/o, Dermat/o and Cutane/o all mean skin. The epidermis is the outer layer, the dermis below it holds glands, hair follicles and nerves, and the hypodermis (subcutaneous layer) stores fat.",
+     "alt": "Cut-away block of skin showing the epidermis, dermis and hypodermis, with hair shafts and follicles, sebaceous and sweat glands, arrector pili muscle, blood vessels, nerves and fat.",
+     "kind": "labeled-diagram",
+     "credit": "OpenStax College : J. Gordon Betts, Peter Desaix, Eddie Johnson, via Wikimedia Commons",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:501_Structure_of_the_skin.jpg",
+     "labeled": "banks/medterm/study/lec09/skin-layers-labeled.png",
+     "blank": "banks/medterm/study/lec09/skin-layers-blank.png",
+     "width": 1200,
+     "height": 941,
+     "labels": [
+      {
+       "id": "skin-layers-L1",
+       "answer": "Epidermis",
+       "accept": [],
+       "x": 90.08,
+       "y": 24.55,
+       "w": 8.25,
+       "h": 2.98
+      },
+      {
+       "id": "skin-layers-L2",
+       "answer": "Dermis",
+       "accept": [
+        "Corium"
+       ],
+       "x": 90.08,
+       "y": 46.65,
+       "w": 6.0,
+       "h": 2.55
+      },
+      {
+       "id": "skin-layers-L3",
+       "answer": "Hypodermis",
+       "accept": [
+        "Subcutaneous Tissue",
+        "Subcutaneous Layer",
+        "Subcutis"
+       ],
+       "x": 90.08,
+       "y": 71.31,
+       "w": 9.75,
+       "h": 2.87
+      },
+      {
+       "id": "skin-layers-L4",
+       "answer": "Hair Shaft",
+       "accept": [],
+       "x": 17.83,
+       "y": 13.71,
+       "w": 8.0,
+       "h": 2.55
+      },
+      {
+       "id": "skin-layers-L5",
+       "answer": "Pore of Sweat Gland Duct",
+       "accept": [
+        "Sweat Pore",
+        "Pore"
+       ],
+       "x": 73.92,
+       "y": 16.68,
+       "w": 19.42,
+       "h": 2.98
+      },
+      {
+       "id": "skin-layers-L6",
+       "answer": "Arrector Pili Muscle",
+       "accept": [
+        "Arrector Pili"
+       ],
+       "x": 0.08,
+       "y": 40.7,
+       "w": 9.33,
+       "h": 5.21
+      },
+      {
+       "id": "skin-layers-L7",
+       "answer": "Hair Follicle",
+       "accept": [],
+       "x": 0.17,
+       "y": 49.84,
+       "w": 9.0,
+       "h": 2.55
+      },
+      {
+       "id": "skin-layers-L8",
+       "answer": "Sebaceous Gland",
+       "accept": [
+        "Sebaceous (Oil) Gland",
+        "Oil Gland"
+       ],
+       "x": 0.17,
+       "y": 56.32,
+       "w": 12.5,
+       "h": 5.63
+      },
+      {
+       "id": "skin-layers-L9",
+       "answer": "Hair Root",
+       "accept": [],
+       "x": 0.17,
+       "y": 76.41,
+       "w": 7.17,
+       "h": 2.55
+      },
+      {
+       "id": "skin-layers-L10",
+       "answer": "Eccrine Sweat Gland",
+       "accept": [
+        "Sweat Gland"
+       ],
+       "x": 84.33,
+       "y": 82.04,
+       "w": 15.67,
+       "h": 2.98
+      },
+      {
+       "id": "skin-layers-L11",
+       "answer": "Pacinian Corpuscle",
+       "accept": [
+        "Lamellated Corpuscle"
+       ],
+       "x": 84.33,
+       "y": 86.72,
+       "w": 15.0,
+       "h": 2.98
+      },
+      {
+       "id": "skin-layers-L12",
+       "answer": "Cutaneous Vascular Plexus",
+       "accept": [
+        "Vascular Plexus"
+       ],
+       "x": 84.25,
+       "y": 91.07,
+       "w": 15.75,
+       "h": 5.21
+      },
+      {
+       "id": "skin-layers-L13",
+       "answer": "Adipose Tissue",
+       "accept": [
+        "Fat",
+        "Fat Tissue"
+       ],
+       "x": 0.08,
+       "y": 91.71,
+       "w": 11.92,
+       "h": 2.98
+      },
+      {
+       "id": "skin-layers-L14",
+       "answer": "Sensory Nerve Fiber",
+       "accept": [
+        "Sensory Nerve Fibre",
+        "Nerve Fiber"
+       ],
+       "x": 0.17,
+       "y": 95.64,
+       "w": 15.75,
+       "h": 2.98
+      }
+     ]
+    },
+    {
+     "id": "animal-cell",
+     "title": "Parts of a Cell",
+     "caption": "Cyt/o means cell. The nucleus holds the genetic material, and the organelles in the cytoplasm make energy (mitochondria), build proteins (ribosomes, rough ER) and package them (Golgi apparatus).",
+     "alt": "Cut-away drawing of an animal cell showing the nucleus, nucleolus, nuclear envelope, mitochondria, ribosomes, rough and smooth endoplasmic reticulum, Golgi apparatus, lysosome, peroxisome, centrosome, secretory vesicle, cytoplasm and plasma membrane.",
+     "kind": "labeled-diagram",
+     "credit": "LadyofHats (Mariana Ruiz), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Animal_cell_structure_en.svg",
+     "labeled": "banks/medterm/study/lec09/animal-cell-labeled.png",
+     "blank": "banks/medterm/study/lec09/animal-cell-blank.png",
+     "width": 1200,
+     "height": 803,
+     "labels": [
+      {
+       "id": "animal-cell-L1",
+       "answer": "Nucleus",
+       "accept": [],
+       "x": 33.87,
+       "y": 14.35,
+       "w": 6.0,
+       "h": 2.39
+      },
+      {
+       "id": "animal-cell-L2",
+       "answer": "Nucleolus",
+       "accept": [],
+       "x": 32.6,
+       "y": 17.43,
+       "w": 7.27,
+       "h": 2.39
+      },
+      {
+       "id": "animal-cell-L3",
+       "answer": "Nuclear Envelope",
+       "accept": [
+        "Nuclear Membrane"
+       ],
+       "x": 27.27,
+       "y": 11.26,
+       "w": 12.6,
+       "h": 2.89
+      },
+      {
+       "id": "animal-cell-L4",
+       "answer": "Mitochondrion",
+       "accept": [
+        "Mitochondria"
+       ],
+       "x": 82.13,
+       "y": 33.87,
+       "w": 10.2,
+       "h": 2.49
+      },
+      {
+       "id": "animal-cell-L5",
+       "answer": "Ribosomes",
+       "accept": [
+        "Ribosome"
+       ],
+       "x": 15.53,
+       "y": 49.41,
+       "w": 8.2,
+       "h": 2.39
+      },
+      {
+       "id": "animal-cell-L6",
+       "answer": "Rough Endoplasmic Reticulum",
+       "accept": [
+        "Rough ER",
+        "RER"
+       ],
+       "x": 2.53,
+       "y": 53.5,
+       "w": 21.13,
+       "h": 2.89
+      },
+      {
+       "id": "animal-cell-L7",
+       "answer": "Smooth Endoplasmic Reticulum",
+       "accept": [
+        "Smooth ER",
+        "SER"
+       ],
+       "x": 1.67,
+       "y": 57.58,
+       "w": 22.0,
+       "h": 2.99
+      },
+      {
+       "id": "animal-cell-L8",
+       "answer": "Golgi Apparatus",
+       "accept": [
+        "Golgi Vesicles",
+        "Golgi Body",
+        "Golgi Complex"
+       ],
+       "x": 11.53,
+       "y": 41.15,
+       "w": 12.2,
+       "h": 5.98
+      },
+      {
+       "id": "animal-cell-L9",
+       "answer": "Lysosome",
+       "accept": [
+        "Lysosomes"
+       ],
+       "x": 82.13,
+       "y": 25.7,
+       "w": 7.4,
+       "h": 2.89
+      },
+      {
+       "id": "animal-cell-L10",
+       "answer": "Cytoplasm",
+       "accept": [],
+       "x": 82.07,
+       "y": 70.04,
+       "w": 7.8,
+       "h": 2.89
+      },
+      {
+       "id": "animal-cell-L11",
+       "answer": "Plasma Membrane",
+       "accept": [
+        "Cell Membrane"
+       ],
+       "x": 10.13,
+       "y": 36.96,
+       "w": 13.6,
+       "h": 2.49
+      },
+      {
+       "id": "animal-cell-L12",
+       "answer": "Centrosome",
+       "accept": [
+        "Centrioles"
+       ],
+       "x": 82.07,
+       "y": 78.31,
+       "w": 12.73,
+       "h": 5.98
+      },
+      {
+       "id": "animal-cell-L13",
+       "answer": "Secretory Vesicle",
+       "accept": [
+        "Secretory Vesicles"
+       ],
+       "x": 82.07,
+       "y": 74.12,
+       "w": 12.4,
+       "h": 2.89
+      },
+      {
+       "id": "animal-cell-L14",
+       "answer": "Peroxisome",
+       "accept": [],
+       "x": 82.13,
+       "y": 17.43,
+       "w": 8.6,
+       "h": 2.39
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec10",
+   "cat": "MT_lec10",
+   "images": [
+    {
+     "id": "tooth-structure",
+     "title": "Structure of a Tooth",
+     "caption": "Dent/o and Odont/o mean tooth, and Gingiv/o means gums. Hard enamel covers the crown, dentin forms the body of the tooth, and the pulp in the middle holds the nerves and blood vessels that run up through the root canal.",
+     "alt": "Cut-away of a molar in the jaw showing the enamel, dentin, pulp, root canal, gingiva, cementum, jaw bone and root apex, with brackets marking the crown, neck and root.",
+     "kind": "labeled-diagram",
+     "credit": "KDS4444, via Wikimedia Commons",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_tooth_diagram-en.svg",
+     "labeled": "banks/medterm/study/lec10/tooth-structure-labeled.png",
+     "blank": "banks/medterm/study/lec10/tooth-structure-blank.png",
+     "width": 1000,
+     "height": 868,
+     "labels": [
+      {
+       "id": "tooth-structure-L1",
+       "answer": "Enamel",
+       "accept": [],
+       "x": 18.8,
+       "y": 4.61,
+       "w": 8.9,
+       "h": 2.88
+      },
+      {
+       "id": "tooth-structure-L2",
+       "answer": "Dentin",
+       "accept": [
+        "Dentine"
+       ],
+       "x": 13.5,
+       "y": 17.05,
+       "w": 8.0,
+       "h": 2.88
+      },
+      {
+       "id": "tooth-structure-L3",
+       "answer": "Pulp",
+       "accept": [
+        "Pulp Chamber",
+        "Dental Pulp"
+       ],
+       "x": 4.4,
+       "y": 38.25,
+       "w": 17.0,
+       "h": 16.13
+      },
+      {
+       "id": "tooth-structure-L4",
+       "answer": "Gingiva",
+       "accept": [
+        "Gums",
+        "Gum"
+       ],
+       "x": 7.6,
+       "y": 26.27,
+       "w": 9.2,
+       "h": 3.34
+      },
+      {
+       "id": "tooth-structure-L5",
+       "answer": "Cementum",
+       "accept": [],
+       "x": 10.0,
+       "y": 61.64,
+       "w": 13.2,
+       "h": 2.76
+      },
+      {
+       "id": "tooth-structure-L6",
+       "answer": "Jaw Bone",
+       "accept": [
+        "Alveolar Bone",
+        "Bone"
+       ],
+       "x": 12.3,
+       "y": 70.97,
+       "w": 6.8,
+       "h": 7.03
+      },
+      {
+       "id": "tooth-structure-L7",
+       "answer": "Crown",
+       "accept": [],
+       "x": 85.1,
+       "y": 18.78,
+       "w": 7.6,
+       "h": 2.88
+      },
+      {
+       "id": "tooth-structure-L8",
+       "answer": "Neck",
+       "accept": [
+        "Cervix"
+       ],
+       "x": 85.2,
+       "y": 35.14,
+       "w": 6.2,
+       "h": 2.76
+      },
+      {
+       "id": "tooth-structure-L9",
+       "answer": "Root",
+       "accept": [],
+       "x": 85.2,
+       "y": 56.91,
+       "w": 5.6,
+       "h": 2.76
+      },
+      {
+       "id": "tooth-structure-L10",
+       "answer": "Canal",
+       "accept": [
+        "Root Canal",
+        "Pulp Canal"
+       ],
+       "x": 65.78,
+       "y": 94.59,
+       "w": 8.44,
+       "h": 4.26
+      },
+      {
+       "id": "tooth-structure-L11",
+       "answer": "Apex",
+       "accept": [
+        "Root Apex",
+        "Apical Foramen"
+       ],
+       "x": 25.78,
+       "y": 94.59,
+       "w": 8.44,
+       "h": 4.26
+      }
+     ]
+    },
+    {
+     "id": "teeth-types",
+     "title": "Types of Permanent Teeth",
+     "caption": "Adults have 32 permanent teeth. Incisors cut, canines tear, and premolars and molars grind food. The upper teeth sit in the maxilla and the lower teeth in the mandible.",
+     "alt": "Open mouth showing the upper and lower rows of permanent teeth, with the incisors, canines, premolars and molars marked on each row.",
+     "kind": "labeled-diagram",
+     "credit": "Gregory david baker, Vectorization:  Mrmw, via Wikimedia Commons",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Permanent_teeth_names.svg",
+     "labeled": "banks/medterm/study/lec10/teeth-types-labeled.png",
+     "blank": "banks/medterm/study/lec10/teeth-types-blank.png",
+     "width": 1110,
+     "height": 1030,
+     "labels": [
+      {
+       "id": "teeth-types-L1",
+       "answer": "Incisors",
+       "accept": [
+        "Incisor",
+        "Central Incisor"
+       ],
+       "x": 0.9,
+       "y": 9.66,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L2",
+       "answer": "Canines",
+       "accept": [
+        "Canine",
+        "Cuspid"
+       ],
+       "x": 0.9,
+       "y": 17.43,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L3",
+       "answer": "Premolars",
+       "accept": [
+        "Premolar",
+        "Bicuspids"
+       ],
+       "x": 0.9,
+       "y": 25.19,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L4",
+       "answer": "Molars",
+       "accept": [
+        "Molar"
+       ],
+       "x": 0.9,
+       "y": 34.9,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L5",
+       "answer": "Molars",
+       "accept": [
+        "Molar"
+       ],
+       "x": 86.13,
+       "y": 65.97,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L6",
+       "answer": "Premolars",
+       "accept": [
+        "Premolar",
+        "Bicuspids"
+       ],
+       "x": 86.13,
+       "y": 75.68,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L7",
+       "answer": "Canines",
+       "accept": [
+        "Canine",
+        "Cuspid"
+       ],
+       "x": 86.13,
+       "y": 84.42,
+       "w": 12.97,
+       "h": 3.98
+      },
+      {
+       "id": "teeth-types-L8",
+       "answer": "Incisors",
+       "accept": [
+        "Incisor",
+        "Central Incisor"
+       ],
+       "x": 86.13,
+       "y": 93.16,
+       "w": 12.97,
+       "h": 3.98
+      }
+     ]
+    },
+    {
+     "id": "skull-bones",
+     "title": "Bones of the Skull (Front View)",
+     "caption": "Crani/o refers to the skull. The upper jaw is the maxilla and the lower jaw is the mandible, the only movable bone of the skull. The teeth are anchored in these two bones.",
+     "alt": "Front view of the skull with each bone in a different colour: frontal, parietal, temporal, sphenoid, ethmoid, lacrimal, nasal and zygomatic bones, the maxilla and the mandible.",
+     "kind": "labeled-diagram",
+     "credit": "LadyofHats (Mariana Ruiz Villarreal), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_skull_front_simplified_(bones).svg",
+     "labeled": "banks/medterm/study/lec10/skull-bones-labeled.png",
+     "blank": "banks/medterm/study/lec10/skull-bones-blank.png",
+     "width": 1000,
+     "height": 1023,
+     "labels": [
+      {
+       "id": "skull-bones-L1",
+       "answer": "Frontal Bone",
+       "accept": [
+        "Frontal"
+       ],
+       "x": 83.2,
+       "y": 32.16,
+       "w": 9.2,
+       "h": 3.03
+      },
+      {
+       "id": "skull-bones-L2",
+       "answer": "Parietal Bone",
+       "accept": [
+        "Parietal"
+       ],
+       "x": 5.7,
+       "y": 27.57,
+       "w": 9.8,
+       "h": 3.03
+      },
+      {
+       "id": "skull-bones-L3",
+       "answer": "Temporal Bone",
+       "accept": [
+        "Temporal"
+       ],
+       "x": 81.5,
+       "y": 44.57,
+       "w": 12.5,
+       "h": 3.52
+      },
+      {
+       "id": "skull-bones-L4",
+       "answer": "Sphenoid Bone",
+       "accept": [
+        "Sphenoid"
+       ],
+       "x": 4.2,
+       "y": 50.05,
+       "w": 12.7,
+       "h": 3.62
+      },
+      {
+       "id": "skull-bones-L5",
+       "answer": "Ethmoid Bone",
+       "accept": [
+        "Ethmoid"
+       ],
+       "x": 82.0,
+       "y": 69.99,
+       "w": 11.1,
+       "h": 3.03
+      },
+      {
+       "id": "skull-bones-L6",
+       "answer": "Lacrimal Bone",
+       "accept": [
+        "Lacrimal"
+       ],
+       "x": 6.3,
+       "y": 19.45,
+       "w": 11.0,
+       "h": 3.03
+      },
+      {
+       "id": "skull-bones-L7",
+       "answer": "Nasal Bone",
+       "accept": [
+        "Nasal"
+       ],
+       "x": 13.6,
+       "y": 12.51,
+       "w": 7.2,
+       "h": 2.93
+      },
+      {
+       "id": "skull-bones-L8",
+       "answer": "Zygomatic Bone",
+       "accept": [
+        "Zygomatic",
+        "Cheekbone"
+       ],
+       "x": 81.8,
+       "y": 62.95,
+       "w": 14.0,
+       "h": 3.52
+      },
+      {
+       "id": "skull-bones-L9",
+       "answer": "Maxilla",
+       "accept": [
+        "Upper Jaw",
+        "Maxillary Bone"
+       ],
+       "x": 8.7,
+       "y": 73.41,
+       "w": 9.3,
+       "h": 3.03
+      },
+      {
+       "id": "skull-bones-L10",
+       "answer": "Mandible",
+       "accept": [
+        "Lower Jaw",
+        "Mandibular Bone"
+       ],
+       "x": 9.4,
+       "y": 84.65,
+       "w": 12.5,
+       "h": 3.03
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec11",
+   "cat": "MT_lec11",
+   "images": [
+    {
+     "id": "body-planes",
+     "title": "Body Planes and Axes",
+     "caption": "The sagittal plane divides the body into right and left parts, the coronal (frontal) plane into front and back, and the transverse plane into upper and lower parts.",
+     "alt": "Standing figure cut by three planes: a sagittal plane, a coronal plane and a transverse plane, with dotted lines for the craniocaudal, left-right and anteroposterior axes.",
+     "kind": "labeled-diagram",
+     "credit": "Edoarado, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anatomical_Planes-en.svg",
+     "labeled": "banks/medterm/study/lec11/body-planes-labeled.png",
+     "blank": "banks/medterm/study/lec11/body-planes-blank.png",
+     "width": 1000,
+     "height": 925,
+     "labels": [
+      {
+       "id": "body-planes-L1",
+       "answer": "Sagittal Plane",
+       "accept": [
+        "Median Plane",
+        "Midsagittal Plane"
+       ],
+       "x": 46.4,
+       "y": 89.73,
+       "w": 14.9,
+       "h": 6.49
+      },
+      {
+       "id": "body-planes-L2",
+       "answer": "Coronal Plane",
+       "accept": [
+        "Frontal Plane"
+       ],
+       "x": 24.8,
+       "y": 91.46,
+       "w": 15.0,
+       "h": 8.54
+      },
+      {
+       "id": "body-planes-L3",
+       "answer": "Transverse Plane",
+       "accept": [
+        "Horizontal Plane",
+        "Axial Plane"
+       ],
+       "x": 80.1,
+       "y": 46.7,
+       "w": 18.4,
+       "h": 5.62
+      },
+      {
+       "id": "body-planes-L4",
+       "answer": "Craniocaudal Axis",
+       "accept": [
+        "Longitudinal Axis",
+        "Vertical Axis"
+       ],
+       "x": 46.0,
+       "y": 2.81,
+       "w": 19.3,
+       "h": 2.49
+      },
+      {
+       "id": "body-planes-L5",
+       "answer": "Left-Right Axis",
+       "accept": [
+        "Transverse Axis",
+        "Mediolateral Axis"
+       ],
+       "x": 2.8,
+       "y": 58.81,
+       "w": 10.2,
+       "h": 7.89
+      },
+      {
+       "id": "body-planes-L6",
+       "answer": "Anteroposterior Axis",
+       "accept": [
+        "Dorsoventral Axis",
+        "Sagittal Axis"
+       ],
+       "x": 69.1,
+       "y": 56.11,
+       "w": 17.1,
+       "h": 12.65
+      }
+     ]
+    },
+    {
+     "id": "synovial-joint",
+     "title": "Synovial Joint",
+     "caption": "Arthr/o means joint and Chondr/o means cartilage. In a synovial joint, articular cartilage covers the bone ends, and synovial fluid inside the joint capsule lets the bones glide.",
+     "alt": "Cross-section of a knee-type synovial joint showing the synovial cavity, joint capsule, articular cartilage, bursa, tendon, ligament, epiphyseal bone and the extensor and flexor muscles, with the proximal and distal bones marked.",
+     "kind": "labeled-diagram",
+     "credit": "Madhero88, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joint.svg",
+     "labeled": "banks/medterm/study/lec11/synovial-joint-labeled.png",
+     "blank": "banks/medterm/study/lec11/synovial-joint-blank.png",
+     "width": 1200,
+     "height": 878,
+     "labels": [
+      {
+       "id": "synovial-joint-L1",
+       "answer": "Synovial Cavity",
+       "accept": [
+        "Joint Cavity",
+        "Articular Cavity"
+       ],
+       "x": 2.33,
+       "y": 30.18,
+       "w": 12.42,
+       "h": 9.45
+      },
+      {
+       "id": "synovial-joint-L2",
+       "answer": "Bursa",
+       "accept": [],
+       "x": 2.33,
+       "y": 44.99,
+       "w": 8.75,
+       "h": 3.87
+      },
+      {
+       "id": "synovial-joint-L3",
+       "answer": "Joint Capsule",
+       "accept": [
+        "Articular Capsule",
+        "Synovial Membrane"
+       ],
+       "x": 2.33,
+       "y": 54.33,
+       "w": 19.17,
+       "h": 14.24
+      },
+      {
+       "id": "synovial-joint-L4",
+       "answer": "Tendon",
+       "accept": [],
+       "x": 2.33,
+       "y": 72.67,
+       "w": 10.83,
+       "h": 3.99
+      },
+      {
+       "id": "synovial-joint-L5",
+       "answer": "Ligament",
+       "accept": [],
+       "x": 82.75,
+       "y": 59.57,
+       "w": 13.5,
+       "h": 4.9
+      },
+      {
+       "id": "synovial-joint-L6",
+       "answer": "Articular Cartilage",
+       "accept": [],
+       "x": 82.75,
+       "y": 41.8,
+       "w": 12.5,
+       "h": 9.23
+      },
+      {
+       "id": "synovial-joint-L7",
+       "answer": "Epiphyseal Bone",
+       "accept": [
+        "Epiphysis",
+        "Bone"
+       ],
+       "x": 82.75,
+       "y": 22.67,
+       "w": 15.83,
+       "h": 8.43
+      },
+      {
+       "id": "synovial-joint-L8",
+       "answer": "Extensor Muscle",
+       "accept": [
+        "Extensor"
+       ],
+       "x": 2.33,
+       "y": 2.96,
+       "w": 10.75,
+       "h": 7.18
+      },
+      {
+       "id": "synovial-joint-L9",
+       "answer": "Flexor Muscle",
+       "accept": [
+        "Flexor"
+       ],
+       "x": 82.75,
+       "y": 1.94,
+       "w": 8.67,
+       "h": 6.61
+      },
+      {
+       "id": "synovial-joint-L10",
+       "answer": "Proximal",
+       "accept": [],
+       "x": 45.5,
+       "y": 0.8,
+       "w": 10.58,
+       "h": 4.1
+      },
+      {
+       "id": "synovial-joint-L11",
+       "answer": "Distal",
+       "accept": [],
+       "x": 47.42,
+       "y": 95.79,
+       "w": 6.67,
+       "h": 3.42
+      }
+     ]
+    },
+    {
+     "id": "skeleton",
+     "title": "The Human Skeleton",
+     "caption": "The axial skeleton (skull, vertebral column, ribs and sternum) forms the body's central axis. The appendicular skeleton includes the limbs, shoulder girdle and pelvis. Oste/o means bone.",
+     "alt": "Front view of the whole human skeleton with the skull, clavicle, scapula, sternum, ribs, humerus, vertebral column, ulna, radius, pelvis, femur, patella, tibia and fibula marked.",
+     "kind": "labeled-diagram",
+     "credit": "LadyofHats (Mariana Ruiz Villarreal), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_skeleton_front_en.svg",
+     "labeled": "banks/medterm/study/lec11/skeleton-labeled.png",
+     "blank": "banks/medterm/study/lec11/skeleton-blank.png",
+     "width": 1060,
+     "height": 1083,
+     "labels": [
+      {
+       "id": "skeleton-L1",
+       "answer": "Skull",
+       "accept": [
+        "Cranium"
+       ],
+       "x": 0.94,
+       "y": 3.42,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L2",
+       "answer": "Vertebral Column",
+       "accept": [
+        "Spinal Column",
+        "Vertebrae",
+        "Spine"
+       ],
+       "x": 0.94,
+       "y": 12.19,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L3",
+       "answer": "Scapula",
+       "accept": [
+        "Shoulder Blade"
+       ],
+       "x": 0.94,
+       "y": 20.5,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L4",
+       "answer": "Humerus",
+       "accept": [],
+       "x": 0.94,
+       "y": 28.81,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L5",
+       "answer": "Pelvis",
+       "accept": [
+        "Pelvic Girdle",
+        "Hip Bone"
+       ],
+       "x": 0.94,
+       "y": 40.35,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L6",
+       "answer": "Femur",
+       "accept": [
+        "Thigh Bone"
+       ],
+       "x": 0.94,
+       "y": 54.66,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L7",
+       "answer": "Patella",
+       "accept": [
+        "Kneecap"
+       ],
+       "x": 0.94,
+       "y": 69.44,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L8",
+       "answer": "Fibula",
+       "accept": [],
+       "x": 0.94,
+       "y": 78.67,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L9",
+       "answer": "Clavicle",
+       "accept": [
+        "Collarbone"
+       ],
+       "x": 79.79,
+       "y": 12.19,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L10",
+       "answer": "Sternum",
+       "accept": [
+        "Breastbone"
+       ],
+       "x": 79.79,
+       "y": 19.58,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L11",
+       "answer": "Ribs",
+       "accept": [
+        "Rib",
+        "Costae"
+       ],
+       "x": 79.79,
+       "y": 26.04,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L12",
+       "answer": "Ulna",
+       "accept": [],
+       "x": 79.79,
+       "y": 36.2,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L13",
+       "answer": "Radius",
+       "accept": [],
+       "x": 79.79,
+       "y": 43.58,
+       "w": 19.26,
+       "h": 3.32
+      },
+      {
+       "id": "skeleton-L14",
+       "answer": "Tibia",
+       "accept": [
+        "Shin Bone"
+       ],
+       "x": 79.79,
+       "y": 78.67,
+       "w": 19.26,
+       "h": 3.32
+      }
+     ]
+    },
+    {
+     "id": "long-bone",
+     "title": "Structure of a Long Bone",
+     "caption": "A long bone has a shaft (diaphysis) and two ends (epiphyses). Hard compact bone forms the outer wall, while spongy bone fills the ends. The medullary cavity in the shaft holds bone marrow (Myel/o).",
+     "alt": "A femur with one end cut open, showing spongy bone, compact bone and the medullary cavity, with brackets marking the epiphyses, metaphyses and diaphysis.",
+     "kind": "labeled-diagram",
+     "credit": "BruceBlaus, via Wikimedia Commons",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Structure_of_a_Long_Bone.png",
+     "labeled": "banks/medterm/study/lec11/long-bone-labeled.png",
+     "blank": "banks/medterm/study/lec11/long-bone-blank.png",
+     "width": 800,
+     "height": 1200,
+     "labels": [
+      {
+       "id": "long-bone-L1",
+       "answer": "Spongy Bone",
+       "accept": [
+        "Cancellous Bone",
+        "Trabecular Bone"
+       ],
+       "x": 1.9,
+       "y": 12.6,
+       "w": 12.8,
+       "h": 5.27
+      },
+      {
+       "id": "long-bone-L2",
+       "answer": "Medullary Cavity",
+       "accept": [
+        "Marrow Cavity"
+       ],
+       "x": 2.3,
+       "y": 35.33,
+       "w": 16.2,
+       "h": 5.73
+      },
+      {
+       "id": "long-bone-L3",
+       "answer": "Compact Bone",
+       "accept": [
+        "Cortical Bone"
+       ],
+       "x": 2.4,
+       "y": 58.67,
+       "w": 15.0,
+       "h": 5.33
+      },
+      {
+       "id": "long-bone-L4",
+       "answer": "Epiphysis",
+       "accept": [
+        "Proximal Epiphysis"
+       ],
+       "x": 64.4,
+       "y": 13.2,
+       "w": 15.8,
+       "h": 2.8
+      },
+      {
+       "id": "long-bone-L5",
+       "answer": "Metaphysis",
+       "accept": [],
+       "x": 63.4,
+       "y": 22.27,
+       "w": 18.6,
+       "h": 2.8
+      },
+      {
+       "id": "long-bone-L6",
+       "answer": "Diaphysis",
+       "accept": [
+        "Shaft"
+       ],
+       "x": 64.6,
+       "y": 51.47,
+       "w": 16.0,
+       "h": 5.73
+      },
+      {
+       "id": "long-bone-L7",
+       "answer": "Metaphysis",
+       "accept": [],
+       "x": 63.2,
+       "y": 84.53,
+       "w": 18.6,
+       "h": 2.8
+      },
+      {
+       "id": "long-bone-L8",
+       "answer": "Epiphysis",
+       "accept": [
+        "Distal Epiphysis"
+       ],
+       "x": 64.4,
+       "y": 92.13,
+       "w": 15.8,
+       "h": 2.8
+      }
+     ]
+    },
+    {
+     "id": "bone-humerus",
+     "title": "Humerus",
+     "caption": "The highlighted bone is the humerus. Name it from its position in the skeleton.",
+     "alt": "Front view of the skeleton from the head to the hips, with the single long bone of each upper arm, between the shoulder and the elbow, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humerus_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11077.png",
+     "width": 800,
+     "height": 651,
+     "answer": "Humerus",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-femur",
+     "title": "Femur",
+     "caption": "The highlighted bone is the femur. Name it from its position in the skeleton.",
+     "alt": "Front view of the lower body skeleton with the long bone of each thigh, between the hip and the knee, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Femur_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11078.png",
+     "width": 643,
+     "height": 800,
+     "answer": "Femur",
+     "accept": [
+      "Thigh bone"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-tibia",
+     "title": "Tibia",
+     "caption": "The highlighted bone is the tibia. Name it from its position in the skeleton.",
+     "alt": "Front view of both lower legs with the larger, inner bone of each shin, between the knee and the ankle, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tibia_-_frontal_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11079.png",
+     "width": 637,
+     "height": 800,
+     "answer": "Tibia",
+     "accept": [
+      "Shinbone",
+      "Shin bone"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-fibula",
+     "title": "Fibula",
+     "caption": "The highlighted bone is the fibula. Name it from its position in the skeleton.",
+     "alt": "Front view of both lower legs with the thin outer bone on the lateral side of each leg, between the knee and the ankle, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fibula_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11080.png",
+     "width": 692,
+     "height": 800,
+     "answer": "Fibula",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-radius",
+     "title": "Radius",
+     "caption": "The highlighted bone is the radius. Name it from its position in the skeleton.",
+     "alt": "Front view of the skeleton with the forearm bone on the thumb side of each arm highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radius_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11081.png",
+     "width": 800,
+     "height": 593,
+     "answer": "Radius",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-ulna",
+     "title": "Ulna",
+     "caption": "The highlighted bone is the ulna. Name it from its position in the skeleton.",
+     "alt": "Front view of the skeleton with the forearm bone on the little-finger side of each arm highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ulna_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11082.png",
+     "width": 800,
+     "height": 800,
+     "answer": "Ulna",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-carpals",
+     "title": "Carpals",
+     "caption": "The highlighted bone is the carpals. Name it from its position in the skeleton.",
+     "alt": "Palm-side view of a left hand skeleton with the cluster of small bones of the wrist, between the forearm and the palm, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS., via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carpus_(left_hand)_01_palmar_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11083.png",
+     "width": 453,
+     "height": 800,
+     "answer": "Carpals",
+     "accept": [
+      "Carpal bones",
+      "Carpus"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-tarsals",
+     "title": "Tarsals",
+     "caption": "The highlighted bone is the tarsals. Name it from its position in the skeleton.",
+     "alt": "Top view of both foot skeletons with the group of short bones of the ankle and back of the foot shown in different colours.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS., via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tarsal_bones09_superior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11084.png",
+     "width": 800,
+     "height": 625,
+     "answer": "Tarsals",
+     "accept": [
+      "Tarsal bones",
+      "Tarsus"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-patella",
+     "title": "Patella",
+     "caption": "The highlighted bone is the patella. Name it from its position in the skeleton.",
+     "alt": "Front and side views of the knee joint, with the small bone at the front of the knee, sitting over the end of the thigh bone, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Patrick J. Lynch, medical illustrator, via Wikimedia Commons",
+     "license": "CC BY 2.5",
+     "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knee_skeleton_lateral_anterior_views.svg",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11085.png",
+     "width": 800,
+     "height": 798,
+     "answer": "Patella",
+     "accept": [
+      "Kneecap"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-sternum",
+     "title": "Sternum",
+     "caption": "The highlighted bone is the sternum. Name it from its position in the skeleton.",
+     "alt": "Front view of the chest skeleton with the flat vertical bone in the middle of the front of the chest highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sternum_front.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11086.png",
+     "width": 604,
+     "height": 800,
+     "answer": "Sternum",
+     "accept": [
+      "Breastbone"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-scapula",
+     "title": "Scapula",
+     "caption": "The highlighted bone is the scapula. Name it from its position in the skeleton.",
+     "alt": "Front view of the upper body skeleton with the flat triangular bone at the back of each shoulder, seen behind the rib cage, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scapula_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11087.png",
+     "width": 800,
+     "height": 583,
+     "answer": "Scapula",
+     "accept": [
+      "Shoulder blade"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-ribs",
+     "title": "Ribs",
+     "caption": "The highlighted bone is the ribs. Name it from its position in the skeleton.",
+     "alt": "Front view of the chest skeleton with the curved bones that form the thoracic cage highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ribs_animation.gif",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11088.png",
+     "width": 403,
+     "height": 506,
+     "answer": "Ribs",
+     "accept": [
+      "Rib"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-pelvis",
+     "title": "Pelvis",
+     "caption": "The highlighted bone is the pelvis. Name it from its position in the skeleton.",
+     "alt": "Front view of the skeleton with the basin-shaped ring of bones at the hips highlighted in red.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelvis_(male)_01_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11089.png",
+     "width": 757,
+     "height": 613,
+     "answer": "Pelvis",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-skull",
+     "title": "Skull",
+     "caption": "The highlighted bone is the skull. Name it from its position in the skeleton.",
+     "alt": "Front view of the complete bony skeleton of the head, including the braincase and the face.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_skull_-_anterior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11090.png",
+     "width": 588,
+     "height": 800,
+     "answer": "Skull",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-vertebra",
+     "title": "Vertebra",
+     "caption": "The highlighted bone is the vertebra. Name it from its position in the skeleton.",
+     "alt": "Front view of the lower trunk skeleton with one single bone of the lower spinal column highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lumbar_vertebra_3_anterior2.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11091.png",
+     "width": 582,
+     "height": 495,
+     "answer": "Vertebra",
+     "accept": [
+      "Vertebrae"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-sacrum",
+     "title": "Sacrum",
+     "caption": "The highlighted bone is the sacrum. Name it from its position in the skeleton.",
+     "alt": "Front view of the pelvis with the triangular bone at the base of the spine, between the two hip bones, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sacrum_-_anterior_view03.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11092.png",
+     "width": 800,
+     "height": 773,
+     "answer": "Sacrum",
+     "accept": [],
+     "labels": []
+    },
+    {
+     "id": "bone-facial-bones",
+     "title": "Facial bones",
+     "caption": "The highlighted bone is the facial bones. Name it from its position in the skeleton.",
+     "alt": "Front view of the bones of the face shown on their own in different colours, without the braincase.",
+     "kind": "single-structure",
+     "credit": "Polygon data is from BodyParts3D, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Facial_bones_-_anterior_view01.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11093.png",
+     "width": 591,
+     "height": 539,
+     "answer": "Facial bones",
+     "accept": [
+      "Facial bone"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-hyoid",
+     "title": "Hyoid",
+     "caption": "The highlighted bone is the hyoid. Name it from its position in the skeleton.",
+     "alt": "Front view of the head, neck and upper chest skeleton with the small U-shaped bone in the front of the neck, just below the lower jaw, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "Anatomography, via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyoid_bone_-_animation.gif",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11094.png",
+     "width": 324,
+     "height": 305,
+     "answer": "Hyoid",
+     "accept": [
+      "Hyoid bone"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-metacarpals",
+     "title": "Metacarpals",
+     "caption": "The highlighted bone is the metacarpals. Name it from its position in the skeleton.",
+     "alt": "Palm-side view of a left hand skeleton with the five long bones of the palm, between the wrist and the fingers, highlighted in red.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS. Rendering the image is by was_a_bee, using Blender., via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metacarpal_bones_(left_hand)_01_palmer_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11095.png",
+     "width": 453,
+     "height": 800,
+     "answer": "Metacarpals",
+     "accept": [
+      "Metacarpal bones"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-metatarsals",
+     "title": "Metatarsals",
+     "caption": "The highlighted bone is the metatarsals. Name it from its position in the skeleton.",
+     "alt": "Top view of both foot skeletons with the five long bones of each foot, between the ankle bones and the toes, highlighted in green.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS., via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metatarsal_bones01_-_superior_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11096.png",
+     "width": 800,
+     "height": 625,
+     "answer": "Metatarsals",
+     "accept": [
+      "Metatarsal bones"
+     ],
+     "labels": []
+    },
+    {
+     "id": "bone-phalanges",
+     "title": "Phalanges",
+     "caption": "The highlighted bone is the phalanges. Name it from its position in the skeleton.",
+     "alt": "Palm-side view of a left hand skeleton with the bones of the thumb and fingers highlighted in red.",
+     "kind": "single-structure",
+     "credit": "BodyParts3D is made by DBCLS., via Wikimedia Commons",
+     "license": "CC BY-SA 2.1 JP",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalanges_of_the_hand_(left_hand)_01_palmar_view.png",
+     "labeled": null,
+     "blank": "banks/medterm/img/bones/bone-mt11097.png",
+     "width": 453,
+     "height": 800,
+     "answer": "Phalanges",
+     "accept": [
+      "Phalanx"
+     ],
+     "labels": []
+    }
+   ]
+  },
+  {
+   "lecture": "lec12-13",
+   "cat": "MT_lec12-13",
+   "images": [
+    {
+     "id": "heart-q1",
+     "title": "Blood Flow Through the Heart",
+     "caption": "Blood from the body enters the right atrium, goes through the right ventricle to the lungs, returns to the left atrium and is pumped out of the left ventricle into the aorta. Cardi/o means heart.",
+     "alt": "Circular flow diagram with arrows showing the path of blood: from the body tissues through the right side of the heart to the lungs, then back through the left side of the heart to the aorta and body. All 14 step labels are blank.",
+     "kind": "labeled-diagram",
+     "credit": "Your own course material (lecture slide)",
+     "license": "User-supplied course material (not openly licensed; internal course use only)",
+     "licenseUrl": "",
+     "sourceUrl": "",
+     "labeled": "banks/medterm/study/lec12-13/q1-labeled.png",
+     "blank": "banks/medterm/img/mt12-label-1.png",
+     "width": 1025,
+     "height": 825,
+     "labels": [
+      {
+       "id": "q1-L1",
+       "answer": "Lungs",
+       "x": 37.95,
+       "y": 3.27,
+       "w": 11.51,
+       "h": 6.55,
+       "accept": []
+      },
+      {
+       "id": "q1-L2",
+       "answer": "Pulmonary Veins",
+       "accept": [
+        "Pulmonary Vein"
+       ],
+       "x": 55.51,
+       "y": 19.15,
+       "w": 30.83,
+       "h": 6.55
+      },
+      {
+       "id": "q1-L3",
+       "answer": "Left Atrium",
+       "x": 60.49,
+       "y": 36.12,
+       "w": 19.61,
+       "h": 5.82,
+       "accept": []
+      },
+      {
+       "id": "q1-L4",
+       "answer": "Bicuspid AV Valve",
+       "accept": [
+        "Bicuspid Valve",
+        "Mitral Valve",
+        "Left AV Valve",
+        "Left Atrioventricular Valve"
+       ],
+       "x": 72.68,
+       "y": 46.42,
+       "w": 22.54,
+       "h": 4.97
+      },
+      {
+       "id": "q1-L5",
+       "answer": "Left Ventricle",
+       "x": 59.41,
+       "y": 55.27,
+       "w": 23.8,
+       "h": 5.94,
+       "accept": []
+      },
+      {
+       "id": "q1-L6",
+       "answer": "Aortic Semilunar Valve",
+       "accept": [
+        "Aortic Valve"
+       ],
+       "x": 70.34,
+       "y": 66.42,
+       "w": 27.9,
+       "h": 4.36
+      },
+      {
+       "id": "q1-L7",
+       "answer": "Aorta",
+       "x": 59.61,
+       "y": 71.76,
+       "w": 10.44,
+       "h": 5.45,
+       "accept": []
+      },
+      {
+       "id": "q1-L8",
+       "answer": "Body Tissues",
+       "accept": [
+        "Body",
+        "Systemic Tissues"
+       ],
+       "x": 32.78,
+       "y": 90.79,
+       "w": 24.68,
+       "h": 6.67
+      },
+      {
+       "id": "q1-L9",
+       "answer": "Vena Cava",
+       "accept": [
+        "Venae Cavae",
+        "Superior and Inferior Vena Cava"
+       ],
+       "x": 12.68,
+       "y": 72.0,
+       "w": 21.07,
+       "h": 5.94
+      },
+      {
+       "id": "q1-L10",
+       "answer": "Right Atrium",
+       "x": 5.37,
+       "y": 56.48,
+       "w": 23.02,
+       "h": 6.67,
+       "accept": []
+      },
+      {
+       "id": "q1-L11",
+       "answer": "Tricuspid AV Valve",
+       "accept": [
+        "Tricuspid Valve",
+        "Right AV Valve",
+        "Right Atrioventricular Valve"
+       ],
+       "x": 20.2,
+       "y": 49.82,
+       "w": 23.41,
+       "h": 4.36
+      },
+      {
+       "id": "q1-L12",
+       "answer": "Right Ventricle",
+       "x": 3.51,
+       "y": 38.91,
+       "w": 27.12,
+       "h": 6.91,
+       "accept": []
+      },
+      {
+       "id": "q1-L13",
+       "answer": "Pulmonary Semilunar Valve",
+       "accept": [
+        "Pulmonary Valve",
+        "Pulmonic Valve"
+       ],
+       "x": 20.2,
+       "y": 26.42,
+       "w": 26.54,
+       "h": 8.12
+      },
+      {
+       "id": "q1-L14",
+       "answer": "Pulmonary Arteries",
+       "accept": [
+        "Pulmonary Artery",
+        "Pulmonary Trunk"
+       ],
+       "x": 1.95,
+       "y": 19.15,
+       "w": 35.02,
+       "h": 6.42
+      }
+     ],
+     "note": "The labeled version is the original course image with the same crop."
+    },
+    {
+     "id": "heart-q2",
+     "title": "Structures of the Heart",
+     "caption": "The heart has four chambers (two atria and two ventricles) and four valves that keep blood flowing one way. The wall has three layers: endocardium, myocardium and epicardium.",
+     "alt": "Cutaway front view of the heart showing its four chambers, valves, septa, great vessels and wall layers, with 21 blank labels connected to the structures by leader lines.",
+     "kind": "labeled-diagram",
+     "credit": "Your own course material (textbook page)",
+     "license": "User-supplied course material (not openly licensed; internal course use only)",
+     "licenseUrl": "",
+     "sourceUrl": "",
+     "labeled": "banks/medterm/study/lec12-13/q2-labeled.png",
+     "blank": "banks/medterm/img/mt12-label-2.png",
+     "width": 1055,
+     "height": 897,
+     "labels": [
+      {
+       "id": "q2-L1",
+       "answer": "Superior Vena Cava",
+       "x": 10.52,
+       "y": 11.37,
+       "w": 15.73,
+       "h": 3.57,
+       "accept": []
+      },
+      {
+       "id": "q2-L2",
+       "answer": "Aortic Arch",
+       "x": 48.44,
+       "y": 14.72,
+       "w": 9.1,
+       "h": 2.68,
+       "accept": []
+      },
+      {
+       "id": "q2-L3",
+       "answer": "Aorta",
+       "x": 42.37,
+       "y": 23.86,
+       "w": 4.93,
+       "h": 2.68,
+       "accept": []
+      },
+      {
+       "id": "q2-L4",
+       "answer": "Pulmonary Artery",
+       "accept": [
+        "Pulmonary Trunk",
+        "Pulmonary Arteries"
+       ],
+       "x": 56.21,
+       "y": 23.75,
+       "w": 8.72,
+       "h": 4.46
+      },
+      {
+       "id": "q2-L5",
+       "answer": "Interatrial Septum",
+       "x": 10.71,
+       "y": 24.53,
+       "w": 13.65,
+       "h": 2.68,
+       "accept": []
+      },
+      {
+       "id": "q2-L6",
+       "answer": "Pulmonary Veins",
+       "accept": [
+        "Pulmonary Vein"
+       ],
+       "x": 10.71,
+       "y": 30.1,
+       "w": 8.91,
+       "h": 4.46
+      },
+      {
+       "id": "q2-L7",
+       "answer": "Right Atrium",
+       "x": 10.71,
+       "y": 54.18,
+       "w": 9.86,
+       "h": 2.56,
+       "accept": []
+      },
+      {
+       "id": "q2-L8",
+       "answer": "Tricuspid Valve",
+       "accept": [
+        "Tricuspid AV Valve",
+        "Right AV Valve",
+        "Right Atrioventricular Valve"
+       ],
+       "x": 10.71,
+       "y": 63.77,
+       "w": 11.75,
+       "h": 2.68
+      },
+      {
+       "id": "q2-L9",
+       "answer": "Right Ventricle",
+       "x": 10.71,
+       "y": 78.71,
+       "w": 11.37,
+       "h": 2.56,
+       "accept": []
+      },
+      {
+       "id": "q2-L10",
+       "answer": "Inferior Vena Cava",
+       "x": 10.71,
+       "y": 88.52,
+       "w": 13.84,
+       "h": 2.56,
+       "accept": []
+      },
+      {
+       "id": "q2-L11",
+       "answer": "Pulmonary Veins",
+       "accept": [
+        "Pulmonary Vein"
+       ],
+       "x": 85.59,
+       "y": 33.11,
+       "w": 13.18,
+       "h": 2.56
+      },
+      {
+       "id": "q2-L12",
+       "answer": "Left Atrium",
+       "x": 85.59,
+       "y": 41.47,
+       "w": 8.91,
+       "h": 2.68,
+       "accept": []
+      },
+      {
+       "id": "q2-L13",
+       "answer": "Mitral Valve",
+       "accept": [
+        "Bicuspid Valve",
+        "Bicuspid AV Valve",
+        "Left AV Valve",
+        "Left Atrioventricular Valve"
+       ],
+       "x": 85.59,
+       "y": 46.71,
+       "w": 9.29,
+       "h": 2.79
+      },
+      {
+       "id": "q2-L14",
+       "answer": "Aortic Valve",
+       "accept": [
+        "Aortic Semilunar Valve"
+       ],
+       "x": 85.59,
+       "y": 52.51,
+       "w": 9.57,
+       "h": 2.56
+      },
+      {
+       "id": "q2-L15",
+       "answer": "Pulmonary Semilunar Valve",
+       "accept": [
+        "Pulmonary Valve",
+        "Pulmonic Valve"
+       ],
+       "x": 85.59,
+       "y": 56.74,
+       "w": 12.51,
+       "h": 4.57
+      },
+      {
+       "id": "q2-L16",
+       "answer": "Left Ventricle",
+       "x": 85.59,
+       "y": 61.76,
+       "w": 10.33,
+       "h": 2.45,
+       "accept": []
+      },
+      {
+       "id": "q2-L17",
+       "answer": "Interventricular Septum",
+       "x": 85.59,
+       "y": 67.89,
+       "w": 12.04,
+       "h": 4.57,
+       "accept": []
+      },
+      {
+       "id": "q2-L18",
+       "answer": "Endocardium",
+       "x": 85.59,
+       "y": 76.48,
+       "w": 10.62,
+       "h": 2.56,
+       "accept": []
+      },
+      {
+       "id": "q2-L19",
+       "answer": "Myocardium",
+       "x": 85.59,
+       "y": 80.71,
+       "w": 10.05,
+       "h": 2.45,
+       "accept": []
+      },
+      {
+       "id": "q2-L20",
+       "answer": "Epicardium",
+       "x": 85.59,
+       "y": 84.84,
+       "w": 9.29,
+       "h": 2.45,
+       "accept": []
+      },
+      {
+       "id": "q2-L21",
+       "answer": "Pericardium",
+       "x": 85.59,
+       "y": 88.85,
+       "w": 9.76,
+       "h": 2.45,
+       "accept": []
+      }
+     ],
+     "note": "The labeled version is the original course image with the same crop."
+    },
+    {
+     "id": "heart-q3",
+     "title": "Electrical Conduction System",
+     "caption": "Each heartbeat starts at the SA node, the pacemaker. The signal passes to the AV node, then down the bundle of His and the bundle branches to the Purkinje fibers.",
+     "alt": "Cutaway drawing of the heart with the conduction system highlighted: the SA node in the right atrium, internodal pathways, the AV node, the bundle of His, the right and left bundle branches, and the Purkinje fibers in the ventricle walls. The four chambers are also marked. All 11 labels are blank.",
+     "kind": "labeled-diagram",
+     "credit": "Drj (CardioNetworks); blank version by YitzhakNat, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heart_and_electrical_conduction_system.svg",
+     "labeled": "banks/medterm/study/lec12-13/q3-labeled.png",
+     "blank": "banks/medterm/img/mt12-label-3.png",
+     "width": 1200,
+     "height": 821,
+     "labels": [
+      {
+       "id": "q3-L1",
+       "answer": "Sinoatrial Node",
+       "accept": [
+        "SA Node",
+        "Sinus Node",
+        "S-A Node",
+        "Sinoatrial (SA) Node"
+       ],
+       "x": 1.67,
+       "y": 18.64,
+       "w": 14.17,
+       "h": 4.14
+      },
+      {
+       "id": "q3-L2",
+       "answer": "Right Atrium",
+       "x": 1.67,
+       "y": 30.82,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      },
+      {
+       "id": "q3-L3",
+       "answer": "Internodal Pathways",
+       "accept": [
+        "Internodal Tracts",
+        "Internodal Pathway"
+       ],
+       "x": 1.67,
+       "y": 43.0,
+       "w": 14.17,
+       "h": 4.14
+      },
+      {
+       "id": "q3-L4",
+       "answer": "Atrioventricular Node",
+       "accept": [
+        "AV Node",
+        "A-V Node",
+        "Atrioventricular (AV) Node"
+       ],
+       "x": 1.67,
+       "y": 55.18,
+       "w": 14.17,
+       "h": 4.14
+      },
+      {
+       "id": "q3-L5",
+       "answer": "Right Ventricle",
+       "x": 1.67,
+       "y": 64.31,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      },
+      {
+       "id": "q3-L6",
+       "answer": "Purkinje Fibers",
+       "accept": [
+        "Purkinje Fibres",
+        "Purkinje Fiber",
+        "Subendocardial Branches"
+       ],
+       "x": 1.67,
+       "y": 75.88,
+       "w": 14.17,
+       "h": 4.14
+      },
+      {
+       "id": "q3-L7",
+       "answer": "Left Atrium",
+       "x": 84.17,
+       "y": 22.9,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      },
+      {
+       "id": "q3-L8",
+       "answer": "Left Ventricle",
+       "x": 84.17,
+       "y": 38.37,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      },
+      {
+       "id": "q3-L9",
+       "answer": "Left Bundle Branch",
+       "x": 84.17,
+       "y": 63.7,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      },
+      {
+       "id": "q3-L10",
+       "answer": "Bundle of His",
+       "accept": [
+        "AV Bundle",
+        "Atrioventricular Bundle",
+        "His Bundle",
+        "A-V Bundle"
+       ],
+       "x": 39.83,
+       "y": 93.18,
+       "w": 14.17,
+       "h": 4.14
+      },
+      {
+       "id": "q3-L11",
+       "answer": "Right Bundle Branch",
+       "x": 60.98,
+       "y": 93.18,
+       "w": 14.17,
+       "h": 4.14,
+       "accept": []
+      }
+     ],
+     "note": "The labeled version has the answers drawn into the blank label areas."
+    },
+    {
+     "id": "heart-q4",
+     "title": "Coronary Arteries",
+     "caption": "The coronary arteries branch off the aorta and supply the heart muscle itself. A blockage in one of them causes a myocardial infarction (heart attack).",
+     "alt": "Front view of the heart showing the right coronary artery and the left coronary artery with its branches on the heart's surface, along with the great vessels and chambers. All 14 labels are blank.",
+     "kind": "labeled-diagram",
+     "credit": "Patrick J. Lynch, Fred the Oyster, Mikael Häggström, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coronary_arteries.svg",
+     "labeled": "banks/medterm/study/lec12-13/q4-labeled.png",
+     "blank": "banks/medterm/img/mt12-label-4.png",
+     "width": 1200,
+     "height": 772,
+     "labels": [
+      {
+       "id": "q4-L1",
+       "answer": "Superior Vena Cava",
+       "x": 10.83,
+       "y": 2.85,
+       "w": 12.17,
+       "h": 7.64,
+       "accept": []
+      },
+      {
+       "id": "q4-L2",
+       "answer": "Aorta",
+       "accept": [
+        "Ascending Aorta"
+       ],
+       "x": 16.33,
+       "y": 18.65,
+       "w": 6.67,
+       "h": 3.89
+      },
+      {
+       "id": "q4-L3",
+       "answer": "Right Atrium",
+       "x": 9.08,
+       "y": 30.18,
+       "w": 13.92,
+       "h": 4.79,
+       "accept": []
+      },
+      {
+       "id": "q4-L4",
+       "answer": "Right Coronary Artery",
+       "accept": [
+        "RCA"
+       ],
+       "x": 4.67,
+       "y": 42.23,
+       "w": 18.33,
+       "h": 8.42
+      },
+      {
+       "id": "q4-L5",
+       "answer": "Posterior Descending Artery",
+       "accept": [
+        "PDA",
+        "Posterior Interventricular Artery"
+       ],
+       "x": 8.33,
+       "y": 56.22,
+       "w": 14.67,
+       "h": 12.56
+      },
+      {
+       "id": "q4-L6",
+       "answer": "Right Marginal Artery",
+       "accept": [
+        "RMA",
+        "Acute Marginal Artery",
+        "Marginal Artery"
+       ],
+       "x": 6.33,
+       "y": 73.83,
+       "w": 16.67,
+       "h": 8.42
+      },
+      {
+       "id": "q4-L7",
+       "answer": "Right Ventricle",
+       "x": 6.67,
+       "y": 88.21,
+       "w": 16.33,
+       "h": 4.79,
+       "accept": []
+      },
+      {
+       "id": "q4-L8",
+       "answer": "Left Pulmonary Artery",
+       "x": 74.5,
+       "y": 6.61,
+       "w": 17.25,
+       "h": 8.42,
+       "accept": []
+      },
+      {
+       "id": "q4-L9",
+       "answer": "Left Coronary Artery",
+       "accept": [
+        "LCA",
+        "Left Main Coronary Artery",
+        "Left Main Artery"
+       ],
+       "x": 74.5,
+       "y": 26.81,
+       "w": 16.67,
+       "h": 8.42
+      },
+      {
+       "id": "q4-L10",
+       "answer": "Left Anterior Descending Artery",
+       "accept": [
+        "LAD",
+        "Left Anterior Descending",
+        "Anterior Interventricular Artery"
+       ],
+       "x": 74.5,
+       "y": 37.95,
+       "w": 21.67,
+       "h": 16.45
+      },
+      {
+       "id": "q4-L11",
+       "answer": "Circumflex Artery",
+       "accept": [
+        "Left Circumflex Artery",
+        "Circumflex",
+        "LCx",
+        "Cx"
+       ],
+       "x": 74.5,
+       "y": 57.12,
+       "w": 18.5,
+       "h": 8.42
+      },
+      {
+       "id": "q4-L12",
+       "answer": "Left Marginal Arteries",
+       "accept": [
+        "Left Marginal Artery",
+        "Obtuse Marginal Arteries",
+        "Obtuse Marginal Artery",
+        "Marginal Arteries"
+       ],
+       "x": 74.5,
+       "y": 66.84,
+       "w": 19.75,
+       "h": 8.42
+      },
+      {
+       "id": "q4-L13",
+       "answer": "Diagonal Branches",
+       "accept": [
+        "Diagonal Arteries",
+        "Diagonal Branch",
+        "Diagonal Artery"
+       ],
+       "x": 74.5,
+       "y": 77.85,
+       "w": 15.42,
+       "h": 8.29
+      },
+      {
+       "id": "q4-L14",
+       "answer": "Left Ventricle",
+       "x": 74.5,
+       "y": 88.99,
+       "w": 14.67,
+       "h": 4.02,
+       "accept": []
+      }
+     ],
+     "note": "The labeled version has the answers drawn into the blank label areas."
+    },
+    {
+     "id": "heart-q5",
+     "title": "Blood Vessels",
+     "caption": "Arteries carry blood away from the heart and veins carry it back. Gas exchange happens in the tiny capillaries between the arterioles and the venules. Angi/o and Vas/o mean vessel.",
+     "alt": "Diagram of an artery carrying blood from the heart, branching into arterioles, a capillary network and venules, which join a vein that returns blood to the heart. Cutaways show the layers of the artery wall and a valve inside the vein, and a close-up of a capillary shows a red blood cell. All 13 labels are blank.",
+     "kind": "labeled-diagram",
+     "credit": "Kelvinsong, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blood_vessels-en.svg",
+     "labeled": "banks/medterm/study/lec12-13/q5-labeled.png",
+     "blank": "banks/medterm/img/mt12-label-5.png",
+     "width": 1200,
+     "height": 770,
+     "labels": [
+      {
+       "id": "q5-L1",
+       "answer": "Artery",
+       "x": 16.58,
+       "y": 59.22,
+       "w": 9.08,
+       "h": 5.06,
+       "accept": []
+      },
+      {
+       "id": "q5-L2",
+       "answer": "Vein",
+       "x": 78.58,
+       "y": 58.57,
+       "w": 6.33,
+       "h": 4.42,
+       "accept": []
+      },
+      {
+       "id": "q5-L3",
+       "answer": "Arterioles",
+       "accept": [
+        "Arteriole"
+       ],
+       "x": 28.58,
+       "y": 62.08,
+       "w": 9.58,
+       "h": 3.51
+      },
+      {
+       "id": "q5-L4",
+       "answer": "Capillaries",
+       "accept": [
+        "Capillary",
+        "Capillary Bed"
+       ],
+       "x": 52.5,
+       "y": 24.81,
+       "w": 10.0,
+       "h": 4.16
+      },
+      {
+       "id": "q5-L5",
+       "answer": "Venules",
+       "accept": [
+        "Venule"
+       ],
+       "x": 66.33,
+       "y": 61.17,
+       "w": 7.83,
+       "h": 3.51
+      },
+      {
+       "id": "q5-L6",
+       "answer": "Lumen",
+       "x": 24.67,
+       "y": 5.45,
+       "w": 6.25,
+       "h": 3.12,
+       "accept": []
+      },
+      {
+       "id": "q5-L7",
+       "answer": "Endothelium",
+       "accept": [
+        "Tunica Intima",
+        "Intima"
+       ],
+       "x": 3.67,
+       "y": 8.57,
+       "w": 11.5,
+       "h": 3.25
+      },
+      {
+       "id": "q5-L8",
+       "answer": "Smooth Muscle",
+       "accept": [
+        "Tunica Media",
+        "Smooth Muscle Layer"
+       ],
+       "x": 4.25,
+       "y": 15.45,
+       "w": 7.17,
+       "h": 5.84
+      },
+      {
+       "id": "q5-L9",
+       "answer": "Adventitia",
+       "accept": [
+        "Tunica Externa",
+        "Tunica Adventitia"
+       ],
+       "x": 3.0,
+       "y": 29.35,
+       "w": 9.58,
+       "h": 3.25
+      },
+      {
+       "id": "q5-L10",
+       "answer": "Internal Elastic Lamina",
+       "accept": [
+        "Internal Elastic Membrane"
+       ],
+       "x": 26.92,
+       "y": 20.0,
+       "w": 9.67,
+       "h": 5.71
+      },
+      {
+       "id": "q5-L11",
+       "answer": "External Elastic Lamina",
+       "accept": [
+        "External Elastic Membrane"
+       ],
+       "x": 0.42,
+       "y": 22.47,
+       "w": 12.0,
+       "h": 5.84
+      },
+      {
+       "id": "q5-L12",
+       "answer": "Valve",
+       "accept": [
+        "Venous Valve",
+        "Vein Valve"
+       ],
+       "x": 86.83,
+       "y": 5.58,
+       "w": 5.33,
+       "h": 3.25
+      },
+      {
+       "id": "q5-L13",
+       "answer": "Erythrocyte",
+       "accept": [
+        "Red Blood Cell",
+        "RBC",
+        "Erythrocytes",
+        "Red Blood Cells"
+       ],
+       "x": 34.42,
+       "y": 3.77,
+       "w": 12.58,
+       "h": 6.62
+      }
+     ],
+     "note": "The labeled version has the answers drawn into the blank label areas."
+    }
+   ]
+  },
+  {
+   "lecture": "lec14-15",
+   "cat": "MT_lec14-15",
+   "images": [
+    {
+     "id": "blood-cells",
+     "title": "Blood Cells (Hematopoiesis)",
+     "caption": "Hem/o and Hemat/o mean blood. Bone marrow makes erythrocytes (red cells), thrombocytes (platelets, from megakaryocytes) and leukocytes (white cells): neutrophils, eosinophils, basophils, monocytes and lymphocytes.",
+     "alt": "Family tree of blood cells formed in bone marrow, showing the erythrocyte, megakaryocyte and thrombocytes, the neutrophil, eosinophil and basophil, the monocyte and macrophage, and the lymphocytes (B and T cells, plasma cell and natural killer cell).",
+     "kind": "labeled-diagram",
+     "credit": "A. Rad and Mikael Häggström, M.D. Author info - Reusing images- Conflicts of interest:  None, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hematopoiesis_simple.svg",
+     "labeled": "banks/medterm/study/lec14-15/blood-cells-labeled.png",
+     "blank": "banks/medterm/study/lec14-15/blood-cells-blank.png",
+     "width": 1200,
+     "height": 800,
+     "labels": [
+      {
+       "id": "blood-cells-L1",
+       "answer": "Erythrocyte",
+       "accept": [
+        "Red Blood Cell",
+        "RBC"
+       ],
+       "x": 18.12,
+       "y": 50.94,
+       "w": 8.5,
+       "h": 2.75
+      },
+      {
+       "id": "blood-cells-L2",
+       "answer": "Megakaryocyte",
+       "accept": [],
+       "x": 3.12,
+       "y": 69.19,
+       "w": 11.38,
+       "h": 2.75
+      },
+      {
+       "id": "blood-cells-L3",
+       "answer": "Thrombocytes",
+       "accept": [
+        "Thrombocyte",
+        "Platelets",
+        "Platelet"
+       ],
+       "x": 3.88,
+       "y": 82.0,
+       "w": 10.75,
+       "h": 2.81
+      },
+      {
+       "id": "blood-cells-L4",
+       "answer": "Neutrophil",
+       "accept": [],
+       "x": 30.29,
+       "y": 73.75,
+       "w": 7.62,
+       "h": 2.81
+      },
+      {
+       "id": "blood-cells-L5",
+       "answer": "Eosinophil",
+       "accept": [],
+       "x": 39.83,
+       "y": 72.88,
+       "w": 7.75,
+       "h": 2.81
+      },
+      {
+       "id": "blood-cells-L6",
+       "answer": "Basophil",
+       "accept": [],
+       "x": 19.21,
+       "y": 72.25,
+       "w": 6.42,
+       "h": 2.81
+      },
+      {
+       "id": "blood-cells-L7",
+       "answer": "Monocyte",
+       "accept": [],
+       "x": 51.75,
+       "y": 74.56,
+       "w": 7.33,
+       "h": 2.62
+      },
+      {
+       "id": "blood-cells-L8",
+       "answer": "Macrophage",
+       "accept": [],
+       "x": 51.46,
+       "y": 96.31,
+       "w": 9.38,
+       "h": 2.75
+      },
+      {
+       "id": "blood-cells-L9",
+       "answer": "Lymphocyte",
+       "accept": [
+        "Small Lymphocyte"
+       ],
+       "x": 81.08,
+       "y": 49.81,
+       "w": 13.17,
+       "h": 2.75
+      },
+      {
+       "id": "blood-cells-L10",
+       "answer": "B Lymphocyte",
+       "accept": [
+        "B-cell",
+        "B Cell",
+        "B-Lymphocyte"
+       ],
+       "x": 88.17,
+       "y": 62.75,
+       "w": 10.08,
+       "h": 2.81
+      },
+      {
+       "id": "blood-cells-L11",
+       "answer": "T Lymphocyte",
+       "accept": [
+        "T-cell",
+        "T Cell",
+        "T-Lymphocyte"
+       ],
+       "x": 74.29,
+       "y": 62.25,
+       "w": 10.04,
+       "h": 2.75
+      },
+      {
+       "id": "blood-cells-L12",
+       "answer": "Plasma Cell",
+       "accept": [],
+       "x": 89.42,
+       "y": 79.25,
+       "w": 8.58,
+       "h": 2.25
+      },
+      {
+       "id": "blood-cells-L13",
+       "answer": "Natural Killer Cell",
+       "accept": [
+        "NK-cell",
+        "NK Cell",
+        "Large Granular Lymphocyte"
+       ],
+       "x": 52.96,
+       "y": 51.25,
+       "w": 20.92,
+       "h": 5.88
+      }
+     ]
+    },
+    {
+     "id": "lymphatic-system",
+     "title": "The Lymphatic System",
+     "caption": "Lymph/o means lymph. Lymph vessels carry fluid back to the blood through the thoracic duct, and lymph nodes filter it along the way. The thymus (Thym/o) and spleen (Splen/o) are lymphatic organs.",
+     "alt": "Female body outline with green lymph vessels and clusters of lymph nodes in the neck, armpits, abdomen, pelvis and groin, plus the thoracic duct, cisterna chyli, thymus and spleen.",
+     "kind": "labeled-diagram",
+     "credit": "BruceBlaus, via Wikimedia Commons",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blausen_0623_LymphaticSystem_Female.png",
+     "labeled": "banks/medterm/study/lec14-15/lymphatic-system-labeled.png",
+     "blank": "banks/medterm/study/lec14-15/lymphatic-system-blank.png",
+     "width": 1200,
+     "height": 1107,
+     "labels": [
+      {
+       "id": "lymphatic-system-L1",
+       "answer": "Cervical Lymph Nodes",
+       "accept": [
+        "Cervical Nodes"
+       ],
+       "x": 0.83,
+       "y": 7.68,
+       "w": 29.5,
+       "h": 3.88
+      },
+      {
+       "id": "lymphatic-system-L2",
+       "answer": "Thoracic Duct",
+       "accept": [
+        "Left Lymphatic Duct"
+       ],
+       "x": 80.08,
+       "y": 7.41,
+       "w": 18.83,
+       "h": 3.16
+      },
+      {
+       "id": "lymphatic-system-L3",
+       "answer": "Thymus",
+       "accept": [
+        "Thymus Gland"
+       ],
+       "x": 87.67,
+       "y": 15.09,
+       "w": 11.25,
+       "h": 3.7
+      },
+      {
+       "id": "lymphatic-system-L4",
+       "answer": "Lymphatics of the Mammary Gland",
+       "accept": [
+        "Mammary Lymphatics"
+       ],
+       "x": 0.67,
+       "y": 19.42,
+       "w": 24.17,
+       "h": 7.5
+      },
+      {
+       "id": "lymphatic-system-L5",
+       "answer": "Axillary Lymph Nodes",
+       "accept": [
+        "Axillary Nodes"
+       ],
+       "x": 70.42,
+       "y": 24.75,
+       "w": 28.5,
+       "h": 3.79
+      },
+      {
+       "id": "lymphatic-system-L6",
+       "answer": "Cisterna Chyli",
+       "accept": [],
+       "x": 0.58,
+       "y": 33.69,
+       "w": 18.67,
+       "h": 3.79
+      },
+      {
+       "id": "lymphatic-system-L7",
+       "answer": "Spleen",
+       "accept": [],
+       "x": 89.17,
+       "y": 33.06,
+       "w": 9.75,
+       "h": 3.88
+      },
+      {
+       "id": "lymphatic-system-L8",
+       "answer": "Lumbar Lymph Nodes",
+       "accept": [
+        "Lumbar Nodes"
+       ],
+       "x": 0.83,
+       "y": 43.9,
+       "w": 28.83,
+       "h": 3.79
+      },
+      {
+       "id": "lymphatic-system-L9",
+       "answer": "Lymphatics of the Upper Limb",
+       "accept": [
+        "Lymphatic Vessels",
+        "Upper Limb Lymphatics"
+       ],
+       "x": 74.67,
+       "y": 46.79,
+       "w": 24.25,
+       "h": 7.5
+      },
+      {
+       "id": "lymphatic-system-L10",
+       "answer": "Pelvic Lymph Nodes",
+       "accept": [
+        "Pelvic Nodes"
+       ],
+       "x": 0.67,
+       "y": 54.02,
+       "w": 26.58,
+       "h": 3.79
+      },
+      {
+       "id": "lymphatic-system-L11",
+       "answer": "Inguinal Lymph Nodes",
+       "accept": [
+        "Inguinal Nodes"
+       ],
+       "x": 69.83,
+       "y": 63.78,
+       "w": 29.08,
+       "h": 3.7
+      },
+      {
+       "id": "lymphatic-system-L12",
+       "answer": "Lymphatics of the Lower Limb",
+       "accept": [
+        "Lymphatic Vessels",
+        "Lower Limb Lymphatics"
+       ],
+       "x": 0.75,
+       "y": 65.67,
+       "w": 24.17,
+       "h": 6.78
+      }
+     ]
+    },
+    {
+     "id": "lymph-node",
+     "title": "Structure of a Lymph Node",
+     "caption": "Lymph enters a node through afferent vessels and leaves through efferent vessels. Inside, the cortex and medulla filter the lymph, and lymphocytes trap germs.",
+     "alt": "Cut-away of a bean-shaped lymph node with afferent lymphatic vessels entering and efferent vessels leaving, showing the capsule, cortex, nodules, sinuses, medulla and valves.",
+     "kind": "labeled-diagram",
+     "credit": "Lennert B (original); Tamil derivative by Commons user sibi, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illu_lymph_node_structure-ta.svg",
+     "labeled": "banks/medterm/study/lec14-15/lymph-node-labeled.png",
+     "blank": "banks/medterm/study/lec14-15/lymph-node-blank.png",
+     "width": 990,
+     "height": 610,
+     "labels": [
+      {
+       "id": "lymph-node-L1",
+       "answer": "Afferent Lymphatic Vessel",
+       "accept": [
+        "Afferent Vessel",
+        "Afferent Lymphatic Vessels"
+       ],
+       "x": 37.58,
+       "y": 3.93,
+       "w": 26.87,
+       "h": 4.92
+      },
+      {
+       "id": "lymph-node-L2",
+       "answer": "Efferent Lymphatic Vessel",
+       "accept": [
+        "Efferent Vessel",
+        "Efferent Lymphatic Vessels"
+       ],
+       "x": 34.95,
+       "y": 90.16,
+       "w": 26.46,
+       "h": 4.75
+      },
+      {
+       "id": "lymph-node-L3",
+       "answer": "Valve",
+       "accept": [
+        "Valve to Prevent Backflow",
+        "Lymphatic Valve"
+       ],
+       "x": 70.2,
+       "y": 20.82,
+       "w": 25.56,
+       "h": 4.59
+      },
+      {
+       "id": "lymph-node-L4",
+       "answer": "Capsule",
+       "accept": [],
+       "x": 3.03,
+       "y": 47.05,
+       "w": 8.79,
+       "h": 4.75
+      },
+      {
+       "id": "lymph-node-L5",
+       "answer": "Cortex",
+       "accept": [],
+       "x": 84.44,
+       "y": 54.92,
+       "w": 7.37,
+       "h": 3.77
+      },
+      {
+       "id": "lymph-node-L6",
+       "answer": "Nodule",
+       "accept": [
+        "Lymphatic Nodule",
+        "Follicle",
+        "Lymphoid Follicle"
+       ],
+       "x": 83.03,
+       "y": 45.57,
+       "w": 7.98,
+       "h": 3.77
+      },
+      {
+       "id": "lymph-node-L7",
+       "answer": "Sinus",
+       "accept": [
+        "Sinuses",
+        "Lymph Sinus"
+       ],
+       "x": 4.04,
+       "y": 63.61,
+       "w": 6.06,
+       "h": 3.77
+      },
+      {
+       "id": "lymph-node-L8",
+       "answer": "Medulla",
+       "accept": [
+        "Medullary Sinuses",
+        "Medullary Cords"
+       ],
+       "x": 79.9,
+       "y": 74.75,
+       "w": 8.69,
+       "h": 3.93
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec16-17",
+   "cat": "MT_lec16-17",
+   "images": [
+    {
+     "id": "alveoli",
+     "title": "Alveoli",
+     "caption": "Alveol/o means air sac. Each alveolus is wrapped in capillaries, where oxygen passes into the blood and carbon dioxide passes out.",
+     "alt": "Close-up of grape-like clusters of alveoli at the end of a bronchiole, with the alveolar duct, alveolar sacs, pulmonary artery and vein branches and capillary beds around them.",
+     "kind": "labeled-diagram",
+     "credit": "LadyofHats, via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alveolus_diagram.svg",
+     "labeled": "banks/medterm/study/lec16-17/alveoli-labeled.png",
+     "blank": "banks/medterm/study/lec16-17/alveoli-blank.png",
+     "width": 1100,
+     "height": 833,
+     "labels": [
+      {
+       "id": "alveoli-L1",
+       "answer": "Alveoli",
+       "accept": [
+        "Alveolus"
+       ],
+       "x": 84.27,
+       "y": 88.0,
+       "w": 11.36,
+       "h": 4.56
+      },
+      {
+       "id": "alveoli-L2",
+       "answer": "Alveolar Sacs",
+       "accept": [
+        "Alveolar Sac"
+       ],
+       "x": 7.0,
+       "y": 28.57,
+       "w": 22.82,
+       "h": 4.44
+      },
+      {
+       "id": "alveoli-L3",
+       "answer": "Alveolar Duct",
+       "accept": [],
+       "x": 6.27,
+       "y": 43.1,
+       "w": 22.27,
+       "h": 4.56
+      },
+      {
+       "id": "alveoli-L4",
+       "answer": "Capillary Beds",
+       "accept": [
+        "Capillaries",
+        "Capillary Bed",
+        "Pulmonary Capillaries"
+       ],
+       "x": 59.45,
+       "y": 0.12,
+       "w": 24.18,
+       "h": 5.52
+      },
+      {
+       "id": "alveoli-L5",
+       "answer": "Pulmonary Artery",
+       "accept": [
+        "Pulmonary Arteriole"
+       ],
+       "x": 48.09,
+       "y": 86.91,
+       "w": 28.91,
+       "h": 5.4
+      },
+      {
+       "id": "alveoli-L6",
+       "answer": "Pulmonary Vein",
+       "accept": [
+        "Pulmonary Venule"
+       ],
+       "x": 43.73,
+       "y": 93.64,
+       "w": 26.0,
+       "h": 5.4
+      },
+      {
+       "id": "alveoli-L7",
+       "answer": "Mucous Gland",
+       "accept": [],
+       "x": 6.09,
+       "y": 55.34,
+       "w": 23.45,
+       "h": 5.4
+      },
+      {
+       "id": "alveoli-L8",
+       "answer": "Mucosal Lining",
+       "accept": [
+        "Mucosa"
+       ],
+       "x": 5.45,
+       "y": 67.95,
+       "w": 23.91,
+       "h": 5.4
+      },
+      {
+       "id": "alveoli-L9",
+       "answer": "Connective Tissue",
+       "accept": [],
+       "x": 0.0,
+       "y": 13.33,
+       "w": 29.82,
+       "h": 4.44
+      }
+     ]
+    },
+    {
+     "id": "pharynx-regions",
+     "title": "Regions of the Pharynx",
+     "caption": "The pharynx (throat, Pharyng/o) has three parts: the nasopharynx behind the nose, the oropharynx behind the mouth (Or/o), and the laryngopharynx above the larynx.",
+     "alt": "Side view of the head cut down the middle, with the nasopharynx, oropharynx and laryngopharynx marked, plus the nasal cavity, hard palate and tongue.",
+     "kind": "labeled-diagram",
+     "credit": "Arcadian (original), Ripounet (vector), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illu_pharynx.svg",
+     "labeled": "banks/medterm/study/lec16-17/pharynx-regions-labeled.png",
+     "blank": "banks/medterm/study/lec16-17/pharynx-regions-blank.png",
+     "width": 1200,
+     "height": 576,
+     "labels": [
+      {
+       "id": "pharynx-regions-L1",
+       "answer": "Nasopharynx",
+       "accept": [],
+       "x": 79.44,
+       "y": 30.0,
+       "w": 14.88,
+       "h": 6.0
+      },
+      {
+       "id": "pharynx-regions-L2",
+       "answer": "Oropharynx",
+       "accept": [],
+       "x": 79.44,
+       "y": 49.33,
+       "w": 13.52,
+       "h": 6.0
+      },
+      {
+       "id": "pharynx-regions-L3",
+       "answer": "Laryngopharynx",
+       "accept": [
+        "Hypopharynx"
+       ],
+       "x": 79.44,
+       "y": 65.83,
+       "w": 18.24,
+       "h": 6.0
+      },
+      {
+       "id": "pharynx-regions-L4",
+       "answer": "Nasal Cavity",
+       "accept": [
+        "Nose"
+       ],
+       "x": 0.8,
+       "y": 14.92,
+       "w": 13.93,
+       "h": 6.83
+      },
+      {
+       "id": "pharynx-regions-L5",
+       "answer": "Hard Palate",
+       "accept": [
+        "Palate"
+       ],
+       "x": 0.8,
+       "y": 34.92,
+       "w": 13.93,
+       "h": 6.83
+      },
+      {
+       "id": "pharynx-regions-L6",
+       "answer": "Tongue",
+       "accept": [],
+       "x": 0.8,
+       "y": 56.58,
+       "w": 13.93,
+       "h": 6.83
+      }
+     ]
+    },
+    {
+     "id": "respiratory-tract",
+     "title": "The Respiratory Tract",
+     "caption": "Air flows through the nasal cavity (Nas/o, Rhin/o), pharynx (Pharyng/o), larynx (Laryng/o) and trachea (Trache/o) into the bronchi (Bronch/o), which branch into the lungs (Pneum/o, Pulmon/o). The right lung has three lobes and the left has two.",
+     "alt": "Front view of the respiratory system showing the nasal cavity, pharynx, epiglottis, larynx, trachea, carina, right and left main bronchi, the three lobes of the right lung, the two lobes of the left lung, and the diaphragm.",
+     "kind": "labeled-diagram",
+     "credit": "Bibi Saint-Pol, Jmarchn, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Respiratory_system_complete_no_labels.svg",
+     "labeled": "banks/medterm/study/lec16-17/respiratory-tract-labeled.png",
+     "blank": "banks/medterm/study/lec16-17/respiratory-tract-blank.png",
+     "width": 1200,
+     "height": 1234,
+     "labels": [
+      {
+       "id": "respiratory-tract-L1",
+       "answer": "Nasal Cavity",
+       "accept": [
+        "Nose"
+       ],
+       "x": 0.71,
+       "y": 13.16,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L2",
+       "answer": "Right Superior Lobe",
+       "accept": [
+        "Superior Lobe",
+        "Right Upper Lobe"
+       ],
+       "x": 0.71,
+       "y": 52.76,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L3",
+       "answer": "Right Main Bronchus",
+       "accept": [
+        "Main Bronchus",
+        "Primary Bronchus",
+        "Right Primary Bronchus"
+       ],
+       "x": 0.71,
+       "y": 63.17,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L4",
+       "answer": "Right Middle Lobe",
+       "accept": [
+        "Middle Lobe"
+       ],
+       "x": 0.71,
+       "y": 72.2,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L5",
+       "answer": "Right Inferior Lobe",
+       "accept": [
+        "Inferior Lobe",
+        "Right Lower Lobe"
+       ],
+       "x": 0.71,
+       "y": 79.84,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L6",
+       "answer": "Diaphragm",
+       "accept": [],
+       "x": 0.71,
+       "y": 89.57,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L7",
+       "answer": "Pharynx",
+       "accept": [
+        "Throat"
+       ],
+       "x": 79.89,
+       "y": 24.97,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L8",
+       "answer": "Epiglottis",
+       "accept": [],
+       "x": 79.89,
+       "y": 30.53,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L9",
+       "answer": "Larynx",
+       "accept": [
+        "Voice Box"
+       ],
+       "x": 79.89,
+       "y": 36.43,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L10",
+       "answer": "Trachea",
+       "accept": [
+        "Windpipe"
+       ],
+       "x": 79.89,
+       "y": 43.73,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L11",
+       "answer": "Carina",
+       "accept": [
+        "Carina of Trachea"
+       ],
+       "x": 79.89,
+       "y": 52.76,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L12",
+       "answer": "Left Main Bronchus",
+       "accept": [
+        "Main Bronchus",
+        "Primary Bronchus",
+        "Left Primary Bronchus"
+       ],
+       "x": 79.89,
+       "y": 60.4,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L13",
+       "answer": "Left Superior Lobe",
+       "accept": [
+        "Superior Lobe",
+        "Left Upper Lobe"
+       ],
+       "x": 79.89,
+       "y": 68.04,
+       "w": 19.4,
+       "h": 2.85
+      },
+      {
+       "id": "respiratory-tract-L14",
+       "answer": "Left Inferior Lobe",
+       "accept": [
+        "Inferior Lobe",
+        "Left Lower Lobe"
+       ],
+       "x": 79.89,
+       "y": 79.84,
+       "w": 19.4,
+       "h": 2.85
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec18-20",
+   "cat": "MT_lec18-20",
+   "images": [
+    {
+     "id": "brain-lobes",
+     "title": "Lobes of the Brain",
+     "caption": "The cerebrum (Cerebr/o) is divided into the frontal, parietal, temporal and occipital lobes. The cerebellum (Cerebell/o) sits at the back and coordinates balance and movement.",
+     "alt": "Side view of the brain with each lobe in a different colour: frontal, parietal, temporal and occipital lobes, plus the cerebellum and brainstem.",
+     "kind": "labeled-diagram",
+     "credit": "Cancer Research UK, via Wikimedia Commons",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diagram_showing_the_lobes_of_the_brain_CRUK_308.svg",
+     "labeled": "banks/medterm/study/lec18-20/brain-lobes-labeled.png",
+     "blank": "banks/medterm/study/lec18-20/brain-lobes-blank.png",
+     "width": 1100,
+     "height": 833,
+     "labels": [
+      {
+       "id": "brain-lobes-L1",
+       "answer": "Frontal Lobe",
+       "accept": [],
+       "x": 3.82,
+       "y": 9.84,
+       "w": 20.0,
+       "h": 4.56
+      },
+      {
+       "id": "brain-lobes-L2",
+       "answer": "Parietal Lobe",
+       "accept": [],
+       "x": 75.64,
+       "y": 9.6,
+       "w": 21.0,
+       "h": 4.56
+      },
+      {
+       "id": "brain-lobes-L3",
+       "answer": "Temporal Lobe",
+       "accept": [],
+       "x": 3.55,
+       "y": 59.66,
+       "w": 24.0,
+       "h": 5.52
+      },
+      {
+       "id": "brain-lobes-L4",
+       "answer": "Occipital Lobe",
+       "accept": [],
+       "x": 80.91,
+       "y": 58.22,
+       "w": 14.64,
+       "h": 10.32
+      },
+      {
+       "id": "brain-lobes-L5",
+       "answer": "Brainstem",
+       "accept": [
+        "Brain Stem"
+       ],
+       "x": 24.73,
+       "y": 76.11,
+       "w": 17.0,
+       "h": 4.44
+      },
+      {
+       "id": "brain-lobes-L6",
+       "answer": "Cerebellum",
+       "accept": [
+        "Little Brain"
+       ],
+       "x": 80.73,
+       "y": 73.77,
+       "w": 18.36,
+       "h": 6.12
+      }
+     ]
+    },
+    {
+     "id": "meninges",
+     "title": "The Meninges",
+     "caption": "Mening/o means membrane. The three meninges cover the brain and spinal cord: the tough dura mater on the outside, the arachnoid in the middle, and the delicate pia mater on the brain surface.",
+     "alt": "Cut-away from the scalp down to the brain showing the skin, aponeurosis, periosteum and bone, then the dura mater, arachnoid and pia mater, with a dural venous sinus and an arachnoid granulation.",
+     "kind": "labeled-diagram",
+     "credit": "Mysid (SVG), SEER Development Team (original), Jmarchn, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meninges-en.svg",
+     "labeled": "banks/medterm/study/lec18-20/meninges-labeled.png",
+     "blank": "banks/medterm/study/lec18-20/meninges-blank.png",
+     "width": 1150,
+     "height": 748,
+     "labels": [
+      {
+       "id": "meninges-L1",
+       "answer": "Dura Mater",
+       "accept": [
+        "Duramater"
+       ],
+       "x": 70.35,
+       "y": 39.84,
+       "w": 22.52,
+       "h": 5.75
+      },
+      {
+       "id": "meninges-L2",
+       "answer": "Arachnoid",
+       "accept": [
+        "Arachnoid Mater",
+        "Arachnoid Membrane"
+       ],
+       "x": 70.35,
+       "y": 46.93,
+       "w": 20.43,
+       "h": 5.88
+      },
+      {
+       "id": "meninges-L3",
+       "answer": "Pia Mater",
+       "accept": [
+        "Piamater"
+       ],
+       "x": 70.35,
+       "y": 54.14,
+       "w": 19.3,
+       "h": 6.02
+      },
+      {
+       "id": "meninges-L4",
+       "answer": "Skin",
+       "accept": [
+        "Scalp"
+       ],
+       "x": 15.74,
+       "y": 5.75,
+       "w": 7.74,
+       "h": 5.35
+      },
+      {
+       "id": "meninges-L5",
+       "answer": "Aponeurosis",
+       "accept": [
+        "Galea Aponeurotica"
+       ],
+       "x": 52.26,
+       "y": 8.96,
+       "w": 22.26,
+       "h": 6.42
+      },
+      {
+       "id": "meninges-L6",
+       "answer": "Periosteum",
+       "accept": [],
+       "x": 56.26,
+       "y": 15.24,
+       "w": 19.83,
+       "h": 5.21
+      },
+      {
+       "id": "meninges-L7",
+       "answer": "Bone",
+       "accept": [
+        "Skull",
+        "Cranium"
+       ],
+       "x": 59.57,
+       "y": 21.52,
+       "w": 9.22,
+       "h": 5.08
+      },
+      {
+       "id": "meninges-L8",
+       "answer": "Arachnoid Granulation",
+       "accept": [
+        "Arachnoid Villi",
+        "Arachnoid Granulations"
+       ],
+       "x": 24.96,
+       "y": 82.75,
+       "w": 38.43,
+       "h": 6.55
+      },
+      {
+       "id": "meninges-L9",
+       "answer": "Dural Venous Sinus",
+       "accept": [
+        "Superior Sagittal Sinus"
+       ],
+       "x": 24.96,
+       "y": 89.04,
+       "w": 33.39,
+       "h": 5.35
+      }
+     ]
+    },
+    {
+     "id": "brain-sagittal",
+     "title": "Brain: Midsagittal View",
+     "caption": "The thalamus (Thalam/o) relays sensory signals, and the hypothalamus below it controls body temperature, hunger and hormones. The brainstem (midbrain, pons and medulla oblongata) connects the brain to the spinal cord (Myel/o).",
+     "alt": "Brain cut down the middle showing the cerebrum, corpus callosum, thalamus, hypothalamus, cerebellum and the highlighted brainstem: mesencephalon, pons and medulla oblongata, continuing into the spinal cord.",
+     "kind": "labeled-diagram",
+     "credit": "Patrick J. Lynch, variation by User:Hk kng, via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_sagittal_section_stem_highlighted.svg",
+     "labeled": "banks/medterm/study/lec18-20/brain-sagittal-labeled.png",
+     "blank": "banks/medterm/study/lec18-20/brain-sagittal-blank.png",
+     "width": 1200,
+     "height": 853,
+     "labels": [
+      {
+       "id": "brain-sagittal-L1",
+       "answer": "Cerebrum",
+       "accept": [],
+       "x": 42.71,
+       "y": 5.73,
+       "w": 17.36,
+       "h": 4.52
+      },
+      {
+       "id": "brain-sagittal-L2",
+       "answer": "Cerebellum",
+       "accept": [
+        "Little Brain"
+       ],
+       "x": 60.07,
+       "y": 55.57,
+       "w": 20.0,
+       "h": 4.42
+      },
+      {
+       "id": "brain-sagittal-L3",
+       "answer": "Mesencephalon",
+       "accept": [
+        "Midbrain",
+        "Mid-brain"
+       ],
+       "x": 21.29,
+       "y": 55.97,
+       "w": 23.71,
+       "h": 4.92
+      },
+      {
+       "id": "brain-sagittal-L4",
+       "answer": "Pons",
+       "accept": [],
+       "x": 37.86,
+       "y": 64.51,
+       "w": 7.14,
+       "h": 3.92
+      },
+      {
+       "id": "brain-sagittal-L5",
+       "answer": "Medulla Oblongata",
+       "accept": [
+        "Medulla"
+       ],
+       "x": 29.14,
+       "y": 72.75,
+       "w": 15.86,
+       "h": 10.25
+      },
+      {
+       "id": "brain-sagittal-L6",
+       "answer": "Brainstem",
+       "accept": [
+        "Brain Stem",
+        "Truncus Cerebri"
+       ],
+       "x": 60.43,
+       "y": 72.35,
+       "w": 17.71,
+       "h": 4.42
+      },
+      {
+       "id": "brain-sagittal-L7",
+       "answer": "Corpus Callosum",
+       "accept": [],
+       "x": 81.76,
+       "y": 12.86,
+       "w": 17.52,
+       "h": 4.42
+      },
+      {
+       "id": "brain-sagittal-L8",
+       "answer": "Thalamus",
+       "accept": [
+        "Diencephalon"
+       ],
+       "x": 81.76,
+       "y": 26.93,
+       "w": 17.52,
+       "h": 4.42
+      },
+      {
+       "id": "brain-sagittal-L9",
+       "answer": "Hypothalamus",
+       "accept": [],
+       "x": 0.71,
+       "y": 39.99,
+       "w": 17.52,
+       "h": 4.42
+      },
+      {
+       "id": "brain-sagittal-L10",
+       "answer": "Spinal Cord",
+       "accept": [],
+       "x": 81.76,
+       "y": 88.23,
+       "w": 17.52,
+       "h": 4.42
+      }
+     ]
+    },
+    {
+     "id": "neuron",
+     "title": "Structure of a Neuron",
+     "caption": "Neur/o means nerve. A neuron receives signals through its dendrites, and the cell body (with its nucleus) passes them along the axon to the axon terminals. Schwann cells form the myelin sheath that speeds the signal.",
+     "alt": "A neuron with branching dendrites, a cell body with its nucleus, and a long axon wrapped in myelin sheath segments formed by Schwann cells, separated by nodes of Ranvier, ending in axon terminals.",
+     "kind": "labeled-diagram",
+     "credit": "Lokal_Profil (original: Dhp1080), via Wikimedia Commons",
+     "license": "CC BY-SA 3.0",
+     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neuron,_LangNeutral.svg",
+     "labeled": "banks/medterm/study/lec18-20/neuron-labeled.png",
+     "blank": "banks/medterm/study/lec18-20/neuron-blank.png",
+     "width": 1080,
+     "height": 698,
+     "labels": [
+      {
+       "id": "neuron-L1",
+       "answer": "Dendrite",
+       "accept": [
+        "Dendrites"
+       ],
+       "x": 4.79,
+       "y": 1.43,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L2",
+       "answer": "Cell Body",
+       "accept": [
+        "Soma",
+        "Neuron Cell Body"
+       ],
+       "x": 27.01,
+       "y": 1.43,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L3",
+       "answer": "Axon",
+       "accept": [],
+       "x": 51.08,
+       "y": 1.43,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L4",
+       "answer": "Axon Terminal",
+       "accept": [
+        "Axon Terminals",
+        "Synaptic Terminal"
+       ],
+       "x": 77.01,
+       "y": 1.43,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L5",
+       "answer": "Nucleus",
+       "accept": [],
+       "x": 4.79,
+       "y": 92.69,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L6",
+       "answer": "Myelin Sheath",
+       "accept": [
+        "Myelin"
+       ],
+       "x": 28.86,
+       "y": 92.69,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L7",
+       "answer": "Node of Ranvier",
+       "accept": [
+        "Nodes of Ranvier"
+       ],
+       "x": 52.93,
+       "y": 92.69,
+       "w": 20.06,
+       "h": 5.87
+      },
+      {
+       "id": "neuron-L8",
+       "answer": "Schwann Cell",
+       "accept": [
+        "Schwann Cells",
+        "Neurolemmocyte"
+       ],
+       "x": 77.01,
+       "y": 92.69,
+       "w": 20.06,
+       "h": 5.87
+      }
+     ]
+    },
+    {
+     "id": "nervous-system-divisions",
+     "title": "Central vs Peripheral Nervous System",
+     "caption": "The central nervous system (CNS) is the brain (Encephal/o) and spinal cord (Myel/o). The peripheral nervous system (PNS) is the nerves and ganglia (clusters of nerve cell bodies) that connect the CNS to the rest of the body.",
+     "alt": "Body outline showing the brain and spinal cord as the central nervous system, and nerves and ganglia branching out as the peripheral nervous system.",
+     "kind": "labeled-diagram",
+     "credit": "OpenStax, via Wikimedia Commons",
+     "license": "CC BY 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:1201_Overview_of_Nervous_System.jpg",
+     "labeled": "banks/medterm/study/lec18-20/nervous-system-divisions-labeled.png",
+     "blank": "banks/medterm/study/lec18-20/nervous-system-divisions-blank.png",
+     "width": 1100,
+     "height": 994,
+     "labels": [
+      {
+       "id": "nervous-system-divisions-L1",
+       "answer": "Central Nervous System",
+       "accept": [
+        "CNS"
+       ],
+       "x": 71.0,
+       "y": 1.41,
+       "w": 29.0,
+       "h": 3.42
+      },
+      {
+       "id": "nervous-system-divisions-L2",
+       "answer": "Brain",
+       "accept": [
+        "Encephalon"
+       ],
+       "x": 71.09,
+       "y": 6.94,
+       "w": 6.45,
+       "h": 3.02
+      },
+      {
+       "id": "nervous-system-divisions-L3",
+       "answer": "Spinal Cord",
+       "accept": [],
+       "x": 70.91,
+       "y": 18.11,
+       "w": 13.0,
+       "h": 3.62
+      },
+      {
+       "id": "nervous-system-divisions-L4",
+       "answer": "Peripheral Nervous System",
+       "accept": [
+        "PNS"
+       ],
+       "x": 0.0,
+       "y": 37.53,
+       "w": 32.36,
+       "h": 3.62
+      },
+      {
+       "id": "nervous-system-divisions-L5",
+       "answer": "Ganglion",
+       "accept": [
+        "Ganglia"
+       ],
+       "x": 15.45,
+       "y": 43.06,
+       "w": 10.55,
+       "h": 3.62
+      },
+      {
+       "id": "nervous-system-divisions-L6",
+       "answer": "Nerve",
+       "accept": [
+        "Nerves",
+        "Peripheral Nerve"
+       ],
+       "x": 15.45,
+       "y": 54.43,
+       "w": 7.27,
+       "h": 3.12
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

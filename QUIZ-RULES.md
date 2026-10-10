@@ -329,6 +329,50 @@ A material can have study notes next to its quiz:
   - Chapters 1 and 2 are PT1's files, unchanged.
   - Chapter 3 has the Bernoulli parts removed: they were not in the PT1 exam.
 
+### Picture study (Medical Terminology PT2)
+
+A material can have a picture study instead of Markdown notes:
+
+```json
+"study": { "title": "Picture Study", "images": "banks/medterm/study/study-images.json" }
+```
+
+- It opens in the same study screen as the Medical Physics notes (same header, buttons,
+  foldable chapter cards, themes, Esc/Backspace back). Buttons: **📖 Study** on the PT2
+  portal card, **📖 Picture study** in the PT2 hub, and **📖 Study** on every lecture card
+  in the hub (opens that lecture's chapter).
+- Each lecture is a chapter. Its line shows the number of pictures and "k / n solved",
+  with a thin progress bar; a summary bar above the chapters shows all solved labels.
+  A chapter (and its pictures) loads the first time it is opened; pictures are lazy-loaded.
+  Inside a chapter, a row of chips lists the pictures with their counts (click to jump).
+- Each picture is a section: title, picture, solved count (e.g. 5 / 12), 👁 toggle,
+  teaching caption and a credit line (author · license link · source link).
+- **Labels shown** (default): the labeled picture.
+- **Labels hidden** (👁): the blank picture with a typing slot at every hotspot. Typing
+  uses the quiz engine's labeling logic (section 14): exact capitals and spelling, `accept`
+  alternatives, spaces trimmed/collapsed, the live highlighter marking wrong letters or
+  capitals in the accent colour, and the lowercase hints on Enter ("wrong capitalization",
+  "missing slash", "not that one · try again"). A right slot locks for good with the PT1
+  celebration; finishing a picture adds the confetti. Tab moves between slots, Enter checks.
+- **↺ restart** sits at the bottom right of the picture. It only appears once at least one
+  slot of that picture is solved, and it clears that picture's slots only.
+- **Bone pictures** (`kind: "single-structure"`, one `answer` + `accept`, no hotspots):
+  labels shown → the answer as a caption under the picture; labels hidden → one
+  "Name this bone" box under the picture with the same strict logic. While hidden, the
+  title, caption and source link (which would give the name away) are not shown, and the
+  chapter chips call them "Bone 1", "Bone 2", ….
+- Progress is saved in `localStorage` (`sp_study_images_v1`), per picture and label, and
+  is separate from quiz progress (no solved questions, Mastery or rewards). The 👁 choice
+  is not saved: pictures open with labels shown.
+- PT2 is draft-marked, so the study header shows the Draft badge, and so do the chapters of
+  draft lectures (14–15, 16–17, 18–20), matching the hub.
+- At narrow widths a labeled diagram keeps a readable minimum size and scrolls sideways
+  inside its frame, like the labeling type.
+- Files: `banks/medterm/study/study-images.json` (chapters by lecture id) and
+  `banks/medterm/study/<lecture>/` for the new pictures, with `CREDITS.md`. The Lectures
+  12 & 13 blank hearts reuse `banks/medterm/img/mt12-label-*.png` and the bones reuse
+  `banks/medterm/img/bones/`, so nothing is duplicated.
+
 ## 13. Short-answer questions (`saq`)
 
 ```json

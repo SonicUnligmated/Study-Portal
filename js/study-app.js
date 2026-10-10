@@ -293,12 +293,23 @@
     const h = document.getElementById('studyTitle');
     if (h) h.textContent = study.title || 'Study Interface';
     const sub = document.getElementById('studySub');
-    if (sub) sub.textContent = [material && material.subjectName, material && material.title].filter(Boolean).join(' · ');
+    if (sub) {
+      sub.textContent = [material && material.subjectName, material && material.title].filter(Boolean).join(' · ');
+      // PT2 is draft-marked: the same Draft badge as on its portal card
+      if (material && material.draft) sub.insertAdjacentHTML('beforeend', '<span class="draft-badge study-draft" title="Unfinished · still being written">Draft</span>');
+    }
+    const summary = document.getElementById('studySummary');
+    if (summary) { summary.hidden = true; summary.innerHTML = ''; }
     const back = document.getElementById('studyBackBtn');
     if (back) back.textContent = backTo === 'hubView' ? '← Practice hub' : '← Study Portal';
     const q = document.getElementById('studyQuizBtn');
     if (q) q.hidden = !quizOpener;
-    buildCards();
+    // picture study (catalog "study.images"): same chapter cards, pictures instead of Markdown
+    if (study.images && window.StudyImages) {
+      StudyImages.build(listEl, material, { focus: opts.focus }).catch(function (err) {
+        listEl.innerHTML = '<p><strong>Could not load the pictures.</strong> Serve over http(s).</p><pre><code>' + escapeHtml(String(err)) + '</code></pre>';
+      });
+    } else buildCards();
     document.title = (study.title || 'Study') + ' · ' + ((material && material.title) || 'Study Portal');
     if (typeof showView === 'function') showView('studyView');
   }

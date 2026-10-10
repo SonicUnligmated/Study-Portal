@@ -96,9 +96,13 @@
         {
           "id": "pt2",
           "title": "Periodic Test 2",
-          "subtitle": "7 lecture sets · 670 questions · choice, linking, stepped, short answer, labeling & ordering",
+          "subtitle": "7 lecture sets · 670 questions · choice, linking, stepped, short answer, labeling & ordering · picture study",
           "draft": true,
           "locked": false,
+          "study": {
+            "title": "Picture Study",
+            "images": "banks/medterm/study/study-images.json"
+          },
           "lectures": [
             {
               "id": "lec09",

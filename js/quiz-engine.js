@@ -739,6 +739,18 @@ function appendPoolCard(grid, label, pool, card){
     if(inProgress && resumeRun(card)) return;
     startRun(pool, label, {card});
   });
+  // PICTURE STUDY: each lecture card gets its own 📖 Study button (opens that lecture's chapter)
+  const mat=window.__activeMaterial;
+  if(LECTURE_SET && String(card.id).startsWith('lec:') && mat && mat.study && mat.study.images && window.StudyNotes){
+    const wrap=document.createElement('div'); wrap.className='card-study-wrap';
+    wrap.appendChild(btn);
+    const sb=document.createElement('button'); sb.type='button'; sb.className='card-study-chip'; sb.dataset.lecture=card.id.slice(4);
+    sb.textContent='📖 Study'; sb.title='Picture study · '+label;
+    sb.addEventListener('click',e=>{ e.stopPropagation(); StudyNotes.open(mat, { from:'hubView', openQuiz:()=>showView('hubView'), focus:card.id.slice(4) }); });
+    wrap.appendChild(sb);
+    grid.appendChild(wrap);
+    return;
+  }
   grid.appendChild(btn);
 }
 function renderHub(){
