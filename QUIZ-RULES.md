@@ -521,6 +521,10 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
   - `"examDiffers": true` on a material is shorthand for the amber "Real Exam Is
     Trickier" badge, tip "Good for practice. Some definitions overlap, so learn each
     term's function exactly as the slides word it." (Study Skills · Periodic Test 1).
+- Per-question badges: a question may carry `badges: [{text, tone, tip?}]`; they show above
+  the question text in the quiz (same component; no tip → no tooltip). ITHS0006/0007 carry
+  the amber "Discontinued", and their explanations end with "Note: Adobe Flash Player
+  is discontinued, but this still came up in the real exam."
 - Desktop shows the tip on hover (title). On touch devices a tap on any note badge opens
   it in a small body-level bubble (`#examTip`) without opening the card; tapping
   elsewhere or Esc closes it.
@@ -559,6 +563,12 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
 - Progress and mastery are namespaced by bank path (`iths/pt1`). The party/lobby bank
   picker lists it automatically because the subject is unlocked. Question ids are
   unique across all banks (checked by the test suite).
+- Approved content edits (2026-10-10): ITHS0010 options/explanation reworded so it no longer
+  reveals ITHS0011's answer (and vice versa); ITHS0036 stem drops "legal"; ITHS0058 stem says
+  "viewing" instead of "reading"; ITHS0059 stem asks what a Word display option is used for.
+  Correct answers unchanged. ITHS0006/0007 (Flash Player) keep their content but gain the
+  "Discontinued" badge and a closing note in the explanation; 0035, 0001/0009 and 0053
+  are kept as is.
 
 ## 18. English Periodic Test 1 (`banks/english/pt1.json`)
 

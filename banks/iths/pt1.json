@@ -166,27 +166,39 @@
     "id": "ITHS0006",
     "cat": "ITHS_L1_L4",
     "q": "Which browser plugin is matched to the function it supports?",
-    "explain": "Adobe PDF Reader supports viewing and printing PDF files inside a browser window. Java supports applets, Adobe Flash Player supports Flash video and rich interactive media, and Apple QuickTime supports audio and video formats.",
+    "explain": "Adobe PDF Reader supports viewing and printing PDF files inside a browser window. Java supports applets, Adobe Flash Player supports Flash video and rich interactive media, and Apple QuickTime supports audio and video formats. Note: Adobe Flash Player is discontinued, but this still came up in the real exam.",
     "options": [
      "Java displays PDF documents and submits online forms.",
      "Adobe Flash Player stores files on remote servers and syncs devices.",
      "Apple QuickTime delivers live classes and breakout rooms.",
      "Adobe PDF Reader views and prints PDF files in a browser window."
     ],
-    "correct": 3
+    "correct": 3,
+    "badges": [
+     {
+      "text": "Discontinued",
+      "tone": "amber"
+     }
+    ]
    },
    {
     "id": "ITHS0007",
     "cat": "ITHS_L1_L4",
     "q": "What does Apple QuickTime provide in an e-learning setting?",
-    "explain": "Apple QuickTime provides access to multiple audio and video formats. Flash media, PDF form submission, and student records belong to other tools.",
+    "explain": "Apple QuickTime provides access to multiple audio and video formats. Flash media, PDF form submission, and student records belong to other tools. Note: Adobe Flash Player is discontinued, but this still came up in the real exam.",
     "options": [
      "Access to Flash video and rich interactive media.",
      "Filling and submitting PDF forms online.",
      "Access to multiple audio and video formats.",
      "Management of registration and financial aid."
     ],
-    "correct": 2
+    "correct": 2,
+    "badges": [
+     {
+      "text": "Discontinued",
+      "tone": "amber"
+     }
+    ]
    },
    {
     "id": "ITHS0008",
@@ -218,12 +230,12 @@
     "id": "ITHS0010",
     "cat": "ITHS_L1_L4",
     "q": "Which action is typically performed by a teacher in a learning management system?",
-    "explain": "Teachers post announcements and create quizzes. Downloading presentation files, following a course, and submitting work are learner actions.",
+    "explain": "Teachers post announcements for the class. Attempting quizzes, following a course after enrollment, and submitting work for grading are learner actions.",
     "options": [
-     "Downloading presentation files for revision.",
+     "Attempting a quiz within its time limit.",
      "Following a course after enrollment.",
      "Submitting a video clip for grading.",
-     "Posting announcements and creating quizzes."
+     "Posting announcements for the class."
     ],
     "correct": 3
    },
@@ -555,7 +567,7 @@
    {
     "id": "ITHS0036",
     "cat": "ITHS_L1_L4",
-    "q": "Which disadvantage concerns the legal status of electronic communication?",
+    "q": "Which statement describes a disadvantage of electronic communication?",
     "explain": "Distorted faxed data can weaken legal value. Fast transmission, wide coverage, and feedback exchange are advantages.",
     "options": [
      "Faxed data may be distorted and weaken legal value.",
@@ -841,8 +853,8 @@
    {
     "id": "ITHS0058",
     "cat": "ITHS_L1_L4",
-    "q": "Which view is best for reading large amounts of text in full screen?",
-    "explain": "Read Mode opens the document full screen for reading large amounts of text. Print Layout mirrors printed pages, Web Layout mimics a webpage, and Backstage view handles file commands.",
+    "q": "Which view is best for viewing large amounts of text in full screen?",
+    "explain": "Read Mode opens the document full screen for viewing large amounts of text. Print Layout mirrors printed pages, Web Layout mimics a webpage, and Backstage view handles file commands.",
     "options": [
      "Print Layout",
      "Web Layout",
@@ -854,7 +866,7 @@
    {
     "id": "ITHS0059",
     "cat": "ITHS_L1_L4",
-    "q": "Which statement matches a Word view to its purpose?",
+    "q": "Which statement correctly describes what a Word display option is used for?",
     "explain": "Read Mode suits full-screen reading. Print Layout shows printed page appearance, Web Layout displays a webpage, and Backstage view handles file-level commands.",
     "options": [
      "Print Layout displays the document as a webpage.",

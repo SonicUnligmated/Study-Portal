@@ -707,7 +707,7 @@ const EXAM_DIFFERS_BADGE={text:'Real Exam Is Trickier', tip:"Good for practice. 
 function noteBadgeHTML(b, extraCls){
   if(!b || !b.text) return '';
   const tone=(b.tone==='grey'||b.tone==='gray')?'grey':'amber';
-  return '<span class="card-badge note-badge '+tone+(b.cls?' '+b.cls:'')+(extraCls?' '+extraCls:'')+'"'+(b.tip?' title="'+escapeHtml(b.tip)+'" data-tip="'+escapeHtml(b.tip)+'" aria-label="'+escapeHtml(b.text+': '+b.tip)+'"':'')+'>'+escapeHtml(b.text)+'</span>';
+  return '<span class="card-badge note-badge '+tone+(b.cls?' '+b.cls:'')+(extraCls?' '+extraCls:'')+(b.tip?'':' no-tip')+'"'+(b.tip?' title="'+escapeHtml(b.tip)+'" data-tip="'+escapeHtml(b.tip)+'" aria-label="'+escapeHtml(b.text+': '+b.tip)+'"':'')+'>'+escapeHtml(b.text)+'</span>';
 }
 function materialBadges(m){
   if(!m) return [];
@@ -2519,6 +2519,12 @@ function renderQuestion(){
     qText.append(stem,pr);
   }else{
     qText.textContent=q.q;
+  }
+  // per-question badges (bank field q.badges = [{text, tone?, tip?}]), same component as the card badges
+  if(Array.isArray(q.badges) && q.badges.length){
+    const qb=document.createElement('div'); qb.className='q-badges card-badges';
+    qb.innerHTML=q.badges.map(b=>noteBadgeHTML(b)).join('');
+    if(qb.innerHTML) qText.prepend(qb);
   }
   document.getElementById('qNum').textContent=current+1;
   if(runMastery>=1 && window.StudyMastery){
