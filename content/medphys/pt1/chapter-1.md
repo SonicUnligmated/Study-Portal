@@ -108,14 +108,14 @@ Additional states: **plasma** (ionised gas) and **Bose–Einstein condensate (BE
   <defs>
     <linearGradient id="pgSolid" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(var(--accent-0-rgb),0.35)"/><stop offset="100%" stop-color="rgba(var(--accent-4-rgb),0.15)"/></linearGradient>
     <linearGradient id="pgLiquid" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(var(--accent-1-rgb),0.35)"/><stop offset="100%" stop-color="rgba(var(--accent-6-rgb),0.15)"/></linearGradient>
-    <linearGradient id="pgGas" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(var(--accent-8-rgb),0.35)"/><stop offset="100%" stop-color="rgba(var(--accent-2-rgb),0.12)"/></linearGradient>
+    <linearGradient id="pgGas" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="rgba(var(--accent-6-rgb),0.35)"/><stop offset="100%" stop-color="rgba(var(--accent-2-rgb),0.12)"/></linearGradient>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="var(--accent-0)"/></marker>
   </defs>
   <rect x="40" y="90" width="140" height="72" rx="12" fill="url(#pgSolid)" stroke="var(--accent-0)" stroke-width="2"/>
   <text x="110" y="132" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="18" font-weight="600">Solid</text>
   <rect x="250" y="90" width="140" height="72" rx="12" fill="url(#pgLiquid)" stroke="var(--accent-1)" stroke-width="2"/>
   <text x="320" y="132" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="18" font-weight="600">Liquid</text>
-  <rect x="460" y="90" width="140" height="72" rx="12" fill="url(#pgGas)" stroke="var(--accent-8)" stroke-width="2"/>
+  <rect x="460" y="90" width="140" height="72" rx="12" fill="url(#pgGas)" stroke="var(--accent-6)" stroke-width="2"/>
   <text x="530" y="132" text-anchor="middle" fill="var(--col-text-main)" font-family="Outfit,sans-serif" font-size="18" font-weight="600">Gas</text>
   <!-- Melting / Freezing -->
   <path d="M185 108 H245" stroke="var(--accent-0)" stroke-width="2" marker-end="url(#arr)" fill="none"/>
@@ -128,8 +128,8 @@ Additional states: **plasma** (ionised gas) and **Bose–Einstein condensate (BE
   <path d="M455 144 H395" stroke="var(--accent-1)" stroke-width="2" marker-end="url(#arr)" fill="none"/>
   <text x="425" y="168" text-anchor="middle" fill="var(--col-text-muted)" font-size="11" font-family="Space Mono,monospace">condensation</text>
   <!-- Sublimation / Deposition (arcs) -->
-  <path d="M110 90 C110 28, 530 28, 530 90" stroke="var(--accent-8)" stroke-width="2" fill="none" marker-end="url(#arr)"/>
-  <text x="320" y="24" text-anchor="middle" fill="var(--accent-8)" font-size="11" font-family="Space Mono,monospace">sublimation (solid → gas)</text>
+  <path d="M110 90 C110 28, 530 28, 530 90" stroke="var(--accent-6)" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+  <text x="320" y="24" text-anchor="middle" fill="var(--col-text-main)" font-size="11" font-family="Space Mono,monospace">sublimation (solid → gas)</text>
   <path d="M530 162 C530 240, 110 240, 110 162" stroke="var(--col-text-muted)" stroke-width="2" fill="none" marker-end="url(#arr)"/>
   <text x="320" y="258" text-anchor="middle" fill="var(--col-text-muted)" font-size="11" font-family="Space Mono,monospace">deposition (gas → solid · e.g. CO₂ ↔ dry ice)</text>
 </svg>

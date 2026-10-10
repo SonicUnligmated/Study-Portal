@@ -132,20 +132,44 @@ Velocity increases at a carotid stenosis because **area decreases**, so **speed 
 
 ---
 
-## 6. Formula sheet — Chapter 3
+## 6. Clinical / medical links
 
-```
-Mass flow rate = ρ A v                 ← density × area × speed (mass/time)
-Volume flow rate Q = A v               ← area × speed (volume/time)
-Continuity (general): ρ₁ A₁ v₁ = ρ₂ A₂ v₂   ← mass flow conserved
-Continuity (blood ≈ incompressible): A₁ v₁ = A₂ v₂   ← volume flow conserved (ρ cancels)
-```
+| Physics | Medicine |
+|---------|----------|
+| Laminar flow (parallel layers, fastest in the centre) | Normal flow in healthy arteries |
+| Turbulent flow (swirling, mixing layers) | Energy loss, higher resistance, poorer tissue perfusion |
+| Continuity (smaller A → larger v) | Faster blood in a narrowed segment (stenosis, e.g. carotid) |
+| High speed or irregular vessel → turbulence | Murmur over a stenotic or diseased valve |
+| Blood ≈ incompressible | Use A₁v₁ = A₂v₂ for blood flow problems |
 
 ---
 
-## 7. Quick clinical checklist
+## 7. Formula sheet — Chapter 3
 
-| Finding | Physics to cite |
-|---------|-----------------|
-| Faster blood in a narrow segment | Continuity: smaller area raises speed |
-| Murmur over stenotic valve | High speed can produce turbulence |
+```
+Mass flow rate = m / t = ρ A v         ← density × area × speed      [kg/s]
+Volume flow rate Q = A v               ← area × speed (no density)    [m³/s]
+Continuity (general): ρ₁ A₁ v₁ = ρ₂ A₂ v₂   ← mass flow conserved
+Continuity (blood ≈ incompressible): A₁ v₁ = A₂ v₂   ← volume flow conserved (ρ cancels)
+v₂ = A₁ v₁ / A₂                        ← speed in the second section
+```
+
+### Flow types at a glance
+
+- Laminar: smooth parallel layers · parabolic profile · fastest in the centre, slowest at the wall · healthy arteries  
+- Turbulent: wild swirl · layers mix · more energy loss and resistance · murmurs  
+- Triggers for turbulence: high velocity, vessel irregularity, sudden narrowing  
+
+### Memory anchors
+
+- Narrower → faster (area × speed stays the same)  
+- Area 10× smaller → speed 10× larger; the stenosis example: area 4× smaller → 1.6 m/s instead of 0.4 m/s  
+- Mass flow has ρ; volume flow does not  
+- Same symbol Q can mean mass or volume flow: check the units (kg/s vs m³/s)  
+
+### Medical anchors
+
+- Healthy artery → laminar  
+- Stenosis → faster flow (continuity), often turbulent  
+- Diseased valve → turbulence → audible murmur  
+- Turbulence wastes energy in sideways motion → poorer perfusion
