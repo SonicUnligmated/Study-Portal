@@ -1,4 +1,4 @@
-*Note: The following instructions are AI generated to host your own version, to use the already hosted version use the direct link: https://sonicunlimgated.github.io/Study-Portal/ *
+*Note: The following instructions are AI generated to host your own version, to use the already hosted version use the direct link: https://sonicunligmated.github.io/Study-Portal/ *
 
 # Study Portal
 
