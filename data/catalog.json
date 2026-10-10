@@ -54,6 +54,12 @@
                 "meta": "Bernoulli · viscosity · Poiseuille · Reynolds · Laplace · surface tension"
               },
               {
+                "id": "ch4",
+                "src": "content/medphys/pt2/chapter-4.md",
+                "title": "Chapter 4 · Waves, sound & temperature",
+                "meta": "Waves · ultrasound · Doppler · Mach · temperature scales"
+              },
+              {
                 "id": "ch5",
                 "src": "content/medphys/pt2/chapter-5.md",
                 "title": "Chapter 5 · Ray optics",
