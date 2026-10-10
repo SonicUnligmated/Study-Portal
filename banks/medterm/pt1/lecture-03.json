@@ -1,0 +1,1196 @@
+{
+ "id": "medterm-pt1-lec03",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 3 – Pronunciation",
+ "formSize": 60,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "3b0c72e01115b81dd1dbe216bd75fe47d7f4caaaa97dd2c103aaf81d62f78925.json",
+  "title": "Lecture 3 - Pronunciation",
+  "note": "Ids renamed to MT03xxx (source ids clashed between lectures 2 and 3 and with PT2 Lecture 10). Content unchanged.",
+  "idMap": {
+   "MT10201": "MT03001",
+   "MT10202": "MT03002",
+   "MT10203": "MT03003",
+   "MT10204": "MT03004",
+   "MT10205": "MT03005",
+   "MT10206": "MT03006",
+   "MT10207": "MT03007",
+   "MT10208": "MT03008",
+   "MT10209": "MT03009",
+   "MT10210": "MT03010",
+   "MT10211": "MT03011",
+   "MT10212": "MT03012",
+   "MT10213": "MT03013",
+   "MT10214": "MT03014",
+   "MT10215": "MT03015",
+   "MT10216": "MT03016",
+   "MT10217": "MT03017",
+   "MT10218": "MT03018",
+   "MT10219": "MT03019",
+   "MT10220": "MT03020",
+   "MT10221": "MT03021",
+   "MT10222": "MT03022",
+   "MT10223": "MT03023",
+   "MT10224": "MT03024",
+   "MT10225": "MT03025",
+   "MT10226": "MT03026",
+   "MT10227": "MT03027",
+   "MT10228": "MT03028",
+   "MT10229": "MT03029",
+   "MT10230": "MT03030",
+   "MT10231": "MT03031",
+   "MT10232": "MT03032",
+   "MT10233": "MT03033",
+   "MT10234": "MT03034",
+   "MT10235": "MT03035",
+   "MT10236": "MT03036",
+   "MT10237": "MT03037",
+   "MT10238": "MT03038",
+   "MT10239": "MT03039",
+   "MT10240": "MT03040",
+   "MT10241": "MT03041",
+   "MT10242": "MT03042",
+   "MT10243": "MT03043",
+   "MT10244": "MT03044",
+   "MT10245": "MT03045",
+   "MT10246": "MT03046",
+   "MT10247": "MT03047",
+   "MT10248": "MT03048",
+   "MT10249": "MT03049",
+   "MT10250": "MT03050",
+   "MT10251": "MT03051",
+   "MT10252": "MT03052",
+   "MT10253": "MT03053",
+   "MT10254": "MT03054",
+   "MT10255": "MT03055",
+   "MT10256": "MT03056",
+   "MT10257": "MT03057",
+   "MT10258": "MT03058",
+   "MT10259": "MT03059",
+   "MT10260": "MT03060"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT03001",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In some medical words the letter p at the very beginning is not spoken. Which statement correctly explains the reason?",
+    "options": [
+     "The p is silent because it is followed by s, n, or t, and only the second consonant of the pair is pronounced.",
+     "The p is silent because it follows a vowel at the start of the term.",
+     "The p is silent because it sits at the end of a root rather than at the start.",
+     "The p is silent because the word is of Latin origin and Latin never pronounces an initial p."
+    ],
+    "correct": 0,
+    "explain": "Where an initial p is followed by s, n, or t, the two consonants are treated as a single phonetic unit and the p is not voiced, so psychology begins with an s sound, pneumonia with an n sound, and ptosis with a t sound. The second option describes a position the p never occupies at the start of these words, the third misstates its location within the term, and the fourth invents an origin rule that does not exist."
+   },
+   {
+    "id": "MT03002",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the combination ph, the two letters produce which phonetic sound?",
+    "options": [
+     "The sound of f, as in photo and pharmacy.",
+     "The sound of p followed by h, as in shepherd.",
+     "The sound of b, as in subtle.",
+     "The sound of v, as in nephew."
+    ],
+    "correct": 0,
+    "explain": "The digraph ph represents the sound of f, so photo, phone, pharmacy, diaphragm, and nephron each begin or contain the f sound. The second option splits the digraph into two separate sounds, which is not how it is treated in medical terms. The third option substitutes b, a sound that belongs to no ph word in this set. The fourth option substitutes v, which appears in some English words but not in the ph terms taught here."
+   },
+   {
+    "id": "MT03003",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term nephroptosis, the p sits between two other consonants. How is it pronounced?",
+    "options": [
+     "It is silent, as in pneumonia.",
+     "It is sounded, as in the p in nephron.",
+     "It is sounded as an f, as in diaphragm.",
+     "It is sounded as a t, as in ptosis."
+    ],
+    "correct": 1,
+    "explain": "In nephroptosis, the p follows the r of nephr and precedes the t of ptosis, and in this middle position it is pronounced, unlike the silent initial p in pneumonia or ptosis. The silent-p option is the natural trap because the learner has just learned that initial p before t is silent, but here the p is not initial. The f option would require the digraph ph, but the p and h are separated by the r in this word, so they do not form the digraph. The t option assigns the pt sound of the second element to the p, which is not what is happening."
+   },
+   {
+    "id": "MT03004",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term psychology, the initial ps produces which phonetic sound?",
+    "options": [
+     "The sound of s, so the word begins with a sibilant.",
+     "The sound of p followed by s, so both consonants are voiced.",
+     "The sound of n, because the p is silent.",
+     "The sound of f, because p before s becomes an f."
+    ],
+    "correct": 0,
+    "explain": "Psychology begins with the digraph ps, which is pronounced as a single s sound, so the p is silent and the word opens with a sibilant. The second option wrongly voices both consonants, the third confuses ps with pn (which yields the n sound, as in pneumonia), and the fourth confuses ps with ph (which yields the f sound, as in photo)."
+   },
+   {
+    "id": "MT03005",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term ptosis, the initial pt produces which phonetic sound?",
+    "options": [
+     "The sound of t, so the p is silent.",
+     "The sound of p followed by t, so both consonants are voiced.",
+     "The sound of n, because the p is silent.",
+     "The sound of s, because p before t becomes an s."
+    ],
+    "correct": 0,
+    "explain": "Ptosis begins with the digraph pt, pronounced as a single t sound, so the p is silent. The second option wrongly voices both consonants, the third substitutes the pn sound (pneumonia), and the fourth substitutes the ps sound (psychology)."
+   },
+   {
+    "id": "MT03006",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term pneumonia, the initial pn produces which phonetic sound?",
+    "options": [
+     "The sound of n, so the p is silent.",
+     "The sound of p followed by n, so both consonants are voiced.",
+     "The sound of m, because p before n becomes an m.",
+     "The sound of s, because p before n becomes an s."
+    ],
+    "correct": 0,
+    "explain": "Pneumonia begins with the digraph pn, pronounced as a single n sound, so the p is silent. The second option wrongly voices both consonants, the third substitutes a nasal that is not the n of this word, and the fourth substitutes the ps sound (psychology)."
+   },
+   {
+    "id": "MT03007",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Hyster/o, Metr/o, and Uter/o all mean uterus. Which pairing of form to origin and typical use is correct?",
+    "options": [
+     "Hyster/o is Greek and used mainly in surgical terms; Metr/o is Greek and used mainly in symptomatic or diagnostic terms; Uter/o is Latin and used mainly in anatomical terms.",
+     "Hyster/o is Latin and used mainly in anatomical terms; Metr/o is Greek and used mainly in surgical terms; Uter/o is Greek and used mainly in diagnostic terms.",
+     "Hyster/o is Greek and used mainly in diagnostic terms; Metr/o is Latin and used mainly in anatomical terms; Uter/o is Greek and used mainly in surgical terms.",
+     "All three forms are Latin and may be used interchangeably in any context without a preferred setting."
+    ],
+    "correct": 0,
+    "explain": "Hyster/o is the Greek form preferred in surgical terms such as hysterectomy. Metr/o is the Greek form preferred in symptomatic or diagnostic terms such as metrorrhagia and endometritis. Uter/o is the Latin form preferred in anatomical terms such as uterine and uteroovarian. The second and third options scramble these three origin-usage pairs, and the fourth wrongly flattens the three into interchangeable Latin spellings, ignoring the origin and context distinction the three forms carry."
+   },
+   {
+    "id": "MT03008",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which combining form is Greek in origin and is used mainly in surgical terms for the uterus?",
+    "options": [
+     "Hyster/o",
+     "Metr/o",
+     "Uter/o",
+     "Cervic/o"
+    ],
+    "correct": 0,
+    "explain": "Hyster/o is the Greek form used mainly in surgical terms, as in hysterectomy, the surgical removal of the uterus. Metr/o is the Greek form used in symptomatic and diagnostic terms, Uter/o is the Latin form used in anatomical terms, and Cervic/o names the cervix rather than the uterus."
+   },
+   {
+    "id": "MT03009",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which combining form is Greek in origin and is used mainly in symptomatic or diagnostic terms for the uterus?",
+    "options": [
+     "Hyster/o",
+     "Metr/o",
+     "Uter/o",
+     "Vagin/o"
+    ],
+    "correct": 1,
+    "explain": "Metr/o is the Greek form used in symptomatic and diagnostic terms, as in metrorrhagia, uterine bleeding outside the menstrual period, and in endometritis, inflammation of the uterine lining. Hyster/o is the Greek surgical form, Uter/o is the Latin anatomical form, and Vagin/o names the vagina."
+   },
+   {
+    "id": "MT03010",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which combining form is Latin in origin and is used mainly in anatomical terms for the uterus?",
+    "options": [
+     "Hyster/o",
+     "Metr/o",
+     "Uter/o",
+     "Colp/o"
+    ],
+    "correct": 2,
+    "explain": "Uter/o is the Latin form used in anatomical terms, as in uteroovarian, pertaining to the uterus and the ovary. Hyster/o is the Greek surgical form, Metr/o is the Greek diagnostic form, and Colp/o names the vagina."
+   },
+   {
+    "id": "MT03011",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The consonant c is pronounced as a k when it appears before which vowels?",
+    "options": [
+     "Before a, o, or u, as in cavity, colon, and cure.",
+     "Before e or i, as in cephalic and cirrhosis.",
+     "Before any vowel, since c is always pronounced as a k.",
+     "Only before a, since c before o or u becomes an s."
+    ],
+    "correct": 0,
+    "explain": "C before a, o, or u takes the k sound, as in cavity, colon, and cure. Before e or i it takes the s sound, as in cephalic and cirrhosis, so the second option describes the other half of the rule. The third option wrongly makes the k sound universal, and the fourth wrongly confines it to a and reassigns o and u to the s sound, which contradicts the rule."
+   },
+   {
+    "id": "MT03012",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The consonant c is pronounced as an s when it appears before which vowels?",
+    "options": [
+     "Before a, o, or u, as in cavity and colon.",
+     "Before e or i, as in cephalic and cirrhosis.",
+     "Before any vowel, since c is always pronounced as an s.",
+     "Only before a, since c before i becomes a k."
+    ],
+    "correct": 1,
+    "explain": "C before e or i takes the s sound, as in cephalic and cirrhosis. Before a, o, or u it takes the k sound, as in cavity and colon, so the first option describes the other half of the rule. The third option wrongly makes the s sound universal, and the fourth reverses the two halves by confining the s sound to a and reassigning i to the k sound."
+   },
+   {
+    "id": "MT03013",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In words such as cholera and chronic, the digraph ch produces which phonetic sound?",
+    "options": [
+     "The sound of k, so cholera begins with a k sound.",
+     "The sound of ch as in chair, so cholera rhymes with collar.",
+     "The sound of s, so cholera begins with an s sound.",
+     "The sound of t, so cholera begins with a t sound."
+    ],
+    "correct": 0,
+    "explain": "In medical terms of Greek origin such as cholera and chronic, the digraph ch is pronounced as a k. The second option imports the ordinary English ch sound, which does not apply to these terms. The third substitutes the s sound that belongs to c before e or i, and the fourth substitutes the t sound that belongs to pt at the start of a word."
+   },
+   {
+    "id": "MT03014",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The consonant g is pronounced as a hard g when it appears before which vowels?",
+    "options": [
+     "Before a, o, or u, as in gall, gonad, and gut.",
+     "Before e or i, as in gene.",
+     "Before any vowel, since g is always pronounced as a hard g.",
+     "Only before a, since g before o or u becomes a j."
+    ],
+    "correct": 0,
+    "explain": "G before a, o, or u takes the hard g sound, as in gall, gonad, and gut. Before e or i it takes the j sound, as in gene, so the second option describes the other half of the rule. The third option wrongly makes the hard g universal, and the fourth wrongly confines it to a and reassigns o and u to the j sound."
+   },
+   {
+    "id": "MT03015",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The consonant g is pronounced as a j when it appears before which vowels?",
+    "options": [
+     "Before a, o, or u, as in gall and gonad.",
+     "Before e or i, as in gene.",
+     "Before any vowel, since g is always pronounced as a j.",
+     "Only before a, since g before i becomes a hard g."
+    ],
+    "correct": 1,
+    "explain": "G before e or i takes the j sound, as in gene. Before a, o, or u it takes the hard g sound, as in gall and gonad, so the first option describes the other half of the rule. The third option wrongly makes the j sound universal, and the fourth reverses the halves by confining the j sound to a and reassigning i to the hard g sound."
+   },
+   {
+    "id": "MT03016",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The digraphs rh and rrh produce which phonetic sound?",
+    "options": [
+     "The sound of r, as in rhythm and hemorrhoid.",
+     "The sound of r followed by h, as in herring.",
+     "The sound of a silent r, since only the h is voiced.",
+     "The sound of w, as in wrinkle."
+    ],
+    "correct": 0,
+    "explain": "The digraphs rh and rrh are both pronounced as a plain r, so rhythm and hemorrhoid each begin or contain the r sound with the h silent. The second option splits the digraph into r and h, the third silences the r instead of the h, and the fourth substitutes a w sound that belongs to wr words rather than to rh or rrh."
+   },
+   {
+    "id": "MT03017",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "The letter x, when it appears as the first letter of a medical term, produces which phonetic sound?",
+    "options": [
+     "The sound of z, as in xerosis and xenon.",
+     "The sound of ks, as in box.",
+     "The sound of gz, as in exact.",
+     "The sound of a silent x, since only the following vowel is voiced."
+    ],
+    "correct": 0,
+    "explain": "When x begins a medical term, it is pronounced as a z, so xerosis begins with a z sound. The ks sound is the one x takes at the end of a syllable or after a vowel, not at the start of a word. The gz sound appears in some English words but not in the initial position here, and the fourth option wrongly silences the x altogether."
+   },
+   {
+    "id": "MT03018",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which statement correctly explains why pronunciation is essential in medical terminology?",
+    "options": [
+     "Pronunciation lets the term be understood universally and guides the writer to the correct spelling.",
+     "Pronunciation is a matter of style and has no bearing on understanding or spelling.",
+     "Pronunciation matters only for Latin terms and can be ignored for Greek ones.",
+     "Pronunciation is identical in every language, so the same spoken form always yields the same written form."
+    ],
+    "correct": 0,
+    "explain": "Pronunciation is the key to understanding a term universally and to arriving at the correct spelling, because the sound of a term is what links a spoken form to its written components. The second option denies both functions; the third wrongly limits pronunciation to Latin terms; the fourth wrongly assumes an identity across languages that the many exceptions in this lecture show is not the case."
+   },
+   {
+    "id": "MT03019",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "When reading a medical term aloud, why must the speaker remain alert to exceptions?",
+    "options": [
+     "Because a handful of terms violate the general pronunciation rules and can mislead the reader who applies them mechanically.",
+     "Because every term has its own unique pronunciation that must be memorized from scratch.",
+     "Because pronunciation rules apply only to Latin terms and never to Greek ones.",
+     "Because the letter p is always silent wherever it appears."
+    ],
+    "correct": 0,
+    "explain": "The general rules hold for most terms, but a few terms break them and can mislead the reader who applies the rules mechanically, which is why the lecture warns that exceptions can become tricky. The second option wrongly denies the rules any regular force; the third wrongly limits them to one origin; the fourth overgeneralizes the silent-p rule, which applies only to the initial position before s, n, or t."
+   },
+   {
+    "id": "MT03020",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular vertebra?",
+    "options": [
+     "Vertebrae",
+     "Vertebras",
+     "Vertebri",
+     "Vertebra"
+    ],
+    "correct": 0,
+    "explain": "Singular -a becomes plural -ae, so vertebra becomes vertebrae. The second option adds an English s, which is not the pattern for -a endings. The third option substitutes the -i of the -us family. The fourth option leaves the singular unchanged, which is not the plural."
+   },
+   {
+    "id": "MT03021",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular diagnosis?",
+    "options": [
+     "Diagnoses",
+     "Diagnosae",
+     "Diagnosis",
+     "Diagnosi"
+    ],
+    "correct": 0,
+    "explain": "Singular -is becomes plural -es, so diagnosis becomes diagnoses. The second option substitutes the -ae of the -a family, the third leaves the singular unchanged, and the fourth substitutes the -i of the -us family."
+   },
+   {
+    "id": "MT03022",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular carcinoma?",
+    "options": [
+     "Carcinomata",
+     "Carcinomae",
+     "Carcinomas",
+     "Carcinoma"
+    ],
+    "correct": 0,
+    "explain": "Singular -ma becomes plural -mata, so carcinoma becomes carcinomata. The second option substitutes the -ae of the -a family, the third adds an English s, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03023",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular ganglion?",
+    "options": [
+     "Ganglia",
+     "Ganglions",
+     "Ganglionae",
+     "Ganglion"
+    ],
+    "correct": 0,
+    "explain": "Singular -on becomes plural -a, so ganglion becomes ganglia. The second option adds an English s, the third substitutes the -ae of the -a family with an added n, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03024",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular bacterium?",
+    "options": [
+     "Bacteria",
+     "Bacteriums",
+     "Bacteriae",
+     "Bacterium"
+    ],
+    "correct": 0,
+    "explain": "Singular -um becomes plural -a, so bacterium becomes bacteria. The second option adds an English s, the third substitutes the -ae of the -a family, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03025",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular myopathy?",
+    "options": [
+     "Myopathies",
+     "Myopathys",
+     "Myopathae",
+     "Myopathy"
+    ],
+    "correct": 0,
+    "explain": "Singular -y becomes plural -ies, so myopathy becomes myopathies. The second option simply adds an s to the y, which is not the pattern for -y endings, the third substitutes the -ae of the -a family, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03026",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular lumen?",
+    "options": [
+     "Lumina",
+     "Lumens",
+     "Lumenae",
+     "Lumen"
+    ],
+    "correct": 0,
+    "explain": "Singular -en becomes plural -ina, so lumen becomes lumina. The second option adds an English s, the third substitutes the -ae of the -a family with an added n, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03027",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular thorax?",
+    "options": [
+     "Thoraces",
+     "Thoraxs",
+     "Thoraxae",
+     "Thorax"
+    ],
+    "correct": 0,
+    "explain": "Singular -ax becomes plural -aces, so thorax becomes thoraces. The second option adds an English s, the third substitutes the -ae of the -a family with an added x, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03028",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular apex?",
+    "options": [
+     "Apices",
+     "Apexes",
+     "Apexae",
+     "Apex"
+    ],
+    "correct": 0,
+    "explain": "Singular -ex becomes plural -ices, so apex becomes apices. The second option adds an English -es, which is not the pattern for -ex endings, the third substitutes the -ae of the -a family, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03029",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular appendix?",
+    "options": [
+     "Appendices",
+     "Appendixes",
+     "Appendexae",
+     "Appendix"
+    ],
+    "correct": 0,
+    "explain": "Singular -ix becomes plural -ices, so appendix becomes appendices. The second option adds an English -es, which is not the pattern for -ix endings, the third substitutes an invented -exae, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03030",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular thrombus?",
+    "options": [
+     "Thrombi",
+     "Thrombuses",
+     "Thrombae",
+     "Thrombus"
+    ],
+    "correct": 0,
+    "explain": "Singular -us becomes plural -i, so thrombus becomes thrombi. The second option adds an English ending, which is not the pattern for -us endings, the third substitutes the -ae of the -a family, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03031",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular sinus?",
+    "options": [
+     "Sinuses",
+     "Sini",
+     "Sinuse",
+     "Sinus"
+    ],
+    "correct": 0,
+    "explain": "Sinus belongs to the special -us family, whose plural is formed by adding -es, so sinus becomes sinuses. The -i ending belongs to the standard -us family such as thrombus and thrombi, so the second option misapplies that pattern. The third is a nonstandard spelling, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03032",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which plural form correctly matches the singular virus?",
+    "options": [
+     "Viruses",
+     "Viri",
+     "Virusae",
+     "Virus"
+    ],
+    "correct": 0,
+    "explain": "Virus belongs to the special -us family, whose plural is formed by adding -es, so virus becomes viruses. The -i ending belongs to the standard -us family such as thrombus and thrombi, so the second option misapplies that pattern. The third invents an -ae ending, and the fourth leaves the singular unchanged."
+   },
+   {
+    "id": "MT03033",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which statement correctly distinguishes the standard -us family from the special -us family in the plural?",
+    "options": [
+     "The standard family replaces -us with -i, as in thrombus to thrombi, while the special family adds -es, as in sinus to sinuses.",
+     "Both families replace -us with -i, so sinus becomes sini and virus becomes viri.",
+     "Both families add -es, so thrombus becomes thrombuses and sinus becomes sinuses.",
+     "The standard family adds -es, while the special family replaces -us with -i."
+    ],
+    "correct": 0,
+    "explain": "The standard -us family replaces the ending with -i, as in thrombus to thrombi, while the special -us family keeps the -us and adds -es, as in sinus to sinuses and virus to viruses. The second option wrongly gives the -i ending to the special family, the third wrongly gives the -es ending to the standard family, and the fourth reverses the two."
+   },
+   {
+    "id": "MT03034",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term diaphragm, the ph contributes which phonetic sound?",
+    "options": [
+     "The f sound, so the second syllable begins with an f.",
+     "The p followed by h sound, as in shepherd.",
+     "The b sound, so the second syllable begins with a b.",
+     "The v sound, so the second syllable begins with a v."
+    ],
+    "correct": 0,
+    "explain": "Diaphragm contains the ph digraph in its second syllable, and ph is pronounced as f. The second option splits the digraph into p and h, the third substitutes b, and the fourth substitutes v, none of which matches the ph sound in this word."
+   },
+   {
+    "id": "MT03035",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term nephron, the ph contributes which phonetic sound?",
+    "options": [
+     "The f sound, so the word contains an f where ph appears.",
+     "The p followed by h sound, as in shepherd.",
+     "The silent p sound, as in pneumonia.",
+     "The t sound, as in ptosis."
+    ],
+    "correct": 0,
+    "explain": "Nephron contains the ph digraph, and ph is pronounced as f, so the word contains an f sound where the ph appears. The second option splits the digraph, the third applies the silent-p rule of the initial position, and the fourth applies the pt sound of ptosis, neither of which matches the ph in this word."
+   },
+   {
+    "id": "MT03036",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which statement correctly explains how the spelling of a medical term can be recovered from its sound?",
+    "options": [
+     "Because each phonetic sound in the standard set corresponds to a fixed spelling pattern, so recognizing the sound lets the writer choose the right letters.",
+     "Because every medical term is spelled exactly as it sounds in ordinary English, with no exceptions.",
+     "Because the sound of a term is unrelated to its spelling, and the two must always be memorized separately.",
+     "Because the silent letters carry no information, the writer can safely omit them."
+    ],
+    "correct": 0,
+    "explain": "Pronunciation guides the writer to the correct spelling because each sound in the standard set corresponds to a recognized spelling pattern, so hearing an f sound tells the writer to write ph in words such as diaphragm or nephron. The second option ignores the many exceptions the lecture warns about, the third denies the link between sound and spelling, and the fourth wrongly permits dropping letters that the term's correct spelling requires."
+   },
+   {
+    "id": "MT03037",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which term begins with a consonant blend whose first letter is silent, yielding an s sound at the start?",
+    "options": [
+     "Psychology",
+     "Photo",
+     "Ptosis",
+     "Pneumonia"
+    ],
+    "correct": 0,
+    "explain": "Psychology begins with ps, in which the p is silent and the s is pronounced, yielding an s sound. Photo begins with ph, which is pronounced f; ptosis begins with pt, which is pronounced t; and pneumonia begins with pn, which is pronounced n."
+   },
+   {
+    "id": "MT03038",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which term begins with a consonant blend whose first letter is silent, yielding an n sound at the start?",
+    "options": [
+     "Pneumonia",
+     "Psychology",
+     "Ptosis",
+     "Photo"
+    ],
+    "correct": 0,
+    "explain": "Pneumonia begins with pn, in which the p is silent and the n is pronounced, yielding an n sound. Psychology begins with ps, pronounced s; ptosis begins with pt, pronounced t; and photo begins with ph, pronounced f."
+   },
+   {
+    "id": "MT03039",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which term begins with a consonant blend whose first letter is silent, yielding a t sound at the start?",
+    "options": [
+     "Ptosis",
+     "Pneumonia",
+     "Psychology",
+     "Photo"
+    ],
+    "correct": 0,
+    "explain": "Ptosis begins with pt, in which the p is silent and the t is pronounced, yielding a t sound. Pneumonia begins with pn, pronounced n; psychology begins with ps, pronounced s; and photo begins with ph, pronounced f."
+   },
+   {
+    "id": "MT03040",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term pseudopodia, the initial ps produces which phonetic sound at the start?",
+    "options": [
+     "The sound of s, so the word opens with a sibilant.",
+     "The sound of p followed by s, so both consonants are voiced.",
+     "The sound of n, because p before s becomes an n.",
+     "The sound of f, because ps becomes a ph."
+    ],
+    "correct": 0,
+    "explain": "Pseudopodia begins with ps, pronounced as a single s sound, so the word opens with a sibilant. The second option wrongly voices both consonants, the third substitutes the pn sound of pneumonia, and the fourth confuses ps with ph, which yields f."
+   },
+   {
+    "id": "MT03041",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each P term to the pronunciation pattern it follows.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Psychology"
+     },
+     {
+      "id": "2",
+      "text": "Pseudopodia"
+     },
+     {
+      "id": "3",
+      "text": "Pterygium"
+     },
+     {
+      "id": "4",
+      "text": "Ptosis"
+     },
+     {
+      "id": "5",
+      "text": "Pneumonia"
+     },
+     {
+      "id": "6",
+      "text": "Photo"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Initial P before t is silent; the t is pronounced"
+     },
+     {
+      "id": "B",
+      "text": "Initial P before s is silent; the s is pronounced"
+     },
+     {
+      "id": "C",
+      "text": "Ph is pronounced as f"
+     },
+     {
+      "id": "D",
+      "text": "Initial P before n is silent; the n is pronounced"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "B",
+     "3": "A",
+     "4": "A",
+     "5": "D",
+     "6": "C"
+    },
+    "explain": "Psychology and Pseudopodia both begin with ps, in which the initial p is silent and the s is pronounced. Pterygium and Ptosis both begin with pt, in which the initial p is silent and the t is pronounced. Pneumonia begins with pn, in which the initial p is silent and the n is pronounced. Photo contains ph, pronounced as f. The pattern is fixed by the letters that follow the p: s, t, and n each silence the p, whereas h converts the p into an f."
+   },
+   {
+    "id": "MT03042",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each P term to the pronunciation pattern it follows.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Phone"
+     },
+     {
+      "id": "2",
+      "text": "Diaphragm"
+     },
+     {
+      "id": "3",
+      "text": "Nephron"
+     },
+     {
+      "id": "4",
+      "text": "Nephroptosis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "P in the middle of the term is pronounced"
+     },
+     {
+      "id": "B",
+      "text": "Ph is pronounced as f"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "B",
+     "3": "B",
+     "4": "A"
+    },
+    "explain": "Phone, Diaphragm, and Nephron each contain the ph digraph, pronounced as f. Nephroptosis has the p in a middle position after the r of nephr, where it is pronounced rather than silenced. The position of the p within the word, not merely its neighbor letters, decides whether the silence rule applies: the silence rule covers the initial p before s, n, or t, and it does not reach a p that has a vowel or r on its left."
+   },
+   {
+    "id": "MT03043",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each consonant pattern to the phonetic sound it produces.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "C before a, o, or u"
+     },
+     {
+      "id": "2",
+      "text": "C before e or i"
+     },
+     {
+      "id": "3",
+      "text": "Ch in medical terms"
+     },
+     {
+      "id": "4",
+      "text": "G before a, o, or u"
+     },
+     {
+      "id": "5",
+      "text": "G before e or i"
+     },
+     {
+      "id": "6",
+      "text": "Ph"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "K, as in cavity and colon"
+     },
+     {
+      "id": "B",
+      "text": "S, as in cephalic and cirrhosis"
+     },
+     {
+      "id": "C",
+      "text": "K, as in cholera and chronic"
+     },
+     {
+      "id": "D",
+      "text": "Hard G, as in gall and gonad"
+     },
+     {
+      "id": "E",
+      "text": "J, as in gene"
+     },
+     {
+      "id": "F",
+      "text": "F, as in phase and pharmacy"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "C takes the k sound before a, o, or u (cavity, colon, cure) and the s sound before e or i (cephalic, cirrhosis). Ch in medical terms of Greek origin takes the k sound (cholera, chronic), not the ch of ordinary English. G takes the hard g before a, o, or u (gall, gonad, gut) and the j sound before e or i (gene). Ph takes the f sound (phase, pharmacy). Each pattern pairs with exactly one sound."
+   },
+   {
+    "id": "MT03044",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each consonant pattern to the phonetic sound it produces.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Rh or Rrh"
+     },
+     {
+      "id": "2",
+      "text": "X as the first letter"
+     },
+     {
+      "id": "3",
+      "text": "Pn at the start"
+     },
+     {
+      "id": "4",
+      "text": "Ps at the start"
+     },
+     {
+      "id": "5",
+      "text": "Pt at the start"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "R, as in rhythm and hemorrhoid"
+     },
+     {
+      "id": "B",
+      "text": "Z, as in xerosis and xenon"
+     },
+     {
+      "id": "C",
+      "text": "N, as in pneumonia"
+     },
+     {
+      "id": "D",
+      "text": "S, as in psychology"
+     },
+     {
+      "id": "E",
+      "text": "T, as in ptosis"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E"
+    },
+    "explain": "The digraphs rh and rrh are pronounced as r (rhythm, hemorrhoid). X at the start of a medical term is pronounced as z (xerosis, xenon), not as ks. The initial blends pn, ps, and pt each silence the p and pronounce the second letter, yielding n, s, and t respectively, as in pneumonia, psychology, and ptosis."
+   },
+   {
+    "id": "MT03045",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each singular term to the plural rule it follows.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Vertebra"
+     },
+     {
+      "id": "2",
+      "text": "Diagnosis"
+     },
+     {
+      "id": "3",
+      "text": "Carcinoma"
+     },
+     {
+      "id": "4",
+      "text": "Ganglion"
+     },
+     {
+      "id": "5",
+      "text": "Bacterium"
+     },
+     {
+      "id": "6",
+      "text": "Myopathy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The -a ending becomes -ae"
+     },
+     {
+      "id": "B",
+      "text": "The -is ending becomes -es"
+     },
+     {
+      "id": "C",
+      "text": "The -ma ending becomes -mata"
+     },
+     {
+      "id": "D",
+      "text": "The -on ending becomes -a"
+     },
+     {
+      "id": "E",
+      "text": "The -um ending becomes -a"
+     },
+     {
+      "id": "F",
+      "text": "The -y ending becomes -ies"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Vertebra ends in -a, which becomes -ae in the plural (vertebrae). Diagnosis ends in -is, which becomes -es (diagnoses). Carcinoma ends in -ma, which becomes -mata (carcinomata). Ganglion ends in -on, which becomes -a (ganglia). Bacterium ends in -um, which becomes -a (bacteria). Myopathy ends in -y, which becomes -ies (myopathies). Each singular is fixed to its own plural pattern by its ending letters."
+   },
+   {
+    "id": "MT03046",
+    "type": "matching",
+    "cat": "MT_lec3",
+    "q": "Match each singular term to the plural rule it follows.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Lumen"
+     },
+     {
+      "id": "2",
+      "text": "Thorax"
+     },
+     {
+      "id": "3",
+      "text": "Apex"
+     },
+     {
+      "id": "4",
+      "text": "Appendix"
+     },
+     {
+      "id": "5",
+      "text": "Thrombus"
+     },
+     {
+      "id": "6",
+      "text": "Sinus"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The -en ending becomes -ina"
+     },
+     {
+      "id": "B",
+      "text": "The -ax ending becomes -aces"
+     },
+     {
+      "id": "C",
+      "text": "The -ex ending becomes -ices"
+     },
+     {
+      "id": "D",
+      "text": "The -ix ending becomes -ices"
+     },
+     {
+      "id": "E",
+      "text": "The -us ending becomes -i (standard pattern)"
+     },
+     {
+      "id": "F",
+      "text": "The -us ending keeps -us and adds -es (special pattern)"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Lumen ends in -en, which becomes -ina (lumina). Thorax ends in -ax, which becomes -aces (thoraces). Apex ends in -ex, which becomes -ices (apices). Appendix ends in -ix, which becomes -ices (appendices). Thrombus belongs to the standard -us family, which replaces -us with -i (thrombi). Sinus belongs to the special -us family, which keeps -us and adds -es (sinuses), and virus follows the same special pattern (viruses)."
+   },
+   {
+    "id": "MT03047",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which term contains a p that is sounded rather than silent because it sits in the middle of the word?",
+    "options": [
+     "Nephroptosis",
+     "Pneumonia",
+     "Psychology",
+     "Ptosis"
+    ],
+    "correct": 0,
+    "explain": "In nephroptosis the p follows the r of nephr and precedes the t of ptosis, and in this middle position it is pronounced. The other three terms each have a silent p at the start, before n, s, or t respectively, so the silence rule applies to them but not to nephroptosis."
+   },
+   {
+    "id": "MT03048",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which of the three uterus combining forms matches a surgical context, and which term illustrates it?",
+    "options": [
+     "Hyster/o, as in hysterectomy",
+     "Metr/o, as in metrorrhagia",
+     "Uter/o, as in uterine",
+     "Cervic/o, as in cervical"
+    ],
+    "correct": 0,
+    "explain": "Hyster/o is the Greek surgical form, illustrated by hysterectomy, the surgical removal of the uterus. Metr/o is the Greek form for symptomatic and diagnostic terms, illustrated by metrorrhagia, and Uter/o is the Latin anatomical form, illustrated by uterine; Cervic/o names the cervix, not the uterus."
+   },
+   {
+    "id": "MT03049",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which of the three uterus combining forms matches a diagnostic or symptomatic context, and which term illustrates it?",
+    "options": [
+     "Hyster/o, as in hysterectomy",
+     "Metr/o, as in metrorrhagia",
+     "Uter/o, as in uterine",
+     "Vagin/o, as in vaginitis"
+    ],
+    "correct": 1,
+    "explain": "Metr/o is the Greek form for symptomatic and diagnostic terms, illustrated by metrorrhagia, uterine bleeding outside the menstrual period, and by endometritis, inflammation of the uterine lining. Hyster/o is the Greek surgical form, Uter/o is the Latin anatomical form, and Vagin/o names the vagina."
+   },
+   {
+    "id": "MT03050",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which of the three uterus combining forms matches an anatomical context, and which term illustrates it?",
+    "options": [
+     "Hyster/o, as in hysterectomy",
+     "Metr/o, as in metrorrhagia",
+     "Uter/o, as in uterine",
+     "Colp/o, as in colpitis"
+    ],
+    "correct": 2,
+    "explain": "Uter/o is the Latin anatomical form, illustrated by uterine and by uteroovarian, pertaining to the uterus and the ovary. Hyster/o is the Greek surgical form, Metr/o is the Greek diagnostic form, and Colp/o names the vagina."
+   },
+   {
+    "id": "MT03051",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "A term such as hysterectomy uses Hyster/o rather than Uter/o. Which reason explains this choice?",
+    "options": [
+     "Hyster/o is the Greek form preferred in surgical terms, and hysterectomy is a surgical removal.",
+     "Hyster/o is the Latin form preferred in anatomical terms, and hysterectomy names an anatomical structure.",
+     "Hyster/o is the Greek form preferred in diagnostic terms, and hysterectomy is a diagnostic procedure.",
+     "Hyster/o and Uter/o are interchangeable, and either would be correct in this term."
+    ],
+    "correct": 0,
+    "explain": "Hyster/o is the Greek form used in surgical terms, so hysterectomy, the surgical removal of the uterus, takes it. The second option assigns the Latin-anatomical role to Hyster/o; the third assigns the diagnostic role to it; and the fourth denies the context distinction the three forms carry."
+   },
+   {
+    "id": "MT03052",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "A term such as uterine uses Uter/o rather than Hyster/o. Which reason explains this choice?",
+    "options": [
+     "Uter/o is the Latin form preferred in anatomical terms, and uterine is an anatomical adjective.",
+     "Uter/o is the Greek form preferred in surgical terms, and uterine describes a surgical procedure.",
+     "Uter/o is the Greek form preferred in diagnostic terms, and uterine is a diagnostic label.",
+     "Uter/o and Metr/o are interchangeable, and either would be correct in this term."
+    ],
+    "correct": 0,
+    "explain": "Uter/o is the Latin form used in anatomical terms, so uterine, an anatomical adjective, takes it. The second and third options give Uter/o the Greek surgical or diagnostic role, which belongs to Hyster/o and Metr/o respectively, and the fourth wrongly treats Uter/o and Metr/o as interchangeable."
+   },
+   {
+    "id": "MT03053",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "A term such as metrorrhagia uses Metr/o rather than Hyster/o. Which reason explains this choice?",
+    "options": [
+     "Metr/o is the Greek form preferred in symptomatic and diagnostic terms, and metrorrhagia names abnormal uterine bleeding.",
+     "Metr/o is the Latin form preferred in anatomical terms, and metrorrhagia names an anatomical feature.",
+     "Metr/o is the Greek surgical form, and metrorrhagia names a surgical procedure.",
+     "Metr/o and Uter/o are interchangeable, and either would be correct in this term."
+    ],
+    "correct": 0,
+    "explain": "Metr/o is the Greek form used in symptomatic and diagnostic terms, so metrorrhagia, abnormal uterine bleeding outside the menstrual period, takes it. The second option assigns the Latin-anatomical role to Metr/o, the third assigns the surgical role to it, and the fourth wrongly treats Metr/o and Uter/o as interchangeable."
+   },
+   {
+    "id": "MT03054",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term pterygium, which two pronunciation rules apply to the same initial pair of letters?",
+    "options": [
+     "The initial p before t is silent, and the t is pronounced, as in ptosis.",
+     "The initial p before t is pronounced, and the t is silent, as in photo.",
+     "The initial p before t is pronounced as an f, as in phase.",
+     "The initial p before t is silent, and the t is silent as well."
+    ],
+    "correct": 0,
+    "explain": "Pterygium begins with pt, in which the p is silent and the t is pronounced, the same rule that governs ptosis. The second option reverses the pair, the third imports the f sound of the ph digraph, and the fourth silences both letters, neither of which matches the pt pattern."
+   },
+   {
+    "id": "MT03055",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term xerosis, the initial x produces which phonetic sound?",
+    "options": [
+     "The sound of z, so the word begins with a z.",
+     "The sound of ks, so the word begins with a cluster.",
+     "The sound of a silent x, so the word begins with a vowel.",
+     "The sound of sh, so the word begins with a hush."
+    ],
+    "correct": 0,
+    "explain": "X at the start of a medical term is pronounced as z, so xerosis begins with a z sound. The ks cluster belongs to x after a vowel, not to x at the start, the third option wrongly silences the x, and the fourth substitutes a sound the letter does not take."
+   },
+   {
+    "id": "MT03056",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term hemorrhoid, the digraph rrh produces which phonetic sound?",
+    "options": [
+     "The sound of r, so the first syllable begins with an r.",
+     "The sound of r followed by h, so two consonants are voiced.",
+     "The sound of a silent r, so only the h is voiced.",
+     "The sound of w, as in wrong."
+    ],
+    "correct": 0,
+    "explain": "The digraph rrh is pronounced as a plain r, so hemorrhoid begins with an r sound. The second option splits the digraph, the third silences the r instead of the h, and the fourth substitutes a w sound the digraph does not take."
+   },
+   {
+    "id": "MT03057",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which statement correctly distinguishes the standard -us plural pattern from the special -us plural pattern?",
+    "options": [
+     "The standard pattern replaces -us with -i, as thrombus to thrombi; the special pattern keeps -us and adds -es, as sinus to sinuses and virus to viruses.",
+     "The standard pattern keeps -us and adds -es; the special pattern replaces -us with -i.",
+     "Both patterns replace -us with -i, and the only difference is the length of the root.",
+     "Both patterns keep -us and add -es, and the only difference is the number of syllables."
+    ],
+    "correct": 0,
+    "explain": "The standard -us family replaces the ending with -i, as in thrombus to thrombi, while the special -us family keeps -us and adds -es, as in sinus to sinuses and virus to viruses. The second option reverses the two, and the third and fourth collapse them into a single pattern, ignoring the two different outcomes the lecture pairs with the two families."
+   },
+   {
+    "id": "MT03058",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term cirrhosis, the initial c before i produces which phonetic sound?",
+    "options": [
+     "The sound of s, because c before i takes the s sound.",
+     "The sound of k, because c before i takes the k sound.",
+     "The sound of ch, because c before i becomes a digraph.",
+     "The sound of sh, because c before i becomes a sibilant."
+    ],
+    "correct": 0,
+    "explain": "C before i takes the s sound, so cirrhosis begins with an s. The second option misapplies the k sound, which belongs to c before a, o, or u. The third and fourth substitute sounds the letter c does not take in this position."
+   },
+   {
+    "id": "MT03059",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "In the term gene, the initial g before e produces which phonetic sound?",
+    "options": [
+     "The j sound, because g before e takes the j sound.",
+     "The hard g sound, because g before e takes the hard g sound.",
+     "The sound of y, because g before e becomes a glide.",
+     "The sound of a silent g, because the e takes over the syllable."
+    ],
+    "correct": 0,
+    "explain": "G before e takes the j sound, so gene begins with a j. The second option misapplies the hard g, which belongs to g before a, o, or u. The third and fourth substitute sounds the letter g does not take in this position."
+   },
+   {
+    "id": "MT03060",
+    "type": "mcq",
+    "cat": "MT_lec3",
+    "q": "Which statement correctly summarizes the role of the letters that follow an initial p in deciding whether it is pronounced?",
+    "options": [
+     "When the p is followed by s, n, or t at the start of a term, it is silent and the second consonant is pronounced.",
+     "When the p is followed by any consonant at the start of a term, it is voiced along with that consonant.",
+     "When the p is followed by a vowel at the start of a term, it is silent.",
+     "When the p is followed by h at the start of a term, it remains a p sound."
+    ],
+    "correct": 0,
+    "explain": "At the start of a term, a p followed by s, n, or t is silent and the second consonant carries the sound, as in psychology, pneumonia, and ptosis. The second option wrongly voices the pair, the third wrongly silences a p before a vowel, and the fourth wrongly keeps a p sound before h, where ph actually yields f."
+   }
+  ]
+ }
+}

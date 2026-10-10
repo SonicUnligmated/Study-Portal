@@ -513,6 +513,8 @@ html.bg-edit-hide-glows body{
 .pt1q .card-badge.note-badge{margin-left:0;font-weight:700;border-color:#f59e0b;color:#92400e;-webkit-text-fill-color:#92400e;background:#fef3c7;cursor:help}
 .pt1q .card-badge.note-badge.grey{border-color:#9ca3af;color:#374151;-webkit-text-fill-color:#374151;background:#f3f4f6}
 .pt1q .card-badge.note-badge.no-tip{cursor:default}
+.pt1q .hub-badges{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px}
+.pt1q .hub-badges .note-badge{font-size:.78rem;padding:5px 11px}
 .pt1q .q-badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
 .pt1q .card-badge.soon{border-style:dashed;color:var(--text-dim);border-color:rgba(var(--accent-0-rgb),.3);background:transparent}
 .pt1q .card.card-soon{opacity:.6;cursor:not-allowed;filter:saturate(.7)}

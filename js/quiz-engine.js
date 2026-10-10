@@ -709,12 +709,20 @@ function noteBadgeHTML(b, extraCls){
   const tone=(b.tone==='grey'||b.tone==='gray')?'grey':'amber';
   return '<span class="card-badge note-badge '+tone+(b.cls?' '+b.cls:'')+(extraCls?' '+extraCls:'')+(b.tip?'':' no-tip')+'"'+(b.tip?' title="'+escapeHtml(b.tip)+'" data-tip="'+escapeHtml(b.tip)+'" aria-label="'+escapeHtml(b.text+': '+b.tip)+'"':'')+'>'+escapeHtml(b.text)+'</span>';
 }
-function materialBadges(m){
+/* where a material badge shows: 'card' (portal card), 'forms' (every hub card), 'hub' (next to ⚙ Quiz settings).
+   examDiffers → card + hub (not on each form); badges[] → card + forms unless they list `where`. */
+function materialBadges(m, where){
   if(!m) return [];
   const out=[];
-  if(m.examDiffers===true) out.push(EXAM_DIFFERS_BADGE);
-  if(Array.isArray(m.badges)) m.badges.forEach(b=>b&&b.text&&out.push(b));
-  return out;
+  if(m.examDiffers===true) out.push(Object.assign({where:['card','hub']},EXAM_DIFFERS_BADGE));
+  if(Array.isArray(m.badges)) m.badges.forEach(b=>b&&b.text&&out.push(Object.assign({where:['card','forms']},b)));
+  return where?out.filter(b=>b.where.includes(where)):out;
+}
+function renderHubBadges(){
+  const el=document.getElementById('hubBadges'); if(!el) return;
+  const list=materialBadges(window.__activeMaterial,'hub');
+  el.innerHTML=list.map(b=>noteBadgeHTML(b,'hub-badge')).join('');
+  el.hidden=!list.length;
 }
 window.StudyBadges={html:noteBadgeHTML, forMaterial:materialBadges, EXAM_DIFFERS:EXAM_DIFFERS_BADGE};
 function cardBadgesHTML(card){
@@ -722,7 +730,7 @@ function cardBadgesHTML(card){
   if(card && card.draft) h+='<span class="card-badge draft" title="Unfinished · still being written">Draft</span>';
   if(card && card.soon) h+='<span class="card-badge soon">Coming Soon</span>';
   // material badges (every card inside it), then this card's own badges
-  materialBadges(window.__activeMaterial).forEach(b=>{ h+=noteBadgeHTML(b); });
+  materialBadges(window.__activeMaterial,'forms').forEach(b=>{ h+=noteBadgeHTML(b); });
   if(card && Array.isArray(card.badges)) card.badges.forEach(b=>{ h+=noteBadgeHTML(b); });
   return h?'<div class="card-badges">'+h+'</div>':'';
 }
@@ -778,6 +786,7 @@ function appendPoolCard(grid, label, pool, card){
 function renderHub(){
   const host=document.getElementById('hubSections');
   host.innerHTML='';
+  renderHubBadges();
   if(!BANK){
     host.innerHTML='<div class="empty-note">Bank not loaded yet.</div>';
     return;

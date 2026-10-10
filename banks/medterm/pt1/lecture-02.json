@@ -1,0 +1,1340 @@
+{
+ "id": "medterm-pt1-lec02",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 2 – Spelling Rules",
+ "formSize": 62,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "cc90c143949e8c32b34b3295c2e8c75ca22ea92a2198f6c1aef82d9963618214.json",
+  "title": "Lecture 2 - Spelling Rules",
+  "note": "Ids renamed to MT02xxx (source ids clashed between lectures 2 and 3 and with PT2 Lecture 10). Content unchanged.",
+  "idMap": {
+   "MT10201": "MT02001",
+   "MT10202": "MT02002",
+   "MT10203": "MT02003",
+   "MT10204": "MT02004",
+   "MT10205": "MT02005",
+   "MT10206": "MT02006",
+   "MT10207": "MT02007",
+   "MT10208": "MT02008",
+   "MT10209": "MT02009",
+   "MT10210": "MT02010",
+   "MT10211": "MT02011",
+   "MT10212": "MT02012",
+   "MT10213": "MT02013",
+   "MT10214": "MT02014",
+   "MT10215": "MT02015",
+   "MT10216": "MT02016",
+   "MT10217": "MT02017",
+   "MT10218": "MT02018",
+   "MT10219": "MT02019",
+   "MT10220": "MT02020",
+   "MT10221": "MT02021",
+   "MT10222": "MT02022",
+   "MT10223": "MT02023",
+   "MT10224": "MT02024",
+   "MT10225": "MT02025",
+   "MT10226": "MT02026",
+   "MT10227": "MT02027",
+   "MT10228": "MT02028",
+   "MT10229": "MT02029",
+   "MT10230": "MT02030",
+   "MT10231": "MT02031",
+   "MT10232": "MT02032",
+   "MT10233": "MT02033",
+   "MT10234": "MT02034",
+   "MT10235": "MT02035",
+   "MT10236": "MT02036",
+   "MT10237": "MT02037",
+   "MT10238": "MT02038",
+   "MT10239": "MT02039",
+   "MT10240": "MT02040",
+   "MT10241": "MT02041",
+   "MT10242": "MT02042",
+   "MT10243": "MT02043",
+   "MT10244": "MT02044",
+   "MT10245": "MT02045",
+   "MT10246": "MT02046",
+   "MT10247": "MT02047",
+   "MT10248": "MT02048",
+   "MT10249": "MT02049",
+   "MT10250": "MT02050",
+   "MT10251": "MT02051",
+   "MT10252": "MT02052",
+   "MT10253": "MT02053",
+   "MT10254": "MT02054",
+   "MT10255": "MT02055",
+   "MT10256": "MT02056",
+   "MT10257": "MT02057",
+   "MT10258": "MT02058",
+   "MT10259": "MT02059",
+   "MT10260": "MT02060",
+   "MT10261": "MT02061",
+   "MT10262": "MT02062"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT02001",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement about the spelling of medical terms is accurate?",
+    "options": [
+     "Words of Greek and Latin origin can show variable spellings, and an inaccurate spelling may lead to misunderstanding or misdiagnosis.",
+     "Because spelling follows predictable phonetic patterns, pronouncing a complex term carefully is enough to spell it correctly.",
+     "Spelling differences among foreign-rooted terms rarely affect clinical meaning, since context resolves any ambiguity.",
+     "The spelling rules apply uniformly to every term, leaving no room for exceptions."
+    ],
+    "correct": 0,
+    "explain": "Medical vocabulary drawn from Greek and Latin is not always spelled one way, and the difference is clinical rather than cosmetic: writing hepatoma for hematoma turns a blood mass into a liver tumor, and writing aphasia for aphagia turns a swallowing problem into a speech problem. Pronunciation does not settle spelling, because some terms fall outside the phonetic patterns, and the rules govern foreign-rooted terms, not English ones."
+   },
+   {
+    "id": "MT02002",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which spelling rule governs the construction of hepatomegaly?",
+    "options": [
+     "A combining vowel o is added.",
+     "No combining vowel is used.",
+     "The root vowel is dropped.",
+     "The prefix vowel is dropped."
+    ],
+    "correct": 0,
+    "explain": "The root hepat ends in the consonant t and the suffix megaly begins in the consonant m, so a combining vowel o is inserted to keep the join pronounceable, giving hepatomegaly. The same consonant-plus-consonant situation adds o in hematology and gastrology."
+   },
+   {
+    "id": "MT02003",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building hepatomegaly, why is a combining vowel inserted?",
+    "options": [
+     "The suffix begins with a consonant.",
+     "The suffix begins with a vowel.",
+     "The root ends with a vowel.",
+     "A second root is being added."
+    ],
+    "correct": 0,
+    "explain": "A combining vowel o appears exactly when a consonant-final root meets a consonant-initial suffix, as megaly does. Had the suffix begun with a vowel, no combining vowel would be used, and a vowel-final root would not call for one either."
+   },
+   {
+    "id": "MT02004",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is built by adding a combining vowel o to the root hemat before the suffix?",
+    "options": [
+     "Hematology",
+     "Vasectomy",
+     "Neuralgia",
+     "Carditis"
+    ],
+    "correct": 0,
+    "explain": "Hematology is built from hemat (blood) plus logy, a consonant-initial suffix, so the combining vowel o is added, giving hematology. Vasectomy and neuralgia use vowel-initial suffixes and drop the o, and carditis uses the same-vowel rule."
+   },
+   {
+    "id": "MT02005",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is built by adding a combining vowel o to the root gastr before the suffix?",
+    "options": [
+     "Gastrology",
+     "Cardioesophageal",
+     "Gastroenterostomy",
+     "Parenteral"
+    ],
+    "correct": 0,
+    "explain": "Gastrology is built from gastr (stomach) plus logy, a consonant-initial suffix, so the combining vowel o is inserted, giving gastrology. Cardioesophageal and gastroenterostomy are two-root constructions, and parenteral drops the prefix vowel rather than adding a combining vowel."
+   },
+   {
+    "id": "MT02006",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which spelling rule governs the construction of vasectomy?",
+    "options": [
+     "No combining vowel is used.",
+     "A combining vowel o is added.",
+     "The root vowel is dropped.",
+     "The prefix vowel is dropped."
+    ],
+    "correct": 0,
+    "explain": "The suffix ectomy opens with the vowel e, so the combining vowel o is dropped and the bare root vas joins it directly, giving vasectomy. The same vowel-initial suffix behavior yields neuralgia and leukemia."
+   },
+   {
+    "id": "MT02007",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building leukemia, why is the combining vowel omitted?",
+    "options": [
+     "The suffix begins with a vowel.",
+     "The suffix begins with a consonant.",
+     "The root ends with a vowel.",
+     "Two roots are present."
+    ],
+    "correct": 0,
+    "explain": "A vowel-initial suffix such as emia already supplies the sound needed to join the parts, so adding another vowel would create an awkward hiatus; the combining vowel is therefore left out and the root stands bare in leukemia."
+   },
+   {
+    "id": "MT02008",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building neuralgia, why is the combining vowel omitted?",
+    "options": [
+     "The suffix begins with a vowel.",
+     "The suffix begins with a consonant.",
+     "The root ends with a vowel.",
+     "A second root is added before the suffix."
+    ],
+    "correct": 0,
+    "explain": "The suffix algia opens with the vowel a, so the combining vowel o is dropped and the bare root neur joins it directly, giving neuralgia. The same vowel-initial suffix behavior yields vasectomy and leukemia."
+   },
+   {
+    "id": "MT02009",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which spelling rule governs the construction of carditis?",
+    "options": [
+     "The root vowel is dropped because the root and suffix begin with the same vowel.",
+     "A combining vowel o is added before the suffix.",
+     "The prefix vowel is dropped.",
+     "No combining vowel is used because the suffix begins with a consonant."
+    ],
+    "correct": 0,
+    "explain": "Cardi ends in the vowel i and the suffix itis begins with the same vowel i, so the combining vowel and the root vowel are collapsed into one, giving carditis. Meningitis follows the same rule with the vowel i."
+   },
+   {
+    "id": "MT02010",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building meningitis, what happens to the vowel of the root meningi?",
+    "options": [
+     "It is dropped because the suffix begins with the same vowel.",
+     "It is kept and a combining vowel is added before it.",
+     "It is kept unchanged because the suffix begins with a consonant.",
+     "It is replaced by a combining vowel o."
+    ],
+    "correct": 0,
+    "explain": "Meningi ends in the vowel i and the suffix itis begins with the same vowel i, so the root vowel is dropped and the suffix joins it, giving meningitis. Carditis follows the same rule with the vowel i."
+   },
+   {
+    "id": "MT02011",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building cardioesophageal, what condition requires inserting a combining vowel between the two roots?",
+    "options": [
+     "The second root begins with a vowel.",
+     "The suffix begins with a consonant.",
+     "The first root ends with a consonant.",
+     "The prefix ends with a vowel."
+    ],
+    "correct": 0,
+    "explain": "When a second root is added and that root opens with a vowel, a combining vowel o bridges the two roots, as the e of esophag requires in cardioesophageal and the e of enter requires in gastroenterostomy. It is the vowel-initial second root, not the suffix, that triggers this bridge."
+   },
+   {
+    "id": "MT02012",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In building gastroenterostomy, what is added between the two roots?",
+    "options": [
+     "A combining vowel o is added.",
+     "The second root drops its vowel.",
+     "The prefix vowel is dropped.",
+     "No combining vowel is used at the root-to-root join."
+    ],
+    "correct": 0,
+    "explain": "The second root enter begins with the vowel e, so a combining vowel o is inserted after gastr to bridge the two roots, giving gastroenterostomy. The same vowel-initial second root situation produces cardioesophageal."
+   },
+   {
+    "id": "MT02013",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which spelling rule governs the construction of parenteral?",
+    "options": [
+     "The prefix vowel is dropped.",
+     "A combining vowel o is added.",
+     "No combining vowel is used.",
+     "The root vowel is dropped."
+    ],
+    "correct": 0,
+    "explain": "The prefix para ends in a and the root enter begins with e, two vowels meeting, so the prefix sheds its final a, giving parenteral. The same vowel-meets-vowel handling turns oligo plus ur plus ia into oliguria."
+   },
+   {
+    "id": "MT02014",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "In constructing oliguria, what is done to the prefix?",
+    "options": [
+     "Its ending vowel is dropped.",
+     "A combining vowel o is added after it.",
+     "Its ending consonant is dropped.",
+     "It keeps every letter unchanged."
+    ],
+    "correct": 0,
+    "explain": "Because the root ur opens with the vowel u, the prefix oligo drops its final o to stop two vowels colliding, leaving olig plus uria, that is, oliguria, a condition of deficient or less urine."
+   },
+   {
+    "id": "MT02015",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The prefix para- ends with a vowel. Which term demonstrates that this final vowel is dropped before a vowel-initial root?",
+    "options": [
+     "Parenteral",
+     "Paraenteral",
+     "Paranormal",
+     "Parathyroid"
+    ],
+    "correct": 0,
+    "explain": "Parenteral is built from para plus enter plus al, and because enter begins with a vowel, the prefix drops its final a, giving parenteral. Paraenteral is the misspelling that keeps the prefix vowel, and paranormal and parathyroid have consonant-initial roots, so the prefix vowel is not dropped there."
+   },
+   {
+    "id": "MT02016",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The prefix oligo- ends with a vowel. Which term demonstrates that this final vowel is dropped before a vowel-initial root?",
+    "options": [
+     "Oliguria",
+     "Oligouria",
+     "Oligocholia",
+     "Oligodontia"
+    ],
+    "correct": 0,
+    "explain": "Oliguria is built from oligo plus ur plus ia, and because ur begins with a vowel, the prefix drops its final o, giving oliguria. Oligouria is the misspelling that keeps the prefix vowel, and oligocholia and oligodontia have consonant-initial roots, so the prefix vowel is not dropped there."
+   },
+   {
+    "id": "MT02017",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Some medical terms are pronounced alike but differ in spelling and meaning. Which of the following pairs does NOT fit this description?",
+    "options": [
+     "Ileum and Ilium",
+     "Sitology and Cytology",
+     "Hepatoma and Hematoma",
+     "Hepatoma and Hepatitis"
+    ],
+    "correct": 3,
+    "explain": "The first three pairs are sound-alikes with different spellings and meanings: ileum is part of the intestine while ilium is part of the hip bone, sitology studies food while cytology studies cells, and hepatoma is a liver mass while hematoma is a blood mass. Hepatoma and hepatitis neither sound alike nor form a confusion pair, because -itis marks inflammation rather than a tumor."
+   },
+   {
+    "id": "MT02018",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "On a laboratory report, the term cytology refers to the study of what?",
+    "options": [
+     "Cells",
+     "Food",
+     "The liver",
+     "Blood"
+    ],
+    "correct": 0,
+    "explain": "Cytology is the study of cells. It is the pronunciation twin of sitology, the study of food, and must not be confused with terms built on hepat (liver) or hemat (blood)."
+   },
+   {
+    "id": "MT02019",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes the inability to swallow?",
+    "options": [
+     "Aphagia",
+     "Aphasia",
+     "Abduction",
+     "Adduction"
+    ],
+    "correct": 0,
+    "explain": "Aphagia is the inability to swallow. It is the pronunciation twin of aphasia, the inability to speak, and is unrelated to abduction (moving away) or adduction (moving toward)."
+   },
+   {
+    "id": "MT02020",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes the inability to speak?",
+    "options": [
+     "Aphagia",
+     "Aphasia",
+     "Abduction",
+     "Adduction"
+    ],
+    "correct": 1,
+    "explain": "Aphasia is the inability to speak. It is the pronunciation twin of aphagia, the inability to swallow, and is unrelated to abduction (moving away) or adduction (moving toward)."
+   },
+   {
+    "id": "MT02021",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes movement away from the midline?",
+    "options": [
+     "Abduction",
+     "Adduction",
+     "Aphagia",
+     "Aphasia"
+    ],
+    "correct": 0,
+    "explain": "Abduction is movement away from the midline. It is the pronunciation twin of adduction, movement toward the midline, and is unrelated to aphagia (inability to swallow) or aphasia (inability to speak)."
+   },
+   {
+    "id": "MT02022",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes movement toward the midline?",
+    "options": [
+     "Abduction",
+     "Adduction",
+     "Aphagia",
+     "Aphasia"
+    ],
+    "correct": 1,
+    "explain": "Adduction is movement toward the midline. It is the pronunciation twin of abduction, movement away from the midline, and is unrelated to aphagia (inability to swallow) or aphasia (inability to speak)."
+   },
+   {
+    "id": "MT02023",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The suffix -oma denotes a tumor. Which root, attached to -oma, produces the term for a liver tumor?",
+    "options": [
+     "Hepat-",
+     "Hemat-",
+     "Leuk-",
+     "Oste-"
+    ],
+    "correct": 0,
+    "explain": "Because every option ends in -oma, the suffix is constant and the root alone fixes the meaning: hepat gives hepatoma (a liver tumor), hemat gives hematoma (a blood mass); leuk means white and oste means bone, neither yielding a liver tumor."
+   },
+   {
+    "id": "MT02024",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The suffix -oma denotes a tumor. Which root, attached to -oma, produces the term for a blood tumor (mass)?",
+    "options": [
+     "Hemat-",
+     "Hepat-",
+     "Leuk-",
+     "Oste-"
+    ],
+    "correct": 0,
+    "explain": "Because every option ends in -oma, the suffix is constant and the root alone fixes the meaning: hemat gives hematoma (a blood mass), hepat gives hepatoma (a liver tumor); leuk means white and oste means bone, neither yielding a blood tumor."
+   },
+   {
+    "id": "MT02025",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes the part of the intestine?",
+    "options": [
+     "Ileum",
+     "Ilium",
+     "Ileus",
+     "Iliac"
+    ],
+    "correct": 0,
+    "explain": "Ileum is part of the intestine. It is the pronunciation twin of ilium, part of the hip bone; ileus is a separate clinical term for intestinal obstruction, and iliac pertains to the ilium."
+   },
+   {
+    "id": "MT02026",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes part of the hip bone?",
+    "options": [
+     "Ileum",
+     "Ilium",
+     "Ileus",
+     "Iliac"
+    ],
+    "correct": 1,
+    "explain": "Ilium is part of the hip bone. It is the pronunciation twin of ileum, part of the intestine; ileus is a separate clinical term for intestinal obstruction, and iliac pertains to the ilium."
+   },
+   {
+    "id": "MT02027",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term denotes the study of food?",
+    "options": [
+     "Sitology",
+     "Cytology",
+     "Hematology",
+     "Gastrology"
+    ],
+    "correct": 0,
+    "explain": "Sitology is the study of food. It is the pronunciation twin of cytology, the study of cells; hematology is the study of blood and gastrology is the study of the stomach, each built on a different root."
+   },
+   {
+    "id": "MT02028",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which prefix means within or inside?",
+    "options": [
+     "Endo-",
+     "Epi-",
+     "Sub-",
+     "Para-"
+    ],
+    "correct": 0,
+    "explain": "Endo- means within or inside; the Latin prefix intra- carries the same sense, as in intravenous. The other positional prefixes sit elsewhere on the scale: sub- is below or under, epi- is upon or above, and para- is alongside of or abnormal."
+   },
+   {
+    "id": "MT02029",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which prefix means below or under?",
+    "options": [
+     "Sub-",
+     "Endo-",
+     "Epi-",
+     "Peri-"
+    ],
+    "correct": 0,
+    "explain": "Sub- means below or under. Endo- is within or inside, epi- is upon or above, and peri- is around, so the four form a positional set that is easy to scramble if only a vague sense of place is remembered."
+   },
+   {
+    "id": "MT02030",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The prefix epi- carries which meaning?",
+    "options": [
+     "Upon or above",
+     "Within or inside",
+     "Below or under",
+     "Around"
+    ],
+    "correct": 0,
+    "explain": "Epi- means upon or above, the top of the positional scale, opposite sub- (below or under), with endo- (within or inside) and peri- (around) filling the remaining slots."
+   },
+   {
+    "id": "MT02031",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means expansion or dilation?",
+    "options": [
+     "-ectasis",
+     "-ectomy",
+     "-stomy",
+     "-tomy"
+    ],
+    "correct": 0,
+    "explain": "-ectasis means expansion or dilation. -ectomy means excision or removal, -stomy means creation of an opening, and -tomy means incision."
+   },
+   {
+    "id": "MT02032",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means excision or removal?",
+    "options": [
+     "-ectasis",
+     "-ectomy",
+     "-stomy",
+     "-tomy"
+    ],
+    "correct": 1,
+    "explain": "-ectomy means excision or removal, as in vasectomy. -ectasis means expansion or dilation, -stomy means creation of an opening, and -tomy means incision."
+   },
+   {
+    "id": "MT02033",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means creation of an opening?",
+    "options": [
+     "-ectasis",
+     "-ectomy",
+     "-stomy",
+     "-tomy"
+    ],
+    "correct": 2,
+    "explain": "-stomy means creation of an opening, as in gastroenterostomy. -ectasis means expansion or dilation, -ectomy means excision, and -tomy means incision."
+   },
+   {
+    "id": "MT02034",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means incision?",
+    "options": [
+     "-ectasis",
+     "-ectomy",
+     "-stomy",
+     "-tomy"
+    ],
+    "correct": 3,
+    "explain": "-tomy means incision. -ectasis means expansion or dilation, -ectomy means excision, and -stomy means creation of an opening."
+   },
+   {
+    "id": "MT02035",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means condition of?",
+    "options": [
+     "-ia",
+     "-logy",
+     "-megaly",
+     "-stomy"
+    ],
+    "correct": 0,
+    "explain": "-ia means condition of. -logy means study of, -megaly means enlargement, and -stomy means creation of an opening."
+   },
+   {
+    "id": "MT02036",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means study of?",
+    "options": [
+     "-ia",
+     "-logy",
+     "-megaly",
+     "-stomy"
+    ],
+    "correct": 1,
+    "explain": "-logy means study of, as in hematology and cytology. -ia means condition of, -megaly means enlargement, and -stomy means creation of an opening."
+   },
+   {
+    "id": "MT02037",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means enlargement?",
+    "options": [
+     "-ia",
+     "-logy",
+     "-megaly",
+     "-stomy"
+    ],
+    "correct": 2,
+    "explain": "-megaly means enlargement, as in hepatomegaly. -ia means condition of, -logy means study of, and -stomy means creation of an opening."
+   },
+   {
+    "id": "MT02038",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which group of suffixes all carry the meaning pertaining to?",
+    "options": [
+     "-ar, -al, and -ic",
+     "-ar, -ic, and -itis",
+     "-al, -eal, and -megaly",
+     "-ic, -al, and -logy"
+    ],
+    "correct": 0,
+    "explain": "The suffixes -ar, -al, and -ic all mean pertaining to. Each distractor hides one suffix with a different job: -itis means inflammation, -megaly means enlargement, and -logy means study of, so any triple containing one of these is not a pure pertaining set."
+   },
+   {
+    "id": "MT02039",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which suffix means pertaining to, as in parenteral and cardioesophageal?",
+    "options": [
+     "-al and -eal",
+     "-ar and -ic",
+     "-ia and -logy",
+     "-megaly and -stomy"
+    ],
+    "correct": 0,
+    "explain": "-al and -eal both mean pertaining to, as in parenteral (pertaining to alongside of the small intestine) and cardioesophageal (pertaining to the heart and esophagus). -ar and -ic also mean pertaining to; -ia and -logy mean condition of and study of; -megaly and -stomy mean enlargement and creation of an opening."
+   },
+   {
+    "id": "MT02040",
+    "type": "matching",
+    "cat": "MT_lec2",
+    "q": "Match each medical term to the spelling rule that governs its construction.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hepatomegaly"
+     },
+     {
+      "id": "2",
+      "text": "Hematology"
+     },
+     {
+      "id": "3",
+      "text": "Vasectomy"
+     },
+     {
+      "id": "4",
+      "text": "Leukemia"
+     },
+     {
+      "id": "5",
+      "text": "Neuralgia"
+     },
+     {
+      "id": "6",
+      "text": "Carditis"
+     },
+     {
+      "id": "7",
+      "text": "Meningitis"
+     },
+     {
+      "id": "8",
+      "text": "Cardioesophageal"
+     },
+     {
+      "id": "9",
+      "text": "Gastroenterostomy"
+     },
+     {
+      "id": "10",
+      "text": "Parenteral"
+     },
+     {
+      "id": "11",
+      "text": "Oliguria"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Consonant-final root plus consonant-initial suffix: add o"
+     },
+     {
+      "id": "B",
+      "text": "Consonant-final root plus vowel-initial suffix: use no combining vowel"
+     },
+     {
+      "id": "C",
+      "text": "Root and suffix begin with the same vowel: drop the root vowel"
+     },
+     {
+      "id": "D",
+      "text": "Two roots with a vowel-initial second root: add o between the roots"
+     },
+     {
+      "id": "E",
+      "text": "Vowel-final prefix plus vowel-initial root: drop the prefix vowel"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "A",
+     "3": "B",
+     "4": "B",
+     "5": "B",
+     "6": "C",
+     "7": "C",
+     "8": "D",
+     "9": "D",
+     "10": "E",
+     "11": "E"
+    },
+    "explain": "Hepatomegaly and hematology both place a consonant-final root before a consonant-initial suffix, so each adds the combining vowel o. Vasectomy, leukemia, and neuralgia each place a consonant-final root before a vowel-initial suffix, so each uses no combining vowel. Carditis and meningitis bring a root and a suffix that begin with the same vowel, so the root vowel is dropped. Cardioesophageal and gastroenterostomy join two roots, and because the second root begins with a vowel, each inserts a combining vowel o between the roots. Parenteral and oliguria place a vowel-final prefix before a vowel-initial root, so each drops the prefix vowel. The five rules are distinguished by which boundary the vowel sits at: root-to-suffix, root-to-root, or prefix-to-root."
+   },
+   {
+    "id": "MT02041",
+    "type": "matching",
+    "cat": "MT_lec2",
+    "q": "Match each term to its correct meaning. Each term is shown with its word form.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Ileum (R)"
+     },
+     {
+      "id": "2",
+      "text": "Ilium (R)"
+     },
+     {
+      "id": "3",
+      "text": "Sitology (R)"
+     },
+     {
+      "id": "4",
+      "text": "Cytology (R)"
+     },
+     {
+      "id": "5",
+      "text": "Abduction (R)"
+     },
+     {
+      "id": "6",
+      "text": "Adduction (R)"
+     },
+     {
+      "id": "7",
+      "text": "Hepatoma (R)"
+     },
+     {
+      "id": "8",
+      "text": "Hematoma (R)"
+     },
+     {
+      "id": "9",
+      "text": "Aphagia (R)"
+     },
+     {
+      "id": "10",
+      "text": "Aphasia (R)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Part of the intestine"
+     },
+     {
+      "id": "B",
+      "text": "Part of the hip bone"
+     },
+     {
+      "id": "C",
+      "text": "Study of food"
+     },
+     {
+      "id": "D",
+      "text": "Study of cells"
+     },
+     {
+      "id": "E",
+      "text": "Move away"
+     },
+     {
+      "id": "F",
+      "text": "Move toward"
+     },
+     {
+      "id": "G",
+      "text": "Liver tumor"
+     },
+     {
+      "id": "H",
+      "text": "Blood tumor (mass)"
+     },
+     {
+      "id": "I",
+      "text": "Inability to swallow"
+     },
+     {
+      "id": "J",
+      "text": "Inability to speak"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F",
+     "7": "G",
+     "8": "H",
+     "9": "I",
+     "10": "J"
+    },
+    "explain": "These ten words form five sound-alike pairs that differ in spelling and meaning. Ileum is part of the intestine while ilium is part of the hip bone; sitology studies food while cytology studies cells; abduction moves away while adduction moves toward; hepatoma is a liver tumor while hematoma is a blood mass; aphagia is the inability to swallow while aphasia is the inability to speak."
+   },
+   {
+    "id": "MT02042",
+    "type": "matching",
+    "cat": "MT_lec2",
+    "q": "Match each component combination to its correctly spelled term and word form. Note that some options are misspellings produced by applying the wrong rule.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hepat/o + megaly"
+     },
+     {
+      "id": "2",
+      "text": "Hemat/o + logy"
+     },
+     {
+      "id": "3",
+      "text": "Vas/o + ectomy"
+     },
+     {
+      "id": "4",
+      "text": "Leuk/o + emia"
+     },
+     {
+      "id": "5",
+      "text": "Cardi/o + itis"
+     },
+     {
+      "id": "6",
+      "text": "Meningi/o + itis"
+     },
+     {
+      "id": "7",
+      "text": "Cardi/o + esophag/o + eal"
+     },
+     {
+      "id": "8",
+      "text": "Gastr/o + enter/o + stomy"
+     },
+     {
+      "id": "9",
+      "text": "Para + enter/o + al"
+     },
+     {
+      "id": "10",
+      "text": "Oligo + ur/o + ia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Hepatomegaly (CF+S)"
+     },
+     {
+      "id": "B",
+      "text": "Hepatmegaly (R+S)"
+     },
+     {
+      "id": "C",
+      "text": "Hematology (CF+S)"
+     },
+     {
+      "id": "D",
+      "text": "Hematlogy (R+S)"
+     },
+     {
+      "id": "E",
+      "text": "Vasectomy (R+S)"
+     },
+     {
+      "id": "F",
+      "text": "Vasoectomy (CF+S)"
+     },
+     {
+      "id": "G",
+      "text": "Leukemia (R+S)"
+     },
+     {
+      "id": "H",
+      "text": "Leukoemia (CF+S)"
+     },
+     {
+      "id": "I",
+      "text": "Carditis (R+S)"
+     },
+     {
+      "id": "J",
+      "text": "Cardioitis (CF+S)"
+     },
+     {
+      "id": "K",
+      "text": "Meningitis (R+S)"
+     },
+     {
+      "id": "L",
+      "text": "Meningiitis (R+S)"
+     },
+     {
+      "id": "M",
+      "text": "Cardioesophageal (CF+R+S)"
+     },
+     {
+      "id": "N",
+      "text": "Cardioesophageal (CF+CF+S)"
+     },
+     {
+      "id": "O",
+      "text": "Gastroenterostomy (CF+CF+S)"
+     },
+     {
+      "id": "P",
+      "text": "Gastroenterstomy (CF+R+S)"
+     },
+     {
+      "id": "Q",
+      "text": "Parenteral (P+R+S)"
+     },
+     {
+      "id": "R",
+      "text": "Paraenteral (P+R+S)"
+     },
+     {
+      "id": "S",
+      "text": "Oliguria (P+R+S)"
+     },
+     {
+      "id": "T",
+      "text": "Oligouria (P+R+S)"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "C",
+     "3": "E",
+     "4": "G",
+     "5": "I",
+     "6": "K",
+     "7": "M",
+     "8": "O",
+     "9": "Q",
+     "10": "S"
+    },
+    "explain": "Each incorrect spelling corresponds to misapplying one rule, so applying the rule correctly yields the single right form. A consonant-final root plus a consonant-initial suffix adds o: hepat/o + megaly gives hepatomegaly (CF+S) and hemat/o + logy gives hematology (CF+S), so dropping the o (hepatmegaly, hematlogy) is wrong. A consonant-final root plus a vowel-initial suffix drops the o: vas/o + ectomy gives vasectomy (R+S) and leuk/o + emia gives leukemia (R+S), so keeping the o (vasoectomy, leukoemia) is wrong. The same vowel on both sides drops the root vowel: cardi/o + itis gives carditis (R+S) and meningi/o + itis gives meningitis (R+S), so retaining or adding a vowel (cardioitis, meningiitis) is wrong. Two roots with a vowel-initial second root add o: cardi/o + esophag/o + eal gives cardioesophageal (CF+R+S) and gastr/o + enter/o + stomy gives gastroenterostomy (CF+CF+S). A vowel-final prefix plus a vowel-initial root drops the prefix vowel: para + enter/o + al gives parenteral (P+R+S) and oligo + ur/o + ia gives oliguria (P+R+S), so keeping the prefix vowel (paraenteral, oligouria) is wrong. Across these terms the suffixes carry their usual senses: -megaly enlargement, -logy study of, -ectomy excision, -stomy creation of an opening, -ia condition of, -al and -eal pertaining to, and -itis inflammation."
+   },
+   {
+    "id": "MT02043",
+    "type": "matching",
+    "cat": "MT_lec2",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-ar, -al, -ic"
+     },
+     {
+      "id": "2",
+      "text": "-ectasis"
+     },
+     {
+      "id": "3",
+      "text": "-ectomy"
+     },
+     {
+      "id": "4",
+      "text": "-ia"
+     },
+     {
+      "id": "5",
+      "text": "-logy"
+     },
+     {
+      "id": "6",
+      "text": "-megaly"
+     },
+     {
+      "id": "7",
+      "text": "-stomy"
+     },
+     {
+      "id": "8",
+      "text": "-tomy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to"
+     },
+     {
+      "id": "B",
+      "text": "Expansion or Dilation"
+     },
+     {
+      "id": "C",
+      "text": "Excision (Removal)"
+     },
+     {
+      "id": "D",
+      "text": "Condition of"
+     },
+     {
+      "id": "E",
+      "text": "Study of"
+     },
+     {
+      "id": "F",
+      "text": "Enlargement"
+     },
+     {
+      "id": "G",
+      "text": "Creation of an opening"
+     },
+     {
+      "id": "H",
+      "text": "Incision"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F",
+     "7": "G",
+     "8": "H"
+    },
+    "explain": "The pertaining suffixes are -ar, -al, and -ic, all three meaning pertaining to. The four surgical suffixes are -ectasis (expansion or dilation), -ectomy (excision or removal), -stomy (creation of an opening), and -tomy (incision). The remaining two are -ia (condition of), as in oliguria, and -logy (study of), as in cytology and hematology. Each entry pairs with exactly one meaning, and the three pertaining endings share a single sense."
+   },
+   {
+    "id": "MT02044",
+    "type": "matching",
+    "cat": "MT_lec2",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Sub-"
+     },
+     {
+      "id": "2",
+      "text": "Endo-"
+     },
+     {
+      "id": "3",
+      "text": "Epi-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Below or Under"
+     },
+     {
+      "id": "B",
+      "text": "Within or Inside"
+     },
+     {
+      "id": "C",
+      "text": "Upon or Above"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C"
+    },
+    "explain": "Sub- means below or under, endo- means within or inside, and epi- means upon or above. The three prefixes sit at three distinct positions on the vertical scale, and the Latin prefix intra- carries the same sense as endo-, as in intravenous."
+   },
+   {
+    "id": "MT02045",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The misspelling hematlogy for hematology results from which error?",
+    "options": [
+     "The writer failed to add the combining vowel o before a consonant-initial suffix.",
+     "The writer added a combining vowel o before a vowel-initial suffix.",
+     "The writer dropped the root vowel when it matched the suffix vowel.",
+     "The writer kept the prefix vowel before a vowel-initial root."
+    ],
+    "correct": 0,
+    "explain": "Hematology places a consonant-final root, hemat, before a consonant-initial suffix, logy, so the combining vowel o must be added; omitting it produces the misspelling hematlogy. The other options describe errors that would arise under different rules, such as keeping a vowel before a vowel-initial suffix or mishandling a matching vowel."
+   },
+   {
+    "id": "MT02046",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The misspelling vasoectomy for vasectomy results from which error?",
+    "options": [
+     "The writer kept the combining vowel o before a vowel-initial suffix.",
+     "The writer failed to add the combining vowel o before a consonant-initial suffix.",
+     "The writer dropped the root vowel when it matched the suffix vowel.",
+     "The writer dropped the prefix vowel before a vowel-initial root."
+    ],
+    "correct": 0,
+    "explain": "Vasectomy places a consonant-final root, vas, before a vowel-initial suffix, ectomy, so no combining vowel is used; retaining the o produces the misspelling vasoectomy. The other options describe errors that would arise under different rules, such as failing to add the vowel before a consonant-initial suffix or mishandling the prefix vowel."
+   },
+   {
+    "id": "MT02047",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The misspelling cardioitis for carditis results from which error?",
+    "options": [
+     "The writer retained a vowel where the root and suffix begin with the same vowel, instead of dropping it.",
+     "The writer failed to add a combining vowel before a consonant-initial suffix.",
+     "The writer added a combining vowel before a vowel-initial suffix.",
+     "The writer dropped the prefix vowel before a vowel-initial root."
+    ],
+    "correct": 0,
+    "explain": "Carditis joins a root and a suffix that both begin with i, so the root vowel is dropped and the two parts merge; keeping a vowel between them produces the misspelling cardioitis. The other options describe errors that would arise under different rules, such as adding a vowel before a vowel-initial suffix or mishandling the prefix vowel."
+   },
+   {
+    "id": "MT02048",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The misspelling paraenteral for parenteral results from which error?",
+    "options": [
+     "The writer kept the prefix vowel before a vowel-initial root.",
+     "The writer dropped the prefix vowel before a consonant-initial root.",
+     "The writer failed to add a combining vowel between two roots.",
+     "The writer dropped the root vowel when it matched the suffix vowel."
+    ],
+    "correct": 0,
+    "explain": "Parenteral places a vowel-final prefix, para, before a vowel-initial root, enter, so the prefix drops its final a and the two merge; keeping the a produces the misspelling paraenteral. The other options describe errors that would arise under different rules, such as failing to add a combining vowel between two roots or mishandling a matching root vowel."
+   },
+   {
+    "id": "MT02049",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "The misspelling gastroenterstomy for gastroenterostomy results from which error?",
+    "options": [
+     "The writer failed to add a combining vowel between two roots whose second root begins with a vowel.",
+     "The writer added a combining vowel before a vowel-initial suffix.",
+     "The writer dropped the prefix vowel before a vowel-initial root.",
+     "The writer dropped the root vowel when it matched the suffix vowel."
+    ],
+    "correct": 0,
+    "explain": "Gastroenterostomy joins two roots, and because the second root, enter, begins with a vowel, a combining vowel o must bridge the two; omitting it produces the misspelling gastroenterstomy. The other options describe errors that would arise under different rules, such as adding a vowel before a vowel-initial suffix or mishandling the prefix vowel."
+   },
+   {
+    "id": "MT02050",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Why does an inaccurate spelling of a medical term matter clinically?",
+    "options": [
+     "Because a single letter change can shift the term into a different structure or condition and cause misunderstanding or misdiagnosis.",
+     "Because misspellings are always caught by the reader's context, so the meaning remains intact.",
+     "Because spelling is purely a matter of style and does not affect the clinical sense.",
+     "Because misspellings only matter when the term is spoken aloud, not when it is written."
+    ],
+    "correct": 0,
+    "explain": "A single letter change can move a term into a different structure or condition, as when hematoma becomes hepatoma or aphagia becomes aphasia, and the lecture warns that this can cause misunderstanding or misdiagnosis. The second and third options wrongly treat spelling as harmless, and the fourth wrongly confines the risk to spoken usage."
+   },
+   {
+    "id": "MT02051",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly explains why pronunciation alone cannot guarantee the correct spelling of a medical term?",
+    "options": [
+     "Because some terms do not fall under the spelling rules phonetically, so the rules must be applied by pattern rather than by sound.",
+     "Because medical terms are always spelled exactly as they are pronounced, with no exceptions.",
+     "Because pronunciation is unrelated to spelling in any language.",
+     "Because spelling rules apply only to English terms, not to Greek and Latin ones."
+    ],
+    "correct": 0,
+    "explain": "Some terms fall outside the phonetic patterns, so the writer must apply the rules by their structural pattern rather than relying on how the term sounds. The second option denies the exceptions the lecture warns about, the third denies the link between sound and spelling, and the fourth wrongly confines the rules to English terms."
+   },
+   {
+    "id": "MT02052",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly describes the difference between -stomy and -tomy?",
+    "options": [
+     "-stomy creates a lasting opening, while -tomy is an incision, as in gastroenterostomy versus laparotomy.",
+     "-stomy is an incision, while -tomy creates a lasting opening.",
+     "Both suffixes mean the same thing, an incision into an organ.",
+     "Both suffixes mean the same thing, the creation of an opening."
+    ],
+    "correct": 0,
+    "explain": "-stomy creates a lasting opening, as in gastroenterostomy, while -tomy is an incision, as in laparotomy. The second option reverses the two, and the third and fourth collapse the pair into a single meaning, ignoring the surgical distinction the suffixes carry."
+   },
+   {
+    "id": "MT02053",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly distinguishes -ectomy from -stomy?",
+    "options": [
+     "-ectomy removes tissue, while -stomy creates an opening, as in vasectomy versus gastroenterostomy.",
+     "-ectomy creates an opening, while -stomy removes tissue.",
+     "Both suffixes mean removal of tissue.",
+     "Both suffixes mean creation of an opening."
+    ],
+    "correct": 0,
+    "explain": "-ectomy removes tissue (vasectomy, the removal of a vas deferens), while -stomy creates an opening (gastroenterostomy, an opening between the stomach and intestine). The second option reverses the two, and the third and fourth collapse the pair into a single meaning."
+   },
+   {
+    "id": "MT02054",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly distinguishes -megaly from -ectasis?",
+    "options": [
+     "-megaly enlarges an organ, while -ectasis dilates a lumen, as in hepatomegaly versus an expansion of a cavity.",
+     "-megaly dilates a lumen, while -ectasis enlarges an organ.",
+     "Both suffixes mean enlargement of an organ.",
+     "Both suffixes mean dilation of a cavity."
+    ],
+    "correct": 0,
+    "explain": "-megaly enlarges the whole organ (hepatomegaly, an enlarged liver), while -ectasis dilates a lumen or cavity (the expansion or dilation of a hollow structure). The second option reverses the two, and the third and fourth collapse the pair into a single meaning, ignoring the distinction between organ size and cavity caliber."
+   },
+   {
+    "id": "MT02055",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning study of blood?",
+    "options": [
+     "Hematology",
+     "Hematlogy",
+     "Haematology (misspelling)",
+     "Hemetology"
+    ],
+    "correct": 0,
+    "explain": "Hematology is built from hemat (blood) plus logy, a consonant-initial suffix, so the combining vowel o is added, giving hematology. The second option omits the combining vowel, the third is a deliberate misspelling included as a distractor, and the fourth substitutes e for a in the first syllable."
+   },
+   {
+    "id": "MT02056",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning excision of a vas deferens?",
+    "options": [
+     "Vasectomy",
+     "Vasoectomy",
+     "Vaseectomy",
+     "Vasectomyy"
+    ],
+    "correct": 0,
+    "explain": "Vasectomy is built from vas plus ectomy, a vowel-initial suffix, so no combining vowel is used, giving vasectomy. The second option wrongly keeps the combining vowel, the third substitutes e for the root vowel, and the fourth doubles the final y, each a spelling error."
+   },
+   {
+    "id": "MT02057",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning inflammation of the heart?",
+    "options": [
+     "Carditis",
+     "Cardioitis",
+     "Cardiitis",
+     "Carditis (with extra vowel)"
+    ],
+    "correct": 0,
+    "explain": "Carditis is built from cardi plus itis, and because both begin with the vowel i, the root vowel is dropped and the two parts merge, giving carditis. The second option wrongly retains the combining vowel, the third wrongly retains the root vowel, and the fourth describes an erroneous doubling."
+   },
+   {
+    "id": "MT02058",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning pertaining to alongside of the small intestine?",
+    "options": [
+     "Parenteral",
+     "Paraenteral",
+     "Parenterral",
+     "Parenetral"
+    ],
+    "correct": 0,
+    "explain": "Parenteral is built from para plus enter plus al, and because enter begins with a vowel, the prefix drops its final a, giving parenteral. The second option wrongly keeps the prefix vowel, the third doubles the final r, and the fourth transposes the e and n, each a spelling error."
+   },
+   {
+    "id": "MT02059",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning condition of deficient or less urine?",
+    "options": [
+     "Oliguria",
+     "Oligouria",
+     "Oligurea",
+     "Oligoria"
+    ],
+    "correct": 0,
+    "explain": "Oliguria is built from oligo plus ur plus ia, and because ur begins with a vowel, the prefix drops its final o, giving oliguria. The second option wrongly keeps the prefix vowel, the third substitutes e for i, and the fourth transposes the vowels, each a spelling error."
+   },
+   {
+    "id": "MT02060",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which term is the correct spelling of the medical term meaning pertaining to the heart and esophagus?",
+    "options": [
+     "Cardioesophageal",
+     "Cardioesophagael",
+     "Cardioesophageal (with extra vowel)",
+     "Cardiesophageal"
+    ],
+    "correct": 0,
+    "explain": "Cardioesophageal is built from cardi plus esophag plus eal, and because esophag begins with a vowel, the combining vowel o is inserted between the two roots, giving cardioesophageal. The second option adds a superfluous a, the third describes an erroneous vowel insertion, and the fourth omits the bridging o, each a spelling error."
+   },
+   {
+    "id": "MT02061",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly distinguishes hepatoma from hematoma by root and meaning?",
+    "options": [
+     "Hepatoma contains the root hepat meaning liver, so it is a liver tumor; hematoma contains the root hemat meaning blood, so it is a blood mass.",
+     "Hepatoma contains the root hemat meaning blood, so it is a blood mass; hematoma contains the root hepat meaning liver, so it is a liver tumor.",
+     "Both terms contain the same root and differ only by a spelling convention.",
+     "Hepatoma denotes a malignant tumor, while hematoma denotes a benign one, with the same root."
+    ],
+    "correct": 0,
+    "explain": "Hepatoma contains hepat (liver) and denotes a liver tumor, while hematoma contains hemat (blood) and denotes a blood mass. The second option swaps the two roots, the third wrongly assumes a single root, and the fourth invents a malignant-versus-benign distinction that the roots do not encode."
+   },
+   {
+    "id": "MT02062",
+    "type": "mcq",
+    "cat": "MT_lec2",
+    "q": "Which statement correctly distinguishes aphagia from aphasia by root and meaning?",
+    "options": [
+     "Aphagia contains phag (swallow), so it is the inability to swallow; aphasia contains phas (speak), so it is the inability to speak.",
+     "Aphagia contains phas (speak), so it is the inability to speak; aphasia contains phag (swallow), so it is the inability to swallow.",
+     "Both terms contain the same root and differ only by a spelling convention.",
+     "Aphagia denotes partial inability, while aphasia denotes complete inability, with the same root."
+    ],
+    "correct": 0,
+    "explain": "Aphagia contains phag (swallow) and denotes the inability to swallow, while aphasia contains phas (speak) and denotes the inability to speak. The second option swaps the two roots, the third wrongly assumes a single root, and the fourth invents a partial-versus-complete distinction the roots do not encode."
+   }
+  ]
+ }
+}

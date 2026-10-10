@@ -1,0 +1,1465 @@
+{
+ "id": "medterm-pt1-lec01",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 1 – Basic Term Components",
+ "formSize": 62,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "def43c015284ccdc53049a672b55fd284988779a6142cc2f5caf77c87b6cbf42.json",
+  "title": "Lecture 1 - Basic Term Components",
+  "note": "Ids renamed to MT01xxx (source ids clashed between lectures 2 and 3 and with PT2 Lecture 10). Content unchanged.",
+  "idMap": {
+   "MT10101": "MT01001",
+   "MT10102": "MT01002",
+   "MT10103": "MT01003",
+   "MT10104": "MT01004",
+   "MT10105": "MT01005",
+   "MT10106": "MT01006",
+   "MT10107": "MT01007",
+   "MT10108": "MT01008",
+   "MT10109": "MT01009",
+   "MT10110": "MT01010",
+   "MT10111": "MT01011",
+   "MT10112": "MT01012",
+   "MT10113": "MT01013",
+   "MT10114": "MT01014",
+   "MT10115": "MT01015",
+   "MT10116": "MT01016",
+   "MT10117": "MT01017",
+   "MT10118": "MT01018",
+   "MT10119": "MT01019",
+   "MT10120": "MT01020",
+   "MT10121": "MT01021",
+   "MT10122": "MT01022",
+   "MT10123": "MT01023",
+   "MT10124": "MT01024",
+   "MT10125": "MT01025",
+   "MT10126": "MT01026",
+   "MT10127": "MT01027",
+   "MT10128": "MT01028",
+   "MT10129": "MT01029",
+   "MT10130": "MT01030",
+   "MT10131": "MT01031",
+   "MT10132": "MT01032",
+   "MT10133": "MT01033",
+   "MT10134": "MT01034",
+   "MT10135": "MT01035",
+   "MT10136": "MT01036",
+   "MT10137": "MT01037",
+   "MT10138": "MT01038",
+   "MT10139": "MT01039",
+   "MT10140": "MT01040",
+   "MT10141": "MT01041",
+   "MT10142": "MT01042",
+   "MT10143": "MT01043",
+   "MT10144": "MT01044",
+   "MT10145": "MT01045",
+   "MT10146": "MT01046",
+   "MT10147": "MT01047",
+   "MT10148": "MT01048",
+   "MT10149": "MT01049",
+   "MT10150": "MT01050",
+   "MT10151": "MT01051",
+   "MT10152": "MT01052",
+   "MT10153": "MT01053",
+   "MT10154": "MT01054",
+   "MT10155": "MT01055",
+   "MT10156": "MT01056",
+   "MT10157": "MT01057",
+   "MT10158": "MT01058",
+   "MT10159": "MT01059",
+   "MT10160": "MT01060",
+   "MT10161": "MT01061",
+   "MT10162": "MT01062"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT01001",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which language serves as the universal language of medical science?",
+    "options": [
+     "Greek",
+     "Latin",
+     "English",
+     "Arabic"
+    ],
+    "correct": 2,
+    "explain": "English is the universal language of medical science, and it draws its technical vocabulary chiefly from Greek and Latin, with minor contributions from German, French, and Arabic."
+   },
+   {
+    "id": "MT01002",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which language is correctly paired with the kind of medical term it mostly supplies?",
+    "options": [
+     "Greek paired with anatomic terms",
+     "Latin paired with surgical terms",
+     "Greek paired with surgical and diagnostic terms",
+     "Latin paired with diagnostic terms"
+    ],
+    "correct": 2,
+    "explain": "Greek mostly supplies surgical and diagnostic terms, while Latin mostly supplies anatomic terms. The pairing states a predominance, not an exclusive assignment, so Greek can still yield an occasional anatomic term and Latin an occasional surgical one; what decides is the majority association."
+   },
+   {
+    "id": "MT01003",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Latin-origin medical terms are mostly which type of terms?",
+    "options": [
+     "Surgical and diagnostic terms",
+     "Surgical terms only",
+     "Anatomic terms",
+     "Diagnostic terms only"
+    ],
+    "correct": 2,
+    "explain": "Latin is the source of most anatomic terms, whereas the surgical and diagnostic categories are chiefly Greek."
+   },
+   {
+    "id": "MT01004",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which trio names the additional languages that have influenced medical terminology beyond Greek and Latin?",
+    "options": [
+     "German, French, and Arabic",
+     "German, French, and Spanish",
+     "German, Arabic, and Italian",
+     "French, Arabic, and Portuguese"
+    ],
+    "correct": 0,
+    "explain": "The influencing languages are German, French, and Arabic. Each wrong option keeps two of these but substitutes one language (Spanish, Italian, or Portuguese) that is not part of the set, so all three must be recalled to answer correctly."
+   },
+   {
+    "id": "MT01005",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The term alcohol entered medical English through which language?",
+    "options": [
+     "Greek",
+     "Latin",
+     "French",
+     "Arabic"
+    ],
+    "correct": 3,
+    "explain": "Alcohol is a medical term of Arabic origin, illustrating the Arabic layer of influence on the vocabulary."
+   },
+   {
+    "id": "MT01006",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "What is a medical term?",
+    "options": [
+     "A complete meaningful word composed of different parts",
+     "The specialized language used throughout healthcare",
+     "A clinical word whose meaning is taken from the suffix first",
+     "A standardized name for a body structure or disease"
+    ],
+    "correct": 0,
+    "explain": "A medical term is one finished word built from word parts. Medical terminology is the whole language, not one term. Starting with the suffix is the method used to define a term, not what the term itself is. Many terms name structures or diseases, but others name specialists, procedures, or states, and the definition is about construction, not about what the word happens to label."
+   },
+   {
+    "id": "MT01007",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which component is the main word and forms the body of a term?",
+    "options": [
+     "Prefix",
+     "Suffix",
+     "Root",
+     "Combining form"
+    ],
+    "correct": 2,
+    "explain": "The root is the main word and forms the body of the term; the prefix is the head, the suffix is the tail, and the combining form is the bridge."
+   },
+   {
+    "id": "MT01008",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which component is the tail attached to the end of the main word?",
+    "options": [
+     "Root",
+     "Prefix",
+     "Suffix",
+     "Combining form"
+    ],
+    "correct": 2,
+    "explain": "The suffix is the tail added to the end of the root; it extends or completes the meaning, while the root is the body, the prefix the head, and the combining form the bridge."
+   },
+   {
+    "id": "MT01009",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which component is the head attached before the body of the term?",
+    "options": [
+     "Prefix",
+     "Suffix",
+     "Root",
+     "Combining form"
+    ],
+    "correct": 0,
+    "explain": "The prefix is the head placed before the root and further extends the meaning; the suffix is the tail, the root the body, and the combining form the bridge."
+   },
+   {
+    "id": "MT01010",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which component acts as the bridge or link between word parts?",
+    "options": [
+     "Root",
+     "Suffix",
+     "Prefix",
+     "Combining form"
+    ],
+    "correct": 3,
+    "explain": "The combining form is the bridge or link that joins word parts smoothly; the root is the body, the prefix the head, and the suffix the tail."
+   },
+   {
+    "id": "MT01011",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "How is a combining form built?",
+    "options": [
+     "A root plus a combining vowel",
+     "A prefix plus a root",
+     "A root plus a suffix",
+     "Two roots joined directly with no vowel"
+    ],
+    "correct": 0,
+    "explain": "A combining form is a root word combined with a vowel. The other options describe different compositions (prefix plus root, root plus suffix) or wrongly claim that two roots can be joined without a linking vowel."
+   },
+   {
+    "id": "MT01012",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "What is the main purpose of the combining vowel inside a combining form?",
+    "options": [
+     "It facilitates suffix addition and links roots",
+     "It further extends the meaning before the root",
+     "It completes the meaning at the end of the root",
+     "It forms the main body of the term"
+    ],
+    "correct": 0,
+    "explain": "The combining vowel smooths pronunciation when a suffix is added or when two roots are joined. Extending the meaning before the root is the prefix's job, completing the meaning after the root is the suffix's job, and forming the body is the root's job."
+   },
+   {
+    "id": "MT01013",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "When analyzing a medical term, in what order are its components interpreted?",
+    "options": [
+     "Suffix, then Prefix, then Root(s)",
+     "Root(s), then Prefix, then Suffix",
+     "Prefix, then Root(s), then Suffix",
+     "Suffix, then Root(s), then Prefix"
+    ],
+    "correct": 0,
+    "explain": "Interpretation begins with the suffix, then the prefix, then the root or roots. In pericarditis (P+R+S) this order reads inflammation (suffix), around (prefix), the heart (root)."
+   },
+   {
+    "id": "MT01014",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "When a term contains more than one root, how are the additional roots linked?",
+    "options": [
+     "By a vowel, most commonly i",
+     "By a vowel, most commonly e",
+     "By a vowel, most commonly o",
+     "By a vowel, most commonly a"
+    ],
+    "correct": 2,
+    "explain": "Extra roots are joined by a combining vowel, and the default is o, as in the lip/o of hyperlipoproteinemia, where the o bridges the fat root to the protein root. The vowel i is the secondary and less frequent combining vowel, while e and a are not used to link roots."
+   },
+   {
+    "id": "MT01015",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Besides o, which vowel also serves as a combining vowel?",
+    "options": [
+     "The vowel a",
+     "The vowel e",
+     "The vowel i",
+     "The vowel u"
+    ],
+    "correct": 2,
+    "explain": "The most common combining vowel is o, and the vowel i is also used. To see what a combining vowel does, note that in hyperlipoproteinemia the o in lip/o bridges the fat root to the protein root; the vowel i performs this same bridging function in a smaller set of terms."
+   },
+   {
+    "id": "MT01016",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "In the term hyperlipoproteinemia, which element is the combining form?",
+    "options": [
+     "Hyper",
+     "Lip/o",
+     "Protein",
+     "Emia"
+    ],
+    "correct": 1,
+    "explain": "A combining form is a root plus a combining vowel; in hyperlipoproteinemia that element is lip/o, while hyper is the prefix, protein is the bare root, and emia is the suffix."
+   },
+   {
+    "id": "MT01017",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which structure does the root dent refer to?",
+    "options": [
+     "Teeth",
+     "Bone",
+     "Gums",
+     "Jaw"
+    ],
+    "correct": 0,
+    "explain": "Bone is named by oste; the gums and the jaw are neighboring oral structures, so the confusion stays within the mouth region and is resolved only by knowing that dent specifically denotes the tooth."
+   },
+   {
+    "id": "MT01018",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which set consists entirely of words that make sense by themselves as roots?",
+    "options": [
+     "Sperm, insulin, alcohol, duct",
+     "Oviduct, hepatitis, anemia, pericarditis",
+     "Dentist, alcoholic, alcoholism, peridental",
+     "Hyperproteinemia, oligospermia, hyperlipoproteinemia, anemia"
+    ],
+    "correct": 0,
+    "explain": "Sperm, insulin, alcohol, and duct each stand alone as roots (R). The other sets contain composed terms: oviduct (R+R), hepatitis (R+S), anemia (P+S), pericarditis (P+R+S), dentist (R+S), alcoholic (R+S), alcoholism (R+S), peridental (P+R+S), hyperproteinemia (P+R+S), oligospermia (P+R+S), and hyperlipoproteinemia (P+CF+R+S)."
+   },
+   {
+    "id": "MT01019",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown ovi + duct corresponds to which term and word form?",
+    "options": [
+     "Oviduct (R)",
+     "Oviduct (R+R)",
+     "Oviduct (R+S)",
+     "Oviduct (P+R+S)"
+    ],
+    "correct": 1,
+    "explain": "Ovi (egg) and duct (to lead) are both roots, so oviduct (R+R) is a root plus root composition; it names the uterine tube, the tube that leads the egg."
+   },
+   {
+    "id": "MT01020",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown hepat / itis corresponds to which term and word form?",
+    "options": [
+     "Hepatitis (R)",
+     "Hepatitis (R+R)",
+     "Hepatitis (R+S)",
+     "Hepatitis (P+S)"
+    ],
+    "correct": 2,
+    "explain": "Hepat is the root meaning liver and -itis is the suffix meaning inflammation, so hepatitis (R+S) is a root plus suffix composition; -itis is not a second root, and there is no prefix."
+   },
+   {
+    "id": "MT01021",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown dent / ist corresponds to which term and word form?",
+    "options": [
+     "Dentist (R+S)",
+     "Dentist (R+R)",
+     "Dentist (P+R+S)",
+     "Dentist (R)"
+    ],
+    "correct": 0,
+    "explain": "Dent is the root meaning tooth and -ist is the suffix meaning specialist, so dentist (R+S) is a root plus suffix composition; -ist is not a root and there is no prefix."
+   },
+   {
+    "id": "MT01022",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown alcohol / ism corresponds to which term and word form?",
+    "options": [
+     "Alcoholism (P+S)",
+     "Alcoholism (R+R)",
+     "Alcoholism (P+R+S)",
+     "Alcoholism (R+S)"
+    ],
+    "correct": 3,
+    "explain": "Alcohol is the root and -ism is the suffix denoting a condition or state, so alcoholism (R+S) is a root plus suffix composition; alcohol is not a prefix and -ism is not a root."
+   },
+   {
+    "id": "MT01023",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown alcohol / ic corresponds to which term and word form?",
+    "options": [
+     "Alcoholic (R)",
+     "Alcoholic (R+S)",
+     "Alcoholic (P+R+S)",
+     "Alcoholic (R+R)"
+    ],
+    "correct": 1,
+    "explain": "Alcohol is the root and -ic is the suffix meaning pertaining to, so alcoholic (R+S) is a root plus suffix composition; -ic is not a second root and there is no prefix."
+   },
+   {
+    "id": "MT01024",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown peri / dent / al corresponds to which term and word form?",
+    "options": [
+     "Peridental (R+S)",
+     "Peridental (P+S)",
+     "Peridental (P+R+S)",
+     "Peridental (P+CF+R+S)"
+    ],
+    "correct": 2,
+    "explain": "Peri is the prefix meaning around, dent is the root meaning teeth, and -al is the suffix meaning pertaining to, so peridental (P+R+S) is a prefix plus root plus suffix composition; dent carries no combining vowel, so it is a bare root, not a combining form."
+   },
+   {
+    "id": "MT01025",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown oligo / sperm / ia corresponds to which term and word form?",
+    "options": [
+     "Oligospermia (P+R+S)",
+     "Oligospermia (R+S)",
+     "Oligospermia (P+S)",
+     "Oligospermia (R+R)"
+    ],
+    "correct": 0,
+    "explain": "Oligo is the prefix meaning few or deficient, sperm is the root, and -ia is the suffix meaning condition of, so oligospermia (P+R+S) is a prefix plus root plus suffix composition."
+   },
+   {
+    "id": "MT01026",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown hyper / protein / emia corresponds to which term and word form?",
+    "options": [
+     "Hyperproteinemia (P+S)",
+     "Hyperproteinemia (R+S)",
+     "Hyperproteinemia (P+CF+R+S)",
+     "Hyperproteinemia (P+R+S)"
+    ],
+    "correct": 3,
+    "explain": "Hyper is the prefix meaning excessive, protein is the root, and -emia is the suffix meaning blood condition, so hyperproteinemia (P+R+S) is a prefix plus root plus suffix composition; protein has no combining vowel, so it is a bare root, not a combining form."
+   },
+   {
+    "id": "MT01027",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown hyper / lip/o / protein / emia corresponds to which term and word form?",
+    "options": [
+     "Hyperlipoproteinemia (P+R+S)",
+     "Hyperlipoproteinemia (P+CF+R+S)",
+     "Hyperlipoproteinemia (P+R+R+S)",
+     "Hyperlipoproteinemia (R+S)"
+    ],
+    "correct": 1,
+    "explain": "Hyper is the prefix, lip/o is a combining form (a root plus the vowel o), protein is the bare root, and emia is the suffix, so hyperlipoproteinemia (P+CF+R+S) is correct; the pattern P+R+R+S would wrongly treat lip/o as a bare second root and ignore its combining vowel."
+   },
+   {
+    "id": "MT01028",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown an / emia corresponds to which term and word form?",
+    "options": [
+     "Anemia (R+S)",
+     "Anemia (P+R+S)",
+     "Anemia (P+S)",
+     "Anemia (R+R)"
+    ],
+    "correct": 2,
+    "explain": "An is the prefix meaning without and emia is the suffix meaning blood condition, with no root present, so anemia (P+S) is a prefix plus suffix composition referring to a lack of red blood cells or hemoglobin."
+   },
+   {
+    "id": "MT01029",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "The breakdown peri / card / itis corresponds to which term and word form?",
+    "options": [
+     "Pericarditis (P+R+S)",
+     "Pericarditis (R+S)",
+     "Pericarditis (P+CF+R+S)",
+     "Pericarditis (P+S)"
+    ],
+    "correct": 0,
+    "explain": "Peri is the prefix meaning around, card is the bare root meaning heart, and -itis is the suffix meaning inflammation, so pericarditis (P+R+S) is a prefix plus root plus suffix composition; card carries no combining vowel, so it is not a combining form."
+   },
+   {
+    "id": "MT01030",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly distinguishes a medical term from medical terminology?",
+    "options": [
+     "A medical term is one complete word built from parts, while medical terminology is the whole language of healthcare.",
+     "A medical term is the whole language of healthcare, while medical terminology is one complete word.",
+     "A medical term and medical terminology are the same thing and may be used interchangeably.",
+     "A medical term is any Greek or Latin word, while medical terminology is any English word used in healthcare."
+    ],
+    "correct": 0,
+    "explain": "A medical term is one complete meaningful word composed of different parts, while medical terminology is the entire specialized language used throughout healthcare. The second option reverses the two, the third wrongly equates them, and the fourth invents an origin-based distinction that the lecture does not support."
+   },
+   {
+    "id": "MT01031",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly explains why the meaning of a medical term is read from the suffix first?",
+    "options": [
+     "The suffix names the general category of the meaning, so reading it first frames how the root and prefix should be interpreted.",
+     "The suffix is always the longest part of the term, so it must be read first.",
+     "The suffix is the only part that carries meaning; the root and prefix are decorative.",
+     "The suffix is read first because it sits at the start of the written word."
+    ],
+    "correct": 0,
+    "explain": "The suffix names the general category, such as inflammation, condition, or study, so reading it first frames how the root and prefix should be interpreted, as in pericarditis where -itis tells the reader to expect an inflammation. The second option invents a length rule, the third wrongly denies the root and prefix any meaning, and the fourth misplaces the suffix at the start of the word rather than at the end."
+   },
+   {
+    "id": "MT01032",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the role of the prefix in a medical term?",
+    "options": [
+     "It is a qualifier added before the root that further extends the meaning.",
+     "It is a qualifier added after the root that completes the meaning.",
+     "It is the main word that forms the body of the term.",
+     "It is a vowel added between two roots to ease pronunciation."
+    ],
+    "correct": 0,
+    "explain": "The prefix is a qualifier placed before the root that further extends the meaning, as peri- (around) does in pericarditis. The second option describes the suffix, the third describes the root, and the fourth describes the combining vowel."
+   },
+   {
+    "id": "MT01033",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the role of the suffix in a medical term?",
+    "options": [
+     "It is a qualifier added to the end of the root that extends or completes the meaning.",
+     "It is a qualifier added before the root that further extends the meaning.",
+     "It is the main word that forms the body of the term.",
+     "It is a vowel added between two roots to ease pronunciation."
+    ],
+    "correct": 0,
+    "explain": "The suffix is a qualifier added to the end of the root that extends or completes the meaning, as -itis (inflammation) does in pericarditis. The second option describes the prefix, the third describes the root, and the fourth describes the combining vowel."
+   },
+   {
+    "id": "MT01034",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the root in a medical term?",
+    "options": [
+     "It is the main word and foundation that forms the body of the term.",
+     "It is a qualifier added before the main word to extend the meaning.",
+     "It is a qualifier added after the main word to complete the meaning.",
+     "It is a vowel added between two word parts to ease pronunciation."
+    ],
+    "correct": 0,
+    "explain": "The root is the main word and foundation that forms the body of the term, as hepat does in hepatitis. The second option describes the prefix, the third describes the suffix, and the fourth describes the combining vowel."
+   },
+   {
+    "id": "MT01035",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the combining form in a medical term?",
+    "options": [
+     "It is a root combined with a vowel that bridges word parts and facilitates suffix addition.",
+     "It is a prefix combined with a vowel that further extends the meaning before the root.",
+     "It is a suffix combined with a vowel that completes the meaning after the root.",
+     "It is the main word that stands alone without any added vowel."
+    ],
+    "correct": 0,
+    "explain": "A combining form is a root combined with a vowel, and that vowel bridges word parts and facilitates suffix addition, as lip/o does in hyperlipoproteinemia. The second option misattaches the vowel to a prefix, the third misattaches it to a suffix, and the fourth wrongly denies the vowel that defines the form."
+   },
+   {
+    "id": "MT01036",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which term correctly identifies the composition of oviduct?",
+    "options": [
+     "Root plus root (R+R)",
+     "Root plus suffix (R+S)",
+     "Prefix plus root plus suffix (P+R+S)",
+     "Prefix plus suffix (P+S)"
+    ],
+    "correct": 0,
+    "explain": "Oviduct is built from ovi (egg) and duct (to lead), two roots with no suffix and no prefix, so it is R+R. The other word forms each include at least one component that oviduct lacks."
+   },
+   {
+    "id": "MT01037",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which term correctly identifies the composition of hepatitis?",
+    "options": [
+     "Root plus suffix (R+S)",
+     "Root plus root (R+R)",
+     "Prefix plus root plus suffix (P+R+S)",
+     "Prefix plus suffix (P+S)"
+    ],
+    "correct": 0,
+    "explain": "Hepatitis is built from hepat (liver) and -itis (inflammation), a root plus a suffix with no prefix and no second root, so it is R+S."
+   },
+   {
+    "id": "MT01038",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which term correctly identifies the composition of peridental?",
+    "options": [
+     "Prefix plus root plus suffix (P+R+S)",
+     "Root plus suffix (R+S)",
+     "Root plus root (R+R)",
+     "Prefix plus suffix (P+S)"
+    ],
+    "correct": 0,
+    "explain": "Peridental is built from peri- (around), dent (teeth), and -al (pertaining to), a prefix plus a root plus a suffix, so it is P+R+S."
+   },
+   {
+    "id": "MT01039",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which term correctly identifies the composition of hyperlipoproteinemia?",
+    "options": [
+     "Prefix plus combining form plus root plus suffix (P+CF+R+S)",
+     "Prefix plus root plus suffix (P+R+S)",
+     "Root plus root plus suffix (R+R+S)",
+     "Prefix plus suffix (P+S)"
+    ],
+    "correct": 0,
+    "explain": "Hyperlipoproteinemia is built from hyper- (excessive), lip/o (a combining form), protein (a bare root), and -emia (blood condition), so it is P+CF+R+S. The P+R+S pattern would wrongly treat lip/o as a bare root and ignore its combining vowel."
+   },
+   {
+    "id": "MT01040",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which term correctly identifies the composition of anemia?",
+    "options": [
+     "Prefix plus suffix (P+S)",
+     "Root plus suffix (R+S)",
+     "Root plus root (R+R)",
+     "Prefix plus root plus suffix (P+R+S)"
+    ],
+    "correct": 0,
+    "explain": "Anemia is built from an- (without) and -emia (blood condition), with no root between them, so it is P+S. The other word forms each include a root that anemia lacks."
+   },
+   {
+    "id": "MT01041",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each word part to the component category it belongs to: Prefix, Root, Suffix, or Combining Form.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Peri-"
+     },
+     {
+      "id": "2",
+      "text": "Oligo-"
+     },
+     {
+      "id": "3",
+      "text": "An-"
+     },
+     {
+      "id": "4",
+      "text": "Hepat"
+     },
+     {
+      "id": "5",
+      "text": "Dent"
+     },
+     {
+      "id": "6",
+      "text": "Lip/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Prefix"
+     },
+     {
+      "id": "B",
+      "text": "Root"
+     },
+     {
+      "id": "C",
+      "text": "Suffix"
+     },
+     {
+      "id": "D",
+      "text": "Combining Form"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "A",
+     "3": "A",
+     "4": "B",
+     "5": "B",
+     "6": "D"
+    },
+    "explain": "Peri-, oligo-, and an- are prefixes, each placed before the root to extend the meaning. Hepat and dent are bare roots, each forming the body of a term. Lip/o is a combining form, a root plus the vowel o that bridges it to the next part. The category is fixed by the part's position and shape within the term, not by its meaning alone."
+   },
+   {
+    "id": "MT01042",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each word part to the component category it belongs to: Prefix, Root, Suffix, or Combining Form.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-itis"
+     },
+     {
+      "id": "2",
+      "text": "-ia"
+     },
+     {
+      "id": "3",
+      "text": "-emia"
+     },
+     {
+      "id": "4",
+      "text": "-ist"
+     },
+     {
+      "id": "5",
+      "text": "-al"
+     },
+     {
+      "id": "6",
+      "text": "-logy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Prefix"
+     },
+     {
+      "id": "B",
+      "text": "Root"
+     },
+     {
+      "id": "C",
+      "text": "Suffix"
+     },
+     {
+      "id": "D",
+      "text": "Combining Form"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "C",
+     "3": "C",
+     "4": "C",
+     "5": "C",
+     "6": "C"
+    },
+    "explain": "All six word parts are suffixes, each added to the end of a root to extend or complete the meaning. -itis means inflammation, -ia means condition of, -emia means blood condition, -ist means specialist, -al means pertaining to, and -logy means study of. The category is fixed by the part's position at the end of the term, not by its specific meaning."
+   },
+   {
+    "id": "MT01043",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each medical term to its correct word form.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Sperm"
+     },
+     {
+      "id": "2",
+      "text": "Oviduct"
+     },
+     {
+      "id": "3",
+      "text": "Dentist"
+     },
+     {
+      "id": "4",
+      "text": "Peridental"
+     },
+     {
+      "id": "5",
+      "text": "Hyperlipoproteinemia"
+     },
+     {
+      "id": "6",
+      "text": "Anemia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "R (root alone)"
+     },
+     {
+      "id": "B",
+      "text": "R+R (root plus root)"
+     },
+     {
+      "id": "C",
+      "text": "R+S (root plus suffix)"
+     },
+     {
+      "id": "D",
+      "text": "P+R+S (prefix plus root plus suffix)"
+     },
+     {
+      "id": "E",
+      "text": "P+CF+R+S (prefix plus combining form plus root plus suffix)"
+     },
+     {
+      "id": "F",
+      "text": "P+S (prefix plus suffix)"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Sperm stands alone as a root (R). Oviduct is two roots (R+R). Dentist is a root plus a suffix (R+S). Peridental is a prefix, a root, and a suffix (P+R+S). Hyperlipoproteinemia is a prefix, a combining form, a bare root, and a suffix (P+CF+R+S). Anemia is a prefix plus a suffix with no root between them (P+S). Each term is fixed to its form by the parts it actually contains."
+   },
+   {
+    "id": "MT01044",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Sperm (R)"
+     },
+     {
+      "id": "2",
+      "text": "Oviduct (R+R)"
+     },
+     {
+      "id": "3",
+      "text": "Dentist (R+S)"
+     },
+     {
+      "id": "4",
+      "text": "Hepatitis (R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Alcoholism (R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Alcoholic (R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Male reproductive cell; a root that stands alone"
+     },
+     {
+      "id": "B",
+      "text": "Tube that leads the egg; the uterine tube"
+     },
+     {
+      "id": "C",
+      "text": "Specialist who treats teeth"
+     },
+     {
+      "id": "D",
+      "text": "Inflammation of the liver"
+     },
+     {
+      "id": "E",
+      "text": "Condition of dependence on or excessive use of alcohol"
+     },
+     {
+      "id": "F",
+      "text": "Pertaining to alcohol"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Sperm is a root that stands alone. Oviduct, built from ovi (egg) and duct (to lead), names the tube that leads the egg, the uterine tube. Dentist is a tooth specialist. Hepatitis is liver inflammation. Alcoholism is a condition of alcohol dependence. Alcoholic means pertaining to alcohol. Each term is read from its parts, and the word form in parentheses records how the parts are assembled."
+   },
+   {
+    "id": "MT01045",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Insulin (R)"
+     },
+     {
+      "id": "2",
+      "text": "Alcohol (R)"
+     },
+     {
+      "id": "3",
+      "text": "Duct (R)"
+     },
+     {
+      "id": "4",
+      "text": "Peridental (P+R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Oligospermia (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Hyperproteinemia (P+R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Hormone that helps regulate blood glucose; a root that stands alone"
+     },
+     {
+      "id": "B",
+      "text": "Organic chemical compound of Arabic origin; a root that stands alone"
+     },
+     {
+      "id": "C",
+      "text": "Tube or channel that conducts a fluid; a root that stands alone"
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to the area around the teeth"
+     },
+     {
+      "id": "E",
+      "text": "Condition of having few sperm"
+     },
+     {
+      "id": "F",
+      "text": "Excessive protein in the blood"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Insulin, alcohol, and duct each stand alone as a root. Peridental is built from peri- (around), dent (teeth), and -al (pertaining to). Oligospermia is built from oligo- (few or deficient), sperm (sperm), and -ia (condition of). Hyperproteinemia is built from hyper- (excessive), protein (protein), and -emia (blood condition). Each term is read from its prefix, root, and suffix."
+   },
+   {
+    "id": "MT01046",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hyperlipoproteinemia (P+CF+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Anemia (P+S)"
+     },
+     {
+      "id": "3",
+      "text": "Pericarditis (P+R+S)"
+     },
+     {
+      "id": "4",
+      "text": "Sperm (R)"
+     },
+     {
+      "id": "5",
+      "text": "Duct (R)"
+     },
+     {
+      "id": "6",
+      "text": "Hepatitis (R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Excessive lipoprotein in the blood"
+     },
+     {
+      "id": "B",
+      "text": "Lack of or decrease in red blood cells or hemoglobin"
+     },
+     {
+      "id": "C",
+      "text": "Inflammation around the heart"
+     },
+     {
+      "id": "D",
+      "text": "Male reproductive cell; a root that stands alone"
+     },
+     {
+      "id": "E",
+      "text": "Tube or channel that conducts a fluid; a root that stands alone"
+     },
+     {
+      "id": "F",
+      "text": "Inflammation of the liver"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Hyperlipoproteinemia is built from hyper- (excessive), lip/o (a combining form for fat), protein (a bare root), and -emia (blood condition). Anemia is built from an- (without) and -emia (blood condition), referring to a lack of red blood cells or hemoglobin. Pericarditis is built from peri- (around), card (heart), and -itis (inflammation). Sperm and duct each stand alone as a root. Hepatitis is built from hepat (liver) and -itis (inflammation)."
+   },
+   {
+    "id": "MT01047",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each combining form, prefix, or suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Angi/o, Vas/o, Vascul/o"
+     },
+     {
+      "id": "2",
+      "text": "Cardi/o"
+     },
+     {
+      "id": "3",
+      "text": "Enter/o"
+     },
+     {
+      "id": "4",
+      "text": "Esophago/o"
+     },
+     {
+      "id": "5",
+      "text": "Gastr/o"
+     },
+     {
+      "id": "6",
+      "text": "Hepat/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Heart"
+     },
+     {
+      "id": "B",
+      "text": "Small intestine"
+     },
+     {
+      "id": "C",
+      "text": "Vessel"
+     },
+     {
+      "id": "D",
+      "text": "Liver"
+     },
+     {
+      "id": "E",
+      "text": "Esophagus"
+     },
+     {
+      "id": "F",
+      "text": "Stomach"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "A",
+     "3": "B",
+     "4": "E",
+     "5": "F",
+     "6": "D"
+    },
+    "explain": "Angi/o, Vas/o, and Vascul/o all mean vessel, as in angiogram, vasospasm, and vasculopathy. Cardi/o means heart, Enter/o means small intestine, Esophago/o means esophagus, Gastr/o means stomach, and Hepat/o means liver. Each entry pairs with exactly one meaning, and the vessel entry bundles the three synonym spellings."
+   },
+   {
+    "id": "MT01048",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each combining form, prefix, or suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hem/o, Hemat/o"
+     },
+     {
+      "id": "2",
+      "text": "Oste/o"
+     },
+     {
+      "id": "3",
+      "text": "Ur/o, Urin/o"
+     },
+     {
+      "id": "4",
+      "text": "Lip/o"
+     },
+     {
+      "id": "5",
+      "text": "Oligo-"
+     },
+     {
+      "id": "6",
+      "text": "Para-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Blood"
+     },
+     {
+      "id": "B",
+      "text": "Bone"
+     },
+     {
+      "id": "C",
+      "text": "Urine"
+     },
+     {
+      "id": "D",
+      "text": "Few or deficient"
+     },
+     {
+      "id": "E",
+      "text": "Alongside of or abnormal"
+     },
+     {
+      "id": "F",
+      "text": "Fat"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "F",
+     "5": "D",
+     "6": "E"
+    },
+    "explain": "Hem/o and Hemat/o both mean blood, as in hematoma and hemorrhage. Oste/o means bone, Ur/o and Urin/o both mean urine, and Lip/o means fat. Oligo- means few or deficient, and Para- means alongside of or abnormal. Each entry pairs with exactly one meaning, and the two synonym pairs each share a single sense."
+   },
+   {
+    "id": "MT01049",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each combining form, prefix, or suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Peri-"
+     },
+     {
+      "id": "2",
+      "text": "Hyper-"
+     },
+     {
+      "id": "3",
+      "text": "An-"
+     },
+     {
+      "id": "4",
+      "text": "-itis"
+     },
+     {
+      "id": "5",
+      "text": "-logy"
+     },
+     {
+      "id": "6",
+      "text": "-megaly"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Around"
+     },
+     {
+      "id": "B",
+      "text": "Excessive"
+     },
+     {
+      "id": "C",
+      "text": "Without"
+     },
+     {
+      "id": "D",
+      "text": "Inflammation"
+     },
+     {
+      "id": "E",
+      "text": "Study of"
+     },
+     {
+      "id": "F",
+      "text": "Enlargement"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Peri- means around, Hyper- means excessive, and An- means without. -itis means inflammation, -logy means study of, and -megaly means enlargement. The three prefixes each carry a distinct sense, and the three suffixes each name a distinct condition or activity."
+   },
+   {
+    "id": "MT01050",
+    "type": "matching",
+    "cat": "MT_lec1",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-al, -eal, -ic"
+     },
+     {
+      "id": "2",
+      "text": "-ectasis"
+     },
+     {
+      "id": "3",
+      "text": "-ectomy"
+     },
+     {
+      "id": "4",
+      "text": "-ia"
+     },
+     {
+      "id": "5",
+      "text": "-stomy"
+     },
+     {
+      "id": "6",
+      "text": "-tomy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to"
+     },
+     {
+      "id": "B",
+      "text": "Expansion or dilation"
+     },
+     {
+      "id": "C",
+      "text": "Excision or removal"
+     },
+     {
+      "id": "D",
+      "text": "Condition of"
+     },
+     {
+      "id": "E",
+      "text": "Creation of an opening"
+     },
+     {
+      "id": "F",
+      "text": "Incision"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "The pertaining suffixes are -al, -eal, and -ic, all three meaning pertaining to. -ectasis means expansion or dilation, -ectomy means excision or removal, -ia means condition of, -stomy means creation of an opening, and -tomy means incision. The three pertaining endings share one sense, while the four surgical suffixes each name a distinct act."
+   },
+   {
+    "id": "MT01051",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly distinguishes -stomy from -tomy?",
+    "options": [
+     "-stomy creates a lasting opening, while -tomy is an incision.",
+     "-stomy is an incision, while -tomy creates a lasting opening.",
+     "Both suffixes mean the same thing, an incision into an organ.",
+     "Both suffixes mean the same thing, the creation of an opening."
+    ],
+    "correct": 0,
+    "explain": "-stomy creates a lasting opening, while -tomy is an incision. The second option reverses the two, and the third and fourth collapse the pair into a single meaning, ignoring the surgical distinction the suffixes carry."
+   },
+   {
+    "id": "MT01052",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly distinguishes -ectomy from -stomy?",
+    "options": [
+     "-ectomy removes tissue, while -stomy creates an opening.",
+     "-ectomy creates an opening, while -stomy removes tissue.",
+     "Both suffixes mean removal of tissue.",
+     "Both suffixes mean creation of an opening."
+    ],
+    "correct": 0,
+    "explain": "-ectomy removes tissue, while -stomy creates an opening. The second option reverses the two, and the third and fourth collapse the pair into a single meaning."
+   },
+   {
+    "id": "MT01053",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly distinguishes -megaly from -ectasis?",
+    "options": [
+     "-megaly enlarges an organ, while -ectasis dilates a lumen.",
+     "-megaly dilates a lumen, while -ectasis enlarges an organ.",
+     "Both suffixes mean enlargement of an organ.",
+     "Both suffixes mean dilation of a cavity."
+    ],
+    "correct": 0,
+    "explain": "-megaly enlarges the whole organ, while -ectasis dilates a lumen or cavity. The second option reverses the two, and the third and fourth collapse the pair into a single meaning, ignoring the distinction between organ size and cavity caliber."
+   },
+   {
+    "id": "MT01054",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly distinguishes a root from a combining form?",
+    "options": [
+     "A root is the bare main word, while a combining form is that root plus a combining vowel.",
+     "A root includes a combining vowel, while a combining form is the bare main word.",
+     "A root and a combining form are the same thing and may be used interchangeably.",
+     "A root is always Greek, while a combining form is always Latin."
+    ],
+    "correct": 0,
+    "explain": "A root is the bare main word, while a combining form is that root plus a combining vowel, such as lip/o from the root lip. The second option reverses the two, the third wrongly equates them, and the fourth invents an origin-based distinction that the lecture does not support."
+   },
+   {
+    "id": "MT01055",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly explains why the vowel o is the most common combining vowel?",
+    "options": [
+     "It is the conventional linking vowel of Greek origin that eases pronunciation across the widest range of roots and suffixes.",
+     "It is the only vowel that can appear between two roots in any medical term.",
+     "It is used only when the suffix begins with a vowel.",
+     "It is used only when the prefix ends with a vowel."
+    ],
+    "correct": 0,
+    "explain": "The vowel o is the conventional linking vowel inherited from Greek, and it eases pronunciation across the widest range of roots and suffixes, which is why it appears so often in combining forms. The second option denies the vowel i its role, the third reverses when a combining vowel is used, and the fourth confuses the combining vowel with the handling of a vowel-final prefix."
+   },
+   {
+    "id": "MT01056",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly explains why the meaning of a composed term is not simply the sum of its parts' dictionary glosses?",
+    "options": [
+     "Because the suffix sets the general category and the prefix and roots then specify it, so the reading order matters.",
+     "Because each part loses its individual meaning once it is placed in a term.",
+     "Because only the suffix retains any meaning, while the other parts become decorative.",
+     "Because the term's meaning must be looked up in a dictionary rather than derived from its parts."
+    ],
+    "correct": 0,
+    "explain": "The suffix sets the general category, such as inflammation or condition, and the prefix and roots then specify it, so pericarditis reads as inflammation (suffix) around (prefix) the heart (root). The second and third options wrongly deny the meaning of the parts, and the fourth wrongly denies that a term's meaning can be derived from its parts at all."
+   },
+   {
+    "id": "MT01057",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which of the following is a composed term rather than a standalone root?",
+    "options": [
+     "Insulin",
+     "Sperm",
+     "Duct",
+     "Hepatitis"
+    ],
+    "correct": 3,
+    "explain": "Hepatitis is a composed term, built from hepat (liver) and -itis (inflammation), so it is a root plus a suffix. Insulin, sperm, and duct each stand alone as a bare root, so they are not composed terms."
+   },
+   {
+    "id": "MT01058",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the difference between the terms of Greek origin and the terms of Latin origin in medicine?",
+    "options": [
+     "Greek terms predominate in surgical and diagnostic usage, while Latin terms predominate in anatomic usage.",
+     "Greek terms predominate in anatomic usage, while Latin terms predominate in surgical and diagnostic usage.",
+     "Greek and Latin terms are used with equal frequency in all three areas, with no predomination.",
+     "Greek terms are used only in surgery, and Latin terms only in anatomy, with no overlap at all."
+    ],
+    "correct": 0,
+    "explain": "Greek terms predominate in surgical and diagnostic usage, while Latin terms predominate in anatomic usage. The second option reverses the two predilections, the third denies any predomination, and the fourth overstates the separation as an absolute exclusion, when in fact each language can still appear in the other's area."
+   },
+   {
+    "id": "MT01059",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "In the term pericarditis, which element is the prefix, and what does it mean?",
+    "options": [
+     "Peri, meaning around",
+     "Card, meaning heart",
+     "Itis, meaning inflammation",
+     "Pericard, meaning the sac around the heart"
+    ],
+    "correct": 0,
+    "explain": "In pericarditis the prefix is peri, meaning around, the root is card, meaning heart, and the suffix is -itis, meaning inflammation. The second option names the root, the third names the suffix, and the fourth names the whole structure rather than a single component."
+   },
+   {
+    "id": "MT01060",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "In the term peridental, which element is the root, and what does it mean?",
+    "options": [
+     "Peri, meaning around",
+     "Dent, meaning teeth",
+     "Al, meaning pertaining to",
+     "Perident, meaning around the teeth"
+    ],
+    "correct": 1,
+    "explain": "In peridental the prefix is peri, meaning around, the root is dent, meaning teeth, and the suffix is -al, meaning pertaining to. The first option names the prefix, the third names the suffix, and the fourth names the whole structure rather than a single component."
+   },
+   {
+    "id": "MT01061",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly describes the sequence of steps used to analyze a medical term?",
+    "options": [
+     "Break the term into its components, then interpret the suffix first, then the prefix, then the root or roots.",
+     "Break the term into its components, then interpret the root first, then the prefix, then the suffix.",
+     "Look the term up in a dictionary without breaking it into components.",
+     "Break the term into its components, then interpret the prefix first, then the suffix, then the root or roots."
+    ],
+    "correct": 0,
+    "explain": "Structure analysis proceeds by breaking the term into its components and then reading the suffix first, then the prefix, then the root or roots, as in pericarditis where -itis frames the reading, peri- specifies the location, and card names the structure. The second and fourth options change the reading order, and the third skips the analysis altogether."
+   },
+   {
+    "id": "MT01062",
+    "type": "mcq",
+    "cat": "MT_lec1",
+    "q": "Which statement correctly identifies the root or roots of hyperlipoproteinemia?",
+    "options": [
+     "Only protein, because lip/o is a combining form and not a root",
+     "Only lip, because protein is a suffix in this term",
+     "Both lip and protein, with lip functioning as a combining form and protein as a bare root",
+     "Neither lip nor protein, because the term has no root"
+    ],
+    "correct": 2,
+    "explain": "Hyperlipoproteinemia has two root ideas, lip (fat) and protein, but only the second appears as a bare root, while the first appears as the combining form lip/o with the linking vowel o. The first option wrongly denies that lip is a root idea, the second wrongly calls protein a suffix, and the fourth wrongly denies the term any root."
+   }
+  ]
+ }
+}

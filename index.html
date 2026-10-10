@@ -1154,8 +1154,8 @@ body.split-quiz-active #chatDock{z-index:60}
 .achievement-popup-desc{font-size:.8em;opacity:.92;color:#4a3500}
 
 </style>
-<link rel="stylesheet" href="css/quiz-pt1.css?v=1">
-<link rel="stylesheet" href="css/study-pt1.css?v=1">
+<link rel="stylesheet" href="css/quiz-pt1.css?v=2">
+<link rel="stylesheet" href="css/study-pt1.css?v=2">
 </head>
 <body>
 <canvas id="fxCanvas"></canvas>
@@ -1269,6 +1269,7 @@ body.split-quiz-active #chatDock{z-index:60}
       </div>
     </div>
     <button type="button" class="quiz-settings-btn" id="studyNotesBtn" hidden>📖 Study notes</button>
+    <span class="hub-badges" id="hubBadges" hidden></span>
     </div>
     <button class="fs-btn" type="button" id="resetSolvedBtn" hidden>Reset solved</button>
     <p class="foot bank-meta" id="bankMeta">Loading bank…</p>
@@ -2726,8 +2727,9 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
   // Labels are Title Case; tips are sentences. Same component as the hub cards (js/quiz-engine.js).
   function matBadges(m){
     const out=[];
-    if(m && m.examDiffers === true) out.push({text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge'});
-    if(m && Array.isArray(m.badges)) m.badges.forEach(b=>{ if(b && b.text) out.push({text:String(b.text), tip:String(b.tip||''), tone:(b.tone==='grey'||b.tone==='gray')?'grey':'amber', cls:b.cls||''}); });
+    // examDiffers: badge on the portal card (tooltip only, no note line) and next to ⚙ Quiz settings in the hub
+    if(m && m.examDiffers === true) out.push({text:'Real Exam Is Trickier', tip:"Good for practice. Some definitions overlap, so learn each term's function exactly as the slides word it.", tone:'amber', cls:'exam-differs-badge', note:false});
+    if(m && Array.isArray(m.badges)) m.badges.forEach(b=>{ if(b && b.text && (!Array.isArray(b.where) || b.where.includes('card'))) out.push({text:String(b.text), tip:String(b.tip||''), tone:(b.tone==='grey'||b.tone==='gray')?'grey':'amber', cls:b.cls||'', note:b.note!==false}); });
     return out.map((b,i)=>Object.assign(b,{i}));
   }
 
@@ -2739,7 +2741,7 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
       ? subject.name + extra + ' (locked)'
       : subject.name + extra + ' · materials';
     cardsEl.innerHTML = '';
-    const materials = subject.materials || [];
+    const materials = (subject.materials || []).filter(m=>m && m.hidden!==true); // hidden:true parks a card (e.g. the Finals slots) without deleting it
     if(!materials.length){
       cardsEl.innerHTML = '<p class="portal-sub">No materials listed.</p>';
       return;
@@ -2760,8 +2762,8 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
       } else {
         card.innerHTML =
           '<h3>' + esc(m.title) + (m.draft ? '<span class="draft-badge" title="Unfinished · still being written">Draft</span>' : '') +
-            matBadges(m).map(b=>'<span class="note-badge ' + b.tone + (b.cls ? ' ' + b.cls : '') + '" title="' + esc(b.tip) + '" data-tip="' + esc(b.tip) + '" aria-describedby="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.text) + '</span>').join('') + '</h3>' +
-            matBadges(m).map(b=>'<p class="badge-note ' + b.tone + (b.cls === 'exam-differs-badge' ? ' exam-differs-note' : '') + '" id="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.tip) + '</p>').join('') +
+            matBadges(m).map(b=>'<span class="note-badge ' + b.tone + (b.cls ? ' ' + b.cls : '') + '" title="' + esc(b.tip) + '" data-tip="' + esc(b.tip) + '"' + (b.note && b.tip ? ' aria-describedby="badgeNote-' + esc(m.id) + '-' + b.i + '"' : '') + '>' + esc(b.text) + '</span>').join('') + '</h3>' +
+            matBadges(m).filter(b=>b.note && b.tip).map(b=>'<p class="badge-note ' + b.tone + (b.cls === 'exam-differs-badge' ? ' exam-differs-note' : '') + '" id="badgeNote-' + esc(m.id) + '-' + b.i + '">' + esc(b.tip) + '</p>').join('') +
           '<p class="sub">' + esc(m.subtitle || '') + '</p>' +
           '<span class="go">' + (m.study ? 'Quiz →' : 'Open in portal →') + '</span>';
         card.addEventListener('click', ()=> openMaterial(m, subject));
@@ -2885,8 +2887,8 @@ if(!document.getElementById('globalTimerMode').dataset.q) refreshTimerQuote(true
 })();
 
 </script>
-<script src="js/quiz-engine.js?v=1"></script>
-<script src="js/study-images.js?v=1"></script>
+<script src="js/quiz-engine.js?v=2"></script>
+<script src="js/study-images.js?v=2"></script>
 <script src="js/study-app.js?v=1"></script>
 <script>
 /* Hub "📖 Study notes" → PT1 study interface for the open material */

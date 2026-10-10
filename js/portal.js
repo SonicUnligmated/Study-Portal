@@ -53,7 +53,7 @@
       : `${subject.name}${extra} · materials`;
 
     cardsEl.innerHTML = '';
-    const materials = subject.materials || [];
+    const materials = (subject.materials || []).filter((m) => m && m.hidden !== true);
     if (!materials.length) {
       cardsEl.innerHTML = '<p class="status-msg">No materials listed.</p>';
       return;

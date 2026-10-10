@@ -49,14 +49,16 @@
           "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         },
         {
           "id": "medphys-finals",
           "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         }
       ]
     },
@@ -85,14 +87,16 @@
           "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         },
         {
           "id": "studyskills-finals",
           "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         }
       ]
     },
@@ -193,14 +197,16 @@
           "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         },
         {
           "id": "english-finals",
           "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         }
       ]
     },
@@ -210,11 +216,47 @@
       "locked": false,
       "materials": [
         {
-          "id": "medterm-pt1",
+          "id": "pt1",
           "title": "Periodic Test 1",
-          "subtitle": "Coming soon",
-          "bank": null,
-          "locked": true
+          "subtitle": "5 lecture sets · 327 questions · choice & linking",
+          "locked": false,
+          "lectures": [
+            {
+              "id": "lec01",
+              "title": "Lecture 1 – Basic Term Components",
+              "bank": "banks/medterm/pt1/lecture-01.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec02",
+              "title": "Lecture 2 – Spelling Rules",
+              "bank": "banks/medterm/pt1/lecture-02.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec03",
+              "title": "Lecture 3 – Pronunciation",
+              "bank": "banks/medterm/pt1/lecture-03.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec04",
+              "title": "Lecture 4 – Prefixes (Part 1 of 2)",
+              "bank": "banks/medterm/pt1/lecture-04.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec05",
+              "title": "Lecture 5 – Prefixes (Part 2 of 2)",
+              "bank": "banks/medterm/pt1/lecture-05.json",
+              "status": "ready",
+              "draft": false
+            }
+          ]
         },
         {
           "id": "pt2",
@@ -292,14 +334,16 @@
           "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         },
         {
           "id": "medterm-finals",
           "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         }
       ]
     },
@@ -333,14 +377,16 @@
           "title": "Only In Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         },
         {
           "id": "iths-finals",
           "title": "Finals",
           "subtitle": "Coming soon",
           "bank": null,
-          "locked": true
+          "locked": true,
+          "hidden": true
         }
       ],
       "subtitle": "Information Technology for Health Sciences"

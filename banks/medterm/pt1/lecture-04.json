@@ -1,0 +1,1473 @@
+{
+ "id": "medterm-pt1-lec04",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 4 – Prefixes (Part 1 of 2)",
+ "formSize": 58,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "bc3b5f57554d191d21194743194be02d21bb33257104542e36a0c918912993e4.json",
+  "title": "Lecture 4 - Prefixes Part 1",
+  "note": "Ids renamed to MT04xxx (source ids clashed between lectures 2 and 3 and with PT2 Lecture 10). Content unchanged.",
+  "idMap": {
+   "MT10301": "MT04001",
+   "MT10302": "MT04002",
+   "MT10303": "MT04003",
+   "MT10304": "MT04004",
+   "MT10305": "MT04005",
+   "MT10306": "MT04006",
+   "MT10307": "MT04007",
+   "MT10308": "MT04008",
+   "MT10309": "MT04009",
+   "MT10310": "MT04010",
+   "MT10311": "MT04011",
+   "MT10312": "MT04012",
+   "MT10313": "MT04013",
+   "MT10314": "MT04014",
+   "MT10315": "MT04015",
+   "MT10316": "MT04016",
+   "MT10317": "MT04017",
+   "MT10318": "MT04018",
+   "MT10319": "MT04019",
+   "MT10320": "MT04020",
+   "MT10321": "MT04021",
+   "MT10322": "MT04022",
+   "MT10323": "MT04023",
+   "MT10324": "MT04024",
+   "MT10325": "MT04025",
+   "MT10326": "MT04026",
+   "MT10327": "MT04027",
+   "MT10328": "MT04028",
+   "MT10329": "MT04029",
+   "MT10330": "MT04030",
+   "MT10331": "MT04031",
+   "MT10332": "MT04032",
+   "MT10333": "MT04033",
+   "MT10334": "MT04034",
+   "MT10335": "MT04035",
+   "MT10336": "MT04036",
+   "MT10337": "MT04037",
+   "MT10338": "MT04038",
+   "MT10339": "MT04039",
+   "MT10340": "MT04040",
+   "MT10341": "MT04041",
+   "MT10342": "MT04042",
+   "MT10343": "MT04043",
+   "MT10344": "MT04044",
+   "MT10345": "MT04045",
+   "MT10346": "MT04046",
+   "MT10347": "MT04047",
+   "MT10348": "MT04048",
+   "MT10349": "MT04049",
+   "MT10350": "MT04050",
+   "MT10351": "MT04051",
+   "MT10352": "MT04052",
+   "MT10353": "MT04053",
+   "MT10354": "MT04054",
+   "MT10355": "MT04055",
+   "MT10356": "MT04056",
+   "MT10357": "MT04057",
+   "MT10358": "MT04058"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT04001",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In medical word building, what is the role of a prefix?",
+    "options": [
+     "A qualifier placed before the root to further extend its meaning.",
+     "A qualifier placed before the root to fully complete its meaning.",
+     "A qualifier placed after the root to further extend its meaning.",
+     "A main word placed before the root to further extend its meaning."
+    ],
+    "correct": 0,
+    "explain": "A prefix is a qualifier set before the root that further extends its meaning. Completing the meaning is the suffix's role, so fully complete is wrong; placing the qualifier after the root again describes the suffix; and the main word or body is the root, not the prefix."
+   },
+   {
+    "id": "MT04002",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which pair consists of two prefixes that express a negative association?",
+    "options": [
+     "Anti- and De-",
+     "Ab- and Ad-",
+     "Peri- and Epi-",
+     "An- and Inter-"
+    ],
+    "correct": 0,
+    "explain": "The negative-association set is A-, An-, Anti-, Contra-, and De-, so only the first pair is wholly negative. Ab- and Ad- are both positional, Peri- and Epi- are both positional, and the last pair is the trap because An- is negative while Inter- is positional."
+   },
+   {
+    "id": "MT04003",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "The prefix retro- indicates which position or direction?",
+    "options": [
+     "Backward, or Behind",
+     "Toward, or Near",
+     "Across, or Through",
+     "Below, or Under"
+    ],
+    "correct": 0,
+    "explain": "Retro- means backward or behind, as in retrobuccal, set behind the cheek or mouth. Toward or near belongs to ad- (adrenal); across or through to dia- and trans-; below or under to sub- and infra-, the direction most often confused with backward."
+   },
+   {
+    "id": "MT04004",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix carries the sense of middle?",
+    "options": [
+     "Meso-",
+     "Inter-",
+     "Epi-",
+     "Meta-"
+    ],
+    "correct": 0,
+    "explain": "Meso- means middle, as in mesenteric, pertaining to the membrane set in the middle of the intestines. Inter- means between, epi- means upon, and meta- means beyond, after, or change."
+   },
+   {
+    "id": "MT04005",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which set of prefixes all convey the sense of outside?",
+    "options": [
+     "Ecto-, Exo-, and Extra-",
+     "Ecto-, Exo-, and Peri-",
+     "Extra-, Endo-, and Ecto-",
+     "Exo-, Ex-, and Extra-"
+    ],
+    "correct": 0,
+    "explain": "Ecto-, exo-, and extra- all mean outside. Peri- means around, endo- means within (the direct opposite), and ex- means out or away, the closest look-alike because it shares letters with exo- and extra- yet differs in sense."
+   },
+   {
+    "id": "MT04006",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which pair of prefixes means across or through?",
+    "options": [
+     "Dia- and Trans-",
+     "Trans- and Circum-",
+     "Dia- and Peri-",
+     "Peri- and Circum-"
+    ],
+    "correct": 0,
+    "explain": "Dia- and trans- mean across or through (transabdominal, diaphragm). Circum- and peri- mean around, a different relation: around encircles, whereas across or through crosses from one side to the other."
+   },
+   {
+    "id": "MT04007",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In pericardial (P+R+S), the prefix peri- contributes which sense?",
+    "options": [
+     "Around",
+     "Within",
+     "Upon",
+     "Between"
+    ],
+    "correct": 0,
+    "explain": "Peri- means around, so pericardial refers to the sac around the heart. Within belongs to intra- or endo-, upon to epi-, and between to inter-."
+   },
+   {
+    "id": "MT04008",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In intravenous (P+R+S), the prefix intra- indicates which position?",
+    "options": [
+     "Within",
+     "Outside",
+     "Away from",
+     "After or change"
+    ],
+    "correct": 0,
+    "explain": "Intra- means within, so intravenous describes something introduced within a vein. Outside belongs to ecto-, exo-, or extra-, away from to ab-, and after or change to meta-."
+   },
+   {
+    "id": "MT04009",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In anesthesia (P+R+S), the prefix an- expresses which idea?",
+    "options": [
+     "Without",
+     "Against",
+     "Down or not",
+     "Toward or near"
+    ],
+    "correct": 0,
+    "explain": "An- means without, so anesthesia is a state without sensation. Against belongs to anti- or contra-, down or not to de-, and toward or near to ad-."
+   },
+   {
+    "id": "MT04010",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In abnormal, the prefix ab- contributes which sense?",
+    "options": [
+     "Away from",
+     "Toward or near",
+     "Around",
+     "Outside"
+    ],
+    "correct": 0,
+    "explain": "Ab- means away from, so abnormal denotes a departure from the normal. Toward or near is ad-, around is peri- or circum-, and outside is ecto-, exo-, or extra-. Unlike the prefixed terms built on a classical root, abnormal rests on the full base normal and so is not resolved into a prefix-root-suffix pattern."
+   },
+   {
+    "id": "MT04011",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In exocytosis (P+R+S), the prefix exo- denotes which direction?",
+    "options": [
+     "Outside",
+     "Within",
+     "Away from",
+     "Beyond or after"
+    ],
+    "correct": 0,
+    "explain": "Exo- means outside, so exocytosis is the process by which a cell moves material to the outside through vesicle fusion, the counterpart of endocytosis, which uses endo- for within. Within is the opposite and the easiest misread, away from is ab-, and beyond or after is meta-."
+   },
+   {
+    "id": "MT04012",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In paranoia (P+R+S), the root noos refers to which faculty?",
+    "options": [
+     "Nerve",
+     "Mind",
+     "Knowledge",
+     "Cheek"
+    ],
+    "correct": 1,
+    "explain": "Noos means mind. Neur- (nerve, as in neuralgia) and gnos- (knowledge, as in diagnosis) are easy to mishear for noos because of the similar opening sounds, and bucc- (cheek) is likewise a genuine root, as in retrobuccal."
+   },
+   {
+    "id": "MT04013",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In ex-vivo (P+S), the element vivo refers to which state?",
+    "options": [
+     "Outside the body",
+     "Living",
+     "Seeing or vision",
+     "Voice or sound"
+    ],
+    "correct": 1,
+    "explain": "Vivo means living. The similar beginnings vid- (see, as in vision) and voc- (voice or call, as in vocal) are readily confused with vivo, and outside the body is the sense of the prefix ex-, not of the root, so attributing it to vivo misreads the parts."
+   },
+   {
+    "id": "MT04014",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In diaphragm (P+R), the root phragm carries the Greek sense of what?",
+    "options": [
+     "Wall off",
+     "Across",
+     "Through",
+     "Upon"
+    ],
+    "correct": 0,
+    "explain": "The Greek root phragm means to wall off or fence, while the prefix dia- supplies the sense of across, so diaphragm is the muscular wall drawn across the body cavity. Across and through are the work of the prefix, not the root, and upon belongs to epi-."
+   },
+   {
+    "id": "MT04015",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means alongside of or abnormal?",
+    "options": [
+     "Para-",
+     "Meta-",
+     "Retro-",
+     "Circum-"
+    ],
+    "correct": 0,
+    "explain": "Para- means alongside of or abnormal, as in paramedic and in paranoia. Meta- means beyond, after, or change, retro- means backward or behind, and circum- means around."
+   },
+   {
+    "id": "MT04016",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In dementia (P+R+S), the prefix de- contributes which sense?",
+    "options": [
+     "From, down, or not",
+     "Without, or completely lacking",
+     "Against, or opposed to",
+     "Away from, or off"
+    ],
+    "correct": 0,
+    "explain": "De- means from, down, or not, so dementia is a falling away from the mind. Without belongs to a- and an- (aphagia, anesthesia); against to anti- and contra- (antitoxic); away from to ab- (abnormal)."
+   },
+   {
+    "id": "MT04017",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which medical term contains a prefix whose meaning is between?",
+    "options": [
+     "Intercostal (P+R+S)",
+     "Mesenteric (P+R+S)",
+     "Epidermal (P+R+S)",
+     "Retrobuccal (P+R+S)"
+    ],
+    "correct": 0,
+    "explain": "Inter- means between, so intercostal is the space between the ribs. Meso- means middle, epi- upon, retro- backward; all four are positional prefixes sharing the same word form, so the prefix's sense, not the form, decides."
+   },
+   {
+    "id": "MT04018",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which medical term contains a prefix whose meaning is to, toward, or near?",
+    "options": [
+     "Adrenal (P+R+S)",
+     "Pericardial (P+R+S)",
+     "Sublingual (P+R+S)",
+     "Eccentric (P+R+S)"
+    ],
+    "correct": 0,
+    "explain": "Ad- means to, toward, or near, so adrenal names the gland seated near the kidney. Peri- means around, sub- means below, and ec- or ex- means out or away."
+   },
+   {
+    "id": "MT04019",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means within, as in encephalitis?",
+    "options": [
+     "En-",
+     "Epi-",
+     "Ex-",
+     "Ecto-"
+    ],
+    "correct": 0,
+    "explain": "En- means within, so encephalitis is inflammation within the brain. Epi- means upon, ex- means out or away, and ecto- means outside."
+   },
+   {
+    "id": "MT04020",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means out or away, as in eccentric?",
+    "options": [
+     "Ec-",
+     "En-",
+     "Exo-",
+     "Extra-"
+    ],
+    "correct": 0,
+    "explain": "Ec- means out or away, so eccentric describes a structure placed out from the center. En- means within, exo- means outside, and extra- means outside, each a different positional sense."
+   },
+   {
+    "id": "MT04021",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means upon, as in epidermal?",
+    "options": [
+     "Epi-",
+     "Endo-",
+     "Ecto-",
+     "Meta-"
+    ],
+    "correct": 0,
+    "explain": "Epi- means upon, so epidermal refers to the layer upon the skin surface. Endo- means within, ecto- means outside, and meta- means beyond, after, or change."
+   },
+   {
+    "id": "MT04022",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means beyond, after, or change, as in metamorphosis?",
+    "options": [
+     "Meta-",
+     "Para-",
+     "Meso-",
+     "Retro-"
+    ],
+    "correct": 0,
+    "explain": "Meta- means beyond, after, or change, so metamorphosis is a change of form. Para- means alongside of or abnormal, meso- means middle, and retro- means backward or behind."
+   },
+   {
+    "id": "MT04023",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which prefix means below or under, as in sublingual and infraumbilical?",
+    "options": [
+     "Sub- and Infra-",
+     "Super- and Supra-",
+     "Retro- and Post-",
+     "Ad- and Ab-"
+    ],
+    "correct": 0,
+    "explain": "Sub- and infra- both mean below or under, so sublingual is below the tongue and infraumbilical is below the navel. Super- and supra- mean above; retro- and post- mean behind and after; ad- and ab- mean toward and away."
+   },
+   {
+    "id": "MT04024",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which two prefixes both mean around?",
+    "options": [
+     "Circum- and Peri-",
+     "Dia- and Trans-",
+     "Epi- and Inter-",
+     "Ad- and Ab-"
+    ],
+    "correct": 0,
+    "explain": "Circum- and peri- both mean around, as in circumoral and pericardial. Dia- and trans- mean across or through, epi- means upon and inter- means between, and ad- and ab- mean toward and away."
+   },
+   {
+    "id": "MT04025",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which three prefixes all mean outside?",
+    "options": [
+     "Ecto-, Exo-, and Extra-",
+     "En-, Endo-, and Intra-",
+     "E-, Ec-, and Ex-",
+     "Ab-, Ad-, and Epi-"
+    ],
+    "correct": 0,
+    "explain": "Ecto-, exo-, and extra- all mean outside, as in ectocardia, exocytosis, and extracranial. En-, endo-, and intra- mean within; e-, ec-, and ex- mean out or away; ab-, ad-, and epi- mean away, toward, and upon."
+   },
+   {
+    "id": "MT04026",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which three prefixes all mean within?",
+    "options": [
+     "En-, Endo-, and Intra-",
+     "Ecto-, Exo-, and Extra-",
+     "E-, Ec-, and Ex-",
+     "Circum-, Peri-, and Epi-"
+    ],
+    "correct": 0,
+    "explain": "En-, endo-, and intra- all mean within, as in encephalitis, endoscope, and intravenous. Ecto-, exo-, and extra- mean outside; e-, ec-, and ex- mean out or away; circum- and peri- mean around while epi- means upon."
+   },
+   {
+    "id": "MT04027",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which two prefixes both mean from, down, or not?",
+    "options": [
+     "A- and An-",
+     "Anti- and Contra-",
+     "De- alone",
+     "Ab- and Ad-"
+    ],
+    "correct": 2,
+    "explain": "De- alone means from, down, or not, as in dementia. A- and an- mean without, anti- and contra- mean against, and ab- and ad- mean away from and toward, each a different negative or positional sense."
+   },
+   {
+    "id": "MT04028",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "A- and an- are the same prefix in two spellings. Which statement correctly fixes the choice?",
+    "options": [
+     "An- is used before a vowel, a- before a consonant, so the pair is one meaning with two forms.",
+     "A- is used before a vowel, an- before a consonant, so the pair is one meaning with two forms.",
+     "A- and an- are different prefixes with different meanings.",
+     "A- means without and an- means against."
+    ],
+    "correct": 0,
+    "explain": "A- and an- are one prefix meaning without, with an- used before a vowel (anesthesia, anoxia) and a- before a consonant (aphagia, akaryocyte). The first option is correct; the second reverses the environment; the third and fourth wrongly treat them as distinct or assign against (which belongs to anti-) to an-."
+   },
+   {
+    "id": "MT04029",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each prefix to the category it belongs to: Negative Association or Position/Direction.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "A-"
+     },
+     {
+      "id": "2",
+      "text": "An-"
+     },
+     {
+      "id": "3",
+      "text": "Anti-"
+     },
+     {
+      "id": "4",
+      "text": "Contra-"
+     },
+     {
+      "id": "5",
+      "text": "De-"
+     },
+     {
+      "id": "6",
+      "text": "Ab-"
+     },
+     {
+      "id": "7",
+      "text": "Ad-"
+     },
+     {
+      "id": "8",
+      "text": "Circum-"
+     },
+     {
+      "id": "9",
+      "text": "Peri-"
+     },
+     {
+      "id": "10",
+      "text": "Dia-"
+     },
+     {
+      "id": "11",
+      "text": "Trans-"
+     },
+     {
+      "id": "12",
+      "text": "E-"
+     },
+     {
+      "id": "13",
+      "text": "Ec-"
+     },
+     {
+      "id": "14",
+      "text": "Ex-"
+     },
+     {
+      "id": "15",
+      "text": "Ecto-"
+     },
+     {
+      "id": "16",
+      "text": "Exo-"
+     },
+     {
+      "id": "17",
+      "text": "Extra-"
+     },
+     {
+      "id": "18",
+      "text": "En-"
+     },
+     {
+      "id": "19",
+      "text": "Endo-"
+     },
+     {
+      "id": "20",
+      "text": "Intra-"
+     },
+     {
+      "id": "21",
+      "text": "Epi-"
+     },
+     {
+      "id": "22",
+      "text": "Inter-"
+     },
+     {
+      "id": "23",
+      "text": "Meso-"
+     },
+     {
+      "id": "24",
+      "text": "Meta-"
+     },
+     {
+      "id": "25",
+      "text": "Para-"
+     },
+     {
+      "id": "26",
+      "text": "Retro-"
+     },
+     {
+      "id": "27",
+      "text": "Sub-"
+     },
+     {
+      "id": "28",
+      "text": "Infra-"
+     },
+     {
+      "id": "29",
+      "text": "Aphagia"
+     },
+     {
+      "id": "30",
+      "text": "Eccentric"
+     },
+     {
+      "id": "31",
+      "text": "Endoscope"
+     },
+     {
+      "id": "32",
+      "text": "Adrenal"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Negative Association"
+     },
+     {
+      "id": "B",
+      "text": "Position / Direction"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "A",
+     "3": "A",
+     "4": "A",
+     "5": "A",
+     "6": "B",
+     "7": "B",
+     "8": "B",
+     "9": "B",
+     "10": "B",
+     "11": "B",
+     "12": "B",
+     "13": "B",
+     "14": "B",
+     "15": "B",
+     "16": "B",
+     "17": "B",
+     "18": "B",
+     "19": "B",
+     "20": "B",
+     "21": "B",
+     "22": "B",
+     "23": "B",
+     "24": "B",
+     "25": "B",
+     "26": "B",
+     "27": "B",
+     "28": "B",
+     "29": "A",
+     "30": "B",
+     "31": "B",
+     "32": "B"
+    },
+    "explain": "The Negative Association group covers A- and An- (without, as in aphagia and anesthesia), Anti- and Contra- (against or opposed to, as in antitoxic), and De- (from, down, or not, as in dementia). Every other prefix in the bank is positional, so all of Ab-, Ad-, Circum-, Peri-, Dia-, Trans-, E-, Ec-, Ex-, Ecto-, Exo-, Extra-, En-, Endo-, Intra-, Epi-, Inter-, Meso-, Meta-, Para-, Retro-, Sub-, and Infra- belong to Position/Direction. The four terms at the end are placed by the prefix each carries: Aphagia carries a- (without), so it belongs to the negative group; Eccentric carries ec- (out or away), Endoscope carries endo- (within), and Adrenal carries ad- (toward or near), so each belongs to the positional group. The category is fixed by the prefix's function, not by whether the item appears as a bare prefix or inside a completed term."
+   },
+   {
+    "id": "MT04030",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "A-, An-"
+     },
+     {
+      "id": "2",
+      "text": "Anti-, Contra-"
+     },
+     {
+      "id": "3",
+      "text": "De-"
+     },
+     {
+      "id": "4",
+      "text": "Ab-"
+     },
+     {
+      "id": "5",
+      "text": "Ad-"
+     },
+     {
+      "id": "6",
+      "text": "Circum-, Peri-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Without"
+     },
+     {
+      "id": "B",
+      "text": "Against, Opposed to"
+     },
+     {
+      "id": "C",
+      "text": "From, Down, Not"
+     },
+     {
+      "id": "D",
+      "text": "Away from"
+     },
+     {
+      "id": "E",
+      "text": "To, Toward, or Near"
+     },
+     {
+      "id": "F",
+      "text": "Around"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "A- and An- both mean without, as in aphagia and anesthesia. Anti- and Contra- both mean against or opposed to, as in antitoxic. De- means from, down, or not, as in dementia. Ab- means away from, as in abnormal. Ad- means to, toward, or near, as in adrenal. Circum- and Peri- both mean around, as in circumoral and pericardial. Each entry pairs with exactly one meaning, and the synonym pairs A-/An-, Anti-/Contra-, and Circum-/Peri- each share a single sense."
+   },
+   {
+    "id": "MT04031",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Dia-, Trans-"
+     },
+     {
+      "id": "2",
+      "text": "E-, Ec-, Ex-"
+     },
+     {
+      "id": "3",
+      "text": "Ecto-, Exo-, Extra-"
+     },
+     {
+      "id": "4",
+      "text": "En-, Endo-, Intra-"
+     },
+     {
+      "id": "5",
+      "text": "Epi-"
+     },
+     {
+      "id": "6",
+      "text": "Inter-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Across or Through"
+     },
+     {
+      "id": "B",
+      "text": "Out or Away"
+     },
+     {
+      "id": "C",
+      "text": "Outside"
+     },
+     {
+      "id": "D",
+      "text": "Within"
+     },
+     {
+      "id": "E",
+      "text": "Upon"
+     },
+     {
+      "id": "F",
+      "text": "Between"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Dia- and trans- mean across or through, as in transabdominal and diaphragm. E-, ec-, and ex- mean out or away, as in eccentric and ex-vivo. Ecto-, exo-, and extra- mean outside, as in ectocardia, exocytosis, and extracranial. En-, endo-, and intra- mean within, as in encephalitis, endoscope, and intravenous. Epi- means upon, as in epidermal. Inter- means between, as in intercostal. The three-family pattern inside, outside, and out or away is the trap to keep straight: within versus outside versus out or away."
+   },
+   {
+    "id": "MT04032",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Meso-"
+     },
+     {
+      "id": "2",
+      "text": "Meta-"
+     },
+     {
+      "id": "3",
+      "text": "Para-"
+     },
+     {
+      "id": "4",
+      "text": "Retro-"
+     },
+     {
+      "id": "5",
+      "text": "Sub-, Infra-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Middle"
+     },
+     {
+      "id": "B",
+      "text": "Beyond, After, or Change"
+     },
+     {
+      "id": "C",
+      "text": "Alongside of, Abnormal"
+     },
+     {
+      "id": "D",
+      "text": "Backward, or Behind"
+     },
+     {
+      "id": "E",
+      "text": "Below or Under"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E"
+    },
+    "explain": "Meso- means middle, as in mesenteric. Meta- means beyond, after, or change, as in metamorphosis. Para- means alongside of or abnormal, as in paramedic and paranoia. Retro- means backward or behind, as in retrobuccal. Sub- and infra- both mean below or under, as in sublingual and infraumbilical."
+   },
+   {
+    "id": "MT04033",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Adrenal (P+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Pericardial (P+R+S)"
+     },
+     {
+      "id": "3",
+      "text": "Transabdominal (P+R+S)"
+     },
+     {
+      "id": "4",
+      "text": "Diaphragm (P+R)"
+     },
+     {
+      "id": "5",
+      "text": "Eccentric (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Ex-vivo (P+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to the gland seated near the kidney."
+     },
+     {
+      "id": "B",
+      "text": "Pertaining to the sac around the heart."
+     },
+     {
+      "id": "C",
+      "text": "Performed by a route across the abdomen."
+     },
+     {
+      "id": "D",
+      "text": "The muscular wall drawn across the body cavity."
+     },
+     {
+      "id": "E",
+      "text": "Placed out from the center, not concentric."
+     },
+     {
+      "id": "F",
+      "text": "Carried out outside a living organism."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Adrenal is built from ad- (toward or near) and ren (kidney), the gland seated near the kidney. Pericardial is built from peri- (around), cardi (heart), and -al (pertaining to). Transabdominal is built from trans- (across) and abdomin (abdomen), a route across the abdomen. Diaphragm is built from dia- (across) and the Greek root phragm (wall off), the wall drawn across the cavity. Eccentric is built from ec- (out or away) and centr (center), placed off-center. Ex-vivo is built from ex- (outside) and vivo (living), outside a living organism."
+   },
+   {
+    "id": "MT04034",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Ectocardia (P+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Extracranial (P+R+S)"
+     },
+     {
+      "id": "3",
+      "text": "Exobiology (P+CF+S)"
+     },
+     {
+      "id": "4",
+      "text": "Exocytosis (P+R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Encephalitis (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Endoscope (P+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "A condition in which the heart lies outside the chest."
+     },
+     {
+      "id": "B",
+      "text": "Situated outside the skull."
+     },
+     {
+      "id": "C",
+      "text": "The study of life outside the Earth."
+     },
+     {
+      "id": "D",
+      "text": "The process by which a cell pushes material to the outside."
+     },
+     {
+      "id": "E",
+      "text": "Inflammation of the brain."
+     },
+     {
+      "id": "F",
+      "text": "An instrument used to look inside the body."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Ectocardia is built from ecto- (outside), card (heart), and -ia (condition of). Extracranial is built from extra- (outside), crani (skull), and -al (pertaining to). Exobiology is built from exo- (outside), bio (life), and -logy (study). Exocytosis is built from exo- (outside), cyt (cell), and -osis (process). Encephalitis is built from en- (within), cephal (brain), and -itis (inflammation). Endoscope is built from endo- (within) and -scope (instrument for viewing). The three outside-spelling prefixes ecto-, extra-, and exo- each name an outside position, while en- and endo- name the opposite within."
+   },
+   {
+    "id": "MT04035",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Intravenous (P+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Epidermal (P+R+S)"
+     },
+     {
+      "id": "3",
+      "text": "Intercostal (P+R+S)"
+     },
+     {
+      "id": "4",
+      "text": "Mesenteric (P+R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Metamorphosis (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Paramedic (P+R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Administered or introduced within a vein."
+     },
+     {
+      "id": "B",
+      "text": "Pertaining to the uppermost layer of the skin."
+     },
+     {
+      "id": "C",
+      "text": "Lying between the ribs."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to the membrane fixed to the middle of the intestines."
+     },
+     {
+      "id": "E",
+      "text": "A process of change in form or structure."
+     },
+     {
+      "id": "F",
+      "text": "An emergency worker who serves alongside physicians."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Intravenous is built from intra- (within), ven (vein), and -ous (pertaining to). Epidermal is built from epi- (upon), derm (skin), and -al (pertaining to). Intercostal is built from inter- (between), cost (rib), and -al (pertaining to). Mesenteric is built from meso- (middle), enter (intestine), and -ic (pertaining to). Metamorphosis is built from meta- (change) and morph (form). Paramedic is built from para- (alongside of) and medic, an emergency worker beside physicians. The four middle-region prefixes within, upon, between, and middle each fix a different positional relation."
+   },
+   {
+    "id": "MT04036",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Paranoia (P+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Retrobuccal (P+R+S)"
+     },
+     {
+      "id": "3",
+      "text": "Sublingual (P+R+S)"
+     },
+     {
+      "id": "4",
+      "text": "Infraumbilical (P+R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Antitoxic (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Dementia (P+R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "A condition of the abnormal mind marked by irrational suspicion."
+     },
+     {
+      "id": "B",
+      "text": "Located behind the cheek or mouth."
+     },
+     {
+      "id": "C",
+      "text": "Situated or given below the tongue."
+     },
+     {
+      "id": "D",
+      "text": "Situated below the navel."
+     },
+     {
+      "id": "E",
+      "text": "Acting against a poison or toxin."
+     },
+     {
+      "id": "F",
+      "text": "A condition of mental decline, a falling away from the mind."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Paranoia is built from para- (abnormal) and noos (mind), a disordered mind with suspicion. Retrobuccal is built from retro- (behind) and bucc (cheek). Sublingual is built from sub- (below) and lingu (tongue). Infraumbilical is built from infra- (below) and umbil (navel). Antitoxic is built from anti- (against) and tox (poison). Dementia is built from de- (from, down) and ment (mind), a falling away of the mind. The three prefixes para-, retro-, and sub-/infra- each position a structure in a distinct relation: beside, behind, and below."
+   },
+   {
+    "id": "MT04037",
+    "type": "matching",
+    "cat": "MT_lec4",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Aphagia (P+R+S)"
+     },
+     {
+      "id": "2",
+      "text": "Anesthesia (P+R+S)"
+     },
+     {
+      "id": "3",
+      "text": "Abnormal"
+     },
+     {
+      "id": "4",
+      "text": "Adrenal (P+R+S)"
+     },
+     {
+      "id": "5",
+      "text": "Pericardial (P+R+S)"
+     },
+     {
+      "id": "6",
+      "text": "Transabdominal (P+R+S)"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The condition of being unable to swallow."
+     },
+     {
+      "id": "B",
+      "text": "A state without sensation."
+     },
+     {
+      "id": "C",
+      "text": "Depicting or being a departure from the normal."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to the gland seated near the kidney."
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to the sac around the heart."
+     },
+     {
+      "id": "F",
+      "text": "Performed by a route across the abdomen."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Aphagia is built from a- (without) and phag (eat or swallow). Anesthesia is built from an- (without) and esthesi (sensation). Abnormal is built from ab- (away from) and normal, a departure from the normal. Adrenal is built from ad- (near) and ren (kidney), the gland seated near the kidney. Pericardial is built from peri- (around), cardi (heart), and -al (pertaining to). Transabdominal is built from trans- (across) and abdomin (abdomen), a route across the abdomen."
+   },
+   {
+    "id": "MT04038",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Ab- from Ad-?",
+    "options": [
+     "Both prefixes mean toward a structure.",
+     "Ab- means away from a structure, while Ad- means to, toward, or near a structure.",
+     "Ab- means to, toward, or near, while Ad- means away from a structure.",
+     "Ab- means above a structure, while Ad- means below a structure."
+    ],
+    "correct": 1,
+    "explain": "Ab- means away from (abnormal, a departure from the normal), while ad- means to, toward, or near (adrenal, the gland near the kidney). The first option wrongly treats them as synonyms; the second swaps the pair, the most natural error since the two differ only by one letter; the third substitutes above and below, senses belonging to prefixes such as super- and sub-."
+   },
+   {
+    "id": "MT04039",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes A-/An- from Anti-/Contra-?",
+    "options": [
+     "Both pairs mean without.",
+     "A- and An- mean without, while Anti- and Contra- mean against or opposed to.",
+     "A- and An- mean against, while Anti- and Contra- mean without.",
+     "A- and An- mean without, while Anti- and Contra- mean away from."
+    ],
+    "correct": 1,
+    "explain": "A- and An- mean without (aphagia, anesthesia), while Anti- and Contra- mean against or opposed to (antitoxic). The first option wrongly collapses the two senses; the second swaps the pair; the third substitutes away from, which belongs to ab-."
+   },
+   {
+    "id": "MT04040",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Ecto-/Exo-/Extra- from E-/Ec-/Ex-?",
+    "options": [
+     "Both families mean outside.",
+     "Ecto-, Exo-, and Extra- mean outside, while E-, Ec-, and Ex- mean out or away.",
+     "Ecto-, Exo-, and Extra- mean out or away, while E-, Ec-, and Ex- mean outside.",
+     "Ecto-, Exo-, and Extra- mean within, while E-, Ec-, and Ex- mean without."
+    ],
+    "correct": 1,
+    "explain": "Ecto-, exo-, and extra- name an outside position (ectocardia, exocytosis, extracranial), while e-, ec-, and ex- name the direction out or away (eccentric, ex-vivo). The first option wrongly treats the families as synonyms; the second swaps the pair; the third substitutes within and without, which belong to en-/endo-/intra- and a-/an- respectively."
+   },
+   {
+    "id": "MT04041",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes En-/Endo-/Intra- from Ecto-/Exo-/Extra-?",
+    "options": [
+     "Both families mean within.",
+     "En-, Endo-, and Intra- mean within, while Ecto-, Exo-, and Extra- mean outside.",
+     "En-, Endo-, and Intra- mean outside, while Ecto-, Exo-, and Extra- mean within.",
+     "En-, Endo-, and Intra- mean above, while Ecto-, Exo-, and Extra- mean below."
+    ],
+    "correct": 1,
+    "explain": "En-, endo-, and intra- mean within (encephalitis, endoscope, intravenous), and ecto-, exo-, and extra- mean outside (ectocardia, exocytosis, extracranial). The first option wrongly treats the families as synonyms; the second swaps the pair; the third substitutes above and below, which belong to super-/supra- and sub-/infra-."
+   },
+   {
+    "id": "MT04042",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Dia-/Trans- from Circum-/Peri-?",
+    "options": [
+     "Both pairs mean around.",
+     "Dia- and Trans- mean across or through, while Circum- and Peri- mean around.",
+     "Dia- and Trans- mean around, while Circum- and Peri- mean across or through.",
+     "Dia- and Trans- mean upon, while Circum- and Peri- mean between."
+    ],
+    "correct": 1,
+    "explain": "Dia- and trans- mean across or through (transabdominal, diaphragm), while circum- and peri- mean around (circumoral, pericardial). The first option wrongly treats the pairs as synonyms; the second swaps the pair; the third substitutes upon and between, which belong to epi- and inter-."
+   },
+   {
+    "id": "MT04043",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Sub-/Infra- from Retro-?",
+    "options": [
+     "Both pairs mean below.",
+     "Sub- and Infra- mean below or under, while Retro- means backward or behind.",
+     "Sub- and Infra- mean backward, while Retro- means below.",
+     "Sub- and Infra- mean before, while Retro- means after."
+    ],
+    "correct": 1,
+    "explain": "Sub- and infra- mean below or under (sublingual, infraumbilical), while retro- means backward or behind (retrobuccal). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes before and after, which belong to ante-/pre-/pro- and post-."
+   },
+   {
+    "id": "MT04044",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Epi- from Inter-?",
+    "options": [
+     "Both prefixes mean between.",
+     "Epi- means upon, while Inter- means between.",
+     "Epi- means between, while Inter- means upon.",
+     "Epi- means within, while Inter- means outside."
+    ],
+    "correct": 1,
+    "explain": "Epi- means upon (epidermal, the layer upon the skin), while inter- means between (intercostal, between the ribs). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes within and outside, which belong to en-/endo-/intra- and ecto-/exo-/extra-."
+   },
+   {
+    "id": "MT04045",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Meta- from Para-?",
+    "options": [
+     "Both prefixes mean alongside.",
+     "Meta- means beyond, after, or change, while Para- means alongside of or abnormal.",
+     "Meta- means alongside, while Para- means beyond, after, or change.",
+     "Meta- means middle, while Para- means around."
+    ],
+    "correct": 1,
+    "explain": "Meta- means beyond, after, or change (metamorphosis, a change of form), while para- means alongside of or abnormal (paramedic, paranoia). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes middle and around, which belong to meso- and circum-/peri-."
+   },
+   {
+    "id": "MT04046",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term paranoia, the prefix para- contributes which sense?",
+    "options": [
+     "Abnormal",
+     "Alongside of",
+     "Beyond",
+     "Around"
+    ],
+    "correct": 0,
+    "explain": "In paranoia, para- carries the sense abnormal, so with noos (mind) the term names a disordered mind marked by irrational suspicion. Para- can also mean alongside of, as in paramedic, but that sense does not fit this word. Beyond belongs to meta-, and around to circum- or peri-."
+   },
+   {
+    "id": "MT04047",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term paramedic, the prefix para- contributes which sense?",
+    "options": [
+     "Alongside of",
+     "Abnormal",
+     "Beyond",
+     "Upon"
+    ],
+    "correct": 0,
+    "explain": "In paramedic, para- carries the sense alongside of, so the term names an emergency worker who serves alongside physicians. Para- can also mean abnormal, as in paranoia, but that sense does not fit this word. Beyond belongs to meta-, and upon to epi-."
+   },
+   {
+    "id": "MT04048",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term ectocardia, the prefix ecto- contributes which sense?",
+    "options": [
+     "Outside",
+     "Within",
+     "Out or away",
+     "Around"
+    ],
+    "correct": 0,
+    "explain": "Ecto- means outside, so ectocardia is a condition in which the heart lies outside the chest. Within is the opposite and belongs to en-/endo-/intra-, out or away belongs to e-/ec-/ex-, and around belongs to circum-/peri-."
+   },
+   {
+    "id": "MT04049",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term mesenteric, the prefix meso- contributes which sense?",
+    "options": [
+     "Middle",
+     "Between",
+     "Around",
+     "Upon"
+    ],
+    "correct": 0,
+    "explain": "Meso- means middle, so mesenteric refers to the membrane fixed to the middle of the intestines. Between belongs to inter-, around to circum-/peri-, and upon to epi-."
+   },
+   {
+    "id": "MT04050",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term metamorphosis, the prefix meta- contributes which sense?",
+    "options": [
+     "Change",
+     "Alongside",
+     "Middle",
+     "Behind"
+    ],
+    "correct": 0,
+    "explain": "Meta- means beyond, after, or change, so metamorphosis is a change of form. Alongside belongs to para-, middle to meso-, and behind to retro-."
+   },
+   {
+    "id": "MT04051",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term infraumbilical, the prefix infra- contributes which sense?",
+    "options": [
+     "Below or under",
+     "Above or excessive",
+     "Toward or near",
+     "Away from"
+    ],
+    "correct": 0,
+    "explain": "Infra- means below or under, so infraumbilical is a position below the navel. Above or excessive belongs to super-/supra-/hyper-, toward or near to ad-, and away from to ab-."
+   },
+   {
+    "id": "MT04052",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "In the term ex-vivo, the prefix ex- contributes which sense?",
+    "options": [
+     "Outside",
+     "Within",
+     "Around",
+     "Upon"
+    ],
+    "correct": 0,
+    "explain": "Ex- means out or away, and in ex-vivo it locates the process outside a living organism. Within belongs to en-/endo-/intra-, around to circum-/peri-, and upon to epi-."
+   },
+   {
+    "id": "MT04053",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly explains why a- and an- represent the same prefix in two spellings?",
+    "options": [
+     "Because the spelling is chosen for ease of pronunciation before a vowel or consonant, not for a change of meaning.",
+     "Because the spelling encodes two different meanings, one negative and one positional.",
+     "Because the spelling is arbitrary and either may precede any letter without rule.",
+     "Because the spelling changes the root's meaning rather than the prefix's form."
+    ],
+    "correct": 0,
+    "explain": "A- and an- are one prefix meaning without, with an- before a vowel (anesthesia, anoxia) and a- before a consonant (aphagia, akaryocyte). The form is chosen for ease of pronunciation, not for a change of meaning, so the second and third options are wrong. The prefix does not alter the root's meaning; it qualifies it, so the fourth option misstates the role of the prefix."
+   },
+   {
+    "id": "MT04054",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly explains why a prefix never carries a combining vowel?",
+    "options": [
+     "The combining vowel links a root to a second root or to a consonant-initial suffix; a prefix precedes the root and is not part of that join.",
+     "The combining vowel is added to every word part for pronunciation, so a prefix should also carry one.",
+     "The combining vowel replaces the prefix's final letter when the root begins with a vowel.",
+     "The combining vowel is only added to suffixes, so neither root nor prefix carries one."
+    ],
+    "correct": 0,
+    "explain": "The combining vowel is a linking device between a root and the next element, used between two roots or before a consonant-initial suffix. A prefix sits before the root and does not sit at that join, so it never carries a combining vowel, as in aphasia (a + phas + ia) or epinephrine (epi + nephr + ine). The second and third options invent functions for the combining vowel that it does not have, and the fourth wrongly denies it to roots, where it routinely appears, as in hematology (hemat/o + logy)."
+   },
+   {
+    "id": "MT04055",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes E- from Ecto-?",
+    "options": [
+     "Both prefixes mean outside.",
+     "E- means out or away, while Ecto- means outside.",
+     "E- means outside, while Ecto- means out or away.",
+     "E- means within, while Ecto- means without."
+    ],
+    "correct": 1,
+    "explain": "E- means out or away (eccentric, ex-vivo), while ecto- means outside (ectocardia). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes within and without, which belong to en-/endo-/intra- and a-/an-."
+   },
+   {
+    "id": "MT04056",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Peri- from Epi-?",
+    "options": [
+     "Both prefixes mean upon.",
+     "Peri- means around, while Epi- means upon.",
+     "Peri- means upon, while Epi- means around.",
+     "Peri- means within, while Epi- means outside."
+    ],
+    "correct": 1,
+    "explain": "Peri- means around (pericardial, the sac around the heart), while epi- means upon (epidermal, the layer upon the skin). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes within and outside, which belong to en-/endo-/intra- and ecto-/exo-/extra-."
+   },
+   {
+    "id": "MT04057",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Meso- from Inter-?",
+    "options": [
+     "Both prefixes mean between.",
+     "Meso- means middle, while Inter- means between.",
+     "Meso- means between, while Inter- means middle.",
+     "Meso- means around, while Inter- means upon."
+    ],
+    "correct": 1,
+    "explain": "Meso- means middle (mesenteric, the membrane at the middle of the intestines), while inter- means between (intercostal, between the ribs). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes around and upon, which belong to circum-/peri- and epi-."
+   },
+   {
+    "id": "MT04058",
+    "type": "mcq",
+    "cat": "MT_lec4",
+    "q": "Which statement correctly distinguishes Retro- from Sub-?",
+    "options": [
+     "Both prefixes mean behind.",
+     "Retro- means backward or behind, while Sub- means below or under.",
+     "Retro- means below, while Sub- means backward or behind.",
+     "Retro- means before, while Sub- means after."
+    ],
+    "correct": 1,
+    "explain": "Retro- means backward or behind (retrobuccal, behind the cheek), while sub- means below or under (sublingual, below the tongue). The first option wrongly treats them as synonyms; the second swaps the pair; the third substitutes before and after, which belong to ante-/pre-/pro- and post-."
+   }
+  ]
+ }
+}

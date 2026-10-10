@@ -1,0 +1,1983 @@
+{
+ "id": "medterm-pt1-lec05",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 5 – Prefixes (Part 2 of 2)",
+ "formSize": 85,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "f8c3070c3fdacdf1f5e439cb294acf4a8977b3984a67a57903a3bc00589aa440.json",
+  "title": "Lecture 5 - Prefixes Part 2",
+  "note": "Ids renamed to MT05xxx (source ids clashed between lectures 2 and 3 and with PT2 Lecture 10). Content unchanged.",
+  "idMap": {
+   "MT10401": "MT05001",
+   "MT10402": "MT05002",
+   "MT10403": "MT05003",
+   "MT10404": "MT05004",
+   "MT10405": "MT05005",
+   "MT10406": "MT05006",
+   "MT10407": "MT05007",
+   "MT10408": "MT05008",
+   "MT10409": "MT05009",
+   "MT10410": "MT05010",
+   "MT10411": "MT05011",
+   "MT10412": "MT05012",
+   "MT10413": "MT05013",
+   "MT10414": "MT05014",
+   "MT10415": "MT05015",
+   "MT10416": "MT05016",
+   "MT10417": "MT05017",
+   "MT10418": "MT05018",
+   "MT10419": "MT05019",
+   "MT10420": "MT05020",
+   "MT10421": "MT05021",
+   "MT10422": "MT05022",
+   "MT10423": "MT05023",
+   "MT10424": "MT05024",
+   "MT10425": "MT05025",
+   "MT10426": "MT05026",
+   "MT10427": "MT05027",
+   "MT10428": "MT05028",
+   "MT10429": "MT05029",
+   "MT10430": "MT05030",
+   "MT10431": "MT05031",
+   "MT10432": "MT05032",
+   "MT10433": "MT05033",
+   "MT10434": "MT05034",
+   "MT10435": "MT05035",
+   "MT10436": "MT05036",
+   "MT10437": "MT05037",
+   "MT10438": "MT05038",
+   "MT10439": "MT05039",
+   "MT10440": "MT05040",
+   "MT10441": "MT05041",
+   "MT10442": "MT05042",
+   "MT10443": "MT05043",
+   "MT10444": "MT05044",
+   "MT10445": "MT05045",
+   "MT10446": "MT05046",
+   "MT10447": "MT05047",
+   "MT10448": "MT05048",
+   "MT10449": "MT05049",
+   "MT10450": "MT05050",
+   "MT10451": "MT05051",
+   "MT10452": "MT05052",
+   "MT10453": "MT05053",
+   "MT10454": "MT05054",
+   "MT10455": "MT05055",
+   "MT10456": "MT05056",
+   "MT10457": "MT05057",
+   "MT10458": "MT05058",
+   "MT10459": "MT05059",
+   "MT10460": "MT05060",
+   "MT10461": "MT05061",
+   "MT10462": "MT05062",
+   "MT10463": "MT05063",
+   "MT10464": "MT05064",
+   "MT10465": "MT05065",
+   "MT10466": "MT05066",
+   "MT10467": "MT05067",
+   "MT10468": "MT05068",
+   "MT10469": "MT05069",
+   "MT10470": "MT05070",
+   "MT10471": "MT05071",
+   "MT10472": "MT05072",
+   "MT10473": "MT05073",
+   "MT10474": "MT05074",
+   "MT10475": "MT05075",
+   "MT10476": "MT05076",
+   "MT10477": "MT05077",
+   "MT10478": "MT05078",
+   "MT10479": "MT05079",
+   "MT10480": "MT05080",
+   "MT10481": "MT05081",
+   "MT10482": "MT05082",
+   "MT10483": "MT05083",
+   "MT10484": "MT05084",
+   "MT10485": "MT05085"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT05001",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Prefixes such as bi-, tri-, quadri-, macro-, and micro- modify a medical term chiefly by indicating what?",
+    "options": [
+     "Quantity, size, or number.",
+     "Time or rate of occurrence.",
+     "Position or direction relative to a structure.",
+     "Negation or opposition."
+    ],
+    "correct": 0,
+    "explain": "These are quantity-of-measurement prefixes: they state how many or how large, as in bi- two, tri- three, quadri- four, macro- large, and micro- small. The other three choices name the other functional groups: time or rate belongs to indicators such as brady- and ante-, position or direction belongs to prefixes such as peri- and retro-, and negation or opposition belongs to prefixes such as an- and anti-."
+   },
+   {
+    "id": "MT05002",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix is correctly matched to its functional category?",
+    "options": [
+     "Tachy- : time indicator",
+     "Macro- : time indicator",
+     "Dys- : quantity of measurement",
+     "Post- : general prefix"
+    ],
+    "correct": 0,
+    "explain": "Tachy- (fast) sits with the time indicators brady-, ante-, pre-, pro-, post-, and re-. Macro- is a quantity prefix, not a time one. Dys- is a general prefix, not a quantity one. Post- is a time indicator, not a general prefix. Each wrong choice moves a real prefix into the neighboring group, so the category boundary, not the meaning alone, decides the item."
+   },
+   {
+    "id": "MT05003",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "All of the following prefixes belong to the time-indicator group EXCEPT:",
+    "options": [
+     "Ultra-",
+     "Ante-",
+     "Brady-",
+     "Post-"
+    ],
+    "correct": 0,
+    "explain": "Ultra- (beyond or excessive) is a quantity-of-measurement prefix. Ante- (before), brady- (slow), and post- (after or behind), together with pre-, pro-, tachy-, and re-, form the time-indicator group. The trap is that ultra- and the time prefixes all describe a kind of extent or order, so only the category header separates them."
+   },
+   {
+    "id": "MT05004",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "All of the following are general prefixes EXCEPT:",
+    "options": [
+     "Hemi-",
+     "Dys-",
+     "Eu-",
+     "Neo-"
+    ],
+    "correct": 0,
+    "explain": "Hemi- (half) is a quantity-of-measurement prefix. Dys- (painful, difficult, or faulty), eu- (good, normal, or true), and neo- (new), together with con-, syn-, and sym-, make up the general group. Hemi- is the subtle intrusion because a half can feel like a qualitative description rather than a count."
+   },
+   {
+    "id": "MT05005",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "All of the following are quantity-of-measurement prefixes EXCEPT:",
+    "options": [
+     "Re-",
+     "Oligo-",
+     "Pan-",
+     "Multi-"
+    ],
+    "correct": 0,
+    "explain": "Re- (again or back) is a time indicator. Oligo- (few or deficient), pan- (all), and multi- (many), together with bi-, hemi-, semi-, mono-, uni-, tri-, quadri-, macro-, micro-, hyper-, hypo-, super-, supra-, poly-, and ultra-, form the quantity group. Re- is the easy-to-miss exception because again can be misread as a count of repetitions."
+   },
+   {
+    "id": "MT05006",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means two or both?",
+    "options": [
+     "Bi-",
+     "Hemi-",
+     "Semi-",
+     "Mono-"
+    ],
+    "correct": 0,
+    "explain": "Bi- means two or both, as in bilateral. Hemi- and semi- mean half, and mono- means one."
+   },
+   {
+    "id": "MT05007",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which two prefixes both mean half?",
+    "options": [
+     "Bi- and Tri-",
+     "Hemi- and Semi-",
+     "Hyper- and Hypo-",
+     "Mono- and Uni-"
+    ],
+    "correct": 1,
+    "explain": "Hemi- and semi- both mean half, as in hemicephalalgia (a one-sided headache) and in the semicircular form of a half-structure. Bi- means two, tri- means three, hyper- and hypo- mean above and below, and mono- and uni- mean one."
+   },
+   {
+    "id": "MT05008",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means above or excessive?",
+    "options": [
+     "Hypo-",
+     "Hyper-",
+     "Oligo-",
+     "Pan-"
+    ],
+    "correct": 1,
+    "explain": "Hyper- means above or excessive, as in hyperproteinemia, an excess of protein in the blood. Hypo- means below or deficient, oligo- means few or deficient, and pan- means all."
+   },
+   {
+    "id": "MT05009",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means below or deficient?",
+    "options": [
+     "Hyper-",
+     "Hypo-",
+     "Super-",
+     "Ultra-"
+    ],
+    "correct": 1,
+    "explain": "Hypo- means below or deficient, as in hypoxia, a deficient amount of oxygen. Hyper-, super-, and supra- mean above or excessive; ultra- means beyond or excessive."
+   },
+   {
+    "id": "MT05010",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means large or long?",
+    "options": [
+     "Micro-",
+     "Macro-",
+     "Oligo-",
+     "Poly-"
+    ],
+    "correct": 1,
+    "explain": "Macro- means large or long, as in macrosomic, describing an unusually large body. Micro- means small, oligo- means few or deficient, and poly- means many."
+   },
+   {
+    "id": "MT05011",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means small?",
+    "options": [
+     "Macro-",
+     "Micro-",
+     "Multi-",
+     "Pan-"
+    ],
+    "correct": 1,
+    "explain": "Micro- means small, as in microscope, an instrument for viewing small objects. Macro- means large or long, multi- means many, and pan- means all."
+   },
+   {
+    "id": "MT05012",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which two prefixes both mean one?",
+    "options": [
+     "Mono- and Uni-",
+     "Bi- and Tri-",
+     "Hemi- and Semi-",
+     "Poly- and Multi-"
+    ],
+    "correct": 0,
+    "explain": "Mono- and uni- both mean one, as in monocyte (a white cell with a single nucleus) and uninuclear (having one nucleus). Bi- and tri- mean two and three, hemi- and semi- mean half, and poly- and multi- mean many."
+   },
+   {
+    "id": "MT05013",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means few or deficient?",
+    "options": [
+     "Pan-",
+     "Oligo-",
+     "Poly-",
+     "Multi-"
+    ],
+    "correct": 1,
+    "explain": "Oligo- means few or deficient, as in oligocholia (a deficient amount of bile) and oligodontia (a congenital shortage of teeth). Pan- means all, and poly- and multi- mean many."
+   },
+   {
+    "id": "MT05014",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means all?",
+    "options": [
+     "Oligo-",
+     "Pan-",
+     "Poly-",
+     "Bi-"
+    ],
+    "correct": 1,
+    "explain": "Pan- means all, as in panarthritis, inflammation affecting all the joints, and pancytopenia, a deficiency of all blood cell lines. Oligo- means few, poly- means many, and bi- means two."
+   },
+   {
+    "id": "MT05015",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which two prefixes both mean many?",
+    "options": [
+     "Poly- and Multi-",
+     "Pan- and Oligo-",
+     "Bi- and Tri-",
+     "Super- and Supra-"
+    ],
+    "correct": 0,
+    "explain": "Poly- and multi- both mean many, as in polymorphic (having many forms) and multinuclear (having many nuclei). Pan- means all and oligo- means few, bi- and tri- mean two and three, and super- and supra- mean above or excessive."
+   },
+   {
+    "id": "MT05016",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means four?",
+    "options": [
+     "Tri-",
+     "Quadri-",
+     "Bi-",
+     "Hemi-"
+    ],
+    "correct": 1,
+    "explain": "Quadri- means four, as in quadriplegia, paralysis of all four limbs. Tri- means three, bi- means two, and hemi- means half."
+   },
+   {
+    "id": "MT05017",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which two prefixes both mean above or excessive?",
+    "options": [
+     "Hyper- and Hypo-",
+     "Super- and Supra-",
+     "Oligo- and Pan-",
+     "Macro- and Micro-"
+    ],
+    "correct": 1,
+    "explain": "Super- and supra- both mean above or excessive, as in supernumerary, an extra tooth above the normal number. Hyper- also means above or excessive, while hypo- means below or deficient. Oligo- and pan- mean few and all, and macro- and micro- mean large and small."
+   },
+   {
+    "id": "MT05018",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means three?",
+    "options": [
+     "Bi-",
+     "Tri-",
+     "Quadri-",
+     "Hemi-"
+    ],
+    "correct": 1,
+    "explain": "Tri- means three, as in tricuspid valve, a valve with three points or cusps. Bi- means two, quadri- means four, and hemi- means half."
+   },
+   {
+    "id": "MT05019",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means beyond or excessive?",
+    "options": [
+     "Super-",
+     "Ultra-",
+     "Hyper-",
+     "Supra-"
+    ],
+    "correct": 1,
+    "explain": "Ultra- means beyond or excessive, as in ultrasonography, imaging with sound waves beyond the range of hearing. Super-, supra-, and hyper- mean above or excessive, a close sibling sense; ultra- stresses the crossing of a threshold rather than mere elevation."
+   },
+   {
+    "id": "MT05020",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Hyper- and hypo- are easy to transpose. Which pairing is correct?",
+    "options": [
+     "Hyper- means above or excessive; hypo- means below or deficient.",
+     "Hyper- means below or deficient; hypo- means above or excessive.",
+     "Both hyper- and hypo- mean above or excessive.",
+     "Both hyper- and hypo- mean below or deficient."
+    ],
+    "correct": 0,
+    "explain": "Hyper- means above or excessive (hyperproteinemia, an excess of protein in the blood), while hypo- means below or deficient (hypoxia, a deficiency of oxygen). The second option swaps the two senses; the third and fourth wrongly collapse the pair into a single meaning, ignoring the above-versus-below contrast on which they are built."
+   },
+   {
+    "id": "MT05021",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Macro- and micro- are easy to transpose. Which pairing is correct?",
+    "options": [
+     "Macro- means small; micro- means large or long.",
+     "Macro- means large or long; micro- means small.",
+     "Both macro- and micro- mean large or long.",
+     "Both macro- and micro- mean small."
+    ],
+    "correct": 1,
+    "explain": "Macro- means large or long (macrosomic, an unusually large body) and micro- means small (microscope, an instrument for viewing small objects). The first option swaps the senses; the third and fourth collapse the pair, but the size opposition is precisely what separates them."
+   },
+   {
+    "id": "MT05022",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which three prefixes all mean before?",
+    "options": [
+     "Ante-, Pre-, and Pro-",
+     "Post-, Re-, and Brady-",
+     "Hyper-, Hypo-, and Oligo-",
+     "Eu-, Neo-, and Dys-"
+    ],
+    "correct": 0,
+    "explain": "Ante-, pre-, and pro- all mean before, as in antenatal (before birth), premature (born before full term), and proabortion (before abortion). Post-, re-, and brady- mean after, again, and slow; the third group is a set of quantity prefixes; the fourth is a set of general prefixes."
+   },
+   {
+    "id": "MT05023",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means slow?",
+    "options": [
+     "Brady-",
+     "Tachy-",
+     "Post-",
+     "Re-"
+    ],
+    "correct": 0,
+    "explain": "Brady- means slow, as in bradypnea, abnormally slow breathing. Tachy- means fast, post- means after or behind, and re- means again or back."
+   },
+   {
+    "id": "MT05024",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means fast?",
+    "options": [
+     "Brady-",
+     "Tachy-",
+     "Post-",
+     "Re-"
+    ],
+    "correct": 1,
+    "explain": "Tachy- means fast, as in tachypnea, abnormally fast breathing. Brady- means slow, post- means after or behind, and re- means again or back."
+   },
+   {
+    "id": "MT05025",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means after or behind?",
+    "options": [
+     "Ante-",
+     "Pre-",
+     "Post-",
+     "Re-"
+    ],
+    "correct": 2,
+    "explain": "Post- means after or behind, as in postmortem, occurring after death. Ante- and pre- mean before, and re- means again or back."
+   },
+   {
+    "id": "MT05026",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means again or back?",
+    "options": [
+     "Re-",
+     "Post-",
+     "Pro-",
+     "Brady-"
+    ],
+    "correct": 0,
+    "explain": "Re- means again or back, as in recurrent (occurring again) and reinfection (an infection that returns). Post- means after or behind, pro- means before, and brady- means slow."
+   },
+   {
+    "id": "MT05027",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Brady- and tachy- are easy to transpose. Which pairing is correct?",
+    "options": [
+     "Brady- means fast; tachy- means slow.",
+     "Brady- means slow; tachy- means fast.",
+     "Both brady- and tachy- mean slow.",
+     "Both brady- and tachy- mean fast."
+    ],
+    "correct": 1,
+    "explain": "Brady- means slow (bradypnea) and tachy- means fast (tachypnea). The first option swaps them; the third and fourth collapse the pair. Because both are time indicators attached to the same root pnea, only the prefix distinguishes the rate."
+   },
+   {
+    "id": "MT05028",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which three prefixes all mean together or with?",
+    "options": [
+     "Con-, Syn-, and Sym-",
+     "Dys-, Eu-, and Neo-",
+     "Hyper-, Hypo-, and Oligo-",
+     "Ante-, Pre-, and Post-"
+    ],
+    "correct": 0,
+    "explain": "Con-, syn-, and sym- are three spellings of the same together-or-with prefix, chosen by the next letter: con- before g (congenital), syn- before d (syndactylism), sym- before b (symbiosis). Dys-, eu-, and neo- are other general prefixes, the third group is quantity, and the fourth is time."
+   },
+   {
+    "id": "MT05029",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means painful, difficult, or faulty?",
+    "options": [
+     "Eu-",
+     "Dys-",
+     "Neo-",
+     "Re-"
+    ],
+    "correct": 1,
+    "explain": "Dys- means painful, difficult, or faulty, as in dysuria (painful urination), dyspnea (difficult breathing), and dysfunction (faulty operation). Eu- means good, normal, or true; neo- means new; re- means again."
+   },
+   {
+    "id": "MT05030",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means good, normal, or true?",
+    "options": [
+     "Dys-",
+     "Eu-",
+     "Neo-",
+     "Pan-"
+    ],
+    "correct": 1,
+    "explain": "Eu- means good, normal, or true, as in eupnea (normal breathing) and euphoria (a good feeling). Dys- means painful, difficult, or faulty; neo- means new; pan- means all."
+   },
+   {
+    "id": "MT05031",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which prefix means new?",
+    "options": [
+     "Eu-",
+     "Dys-",
+     "Neo-",
+     "Re-"
+    ],
+    "correct": 2,
+    "explain": "Neo- means new, as in neonatal (pertaining to the newborn period) and neoplasia (abnormal new growth of cells). Eu- means good or normal, dys- means faulty or difficult, and re- means again."
+   },
+   {
+    "id": "MT05032",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "The together-or-with prefix appears in three spellings. Which statement correctly fixes the spelling to its context?",
+    "options": [
+     "Con- is used before g, syn- before d, and sym- before b or m.",
+     "Con- is used before d, syn- before g, and sym- before b or m.",
+     "Con- is used before b, syn- before g, and sym- before d.",
+     "Con-, syn-, and sym- are interchangeable and any spelling may precede any letter."
+    ],
+    "correct": 0,
+    "explain": "The three spellings of the together-or-with prefix are chosen for ease of pronunciation: con- before g (congenital), syn- before d (syndactylism), and sym- before b or m (symbiosis). The second and third options scramble these environments, and the fourth denies the letter-governed selection that is precisely what the three spellings encode."
+   },
+   {
+    "id": "MT05033",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In the term macrosomic (P+R+S), the element soma refers to what?",
+    "options": [
+     "Bile",
+     "A point",
+     "The body",
+     "The cell"
+    ],
+    "correct": 2,
+    "explain": "Soma means body, so macrosomic describes an unusually large body. In biology soma can also denote the cell body, and the root cyt means cell (monocyte, pancytopenia), so the body-versus-cell distinction is the real confusion to resolve here; bile (chole) and a point (cuspis) are different roots entirely."
+   },
+   {
+    "id": "MT05034",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In the term oligocholia (P+R+S), the element chole refers to what?",
+    "options": [
+     "Bile juice",
+     "Urine",
+     "Sugar",
+     "Oxygen"
+    ],
+    "correct": 0,
+    "explain": "Chole means bile juice, so oligocholia is a deficient amount of bile. Urine (ur, in oliguria and dysuria), sugar (glyc, in hypoglycemia), and oxygen (ox, in hypoxia) are each a substance whose amount a prefix describes, exactly as bile is here, so the four differ only in which substance the root names; chole is specifically bile."
+   },
+   {
+    "id": "MT05035",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In the term tricuspid valve (P+R), the element cuspis refers to what?",
+    "options": [
+     "A chamber that pumps blood",
+     "The muscular heart wall",
+     "A vessel carrying blood",
+     "A point or projection"
+    ],
+    "correct": 3,
+    "explain": "Cuspis means point or projection, so a tricuspid valve is one bearing three cusps or leaflets. Although the term concerns the heart, cuspis names the leaflet edge, not a chamber (the atria and ventricles), not the muscular wall (the myocardium), and not a blood vessel (the coronary or great vessels); each of those is a distinct heart structure, so the discrimination is anatomical."
+   },
+   {
+    "id": "MT05036",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In the term postmortem (P+R), the element mortalis refers to what?",
+    "options": [
+     "Death",
+     "Birth",
+     "Life",
+     "A joint"
+    ],
+    "correct": 0,
+    "explain": "Mortalis means death, so postmortem means after death. Birth is natus in neonatal, life is bio in symbiosis, and a joint is arthr in panarthritis. The pair to keep apart is mortalis (death) versus natus (birth), the two ends of the same timeline that post- and ante- respectively frame."
+   },
+   {
+    "id": "MT05037",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In bradypnea, tachypnea, eupnea, and dyspnea, the element pnea refers to what?",
+    "options": [
+     "Oxygen",
+     "Breathing",
+     "A nerve",
+     "The diaphragm"
+    ],
+    "correct": 1,
+    "explain": "Pnea means breathing, so the four terms differ only by prefix: brady- slow, tachy- fast, eu- normal, dys- difficult. Oxygen is what breathing delivers (hypoxia), the diaphragm is the muscle that drives it, and a nerve carries the brainstem signal that sets the rate; none of these is the act of breathing itself, which is what pnea denotes."
+   },
+   {
+    "id": "MT05038",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "In the term neonatal (P+R+S), the element natus refers to what?",
+    "options": [
+     "Form",
+     "The new",
+     "Birth",
+     "Life"
+    ],
+    "correct": 2,
+    "explain": "Natus means birth, so neonatal pertains to the newborn. The sense new belongs to the prefix neo- in this same word, so it is easy to misassign it to the root; life (bio, in symbiosis) and form (morph, in polymorphic) are other developmental or structural roots, but only natus gives birth."
+   },
+   {
+    "id": "MT05039",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term bilateral mean?",
+    "options": [
+     "Pertaining to both sides.",
+     "Pertaining to one side.",
+     "Pertaining to the middle.",
+     "Pertaining to the back."
+    ],
+    "correct": 0,
+    "explain": "Bilateral is built from bi- (two or both), later (side), and -al (pertaining to), so it means pertaining to both sides, as in a bilateral cleft lip. One side would use hemi- or uni-, the middle would use meso-, and the back would use retro-."
+   },
+   {
+    "id": "MT05040",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term hemicephalalgia mean?",
+    "options": [
+     "A one-sided migraine headache.",
+     "A headache affecting both sides of the head.",
+     "Inflammation of the head.",
+     "Enlargement of the head."
+    ],
+    "correct": 0,
+    "explain": "Hemicephalalgia is built from hemi- (half), cephal (head), and -algia (pain), so it denotes a one-sided headache. Both sides would be bilateral, inflammation would use -itis, and enlargement would use -megaly."
+   },
+   {
+    "id": "MT05041",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term hyperproteinemia mean?",
+    "options": [
+     "An excess of protein in the blood.",
+     "A deficiency of protein in the blood.",
+     "An excess of protein in the urine.",
+     "A deficiency of protein in the urine."
+    ],
+    "correct": 0,
+    "explain": "Hyperproteinemia is built from hyper- (above or excessive), protein, and -emia (blood condition), so it denotes excess protein in the blood. A deficiency would use hypo-, and a urine condition would use -uria."
+   },
+   {
+    "id": "MT05042",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term hypoxia mean?",
+    "options": [
+     "A deficient amount of oxygen.",
+     "An excess amount of oxygen.",
+     "A deficient amount of sugar.",
+     "An excess amount of sugar."
+    ],
+    "correct": 0,
+    "explain": "Hypoxia is built from hypo- (below or deficient), ox (oxygen), and -ia (condition of), so it denotes a deficient amount of oxygen. An excess of oxygen would use hyper-, and sugar conditions would use glyc (hypoglycemia and hyperglycemia)."
+   },
+   {
+    "id": "MT05043",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term microscope mean?",
+    "options": [
+     "An instrument for viewing small objects.",
+     "An instrument for viewing large objects.",
+     "An instrument for measuring temperature.",
+     "An instrument for examining the abdomen."
+    ],
+    "correct": 0,
+    "explain": "Microscope is built from micro- (small) and -scope (instrument for viewing), so it denotes an instrument for viewing small objects. Large would use macro-, temperature measurement would use -meter, and abdominal examination would use lapar/o with -scopy."
+   },
+   {
+    "id": "MT05044",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term monocyte mean?",
+    "options": [
+     "A white blood cell with a single nucleus.",
+     "A white blood cell with two nuclei.",
+     "A cell with many nuclei.",
+     "A cell without a nucleus."
+    ],
+    "correct": 0,
+    "explain": "Monocyte is built from mono- (one), cyt (cell), and -e, so it denotes a white blood cell with a single nucleus. Two nuclei would use bi-, many would use poly- or multi-, and without a nucleus would use a- with kary (akaryocyte)."
+   },
+   {
+    "id": "MT05045",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term uninuclear mean?",
+    "options": [
+     "Having one nucleus.",
+     "Having two nuclei.",
+     "Having many nuclei.",
+     "Having no nucleus."
+    ],
+    "correct": 0,
+    "explain": "Uninuclear is built from uni- (one), nucle (nucleus), and -ar (pertaining to), so it means having one nucleus. Two would use bi-, many would use multi- or poly-, and none would use a-."
+   },
+   {
+    "id": "MT05046",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term oligodontia mean?",
+    "options": [
+     "A congenital deficiency in the number of teeth.",
+     "An excess number of teeth.",
+     "Inflammation of the teeth.",
+     "A tumor of the teeth."
+    ],
+    "correct": 0,
+    "explain": "Oligodontia is built from oligo- (few or deficient), odont (tooth), and -ia (condition of), so it denotes a congenital deficiency in the number of teeth. An excess number would use hyper- or super- with odont (hyperdontia, supernumerary teeth), inflammation would use -itis, and a tumor would use -oma."
+   },
+   {
+    "id": "MT05047",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term panarthritis mean?",
+    "options": [
+     "Inflammation affecting all the joints.",
+     "Inflammation of a single joint.",
+     "Inflammation of the pancreas.",
+     "Inflammation of the whole body."
+    ],
+    "correct": 0,
+    "explain": "Panarthritis is built from pan- (all), arthr (joint), and -itis (inflammation), so it denotes inflammation affecting all the joints. A single joint would use mono-, pancreatic inflammation is pancreatitis, and whole-body inflammation would use a different construction with system-."
+   },
+   {
+    "id": "MT05048",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term polymorphic mean?",
+    "options": [
+     "Having many forms.",
+     "Having one form.",
+     "Having two forms.",
+     "Having no form."
+    ],
+    "correct": 0,
+    "explain": "Polymorphic is built from poly- (many), morph (form), and -ic (pertaining to), so it means having many forms. One form would use mono-, two would use bi-, and no form would use a-."
+   },
+   {
+    "id": "MT05049",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term multinuclear mean?",
+    "options": [
+     "Having many nuclei.",
+     "Having one nucleus.",
+     "Having two nuclei.",
+     "Having no nucleus."
+    ],
+    "correct": 0,
+    "explain": "Multinuclear is built from multi- (many), nucle (nucleus), and -ar (pertaining to), so it means having many nuclei. One nucleus would use uni-, two would use bi-, and none would use a-."
+   },
+   {
+    "id": "MT05050",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term quadriplegia mean?",
+    "options": [
+     "Paralysis of all four limbs.",
+     "Paralysis of one half of the body.",
+     "Paralysis of one limb.",
+     "Paralysis of two limbs."
+    ],
+    "correct": 0,
+    "explain": "Quadriplegia is built from quadri- (four) and -plegia (paralysis), so it denotes paralysis of all four limbs. One half of the body would use hemi- (hemiplegia), one limb would use mono-, and two limbs would use bi- or para-."
+   },
+   {
+    "id": "MT05051",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term supernumerary mean?",
+    "options": [
+     "Present in excess of the normal number; an extra tooth.",
+     "Present in fewer than the normal number.",
+     "Present in the normal number.",
+     "Absent altogether."
+    ],
+    "correct": 0,
+    "explain": "Supernumerary is built from super- (above or excessive), numer (number), and -ary (pertaining to), so it denotes an extra tooth or structure above the normal number, as in hyperdontia. Fewer would use oligo- or hypo-, and absent would use a-."
+   },
+   {
+    "id": "MT05052",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term ultrasonography mean?",
+    "options": [
+     "Recording or imaging using sound waves beyond the range of hearing.",
+     "Recording or imaging using sound waves within the range of hearing.",
+     "Recording or imaging using X-rays.",
+     "Recording or imaging using magnetic fields."
+    ],
+    "correct": 0,
+    "explain": "Ultrasonography is built from ultra- (beyond or excessive), son/o (sound), and -graphy (process of recording), so it denotes imaging with sound waves beyond the range of human hearing. Within the range would not carry the ultra- sense; X-ray imaging is radiography and magnetic imaging is MRI."
+   },
+   {
+    "id": "MT05053",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term antenatal mean?",
+    "options": [
+     "Occurring before birth.",
+     "Occurring after birth.",
+     "Occurring at birth.",
+     "Occurring during the newborn period."
+    ],
+    "correct": 0,
+    "explain": "Antenatal is built from ante- (before), nat (birth), and -al (pertaining to), so it means occurring before birth. After birth would use post-, and the newborn period would use neo- with nat (neonatal)."
+   },
+   {
+    "id": "MT05054",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term premature mean?",
+    "options": [
+     "Born before the full term of development.",
+     "Born after the full term of development.",
+     "Born at the full term of development.",
+     "Born with a congenital defect."
+    ],
+    "correct": 0,
+    "explain": "Premature is built from pre- (before) and mature, so it denotes a baby born before the full term of development. After full term would not carry pre-, full term is the normal expectation, and a congenital defect is a separate sense carried by con- with genit."
+   },
+   {
+    "id": "MT05055",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term proabortion mean?",
+    "options": [
+     "Medical termination of pregnancy.",
+     "Delivery of a full-term infant.",
+     "Surgical removal of the uterus.",
+     "A pregnancy that continues to term."
+    ],
+    "correct": 0,
+    "explain": "Proabortion is built from pro- (before) and abortion, so it denotes medical termination of pregnancy before the fetus can survive independently. Delivery at full term is the normal outcome, hysterectomy is removal of the uterus, and a pregnancy continuing to term is a different clinical course."
+   },
+   {
+    "id": "MT05056",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term bradypnea mean?",
+    "options": [
+     "Abnormally slow breathing.",
+     "Abnormally fast breathing.",
+     "Normal breathing.",
+     "Difficult breathing."
+    ],
+    "correct": 0,
+    "explain": "Bradypnea is built from brady- (slow) and -pnea (breathing), so it denotes abnormally slow breathing. Fast would use tachy-, normal would use eu-, and difficult would use dys-."
+   },
+   {
+    "id": "MT05057",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term tachypnea mean?",
+    "options": [
+     "Abnormally fast breathing.",
+     "Abnormally slow breathing.",
+     "Normal breathing.",
+     "Difficult breathing."
+    ],
+    "correct": 0,
+    "explain": "Tachypnea is built from tachy- (fast) and -pnea (breathing), so it denotes abnormally fast breathing. Slow would use brady-, normal would use eu-, and difficult would use dys-."
+   },
+   {
+    "id": "MT05058",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term recurrent mean?",
+    "options": [
+     "Returning or happening again.",
+     "Occurring for the first time.",
+     "Occurring continuously without interruption.",
+     "Occurring in a slow pattern."
+    ],
+    "correct": 0,
+    "explain": "Recurrent is built from re- (again or back) and current, so it means returning or happening again, as in recurrent herpes labialis, the recurring cold sore. First occurrence would not carry re-, continuous occurrence is a single uninterrupted event, and a slow pattern would use brady-."
+   },
+   {
+    "id": "MT05059",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term congenital mean?",
+    "options": [
+     "Present at birth.",
+     "Present only in the newborn period and disappearing afterward.",
+     "Present before birth only.",
+     "Present after birth only."
+    ],
+    "correct": 0,
+    "explain": "Congenital is built from con- (together or with), genit (born), and -al (pertaining to), so it means present at birth, as in congenital glaucoma. A condition that disappears after the newborn period, is confined to before birth, or appears only after birth each differs in timing or course from the sense of con- with genit."
+   },
+   {
+    "id": "MT05060",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term syndactylism mean?",
+    "options": [
+     "A condition of fused fingers or toes.",
+     "A condition of extra fingers or toes.",
+     "A condition of missing fingers or toes.",
+     "A condition of abnormally short fingers or toes."
+    ],
+    "correct": 0,
+    "explain": "Syndactylism is built from syn- (together), dactyl (finger or toe), and -ism (condition of), so it denotes fusion of adjacent digits. Extra digits would use poly- or hyper- with dactyl, missing digits would use oligo- with dactyl (oligodactyly), and short digits would use brachy- with dactyl."
+   },
+   {
+    "id": "MT05061",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term dysfunction mean?",
+    "options": [
+     "Impaired or faulty operation of an organ or system.",
+     "Normal operation of an organ or system.",
+     "Overactive operation of an organ or system.",
+     "Complete absence of function."
+    ],
+    "correct": 0,
+    "explain": "Dysfunction is built from dys- (faulty) and function, so it denotes impaired or faulty operation. Normal operation would use eu- with function, overactivity would use hyper-, and complete absence would use a- (afunction)."
+   },
+   {
+    "id": "MT05062",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term dyspnea mean?",
+    "options": [
+     "Difficult or labored breathing.",
+     "Normal breathing.",
+     "Fast breathing.",
+     "Slow breathing."
+    ],
+    "correct": 0,
+    "explain": "Dyspnea is built from dys- (difficult) and -pnea (breathing), so it denotes difficult or labored breathing. Normal would use eu-, fast would use tachy-, and slow would use brady-."
+   },
+   {
+    "id": "MT05063",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term dysuria mean?",
+    "options": [
+     "Painful or difficult urination.",
+     "Excessive urination.",
+     "Absence of urination.",
+     "Blood in the urine."
+    ],
+    "correct": 0,
+    "explain": "Dysuria is built from dys- (painful or difficult), ur (urine), and -ia (condition of), so it denotes painful or difficult urination. Excessive urination would use poly- with ur, absence would use a- with ur, and blood in the urine would use hem- with ur."
+   },
+   {
+    "id": "MT05064",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term dysplasia mean?",
+    "options": [
+     "Faulty development or abnormal formation of cells.",
+     "Normal development of cells.",
+     "Complete absence of cell development.",
+     "Abnormal and excessive new growth of cells."
+    ],
+    "correct": 0,
+    "explain": "Dysplasia is built from dys- (faulty), plasia (formation or development), so it denotes faulty or abnormal cell development. Normal development would use eu-, absence would use a-, and abnormal excessive new growth is neoplasia (neo- with plasia)."
+   },
+   {
+    "id": "MT05065",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term euphoria mean?",
+    "options": [
+     "A state of good or elevated feeling.",
+     "A state of depressed feeling.",
+     "A state of abnormal fear.",
+     "A state of indifference."
+    ],
+    "correct": 0,
+    "explain": "Euphoria is built from eu- (good, normal, or true), phor (bringing), and -ia (condition of), so it denotes a state of good or elevated feeling. Depressed feeling, abnormal fear, and indifference do not carry the eu- sense of good or normal."
+   },
+   {
+    "id": "MT05066",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term symbiosis mean?",
+    "options": [
+     "A relationship of living together between two organisms.",
+     "A condition of separate living between two organisms.",
+     "A condition of one organism living inside another.",
+     "A condition of one organism killing another."
+    ],
+    "correct": 0,
+    "explain": "Symbiosis is built from sym- (together or with), bio (life), and -sis (condition), so it denotes a relationship of living together between two organisms. Separate living, one inside another, and one killing another are different ecological relationships and do not carry the sym- sense of together."
+   },
+   {
+    "id": "MT05067",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term hypoglycemia mean?",
+    "options": [
+     "A deficient level of sugar in the blood.",
+     "An excessive level of sugar in the blood.",
+     "A deficient level of protein in the blood.",
+     "An excessive level of protein in the blood."
+    ],
+    "correct": 0,
+    "explain": "Hypoglycemia is built from hypo- (below or deficient), glyc (sugar), and -emia (blood condition), so it denotes a deficient level of blood sugar. An excess of sugar would use hyper- with glyc, and protein levels use protein with -emia (hyperproteinemia, hypoproteinemia)."
+   },
+   {
+    "id": "MT05068",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term pancytopenia mean?",
+    "options": [
+     "A deficiency of all types of blood cells.",
+     "An excess of all types of blood cells.",
+     "A deficiency of one type of blood cell.",
+     "An excess of one type of blood cell."
+    ],
+    "correct": 0,
+    "explain": "Pancytopenia is built from pan- (all), cyt (cell), and -penia (deficiency), so it denotes a deficiency of all blood cell lines. An excess would use -osis, a deficiency of one line would carry a specific prefix such as erythro- or leuko-, and an excess of one line would use the specific prefix with -osis."
+   },
+   {
+    "id": "MT05069",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term reinfection mean?",
+    "options": [
+     "An infection that occurs again after a previous one.",
+     "A first infection.",
+     "An infection that never resolves.",
+     "An infection confined to one site."
+    ],
+    "correct": 0,
+    "explain": "Reinfection is built from re- (again or back) and infection, so it denotes a return of infection after an earlier episode. A first infection would not carry re-, an unresolving infection is chronic rather than recurrent, and a single-site infection is localized."
+   },
+   {
+    "id": "MT05070",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term monotherapy mean?",
+    "options": [
+     "Treatment using a single agent.",
+     "Treatment using two agents.",
+     "Treatment using many agents.",
+     "Treatment using no agents."
+    ],
+    "correct": 0,
+    "explain": "Monotherapy is built from mono- (one) and -therapy (treatment), so it denotes treatment with a single agent. Two agents would use bi- with -therapy, many would use poly- with -therapy, and no agents is the absence of treatment."
+   },
+   {
+    "id": "MT05071",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "What does the term neoplasia mean?",
+    "options": [
+     "Abnormal and excessive new growth of cells.",
+     "Normal new growth of cells.",
+     "Faulty development of cells.",
+     "Absence of cell development."
+    ],
+    "correct": 0,
+    "explain": "Neoplasia is built from neo- (new), plasia (formation or growth), so it denotes abnormal and excessive new cell growth, the process behind cancer. Normal new growth would not carry the abnormal overtone of the clinical term, faulty development is dysplasia (dys- with plasia), and absence of development is aplasia (a- with plasia)."
+   },
+   {
+    "id": "MT05072",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each prefix to the category it belongs to: quantity of measurement, time indicator, or general prefix.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Bi-"
+     },
+     {
+      "id": "2",
+      "text": "Hyper-"
+     },
+     {
+      "id": "3",
+      "text": "Oligo-"
+     },
+     {
+      "id": "4",
+      "text": "Quadri-"
+     },
+     {
+      "id": "5",
+      "text": "Ultra-"
+     },
+     {
+      "id": "6",
+      "text": "Ante-"
+     },
+     {
+      "id": "7",
+      "text": "Brady-"
+     },
+     {
+      "id": "8",
+      "text": "Post-"
+     },
+     {
+      "id": "9",
+      "text": "Re-"
+     },
+     {
+      "id": "10",
+      "text": "Con-"
+     },
+     {
+      "id": "11",
+      "text": "Dys-"
+     },
+     {
+      "id": "12",
+      "text": "Eu-"
+     },
+     {
+      "id": "13",
+      "text": "Neo-"
+     },
+     {
+      "id": "14",
+      "text": "Hemi-"
+     },
+     {
+      "id": "15",
+      "text": "Macro-"
+     },
+     {
+      "id": "16",
+      "text": "Mono-"
+     },
+     {
+      "id": "17",
+      "text": "Pan-"
+     },
+     {
+      "id": "18",
+      "text": "Poly-"
+     },
+     {
+      "id": "19",
+      "text": "Super-"
+     },
+     {
+      "id": "20",
+      "text": "Tri-"
+     },
+     {
+      "id": "21",
+      "text": "Pre-"
+     },
+     {
+      "id": "22",
+      "text": "Tachy-"
+     },
+     {
+      "id": "23",
+      "text": "Syn-"
+     },
+     {
+      "id": "24",
+      "text": "Sym-"
+     },
+     {
+      "id": "25",
+      "text": "Hypo-"
+     },
+     {
+      "id": "26",
+      "text": "Micro-"
+     },
+     {
+      "id": "27",
+      "text": "Multi-"
+     },
+     {
+      "id": "28",
+      "text": "Semi-"
+     },
+     {
+      "id": "29",
+      "text": "Uni-"
+     },
+     {
+      "id": "30",
+      "text": "Supra-"
+     },
+     {
+      "id": "31",
+      "text": "Pro-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Quantity of measurement"
+     },
+     {
+      "id": "B",
+      "text": "Time indicator"
+     },
+     {
+      "id": "C",
+      "text": "General prefix"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "A",
+     "3": "A",
+     "4": "A",
+     "5": "A",
+     "6": "B",
+     "7": "B",
+     "8": "B",
+     "9": "B",
+     "10": "C",
+     "11": "C",
+     "12": "C",
+     "13": "C",
+     "14": "A",
+     "15": "A",
+     "16": "A",
+     "17": "A",
+     "18": "A",
+     "19": "A",
+     "20": "A",
+     "21": "B",
+     "22": "B",
+     "23": "C",
+     "24": "C",
+     "25": "A",
+     "26": "A",
+     "27": "A",
+     "28": "A",
+     "29": "A",
+     "30": "A",
+     "31": "B"
+    },
+    "explain": "Quantity of measurement states how many or how large: Bi- two, Hemi- and Semi- half, Hyper- and Hypo- above and below, Macro- large, Micro- small, Mono- and Uni- one, Oligo- few, Pan- all, Poly- and Multi- many, Quadri- four, Super- and Supra- above or excessive, Tri- three, and Ultra- beyond or excessive. Time indicators place the act in time or rate: Ante-, Pre-, and Pro- before; Brady- slow; Tachy- fast; Post- after or behind; and Re- again or back. General prefixes qualify the whole term in other ways: Con-, Syn-, and Sym- together or with; Dys- painful, difficult, or faulty; Eu- good, normal, or true; and Neo- new. The several look-alike pairs inside the quantity group, such as Hyper- with Hypo-, Macro- with Micro-, Mono- and Uni- with Bi-, Tri-, and Quadri-, Oligo- with Pan- and Poly-, and Super- and Supra- with Ultra-, are separated only by their specific senses, so the category header does not by itself decide the match."
+   },
+   {
+    "id": "MT05073",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each quantity prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Bi-"
+     },
+     {
+      "id": "2",
+      "text": "Hemi-, Semi-"
+     },
+     {
+      "id": "3",
+      "text": "Hyper-"
+     },
+     {
+      "id": "4",
+      "text": "Hypo-"
+     },
+     {
+      "id": "5",
+      "text": "Macro-"
+     },
+     {
+      "id": "6",
+      "text": "Micro-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Two or both"
+     },
+     {
+      "id": "B",
+      "text": "Half"
+     },
+     {
+      "id": "C",
+      "text": "Above or excessive"
+     },
+     {
+      "id": "D",
+      "text": "Below or deficient"
+     },
+     {
+      "id": "E",
+      "text": "Large or long"
+     },
+     {
+      "id": "F",
+      "text": "Small"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Bi- means two or both, as in bilateral. Hemi- and semi- mean half, as in hemicephalalgia. Hyper- means above or excessive, as in hyperproteinemia. Hypo- means below or deficient, as in hypoxia. Macro- means large or long, as in macrosomic. Micro- means small, as in microscope. Each prefix pairs with exactly one meaning."
+   },
+   {
+    "id": "MT05074",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each quantity prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Mono-, Uni-"
+     },
+     {
+      "id": "2",
+      "text": "Oligo-"
+     },
+     {
+      "id": "3",
+      "text": "Pan-"
+     },
+     {
+      "id": "4",
+      "text": "Poly-, Multi-"
+     },
+     {
+      "id": "5",
+      "text": "Quadri-"
+     },
+     {
+      "id": "6",
+      "text": "Tri-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "One"
+     },
+     {
+      "id": "B",
+      "text": "Few or deficient"
+     },
+     {
+      "id": "C",
+      "text": "All"
+     },
+     {
+      "id": "D",
+      "text": "Many"
+     },
+     {
+      "id": "E",
+      "text": "Four"
+     },
+     {
+      "id": "F",
+      "text": "Three"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Mono- and uni- both mean one, as in monocyte and uninuclear. Oligo- means few or deficient, as in oligocholia. Pan- means all, as in panarthritis. Poly- and multi- mean many, as in polymorphic and multinuclear. Quadri- means four, as in quadriplegia. Tri- means three, as in tricuspid. The pair Mono- and Uni- and the pair Poly- and Multi- each share a single sense; the four remaining prefixes each carry their own."
+   },
+   {
+    "id": "MT05075",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Super-, Supra-"
+     },
+     {
+      "id": "2",
+      "text": "Ultra-"
+     },
+     {
+      "id": "3",
+      "text": "Ante-, Pre-, Pro-"
+     },
+     {
+      "id": "4",
+      "text": "Brady-"
+     },
+     {
+      "id": "5",
+      "text": "Tachy-"
+     },
+     {
+      "id": "6",
+      "text": "Post-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Above or excessive"
+     },
+     {
+      "id": "B",
+      "text": "Beyond or excessive"
+     },
+     {
+      "id": "C",
+      "text": "Before"
+     },
+     {
+      "id": "D",
+      "text": "Slow"
+     },
+     {
+      "id": "E",
+      "text": "Fast"
+     },
+     {
+      "id": "F",
+      "text": "After or behind"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Super- and supra- mean above or excessive, as in supernumerary. Ultra- means beyond or excessive, as in ultrasonography, the sense closest to that of super- but stressing a threshold crossed rather than mere elevation. Ante-, pre-, and pro- all mean before, as in antenatal, premature, and proabortion. Brady- means slow, as in bradypnea. Tachy- means fast, as in tachypnea. Post- means after or behind, as in postmortem."
+   },
+   {
+    "id": "MT05076",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each prefix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Re-"
+     },
+     {
+      "id": "2",
+      "text": "Con-, Syn-, Sym-"
+     },
+     {
+      "id": "3",
+      "text": "Dys-"
+     },
+     {
+      "id": "4",
+      "text": "Eu-"
+     },
+     {
+      "id": "5",
+      "text": "Neo-"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Again or back"
+     },
+     {
+      "id": "B",
+      "text": "Together or with"
+     },
+     {
+      "id": "C",
+      "text": "Painful, difficult, or faulty"
+     },
+     {
+      "id": "D",
+      "text": "Good, normal, or true"
+     },
+     {
+      "id": "E",
+      "text": "New"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E"
+    },
+    "explain": "Re- means again or back, as in recurrent and reinfection. Con-, syn-, and sym- are three spellings of the same together-or-with prefix, chosen by the next letter: con- before g, syn- before d, sym- before b or m. Dys- means painful, difficult, or faulty, as in dysuria, dyspnea, and dysfunction. Eu- means good, normal, or true, as in eupnea and euphoria. Neo- means new, as in neonatal and neoplasia."
+   },
+   {
+    "id": "MT05077",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Bilateral"
+     },
+     {
+      "id": "2",
+      "text": "Hemicephalalgia"
+     },
+     {
+      "id": "3",
+      "text": "Hyperproteinemia"
+     },
+     {
+      "id": "4",
+      "text": "Hypoxia"
+     },
+     {
+      "id": "5",
+      "text": "Macrosomic"
+     },
+     {
+      "id": "6",
+      "text": "Microscope"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to both sides."
+     },
+     {
+      "id": "B",
+      "text": "A one-sided migraine headache."
+     },
+     {
+      "id": "C",
+      "text": "Excessive protein in the blood."
+     },
+     {
+      "id": "D",
+      "text": "A deficient amount of oxygen."
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to an unusually large or long body; a jumbo-sized baby."
+     },
+     {
+      "id": "F",
+      "text": "An instrument used for viewing small objects."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Bilateral is built from bi- (two or both), later (side), and -al (pertaining to). Hemicephalalgia is built from hemi- (half), cephal (head), and -algia (pain). Hyperproteinemia is built from hyper- (excessive), protein, and -emia (blood condition). Hypoxia is built from hypo- (deficient), ox (oxygen), and -ia (condition of). Macrosomic is built from macro- (large or long), som (body), and -ic (pertaining to). Microscope is built from micro- (small) and -scope (instrument for viewing). Each term is read from its prefix plus its root and suffix."
+   },
+   {
+    "id": "MT05078",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Monocyte"
+     },
+     {
+      "id": "2",
+      "text": "Uninuclear"
+     },
+     {
+      "id": "3",
+      "text": "Oligocholia"
+     },
+     {
+      "id": "4",
+      "text": "Oligodontia"
+     },
+     {
+      "id": "5",
+      "text": "Panarthritis"
+     },
+     {
+      "id": "6",
+      "text": "Polymorphic"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "A white blood cell with a single nucleus."
+     },
+     {
+      "id": "B",
+      "text": "Having one nucleus."
+     },
+     {
+      "id": "C",
+      "text": "A deficient amount of bile."
+     },
+     {
+      "id": "D",
+      "text": "A congenital deficiency in the number of teeth."
+     },
+     {
+      "id": "E",
+      "text": "Inflammation affecting all the joints."
+     },
+     {
+      "id": "F",
+      "text": "Having many forms."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Monocyte is built from mono- (one), cyt (cell), and -e. Uninuclear is built from uni- (one), nucle (nucleus), and -ar (pertaining to). Oligocholia is built from oligo- (few or deficient), chole (bile), and -ia (condition of). Oligodontia is built from oligo-, odont (tooth), and -ia (condition of). Panarthritis is built from pan- (all), arthr (joint), and -itis (inflammation). Polymorphic is built from poly- (many), morph (form), and -ic (pertaining to)."
+   },
+   {
+    "id": "MT05079",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Multinuclear"
+     },
+     {
+      "id": "2",
+      "text": "Quadriplegia"
+     },
+     {
+      "id": "3",
+      "text": "Supernumerary"
+     },
+     {
+      "id": "4",
+      "text": "Tricuspid valve"
+     },
+     {
+      "id": "5",
+      "text": "Ultrasonography"
+     },
+     {
+      "id": "6",
+      "text": "Antenatal"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Containing many nuclei."
+     },
+     {
+      "id": "B",
+      "text": "Paralysis of all four limbs."
+     },
+     {
+      "id": "C",
+      "text": "Present in excess of the normal number; an extra tooth."
+     },
+     {
+      "id": "D",
+      "text": "A heart valve having three points or cusps."
+     },
+     {
+      "id": "E",
+      "text": "Recording or imaging using sound waves beyond the range of hearing."
+     },
+     {
+      "id": "F",
+      "text": "Occurring before birth."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Multinuclear is built from multi- (many), nucle (nucleus), and -ar (pertaining to). Quadriplegia is built from quadri- (four) and -plegia (paralysis). Supernumerary is built from super- (above or excessive), numer (number), and -ary (pertaining to). Tricuspid valve is built from tri- (three), cuspis (point), and -id, a valve with three cusps. Ultrasonography is built from ultra- (beyond), son/o (sound), and -graphy (recording). Antenatal is built from ante- (before), nat (birth), and -al (pertaining to)."
+   },
+   {
+    "id": "MT05080",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Premature"
+     },
+     {
+      "id": "2",
+      "text": "Proabortion"
+     },
+     {
+      "id": "3",
+      "text": "Bradypnea"
+     },
+     {
+      "id": "4",
+      "text": "Tachypnea"
+     },
+     {
+      "id": "5",
+      "text": "Postmortem"
+     },
+     {
+      "id": "6",
+      "text": "Recurrent"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Born before the full term of development."
+     },
+     {
+      "id": "B",
+      "text": "Medical termination of pregnancy."
+     },
+     {
+      "id": "C",
+      "text": "Abnormally slow breathing."
+     },
+     {
+      "id": "D",
+      "text": "Abnormally fast breathing."
+     },
+     {
+      "id": "E",
+      "text": "Occurring after death."
+     },
+     {
+      "id": "F",
+      "text": "Returning or happening again."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Premature is built from pre- (before) and mature. Proabortion is built from pro- (before) and abortion. Bradypnea is built from brady- (slow) and -pnea (breathing). Tachypnea is built from tachy- (fast) and -pnea. Postmortem is built from post- (after), mort (death), and -em. Recurrent is built from re- (again or back) and current."
+   },
+   {
+    "id": "MT05081",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Congenital"
+     },
+     {
+      "id": "2",
+      "text": "Syndactylism"
+     },
+     {
+      "id": "3",
+      "text": "Symbiosis"
+     },
+     {
+      "id": "4",
+      "text": "Dysfunction"
+     },
+     {
+      "id": "5",
+      "text": "Dyspnea"
+     },
+     {
+      "id": "6",
+      "text": "Dysuria"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Present at birth."
+     },
+     {
+      "id": "B",
+      "text": "A condition of fused fingers or toes."
+     },
+     {
+      "id": "C",
+      "text": "A relationship of living together between two organisms."
+     },
+     {
+      "id": "D",
+      "text": "Impaired or faulty operation of an organ or system."
+     },
+     {
+      "id": "E",
+      "text": "Difficult or labored breathing."
+     },
+     {
+      "id": "F",
+      "text": "Painful or difficult urination."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Congenital is built from con- (together or with), genit (born), and -al (pertaining to). Syndactylism is built from syn- (together), dactyl (finger or toe), and -ism (condition of). Symbiosis is built from sym- (together), bio (life), and -sis (condition). Dysfunction is built from dys- (faulty) and function. Dyspnea is built from dys- (difficult) and -pnea (breathing). Dysuria is built from dys- (painful or difficult), ur (urine), and -ia (condition of). The three together-or-with spellings are fixed by the following letter: con- before g, syn- before d, sym- before b."
+   },
+   {
+    "id": "MT05082",
+    "type": "matching",
+    "cat": "MT_lec5",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Dysplasia"
+     },
+     {
+      "id": "2",
+      "text": "Euphoria"
+     },
+     {
+      "id": "3",
+      "text": "Eupnea"
+     },
+     {
+      "id": "4",
+      "text": "Neonatal"
+     },
+     {
+      "id": "5",
+      "text": "Neoplasia"
+     },
+     {
+      "id": "6",
+      "text": "Pancytopenia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Faulty development or abnormal formation of cells."
+     },
+     {
+      "id": "B",
+      "text": "A state of good or elevated feeling."
+     },
+     {
+      "id": "C",
+      "text": "Normal and quiet breathing."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to the newborn period."
+     },
+     {
+      "id": "E",
+      "text": "Abnormal and excessive new growth of cells."
+     },
+     {
+      "id": "F",
+      "text": "A deficiency of all types of blood cells."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Dysplasia is built from dys- (faulty) and plasia (formation or development). Euphoria is built from eu- (good), phor (bringing), and -ia (condition of). Eupnea is built from eu- (good or normal) and -pnea (breathing). Neonatal is built from neo- (new), nat (birth), and -al (pertaining to). Neoplasia is built from neo- (new) and plasia (formation or growth), abnormal excessive cell growth. Pancytopenia is built from pan- (all), cyt (cell), and -penia (deficiency)."
+   },
+   {
+    "id": "MT05083",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which statement correctly explains why the suffix -pnea can follow so many prefixes?",
+    "options": [
+     "Pnea means breathing, so brady-, tachy-, eu-, and dys- each adjust the rate or quality of one shared act.",
+     "Pnea means oxygen, so brady-, tachy-, eu-, and dys- each adjust the amount of one shared gas.",
+     "Pnea means lung, so brady-, tachy-, eu-, and dys- each adjust the size of one shared organ.",
+     "Pnea means nerve, so brady-, tachy-, eu-, and dys- each adjust the speed of one shared signal."
+    ],
+    "correct": 0,
+    "explain": "Pnea means breathing, so the four terms bradypnea, tachypnea, eupnea, and dyspnea name the slow, fast, normal, and difficult forms of one shared act. Oxygen is what breathing delivers (hypoxia), the lung is the organ where breathing occurs, and the nerve only carries the signal that drives it; none of those is the act itself, which is what pnea denotes."
+   },
+   {
+    "id": "MT05084",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which statement correctly distinguishes -plegia from -pnea?",
+    "options": [
+     "Both suffixes mean paralysis.",
+     "-plegia means paralysis, while -pnea means breathing.",
+     "-plegia means breathing, while -pnea means paralysis.",
+     "-plegia means pain, while -pnea means formation."
+    ],
+    "correct": 1,
+    "explain": "-plegia means paralysis (hemiplegia, quadriplegia) and -pnea means breathing (bradypnea, tachypnea, dyspnea). The first option wrongly treats them as synonyms; the second reverses the pair; the third and fourth substitute senses (pain, formation) that belong to other suffixes."
+   },
+   {
+    "id": "MT05085",
+    "type": "mcq",
+    "cat": "MT_lec5",
+    "q": "Which statement correctly distinguishes -penia from -plasia?",
+    "options": [
+     "Both suffixes mean a deficiency of cells.",
+     "-penia means a deficiency, while -plasia means formation or development.",
+     "-penia means formation, while -plasia means a deficiency.",
+     "-penia means paralysis, while -plasia means a tumor."
+    ],
+    "correct": 1,
+    "explain": "-penia means a deficiency (pancytopenia, a deficiency of all blood cell lines) and -plasia means formation or development (dysplasia, faulty development of cells). The first option wrongly treats them as synonyms; the second reverses the pair; the third and fourth substitute senses (paralysis, tumor) that belong to -plegia and -oma."
+   }
+  ]
+ }
+}
