@@ -218,7 +218,7 @@
         {
           "id": "pt1",
           "title": "Periodic Test 1",
-          "subtitle": "5 lecture sets · 327 questions · choice & linking",
+          "subtitle": "8 lecture sets · 533 questions · choice & linking",
           "locked": false,
           "lectures": [
             {
@@ -253,6 +253,27 @@
               "id": "lec05",
               "title": "Lecture 5 – Prefixes (Part 2 of 2)",
               "bank": "banks/medterm/pt1/lecture-05.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec06",
+              "title": "Lecture 6 – Suffixes (Part 1 of 2)",
+              "bank": "banks/medterm/pt1/lecture-06.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec07",
+              "title": "Lecture 7 – Suffixes (Part 2 of 2)",
+              "bank": "banks/medterm/pt1/lecture-07.json",
+              "status": "ready",
+              "draft": false
+            },
+            {
+              "id": "lec08",
+              "title": "Lecture 8 – Combining Form (Part 1)",
+              "bank": "banks/medterm/pt1/lecture-08.json",
               "status": "ready",
               "draft": false
             }

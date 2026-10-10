@@ -27,7 +27,7 @@ function matchRightId(i){
 function normalizeMatching(q){
   if(!q || !isMatching(q)) return q;
   if(Array.isArray(q.leftItems) && Array.isArray(q.rightItems) && q.correct_pairs && typeof q.correct_pairs==='object'){
-    return q;
+    return mergeDuplicateRights(q);
   }
   const left=Array.isArray(q.left)?q.left:(Array.isArray(q.prompts)?q.prompts:[]);
   const options=Array.isArray(q.options)?q.options:(Array.isArray(q.right)?q.right:(Array.isArray(q.responses)?q.responses:[]));
@@ -39,6 +39,19 @@ function normalizeMatching(q){
   correct.forEach((optIdx,i)=>{ pairs[String(i+1)]=matchRightId(optIdx); });
   q.correct_pairs=pairs;
   q.type=q.type||'matching';
+  return mergeDuplicateRights(q);
+}
+/** Two right-hand items with the same text (e.g. "Pain" for -algia and -dynia) are one answer:
+ *  show it once and let every matching term link to it (many-to-one). The bank file is untouched;
+ *  without this, linking to the "other" identical box would be marked wrong. Idempotent. */
+function mergeDuplicateRights(q){
+  if(!q || !Array.isArray(q.rightItems) || !q.correct_pairs) return q;
+  const key=t=>String(t==null?'':t).replace(/\s+/g,' ').trim().toLowerCase();
+  const keep={}, remap={}, items=[];
+  q.rightItems.forEach(it=>{ const k=key(it.text); if(k && keep[k]){ remap[it.id]=keep[k]; } else { if(k) keep[k]=it.id; items.push(it); } });
+  if(!Object.keys(remap).length) return q;
+  q.rightItems=items;
+  Object.keys(q.correct_pairs).forEach(l=>{ const r=q.correct_pairs[l]; if(remap[r]) q.correct_pairs[l]=remap[r]; });
   return q;
 }
 function normalizeBankMatching(data){

@@ -1,0 +1,1570 @@
+{
+ "id": "medterm-pt1-lec08",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 8 – Combining Form (Part 1)",
+ "formSize": 75,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "a8d64a6a605119d7e9159af1f545054055d60e47707302adda855dbf1ec9673a.json",
+  "title": "Lecture 8 - Combining Form Part 1",
+  "note": "Ids renamed to MT08xxx (unique across the portal). Content unchanged. Source formSize was 68; the set uses all 75 questions.",
+  "idMap": {
+   "MT10801": "MT08001",
+   "MT10802": "MT08002",
+   "MT10803": "MT08003",
+   "MT10804": "MT08004",
+   "MT10805": "MT08005",
+   "MT10806": "MT08006",
+   "MT10807": "MT08007",
+   "MT10808": "MT08008",
+   "MT10809": "MT08009",
+   "MT10810": "MT08010",
+   "MT10811": "MT08011",
+   "MT10812": "MT08012",
+   "MT10813": "MT08013",
+   "MT10814": "MT08014",
+   "MT10815": "MT08015",
+   "MT10816": "MT08016",
+   "MT10817": "MT08017",
+   "MT10818": "MT08018",
+   "MT10819": "MT08019",
+   "MT10820": "MT08020",
+   "MT10821": "MT08021",
+   "MT10822": "MT08022",
+   "MT10823": "MT08023",
+   "MT10824": "MT08024",
+   "MT10825": "MT08025",
+   "MT10826": "MT08026",
+   "MT10827": "MT08027",
+   "MT10828": "MT08028",
+   "MT10829": "MT08029",
+   "MT10830": "MT08030",
+   "MT10831": "MT08031",
+   "MT10832": "MT08032",
+   "MT10833": "MT08033",
+   "MT10834": "MT08034",
+   "MT10835": "MT08035",
+   "MT10836": "MT08036",
+   "MT10837": "MT08037",
+   "MT10838": "MT08038",
+   "MT10839": "MT08039",
+   "MT10840": "MT08040",
+   "MT10841": "MT08041",
+   "MT10842": "MT08042",
+   "MT10843": "MT08043",
+   "MT10844": "MT08044",
+   "MT10845": "MT08045",
+   "MT10846": "MT08046",
+   "MT10847": "MT08047",
+   "MT10848": "MT08048",
+   "MT10849": "MT08049",
+   "MT10850": "MT08050",
+   "MT10851": "MT08051",
+   "MT10852": "MT08052",
+   "MT10853": "MT08053",
+   "MT10854": "MT08054",
+   "MT10855": "MT08055",
+   "MT10856": "MT08056",
+   "MT10857": "MT08057",
+   "MT10858": "MT08058",
+   "MT10859": "MT08059",
+   "MT10860": "MT08060",
+   "MT10861": "MT08061",
+   "MT10862": "MT08062",
+   "MT10863": "MT08063",
+   "MT10864": "MT08064",
+   "MT10865": "MT08065",
+   "MT10866": "MT08066",
+   "MT10867": "MT08067",
+   "MT10868": "MT08068",
+   "MT10869": "MT08069",
+   "MT10870": "MT08070",
+   "MT10871": "MT08071",
+   "MT10872": "MT08072",
+   "MT10873": "MT08073",
+   "MT10874": "MT08074",
+   "MT10875": "MT08075"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT08001",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "In medical word building, what is a combining form?",
+    "options": [
+     "A root joined to a combining vowel, used to link word parts.",
+     "A suffix joined to a combining vowel, used to complete the meaning at the end of a root.",
+     "A prefix joined to a combining vowel, used to extend the meaning before the root.",
+     "Two roots joined directly by a consonant, used to bridge a term."
+    ],
+    "correct": 0,
+    "explain": "A combining form is a root plus a combining vowel, most often o, and it serves as the bridge that links a root to another root or to a consonant-initial suffix. A suffix or a prefix does not take a combining vowel, so the second and third options misattach the vowel to the wrong part, and two roots are joined by a combining vowel rather than by a consonant, so the fourth option states the opposite of the linking rule."
+   },
+   {
+    "id": "MT08002",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "A combining vowel is retained in a combining form under which condition?",
+    "options": [
+     "When it links a root to a vowel-initial suffix.",
+     "When it links a root to a consonant-initial suffix or to a second root.",
+     "When it links a prefix to a vowel-initial root.",
+     "When the root itself ends in a vowel."
+    ],
+    "correct": 1,
+    "explain": "The combining vowel o is kept to ease pronunciation when the next element begins with a consonant, whether that element is a suffix, as in hematology, or a second root, as in cardioangiography. Before a vowel-initial suffix the combining vowel is dropped, as in vasectomy, a prefix never carries a combining vowel, and a root ending in a vowel does not require one."
+   },
+   {
+    "id": "MT08003",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means blue?",
+    "options": [
+     "Erythr/o",
+     "Leuk/o",
+     "Cyan/o",
+     "Chlor/o"
+    ],
+    "correct": 2,
+    "explain": "Cyan/o means blue, as in cyanosis, the bluish discoloration of the skin or mucous membranes from insufficient oxygen. Erythr/o means red, Leuk/o means white, and Chlor/o means green."
+   },
+   {
+    "id": "MT08004",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means red?",
+    "options": [
+     "Cyan/o",
+     "Erythr/o",
+     "Melan/o",
+     "Chlor/o"
+    ],
+    "correct": 1,
+    "explain": "Erythr/o means red, as in erythrocyte, a red blood cell. Cyan/o means blue, Melan/o means black, and Chlor/o means green."
+   },
+   {
+    "id": "MT08005",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means white?",
+    "options": [
+     "Leuk/o",
+     "Cyan/o",
+     "Erythr/o",
+     "Melan/o"
+    ],
+    "correct": 0,
+    "explain": "Leuk/o means white, as in leukoderma, a condition of white patches on the skin. Cyan/o means blue, Erythr/o means red, and Melan/o means black."
+   },
+   {
+    "id": "MT08006",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means black?",
+    "options": [
+     "Chlor/o",
+     "Leuk/o",
+     "Melan/o",
+     "Cyan/o"
+    ],
+    "correct": 2,
+    "explain": "Melan/o means black, as in melanoma, a malignant tumor arising from pigment-producing cells. Chlor/o means green, Leuk/o means white, and Cyan/o means blue."
+   },
+   {
+    "id": "MT08007",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means green?",
+    "options": [
+     "Cyan/o",
+     "Chlor/o",
+     "Melan/o",
+     "Leuk/o"
+    ],
+    "correct": 1,
+    "explain": "Chlor/o means green, as in chloroma, a greenish tumor formed of immature white cells. Cyan/o means blue, Melan/o means black, and Leuk/o means white."
+   },
+   {
+    "id": "MT08008",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means air or gas?",
+    "options": [
+     "Lip/o",
+     "Hydr/o",
+     "Aer/o",
+     "Py/o"
+    ],
+    "correct": 2,
+    "explain": "Aer/o means air or gas, as in aerophagia, the condition of swallowing air. Lip/o means fat, Hydr/o means water, and Py/o means pus."
+   },
+   {
+    "id": "MT08009",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean blood?",
+    "options": [
+     "Ur/o and Urin/o",
+     "Nas/o and Rhin/o",
+     "Hem/o and Hemat/o",
+     "Pneum/o and Pneumon/o"
+    ],
+    "correct": 2,
+    "explain": "Hem/o and Hemat/o both mean blood, as in hematoma and hemorrhage. The other pairs are genuine same-meaning combinations but name different things: Ur/o and Urin/o mean urine, Nas/o and Rhin/o mean nose, and Pneum/o and Pneumon/o mean air or lung."
+   },
+   {
+    "id": "MT08010",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means water?",
+    "options": [
+     "Hydr/o",
+     "Aer/o",
+     "Lip/o",
+     "Py/o"
+    ],
+    "correct": 0,
+    "explain": "Hydr/o means water, as in hydrous, pertaining to or containing water. Aer/o means air or gas, Lip/o means fat, and Py/o means pus."
+   },
+   {
+    "id": "MT08011",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means fat?",
+    "options": [
+     "Py/o",
+     "Lip/o",
+     "Hydr/o",
+     "Aer/o"
+    ],
+    "correct": 1,
+    "explain": "Lip/o means fat, as in lipoid, resembling fat. Py/o means pus, Hydr/o means water, and Aer/o means air or gas."
+   },
+   {
+    "id": "MT08012",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means pus?",
+    "options": [
+     "Lip/o",
+     "Hydr/o",
+     "Py/o",
+     "Aer/o"
+    ],
+    "correct": 2,
+    "explain": "Py/o means pus, as in pyorrhea and pyogenic. Lip/o means fat, Hydr/o means water, and Aer/o means air or gas."
+   },
+   {
+    "id": "MT08013",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean urine?",
+    "options": [
+     "Hem/o and Hemat/o",
+     "Ur/o and Urin/o",
+     "Nas/o and Rhin/o",
+     "Nephr/o and Ren/o"
+    ],
+    "correct": 1,
+    "explain": "Ur/o and Urin/o both mean urine, as in urinoscopist and urology. Hem/o and Hemat/o mean blood, Nas/o and Rhin/o mean nose, and Nephr/o and Ren/o mean kidney."
+   },
+   {
+    "id": "MT08014",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean abdomen?",
+    "options": [
+     "Abdomin/o and Lapar/o",
+     "Col/o and Colon/o",
+     "Aden/o and Angi/o",
+     "Arthr/o and Cardi/o"
+    ],
+    "correct": 0,
+    "explain": "Abdomin/o and Lapar/o both mean abdomen, as in abdominothoracic and laparorrhaphy. Col/o and Colon/o mean colon, Aden/o means gland and Angi/o means vessel, and Arthr/o means joint and Cardi/o means heart."
+   },
+   {
+    "id": "MT08015",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means extremity or topmost?",
+    "options": [
+     "Acr/o",
+     "Aden/o",
+     "Arthr/o",
+     "Cephal/o"
+    ],
+    "correct": 0,
+    "explain": "Acr/o means extremity or topmost, as in acrodynia, pain in the extremities. Aden/o means gland, Arthr/o means joint, and Cephal/o means head."
+   },
+   {
+    "id": "MT08016",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means gland?",
+    "options": [
+     "Angi/o",
+     "Aden/o",
+     "Arthr/o",
+     "Acr/o"
+    ],
+    "correct": 1,
+    "explain": "Aden/o means gland, as in adenoma, a benign glandular tumor. Angi/o means vessel, Arthr/o means joint, and Acr/o means extremity or topmost."
+   },
+   {
+    "id": "MT08017",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which set consists entirely of combining forms that mean vessel?",
+    "options": [
+     "Abdomin/o and Lapar/o",
+     "Col/o and Colon/o",
+     "Nephr/o and Ren/o",
+     "Angi/o, Vas/o, and Vascul/o"
+    ],
+    "correct": 3,
+    "explain": "Angi/o, Vas/o, and Vascul/o all mean vessel, seen in angioplasty, vasectomy, and vasculitis. Abdomin/o and Lapar/o mean abdomen, Col/o and Colon/o mean colon, and Nephr/o and Ren/o mean kidney."
+   },
+   {
+    "id": "MT08018",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means joint?",
+    "options": [
+     "Arthr/o",
+     "Cardi/o",
+     "Hist/o",
+     "Aden/o"
+    ],
+    "correct": 0,
+    "explain": "Arthr/o means joint, as in arthrogram and arthritis. Cardi/o means heart, Hist/o means tissue, and Aden/o means gland."
+   },
+   {
+    "id": "MT08019",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means heart?",
+    "options": [
+     "Arthr/o",
+     "Cardi/o",
+     "Hist/o",
+     "Nephr/o"
+    ],
+    "correct": 1,
+    "explain": "Cardi/o means heart, as in cardioangiography and cardiomegaly. Arthr/o means joint, Hist/o means tissue, and Nephr/o means kidney."
+   },
+   {
+    "id": "MT08020",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means tissue?",
+    "options": [
+     "Oste/o",
+     "Aden/o",
+     "Arthr/o",
+     "Hist/o"
+    ],
+    "correct": 3,
+    "explain": "Hist/o means tissue, as in histology and histopathology. Oste/o means bone, Aden/o means gland, and Arthr/o means joint."
+   },
+   {
+    "id": "MT08021",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean nose?",
+    "options": [
+     "Nas/o and Rhin/o",
+     "Nephr/o and Ren/o",
+     "Pneum/o and Pneumon/o",
+     "Col/o and Colon/o"
+    ],
+    "correct": 0,
+    "explain": "Nas/o and Rhin/o both mean nose, as in nasal and rhinodynia. Nephr/o and Ren/o mean kidney, Pneum/o and Pneumon/o mean air or lung, and Col/o and Colon/o mean colon."
+   },
+   {
+    "id": "MT08022",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean kidney?",
+    "options": [
+     "Nas/o and Rhin/o",
+     "Nephr/o and Ren/o",
+     "Col/o and Colon/o",
+     "Pneum/o and Pneumon/o"
+    ],
+    "correct": 1,
+    "explain": "Nephr/o and Ren/o both mean kidney, as in nephralgia and renointestinal. Nas/o and Rhin/o mean nose, Col/o and Colon/o mean colon, and Pneum/o and Pneumon/o mean air or lung."
+   },
+   {
+    "id": "MT08023",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means nerve?",
+    "options": [
+     "Neur/o",
+     "Nephr/o",
+     "Or/o",
+     "Oste/o"
+    ],
+    "correct": 0,
+    "explain": "Neur/o means nerve, as in neurobiologist. Nephr/o means kidney, Or/o means mouth, and Oste/o means bone."
+   },
+   {
+    "id": "MT08024",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means mouth?",
+    "options": [
+     "Neur/o",
+     "Or/o",
+     "Oste/o",
+     "Cephal/o"
+    ],
+    "correct": 1,
+    "explain": "Or/o means mouth, as in orofacial. Neur/o means nerve, Oste/o means bone, and Cephal/o means head."
+   },
+   {
+    "id": "MT08025",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means bone?",
+    "options": [
+     "Arthr/o",
+     "Cardi/o",
+     "Oste/o",
+     "Hist/o"
+    ],
+    "correct": 2,
+    "explain": "Oste/o means bone, as in osteoarthritis. Arthr/o means joint, Cardi/o means heart, and Hist/o means tissue."
+   },
+   {
+    "id": "MT08026",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean air or lung?",
+    "options": [
+     "Nas/o and Rhin/o",
+     "Nephr/o and Ren/o",
+     "Pneum/o and Pneumon/o",
+     "Ur/o and Urin/o"
+    ],
+    "correct": 2,
+    "explain": "Pneum/o and Pneumon/o both mean air or lung, as in pneumonia and pneumonotomy. Nas/o and Rhin/o mean nose, Nephr/o and Ren/o mean kidney, and Ur/o and Urin/o mean urine."
+   },
+   {
+    "id": "MT08027",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which combining form means head?",
+    "options": [
+     "Cephal/o",
+     "Col/o",
+     "Or/o",
+     "Oste/o"
+    ],
+    "correct": 0,
+    "explain": "Cephal/o means head, as in cephalohematoma and cephalalgia. Col/o means colon, Or/o means mouth, and Oste/o means bone."
+   },
+   {
+    "id": "MT08028",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "Which two combining forms both mean colon?",
+    "options": [
+     "Aden/o and Angi/o",
+     "Col/o and Colon/o",
+     "Nephr/o and Ren/o",
+     "Pneum/o and Pneumon/o"
+    ],
+    "correct": 1,
+    "explain": "Col/o and Colon/o both mean colon, as in colitis, colonoscopy, colonostomy, and colonopathy. Aden/o means gland and Angi/o means vessel, Nephr/o and Ren/o mean kidney, and Pneum/o and Pneumon/o mean air or lung."
+   },
+   {
+    "id": "MT08029",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term cyanosis mean?",
+    "options": [
+     "A bluish discoloration of the skin or mucous membranes from insufficient oxygen.",
+     "A red blood cell.",
+     "A condition of white patches on the skin.",
+     "A malignant tumor arising from pigment-producing cells."
+    ],
+    "correct": 0,
+    "explain": "Cyanosis is built from Cyan/o (blue) and -osis (condition), so it denotes a bluish discoloration of the skin or mucous membranes from insufficient oxygen. A red blood cell is erythrocyte, white patches on the skin is leukoderma, and a malignant pigment tumor is melanoma."
+   },
+   {
+    "id": "MT08030",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term erythrocyte mean?",
+    "options": [
+     "A red blood cell.",
+     "A bluish discoloration of the skin.",
+     "A greenish tumor.",
+     "A white patch on the skin."
+    ],
+    "correct": 0,
+    "explain": "Erythrocyte is built from Erythr/o (red) and -cyte (cell), so it denotes a red blood cell. The vowel-initial -cyte in this word is preceded by the combining vowel o because the root is erythr and the suffix begins with the consonant c, so the form is CF+R+S. A bluish discoloration is cyanosis, a greenish tumor is chloroma, and a white patch is leukoderma."
+   },
+   {
+    "id": "MT08031",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term leukoderma mean?",
+    "options": [
+     "A condition of white patches on the skin.",
+     "A malignant tumor arising from pigment-producing cells.",
+     "A greenish tumor formed of immature white cells.",
+     "A bluish discoloration of the skin."
+    ],
+    "correct": 0,
+    "explain": "Leukoderma is built from Leuk/o (white) and derma (skin), so it denotes a condition of white patches on the skin. The element derma is a root rather than a suffix, so the term is two roots joined by the combining vowel o with no closing suffix, giving CF+R. A malignant pigment tumor is melanoma, a greenish tumor is chloroma, and a bluish discoloration is cyanosis."
+   },
+   {
+    "id": "MT08032",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term melanoma mean?",
+    "options": [
+     "A malignant tumor arising from pigment-producing cells.",
+     "A benign tumor of glandular tissue.",
+     "A greenish tumor formed of immature white cells.",
+     "A condition of white patches on the skin."
+    ],
+    "correct": 0,
+    "explain": "Melanoma is built from Melan/o (black) and -oma (tumor), so it denotes a malignant tumor arising from pigment-producing cells. The vowel-initial -oma drops the combining vowel o, so the form is R+S. A benign glandular tumor is adenoma, a greenish tumor is chloroma, and white patches on the skin is leukoderma."
+   },
+   {
+    "id": "MT08033",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term chloroma mean?",
+    "options": [
+     "A greenish tumor formed of immature white cells.",
+     "A malignant tumor arising from pigment-producing cells.",
+     "A condition of white patches on the skin.",
+     "A bluish discoloration of the skin."
+    ],
+    "correct": 0,
+    "explain": "Chloroma is built from Chlor/o (green) and -oma (tumor), so it denotes a greenish tumor formed of immature white cells. The vowel-initial -oma drops the combining vowel o, so the form is R+S. A malignant pigment tumor is melanoma, white patches is leukoderma, and a bluish discoloration is cyanosis."
+   },
+   {
+    "id": "MT08034",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term aerophagia mean?",
+    "options": [
+     "The condition of swallowing air.",
+     "Pertaining to or requiring oxygen.",
+     "A localized mass of blood outside the vessels.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Aerophagia is built from Aer/o (air), Phag/o (eat or swallow), and -ia (condition), so it denotes the condition of swallowing air. Pertaining to or requiring oxygen is aerobic, a blood mass is hematoma, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08035",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term aerobic mean?",
+    "options": [
+     "Pertaining to air or oxygen; requiring oxygen to live.",
+     "The condition of swallowing air.",
+     "Pertaining to or containing water.",
+     "Resembling fat."
+    ],
+    "correct": 0,
+    "explain": "Aerobic is built from Aer/o (air or gas) and -bic (pertaining to), so it denotes pertaining to air or oxygen, or requiring oxygen to live. The condition of swallowing air is aerophagia, pertaining to water is hydrous, and resembling fat is lipoid."
+   },
+   {
+    "id": "MT08036",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term hematoma mean?",
+    "options": [
+     "A localized mass or collection of blood outside the vessels.",
+     "The escape of blood by bursting forth.",
+     "A collection of blood under the scalp of a newborn.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Hematoma is built from Hemat/o (blood) and -oma (tumor or mass), so it denotes a localized mass or collection of blood outside the vessels. The vowel-initial -oma drops the combining vowel o, so the form is R+S. The escape of blood by bursting forth is hemorrhage, blood under a newborn's scalp is cephalohematoma, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08037",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term hemorrhage mean?",
+    "options": [
+     "The escape of blood by bursting forth; bleeding.",
+     "A localized mass of blood outside the vessels.",
+     "A collection of blood under the scalp of a newborn.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Hemorrhage is built from Hem/o (blood) and -rrhage (bursting forth), so it denotes the escape of blood by bursting forth. The consonant-initial -rrhage keeps the combining vowel o, so the form is CF+S. A localized blood mass is hematoma, blood under a newborn's scalp is cephalohematoma, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08038",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term hydrous mean?",
+    "options": [
+     "Pertaining to or containing water.",
+     "The process of removing water.",
+     "Accumulation of fluid within the cavities of the brain.",
+     "Resembling fat."
+    ],
+    "correct": 0,
+    "explain": "Hydrous is built from Hydr/o (water) and -ous (pertaining to), so it denotes pertaining to or containing water. The vowel-initial -ous drops the combining vowel o, so the form is R+S. Removing water is dehydrous, fluid in the brain cavities is hydrocephalus, and resembling fat is lipoid."
+   },
+   {
+    "id": "MT08039",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term dehydrous mean?",
+    "options": [
+     "The process of removing water.",
+     "Pertaining to or containing water.",
+     "Accumulation of fluid within the cavities of the brain.",
+     "A localized mass of blood outside the vessels."
+    ],
+    "correct": 0,
+    "explain": "Dehydrous is built from the prefix de- (removal), Hydr/o (water), and -ous (pertaining to), so it denotes the process of removing water. Pertaining to water is hydrous, fluid in the brain cavities is hydrocephalus, and a blood mass is hematoma."
+   },
+   {
+    "id": "MT08040",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term hydrocephalus mean?",
+    "options": [
+     "Accumulation of fluid within the cavities of the brain.",
+     "Pertaining to or containing water.",
+     "The process of removing water.",
+     "A record of origin or of family relationships."
+    ],
+    "correct": 0,
+    "explain": "Hydrocephalus is built from Hydr/o (water), cephal (head), and -us, so it denotes accumulation of fluid within the cavities of the brain. The o links the root hydr to the second root cephal, and the vowel-initial -us then leaves the second root bare, giving CF+R+S. Pertaining to water is hydrous, removing water is dehydrous, and a record of origin is genogram."
+   },
+   {
+    "id": "MT08041",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term lipoid mean?",
+    "options": [
+     "Resembling fat; having a fatty character.",
+     "Surgical removal of fat by suction.",
+     "Pertaining to or containing water.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Lipoid is built from Lip/o (fat) and -oid (resembling), so it denotes resembling fat. The vowel-initial -oid drops the combining vowel o, so the form is R+S. Removing fat by suction is liposuction, pertaining to water is hydrous, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08042",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term liposuction mean?",
+    "options": [
+     "Surgical removal of fat by suction.",
+     "Resembling fat.",
+     "Pertaining to or containing water.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Liposuction is built from Lip/o (fat) and suction (drawing out), so it denotes surgical removal of fat by suction. The consonant-initial element keeps the combining vowel o, so the form is CF+S. Resembling fat is lipoid, pertaining to water is hydrous, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08043",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term pyorrhea mean?",
+    "options": [
+     "A discharge of pus.",
+     "Producing pus.",
+     "A localized mass of blood outside the vessels.",
+     "Inflammation of a gland."
+    ],
+    "correct": 0,
+    "explain": "Pyorrhea is built from Py/o (pus) and -rrhea (discharge), so it denotes a discharge of pus. The consonant-initial -rrhea keeps the combining vowel o, so the form is CF+S. Producing pus is pyogenic, a blood mass is hematoma, and gland inflammation is adenitis."
+   },
+   {
+    "id": "MT08044",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term urinoscopist mean?",
+    "options": [
+     "One who examines urine.",
+     "One who specializes in the study of nerves.",
+     "One who examines the colon with an instrument.",
+     "One who studies the nature of disease."
+    ],
+    "correct": 0,
+    "explain": "Urinoscopist is built from Urin/o (urine) and -scopist (one who examines), so it denotes one who examines urine. The consonant-initial -scopist keeps the combining vowel o, so the form is CF+S. A nerve specialist is neurobiologist, one who examines the colon is a colonoscopist, and one who studies disease is pathobiologist."
+   },
+   {
+    "id": "MT08045",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term urinary mean?",
+    "options": [
+     "Pertaining to urine.",
+     "The study of urine and of the urinary tract.",
+     "One who examines urine.",
+     "A discharge of pus."
+    ],
+    "correct": 0,
+    "explain": "Urinary is built from Urin/o (urine) and -ary (pertaining to), so it denotes pertaining to urine. The vowel-initial -ary drops the combining vowel o, so the form is R+S. The study of urine is urology, one who examines urine is urinoscopist, and a discharge of pus is pyorrhea."
+   },
+   {
+    "id": "MT08046",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term urology mean?",
+    "options": [
+     "The study of urine and of the urinary tract.",
+     "Pertaining to urine.",
+     "One who examines urine.",
+     "A record of origin or of family relationships."
+    ],
+    "correct": 0,
+    "explain": "Urology is built from Ur/o (urine) and -logy (study), so it denotes the study of urine and of the urinary tract. The consonant-initial -logy keeps the combining vowel o, so the form is CF+S. Pertaining to urine is urinary, one who examines urine is urinoscopist, and a record of origin is genogram."
+   },
+   {
+    "id": "MT08047",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term laparorrhaphy mean?",
+    "options": [
+     "Suture of the abdominal wall.",
+     "Process of examining the abdomen with an instrument.",
+     "Pertaining to the abdomen and the chest.",
+     "Pain in the extremities."
+    ],
+    "correct": 0,
+    "explain": "Laparorrhaphy is built from Lapar/o (abdomen) and -rrhaphy (suture), so it denotes suture of the abdominal wall. The consonant-initial -rrhaphy keeps the combining vowel o, so the form is CF+S. Examining the abdomen is laparoscopy, pertaining to abdomen and chest is abdominothoracic, and pain in the extremities is acrodynia."
+   },
+   {
+    "id": "MT08048",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term abdominothoracic mean?",
+    "options": [
+     "Pertaining to the abdomen and the chest.",
+     "Suture of the abdominal wall.",
+     "Process of examining the abdomen with an instrument.",
+     "Pain in the extremities."
+    ],
+    "correct": 0,
+    "explain": "Abdominothoracic is built from Abdomin/o (abdomen), thorac (chest), and -ic (pertaining to), so it denotes pertaining to the abdomen and the chest. The o links the first root to the second root, giving CF+R+S. Suture of the abdominal wall is laparorrhaphy, examining the abdomen is laparoscopy, and pain in the extremities is acrodynia."
+   },
+   {
+    "id": "MT08049",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term laparoscopy mean?",
+    "options": [
+     "Process of examining the abdomen with an instrument.",
+     "Suture of the abdominal wall.",
+     "Pertaining to the abdomen and the chest.",
+     "Enlargement of the extremities."
+    ],
+    "correct": 0,
+    "explain": "Laparoscopy is built from Lapar/o (abdomen) and -scopy (process of examining), so it denotes the process of examining the abdomen with an instrument. The consonant-initial -scopy keeps the combining vowel o, so the form is CF+S. Suture of the abdominal wall is laparorrhaphy, pertaining to abdomen and chest is abdominothoracic, and enlargement of the extremities is acromegaly."
+   },
+   {
+    "id": "MT08050",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term acrodynia mean?",
+    "options": [
+     "Pain in the extremities.",
+     "Enlargement of the extremities.",
+     "Inflammation of a gland.",
+     "Disease of a gland."
+    ],
+    "correct": 0,
+    "explain": "Acrodynia is built from Acr/o (extremity) and -dynia (pain), so it denotes pain in the extremities. The consonant-initial -dynia keeps the combining vowel o, so the form is CF+S. Enlargement of the extremities is acromegaly, gland inflammation is adenitis, and gland disease is adenopathy."
+   },
+   {
+    "id": "MT08051",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term acromegaly mean?",
+    "options": [
+     "Enlargement of the extremities.",
+     "Pain in the extremities.",
+     "A benign tumor of glandular tissue.",
+     "Disease of a gland."
+    ],
+    "correct": 0,
+    "explain": "Acromegaly is built from Acr/o (extremity) and -megaly (enlargement), so it denotes enlargement of the extremities. The consonant-initial -megaly keeps the combining vowel o, so the form is CF+S. Pain in the extremities is acrodynia, a benign glandular tumor is adenoma, and gland disease is adenopathy."
+   },
+   {
+    "id": "MT08052",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term adenoma mean?",
+    "options": [
+     "A benign tumor of glandular tissue.",
+     "Inflammation of a gland.",
+     "Disease of a gland.",
+     "A malignant tumor arising from pigment-producing cells."
+    ],
+    "correct": 0,
+    "explain": "Adenoma is built from Aden/o (gland) and -oma (tumor), so it denotes a benign tumor of glandular tissue. The vowel-initial -oma drops the combining vowel o, so the form is R+S. Gland inflammation is adenitis, gland disease is adenopathy, and a malignant pigment tumor is melanoma."
+   },
+   {
+    "id": "MT08053",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term adenitis mean?",
+    "options": [
+     "Inflammation of a gland.",
+     "A benign tumor of glandular tissue.",
+     "Disease of a gland.",
+     "Inflammation of a joint."
+    ],
+    "correct": 0,
+    "explain": "Adenitis is built from Aden/o (gland) and -itis (inflammation), so it denotes inflammation of a gland. The vowel-initial -itis drops the combining vowel o, so the form is R+S. A benign glandular tumor is adenoma, gland disease is adenopathy, and joint inflammation is arthritis."
+   },
+   {
+    "id": "MT08054",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term adenopathy mean?",
+    "options": [
+     "Disease of a gland.",
+     "Inflammation of a gland.",
+     "A benign tumor of glandular tissue.",
+     "Pain in the extremities."
+    ],
+    "correct": 0,
+    "explain": "Adenopathy is built from Aden/o (gland) and -pathy (disease), so it denotes disease of a gland. The consonant-initial -pathy keeps the combining vowel o, so the form is CF+S. Gland inflammation is adenitis, a benign glandular tumor is adenoma, and pain in the extremities is acrodynia."
+   },
+   {
+    "id": "MT08055",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term angioplasty mean?",
+    "options": [
+     "Surgical repair of a blood vessel.",
+     "Inflammation of a blood vessel.",
+     "Dilation of a blood vessel.",
+     "Excision or removal of a vas deferens."
+    ],
+    "correct": 0,
+    "explain": "Angioplasty is built from Angi/o (vessel) and -plasty (surgical repair), so it denotes surgical repair of a blood vessel. The consonant-initial -plasty keeps the combining vowel o, so the form is CF+S. Vessel inflammation is vasculitis, vessel dilation is vasodilation, and removal of a vas deferens is vasectomy."
+   },
+   {
+    "id": "MT08056",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term vasectomy mean?",
+    "options": [
+     "Excision or removal of a vas deferens.",
+     "Surgical repair of a blood vessel.",
+     "Inflammation of a blood vessel.",
+     "Dilation of a blood vessel."
+    ],
+    "correct": 0,
+    "explain": "Vasectomy is built from Vas/o (vessel or duct) and -ectomy (excision), so it denotes excision or removal of a vas deferens. The vowel-initial -ectomy drops the combining vowel o, so the form is R+S. Vessel repair is angioplasty, vessel inflammation is vasculitis, and vessel dilation is vasodilation."
+   },
+   {
+    "id": "MT08057",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term vasculitis mean?",
+    "options": [
+     "Inflammation of a blood vessel.",
+     "Surgical repair of a blood vessel.",
+     "Dilation of a blood vessel.",
+     "Excision or removal of a vas deferens."
+    ],
+    "correct": 0,
+    "explain": "Vasculitis is built from Vascul/o (vessel) and -itis (inflammation), so it denotes inflammation of a blood vessel. The vowel-initial -itis drops the combining vowel o, so the form is R+S. Vessel repair is angioplasty, vessel dilation is vasodilation, and removal of a vas deferens is vasectomy."
+   },
+   {
+    "id": "MT08058",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term vasodilation mean?",
+    "options": [
+     "Dilation of a blood vessel.",
+     "Inflammation of a blood vessel.",
+     "Surgical repair of a blood vessel.",
+     "Excision or removal of a vas deferens."
+    ],
+    "correct": 0,
+    "explain": "Vasodilation is built from Vas/o (vessel) and dilation (widening), so it denotes dilation of a blood vessel. The consonant-initial dilation keeps the combining vowel o, so the form is CF+S. Vessel inflammation is vasculitis, vessel repair is angioplasty, and removal of a vas deferens is vasectomy."
+   },
+   {
+    "id": "MT08059",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term arthrogram mean?",
+    "options": [
+     "A record or image of a joint.",
+     "Inflammation of a joint.",
+     "Inflammation of bone and joint.",
+     "Inflammation of the colon."
+    ],
+    "correct": 0,
+    "explain": "Arthrogram is built from Arthr/o (joint) and -gram (record), so it denotes a record or image of a joint. The consonant-initial -gram keeps the combining vowel o, so the form is CF+S. Joint inflammation is arthritis, inflammation of bone and joint is osteoarthritis, and colon inflammation is colitis."
+   },
+   {
+    "id": "MT08060",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term arthritis mean?",
+    "options": [
+     "Inflammation of a joint.",
+     "A record or image of a joint.",
+     "Inflammation of bone and joint.",
+     "Inflammation of a gland."
+    ],
+    "correct": 0,
+    "explain": "Arthritis is built from Arthr/o (joint) and -itis (inflammation), so it denotes inflammation of a joint. The vowel-initial -itis drops the combining vowel o, so the form is R+S. A joint record is arthrogram, inflammation of bone and joint is osteoarthritis, and gland inflammation is adenitis."
+   },
+   {
+    "id": "MT08061",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term cardioangiography mean?",
+    "options": [
+     "Process of recording the heart and its blood vessels.",
+     "Enlargement of the heart.",
+     "Inflammation of bone and joint.",
+     "Process of examining the abdomen."
+    ],
+    "correct": 0,
+    "explain": "Cardioangiography is built from Cardi/o (heart), Angi/o (vessel), and -graphy (recording), so it denotes the process of recording the heart and its blood vessels. Two roots are joined by the combining vowel o, giving CF+CF+S. Enlargement of the heart is cardiomegaly, inflammation of bone and joint is osteoarthritis, and examining the abdomen is laparoscopy."
+   },
+   {
+    "id": "MT08062",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term cardiomegaly mean?",
+    "options": [
+     "Enlargement of the heart.",
+     "Process of recording the heart and its vessels.",
+     "A record or image of a joint.",
+     "Inflammation of a joint."
+    ],
+    "correct": 0,
+    "explain": "Cardiomegaly is built from Cardi/o (heart) and -megaly (enlargement), so it denotes enlargement of the heart. The consonant-initial -megaly keeps the combining vowel o, so the form is CF+S. Recording the heart and vessels is cardioangiography, a joint record is arthrogram, and joint inflammation is arthritis."
+   },
+   {
+    "id": "MT08063",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term histopathology mean?",
+    "options": [
+     "The study of disease in tissues.",
+     "The study of tissue.",
+     "A record of origin or of family relationships.",
+     "Death of tissue or cells."
+    ],
+    "correct": 0,
+    "explain": "Histopathology is built from Hist/o (tissue), Path/o (disease), and -logy (study), so it denotes the study of disease in tissues. Two roots are joined by the combining vowel o, giving CF+CF+S. The study of tissue alone is histology, a record of origin is genogram, and tissue death is necrosis."
+   },
+   {
+    "id": "MT08064",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term histology mean?",
+    "options": [
+     "The study of tissue.",
+     "The study of disease in tissues.",
+     "A record or image of a joint.",
+     "Inflammation of a gland."
+    ],
+    "correct": 0,
+    "explain": "Histology is built from Hist/o (tissue) and -logy (study), so it denotes the study of tissue. The consonant-initial -logy keeps the combining vowel o, so the form is CF+S. The study of disease in tissues is histopathology, a joint record is arthrogram, and gland inflammation is adenitis."
+   },
+   {
+    "id": "MT08065",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term nephralgia mean?",
+    "options": [
+     "Pain in the kidney.",
+     "Pertaining to the kidney and the intestine.",
+     "Inflammation of a joint.",
+     "A record or image of a joint."
+    ],
+    "correct": 0,
+    "explain": "Nephralgia is built from Nephr/o (kidney) and -algia (pain), so it denotes pain in the kidney. The vowel-initial -algia drops the combining vowel o, so the form is R+S. Pertaining to kidney and intestine is renointestinal, joint inflammation is arthritis, and a joint record is arthrogram."
+   },
+   {
+    "id": "MT08066",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term renointestinal mean?",
+    "options": [
+     "Pertaining to the kidney and the intestine.",
+     "Pain in the kidney.",
+     "The study of tissue.",
+     "Inflammation of the colon."
+    ],
+    "correct": 0,
+    "explain": "Renointestinal is built from Ren/o (kidney), intestin (intestine), and -al (pertaining to), so it denotes pertaining to the kidney and the intestine. The o links the first root to the second root, giving CF+R+S. Pain in the kidney is nephralgia, the study of tissue is histology, and colon inflammation is colitis."
+   },
+   {
+    "id": "MT08067",
+    "type": "mcq",
+    "cat": "MT_lec8",
+    "q": "What does the term neurobiologist mean?",
+    "options": [
+     "A specialist who studies the life and nature of nerves.",
+     "A specialist who studies the nature of disease.",
+     "A specialist who examines urine.",
+     "A specialist who studies tissue."
+    ],
+    "correct": 0,
+    "explain": "Neurobiologist is built from Neur/o (nerve), bi/o (life), and -logist (specialist), so it denotes a specialist who studies the life and nature of nerves. Two roots are joined by the combining vowel o, giving CF+CF+S. A specialist in the nature of disease is pathobiologist, one who examines urine is urinoscopist, and one who studies tissue is a histologist."
+   },
+   {
+    "id": "MT08068",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each combining form to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Cyan/o"
+     },
+     {
+      "id": "2",
+      "text": "Erythr/o"
+     },
+     {
+      "id": "3",
+      "text": "Leuk/o"
+     },
+     {
+      "id": "4",
+      "text": "Melan/o"
+     },
+     {
+      "id": "5",
+      "text": "Chlor/o"
+     },
+     {
+      "id": "6",
+      "text": "Aer/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Air or gas"
+     },
+     {
+      "id": "B",
+      "text": "White"
+     },
+     {
+      "id": "C",
+      "text": "Blue"
+     },
+     {
+      "id": "D",
+      "text": "Green"
+     },
+     {
+      "id": "E",
+      "text": "Black"
+     },
+     {
+      "id": "F",
+      "text": "Red"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "F",
+     "3": "B",
+     "4": "E",
+     "5": "D",
+     "6": "A"
+    },
+    "explain": "Cyan/o means blue, as in cyanosis. Erythr/o means red, as in erythrocyte. Leuk/o means white, as in leukoderma. Melan/o means black, as in melanoma. Chlor/o means green, as in chloroma. Aer/o means air or gas, as in aerophagia. The five color forms and the substance form are fixed to their meanings, and the right-hand entries avoid repeating the stem of each form so the match rests on recall."
+   },
+   {
+    "id": "MT08069",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each combining form to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hem/o, Hemat/o"
+     },
+     {
+      "id": "2",
+      "text": "Hydr/o"
+     },
+     {
+      "id": "3",
+      "text": "Lip/o"
+     },
+     {
+      "id": "4",
+      "text": "Py/o"
+     },
+     {
+      "id": "5",
+      "text": "Ur/o, Urin/o"
+     },
+     {
+      "id": "6",
+      "text": "Abdomin/o, Lapar/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Abdomen"
+     },
+     {
+      "id": "B",
+      "text": "Urine"
+     },
+     {
+      "id": "C",
+      "text": "Blood"
+     },
+     {
+      "id": "D",
+      "text": "Water"
+     },
+     {
+      "id": "E",
+      "text": "Pus"
+     },
+     {
+      "id": "F",
+      "text": "Fat"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "D",
+     "3": "F",
+     "4": "E",
+     "5": "B",
+     "6": "A"
+    },
+    "explain": "Hem/o and Hemat/o both mean blood, as in hematoma and hemorrhage. Hydr/o means water, as in hydrous. Lip/o means fat, as in lipoid. Py/o means pus, as in pyorrhea. Ur/o and Urin/o both mean urine, as in urinoscopist and urology. Abdomin/o and Lapar/o both mean abdomen, as in abdominothoracic and laparorrhaphy. The synonym bundles are noted so each pair is recognized as one meaning, and the six forms cover substances and one region."
+   },
+   {
+    "id": "MT08070",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each combining form to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Acr/o"
+     },
+     {
+      "id": "2",
+      "text": "Aden/o"
+     },
+     {
+      "id": "3",
+      "text": "Angi/o, Vas/o, Vascul/o"
+     },
+     {
+      "id": "4",
+      "text": "Arthr/o"
+     },
+     {
+      "id": "5",
+      "text": "Cardi/o"
+     },
+     {
+      "id": "6",
+      "text": "Hist/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Heart"
+     },
+     {
+      "id": "B",
+      "text": "Tissue"
+     },
+     {
+      "id": "C",
+      "text": "Joint"
+     },
+     {
+      "id": "D",
+      "text": "Extremity or topmost"
+     },
+     {
+      "id": "E",
+      "text": "Vessel"
+     },
+     {
+      "id": "F",
+      "text": "Gland"
+     }
+    ],
+    "correct_pairs": {
+     "1": "D",
+     "2": "F",
+     "3": "E",
+     "4": "C",
+     "5": "A",
+     "6": "B"
+    },
+    "explain": "Acr/o means extremity or topmost, as in acrodynia. Aden/o means gland, as in adenoma. Angi/o, Vas/o, and Vascul/o all mean vessel, as in angioplasty, vasectomy, and vasculitis. Arthr/o means joint, as in arthrogram. Cardi/o means heart, as in cardioangiography. Hist/o means tissue, as in histology. Each entry pairs with exactly one meaning, and the vessel entry bundles the three synonym spellings."
+   },
+   {
+    "id": "MT08071",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each combining form to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Nas/o, Rhin/o"
+     },
+     {
+      "id": "2",
+      "text": "Nephr/o, Ren/o"
+     },
+     {
+      "id": "3",
+      "text": "Neur/o"
+     },
+     {
+      "id": "4",
+      "text": "Or/o"
+     },
+     {
+      "id": "5",
+      "text": "Oste/o"
+     },
+     {
+      "id": "6",
+      "text": "Cephal/o"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Kidney"
+     },
+     {
+      "id": "B",
+      "text": "Nose"
+     },
+     {
+      "id": "C",
+      "text": "Bone"
+     },
+     {
+      "id": "D",
+      "text": "Head"
+     },
+     {
+      "id": "E",
+      "text": "Mouth"
+     },
+     {
+      "id": "F",
+      "text": "Nerve"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "A",
+     "3": "F",
+     "4": "E",
+     "5": "C",
+     "6": "D"
+    },
+    "explain": "Nas/o and Rhin/o both mean nose, as in nasal and rhinodynia. Nephr/o and Ren/o both mean kidney, as in nephralgia and renointestinal. Neur/o means nerve, as in neurobiologist. Or/o means mouth, as in orofacial. Oste/o means bone, as in osteoarthritis. Cephal/o means head, as in cephalohematoma. Each entry pairs with exactly one meaning, and the synonym bundles note the two spellings for nose and kidney."
+   },
+   {
+    "id": "MT08072",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Cyanosis"
+     },
+     {
+      "id": "2",
+      "text": "Erythrocyte"
+     },
+     {
+      "id": "3",
+      "text": "Leukoderma"
+     },
+     {
+      "id": "4",
+      "text": "Melanoma"
+     },
+     {
+      "id": "5",
+      "text": "Chloroma"
+     },
+     {
+      "id": "6",
+      "text": "Aerophagia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "A bluish discoloration of the skin or mucous membranes from insufficient oxygen."
+     },
+     {
+      "id": "B",
+      "text": "The condition of swallowing air."
+     },
+     {
+      "id": "C",
+      "text": "A condition of white patches on the skin."
+     },
+     {
+      "id": "D",
+      "text": "A greenish tumor formed of immature white cells."
+     },
+     {
+      "id": "E",
+      "text": "A red blood cell."
+     },
+     {
+      "id": "F",
+      "text": "A malignant tumor arising from pigment-producing cells."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "E",
+     "3": "C",
+     "4": "F",
+     "5": "D",
+     "6": "B"
+    },
+    "explain": "Cyanosis is a bluish discoloration from insufficient oxygen, built from Cyan/o and -osis. Erythrocyte is a red blood cell, built from Erythr/o and -cyte. Leukoderma is a condition of white patches on the skin, built from Leuk/o and derma as two roots. Melanoma is a malignant tumor of pigment-producing cells, built from Melan/o and -oma. Chloroma is a greenish tumor of immature white cells, built from Chlor/o and -oma. Aerophagia is the condition of swallowing air, built from Aer/o, Phag/o, and -ia. Each term is read from its combining form plus its suffix or second root."
+   },
+   {
+    "id": "MT08073",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Hematoma"
+     },
+     {
+      "id": "2",
+      "text": "Hemorrhage"
+     },
+     {
+      "id": "3",
+      "text": "Hydrous"
+     },
+     {
+      "id": "4",
+      "text": "Dehydrous"
+     },
+     {
+      "id": "5",
+      "text": "Hydrocephalus"
+     },
+     {
+      "id": "6",
+      "text": "Lipoid"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Accumulation of fluid within the cavities of the brain."
+     },
+     {
+      "id": "B",
+      "text": "A localized mass or collection of blood outside the vessels."
+     },
+     {
+      "id": "C",
+      "text": "The process of removing water."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to or containing water."
+     },
+     {
+      "id": "E",
+      "text": "The escape of blood by bursting forth; bleeding."
+     },
+     {
+      "id": "F",
+      "text": "Resembling fat; having a fatty character."
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "E",
+     "3": "D",
+     "4": "C",
+     "5": "A",
+     "6": "F"
+    },
+    "explain": "Hematoma is a localized blood mass, built from Hemat/o and -oma. Hemorrhage is the escape of blood by bursting forth, built from Hem/o and -rrhage. Hydrous pertains to or contains water, built from Hydr plus -ous. Dehydrous is the process of removing water, built from de-, Hydr, and -ous. Hydrocephalus is fluid in the brain cavities, built from Hydr/o, cephal, and -us. Lipoid resembles fat, built from Lip and -oid. Each term is read from its parts, and the vowel-initial suffixes drop the combining vowel while the consonant-initial ones keep it."
+   },
+   {
+    "id": "MT08074",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Liposuction"
+     },
+     {
+      "id": "2",
+      "text": "Pyorrhea"
+     },
+     {
+      "id": "3",
+      "text": "Pyogenic"
+     },
+     {
+      "id": "4",
+      "text": "Urinoscopist"
+     },
+     {
+      "id": "5",
+      "text": "Urinary"
+     },
+     {
+      "id": "6",
+      "text": "Urology"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to urine."
+     },
+     {
+      "id": "B",
+      "text": "Surgical removal of fat by suction."
+     },
+     {
+      "id": "C",
+      "text": "One who examines urine."
+     },
+     {
+      "id": "D",
+      "text": "A discharge of pus."
+     },
+     {
+      "id": "E",
+      "text": "The study of urine and of the urinary tract."
+     },
+     {
+      "id": "F",
+      "text": "Producing pus."
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "D",
+     "3": "F",
+     "4": "C",
+     "5": "A",
+     "6": "E"
+    },
+    "explain": "Liposuction is removal of fat by suction, built from Lip/o and suction. Pyorrhea is a discharge of pus, built from Py/o and -rrhea. Pyogenic means producing pus, built from Py/o and -genic. Urinoscopist is one who examines urine, built from Urin/o and -scopist. Urinary pertains to urine, built from Urin plus -ary. Urology is the study of urine and the urinary tract, built from Ur/o and -logy. The vowel-initial suffixes -ary and -genic drop the combining vowel while the consonant-initial -rrhea, -scopist, and -logy keep it."
+   },
+   {
+    "id": "MT08075",
+    "type": "matching",
+    "cat": "MT_lec8",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Laparorrhaphy"
+     },
+     {
+      "id": "2",
+      "text": "Abdominothoracic"
+     },
+     {
+      "id": "3",
+      "text": "Acrodynia"
+     },
+     {
+      "id": "4",
+      "text": "Acromegaly"
+     },
+     {
+      "id": "5",
+      "text": "Adenoma"
+     },
+     {
+      "id": "6",
+      "text": "Adenitis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Inflammation of a gland."
+     },
+     {
+      "id": "B",
+      "text": "Pain in the extremities."
+     },
+     {
+      "id": "C",
+      "text": "Suture of the abdominal wall."
+     },
+     {
+      "id": "D",
+      "text": "A benign tumor of glandular tissue."
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to the abdomen and the chest."
+     },
+     {
+      "id": "F",
+      "text": "Enlargement of the extremities."
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "E",
+     "3": "B",
+     "4": "F",
+     "5": "D",
+     "6": "A"
+    },
+    "explain": "Laparorrhaphy is suture of the abdominal wall, built from Lapar/o and -rrhaphy. Abdominothoracic pertains to abdomen and chest, built from Abdomin/o, thorac, and -ic. Acrodynia is pain in the extremities, built from Acr/o and -dynia. Acromegaly is enlargement of the extremities, built from Acr/o and -megaly. Adenoma is a benign glandular tumor, built from Aden/o and -oma. Adenitis is inflammation of a gland, built from Aden/o and -itis. The vowel-initial -oma and -itis drop the combining vowel while the consonant-initial -rrhaphy, -dynia, and -megaly keep it."
+   }
+  ]
+ }
+}

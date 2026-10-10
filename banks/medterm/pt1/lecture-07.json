@@ -1,0 +1,1617 @@
+{
+ "id": "medterm-pt1-lec07",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 7 – Suffixes (Part 2 of 2)",
+ "formSize": 64,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "8f6e19c74c580febf7fefab28e431c306864c087ffb73414e99195e86c96aff0.json",
+  "title": "Lecture 7 - Suffixes Part 2",
+  "note": "Ids renamed to MT07xxx (unique across the portal). Content unchanged. Source formSize was 52; the set uses all 64 questions.",
+  "idMap": {
+   "MT10701": "MT07001",
+   "MT10702": "MT07002",
+   "MT10703": "MT07003",
+   "MT10704": "MT07004",
+   "MT10705": "MT07005",
+   "MT10706": "MT07006",
+   "MT10707": "MT07007",
+   "MT10708": "MT07008",
+   "MT10709": "MT07009",
+   "MT10710": "MT07010",
+   "MT10711": "MT07011",
+   "MT10712": "MT07012",
+   "MT10713": "MT07013",
+   "MT10714": "MT07014",
+   "MT10715": "MT07015",
+   "MT10716": "MT07016",
+   "MT10717": "MT07017",
+   "MT10718": "MT07018",
+   "MT10719": "MT07019",
+   "MT10720": "MT07020",
+   "MT10721": "MT07021",
+   "MT10722": "MT07022",
+   "MT10723": "MT07023",
+   "MT10724": "MT07024",
+   "MT10725": "MT07025",
+   "MT10726": "MT07026",
+   "MT10727": "MT07027",
+   "MT10728": "MT07028",
+   "MT10729": "MT07029",
+   "MT10730": "MT07030",
+   "MT10731": "MT07031",
+   "MT10732": "MT07032",
+   "MT10733": "MT07033",
+   "MT10734": "MT07034",
+   "MT10735": "MT07035",
+   "MT10736": "MT07036",
+   "MT10737": "MT07037",
+   "MT10738": "MT07038",
+   "MT10739": "MT07039",
+   "MT10740": "MT07040",
+   "MT10741": "MT07041",
+   "MT10742": "MT07042",
+   "MT10743": "MT07043",
+   "MT10744": "MT07044",
+   "MT10745": "MT07045",
+   "MT10746": "MT07046",
+   "MT10747": "MT07047",
+   "MT10748": "MT07048",
+   "MT10749": "MT07049",
+   "MT10750": "MT07050",
+   "MT10751": "MT07051",
+   "MT10752": "MT07052",
+   "MT10753": "MT07053",
+   "MT10754": "MT07054",
+   "MT10755": "MT07055",
+   "MT10756": "MT07056",
+   "MT10757": "MT07057",
+   "MT10758": "MT07058",
+   "MT10759": "MT07059",
+   "MT10760": "MT07060",
+   "MT10761": "MT07061",
+   "MT10762": "MT07062",
+   "MT10763": "MT07063",
+   "MT10764": "MT07064"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT07001",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix is correctly matched to its functional category?",
+    "options": [
+     "-centesis : General",
+     "-ium : Adjective",
+     "-plasty : Surgical",
+     "-graphy : Adjective"
+    ],
+    "correct": 2,
+    "explain": "Suffixes sort by function into surgical, general (noun ending), adjective ending, and the remaining group covering recording, measuring, examining, study, and formation. -plasty names a surgical treatment, so it is a surgical suffix. -centesis is also surgical (puncture for aspiration), not general. -ium is a general noun ending (structure or tissue), not an adjective. -graphy belongs to the recording group (process of recording), not to the adjective endings."
+   },
+   {
+    "id": "MT07002",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which of the following is NOT a surgical suffix?",
+    "options": [
+     "-pexy",
+     "-rrhaphy",
+     "-centesis",
+     "-ation"
+    ],
+    "correct": 3,
+    "explain": "-pexy (suspension or fixation), -rrhaphy (suture), and -centesis (puncture for aspiration) all describe a surgical act and belong to the surgical set. -ation means process and is a general noun ending, as in dehydration, so it is the exception."
+   },
+   {
+    "id": "MT07003",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which group consists entirely of adjective endings meaning pertaining to or related to?",
+    "options": [
+     "-ia, -ism, -y, -ium",
+     "-gram, -graph, -graphy, -logy",
+     "-ac, -al, -ar, -ary",
+     "-tomy, -stomy, -centesis, -ectomy"
+    ],
+    "correct": 2,
+    "explain": "The adjective endings are -ac, -al, -ar, -ary, -eal, -ic, -ous, and -tic, all carrying the sense pertaining to or related to, as in cardiac, pedal, glandular, and pulmonary. The first group is the general noun endings (condition of, condition or process of, structure or tissue). The second group is the recording and study suffixes. The third group is the surgical set."
+   },
+   {
+    "id": "MT07004",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which pair of suffixes both denote a person who specializes?",
+    "options": [
+     "-logy and -graphy",
+     "-ist and -logist",
+     "-meter and -scope",
+     "-iatry and -poiesis"
+    ],
+    "correct": 1,
+    "explain": "-ist and -logist both name a person, as in dentist and biologist. -logy is the study and -graphy the process of recording, neither a person. -meter and -scope are instruments. -iatry is treatment and -poiesis is formation."
+   },
+   {
+    "id": "MT07005",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which surgical suffix is correctly matched to the action it names?",
+    "options": [
+     "-tomy : creation of an opening",
+     "-stomy : incision",
+     "-centesis : puncture for aspiration",
+     "-ectomy : suture"
+    ],
+    "correct": 2,
+    "explain": "-centesis means puncture for aspiration, as in paracentesis. The first two options swap the classic pair: -tomy means incision (laparotomy) and -stomy means creation of an opening (colostomy). -ectomy means excision or removal (hysterectomy), not suture; suture is -rrhaphy."
+   },
+   {
+    "id": "MT07006",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which surgical suffix is correctly matched to the action it names?",
+    "options": [
+     "-pexy : binding",
+     "-desis : suture",
+     "-rrhaphy : surgical repair",
+     "-plasty : surgical repair or reconstruction"
+    ],
+    "correct": 3,
+    "explain": "-plasty means surgical repair or reconstruction, as in rhinoplasty. The other three are the holding and joining suffixes, each misassigned here: -pexy means suspension or fixation (nephropexy), -desis means binding (arthrodesis), and -rrhaphy means suture (osteorrhaphy). Because all four describe securing or rebuilding tissue, the specific action must be recalled rather than guessed from the general idea of repair."
+   },
+   {
+    "id": "MT07007",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "-gram, -graph, and -graphy are distinguished as which, respectively?",
+    "options": [
+     "instrument for recording, record, process of recording",
+     "record, instrument for recording, process of recording",
+     "process of recording, instrument for recording, record",
+     "record, process of recording, instrument for recording"
+    ],
+    "correct": 1,
+    "explain": "-gram is the record itself, the output, as in sonogram. -graph is the instrument that makes the record, as in electrocardiograph. -graphy is the process of recording, as in radiography. The three are routinely rotated into one another, so the order record, instrument, process must be fixed to the suffixes -gram, -graph, -graphy respectively."
+   },
+   {
+    "id": "MT07008",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Terms such as thermometer, pharyngometry, microscope, endoscopy, and hemostasis pair an instrument with the process or state it produces. Which matching of suffix to sense is correct?",
+    "options": [
+     "-metry = instrument for measuring; -meter = process of measuring",
+     "-scope = process of examining; -scopy = instrument for examining",
+     "-meter = instrument for measuring; -metry = process of measuring",
+     "-stasis = instrument for examining; -scope = stop or stand"
+    ],
+    "correct": 2,
+    "explain": "-meter is the instrument (thermometer) and -metry the process of measuring (pharyngometry), so the third option is right and the first reverses them. The same instrument-then-process pattern holds for examination: -scope is the instrument (microscope) and -scopy the process (endoscopy), so the second option reverses those. -stasis means stop or stand (hemostasis), not an instrument, so the fourth option is wrong on both counts."
+   },
+   {
+    "id": "MT07009",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix denotes the study of a subject, rather than the specialist who practices it or the treatment it provides?",
+    "options": [
+     "-logist",
+     "-ist",
+     "-iatry",
+     "-logy"
+    ],
+    "correct": 3,
+    "explain": "-logy means study, as in cytopathology. -logist and -ist name the person who specializes (biologist, dentist), and -iatry, with -iatrics, names treatment (psychiatry, pediatrics). The study, the specialist, and the treatment are three different roles built on the same subject root, so only -logy carries the sense of study itself."
+   },
+   {
+    "id": "MT07010",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "General noun endings such as -ation and -ium form a noun, while adjective endings such as -ous and -al form an adjective. Which term is built with an adjective ending?",
+    "options": [
+     "Myocardium",
+     "Fibrous",
+     "Dehydration",
+     "Psychopathy"
+    ],
+    "correct": 1,
+    "explain": "Fibrous ends in -ous, an adjective ending meaning pertaining to, so it describes a quality of tissue. Myocardium ends in -ium (structure or tissue), dehydration in -ation (process), and psychopathy in -y (condition or process of); all three are noun endings, so each names a thing rather than a quality."
+   },
+   {
+    "id": "MT07011",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Hysterectomy is tagged R+S while arthrodesis is tagged CF+S. Which spelling rule accounts for the difference?",
+    "options": [
+     "-desis begins with a vowel so the combining vowel is dropped; -ectomy begins with a consonant so o is kept.",
+     "Both begin with consonants, but -ectomy drops o under the same-vowel rule.",
+     "Both keep o, but hyster- ends in a vowel.",
+     "-ectomy begins with a vowel so the combining vowel is dropped; -desis begins with a consonant so the combining vowel o is kept."
+    ],
+    "correct": 3,
+    "explain": "A consonant-final root plus a vowel-initial suffix takes no combining vowel, whereas a consonant-final root plus a consonant-initial suffix keeps the combining vowel o. The root hyster ends in a consonant and -ectomy opens with the vowel e, so no o appears and the form is R+S (hyster + ectomy). The root arthr ends in the consonant and -desis opens with the consonant d, so o is inserted and the form is CF+S (arthr/o + desis). The first option reverses which suffix is vowel-initial; the second misapplies the same-vowel rule, which needs identical vowels at the join; the third wrongly ties the drop to the root's ending letter."
+   },
+   {
+    "id": "MT07012",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Electrocardiograph is tagged CF+CF+S while radiography is tagged CF+S. Why does electrocardiograph carry two combining forms?",
+    "options": [
+     "Radiography joins two roots while electrocardiograph joins one.",
+     "Electrocardiograph joins two roots before the suffix, whereas radiography has a single root.",
+     "Both join two roots, but -graphy drops the second combining vowel.",
+     "The second combining form in electrocardiograph is the suffix -graph counted twice."
+    ],
+    "correct": 1,
+    "explain": "A combining form is a root plus a linking vowel, and a term shows two of them only when two roots are stacked before the suffix. Electrocardiograph is electr/o + cardi/o + -graph, two roots, hence CF+CF+S. Radiography is radi/o + -graphy, one root, hence CF+S. The first option reverses the counts; the third wrongly claims a dropped vowel, but -graphy opens with a consonant so its combining vowel is retained; the fourth mistakes the suffix -graph for a root."
+   },
+   {
+    "id": "MT07013",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In myocardium (CF+R+S), the element cardi refers to what?",
+    "options": [
+     "Muscle",
+     "Heart",
+     "Tissue",
+     "Chamber"
+    ],
+    "correct": 1,
+    "explain": "Cardi means heart, and my/o means muscle, so myocardium is the muscle tissue of the heart wall. The muscle option is the trap because my- already supplies that sense within the same word; tissue is the contribution of -ium, and chamber is a heart structure named by other roots, not by cardi."
+   },
+   {
+    "id": "MT07014",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In akaryocyte, tagged P+CF+R+S and glossed as a red blood cell, the element kary refers to what?",
+    "options": [
+     "Cell",
+     "Without",
+     "Nucleus",
+     "Formation"
+    ],
+    "correct": 2,
+    "explain": "Kary means nucleus. The word is built as a- (without) + kary/o (nucleus) + -cyte (cell), so an akaryocyte is a cell without a nucleus, and the red blood cell is the standard example of such a cell. The cell option is the contribution of -cyte and the without option of the prefix a-, so neither belongs to kary; formation is the sense of -poiesis, not of any part here."
+   },
+   {
+    "id": "MT07015",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In cytopathology (CF+CF+S), the element path refers to what?",
+    "options": [
+     "Disease",
+     "Cell",
+     "Study",
+     "Specialist"
+    ],
+    "correct": 0,
+    "explain": "Path means disease, so cytopathology is the study of disease at the cellular level. Cell is the sense of cyt/o, study is the sense of -logy, and specialist would be -logist or -ist; only path supplies the disease element that distinguishes cytopathology from cytology."
+   },
+   {
+    "id": "MT07016",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In hyperphonia (P+R+S), the element phon refers to what?",
+    "options": [
+     "Mind",
+     "Heart",
+     "Formation",
+     "Sound or voice"
+    ],
+    "correct": 3,
+    "explain": "Phon means sound or voice, so hyperphonia is an excessive condition of voice production. Mind is the sense of psych- (as in psychopathy), heart is cardi- (as in myocardium), and formation is -poiesis (as in hemopoiesis); each is a real element elsewhere in this set, so the discrimination rests on attaching phon specifically to sound or voice."
+   },
+   {
+    "id": "MT07017",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In psychopathy (CF+R+S), the element psych refers to what?",
+    "options": [
+     "Disease",
+     "Mind",
+     "Body",
+     "Cell"
+    ],
+    "correct": 1,
+    "explain": "Psych means mind, so psychopathy is a condition involving the mind. Disease is the sense of path (the other root in this very word), body is som- (as in macrosomic), and cell is cyt- (as in cytopenia); the trap is to give the disease sense to psych when it already belongs to path."
+   },
+   {
+    "id": "MT07018",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "In dehydration (P+R+S), the element hydr refers to what?",
+    "options": [
+     "Removal",
+     "Process",
+     "Water",
+     "Dry"
+    ],
+    "correct": 2,
+    "explain": "Hydr means water, so dehydration is the process of losing water. The dry option is the intuitive wrong answer because it reads the whole word's effect back onto the root; removal is the sense of the prefix de- and process is the sense of -ation, so neither belongs to hydr."
+   },
+   {
+    "id": "MT07019",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "-poiesis and -stasis mean which, respectively?",
+    "options": [
+     "Stop or stand; formation",
+     "Process of recording; instrument for recording",
+     "Formation; stop or stand",
+     "Study; specialist"
+    ],
+    "correct": 2,
+    "explain": "-poiesis means formation, as in hemopoiesis (the formation of blood cells), and -stasis means stop or stand, as in hemostasis (the stopping of bleeding). The first option reverses the pair. The second belongs to the recording suffixes -graphy and -graph, and the third to -logy and -logist, so neither describes formation or standing."
+   },
+   {
+    "id": "MT07020",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means surgical repair or reconstruction?",
+    "options": [
+     "-plasty",
+     "-pexy",
+     "-desis",
+     "-rrhaphy"
+    ],
+    "correct": 0,
+    "explain": "-plasty means surgical repair or reconstruction, as in rhinoplasty. -pexy means suspension or fixation, -desis means binding, and -rrhaphy means suture; each names a different surgical act even though all four belong to the surgical set."
+   },
+   {
+    "id": "MT07021",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means suspension or fixation?",
+    "options": [
+     "-plasty",
+     "-pexy",
+     "-desis",
+     "-rrhaphy"
+    ],
+    "correct": 1,
+    "explain": "-pexy means suspension or fixation, as in nephropexy. -plasty means surgical repair, -desis means binding, and -rrhaphy means suture; each names a different surgical act even though all four belong to the surgical set."
+   },
+   {
+    "id": "MT07022",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means binding?",
+    "options": [
+     "-plasty",
+     "-pexy",
+     "-desis",
+     "-rrhaphy"
+    ],
+    "correct": 2,
+    "explain": "-desis means binding, as in arthrodesis. -plasty means surgical repair, -pexy means suspension or fixation, and -rrhaphy means suture; each names a different surgical act even though all four belong to the surgical set."
+   },
+   {
+    "id": "MT07023",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means suture?",
+    "options": [
+     "-plasty",
+     "-pexy",
+     "-desis",
+     "-rrhaphy"
+    ],
+    "correct": 3,
+    "explain": "-rrhaphy means suture, as in osteorrhaphy. -plasty means surgical repair, -pexy means suspension or fixation, and -desis means binding; each names a different surgical act even though all four belong to the surgical set."
+   },
+   {
+    "id": "MT07024",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means incision?",
+    "options": [
+     "-tomy",
+     "-stomy",
+     "-centesis",
+     "-ectomy"
+    ],
+    "correct": 0,
+    "explain": "-tomy means incision, as in laparotomy. -stomy means creation of an opening, -centesis means puncture for aspiration, and -ectomy means excision; each names a distinct surgical act."
+   },
+   {
+    "id": "MT07025",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means creation of an opening?",
+    "options": [
+     "-tomy",
+     "-stomy",
+     "-centesis",
+     "-ectomy"
+    ],
+    "correct": 1,
+    "explain": "-stomy means creation of an opening, as in colostomy. -tomy means incision, -centesis means puncture for aspiration, and -ectomy means excision; each names a distinct surgical act."
+   },
+   {
+    "id": "MT07026",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means puncture for aspiration?",
+    "options": [
+     "-tomy",
+     "-stomy",
+     "-centesis",
+     "-ectomy"
+    ],
+    "correct": 2,
+    "explain": "-centesis means puncture for aspiration, as in paracentesis. -tomy means incision, -stomy means creation of an opening, and -ectomy means excision; each names a distinct surgical act."
+   },
+   {
+    "id": "MT07027",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means excision or removal?",
+    "options": [
+     "-tomy",
+     "-stomy",
+     "-centesis",
+     "-ectomy"
+    ],
+    "correct": 3,
+    "explain": "-ectomy means excision or removal, as in hysterectomy. -tomy means incision, -stomy means creation of an opening, and -centesis means puncture for aspiration; each names a distinct surgical act."
+   },
+   {
+    "id": "MT07028",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix is a general noun ending meaning process?",
+    "options": [
+     "-ation",
+     "-e",
+     "-ia",
+     "-ism"
+    ],
+    "correct": 0,
+    "explain": "-ation means process, as in dehydration. -e is a noun marker, and -ia and -ism both mean condition of."
+   },
+   {
+    "id": "MT07029",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which pair of general noun endings both mean condition of?",
+    "options": [
+     "-ation and -e",
+     "-ia and -ism",
+     "-y and -ium",
+     "-ac and -al"
+    ],
+    "correct": 1,
+    "explain": "-ia and -ism both mean condition of, as in hyperphonia and hyperthyroidism. -ation means process, -e is a noun marker, -y means condition or process of, and -ium means structure or tissue; -ac and -al are adjective endings meaning pertaining to."
+   },
+   {
+    "id": "MT07030",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which general noun ending means structure or tissue?",
+    "options": [
+     "-ation",
+     "-e",
+     "-y",
+     "-ium"
+    ],
+    "correct": 3,
+    "explain": "-ium means structure or tissue, as in myocardium. -ation means process, -e is a noun marker, and -y means condition or process of."
+   },
+   {
+    "id": "MT07031",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which general noun ending means condition or process of?",
+    "options": [
+     "-ation",
+     "-e",
+     "-y",
+     "-ium"
+    ],
+    "correct": 2,
+    "explain": "-y means condition or process of, as in psychopathy. -ation means process, -e is a noun marker, and -ium means structure or tissue."
+   },
+   {
+    "id": "MT07032",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix is a noun marker?",
+    "options": [
+     "-ation",
+     "-e",
+     "-ia",
+     "-ism"
+    ],
+    "correct": 1,
+    "explain": "-e is a noun marker, as in akaryocyte. -ation means process, and -ia and -ism both mean condition of."
+   },
+   {
+    "id": "MT07033",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in cardiac?",
+    "options": [
+     "-ac",
+     "-al",
+     "-ar",
+     "-ary"
+    ],
+    "correct": 0,
+    "explain": "-ac means pertaining to or related to, as in cardiac. -al, -ar, and -ary are also adjective endings with the same meaning, as in pedal, glandular, and pulmonary."
+   },
+   {
+    "id": "MT07034",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in pedal?",
+    "options": [
+     "-ac",
+     "-al",
+     "-ar",
+     "-ary"
+    ],
+    "correct": 1,
+    "explain": "-al means pertaining to or related to, as in pedal. -ac, -ar, and -ary are also adjective endings with the same meaning, as in cardiac, glandular, and pulmonary."
+   },
+   {
+    "id": "MT07035",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in glandular?",
+    "options": [
+     "-ac",
+     "-al",
+     "-ar",
+     "-ary"
+    ],
+    "correct": 2,
+    "explain": "-ar means pertaining to or related to, as in glandular. -ac, -al, and -ary are also adjective endings with the same meaning, as in cardiac, pedal, and pulmonary."
+   },
+   {
+    "id": "MT07036",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in pulmonary?",
+    "options": [
+     "-ac",
+     "-al",
+     "-ar",
+     "-ary"
+    ],
+    "correct": 3,
+    "explain": "-ary means pertaining to or related to, as in pulmonary. -ac, -al, and -ar are also adjective endings with the same meaning, as in cardiac, pedal, and glandular."
+   },
+   {
+    "id": "MT07037",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in esophageal?",
+    "options": [
+     "-eal",
+     "-ic",
+     "-ous",
+     "-tic"
+    ],
+    "correct": 0,
+    "explain": "-eal means pertaining to or related to, as in esophageal. -ic, -ous, and -tic are also adjective endings with the same meaning, as in toxic, fibrous, and cyanotic."
+   },
+   {
+    "id": "MT07038",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in toxic?",
+    "options": [
+     "-eal",
+     "-ic",
+     "-ous",
+     "-tic"
+    ],
+    "correct": 1,
+    "explain": "-ic means pertaining to or related to, as in toxic. -eal, -ous, and -tic are also adjective endings with the same meaning, as in esophageal, fibrous, and cyanotic."
+   },
+   {
+    "id": "MT07039",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in fibrous?",
+    "options": [
+     "-eal",
+     "-ic",
+     "-ous",
+     "-tic"
+    ],
+    "correct": 2,
+    "explain": "-ous means pertaining to or related to, as in fibrous. -eal, -ic, and -tic are also adjective endings with the same meaning, as in esophageal, toxic, and cyanotic."
+   },
+   {
+    "id": "MT07040",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which adjective ending means pertaining to or related to, as in cyanotic?",
+    "options": [
+     "-eal",
+     "-ic",
+     "-ous",
+     "-tic"
+    ],
+    "correct": 3,
+    "explain": "-tic means pertaining to or related to, as in cyanotic. -eal, -ic, and -ous are also adjective endings with the same meaning, as in esophageal, toxic, and fibrous."
+   },
+   {
+    "id": "MT07041",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means record?",
+    "options": [
+     "-gram",
+     "-graph",
+     "-graphy",
+     "-metry"
+    ],
+    "correct": 0,
+    "explain": "-gram means record, as in sonogram. -graph is the instrument for recording, -graphy is the process of recording, and -metry is the process of measuring."
+   },
+   {
+    "id": "MT07042",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means instrument for recording?",
+    "options": [
+     "-gram",
+     "-graph",
+     "-graphy",
+     "-metry"
+    ],
+    "correct": 1,
+    "explain": "-graph means instrument for recording, as in electrocardiograph. -gram is the record, -graphy is the process of recording, and -metry is the process of measuring."
+   },
+   {
+    "id": "MT07043",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means process of recording?",
+    "options": [
+     "-gram",
+     "-graph",
+     "-graphy",
+     "-metry"
+    ],
+    "correct": 2,
+    "explain": "-graphy means process of recording, as in radiography. -gram is the record, -graph is the instrument for recording, and -metry is the process of measuring."
+   },
+   {
+    "id": "MT07044",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means process of measuring?",
+    "options": [
+     "-meter",
+     "-metry",
+     "-scope",
+     "-scopy"
+    ],
+    "correct": 1,
+    "explain": "-metry means process of measuring, as in pharyngometry. -meter is the instrument for measuring, -scope is the instrument for examination, and -scopy is the process of examination."
+   },
+   {
+    "id": "MT07045",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means instrument for measuring?",
+    "options": [
+     "-meter",
+     "-metry",
+     "-scope",
+     "-scopy"
+    ],
+    "correct": 0,
+    "explain": "-meter means instrument for measuring, as in thermometer. -metry is the process of measuring, -scope is the instrument for examination, and -scopy is the process of examination."
+   },
+   {
+    "id": "MT07046",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means instrument for examination?",
+    "options": [
+     "-meter",
+     "-metry",
+     "-scope",
+     "-scopy"
+    ],
+    "correct": 2,
+    "explain": "-scope means instrument for examination, as in microscope. -meter is the instrument for measuring, -metry is the process of measuring, and -scopy is the process of examination."
+   },
+   {
+    "id": "MT07047",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means process of examination?",
+    "options": [
+     "-meter",
+     "-metry",
+     "-scope",
+     "-scopy"
+    ],
+    "correct": 3,
+    "explain": "-scopy means process of examination, as in endoscopy. -meter is the instrument for measuring, -metry is the process of measuring, and -scope is the instrument for examination."
+   },
+   {
+    "id": "MT07048",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means treatment?",
+    "options": [
+     "-iatry",
+     "-iatrics",
+     "-logy",
+     "-logist"
+    ],
+    "correct": 0,
+    "explain": "-iatry means treatment, as in psychiatry. -iatrics also means treatment, as in pediatrics; -logy means study, and -logist means one who specializes."
+   },
+   {
+    "id": "MT07049",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means study?",
+    "options": [
+     "-ist",
+     "-logy",
+     "-logist",
+     "-iatry"
+    ],
+    "correct": 1,
+    "explain": "-logy means study, as in cytopathology. -ist means one who specializes in, -logist means one who specializes, and -iatry means treatment."
+   },
+   {
+    "id": "MT07050",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means one who specializes?",
+    "options": [
+     "-ist",
+     "-logy",
+     "-logist",
+     "-iatry"
+    ],
+    "correct": 2,
+    "explain": "-logist means one who specializes, as in biologist. -ist means one who specializes in, -logy means study, and -iatry means treatment."
+   },
+   {
+    "id": "MT07051",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means formation?",
+    "options": [
+     "-poiesis",
+     "-stasis",
+     "-plasia",
+     "-trophy"
+    ],
+    "correct": 0,
+    "explain": "-poiesis means formation, as in hemopoiesis. -stasis means stop or stand, and -plasia and -trophy are related but distinct growth suffixes."
+   },
+   {
+    "id": "MT07052",
+    "type": "mcq",
+    "cat": "MT_lec7",
+    "q": "Which suffix means stop or stand?",
+    "options": [
+     "-poiesis",
+     "-stasis",
+     "-plasia",
+     "-trophy"
+    ],
+    "correct": 1,
+    "explain": "-stasis means stop or stand, as in hemostasis. -poiesis means formation, and -plasia and -trophy are related but distinct growth suffixes."
+   },
+   {
+    "id": "MT07053",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-centesis"
+     },
+     {
+      "id": "2",
+      "text": "-desis"
+     },
+     {
+      "id": "3",
+      "text": "-ectomy"
+     },
+     {
+      "id": "4",
+      "text": "-pexy"
+     },
+     {
+      "id": "5",
+      "text": "-plasty"
+     },
+     {
+      "id": "6",
+      "text": "-rrhaphy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Puncture for aspiration"
+     },
+     {
+      "id": "B",
+      "text": "Suture"
+     },
+     {
+      "id": "C",
+      "text": "Excision (removal)"
+     },
+     {
+      "id": "D",
+      "text": "Suspension or fixation"
+     },
+     {
+      "id": "E",
+      "text": "Binding"
+     },
+     {
+      "id": "F",
+      "text": "Surgical repair or reconstruction"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "E",
+     "3": "C",
+     "4": "D",
+     "5": "F",
+     "6": "B"
+    },
+    "explain": "The surgical suffixes name an act performed on the body. -centesis is puncture for aspiration, as in paracentesis. -desis is binding, as in arthrodesis. -ectomy is excision or removal, as in hysterectomy. -pexy is suspension or fixation, as in nephropexy. -plasty is surgical repair or reconstruction, as in rhinoplasty. -rrhaphy is suture, as in osteorrhaphy. Each suffix pairs with exactly one action, and the actions are distinct even though all belong to the surgical group."
+   },
+   {
+    "id": "MT07054",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-tomy"
+     },
+     {
+      "id": "2",
+      "text": "-stomy"
+     },
+     {
+      "id": "3",
+      "text": "-ation"
+     },
+     {
+      "id": "4",
+      "text": "-e"
+     },
+     {
+      "id": "5",
+      "text": "-ia"
+     },
+     {
+      "id": "6",
+      "text": "-ism"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Incision"
+     },
+     {
+      "id": "B",
+      "text": "Creation of an opening"
+     },
+     {
+      "id": "C",
+      "text": "Process"
+     },
+     {
+      "id": "D",
+      "text": "Condition of"
+     },
+     {
+      "id": "E",
+      "text": "Noun marker"
+     },
+     {
+      "id": "F",
+      "text": "Condition of"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "E",
+     "5": "D",
+     "6": "F"
+    },
+    "explain": "The surgical suffixes -tomy and -stomy are distinguished as incision (laparotomy) versus creation of an opening (colostomy). The general noun endings are -ation process (dehydration), -e noun marker (akaryocyte), and -ia and -ism both condition of (hyperphonia, hyperthyroidism). Note that -ia and -ism share a meaning and so map to the same right-hand sense, while -tomy and -stomy are distinct surgical acts."
+   },
+   {
+    "id": "MT07055",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-y"
+     },
+     {
+      "id": "2",
+      "text": "-ium"
+     },
+     {
+      "id": "3",
+      "text": "-ac"
+     },
+     {
+      "id": "4",
+      "text": "-al"
+     },
+     {
+      "id": "5",
+      "text": "-ar"
+     },
+     {
+      "id": "6",
+      "text": "-ary"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Condition or process of"
+     },
+     {
+      "id": "B",
+      "text": "Structure or tissue"
+     },
+     {
+      "id": "C",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "F",
+      "text": "Pertaining to or related to"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "The general noun endings -y (condition or process of) and -ium (structure or tissue) each name a thing, as in psychopathy and myocardium. The adjective endings -ac, -al, -ar, and -ary all mean pertaining to or related to, as in cardiac, pedal, glandular, and pulmonary, and they share that meaning on the right side."
+   },
+   {
+    "id": "MT07056",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-eal"
+     },
+     {
+      "id": "2",
+      "text": "-ic"
+     },
+     {
+      "id": "3",
+      "text": "-ous"
+     },
+     {
+      "id": "4",
+      "text": "-tic"
+     },
+     {
+      "id": "5",
+      "text": "-gram"
+     },
+     {
+      "id": "6",
+      "text": "-graph"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "B",
+      "text": "Record"
+     },
+     {
+      "id": "C",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "D",
+      "text": "Instrument for recording"
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to or related to"
+     },
+     {
+      "id": "F",
+      "text": "Pertaining to or related to"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "C",
+     "3": "F",
+     "4": "E",
+     "5": "B",
+     "6": "D"
+    },
+    "explain": "The adjective endings -eal, -ic, -ous, and -tic all mean pertaining to or related to, as in esophageal, toxic, fibrous, and cyanotic. The recording suffixes -gram and -graph are distinct: -gram is the record itself (sonogram) and -graph is the instrument that makes the record (electrocardiograph). Note that the four adjective endings share a meaning, while the two recording suffixes each carry their own."
+   },
+   {
+    "id": "MT07057",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-graphy"
+     },
+     {
+      "id": "2",
+      "text": "-iatrics"
+     },
+     {
+      "id": "3",
+      "text": "-iatry"
+     },
+     {
+      "id": "4",
+      "text": "-logy"
+     },
+     {
+      "id": "5",
+      "text": "-logist"
+     },
+     {
+      "id": "6",
+      "text": "-ist"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Process of recording"
+     },
+     {
+      "id": "B",
+      "text": "One who specializes in"
+     },
+     {
+      "id": "C",
+      "text": "Study"
+     },
+     {
+      "id": "D",
+      "text": "One who specializes"
+     },
+     {
+      "id": "E",
+      "text": "Treatment"
+     },
+     {
+      "id": "F",
+      "text": "Treatment"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "E",
+     "3": "F",
+     "4": "C",
+     "5": "D",
+     "6": "B"
+    },
+    "explain": "-graphy is the process of recording (radiography). -iatrics and -iatry both mean treatment, as in pediatrics and psychiatry, so they share the treatment sense. -logy means study (cytopathology). -logist means one who specializes (biologist) and -ist means one who specializes in (dentist). The study, the specialist, and the treatment are three distinct roles built on the same subject root."
+   },
+   {
+    "id": "MT07058",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-meter"
+     },
+     {
+      "id": "2",
+      "text": "-metry"
+     },
+     {
+      "id": "3",
+      "text": "-poiesis"
+     },
+     {
+      "id": "4",
+      "text": "-scope"
+     },
+     {
+      "id": "5",
+      "text": "-scopy"
+     },
+     {
+      "id": "6",
+      "text": "-stasis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Instrument for measuring"
+     },
+     {
+      "id": "B",
+      "text": "Process of measuring"
+     },
+     {
+      "id": "C",
+      "text": "Stop or stand"
+     },
+     {
+      "id": "D",
+      "text": "Instrument for examination"
+     },
+     {
+      "id": "E",
+      "text": "Process of examination"
+     },
+     {
+      "id": "F",
+      "text": "Formation"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "F",
+     "4": "D",
+     "5": "E",
+     "6": "C"
+    },
+    "explain": "The instrument-then-process pattern is held constant across the measuring and examining pairs: -meter is the instrument for measuring (thermometer) and -metry the process of measuring (pharyngometry); -scope is the instrument for examination (microscope) and -scopy the process of examination (endoscopy). -poiesis means formation (hemopoiesis) and -stasis means stop or stand (hemostasis)."
+   },
+   {
+    "id": "MT07059",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Paracentesis"
+     },
+     {
+      "id": "2",
+      "text": "Arthrodesis"
+     },
+     {
+      "id": "3",
+      "text": "Hysterectomy"
+     },
+     {
+      "id": "4",
+      "text": "Nephropexy"
+     },
+     {
+      "id": "5",
+      "text": "Rhinoplasty"
+     },
+     {
+      "id": "6",
+      "text": "Osteorrhaphy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Puncture of the abdominal cavity to withdraw fluid."
+     },
+     {
+      "id": "B",
+      "text": "Surgical repair or reconstruction of the nose."
+     },
+     {
+      "id": "C",
+      "text": "Surgical removal of the uterus."
+     },
+     {
+      "id": "D",
+      "text": "Suture of a bone."
+     },
+     {
+      "id": "E",
+      "text": "Surgical fixation of a displaced kidney."
+     },
+     {
+      "id": "F",
+      "text": "Surgical binding or fusion of a joint."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "F",
+     "3": "C",
+     "4": "E",
+     "5": "B",
+     "6": "D"
+    },
+    "explain": "Paracentesis is a puncture for aspiration, here of the abdominal cavity. Arthrodesis is the surgical binding or fusion of a joint, built from arthr/o and -desis. Hysterectomy is the surgical removal of the uterus, with the vowel-initial -ectomy dropping the combining vowel, giving R+S. Nephropexy is the surgical fixation of a displaced kidney. Rhinoplasty is the surgical repair or reconstruction of the nose. Osteorrhaphy is the suture of a bone. Each term is read from its root plus its specific surgical suffix."
+   },
+   {
+    "id": "MT07060",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Laparotomy"
+     },
+     {
+      "id": "2",
+      "text": "Colostomy"
+     },
+     {
+      "id": "3",
+      "text": "Dehydration"
+     },
+     {
+      "id": "4",
+      "text": "Akaryocyte"
+     },
+     {
+      "id": "5",
+      "text": "Hyperphonia"
+     },
+     {
+      "id": "6",
+      "text": "Psychopathy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Incision into the abdominal wall."
+     },
+     {
+      "id": "B",
+      "text": "An excessive condition of voice or sound production."
+     },
+     {
+      "id": "C",
+      "text": "A cell that lacks a nucleus; the red blood cell is the example."
+     },
+     {
+      "id": "D",
+      "text": "Creation of an opening from the colon to the body surface."
+     },
+     {
+      "id": "E",
+      "text": "A condition or process involving the mind."
+     },
+     {
+      "id": "F",
+      "text": "The process of losing water from the body."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "D",
+     "3": "F",
+     "4": "C",
+     "5": "B",
+     "6": "E"
+    },
+    "explain": "Laparotomy is incision into the abdominal wall, built from lapar/o and -tomy. Colostomy is the creation of an opening from the colon to the body surface, built from col/o and -stomy. Dehydration is the process of losing water, built from de-, hydr, and -ation. Akaryocyte is a cell lacking a nucleus, built from a-, kary/o, and -cyte, and the red blood cell is the standard example. Hyperphonia is an excessive condition of voice production, built from hyper-, phon, and -ia. Psychopathy is a condition or process involving the mind, built from psych/o, path, and -y."
+   },
+   {
+    "id": "MT07061",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Myocardium"
+     },
+     {
+      "id": "2",
+      "text": "Cardiac"
+     },
+     {
+      "id": "3",
+      "text": "Pedal"
+     },
+     {
+      "id": "4",
+      "text": "Glandular"
+     },
+     {
+      "id": "5",
+      "text": "Pulmonary"
+     },
+     {
+      "id": "6",
+      "text": "Esophageal"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Pertaining to the heart."
+     },
+     {
+      "id": "B",
+      "text": "Pertaining to the foot."
+     },
+     {
+      "id": "C",
+      "text": "The muscular tissue of the heart wall."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to the esophagus."
+     },
+     {
+      "id": "E",
+      "text": "Pertaining to glands."
+     },
+     {
+      "id": "F",
+      "text": "Pertaining to the lungs."
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "A",
+     "3": "B",
+     "4": "E",
+     "5": "F",
+     "6": "D"
+    },
+    "explain": "Myocardium is the muscular tissue of the heart wall, built from my/o, cardi, and -ium, a noun ending. Cardiac, pedal, glandular, pulmonary, and esophageal are all adjectives built with adjective endings that mean pertaining to: -ac (heart), -al (foot), -ar (glands), -ary (lungs), and -eal (esophagus). The noun ending names a thing (myocardium), while the adjective endings name a quality (cardiac, pedal, and so on)."
+   },
+   {
+    "id": "MT07062",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Toxic"
+     },
+     {
+      "id": "2",
+      "text": "Fibrous"
+     },
+     {
+      "id": "3",
+      "text": "Cyanotic"
+     },
+     {
+      "id": "4",
+      "text": "Sonogram"
+     },
+     {
+      "id": "5",
+      "text": "Electrocardiograph"
+     },
+     {
+      "id": "6",
+      "text": "Radiography"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The instrument that records the heart's electrical activity."
+     },
+     {
+      "id": "B",
+      "text": "Pertaining to or caused by a poison."
+     },
+     {
+      "id": "C",
+      "text": "A record produced by sound waves."
+     },
+     {
+      "id": "D",
+      "text": "Pertaining to or composed of fibers."
+     },
+     {
+      "id": "E",
+      "text": "The process of recording images using radiation."
+     },
+     {
+      "id": "F",
+      "text": "Pertaining to a bluish discoloration from lack of oxygen."
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "D",
+     "3": "F",
+     "4": "C",
+     "5": "A",
+     "6": "E"
+    },
+    "explain": "Toxic, fibrous, and cyanotic are adjectives ending in -ic, -ous, and -tic, all meaning pertaining to. The recording triple is fixed by its suffixes: sonogram is a record (-gram), electrocardiograph is the instrument (-graph), and radiography is the process of recording (-graphy). Each term is read from its root plus its specific suffix."
+   },
+   {
+    "id": "MT07063",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Pediatrics"
+     },
+     {
+      "id": "2",
+      "text": "Psychiatry"
+     },
+     {
+      "id": "3",
+      "text": "Cytopathology"
+     },
+     {
+      "id": "4",
+      "text": "Biologist"
+     },
+     {
+      "id": "5",
+      "text": "Dentist"
+     },
+     {
+      "id": "6",
+      "text": "Thermometer"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The medical treatment of children."
+     },
+     {
+      "id": "B",
+      "text": "The medical treatment of disorders of the mind."
+     },
+     {
+      "id": "C",
+      "text": "The study of disease at the cellular level."
+     },
+     {
+      "id": "D",
+      "text": "The instrument used to measure temperature."
+     },
+     {
+      "id": "E",
+      "text": "One who specializes in the study of life."
+     },
+     {
+      "id": "F",
+      "text": "One who specializes in treating teeth."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "E",
+     "5": "F",
+     "6": "D"
+    },
+    "explain": "Pediatrics and psychiatry are treatments built on -iatrics and -iatry. Cytopathology is the study built on -logy, with two roots cyt/o and path/o, giving CF+CF+S. Biologist is the specialist built on -logist, and dentist is the specialist built on -ist. Thermometer is the measuring instrument built on -meter. The study, the specialist, the treatment, and the instrument are distinct roles built on their own roots."
+   },
+   {
+    "id": "MT07064",
+    "type": "matching",
+    "cat": "MT_lec7",
+    "q": "Match each medical term to its meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Pharyngometry"
+     },
+     {
+      "id": "2",
+      "text": "Hemopoiesis"
+     },
+     {
+      "id": "3",
+      "text": "Microscope"
+     },
+     {
+      "id": "4",
+      "text": "Endoscopy"
+     },
+     {
+      "id": "5",
+      "text": "Hemostasis"
+     },
+     {
+      "id": "6",
+      "text": "Hysterectomy"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The process of measuring the pharynx."
+     },
+     {
+      "id": "B",
+      "text": "The formation of blood cells."
+     },
+     {
+      "id": "C",
+      "text": "The stopping or standing of bleeding."
+     },
+     {
+      "id": "D",
+      "text": "The instrument used to examine small objects."
+     },
+     {
+      "id": "E",
+      "text": "The process of examining the inside of the body with an instrument."
+     },
+     {
+      "id": "F",
+      "text": "Surgical removal of the uterus."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "D",
+     "4": "E",
+     "5": "C",
+     "6": "F"
+    },
+    "explain": "Pharyngometry is the process of measuring, built from pharyng/o and -metry. Hemopoiesis is the formation of blood cells, built from hem/o and -poiesis. Microscope is the instrument for examination, built from micro- and -scope. Endoscopy is the process of examination, built from endo- and -scopy. Hemostasis is the stopping or standing of bleeding, built from hem/o and -stasis. Hysterectomy is the surgical removal of the uterus, with the vowel-initial -ectomy dropping the combining vowel, giving R+S."
+   }
+  ]
+ }
+}

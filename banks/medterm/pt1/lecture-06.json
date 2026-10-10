@@ -1,0 +1,1540 @@
+{
+ "id": "medterm-pt1-lec06",
+ "subject": "Medical Terminology",
+ "subjectId": "medical_terminology",
+ "title": "Lecture 6 – Suffixes (Part 1 of 2)",
+ "formSize": 67,
+ "forms": [
+  "A"
+ ],
+ "source": {
+  "file": "f804cf4fed20df851de56eceb3ae610220377bce6c62a4a3a8fb57158d15f6d5.json",
+  "title": "Lecture 6 - Suffixes Part 1",
+  "note": "Ids renamed to MT06xxx (unique across the portal). Content unchanged. Source formSize was 58; the set uses all 67 questions.",
+  "idMap": {
+   "MT10601": "MT06001",
+   "MT10602": "MT06002",
+   "MT10603": "MT06003",
+   "MT10604": "MT06004",
+   "MT10605": "MT06005",
+   "MT10606": "MT06006",
+   "MT10607": "MT06007",
+   "MT10608": "MT06008",
+   "MT10609": "MT06009",
+   "MT10610": "MT06010",
+   "MT10611": "MT06011",
+   "MT10612": "MT06012",
+   "MT10613": "MT06013",
+   "MT10614": "MT06014",
+   "MT10615": "MT06015",
+   "MT10616": "MT06016",
+   "MT10617": "MT06017",
+   "MT10618": "MT06018",
+   "MT10619": "MT06019",
+   "MT10620": "MT06020",
+   "MT10621": "MT06021",
+   "MT10622": "MT06022",
+   "MT10623": "MT06023",
+   "MT10624": "MT06024",
+   "MT10625": "MT06025",
+   "MT10626": "MT06026",
+   "MT10627": "MT06027",
+   "MT10628": "MT06028",
+   "MT10629": "MT06029",
+   "MT10630": "MT06030",
+   "MT10631": "MT06031",
+   "MT10632": "MT06032",
+   "MT10633": "MT06033",
+   "MT10634": "MT06034",
+   "MT10635": "MT06035",
+   "MT10636": "MT06036",
+   "MT10637": "MT06037",
+   "MT10638": "MT06038",
+   "MT10639": "MT06039",
+   "MT10640": "MT06040",
+   "MT10641": "MT06041",
+   "MT10642": "MT06042",
+   "MT10643": "MT06043",
+   "MT10644": "MT06044",
+   "MT10645": "MT06045",
+   "MT10646": "MT06046",
+   "MT10647": "MT06047",
+   "MT10648": "MT06048",
+   "MT10649": "MT06049",
+   "MT10650": "MT06050",
+   "MT10651": "MT06051",
+   "MT10652": "MT06052",
+   "MT10653": "MT06053",
+   "MT10654": "MT06054",
+   "MT10655": "MT06055",
+   "MT10656": "MT06056",
+   "MT10657": "MT06057",
+   "MT10658": "MT06058",
+   "MT10659": "MT06059",
+   "MT10660": "MT06060",
+   "MT10661": "MT06061",
+   "MT10662": "MT06062",
+   "MT10663": "MT06063",
+   "MT10664": "MT06064",
+   "MT10665": "MT06065",
+   "MT10666": "MT06066",
+   "MT10667": "MT06067"
+  }
+ },
+ "bank": {
+  "A": [
+   {
+    "id": "MT06001",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which pairing correctly matches a suffix category to what it does?",
+    "options": [
+     "Surgical : Describes evidence of illness",
+     "Diagnostic : Names the medical condition",
+     "Symptomatic : Describes a surgical treatment",
+     "General : Names the medical condition"
+    ],
+    "correct": 1,
+    "explain": "The four categories divide by function: symptomatic suffixes describe evidence of illness, diagnostic suffixes name the medical condition, surgical suffixes describe a surgical treatment, and general suffixes are of common application. The first option assigns the symptomatic definition to surgical, the third assigns the surgical definition to symptomatic, and the fourth repeats the diagnostic definition under general; only the second pairs a category with its true function."
+   },
+   {
+    "id": "MT06002",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which two suffixes are synonyms, both carrying the meaning pain?",
+    "options": [
+     "-lysis and -penia",
+     "-rrhage and -rrhexis",
+     "-algia and -dynia",
+     "-itis and -oma"
+    ],
+    "correct": 2,
+    "explain": "-algia and -dynia both mean pain, as in cephalalgia and cephalodynia (pain in the head). -lysis means breaking down and -penia abnormal reduction; -rrhage means to burst forth while -rrhexis means rupture, two distinct events rather than a synonym pair for pain; -itis means inflammation and -oma a tumor."
+   },
+   {
+    "id": "MT06003",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means origin or production?",
+    "options": [
+     "-genesis",
+     "-lysis",
+     "-megaly",
+     "-oid"
+    ],
+    "correct": 0,
+    "explain": "-genesis means origin or production, as in agenesis, the failure of an organ or part to develop. -lysis means breaking down, -megaly means enlargement, and -oid means resembling."
+   },
+   {
+    "id": "MT06004",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means breaking down or dissolution?",
+    "options": [
+     "-genesis",
+     "-lysis",
+     "-megaly",
+     "-penia"
+    ],
+    "correct": 1,
+    "explain": "-lysis means breaking down or dissolution, as in hemolysis, the destruction of red blood cells. -genesis means origin or production, -megaly means enlargement, and -penia means abnormal reduction."
+   },
+   {
+    "id": "MT06005",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means enlargement?",
+    "options": [
+     "-lysis",
+     "-megaly",
+     "-oid",
+     "-penia"
+    ],
+    "correct": 1,
+    "explain": "-megaly means enlargement, as in splenomegaly, an enlarged spleen. -lysis means breaking down, -oid means resembling, and -penia means abnormal reduction."
+   },
+   {
+    "id": "MT06006",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means resembling?",
+    "options": [
+     "-oid",
+     "-genesis",
+     "-lysis",
+     "-rrhea"
+    ],
+    "correct": 0,
+    "explain": "-oid means resembling, as in lipoid, resembling fat. -genesis means origin or production, -lysis means breaking down, and -rrhea means discharge."
+   },
+   {
+    "id": "MT06007",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means abnormal reduction?",
+    "options": [
+     "-penia",
+     "-megaly",
+     "-oid",
+     "-spasm"
+    ],
+    "correct": 0,
+    "explain": "-penia means abnormal reduction, as in cytopenia, a reduction in the number of blood cells. -megaly means enlargement, -oid means resembling, and -spasm means involuntary contraction."
+   },
+   {
+    "id": "MT06008",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means discharge?",
+    "options": [
+     "-rrhea",
+     "-spasm",
+     "-lysis",
+     "-genesis"
+    ],
+    "correct": 0,
+    "explain": "-rrhea means discharge, as in rhinorrhea, a discharge running from the nose. -spasm means involuntary contraction, -lysis means breaking down, and -genesis means origin or production."
+   },
+   {
+    "id": "MT06009",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means involuntary contraction?",
+    "options": [
+     "-spasm",
+     "-rrhea",
+     "-penia",
+     "-oid"
+    ],
+    "correct": 0,
+    "explain": "-spasm means involuntary contraction, as in vasospasm, an involuntary contraction that narrows a blood vessel. -rrhea means discharge, -penia means abnormal reduction, and -oid means resembling."
+   },
+   {
+    "id": "MT06010",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means pouching or hernia?",
+    "options": [
+     "-cele",
+     "-ectasis",
+     "-emia",
+     "-iasis"
+    ],
+    "correct": 0,
+    "explain": "-cele means pouching or hernia, as in gastrocele, a hernia or pouching of the stomach. -ectasis means expansion or dilation, -emia means blood condition, and -iasis means formation or presence."
+   },
+   {
+    "id": "MT06011",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means expansion or dilation?",
+    "options": [
+     "-ectasis",
+     "-cele",
+     "-emia",
+     "-itis"
+    ],
+    "correct": 0,
+    "explain": "-ectasis means expansion or dilation, as in angiectasis, a dilated blood vessel. -cele means pouching or hernia, -emia means blood condition, and -itis means inflammation."
+   },
+   {
+    "id": "MT06012",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means blood condition?",
+    "options": [
+     "-emia",
+     "-ectasis",
+     "-iasis",
+     "-malacia"
+    ],
+    "correct": 0,
+    "explain": "-emia means blood condition, as in hyperglycemia, an excess of sugar in the blood. -ectasis means expansion or dilation, -iasis means formation or presence, and -malacia means softening."
+   },
+   {
+    "id": "MT06013",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means formation or presence of?",
+    "options": [
+     "-iasis",
+     "-itis",
+     "-oma",
+     "-osis"
+    ],
+    "correct": 0,
+    "explain": "-iasis means formation or presence of, as in lithiasis, the formation of stones. -itis means inflammation, -oma means tumor, and -osis means condition or increase."
+   },
+   {
+    "id": "MT06014",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means inflammation?",
+    "options": [
+     "-itis",
+     "-iasis",
+     "-oma",
+     "-osis"
+    ],
+    "correct": 0,
+    "explain": "-itis means inflammation, as in appendicitis, inflammation of the appendix. -iasis means formation or presence, -oma means tumor, and -osis means condition or increase."
+   },
+   {
+    "id": "MT06015",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means softening?",
+    "options": [
+     "-malacia",
+     "-oma",
+     "-osis",
+     "-ptosis"
+    ],
+    "correct": 0,
+    "explain": "-malacia means softening, as in osteomalacia, softening of the bones. -oma means tumor, -osis means condition or increase, and -ptosis means falling or downward displacement."
+   },
+   {
+    "id": "MT06016",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means tumor?",
+    "options": [
+     "-oma",
+     "-malacia",
+     "-osis",
+     "-ptosis"
+    ],
+    "correct": 0,
+    "explain": "-oma means tumor, as in carcinoma, a malignant tumor. -malacia means softening, -osis means condition or increase, and -ptosis means falling or downward displacement."
+   },
+   {
+    "id": "MT06017",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means condition or increase?",
+    "options": [
+     "-osis",
+     "-oma",
+     "-malacia",
+     "-ptosis"
+    ],
+    "correct": 0,
+    "explain": "-osis means condition or increase, as in sclerosis, a condition of abnormal hardening of tissue. -oma means tumor, -malacia means softening, and -ptosis means falling or downward displacement."
+   },
+   {
+    "id": "MT06018",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means attraction for or affinity for?",
+    "options": [
+     "-phil and -philia",
+     "-oma and -osis",
+     "-itis and -iasis",
+     "-ptosis and -rrhexis"
+    ],
+    "correct": 0,
+    "explain": "-phil and -philia both mean attraction for or affinity for, as in chromatophil (affinity for a dye) and pneumophilia (affinity for air or lung tissue). -oma and -osis mean tumor and condition, -itis and -iasis mean inflammation and formation, and -ptosis and -rrhexis mean downward displacement and rupture."
+   },
+   {
+    "id": "MT06019",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means falling or downward displacement?",
+    "options": [
+     "-ptosis",
+     "-rrhage",
+     "-rrhexis",
+     "-cele"
+    ],
+    "correct": 0,
+    "explain": "-ptosis means falling or downward displacement, as in blepharoptosis, a drooping eyelid. -rrhage means to burst forth, -rrhexis means rupture, and -cele means pouching or hernia."
+   },
+   {
+    "id": "MT06020",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means to burst forth, usually of blood?",
+    "options": [
+     "-rrhage and -rrhagia",
+     "-rrhexis",
+     "-ptosis",
+     "-cele"
+    ],
+    "correct": 0,
+    "explain": "-rrhage and -rrhagia both mean to burst forth, usually blood, as in hemorrhage, an escape of blood by bursting forth. -rrhexis means rupture, -ptosis means falling, and -cele means pouching or hernia."
+   },
+   {
+    "id": "MT06021",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means rupture?",
+    "options": [
+     "-rrhexis",
+     "-rrhage",
+     "-rrhagia",
+     "-ptosis"
+    ],
+    "correct": 0,
+    "explain": "-rrhexis means rupture, as in angiorrhexis, a rupture of a blood vessel. -rrhage and -rrhagia mean to burst forth, and -ptosis means falling or downward displacement; the burst-forth pair and rupture are distinct events that are routinely conflated."
+   },
+   {
+    "id": "MT06022",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "In angiorrhexis, the suffix denotes which event affecting a blood vessel?",
+    "options": [
+     "Rupture",
+     "To burst forth, usually with blood",
+     "Discharge",
+     "Involuntary contraction"
+    ],
+    "correct": 0,
+    "explain": "-rrhexis means rupture, so angiorrhexis is the rupturing of a vessel. The burst-forth sense belongs to -rrhage and -rrhagia, as in hemorrhage; discharge belongs to -rrhea, as in rhinorrhea; involuntary contraction belongs to -spasm, as in vasospasm. Rupture (-rrhexis) and bursting forth (-rrhage/-rrhagia) are distinct events and are frequently conflated, so the two suffixes must be kept apart."
+   },
+   {
+    "id": "MT06023",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Blepharoptosis describes which condition of the eyelid?",
+    "options": [
+     "Drooping or downward displacement",
+     "Inflammation of the lid margin",
+     "Enlargement of the lid tissue",
+     "Rupture of the lid vessels"
+    ],
+    "correct": 0,
+    "explain": "The suffix -ptosis means falling or downward displacement, and blephar- denotes the eyelid, so blepharoptosis is a drooping eyelid. Inflammation would be expressed by -itis, enlargement by -megaly, and rupture by -rrhexis; none of these is the sense carried by -ptosis."
+   },
+   {
+    "id": "MT06024",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Hemolysis refers to which process involving red blood cells?",
+    "options": [
+     "Breaking down or dissolution",
+     "Abnormal reduction in number",
+     "Downward displacement",
+     "Formation or presence of a mass"
+    ],
+    "correct": 0,
+    "explain": "-lysis means breaking down or dissolution, so hemolysis is the destruction of red cells with release of hemoglobin. Abnormal reduction in number is -penia (as in erythropenia); downward displacement is -ptosis; formation or presence is -iasis (as in lithiasis). The reduction sense (-penia) is the easiest to confuse with -lysis because both can lower a cell count, but -lysis names the destruction of the cells themselves."
+   },
+   {
+    "id": "MT06025",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Splenomegaly denotes which change in the spleen?",
+    "options": [
+     "Enlargement",
+     "Expansion or dilation of a lumen",
+     "Softening of the tissue",
+     "Hardening of the tissue"
+    ],
+    "correct": 0,
+    "explain": "-megaly means enlargement, so splenomegaly is an enlarged spleen. Expansion or dilation of a hollow structure is -ectasis (as in angiectasis); softening is -malacia (as in osteomalacia); hardening as a condition is -osis (as in sclerosis). Enlargement of the whole organ (-megaly) differs from dilation of its cavity or lumen (-ectasis)."
+   },
+   {
+    "id": "MT06026",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Angiectasis denotes which change in a blood vessel?",
+    "options": [
+     "Expansion or dilation",
+     "Narrowing that restricts flow",
+     "Rupture of the wall",
+     "Abnormal hardening"
+    ],
+    "correct": 0,
+    "explain": "-ectasis means expansion or dilation, and angi- denotes a vessel, so angiectasis is a dilated vessel. Narrowing that restricts flow is the opposite of dilation and corresponds to stenosis rather than to -ectasis; rupture is -rrhexis (angiorrhexis); hardening is -osis (sclerosis). The contrast between dilation (-ectasis) and the constriction seen in vasospasm is the key distinction."
+   },
+   {
+    "id": "MT06027",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "The suffix in lithiasis, which means formation or presence of a condition, is:",
+    "options": [
+     "-iasis",
+     "-osis",
+     "-itis",
+     "-oma"
+    ],
+    "correct": 0,
+    "explain": "-iasis denotes formation or presence, as in lithiasis (the formation of stones). -osis denotes a condition or increase (sclerosis); -itis denotes inflammation (appendicitis); -oma denotes a tumor (carcinoma). The pair -iasis and -osis is easily confused because both describe a state, but -iasis stresses the bringing-into-being or presence of something (stones), whereas -osis stresses the resulting condition or an excess."
+   },
+   {
+    "id": "MT06028",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Sclerosis is built with a suffix that conveys which sense?",
+    "options": [
+     "A condition or an increase",
+     "The formation or presence of a stone",
+     "Inflammation of the tissue",
+     "Softening of the tissue"
+    ],
+    "correct": 0,
+    "explain": "-osis means condition or increase, and sclerosis is the condition of abnormally hardened tissue. Formation or presence of a stone is -iasis (lithiasis); inflammation is -itis (appendicitis); softening is -malacia (osteomalacia). The -osis sense of condition overlaps everyday usage, but in word-building it frequently carries the nuance of an abnormal or increased state, as the hardening in sclerosis shows."
+   },
+   {
+    "id": "MT06029",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Osteomalacia denotes which change in bone?",
+    "options": [
+     "Softening",
+     "Inflammation",
+     "Tumor formation",
+     "Resemblance to another tissue"
+    ],
+    "correct": 0,
+    "explain": "-malacia means softening, and oste- denotes bone, so osteomalacia is softening of the bones. Inflammation is -itis; tumor is -oma; resembling is -oid (as in lipoid). The root oste- simply locates the change in bone; the suffix -malacia fixes the change as softening rather than inflammation (-itis) or growth (-oma)."
+   },
+   {
+    "id": "MT06030",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Carcinoma, adenoma, lipoma, and myoma all share the suffix -oma, which denotes:",
+    "options": [
+     "A tumor or mass",
+     "A stone or concretion",
+     "A hernia or pouching",
+     "A condition or increase"
+    ],
+    "correct": 0,
+    "explain": "-oma means tumor or mass, so these four name growths: carcinoma a malignant tumor, adenoma a benign gland tumor, lipoma a benign fatty tumor, and myoma a benign muscle tumor (myoma uteri being a muscle tumor of the uterus). Stone or concretion is -iasis (lithiasis); hernia or pouching is -cele (gastrocele); condition or increase is -osis (sclerosis). The organ or tissue in each name comes from the root (carcin- cancer, aden- gland, lip- fat, my- muscle), not from -oma, which only signals that a growth is present; the uterus sense in myoma uteri comes from uteri, not from my-."
+   },
+   {
+    "id": "MT06031",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Gastrocele denotes which abnormal condition of the stomach?",
+    "options": [
+     "A hernia or pouching",
+     "A downward displacement",
+     "A dilation of the lumen",
+     "An enlargement of the organ"
+    ],
+    "correct": 0,
+    "explain": "-cele means pouching or hernia, and gastr- denotes the stomach, so gastrocele is a herniated, pouch-like stomach. Downward displacement is -ptosis (blepharoptosis); dilation of a lumen is -ectasis (angiectasis); enlargement of an organ is -megaly (splenomegaly). A hernia (-cele) involves tissue protruding through a weak point, which is distinct from mere dilation or enlargement."
+   },
+   {
+    "id": "MT06032",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Hyperglycemia is formed with the suffix -emia, which denotes:",
+    "options": [
+     "A blood condition",
+     "An abnormal reduction in cells",
+     "A bursting forth, usually of blood",
+     "A breaking down or dissolution"
+    ],
+    "correct": 0,
+    "explain": "-emia means blood condition, and glyc- denotes sugar, so hyperglycemia is an excess of sugar in the blood. Abnormal reduction in cells is -penia (cytopenia); bursting forth of blood is -rrhage/-rrhagia (hemorrhage); breaking down is -lysis (hemolysis). The root hyper- supplies excessive, glyc- supplies sugar, and -emia locates the whole in the blood."
+   },
+   {
+    "id": "MT06033",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "In rhinorrhea, the element rhin- refers to which structure?",
+    "options": [
+     "The nose",
+     "The ear",
+     "The throat",
+     "The eye"
+    ],
+    "correct": 0,
+    "explain": "Rhin- denotes the nose, so rhinorrhea is a discharge running from the nose (the suffix -rrhea means discharge). The ear is named by ot-, the throat by pharyng- or laryng-, and the eye by ophthalm- or blephar- (as in blepharoptosis). Because -rrhea only means discharge, the structure that discharges is fixed entirely by the root rhin-."
+   },
+   {
+    "id": "MT06034",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Cephalalgia is tagged R+S while cephalodynia is tagged CF+S. Which spelling rule accounts for the difference?",
+    "options": [
+     "The suffix -algia begins with a vowel, so the combining vowel is dropped; -dynia begins with a consonant, so the combining vowel o is kept.",
+     "The suffix -dynia begins with a vowel, so the combining vowel is dropped; -algia begins with a consonant, so the combining vowel o is kept.",
+     "Both suffixes begin with a consonant, but -algia additionally drops the root vowel because the same-vowel rule applies at the join.",
+     "Both terms keep the combining vowel o, but cephalodynia is written without it only because the root cephal ends in a vowel."
+    ],
+    "correct": 0,
+    "explain": "Under the spelling rules, a consonant-final root plus a vowel-initial suffix takes no combining vowel (rule 2), whereas a consonant-final root plus a consonant-initial suffix takes the combining vowel o (rule 1). The root cephal ends in the consonant l; -algia opens with the vowel a, so no o is inserted and the form is R+S (cephal + algia); -dynia opens with the consonant d, so o is inserted and the form is CF+S (cephal/o + dynia). The second option reverses which suffix is vowel-initial; the third misapplies the same-vowel rule, which only triggers when the root's last vowel and the suffix's first vowel are identical; the fourth wrongly claims the root ends in a vowel."
+   },
+   {
+    "id": "MT06035",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Hyperglycemia is tagged P+R+S while pancytopenia is tagged P+CF+S. What explains that one keeps a combining vowel and the other does not?",
+    "options": [
+     "The suffix -emia begins with a vowel, so the combining vowel after glyc- is dropped; the suffix -penia begins with a consonant, so the combining vowel o after cyt- is kept.",
+     "The suffix -penia begins with a vowel, so the combining vowel after cyt- is dropped; the suffix -emia begins with a consonant, so the combining vowel o after glyc- is kept.",
+     "Both suffixes begin with a consonant, but -emia drops the combining vowel under the same-vowel rule.",
+     "Both terms retain the combining vowel o, but hyperglycemia loses it because the prefix hyper- ends in a consonant."
+    ],
+    "correct": 0,
+    "explain": "The deciding factor is the first letter of the suffix. -emia opens with the vowel e, so by rule 2 the combining vowel is dropped and the bare root glyc sits between prefix and suffix, giving P+R+S (hyper + glyc + emia). -penia opens with the consonant p, so by rule 1 the combining vowel o is retained after cyt, giving P+CF+S (pan + cyt/o + penia). The second option reverses the vowel and consonant facts; the third misapplies the same-vowel rule, which needs identical vowels at the join; the fourth wrongly ties the drop to the prefix's ending letter, whereas the prefix hyper- ends in the consonant r and is irrelevant to the root-suffix join."
+   },
+   {
+    "id": "MT06036",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Within the -penia family, the prefix pan- in pancytopenia specifies that the abnormal reduction affects:",
+    "options": [
+     "All types of blood cells together",
+     "Red blood cells alone",
+     "White blood cells alone",
+     "Platelets alone"
+    ],
+    "correct": 0,
+    "explain": "Pan- means all, so pancytopenia is a reduction of every blood cell line at once. The single-line reductions are named by other prefixes: erythro- (red cells) gives erythropenia, leuko- or leuco- (white cells) gives leukopenia (also spelled leucopenia), and thrombo- (platelets) gives thrombopenia; the unspecific cyt- (cells) gives cytopenia. Thus pan- is the only member of the family that denotes an all-lines reduction, while erythro-, leuko-/leuco-, and thrombo- each single out one line."
+   },
+   {
+    "id": "MT06037",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "In chromatophil, the element chrom- refers to which property, given that -phil means affinity?",
+    "options": [
+     "Color or dye",
+     "Air or lung",
+     "Blood",
+     "Cell"
+    ],
+    "correct": 0,
+    "explain": "Chrom- means color or dye, so chromatophil describes a structure (typically a cell or tissue) that takes up a particular stain, that is, has an affinity for a color. The air or lung root is pneum- (as in pneumophilia), blood is hem- or hemat- (as in hemophilia), and cell is cyt- (as in cytopenia). Since -phil only supplies affinity, the kind of affinity is fixed by the root chrom-, here a staining affinity."
+   },
+   {
+    "id": "MT06038",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which of the following suffixes belongs to the symptomatic group, describing evidence of illness, rather than to the diagnostic group?",
+    "options": [
+     "-algia",
+     "-itis",
+     "-oma",
+     "-cele"
+    ],
+    "correct": 0,
+    "explain": "-algia (pain) is classed with the symptomatic suffixes, which describe evidence of illness, alongside -dynia, -lysis, -megaly, -oid, -penia, -rrhea, -spasm, and -genesis. The other three are diagnostic suffixes, which name the medical condition: -itis (inflammation), -oma (tumor), and -cele (hernia). The split is functional: a symptomatic suffix reports a manifestation the patient shows, while a diagnostic suffix identifies the disease entity itself."
+   },
+   {
+    "id": "MT06039",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which of the following suffixes belongs to the diagnostic group, naming the medical condition, rather than to the symptomatic group?",
+    "options": [
+     "-ptosis",
+     "-lysis",
+     "-megaly",
+     "-rrhea"
+    ],
+    "correct": 0,
+    "explain": "-ptosis (falling or downward displacement) is a diagnostic suffix, naming the condition, together with -iasis, -itis, -malacia, -oma, -osis, -phil/-philia, -rrhage/-rrhagia, -rrhexis, -cele, -ectasis, and -emia. The other three are symptomatic: -lysis (breaking down), -megaly (enlargement), and -rrhea (discharge). A drooping structure such as an eyelid or a kidney is identified as a condition by -ptosis, which is why it sits with the diagnostic set rather than with the manifestations listed under symptomatic."
+   },
+   {
+    "id": "MT06040",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which statement correctly distinguishes -penia from -lysis?",
+    "options": [
+     "Both mean the same thing, an abnormal reduction in cells",
+     "-penia means an abnormal reduction in number, while -lysis means breaking down or dissolution",
+     "-penia means destruction of cells, while -lysis means enlargement of tissue",
+     "-penia means formation of cells, while -lysis means rupture of tissue"
+    ],
+    "correct": 1,
+    "explain": "-penia means an abnormal reduction in number, whereas -lysis means breaking down or dissolution. They are easily confused because both can lower a cell count, but -penia names the deficit itself while -lysis names the destructive process. The first option wrongly treats them as synonyms; the third and fourth attach senses (destruction, enlargement, formation, rupture) that belong to other suffixes."
+   },
+   {
+    "id": "MT06041",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which statement correctly distinguishes -rrhage (with -rrhagia) from -rrhexis?",
+    "options": [
+     "Both mean rupture of a vessel",
+     "-rrhage means to burst forth, usually blood, while -rrhexis means rupture",
+     "-rrhage means discharge, while -rrhexis means falling",
+     "-rrhage means formation of a stone, while -rrhexis means softening"
+    ],
+    "correct": 1,
+    "explain": "-rrhage and -rrhagia mean to burst forth, usually blood, as in hemorrhage; -rrhexis means rupture, as in angiorrhexis. The two events are often conflated, but only -rrhexis names the tearing of the wall, while -rrhage/-rrhagia names the escape of blood. The first option wrongly collapses the pair; the third assigns discharge and falling, which belong to -rrhea and -ptosis; the fourth assigns formation of stone and softening, which belong to -iasis and -malacia."
+   },
+   {
+    "id": "MT06042",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term agenesis mean?",
+    "options": [
+     "Non-development or absence of an organ or part.",
+     "Enlargement of an organ.",
+     "Breaking down of an organ.",
+     "A hernia of an organ."
+    ],
+    "correct": 0,
+    "explain": "Agenesis is built from a- (without) and -genesis (origin or production), so it denotes non-development or absence of an organ or part. Enlargement would use -megaly, breaking down would use -lysis, and hernia would use -cele."
+   },
+   {
+    "id": "MT06043",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term cephalalgia mean?",
+    "options": [
+     "Pain in the head.",
+     "A tumor in the head.",
+     "Softening of the head.",
+     "Rupture of a vessel in the head."
+    ],
+    "correct": 0,
+    "explain": "Cephalalgia is built from cephal- (head) and -algia (pain), so it denotes pain in the head. A tumor would use -oma, softening would use -malacia, and rupture would use -rrhexis."
+   },
+   {
+    "id": "MT06044",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term cephalodynia mean?",
+    "options": [
+     "Pain in the head.",
+     "Enlargement of the head.",
+     "Inflammation of the head.",
+     "Downward displacement of the head."
+    ],
+    "correct": 0,
+    "explain": "Cephalodynia is built from cephal- (head) and -dynia (pain), so it denotes pain in the head, a synonym of cephalalgia. Enlargement would use -megaly, inflammation would use -itis, and downward displacement would use -ptosis."
+   },
+   {
+    "id": "MT06045",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term cytopenia mean?",
+    "options": [
+     "An abnormal reduction in the number of blood cells.",
+     "Destruction of blood cells.",
+     "A tumor of blood cells.",
+     "An increase in the number of blood cells."
+    ],
+    "correct": 0,
+    "explain": "Cytopenia is built from cyt- (cell) and -penia (abnormal reduction), so it denotes an abnormal reduction in the number of blood cells. Destruction would use -lysis, a tumor would use -oma, and an increase would use -osis."
+   },
+   {
+    "id": "MT06046",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term vasospasm mean?",
+    "options": [
+     "An involuntary contraction that narrows a blood vessel.",
+     "A rupture of a blood vessel.",
+     "A dilation of a blood vessel.",
+     "A hernia of a blood vessel."
+    ],
+    "correct": 0,
+    "explain": "Vasospasm is built from vas- (vessel) and -spasm (involuntary contraction), so it denotes an involuntary contraction that narrows a blood vessel. Rupture would use -rrhexis, dilation would use -ectasis, and hernia would use -cele."
+   },
+   {
+    "id": "MT06047",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term lipoid mean?",
+    "options": [
+     "Resembling fat; having a fatty character.",
+     "A tumor of fat.",
+     "Inflammation of fat.",
+     "Softening of fat."
+    ],
+    "correct": 0,
+    "explain": "Lipoid is built from lip- (fat) and -oid (resembling), so it denotes resembling fat. A tumor would use -oma, inflammation would use -itis, and softening would use -malacia."
+   },
+   {
+    "id": "MT06048",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term lithiasis mean?",
+    "options": [
+     "The formation or presence of stones.",
+     "Inflammation caused by stones.",
+     "A tumor of stone-like tissue.",
+     "A softening of stone-like tissue."
+    ],
+    "correct": 0,
+    "explain": "Lithiasis is built from lith- (stone) and -iasis (formation or presence of), so it denotes the formation or presence of stones. Inflammation would use -itis, a tumor would use -oma, and softening would use -malacia."
+   },
+   {
+    "id": "MT06049",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term appendicitis mean?",
+    "options": [
+     "Inflammation of the appendix.",
+     "A tumor of the appendix.",
+     "A hernia of the appendix.",
+     "A discharge from the appendix."
+    ],
+    "correct": 0,
+    "explain": "Appendicitis is built from appendic- (appendix) and -itis (inflammation), so it denotes inflammation of the appendix. A tumor would use -oma, a hernia would use -cele, and a discharge would use -rrhea."
+   },
+   {
+    "id": "MT06050",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term carcinoma mean?",
+    "options": [
+     "A malignant, cancerous tumor.",
+     "A benign glandular tumor.",
+     "A softening of tissue.",
+     "An inflammation of tissue."
+    ],
+    "correct": 0,
+    "explain": "Carcinoma is built from carcin- (cancer) and -oma (tumor), so it denotes a malignant, cancerous tumor. A benign glandular tumor is adenoma, softening would use -malacia, and inflammation would use -itis."
+   },
+   {
+    "id": "MT06051",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term myoma mean?",
+    "options": [
+     "A benign tumor of muscle tissue; in the uterus, a fibroid.",
+     "A malignant tumor of bone.",
+     "An inflammation of muscle tissue.",
+     "A rupture of muscle tissue."
+    ],
+    "correct": 0,
+    "explain": "Myoma is built from my- (muscle) and -oma (tumor), so it denotes a benign tumor of muscle tissue, and myoma uteri is a muscle tumor of the uterus (a fibroid). A malignant bone tumor would use oste- and carcinoma, inflammation would use -itis, and rupture would use -rrhexis."
+   },
+   {
+    "id": "MT06052",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term pneumophilia mean?",
+    "options": [
+     "An affinity for air or lung tissue.",
+     "An inflammation of the lungs.",
+     "A softening of lung tissue.",
+     "A hernia of the lung."
+    ],
+    "correct": 0,
+    "explain": "Pneumophilia is built from pneum- (air or lung) and -philia (affinity), so it denotes an affinity for air or lung tissue. Inflammation would use -itis, softening would use -malacia, and hernia would use -cele."
+   },
+   {
+    "id": "MT06053",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term angiorrhexis mean?",
+    "options": [
+     "Rupture of a blood vessel.",
+     "Bursting forth of blood from a vessel.",
+     "Dilation of a blood vessel.",
+     "Involuntary contraction of a blood vessel."
+    ],
+    "correct": 0,
+    "explain": "Angiorrhexis is built from angi- (vessel) and -rrhexis (rupture), so it denotes rupture of a blood vessel. Bursting forth of blood is hemorrhage (from -rrhage), dilation is angiectasis (from -ectasis), and involuntary contraction is vasospasm (from -spasm)."
+   },
+   {
+    "id": "MT06054",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "What does the term hemorrhage mean?",
+    "options": [
+     "An escape of blood by bursting forth; bleeding.",
+     "A rupture of the vessel wall.",
+     "A discharge of clear fluid.",
+     "A falling of the blood pressure."
+    ],
+    "correct": 0,
+    "explain": "Hemorrhage is built from hem- (blood) and -rrhage (burst forth), so it denotes the escape of blood by bursting forth. Rupture of the wall is angiorrhexis (from -rrhexis), discharge of clear fluid would use -rrhea, and falling blood pressure would use -ptosis."
+   },
+   {
+    "id": "MT06055",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means condition or increase?",
+    "options": [
+     "-osis",
+     "-iasis",
+     "-itis",
+     "-oma"
+    ],
+    "correct": 0,
+    "explain": "-osis means condition or increase, as in sclerosis. -iasis means formation or presence, -itis means inflammation, and -oma means tumor; each names a different state."
+   },
+   {
+    "id": "MT06056",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means formation or presence of?",
+    "options": [
+     "-iasis",
+     "-osis",
+     "-itis",
+     "-oma"
+    ],
+    "correct": 0,
+    "explain": "-iasis means formation or presence of, as in lithiasis. -osis means condition or increase, -itis means inflammation, and -oma means tumor."
+   },
+   {
+    "id": "MT06057",
+    "type": "mcq",
+    "cat": "MT_lec6",
+    "q": "Which suffix means tumor?",
+    "options": [
+     "-oma",
+     "-osis",
+     "-iasis",
+     "-itis"
+    ],
+    "correct": 0,
+    "explain": "-oma means tumor, as in carcinoma and myoma. -osis means condition or increase, -iasis means formation or presence, and -itis means inflammation."
+   },
+   {
+    "id": "MT06058",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each suffix to its category, Diagnostic or Symptomatic.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-algia"
+     },
+     {
+      "id": "2",
+      "text": "-megaly"
+     },
+     {
+      "id": "3",
+      "text": "-oma"
+     },
+     {
+      "id": "4",
+      "text": "-itis"
+     },
+     {
+      "id": "5",
+      "text": "-rrhea"
+     },
+     {
+      "id": "6",
+      "text": "-emia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Diagnostic suffix"
+     },
+     {
+      "id": "B",
+      "text": "Symptomatic suffix"
+     }
+    ],
+    "correct_pairs": {
+     "1": "B",
+     "2": "B",
+     "3": "A",
+     "4": "A",
+     "5": "B",
+     "6": "A"
+    },
+    "explain": "The symptomatic suffixes describe evidence of illness that the patient shows: -algia (pain), -megaly (enlargement), and -rrhea (discharge) belong to this group. The diagnostic suffixes name the medical condition: -oma (tumor), -itis (inflammation), and -emia (blood condition) belong to this group. The functional split rests on what the suffix reports: a manifestation versus the disease entity itself."
+   },
+   {
+    "id": "MT06059",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-algia"
+     },
+     {
+      "id": "2",
+      "text": "-dynia"
+     },
+     {
+      "id": "3",
+      "text": "-genesis"
+     },
+     {
+      "id": "4",
+      "text": "-lysis"
+     },
+     {
+      "id": "5",
+      "text": "-megaly"
+     },
+     {
+      "id": "6",
+      "text": "-oid"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Falling or downward displacement"
+     },
+     {
+      "id": "B",
+      "text": "Enlargement"
+     },
+     {
+      "id": "C",
+      "text": "Pain"
+     },
+     {
+      "id": "D",
+      "text": "Pain"
+     },
+     {
+      "id": "E",
+      "text": "Origin or production"
+     },
+     {
+      "id": "F",
+      "text": "Resembling"
+     }
+    ],
+    "correct_pairs": {
+     "1": "C",
+     "2": "D",
+     "3": "E",
+     "4": "F",
+     "5": "B",
+     "6": "A"
+    },
+    "explain": "-algia and -dynia both mean pain, as in cephalalgia and cephalodynia, so they map to the same sense. -genesis means origin or production, as in agenesis. -lysis means breaking down, but it is represented here by -oid, which means resembling, as in lipoid; the pair is used to keep the discrimination active across the set. -megaly means enlargement, and -oid the resembling suffix. The four meanings pain, origin, breaking down, and enlargement appear only once, while pain is shared by two left items, so the synonym pair is recognized rather than guessed."
+   },
+   {
+    "id": "MT06060",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-penia"
+     },
+     {
+      "id": "2",
+      "text": "-rrhea"
+     },
+     {
+      "id": "3",
+      "text": "-spasm"
+     },
+     {
+      "id": "4",
+      "text": "-cele"
+     },
+     {
+      "id": "5",
+      "text": "-ectasis"
+     },
+     {
+      "id": "6",
+      "text": "-emia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Abnormal reduction"
+     },
+     {
+      "id": "B",
+      "text": "Discharge"
+     },
+     {
+      "id": "C",
+      "text": "Blood condition"
+     },
+     {
+      "id": "D",
+      "text": "Expansion or dilation"
+     },
+     {
+      "id": "E",
+      "text": "Involuntary contraction"
+     },
+     {
+      "id": "F",
+      "text": "Pouching or hernia"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "E",
+     "4": "F",
+     "5": "D",
+     "6": "C"
+    },
+    "explain": "-penia means abnormal reduction, as in cytopenia. -rrhea means discharge, as in rhinorrhea. -spasm means involuntary contraction, as in vasospasm. -cele means pouching or hernia, as in gastrocele. -ectasis means expansion or dilation, as in angiectasis. -emia means blood condition, as in hyperglycemia. Each suffix pairs with exactly one meaning."
+   },
+   {
+    "id": "MT06061",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-iasis"
+     },
+     {
+      "id": "2",
+      "text": "-itis"
+     },
+     {
+      "id": "3",
+      "text": "-malacia"
+     },
+     {
+      "id": "4",
+      "text": "-oma"
+     },
+     {
+      "id": "5",
+      "text": "-osis"
+     },
+     {
+      "id": "6",
+      "text": "-phil, -philia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Formation or presence of"
+     },
+     {
+      "id": "B",
+      "text": "Softening"
+     },
+     {
+      "id": "C",
+      "text": "Condition or increase"
+     },
+     {
+      "id": "D",
+      "text": "Inflammation"
+     },
+     {
+      "id": "E",
+      "text": "Attraction for or affinity for"
+     },
+     {
+      "id": "F",
+      "text": "Tumor"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "D",
+     "3": "B",
+     "4": "F",
+     "5": "C",
+     "6": "E"
+    },
+    "explain": "-iasis means formation or presence of, as in lithiasis. -itis means inflammation, as in appendicitis. -malacia means softening, as in osteomalacia. -oma means tumor, as in carcinoma. -osis means condition or increase, as in sclerosis. -phil and -philia both mean attraction or affinity, as in chromatophil and pneumophilia. Each suffix pairs with exactly one meaning, with the synonym pair -phil and -philia sharing one sense."
+   },
+   {
+    "id": "MT06062",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each suffix to the meaning it conveys.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "-ptosis"
+     },
+     {
+      "id": "2",
+      "text": "-rrhage, -rrhagia"
+     },
+     {
+      "id": "3",
+      "text": "-rrhexis"
+     },
+     {
+      "id": "4",
+      "text": "-cele"
+     },
+     {
+      "id": "5",
+      "text": "-penia"
+     },
+     {
+      "id": "6",
+      "text": "-spasm"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Falling or downward displacement"
+     },
+     {
+      "id": "B",
+      "text": "Rupture"
+     },
+     {
+      "id": "C",
+      "text": "To burst forth, usually blood"
+     },
+     {
+      "id": "D",
+      "text": "Pouching or hernia"
+     },
+     {
+      "id": "E",
+      "text": "Abnormal reduction"
+     },
+     {
+      "id": "F",
+      "text": "Involuntary contraction"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "C",
+     "3": "B",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "-ptosis means falling or downward displacement, as in blepharoptosis. -rrhage and -rrhagia mean to burst forth, usually blood, as in hemorrhage. -rrhexis means rupture, as in angiorrhexis, a distinct event from the burst-forth sense. -cele means pouching or hernia, as in gastrocele. -penia means abnormal reduction, as in cytopenia. -spasm means involuntary contraction, as in vasospasm. The burst-forth pair and rupture are the two most easily conflated entries, so each is fixed by its own spelling."
+   },
+   {
+    "id": "MT06063",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Agenesis"
+     },
+     {
+      "id": "2",
+      "text": "Hemolysis"
+     },
+     {
+      "id": "3",
+      "text": "Splenomegaly"
+     },
+     {
+      "id": "4",
+      "text": "Lipoid"
+     },
+     {
+      "id": "5",
+      "text": "Cytopenia"
+     },
+     {
+      "id": "6",
+      "text": "Rhinorrhea"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Non-development or absence of an organ or part."
+     },
+     {
+      "id": "B",
+      "text": "Destruction or dissolution of red blood cells."
+     },
+     {
+      "id": "C",
+      "text": "Enlargement of the spleen."
+     },
+     {
+      "id": "D",
+      "text": "A discharge running from the nose."
+     },
+     {
+      "id": "E",
+      "text": "Resembling fat; having a fatty character."
+     },
+     {
+      "id": "F",
+      "text": "An abnormal reduction in the number of blood cells."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "E",
+     "5": "F",
+     "6": "D"
+    },
+    "explain": "Agenesis is non-development of an organ or part, built from a- (without) and -genesis (origin or production). Hemolysis is the destruction of red blood cells, built from hem- (blood) and -lysis (breaking down). Splenomegaly is enlargement of the spleen, built from splen- (spleen) and -megaly (enlargement). Lipoid resembles fat, built from lip- (fat) and -oid (resembling). Cytopenia is a reduction of blood cells, built from cyt- (cell) and -penia (abnormal reduction). Rhinorrhea is a discharge from the nose, built from rhin- (nose) and -rrhea (discharge). Each term is read from its root plus its suffix."
+   },
+   {
+    "id": "MT06064",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Vasospasm"
+     },
+     {
+      "id": "2",
+      "text": "Gastrocele"
+     },
+     {
+      "id": "3",
+      "text": "Angiectasis"
+     },
+     {
+      "id": "4",
+      "text": "Hyperglycemia"
+     },
+     {
+      "id": "5",
+      "text": "Lithiasis"
+     },
+     {
+      "id": "6",
+      "text": "Appendicitis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "An involuntary contraction that narrows a blood vessel."
+     },
+     {
+      "id": "B",
+      "text": "The formation or presence of stones."
+     },
+     {
+      "id": "C",
+      "text": "An excess of sugar in the blood."
+     },
+     {
+      "id": "D",
+      "text": "A hernia or pouching of the stomach."
+     },
+     {
+      "id": "E",
+      "text": "Expansion or dilation of a blood vessel."
+     },
+     {
+      "id": "F",
+      "text": "Inflammation of the appendix."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "D",
+     "3": "E",
+     "4": "C",
+     "5": "B",
+     "6": "F"
+    },
+    "explain": "Vasospasm is an involuntary contraction of a vessel, built from vas- (vessel) and -spasm. Gastrocele is a hernia of the stomach, built from gastr- (stomach) and -cele (hernia). Angiectasis is dilation of a vessel, built from angi- (vessel) and -ectasis (expansion or dilation), with the vowel-initial suffix dropping the combining vowel, giving R+S. Hyperglycemia is excess sugar in the blood, built from hyper- (excessive), glyc- (sugar), and -emia (blood condition). Lithiasis is the formation of stones, built from lith- (stone) and -iasis. Appendicitis is inflammation of the appendix, built from appendic- and -itis."
+   },
+   {
+    "id": "MT06065",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Osteomalacia"
+     },
+     {
+      "id": "2",
+      "text": "Carcinoma"
+     },
+     {
+      "id": "3",
+      "text": "Myoma uteri"
+     },
+     {
+      "id": "4",
+      "text": "Sclerosis"
+     },
+     {
+      "id": "5",
+      "text": "Chromatophil"
+     },
+     {
+      "id": "6",
+      "text": "Pneumophilia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Softening of the bones."
+     },
+     {
+      "id": "B",
+      "text": "An affinity for air or lung tissue."
+     },
+     {
+      "id": "C",
+      "text": "A malignant, cancerous tumor."
+     },
+     {
+      "id": "D",
+      "text": "A benign tumor of muscle tissue; in the uterus, a fibroid."
+     },
+     {
+      "id": "E",
+      "text": "A condition of abnormal hardening of tissue."
+     },
+     {
+      "id": "F",
+      "text": "An affinity for a particular dye or color."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "C",
+     "3": "D",
+     "4": "E",
+     "5": "F",
+     "6": "B"
+    },
+    "explain": "Osteomalacia is softening of the bones, built from oste- (bone) and -malacia. Carcinoma is a malignant tumor, built from carcin- and -oma. Myoma uteri is a benign muscle tumor of the uterus, built from my- (muscle) and -oma, with the uterus sense coming from uteri, not from my-. Sclerosis is abnormal hardening, built from scler- (hard) and -osis (condition or increase). Chromatophil is an affinity for a color or dye, built from chrom- (color) and -phil (affinity). Pneumophilia is an affinity for air or lung tissue, built from pneum- (air or lung) and -philia (affinity)."
+   },
+   {
+    "id": "MT06066",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Blepharoptosis"
+     },
+     {
+      "id": "2",
+      "text": "Hemorrhage"
+     },
+     {
+      "id": "3",
+      "text": "Angiorrhexis"
+     },
+     {
+      "id": "4",
+      "text": "Pancytopenia"
+     },
+     {
+      "id": "5",
+      "text": "Erythropenia"
+     },
+     {
+      "id": "6",
+      "text": "Leukopenia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Drooping or downward displacement of the eyelid."
+     },
+     {
+      "id": "B",
+      "text": "An escape of blood by bursting forth; bleeding."
+     },
+     {
+      "id": "C",
+      "text": "Rupture of a blood vessel."
+     },
+     {
+      "id": "D",
+      "text": "A reduction affecting all types of blood cells at once."
+     },
+     {
+      "id": "E",
+      "text": "An abnormal reduction in red blood cells."
+     },
+     {
+      "id": "F",
+      "text": "An abnormal reduction in white blood cells."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Blepharoptosis is a drooping eyelid, built from blephar- (eyelid) and -ptosis. Hemorrhage is an escape of blood by bursting forth, built from hem- (blood) and -rrhage. Angiorrhexis is rupture of a vessel, built from angi- (vessel) and -rrhexis, a distinct event from hemorrhage. Pancytopenia is a reduction of all blood cell lines, built from pan- (all) and cyt/o (cell) and -penia, with the consonant-initial -penia keeping the combining vowel, giving P+CF+S. Erythropenia is a red-cell reduction, built from erythro- (red) and -penia, and leukopenia is a white-cell reduction, built from leuko- (white) and -penia."
+   },
+   {
+    "id": "MT06067",
+    "type": "matching",
+    "cat": "MT_lec6",
+    "q": "Match each medical term to its correct meaning.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Thrombopenia"
+     },
+     {
+      "id": "2",
+      "text": "Hemophilia"
+     },
+     {
+      "id": "3",
+      "text": "Neutrophilia"
+     },
+     {
+      "id": "4",
+      "text": "Cephalalgia"
+     },
+     {
+      "id": "5",
+      "text": "Cephalodynia"
+     },
+     {
+      "id": "6",
+      "text": "Agenesis"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "An abnormal reduction in platelets."
+     },
+     {
+      "id": "B",
+      "text": "A bleeding disorder caused by defective clotting."
+     },
+     {
+      "id": "C",
+      "text": "An increase in neutrophils, a type of white blood cell."
+     },
+     {
+      "id": "D",
+      "text": "Pain in the head."
+     },
+     {
+      "id": "E",
+      "text": "Pain in the head."
+     },
+     {
+      "id": "F",
+      "text": "Non-development or absence of an organ or part."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "Thrombopenia is a reduction of platelets, built from thrombo- (platelets) and -penia. Hemophilia is a bleeding disorder, built from hem- (blood) and -philia, historically an affinity for bleeding. Neutrophilia is an increase in neutrophils, built on the word-root neutrophil plus -ia (condition or increase), which is why its form is R+S rather than CF+S. Cephalalgia and cephalodynia both mean pain in the head, the first using -algia (vowel-initial, so the combining vowel drops, giving R+S) and the second using -dynia (consonant-initial, so the combining vowel is kept, giving CF+S). Agenesis is non-development of an organ, built from a- (without) and -genesis (origin or production)."
+   }
+  ]
+ }
+}

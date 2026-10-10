@@ -88,7 +88,7 @@ Each card shows:
 | Type | In the bank file | How it plays |
 | --- | --- | --- |
 | Choice (`mcq`) | `q, options[], correct, explain` | Wrong pick: shake + "not that one · try again", then try again. Right pick: green, ✓ explanation, celebration. |
-| Linking (`matching`) | `q, leftItems[{id,text}], rightItems[{id,text}], correct_pairs{left:right}, explain` | Hold a term or meaning, drag the thread and let go on the other side. Correct links lock and glow. Wrong ones stay as loose lines. "Clear drawings" removes some loose lines but never locked ones. The lines stay attached to their boxes when the window size changes. |
+| Linking (`matching`) | `q, leftItems[{id,text}], rightItems[{id,text}], correct_pairs{left:right}, explain` | Hold a term or meaning, drag the thread and let go on the other side. Correct links lock and glow. Wrong ones stay as loose lines. "Clear drawings" removes some loose lines but never locked ones. The lines stay attached to their boxes when the window size changes. Several terms may share one meaning (many-to-one). Right-hand boxes with the same text (e.g. two "Pain") are merged into one box when the bank loads, so either term links to it; the bank file is not changed. |
 | Stepped (`stepped`) | `q, explain, steps[{id,prompt,options,correct}]` | See section 6. |
 | Labeling (`label`) | `q, image, alt, labels[{id, answer, accept[], x, y, w, h}], explain` (optional `credit`, `creditUrl`) | Put every label on the picture by dragging (or typing). See section 14. |
 | Ordering (`order`) | `q, title, stages[{id, text, part}], explain` (stages listed in the right order) | Shuffled cards; drag them or use ▲▼, then **Check**. See section 15. |
