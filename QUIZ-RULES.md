@@ -644,3 +644,15 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
 - Real content that fits none of the four slots is kept after them (none today).
 - Current content: Medical Physics PT1, Study Skills PT1, English PT1, ITHS PT1 and
   Medical Terminology PT2 (Medical Terminology PT1 is a placeholder).
+- **Only In Finals** holds finals content that comes after Periodic Test 2; **Finals** is for a
+  whole-course bank. Each subject unhides only the finals slot it uses; the other stays
+  `hidden: true`.
+- Medical Physics **Only In Finals** (`banks/medphys/oif.json`, progress key `medphys/oif`):
+  the finals question banks for Chapters 6, 7 and 8 (163 questions: 149 choice, 9 linking,
+  5 stepped), one card per chapter (44 / 61 / 58), Draft badge, Study notes in
+  `content/medphys/oif/chapter-6.md`, `chapter-7.md`, `chapter-8.md` (26 own diagrams).
+  Ids PHY60001–PHY80060 are unique portal-wide (no renames). Fixes made on import:
+  PHY70006 key (1.19 × 10⁻¹⁵ J, not 10⁻¹⁶); PHY60044 steps 2–3 had two right answers
+  (distractors replaced); explanations of PHY70030 / 70034 / 70035 belonged to other
+  questions (rewritten); PHY60020 / 60023 called an opaque cornea a cataract; PHY70058
+  wrong distractor reasoning; PHY70041 C-14 ratio (about 1 : 10¹², slides say 10¹³).

@@ -1,0 +1,2904 @@
+{
+ "id": "oif",
+ "subject": "Medical Physics",
+ "subjectId": "medphys",
+ "title": "Only In Finals",
+ "source": "Medical Physics finals banks chapter-6-optical-instruments-and-medical-applications (44), chapter-7-atomic-and-nuclear-physics (61), chapter-8-electricity-and-magnetism (58); merged in source order, ids unchanged",
+ "formSize": 163,
+ "forms": [
+  "A"
+ ],
+ "cards": [
+  {
+   "id": "ch6",
+   "title": "Chapter 6: Optical Instruments and their Medical Applications",
+   "cats": [
+    "Chapter 6: Optical Instruments",
+    "Chapter 6: Vision Defects",
+    "Chapter 6: Lasers"
+   ]
+  },
+  {
+   "id": "ch7",
+   "title": "Chapter 7: Atomic and Nuclear Physics",
+   "cats": [
+    "Chapter 7: Electromagnetic Spectrum",
+    "Chapter 7: Photon",
+    "Chapter 7: Photoelectric Effect",
+    "Chapter 7: de Broglie Hypothesis",
+    "Chapter 7: Atomic Structure",
+    "Chapter 7: Nuclear Radius",
+    "Chapter 7: Radioactivity",
+    "Chapter 7: Half-Life",
+    "Chapter 7: Carbon Dating",
+    "Chapter 7: Fission and Fusion",
+    "Chapter 7: Dosimetry",
+    "Chapter 7: Radiation Detection",
+    "Chapter 7: Nuclear Reactions",
+    "Chapter 7: Photon and Nuclear Formulas"
+   ]
+  },
+  {
+   "id": "ch8",
+   "title": "Chapter 8: Electricity and Magnetism",
+   "cats": [
+    "Chapter 8: Static Electricity",
+    "Chapter 8: Coulomb's Law",
+    "Chapter 8: Electric Field",
+    "Chapter 8: Electric Potential",
+    "Chapter 8: Electric Current",
+    "Chapter 8: Ohm's Law",
+    "Chapter 8: Resistance and Resistivity",
+    "Chapter 8: Current Density",
+    "Chapter 8: Nerve Conduction",
+    "Chapter 8: Magnetism",
+    "Chapter 8: MRI",
+    "Chapter 8: Biomagnetism",
+    "Chapter 8: Electricity Formulas"
+   ]
+  }
+ ],
+ "bank": {
+  "A": [
+   {
+    "id": "PHY60001",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "A simple magnifier is a convex lens of short focal length used to:",
+    "options": [
+     "Produce a real inverted image of a distant object",
+     "Form an enlarged virtual image of a nearby object",
+     "Correct myopia by diverging the incoming light rays",
+     "Measure the refractive index of a liquid sample"
+    ],
+    "correct": 1,
+    "explain": "A simple magnifier is a convex lens with a short focal length used to form an enlarged virtual image of a nearby object. It works by placing the object between the optical centre and the focal point, producing a virtual, erect, enlarged image. Producing a real inverted image of a distant object is what a camera or the unaided eye does. Correcting myopia by diverging incoming light rays is the job of a concave lens. Measuring the refractive index of a liquid sample is unrelated to the magnifier."
+   },
+   {
+    "id": "PHY60002",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "In a simple magnifier, where is the object placed to produce a magnified image?",
+    "options": [
+     "Between the optical centre and the focal point",
+     "Exactly at the focal point",
+     "Between the focal point and twice the focal length",
+     "Beyond twice the focal length"
+    ],
+    "correct": 0,
+    "explain": "The object is placed between the optical centre and the focal point. This produces a virtual, erect, magnified image on the same side of the lens. If the object were exactly at the focal point, the rays would emerge parallel and no image would form. If the object were between the focal point and twice the focal length, the image would be real and inverted. If the object were beyond twice the focal length, the image would be real, inverted, and diminished. None of those positions gives the virtual magnified image of a simple magnifier."
+   },
+   {
+    "id": "PHY60003",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The image formed by a simple magnifier is:",
+    "options": [
+     "Real, inverted, and diminished",
+     "Virtual, erect, and magnified",
+     "Real, erect, and magnified",
+     "Virtual, inverted, and diminished"
+    ],
+    "correct": 1,
+    "explain": "A simple magnifier produces a virtual, erect, and magnified image. The image is virtual because light does not actually pass through it; it is seen by the eye looking through the lens. It is erect (upright) and larger than the object. Real images are formed on the opposite side and can be projected; the magnifier does not form a real image when used as intended. The combinations with inverted or diminished do not match the magnifier."
+   },
+   {
+    "id": "PHY60004",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The least distance of distinct vision, denoted N, is:",
+    "options": [
+     "The farthest distance at which the eye can focus clearly",
+     "The closest distance at which the eye can focus clearly",
+     "The distance between the two lenses of a microscope",
+     "The distance from the cornea to the retina"
+    ],
+    "correct": 1,
+    "explain": "The least distance of distinct vision is the closest distance at which the eye can focus clearly, typically 25 cm for a normal adult eye. It increases with age. The farthest distance is the far point, normally infinity. The distance between microscope lenses is the tube length L. The distance from cornea to retina is the eyeball length."
+   },
+   {
+    "id": "PHY60005",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The angular magnification M of a simple magnifier is given by:",
+    "options": [
+     "M = f / 25 cm",
+     "M = 25 cm / f",
+     "M = 25 cm × f",
+     "M = 1 / (25 cm × f)"
+    ],
+    "correct": 1,
+    "explain": "The angular magnification is the ratio of the angle subtended by the image to the angle subtended by the object at the near point. When the image is at the near point (25 cm), the formula is M = 25 cm / f, where f is the focal length of the lens in centimeters. A shorter focal length gives a larger magnification. The other options invert the ratio, multiply, or take a reciprocal product, none of which matches the definition."
+   },
+   {
+    "id": "PHY60006",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "A simple magnifier has a focal length of 5 cm. What is its angular magnification when the image is at the least distance of distinct vision?",
+    "options": [
+     "5",
+     "10",
+     "25",
+     "50"
+    ],
+    "correct": 0,
+    "explain": "Using M = 25 cm / f, substitute f = 5 cm: M = 25 / 5 = 5. The magnification is 5 times. The other values result from using a different focal length or misapplying the formula."
+   },
+   {
+    "id": "PHY60007",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "A compound microscope is used to:",
+    "options": [
+     "View distant objects with high angular resolution",
+     "View small objects with greater magnification",
+     "Correct focusing errors of the human eye",
+     "Measure the wavelength of a light source"
+    ],
+    "correct": 1,
+    "explain": "A compound microscope combines two convex lenses, an objective and an eyepiece, to view small objects at greater magnification. The objective forms a real, inverted, magnified image, and the eyepiece magnifies that image further. Viewing distant objects with high angular resolution is the job of a telescope. Correcting focusing errors of the human eye is done with eyeglasses. Measuring the wavelength of a light source is done with a spectrometer or interferometer."
+   },
+   {
+    "id": "PHY60008",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "In a compound microscope, the objective lens has a focal length that is:",
+    "options": [
+     "Very short, typically less than 1 cm",
+     "Long, typically several meters in length",
+     "Equal to the eyepiece focal length in value",
+     "Negative, acting as a diverging lens"
+    ],
+    "correct": 0,
+    "explain": "The objective lens of a compound microscope has a very short focal length, often less than 1 cm. This allows the object to be placed just outside the focal point, producing a large real image. The eyepiece has a longer focal length of a few centimeters. Both lenses are convex and have positive focal lengths."
+   },
+   {
+    "id": "PHY60009",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "In a compound microscope, the object is placed:",
+    "options": [
+     "At the focal point of the objective lens, producing parallel rays",
+     "Just outside the focal point of the objective lens",
+     "At the focal point of the eyepiece, producing parallel rays",
+     "At the centre of curvature of the objective lens"
+    ],
+    "correct": 1,
+    "explain": "The object is placed just outside the focal point of the objective lens. This produces a real, inverted, magnified image beyond twice the focal length, which then acts as the object for the eyepiece. If the object were exactly at the objective focal point, the rays would emerge parallel and no image would form. Placing it at the eyepiece focal point is not the standard arrangement. Placing it at the centre of curvature would produce a real, inverted, same-size image, not the magnified first image needed."
+   },
+   {
+    "id": "PHY60010",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The image formed by the objective lens of a compound microscope is:",
+    "options": [
+     "Virtual, erect, and diminished",
+     "Real, inverted, and magnified",
+     "Virtual, inverted, and magnified",
+     "Real, erect, and diminished"
+    ],
+    "correct": 1,
+    "explain": "The objective lens forms a real, inverted, and magnified image. This image is located at or near the focal point of the eyepiece. The eyepiece then acts as a simple magnifier on this image, producing a final virtual, enlarged, inverted image. The combinations with virtual or erect do not describe the objective's image."
+   },
+   {
+    "id": "PHY60011",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The final image produced by a compound microscope is:",
+    "options": [
+     "Virtual, enlarged, and inverted relative to the original object",
+     "Real, enlarged, and upright relative to the original object",
+     "Virtual, diminished, and upright relative to the original object",
+     "Real, diminished, and inverted relative to the original object"
+    ],
+    "correct": 0,
+    "explain": "The eyepiece acts as a simple magnifier on the real image formed by the objective. It produces a virtual, enlarged image. Because the objective's image is inverted, and the eyepiece does not invert it further, the final image remains inverted relative to the original object. The final image is virtual, not real, and enlarged, not diminished."
+   },
+   {
+    "id": "PHY60012",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "In a compound microscope, the separation L between the objective and eyepiece is:",
+    "options": [
+     "Much smaller than either focal length",
+     "Much greater than either focal length",
+     "Equal to the sum of the focal lengths",
+     "Equal to the difference of the focal lengths"
+    ],
+    "correct": 1,
+    "explain": "The two lenses are separated by a distance L that is much greater than either the objective focal length f_o or the eyepiece focal length f_e. This separation allows the real image formed by the objective to fall at or near the focal point of the eyepiece. The other options do not describe the typical arrangement of a compound microscope."
+   },
+   {
+    "id": "PHY60013",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The human eye resembles which optical instrument in its basic functioning?",
+    "options": [
+     "A telescope",
+     "A camera",
+     "A microscope",
+     "A magnifying glass"
+    ],
+    "correct": 1,
+    "explain": "The human eye resembles a camera. It has an adjustable lens, an iris that acts as an aperture, and a retina that acts as the film or sensor. Light enters through the cornea and is focused by the lens onto the retina. A telescope, microscope, or magnifying glass has different optical arrangements."
+   },
+   {
+    "id": "PHY60014",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The refractive index of the crystalline lens material in the human eye is approximately:",
+    "options": [
+     "1.00",
+     "1.33",
+     "1.437",
+     "2.42"
+    ],
+    "correct": 2,
+    "explain": "The refractive index of the lens material is about 1.437. This is higher than water (1.33) and air (1.00), allowing the lens to refract light. Diamond has a much higher index of 2.42. The lens works together with the cornea, which provides most of the eye's refractive power."
+   },
+   {
+    "id": "PHY60015",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The near point of the eye is defined as:",
+    "options": [
+     "The farthest distance at which the eye can focus clearly",
+     "The closest distance at which the eye can focus clearly",
+     "The distance between the lens and the retina",
+     "The point where the optic nerve enters the retina"
+    ],
+    "correct": 1,
+    "explain": "The near point is the closest distance at which the eye can focus clearly. For a normal adult eye, this is about 25 cm. It increases with age as the lens loses flexibility. The farthest distance is the far point, normally infinity. The distance between lens and retina is the eyeball length, and the optic nerve entry point is the blind spot."
+   },
+   {
+    "id": "PHY60016",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The far point of a normal human eye is approximately:",
+    "options": [
+     "Approximately 25 cm from the eye",
+     "Approximately 1 meter from the eye",
+     "Effectively at infinity for a relaxed eye",
+     "Approximately equal to the eyeball diameter"
+    ],
+    "correct": 2,
+    "explain": "The far point of a normal eye is at infinity, meaning the relaxed eye can focus on very distant objects. The near point is about 25 cm. The eyeball diameter is about 2.5 cm. The far point being at infinity indicates that the eye can bring parallel rays from a distant object to a focus on the retina without accommodation."
+   },
+   {
+    "id": "PHY60017",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "Where does most of the refraction of light occur in the human eye?",
+    "options": [
+     "At the crystalline lens",
+     "At the cornea",
+     "At the retina",
+     "At the vitreous humor"
+    ],
+    "correct": 1,
+    "explain": "Most of the refraction occurs at the cornea, the transparent front surface of the eye. The crystalline lens makes small adjustments to fine-tune the focus for objects at different distances. The retina is the light-sensitive layer at the back, and the vitreous humor is the gel-like substance filling the eyeball, neither of which is the main refracting surface."
+   },
+   {
+    "id": "PHY60018",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The image formed by the eye lens on the retina is:",
+    "options": [
+     "Virtual, upright, and magnified",
+     "Real, inverted, and diminished",
+     "Virtual, inverted, and diminished",
+     "Real, upright, and magnified"
+    ],
+    "correct": 1,
+    "explain": "The eye lens forms a real, inverted, and diminished image on the retina. The image is real because light actually converges on the retina. It is inverted relative to the object. The brain interprets this inverted image to give us our upright perception. The other options include virtual or upright, which are incorrect for the retinal image."
+   },
+   {
+    "id": "PHY60019",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Nearsightedness, or myopia, is a condition in which a person:",
+    "options": [
+     "Can see distant objects clearly but has difficulty with near objects",
+     "Can see near objects clearly but has difficulty with distant objects",
+     "Cannot see objects in any direction clearly",
+     "Sees objects only in black and white"
+    ],
+    "correct": 1,
+    "explain": "Myopia, or nearsightedness, is a condition where a person can see near objects clearly but distant objects appear blurry. This occurs because the eye's optical power is too strong, or the eyeball is too long, causing light rays from distant objects to focus in front of the retina rather than on it. The opposite condition, where distant objects are clear and near objects are blurry, is hyperopia."
+   },
+   {
+    "id": "PHY60020",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Myopia is caused by:",
+    "options": [
+     "A decrease in the focal length of the eye lens, or an eyeball that is too long",
+     "An increase in the focal length of the eye lens, or an eyeball that is too short",
+     "A loss of transparency in the cornea, clouding the front of the eye",
+     "A separation of the retina from the back wall of the eye"
+    ],
+    "correct": 0,
+    "explain": "Myopia results from excessive optical power of the eye, which can be due to a decrease in the focal length of the eye lens or an eyeball that is too long. This causes images of distant objects to form in front of the retina. An increase in focal length or a short eyeball would cause hyperopia. A clouded cornea is not a refractive error (clouding of the lens is a cataract), and retinal detachment is a separate condition."
+   },
+   {
+    "id": "PHY60021",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Myopia is corrected using:",
+    "options": [
+     "A converging lens that adds positive optical power",
+     "A diverging lens that adds negative optical power",
+     "A cylindrical lens that corrects uneven curvature",
+     "A prism that shifts the direction of the light"
+    ],
+    "correct": 1,
+    "explain": "Myopia is corrected with a diverging lens, which has negative power. The diverging lens spreads the incoming light rays before they enter the eye, effectively reducing the eye's excessive optical power and allowing the image to focus on the retina. A converging lens is used for hyperopia. A cylindrical lens corrects astigmatism, and a prism is used for other purposes."
+   },
+   {
+    "id": "PHY60022",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Farsightedness, or hyperopia, is a condition in which a person:",
+    "options": [
+     "Can see near objects clearly but has difficulty with distant objects",
+     "Can see distant objects clearly but has difficulty with near objects",
+     "Cannot see objects in any direction clearly",
+     "Sees objects only in black and white"
+    ],
+    "correct": 1,
+    "explain": "Hyperopia, or farsightedness, is a condition where a person can see distant objects clearly but has difficulty focusing on near objects. This occurs because the eye's optical power is insufficient, or the eyeball is too short, causing light rays from near objects to focus behind the retina. The opposite condition, where near objects are clear and distant objects are blurry, is myopia."
+   },
+   {
+    "id": "PHY60023",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Hyperopia is caused by:",
+    "options": [
+     "A decrease in the focal length of the eye lens, or an eyeball that is too long",
+     "An increase in the focal length of the eye lens, or an eyeball that is too short",
+     "A loss of transparency in the cornea, clouding the front of the eye",
+     "A separation of the retina from the back wall of the eye"
+    ],
+    "correct": 1,
+    "explain": "Hyperopia results from insufficient optical power of the eye, which can be due to an increase in the focal length of the eye lens or an eyeball that is too short. This causes images of near objects to form behind the retina. A decrease in focal length or a long eyeball would cause myopia. A clouded cornea is not a refractive error (clouding of the lens is a cataract), and retinal detachment is a separate condition."
+   },
+   {
+    "id": "PHY60024",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Hyperopia is corrected using:",
+    "options": [
+     "A diverging lens that subtracts optical power",
+     "A converging lens that adds positive optical power",
+     "A cylindrical lens that corrects uneven curvature",
+     "A prism that shifts the direction of the light"
+    ],
+    "correct": 1,
+    "explain": "Hyperopia is corrected with a converging lens, which has positive power. The converging lens adds optical power to the eye, helping to bring the image of near objects forward onto the retina. A diverging lens is used for myopia. A cylindrical lens corrects astigmatism, and a prism is used for other purposes."
+   },
+   {
+    "id": "PHY60025",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "What does the acronym LASER stand for?",
+    "options": [
+     "Light Amplification by Stimulated Emission of Radiation",
+     "Light Absorption by Stimulated Emission of Radiation",
+     "Light Amplification by Spontaneous Emission of Radiation",
+     "Light Absorption by Spontaneous Emission of Radiation"
+    ],
+    "correct": 0,
+    "explain": "LASER stands for Light Amplification by Stimulated Emission of Radiation. The key process is stimulated emission, not spontaneous emission, and it produces amplification, not absorption. This acronym describes the physical mechanism by which laser light is generated."
+   },
+   {
+    "id": "PHY60026",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Which property of laser light means it consists of a single wavelength?",
+    "options": [
+     "Coherence",
+     "Directionality",
+     "Monochromaticity",
+     "Intensity"
+    ],
+    "correct": 2,
+    "explain": "Monochromatic means one color or one wavelength. Laser light is highly monochromatic, meaning it contains essentially a single wavelength, unlike ordinary white light which is a mixture of many wavelengths. Coherence refers to the waves being in phase. Directionality means the beam does not spread. Intensity refers to brightness."
+   },
+   {
+    "id": "PHY60027",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "The coherence of laser light means that:",
+    "options": [
+     "The waves are in phase in space and time",
+     "The light contains only a single wavelength in the beam",
+     "The beam spreads out in every direction from the source",
+     "The light has very low brightness compared with a bulb"
+    ],
+    "correct": 0,
+    "explain": "Coherence means the light waves are in phase with each other in both space and time. This allows laser light to produce interference patterns and makes it useful for holography. Monochromaticity is about a single wavelength, directionality is about a narrow beam that does not spread, and intensity is about brightness. Low brightness is the opposite of laser light."
+   },
+   {
+    "id": "PHY60028",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Which property of laser light allows it to travel long distances without spreading significantly?",
+    "options": [
+     "Monochromaticity",
+     "Coherence",
+     "Directionality",
+     "High intensity"
+    ],
+    "correct": 2,
+    "explain": "Directionality means the laser beam is highly collimated and does not spread or diverge as it propagates. This is why a laser pointer can project a small dot across a room. Ordinary light from a bulb spreads in all directions. Monochromaticity is about wavelength, coherence about phase, and intensity about brightness."
+   },
+   {
+    "id": "PHY60029",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Which of the following are the three essential components of a laser?",
+    "options": [
+     "Active medium, energy source, and reflecting cavity",
+     "Active medium, lens system, and glass tube",
+     "Energy source, cathode, and vacuum tube",
+     "Reflecting cavity, prism, and photocell"
+    ],
+    "correct": 0,
+    "explain": "A laser consists of an active medium that amplifies light, an energy source that pumps energy into the medium, and a reflecting cavity, typically two mirrors, that allows light to bounce back and forth for amplification. A lens system, glass tube, cathode, vacuum tube, prism, or photocell may appear in other devices but are not the three defining components of a laser."
+   },
+   {
+    "id": "PHY60030",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Which laser application is used to reshape the cornea to correct myopia and hyperopia?",
+    "options": [
+     "Photocoagulation",
+     "LASIK",
+     "Holography",
+     "Barcode reading"
+    ],
+    "correct": 1,
+    "explain": "LASIK, which stands for Laser-Assisted In Situ Keratomileusis, is a technique that uses a laser to reshape the cornea to correct myopia and hyperopia. Photocoagulation is used to seal blood vessels in the retina. Holography is for three-dimensional imaging. Barcode reading is an industrial application."
+   },
+   {
+    "id": "PHY60031",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Why is a laser sometimes called a bloodless knife in micro-surgery?",
+    "options": [
+     "It cuts and cauterizes tissue, reducing bleeding during surgery",
+     "It is made of a material that repels blood from the tissue",
+     "It works only on tissue that contains no blood vessels",
+     "It uses high-frequency sound waves to cut the tissue"
+    ],
+    "correct": 0,
+    "explain": "In micro-surgery, a laser beam can destroy harmful components without seriously affecting nearby regions. As it cuts, it seals small blood vessels through coagulation, which reduces bleeding. This is why it is called a bloodless knife. It is not made of a material that repels blood, it does not work only on tissue with no blood vessels, and it uses light rather than sound waves."
+   },
+   {
+    "id": "PHY60032",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "Photocoagulation of the retina using a laser is used to:",
+    "options": [
+     "Reshape the corneal surface to correct refractive vision errors",
+     "Heat retinal vessels so blood coagulates and blocks them",
+     "Create three-dimensional holographic images of solid objects nearby",
+     "Scan and read product barcodes at supermarket checkout counters"
+    ],
+    "correct": 1,
+    "explain": "Photocoagulation uses laser light to heat blood vessels in the retina. The heat causes the blood to coagulate and block the vessel. This is used to treat conditions such as diabetic retinopathy. Reshaping the cornea is LASIK, creating three-dimensional images is holography, and reading barcodes is an industrial application."
+   },
+   {
+    "id": "PHY60033",
+    "type": "matching",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Match each vision condition to its correction.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Myopia"
+     },
+     {
+      "id": "2",
+      "text": "Hyperopia"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Diverging lens (concave, minus power)"
+     },
+     {
+      "id": "B",
+      "text": "Converging lens (convex, plus power)"
+     },
+     {
+      "id": "C",
+      "text": "Cylindrical lens (corrects astigmatism)"
+     },
+     {
+      "id": "D",
+      "text": "Prism (shifts light direction)"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B"
+    },
+    "explain": "Myopia (nearsightedness) is corrected with a diverging lens, which has negative power. Hyperopia (farsightedness) is corrected with a converging lens, which has positive power. A cylindrical lens corrects astigmatism, and a prism shifts the direction of light for other alignment problems."
+   },
+   {
+    "id": "PHY60034",
+    "type": "matching",
+    "cat": "Chapter 6: Lasers",
+    "q": "Match each laser property to its description.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Monochromatic"
+     },
+     {
+      "id": "2",
+      "text": "Directional"
+     },
+     {
+      "id": "3",
+      "text": "Coherent"
+     },
+     {
+      "id": "4",
+      "text": "Intense"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Consists of a single wavelength"
+     },
+     {
+      "id": "B",
+      "text": "Does not spread or diverge as it propagates"
+     },
+     {
+      "id": "C",
+      "text": "Waves are in phase in space and time"
+     },
+     {
+      "id": "D",
+      "text": "Has a large number of photons in a small area"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D"
+    },
+    "explain": "Monochromatic means one wavelength. Directional means the beam stays narrow. Coherent means the waves are in phase. Intense means high brightness due to concentration of photons."
+   },
+   {
+    "id": "PHY60035",
+    "type": "matching",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "Match each part of a compound microscope to its function.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Objective lens"
+     },
+     {
+      "id": "2",
+      "text": "Eyepiece"
+     },
+     {
+      "id": "3",
+      "text": "Tube length L"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Forms a real, inverted, magnified image of the object"
+     },
+     {
+      "id": "B",
+      "text": "Acts as a simple magnifier to produce the final virtual image"
+     },
+     {
+      "id": "C",
+      "text": "The distance separating the two lenses, much greater than either focal length"
+     },
+     {
+      "id": "D",
+      "text": "Holds the specimen being viewed"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C"
+    },
+    "explain": "The objective lens forms the first real image. The eyepiece magnifies that image to produce the final virtual image. The tube length is the separation between the lenses. The stage holds the specimen."
+   },
+   {
+    "id": "PHY60036",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "How does the near point of the eye typically change with age?",
+    "options": [
+     "It decreases, so objects can be brought closer to the eye",
+     "It increases, so near objects must be held farther away",
+     "It remains fixed at 25 cm throughout life",
+     "It becomes equal to the far point of the eye"
+    ],
+    "correct": 1,
+    "explain": "The near point increases with age. At age 10 it is about 18 cm, while for a normal adult it is about 25 cm. As the lens loses flexibility, it becomes harder to focus on close objects, so they must be held farther away. This condition is called presbyopia. The near point does not decrease, remain fixed, or become equal to the far point."
+   },
+   {
+    "id": "PHY60037",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The near point of a typical eye at age 10 is approximately:",
+    "options": [
+     "About 18 cm from the eye",
+     "About 25 cm from the eye",
+     "About 40 cm from the eye",
+     "Effectively at optical infinity"
+    ],
+    "correct": 0,
+    "explain": "Typically at age 10 the near point of the eye is about 18 cm. For a normal adult it averages about 25 cm, and the near point increases further with age as the lens loses flexibility. Optical infinity is the far point of a normal relaxed eye, not the near point."
+   },
+   {
+    "id": "PHY60038",
+    "type": "mcq",
+    "cat": "Chapter 6: Optical Instruments",
+    "q": "The clear liquid behind the cornea, before the pupil and lens, is the:",
+    "options": [
+     "Aqueous humor filling the anterior chamber",
+     "Vitreous humor filling the posterior chamber",
+     "Crystalline lens material of refractive index 1.437",
+     "Retinal pigment layer at the back of the eye"
+    ],
+    "correct": 0,
+    "explain": "Light entering the eye passes through the transparent cornea, behind which there exists a clear liquid called the aqueous humor, then a variable aperture (the pupil, an opening in the iris), and the crystalline lens. The vitreous humor is the gel-like substance filling the main body of the eyeball behind the lens. The crystalline lens is the adjustable focusing element, and the retina is the light-sensitive layer at the back."
+   },
+   {
+    "id": "PHY60039",
+    "type": "mcq",
+    "cat": "Chapter 6: Lasers",
+    "q": "One reason laser light can be more hazardous than ordinary light is that it can:",
+    "options": [
+     "Deposit a great deal of energy within a very small area",
+     "Spread its energy over a very wide area of surrounding tissue",
+     "Emit only infrared wavelengths that pass harmlessly through",
+     "Produce incoherent waves that cancel each other out"
+    ],
+    "correct": 0,
+    "explain": "These properties of laser light make it more hazardous than ordinary light. Laser light can deposit a great deal of energy within a very small area because it is highly directional and intense. Spreading energy over a wide area would reduce local intensity. Ordinary light is a mixture of wavelengths, and coherence is a property of laser light rather than a reason for reduced hazard."
+   },
+   {
+    "id": "PHY60040",
+    "type": "mcq",
+    "cat": "Chapter 6: Vision Defects",
+    "q": "Which of the following lists the four types of vision defects mentioned in the course?",
+    "options": [
+     "Myopia, hyperopia, astigmatism, and presbyopia",
+     "Myopia, hyperopia, cataract formation, and glaucoma",
+     "Astigmatism, presbyopia, strabismus, and color blindness",
+     "Myopia, hyperopia, night blindness, and photophobia"
+    ],
+    "correct": 0,
+    "explain": "There are four types of vision defects depending on the eye lens and cornea: near sightedness (myopia), far sightedness (hyperopia), astigmatism, and presbyopia (old-age vision). Cataract, glaucoma, strabismus, color blindness, night blindness, and photophobia are other eye conditions not listed among these four refractive vision defects."
+   },
+   {
+    "id": "PHY60041",
+    "type": "stepped",
+    "cat": "Chapter 6: Optical Instruments",
+    "group": "near-point",
+    "groupOrder": 1,
+    "q": "The closest distance of clear focus is named. Choose the matching term at each step.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "The closest distance at which the eye can focus clearly is called the:",
+      "options": [
+       "Near point",
+       "Far point",
+       "Focal length of the cornea",
+       "Tube length of a microscope"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "That same closest distance is also denoted N and called the:",
+      "options": [
+       "Least distance of distinct vision",
+       "Greatest distance of distinct vision",
+       "Distance from cornea to retina",
+       "Separation between objective and eyepiece"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "The near point is the closest distance of clear focus (normally ~25 cm). The same quantity is called the least distance of distinct vision and is denoted N. The far point is the greatest distance (infinity for a normal eye). Cornea-to-retina distance and microscope tube length are different lengths."
+   },
+   {
+    "id": "PHY60042",
+    "type": "stepped",
+    "cat": "Chapter 6: Vision Defects",
+    "group": "vision-defects",
+    "groupOrder": 1,
+    "q": "Each refractive error is named. Choose its defining feature, then its correction.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Myopia is the condition in which a person:",
+      "options": [
+       "Can see near objects clearly but distant objects are blurry",
+       "Can see distant objects clearly but near objects are blurry",
+       "Cannot see objects clearly at any distance",
+       "Sees objects only in black and white"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Myopia is corrected with:",
+      "options": [
+       "A diverging lens that adds negative power",
+       "A converging lens that adds positive power",
+       "A cylindrical lens that corrects uneven curvature",
+       "A prism that shifts the direction of light"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Hyperopia is the condition in which a person:",
+      "options": [
+       "Can see distant objects clearly but near objects are blurry",
+       "Can see near objects clearly but distant objects are blurry",
+       "Cannot see objects clearly at any distance",
+       "Sees objects only in black and white"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "4",
+      "prompt": "Hyperopia is corrected with:",
+      "options": [
+       "A converging lens that adds positive power",
+       "A diverging lens that adds negative power",
+       "A cylindrical lens that corrects uneven curvature",
+       "A prism that shifts the direction of light"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "Myopia (nearsightedness) focuses distant images in front of the retina and is corrected with a diverging (minus) lens. Hyperopia (farsightedness) focuses near images behind the retina and is corrected with a converging (plus) lens. Cylindrical lenses correct astigmatism; prisms are used for other alignment problems."
+   },
+   {
+    "id": "PHY60043",
+    "type": "stepped",
+    "cat": "Chapter 6: Lasers",
+    "group": "laser-properties",
+    "groupOrder": 1,
+    "q": "Each laser property is named. Choose the description that belongs to it.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Monochromatic means the light:",
+      "options": [
+       "Consists of essentially a single wavelength",
+       "Has waves that are in phase in space and time",
+       "Does not spread or diverge as it travels",
+       "Concentrates many photons into a small area"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Directional means the beam:",
+      "options": [
+       "Does not spread or diverge as it propagates",
+       "Consists of essentially a single wavelength",
+       "Has waves that are in phase in space and time",
+       "Concentrates many photons into a small area"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Coherent means the waves:",
+      "options": [
+       "Are in phase in both space and time",
+       "Consist of essentially a single wavelength",
+       "Do not spread or diverge as they travel",
+       "Concentrate many photons into a small area"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "Monochromatic means one wavelength. Directional means the beam stays narrow. Coherent means the waves stay in phase. Intensity is the concentration of energy that makes even a moderate-power laser extremely bright."
+   },
+   {
+    "id": "PHY60044",
+    "type": "stepped",
+    "cat": "Chapter 6: Lasers",
+    "group": "laser-components",
+    "groupOrder": 1,
+    "q": "Each essential part of a laser is named. Choose the correct part at each step.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "The part that amplifies light by stimulated emission is the:",
+      "options": [
+       "Active medium",
+       "Energy source",
+       "Reflecting cavity",
+       "Focusing lens"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "The part that pumps energy into the medium is the:",
+      "options": [
+       "Energy source",
+       "Active medium",
+       "Reflecting cavity",
+       "Photocell"
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "The part that lets light bounce back and forth for amplification is the:",
+      "options": [
+       "Reflecting cavity",
+       "Energy source",
+       "Glass tube",
+       "Active medium"
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "A laser has three essential parts. The active medium is the material that amplifies light by stimulated emission. The energy source pumps energy into that medium. The reflecting cavity (usually two mirrors) lets the light bounce back and forth so amplification can build. A focusing lens, a photocell or a glass tube is not one of the three defining components."
+   },
+   {
+    "id": "PHY70001",
+    "type": "mcq",
+    "cat": "Chapter 7: Electromagnetic Spectrum",
+    "q": "Which of the following correctly lists the regions of the electromagnetic spectrum in order of increasing wavelength?",
+    "options": [
+     "Gamma rays, X-rays, Ultraviolet, Visible, Infrared, Radio waves",
+     "Radio waves, Infrared, Visible, Ultraviolet, X-rays, Gamma rays",
+     "Gamma rays, X-rays, Infrared, Visible, Ultraviolet, Radio waves",
+     "Radio waves, Ultraviolet, Visible, Infrared, X-rays, Gamma rays"
+    ],
+    "correct": 0,
+    "explain": "Increasing wavelength means going from the shortest wavelengths to the longest. Gamma rays have the shortest wavelengths, followed by X-rays, ultraviolet, visible, infrared, and finally radio waves with the longest wavelengths. The line Radio waves, Infrared, Visible, Ultraviolet, X-rays, Gamma rays reverses the order, listing from longest to shortest. The line Gamma rays, X-rays, Infrared, Visible, Ultraviolet, Radio waves places infrared before visible and ultraviolet, which is incorrect. The line Radio waves, Ultraviolet, Visible, Infrared, X-rays, Gamma rays mixes the order throughout."
+   },
+   {
+    "id": "PHY70002",
+    "type": "mcq",
+    "cat": "Chapter 7: Electromagnetic Spectrum",
+    "q": "The visible portion of the electromagnetic spectrum spans which wavelength range?",
+    "options": [
+     "Approximately 300 nm to 600 nm",
+     "Approximately 400 nm to 700 nm",
+     "Approximately 500 nm to 800 nm",
+     "Approximately 200 nm to 500 nm"
+    ],
+    "correct": 1,
+    "explain": "The visible spectrum ranges from about 400 nm at the violet end to about 700 nm at the red end. Violet light has the shortest wavelength in the visible range, and red light has the longest. The other ranges either shift the entire window or place the boundaries at the wrong values."
+   },
+   {
+    "id": "PHY70003",
+    "type": "mcq",
+    "cat": "Chapter 7: Electromagnetic Spectrum",
+    "q": "Which statement correctly describes the relationship between the electric and magnetic fields in an electromagnetic wave?",
+    "options": [
+     "They are parallel to each other and to the direction of propagation",
+     "They are perpendicular to each other and to the direction of propagation",
+     "They are perpendicular to each other but parallel to the direction of propagation",
+     "They are parallel to each other but perpendicular to the direction of propagation"
+    ],
+    "correct": 1,
+    "explain": "An electromagnetic wave consists of oscillating electric and magnetic fields that are perpendicular to each other and also perpendicular to the direction in which the wave travels. This transverse configuration is a defining property of all electromagnetic waves. The options that place either field parallel to the propagation direction or parallel to each other contradict this geometry."
+   },
+   {
+    "id": "PHY70004",
+    "type": "mcq",
+    "cat": "Chapter 7: Photon",
+    "q": "A photon is best defined as:",
+    "options": [
+     "A negatively charged particle emitted by metals",
+     "A quantum of electromagnetic radiation",
+     "A neutral particle with negligible mass",
+     "A positively charged particle in the nucleus"
+    ],
+    "correct": 1,
+    "explain": "A photon is the elementary amount, or quantum, of electromagnetic radiation. Einstein proposed in 1905 that light is quantized and exists in these discrete packets. A negatively charged particle emitted by metals describes an electron in the photoelectric effect. A neutral particle with negligible mass describes a neutrino. A positively charged particle in the nucleus describes a proton."
+   },
+   {
+    "id": "PHY70005",
+    "type": "mcq",
+    "cat": "Chapter 7: Photon",
+    "q": "The energy E of a photon with frequency f is given by which expression?",
+    "options": [
+     "E = h / f",
+     "E = f / h",
+     "E = h × f",
+     "E = h + f"
+    ],
+    "correct": 2,
+    "explain": "The energy of a photon is directly proportional to its frequency, with the constant of proportionality being Planck's constant h. The relation is E = h × f, where h = 6.63 × 10⁻³⁴ J·s. A higher frequency photon carries more energy. The other options either divide by frequency, divide by Planck's constant, or add the two quantities."
+   },
+   {
+    "id": "PHY70006",
+    "type": "mcq",
+    "cat": "Chapter 7: Photon",
+    "q": "An x-ray photon has a frequency of 1.8 × 10¹⁸ s⁻¹. What is its energy? Take h = 6.63 × 10⁻³⁴ J·s.",
+    "options": [
+     "1.19 × 10⁻¹⁶ J",
+     "1.19 × 10⁻¹⁵ J",
+     "1.19 × 10⁻¹⁷ J",
+     "1.19 × 10⁻¹⁴ J"
+    ],
+    "correct": 1,
+    "explain": "Using E = h × f, substitute h = 6.63 × 10⁻³⁴ J·s and f = 1.8 × 10¹⁸ s⁻¹. Then E = 6.63 × 10⁻³⁴ × 1.8 × 10¹⁸ = 11.93 × 10⁻¹⁶ J, which is 1.193 × 10⁻¹⁵ J (the slides write it as 11.93 × 10⁻¹⁶ J, the same value). The option 1.19 × 10⁻¹⁶ J is one power of ten too small, 1.19 × 10⁻¹⁷ J is two powers too small, and 1.19 × 10⁻¹⁴ J is one power too big."
+   },
+   {
+    "id": "PHY70007",
+    "type": "mcq",
+    "cat": "Chapter 7: Photon",
+    "q": "The relationship between the frequency f, wavelength λ, and speed c of an electromagnetic wave is:",
+    "options": [
+     "f = λ / c",
+     "f = c × λ",
+     "f = c / λ",
+     "f = c + λ"
+    ],
+    "correct": 2,
+    "explain": "For an electromagnetic wave traveling at the speed of light c, the frequency equals the speed divided by the wavelength: f = c / λ. This follows from the general wave equation v = f × λ with v replaced by c. The line f = λ / c inverts the ratio, the line f = c × λ multiplies the two quantities, and the line f = c + λ adds them."
+   },
+   {
+    "id": "PHY70008",
+    "type": "mcq",
+    "cat": "Chapter 7: Photoelectric Effect",
+    "q": "The photoelectric effect occurs when:",
+    "options": [
+     "Photons eject electrons from a metal surface",
+     "Electrons emit photons while dropping a level",
+     "A heavy nucleus splits into two lighter ones",
+     "Two light nuclei combine into a heavier one"
+    ],
+    "correct": 0,
+    "explain": "The photoelectric effect is the phenomenon in which photons of sufficient frequency strike a metal surface, collide with valence electrons, and give them enough energy to be liberated from the metal. The line Electrons emit photons while dropping a level describes photon emission by atoms, which is the reverse process. The line A heavy nucleus splits into two lighter ones describes nuclear fission, and the line Two light nuclei combine into a heavier one describes nuclear fusion."
+   },
+   {
+    "id": "PHY70009",
+    "type": "mcq",
+    "cat": "Chapter 7: Photoelectric Effect",
+    "q": "The photoelectric equation relating the incident photon energy, the work function, and the maximum kinetic energy of the emitted electron is:",
+    "options": [
+     "h f = K_max - φ",
+     "h f = K_max + φ",
+     "h f = φ - K_max",
+     "h f = K_max × φ"
+    ],
+    "correct": 1,
+    "explain": "The total energy of the incident photon hf is divided between the minimum energy needed to eject the electron from the metal, called the work function φ, and the maximum kinetic energy K_max that the ejected electron can carry away. This gives the photoelectric equation hf = K_max + φ. The line hf = K_max - φ subtracts the work function, the line hf = φ - K_max reverses the subtraction, and the line hf = K_max × φ multiplies the two terms."
+   },
+   {
+    "id": "PHY70010",
+    "type": "mcq",
+    "cat": "Chapter 7: Photoelectric Effect",
+    "q": "The work function φ of a metal is:",
+    "options": [
+     "The maximum kinetic energy of the emitted electron",
+     "The minimum energy required to eject an electron",
+     "The total energy of the incident photon",
+     "The number of electrons emitted per second"
+    ],
+    "correct": 1,
+    "explain": "The work function is the minimum amount of energy required to remove an electron from the surface of a particular metal. It is a property of the metal itself. In the photoelectric equation hf = K_max + φ, the work function is the threshold energy that must be overcome. The maximum kinetic energy is K_max, the total photon energy is hf, and the number of emitted electrons per second is the photocurrent."
+   },
+   {
+    "id": "PHY70011",
+    "type": "mcq",
+    "cat": "Chapter 7: Photoelectric Effect",
+    "q": "In the photoelectric equation h f = K_max + φ, the quantity K_max represents:",
+    "options": [
+     "The minimum energy needed to eject an electron",
+     "The maximum kinetic energy of the emitted electron",
+     "The total energy carried by the incident photon",
+     "The energy lost as heat during the collision"
+    ],
+    "correct": 1,
+    "explain": "K_max is the maximum kinetic energy that an emitted electron can have after the photon gives up the work function energy to free it from the metal. Some electrons lose additional energy in collisions before escaping, so they emerge with less than K_max, but none can exceed it. The work function φ is the minimum ejection energy, and hf is the total photon energy."
+   },
+   {
+    "id": "PHY70012",
+    "type": "mcq",
+    "cat": "Chapter 7: de Broglie Hypothesis",
+    "q": "According to the de Broglie hypothesis, a moving particle:",
+    "options": [
+     "Has only particle nature, with no wave properties",
+     "Has both particle nature and wave nature",
+     "Has only wave nature, with no particle properties",
+     "Has neither particle nor wave properties"
+    ],
+    "correct": 1,
+    "explain": "De Broglie proposed that any moving object or particle has dual nature, possessing both particle and wave characteristics. The wave associated with a moving particle is called a matter wave. This hypothesis extends the wave-particle duality that was already established for light to all material particles. The line Has only particle nature, with no wave properties denies the wave aspect. The line Has only wave nature, with no particle properties denies the particle aspect. The line Has neither particle nor wave properties denies both."
+   },
+   {
+    "id": "PHY70013",
+    "type": "mcq",
+    "cat": "Chapter 7: de Broglie Hypothesis",
+    "q": "The de Broglie wavelength λ of a particle of mass m moving with velocity v is given by:",
+    "options": [
+     "λ = m v / h",
+     "λ = h / (m v)",
+     "λ = h × m × v",
+     "λ = h / (m + v)"
+    ],
+    "correct": 1,
+    "explain": "The de Broglie wavelength is inversely proportional to the momentum p = mv of the particle, with the Planck constant as the constant of proportionality. The relation is λ = h / (m v), which can also be written as λ = h / p. A heavier or faster particle has a shorter de Broglie wavelength. The line λ = m v / h inverts the ratio, the line λ = h × m × v multiplies all three quantities, and the line λ = h / (m + v) adds mass and velocity in the denominator."
+   },
+   {
+    "id": "PHY70014",
+    "type": "mcq",
+    "cat": "Chapter 7: de Broglie Hypothesis",
+    "q": "Matter waves are:",
+    "options": [
+     "Electromagnetic waves that carry energy but no rest mass",
+     "Moving-particle waves, not electromagnetic in nature",
+     "Longitudinal mechanical waves in a material medium",
+     "Standing waves that form inside the nucleus"
+    ],
+    "correct": 1,
+    "explain": "Matter waves are the waves associated with moving particles, as proposed by de Broglie. They are explicitly not electromagnetic waves. They do not require a material medium and are not the same as the electromagnetic radiation described by Maxwell. The other options incorrectly classify matter waves as electromagnetic, mechanical, or nuclear standing waves."
+   },
+   {
+    "id": "PHY70015",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "Which statement correctly describes the structure of an atom?",
+    "options": [
+     "Mostly empty space with a small dense central nucleus",
+     "A solid sphere with electrons embedded throughout its volume",
+     "A large nucleus that fills nearly all of the atomic volume",
+     "A bare nucleus with no surrounding space or electrons"
+    ],
+    "correct": 0,
+    "explain": "The atom consists mostly of empty space, with a very small and dense nucleus at the center where all of the positive charge and most of the mass are concentrated. Electrons occupy the empty space and revolve around the nucleus. The other options either fill the atom with solid material, make the nucleus too large, or deny the existence of the electron cloud."
+   },
+   {
+    "id": "PHY70016",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "Protons and neutrons are collectively called:",
+    "options": [
+     "Electrons",
+     "Nucleons",
+     "Nuclides",
+     "Isotopes"
+    ],
+    "correct": 1,
+    "explain": "Nucleons is the collective term for the protons and neutrons that make up the nucleus. A nuclide refers to a specific type of nucleus characterized by its atomic number and mass number. Isotopes are nuclei with the same atomic number but different neutron numbers. Electrons are not part of the nucleus at all."
+   },
+   {
+    "id": "PHY70017",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "The atomic number Z of a nuclide represents:",
+    "options": [
+     "The total number of nucleons in the nucleus",
+     "The number of protons in the nucleus",
+     "The number of neutrons in the nucleus",
+     "The sum of protons and neutrons in the nucleus"
+    ],
+    "correct": 1,
+    "explain": "The atomic number Z is defined as the number of protons in the nucleus. This number determines the chemical element. The total number of nucleons, which is the sum of protons and neutrons, is the mass number A. The number of neutrons is found by subtracting Z from A, giving N = A - Z."
+   },
+   {
+    "id": "PHY70018",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "The mass number A of a nuclide represents:",
+    "options": [
+     "The number of protons in the nucleus",
+     "The number of neutrons in the nucleus",
+     "The total number of nucleons in the nucleus",
+     "The number of electrons orbiting the nucleus"
+    ],
+    "correct": 2,
+    "explain": "The mass number A is the total number of nucleons, which means the sum of protons and neutrons in the nucleus. It is not the same as the atomic number Z, which counts only protons. The number of neutrons is found from N = A - Z. The number of electrons in a neutral atom equals Z, not A."
+   },
+   {
+    "id": "PHY70019",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "The neutron number N of a nuclide is calculated as:",
+    "options": [
+     "N = A + Z",
+     "N = A - Z",
+     "N = Z - A",
+     "N = A × Z"
+    ],
+    "correct": 1,
+    "explain": "The neutron number is the difference between the mass number and the atomic number: N = A - Z. Since the mass number counts all nucleons and the atomic number counts only protons, subtracting the two gives the number of neutrons. The line N = A + Z adds the two quantities, the line N = Z - A reverses the subtraction, and the line N = A × Z multiplies them."
+   },
+   {
+    "id": "PHY70020",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "Isotopes are nuclei that have:",
+    "options": [
+     "The same number of neutrons but different numbers of protons",
+     "The same number of protons but different numbers of neutrons",
+     "The same total number of nucleons but different elements",
+     "The same mass number but different atomic numbers"
+    ],
+    "correct": 1,
+    "explain": "Isotopes are nuclei with the same atomic number Z, meaning the same number of protons, but different neutron numbers N. Because they have the same number of protons, they are the same chemical element. The line The same number of neutrons but different numbers of protons describes isotones. The line The same total number of nucleons but different elements describes isobars. The line The same mass number but different atomic numbers also describes isobars."
+   },
+   {
+    "id": "PHY70021",
+    "type": "mcq",
+    "cat": "Chapter 7: Atomic Structure",
+    "q": "For light nuclides, which condition generally leads to stability?",
+    "options": [
+     "The neutron number is much larger than the proton number",
+     "The neutron number equals the proton number",
+     "The proton number is much larger than the neutron number",
+     "The neutron number is zero"
+    ],
+    "correct": 1,
+    "explain": "For light nuclides, the stable configuration is N = Z, meaning the neutron number equals the proton number. A ratio of N/Z = 1 corresponds to stability in lighter elements. Deuterium, with one proton and one neutron, is stable under this rule, while tritium, with one proton and two neutrons, has an N/Z ratio of 2 and is radioactive. The other options describe configurations that lead to instability."
+   },
+   {
+    "id": "PHY70022",
+    "type": "mcq",
+    "cat": "Chapter 7: Nuclear Radius",
+    "q": "The radius r of a nucleus with mass number A is given by which expression?",
+    "options": [
+     "r = (1.2 × 10⁻¹⁵ m) × A",
+     "r = (1.2 × 10⁻¹⁵ m) × A^(1/3)",
+     "r = (1.2 × 10⁻¹⁵ m) × A^(1/2)",
+     "r = (1.2 × 10⁻¹⁵ m) × A²"
+    ],
+    "correct": 1,
+    "explain": "Measurements from high-energy electron scattering show that the nuclear radius varies with the cube root of the mass number: r = (1.2 × 10⁻¹⁵ m) × A^(1/3). The constant 1.2 × 10⁻¹⁵ m is an empirical value. The line r = (1.2 × 10⁻¹⁵ m) × A makes the radius proportional to A directly, the line r = (1.2 × 10⁻¹⁵ m) × A^(1/2) uses a square root, and the line r = (1.2 × 10⁻¹⁵ m) × A² uses a square."
+   },
+   {
+    "id": "PHY70023",
+    "type": "mcq",
+    "cat": "Chapter 7: Nuclear Radius",
+    "q": "What is the approximate radius of a ⁶⁴Cu₂₉ nucleus? Take R₀ = 1.2 × 10⁻¹⁵ m.",
+    "options": [
+     "4.8 × 10⁻¹⁵ m",
+     "3.0 × 10⁻¹⁵ m",
+     "7.7 × 10⁻¹⁵ m",
+     "1.2 × 10⁻¹⁵ m"
+    ],
+    "correct": 0,
+    "explain": "Using r = R₀ × A^(1/3) with A = 64, the cube root of 64 is 4. Substituting gives r = 1.2 × 10⁻¹⁵ × 4 = 4.8 × 10⁻¹⁵ m. The option 3.0 × 10⁻¹⁵ m uses A = 16, 7.7 × 10⁻¹⁵ m uses A = 256, and 1.2 × 10⁻¹⁵ m uses A = 1."
+   },
+   {
+    "id": "PHY70024",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Radioactivity is best defined as:",
+    "options": [
+     "The spontaneous decay of unstable atomic nuclei",
+     "The absorption of neutrons by stable nuclei",
+     "The emission of light from excited atoms",
+     "The collision of two nuclei at high speed"
+    ],
+    "correct": 0,
+    "explain": "Radioactivity is the spontaneous process in which unstable atomic nuclei disintegrate into more stable nuclei, emitting energy and/or ionizing radiation such as alpha, beta, and gamma rays. The process is random and is not influenced by external conditions. The other options describe neutron capture, atomic emission spectra, and nuclear collisions, which are different phenomena."
+   },
+   {
+    "id": "PHY70025",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "An alpha particle consists of:",
+    "options": [
+     "Two protons and one neutron",
+     "One proton and two neutrons",
+     "Two protons and two neutrons",
+     "One proton and one neutron"
+    ],
+    "correct": 2,
+    "explain": "An alpha particle consists of two protons and two neutrons, which makes it identical to a helium-4 nucleus. It carries a positive charge of +2e and has a relatively large mass. The other options describe combinations that do not correspond to an alpha particle or to any common emitted particle."
+   },
+   {
+    "id": "PHY70026",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "When a nucleus emits an alpha particle, what happens to its atomic number Z and mass number A?",
+    "options": [
+     "Z decreases by 2, and A decreases by 4",
+     "Z increases by 2, and A increases by 4",
+     "Z decreases by 4, and A decreases by 2",
+     "Z remains the same, and A decreases by 4"
+    ],
+    "correct": 0,
+    "explain": "An alpha particle carries away two protons and two neutrons from the nucleus. Because the atomic number counts protons, Z decreases by 2. Because the mass number counts all nucleons, A decreases by 4. Charge and nucleon number are conserved overall when the alpha particle is included on the product side. The line Z increases by 2, and A increases by 4 would require the nucleus to gain nucleons rather than lose them. The line Z decreases by 4, and A decreases by 2 swaps the changes. The line Z remains the same, and A decreases by 4 does not remove the protons."
+   },
+   {
+    "id": "PHY70027",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "When a nucleus undergoes beta minus decay, what happens to its atomic number Z and mass number A?",
+    "options": [
+     "Z decreases by 1, and A remains the same",
+     "Z increases by 1, and A remains the same",
+     "Z remains the same, and A increases by 1",
+     "Z decreases by 2, and A decreases by 4"
+    ],
+    "correct": 1,
+    "explain": "In beta minus decay, a neutron converts into a proton while emitting an electron and an antineutrino. Because a proton is created, the atomic number Z increases by 1. The total number of nucleons does not change, so A remains the same. The line Z decreases by 1, and A remains the same describes beta plus decay. The line Z remains the same, and A increases by 1 does not match. The line Z decreases by 2, and A decreases by 4 describes alpha decay."
+   },
+   {
+    "id": "PHY70028",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "When a nucleus undergoes beta plus decay, what happens to its atomic number Z and mass number A?",
+    "options": [
+     "Z increases by 1, and A remains the same",
+     "Z decreases by 1, and A remains the same",
+     "Z remains the same, and A decreases by 1",
+     "Z decreases by 2, and A decreases by 4"
+    ],
+    "correct": 1,
+    "explain": "In beta plus decay, a proton converts into a neutron while emitting a positron and a neutrino. Because a proton is lost, the atomic number Z decreases by 1. The total number of nucleons does not change, so A remains the same. The line Z increases by 1, and A remains the same describes beta minus decay. The line Z decreases by 2, and A decreases by 4 describes alpha decay. The remaining line does not match beta plus."
+   },
+   {
+    "id": "PHY70029",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "In beta decay, one type of nucleon converts into the other type. What is the consequence for the nucleon number?",
+    "options": [
+     "The nucleon number increases by 1",
+     "The nucleon number decreases by 1",
+     "The nucleon number remains unchanged",
+     "The nucleon number doubles"
+    ],
+    "correct": 2,
+    "explain": "In beta decay, a neutron becomes a proton in beta minus decay, or a proton becomes a neutron in beta plus decay. In both cases, the total count of nucleons stays the same because one nucleon is simply changing type. The mass number A therefore remains unchanged. Only the atomic number Z changes, by plus one for beta minus or minus one for beta plus."
+   },
+   {
+    "id": "PHY70030",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Which statement correctly describes gamma radiation?",
+    "options": [
+     "A stream of helium nuclei with a positive charge",
+     "A stream of fast electrons with a negative charge",
+     "High-energy photons with no mass and no charge",
+     "A stream of neutral particles with a small mass"
+    ],
+    "correct": 2,
+    "explain": "Gamma rays are high-energy photons (electromagnetic radiation). They have no rest mass and no electric charge, so they are not bent by electric or magnetic fields. A stream of helium nuclei with a positive charge describes alpha particles. A stream of fast electrons with a negative charge describes beta minus particles. A stream of neutral particles with a small mass describes neutrinos or neutrons, not gamma rays."
+   },
+   {
+    "id": "PHY70031",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Which comparison of the three types of nuclear radiation is correct?",
+    "options": [
+     "Alpha particles have the highest penetration and lowest ionizing power",
+     "Beta particles have the lowest penetration and highest ionizing power",
+     "Gamma rays have the highest penetration and lowest ionizing power",
+     "Gamma rays have the lowest penetration and highest ionizing power"
+    ],
+    "correct": 2,
+    "explain": "Alpha particles are massive and carry a double positive charge, which gives them a very short range and the highest ionizing power. Beta particles are lighter and have intermediate range and ionizing power. Gamma rays are electromagnetic radiation with no charge and no rest mass, so they interact weakly and have the greatest penetrating power but the lowest ionizing power. The other options reverse these relationships."
+   },
+   {
+    "id": "PHY70032",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "In a magnetic field, how do alpha, beta, and gamma radiations behave?",
+    "options": [
+     "All three are bent in the same direction",
+     "Alpha and beta bend in opposite directions, and gamma is not bent",
+     "Alpha and gamma bend in opposite directions, and beta is not bent",
+     "Beta and gamma bend in opposite directions, and alpha is not bent"
+    ],
+    "correct": 1,
+    "explain": "Alpha particles carry a positive charge, and beta particles carry a negative charge, so they are deflected in opposite directions when passing through a magnetic field. Gamma rays are electrically neutral, so they pass through without being deflected at all. This difference in deflection is a standard way to distinguish the three types of radiation."
+   },
+   {
+    "id": "PHY70033",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "The activity R of a radioactive sample is related to the number of radioactive nuclei N by which expression?",
+    "options": [
+     "R = N / λ",
+     "R = λ / N",
+     "R = λ × N",
+     "R = λ + N"
+    ],
+    "correct": 2,
+    "explain": "The activity is the rate at which nuclei decay. Since each nucleus has a fixed probability per unit time of decaying, the total decay rate is the decay constant multiplied by the number of radioactive nuclei present: R = λ × N. This means a sample with more nuclei or a larger decay constant will have higher activity."
+   },
+   {
+    "id": "PHY70034",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "The half-life of a radioactive material is:",
+    "options": [
+     "The time required for the activity to double",
+     "The time required for half the nuclei to decay",
+     "The time required for all the nuclei to decay",
+     "The time required for a quarter of the nuclei to decay"
+    ],
+    "correct": 1,
+    "explain": "The half-life T₁/₂ is the time it takes for half of the radioactive nuclei in a sample to decay, so the amount (and the activity) falls to one half. After two half-lives one quarter is left, after three one eighth. Activity doubling never happens in decay, all the nuclei never decay in one half-life, and a quarter decaying is not the definition."
+   },
+   {
+    "id": "PHY70035",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "The relationship between the half-life T₁/₂ and the decay constant λ is:",
+    "options": [
+     "T₁/₂ = λ / 0.693",
+     "T₁/₂ = 0.693 / λ",
+     "T₁/₂ = 0.693 × λ",
+     "T₁/₂ = λ + 0.693"
+    ],
+    "correct": 1,
+    "explain": "The half-life and the decay constant are inversely related: T₁/₂ = ln 2 / λ = 0.693 / λ. A larger decay constant means the nuclei decay faster, so the half-life is shorter. The line T₁/₂ = λ / 0.693 inverts the ratio, T₁/₂ = 0.693 × λ multiplies instead of dividing, and T₁/₂ = λ + 0.693 adds the two."
+   },
+   {
+    "id": "PHY70036",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "The half-life of a radioactive material is 30 years. What is its decay constant?",
+    "options": [
+     "7.32 × 10⁻¹⁰ s⁻¹",
+     "7.32 × 10⁻⁹ s⁻¹",
+     "7.32 × 10⁻¹¹ s⁻¹",
+     "7.32 × 10⁻⁸ s⁻¹"
+    ],
+    "correct": 0,
+    "explain": "First convert the half-life to seconds: 30 years × 3.156 × 10⁷ s/year = 9.467 × 10⁸ s. Then λ = 0.693 / T₁/₂ = 0.693 / (9.467 × 10⁸) = 7.32 × 10⁻¹⁰ s⁻¹. The other options place the decimal in the wrong position relative to this value."
+   },
+   {
+    "id": "PHY70037",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "A radioactive material has a half-life of 15 days. If you start with 1 g of the material, how much is left after two half-lives?",
+    "options": [
+     "0.50 g",
+     "0.25 g",
+     "0.125 g",
+     "0.0625 g"
+    ],
+    "correct": 1,
+    "explain": "After one half-life, half of the original 1 g remains, which is 0.50 g. After a second half-life, half of that remaining amount decays, leaving 0.25 g. The line 0.50 g is the amount after one half-life, the line 0.125 g is after three, and the line 0.0625 g is after four half-lives."
+   },
+   {
+    "id": "PHY70038",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "The SI unit of activity is the becquerel, defined as:",
+    "options": [
+     "One joule per kilogram",
+     "One decay event per second",
+     "One gray multiplied by RBE",
+     "One curie divided by 3.70 × 10¹⁰"
+    ],
+    "correct": 1,
+    "explain": "The becquerel is the SI unit of activity. One becquerel equals one nuclear decay event per second. The line One joule per kilogram defines the gray, the unit of absorbed dose. The line One gray multiplied by RBE defines the sievert, the unit of dose equivalent. The line One curie divided by 3.70 × 10¹⁰ expresses the inverse of the curie-to-becquerel conversion."
+   },
+   {
+    "id": "PHY70039",
+    "type": "mcq",
+    "cat": "Chapter 7: Half-Life",
+    "q": "One curie is equal to how many becquerels?",
+    "options": [
+     "3.70 × 10⁸ Bq",
+     "3.70 × 10⁹ Bq",
+     "3.70 × 10¹⁰ Bq",
+     "3.70 × 10¹¹ Bq"
+    ],
+    "correct": 2,
+    "explain": "The curie is an older unit of activity that equals 3.70 × 10¹⁰ decay events per second. Since one becquerel is one decay per second, the conversion is 1 Ci = 3.70 × 10¹⁰ Bq. The other options place the decimal one or two positions away from this value."
+   },
+   {
+    "id": "PHY70040",
+    "type": "mcq",
+    "cat": "Chapter 7: Carbon Dating",
+    "q": "Carbon dating uses the radioactive isotope C-14, which has a half-life of approximately:",
+    "options": [
+     "5,730 years",
+     "573 years",
+     "57,300 years",
+     "57 years"
+    ],
+    "correct": 0,
+    "explain": "Carbon-14 has a half-life of 5,730 years, which makes it suitable for dating historical and archaeological materials up to about 60,000 years old. The other values are either ten times shorter, ten times longer, or one hundred times shorter than the correct half-life."
+   },
+   {
+    "id": "PHY70041",
+    "type": "mcq",
+    "cat": "Chapter 7: Carbon Dating",
+    "q": "While an organism is alive, the ratio of carbon-14 to carbon-12 in its tissues remains constant because:",
+    "options": [
+     "The tissue continually exchanges carbon with its surroundings",
+     "The half-life of carbon-14 slows down inside living tissue",
+     "The body produces carbon-14 by internal nuclear reactions",
+     "Carbon-12 decays into carbon-14 at the same rate"
+    ],
+    "correct": 0,
+    "explain": "Living organisms constantly exchange carbon with their environment through processes such as respiration and feeding. This keeps the ratio of C-14 to C-12 at the atmospheric value of about 1 to 10¹² (the slides write 1 : 10¹³). Once the organism dies, the exchange stops, and the C-14 begins to decay without replacement. The other options describe mechanisms that do not occur."
+   },
+   {
+    "id": "PHY70042",
+    "type": "mcq",
+    "cat": "Chapter 7: Fission and Fusion",
+    "q": "Nuclear fission is best described as:",
+    "options": [
+     "Two light nuclei joining into a single heavier nucleus",
+     "A heavy nucleus splitting and releasing energy",
+     "An electron jumping between atomic energy levels",
+     "A photon ejecting an electron from a metal surface"
+    ],
+    "correct": 1,
+    "explain": "Nuclear fission occurs when a heavy nucleus, such as uranium or plutonium, absorbs a neutron and splits into two lighter nuclei. The process releases free neutrons, gamma rays, and a large amount of energy. The line Two light nuclei joining into a single heavier nucleus describes nuclear fusion. The line An electron jumping between atomic energy levels describes an atomic process. The line A photon ejecting an electron from a metal surface describes the photoelectric effect."
+   },
+   {
+    "id": "PHY70043",
+    "type": "mcq",
+    "cat": "Chapter 7: Fission and Fusion",
+    "q": "Nuclear fusion is best described as:",
+    "options": [
+     "A heavy nucleus splitting apart into lighter nuclei",
+     "Two light nuclei joining into a heavier nucleus",
+     "A neutron converting into a proton plus electron",
+     "An atom absorbing a photon and losing an electron"
+    ],
+    "correct": 1,
+    "explain": "Nuclear fusion occurs when two or more light nuclei combine to form a single heavier nucleus with a higher atomic number. This process releases energy and occurs naturally in stars and the sun. The line A heavy nucleus splitting apart into lighter nuclei describes nuclear fission. The line A neutron converting into a proton plus electron describes beta decay. The line An atom absorbing a photon and losing an electron describes the photoelectric effect."
+   },
+   {
+    "id": "PHY70044",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "Absorbed dose is defined as:",
+    "options": [
+     "The rate at which nuclear transformations occur",
+     "The energy deposited by ionizing radiation per unit mass",
+     "The product of absorbed dose and a radiation weighting factor",
+     "The number of ion pairs produced in a detector per second"
+    ],
+    "correct": 1,
+    "explain": "Absorbed dose is the energy given by ionizing radiation to a unit mass of absorbing material. It depends on the properties of the absorbing material. The SI unit is the gray, where 1 Gy equals 1 joule per kilogram. The line The rate at which nuclear transformations occur defines activity. The line The product of absorbed dose and a radiation weighting factor defines dose equivalent. The line The number of ion pairs produced in a detector per second describes a detector response rather than a dose."
+   },
+   {
+    "id": "PHY70045",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "One gray of absorbed dose is equivalent to:",
+    "options": [
+     "One joule of energy absorbed per kilogram of material",
+     "One hundred joules of energy absorbed per kilogram of material",
+     "One joule of energy absorbed per gram of material",
+     "One thousand joules of energy absorbed per kilogram of material"
+    ],
+    "correct": 0,
+    "explain": "The gray is defined as one joule of radiation energy absorbed per kilogram of absorbing material: 1 Gy = 1 J/kg. It is also equal to 100 rad, where one rad is 0.01 J/kg. The line One hundred joules of energy absorbed per kilogram of material describes 100 Gy. The line One joule of energy absorbed per gram of material describes a dose in J/g which is 1000 Gy. The line One thousand joules of energy absorbed per kilogram of material describes 1000 Gy."
+   },
+   {
+    "id": "PHY70046",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "The dose equivalent is calculated as:",
+    "options": [
+     "Absorbed dose divided by the radiation weighting factor",
+     "Absorbed dose multiplied by the radiation weighting factor",
+     "Absorbed dose added to the radiation weighting factor",
+     "Absorbed dose minus the radiation weighting factor"
+    ],
+    "correct": 1,
+    "explain": "The dose equivalent accounts for the biological effectiveness of different types of radiation. It is the product of the absorbed dose and a dimensionless radiation weighting factor, also called the quality factor or RBE. If the absorbed dose is in gray, the result is in sieverts. If the absorbed dose is in rad, the result is in rem."
+   },
+   {
+    "id": "PHY70047",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "One sievert of dose equivalent is equal to how many rem?",
+    "options": [
+     "1 rem",
+     "10 rem",
+     "100 rem",
+     "1000 rem"
+    ],
+    "correct": 2,
+    "explain": "The sievert is the SI unit of dose equivalent, and the rem is the older unit. The conversion is 1 Sv = 100 rem. This mirrors the relationship between the gray and the rad, where 1 Gy = 100 rad. Because the weighting factor is dimensionless, the conversion factor between Sv and rem is the same as that between Gy and rad."
+   },
+   {
+    "id": "PHY70048",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "For X-rays and gamma rays, the radiation weighting factor QF is:",
+    "options": [
+     "1",
+     "3",
+     "10",
+     "20"
+    ],
+    "correct": 0,
+    "explain": "The quality factor for X-rays and gamma rays is 1. This means that for these radiations, the absorbed dose in gray is numerically equal to the dose equivalent in sieverts. Beta particles also have a quality factor of approximately 1. Slow neutrons have a factor of about 3, fast neutrons up to 10, and alpha particles and heavy ions up to 20."
+   },
+   {
+    "id": "PHY70049",
+    "type": "mcq",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "A patient receives an absorbed dose of 0.02 Gy from X-rays. What is the equivalent dose in sieverts? Take QF = 1.",
+    "options": [
+     "0.002 Sv",
+     "0.02 Sv",
+     "0.2 Sv",
+     "2.0 Sv"
+    ],
+    "correct": 1,
+    "explain": "The equivalent dose is the absorbed dose multiplied by the quality factor. For X-rays, QF equals 1, so the equivalent dose is 0.02 Gy × 1 = 0.02 Sv, which is 20 mSv. The other options place the decimal in the wrong position."
+   },
+   {
+    "id": "PHY70050",
+    "type": "mcq",
+    "cat": "Chapter 7: Radiation Detection",
+    "q": "A Geiger-Muller counter operates by:",
+    "options": [
+     "Collecting ions formed when radiation ionizes gas",
+     "Measuring the temperature rise from absorbed radiation",
+     "Recording the light given off by a struck crystal",
+     "Detecting the deflection of particles by a magnet"
+    ],
+    "correct": 0,
+    "explain": "The Geiger-Muller counter is a gas ionization counter. It consists of a metallic tube filled with a gas such as helium or argon, with a wire anode at the center and the tube wall as cathode. When radiation enters through a thin window, it ionizes the gas, and the resulting electrons and positive ions move toward the electrodes, producing a current pulse that is registered as a click or a count."
+   },
+   {
+    "id": "PHY70051",
+    "type": "mcq",
+    "cat": "Chapter 7: Radiation Detection",
+    "q": "A drawback of the Geiger-Muller counter is that:",
+    "options": [
+     "It cannot detect alpha particles when they are present",
+     "It cannot identify the type or energy of the radiation",
+     "It requires liquid nitrogen to keep the gas cooled",
+     "It can only operate inside a perfect vacuum tube"
+    ],
+    "correct": 1,
+    "explain": "Although the Geiger-Muller counter is sensitive and can detect alpha, beta, and gamma radiation, it does not provide information about the energy of the radiation or its type. All interactions produce the same type of output pulse. More sophisticated detectors are needed when energy discrimination or particle identification is required."
+   },
+   {
+    "id": "PHY70052",
+    "type": "mcq",
+    "cat": "Chapter 7: Nuclear Reactions",
+    "q": "In a fission reaction, a uranium-235 nucleus absorbs a neutron and splits. Which of the following is a possible pair of daughter nuclei?",
+    "options": [
+     "Xenon-140 and Strontium-94",
+     "Helium-4 and Radon-222",
+     "Deuterium and Tritium",
+     "Carbon-14 and Nitrogen-14"
+    ],
+    "correct": 0,
+    "explain": "One common fission pathway for uranium-235 is the production of xenon-140 and strontium-94, along with two or three free neutrons and gamma rays. The line Helium-4 and Radon-222 describes an alpha decay product pair, not fission fragments. The line Deuterium and Tritium lists hydrogen isotopes involved in fusion. The line Carbon-14 and Nitrogen-14 lists carbon and nitrogen isotopes associated with beta decay and carbon dating."
+   },
+   {
+    "id": "PHY70053",
+    "type": "mcq",
+    "cat": "Chapter 7: Nuclear Reactions",
+    "q": "Which of the following is a fusion reaction?",
+    "options": [
+     "²³⁵U₉₂ + n → ¹⁴⁰Xe₅₄ + ⁹⁴Sr₃₈ + 2n",
+     "²H₁ + ²H₁ → ³H₁ + ¹H₁ + 4.0 MeV",
+     "²³⁸U₉₂ → ²³⁴Th₉₀ + ⁴He₂",
+     "¹⁴C₆ → ¹⁴N₇ + e⁻ + ν"
+    ],
+    "correct": 1,
+    "explain": "Fusion is the combination of two light nuclei into a heavier nucleus. The reaction ²H₁ + ²H₁ → ³H₁ + ¹H₁ is a fusion reaction between two deuterium nuclei. The line ²³⁵U₉₂ + n → ¹⁴⁰Xe₅₄ + ⁹⁴Sr₃₈ + 2n is a fission reaction. The line ²³⁸U₉₂ → ²³⁴Th₉₀ + ⁴He₂ is alpha decay, and the line ¹⁴C₆ → ¹⁴N₇ + e⁻ + ν is beta decay. These are all nuclear processes, but only the deuterium reaction is fusion."
+   },
+   {
+    "id": "PHY70054",
+    "type": "matching",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Match each type of nuclear radiation to its properties.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Alpha particle"
+     },
+     {
+      "id": "2",
+      "text": "Beta particle"
+     },
+     {
+      "id": "3",
+      "text": "Gamma ray"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Two protons and two neutrons bound together"
+     },
+     {
+      "id": "B",
+      "text": "A fast-moving electron or positron"
+     },
+     {
+      "id": "C",
+      "text": "High-energy electromagnetic radiation"
+     },
+     {
+      "id": "D",
+      "text": "Carries a positive charge of plus two"
+     },
+     {
+      "id": "E",
+      "text": "Carries a negative charge of minus one"
+     },
+     {
+      "id": "F",
+      "text": "Carries no electric charge"
+     },
+     {
+      "id": "G",
+      "text": "Greatest ionizing power and shortest range"
+     },
+     {
+      "id": "H",
+      "text": "Intermediate ionizing power and intermediate range"
+     },
+     {
+      "id": "I",
+      "text": "Lowest ionizing power and greatest penetrating power"
+     }
+    ],
+    "correct_pairs": {
+     "1": [
+      "A",
+      "D",
+      "G"
+     ],
+     "2": [
+      "B",
+      "E",
+      "H"
+     ],
+     "3": [
+      "C",
+      "F",
+      "I"
+     ]
+    },
+    "explain": "Alpha particles are helium-4 nuclei, carrying two protons and two neutrons and a charge of plus two. Their large mass and double charge make them strongly ionizing but easily stopped, so they have the shortest range. Beta particles are fast electrons or positrons, carrying a single negative or positive charge, with intermediate mass, intermediate ionizing power, and intermediate range. Gamma rays are high-energy photons with no mass and no charge, so they interact weakly and have the lowest ionizing power but the greatest penetrating power."
+   },
+   {
+    "id": "PHY70055",
+    "type": "matching",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Match each type of nuclear decay to its effect on the atomic number Z and the mass number A.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Alpha decay"
+     },
+     {
+      "id": "2",
+      "text": "Beta minus decay"
+     },
+     {
+      "id": "3",
+      "text": "Beta plus decay"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The atomic number decreases by two"
+     },
+     {
+      "id": "B",
+      "text": "The atomic number increases by one"
+     },
+     {
+      "id": "C",
+      "text": "The atomic number decreases by one"
+     },
+     {
+      "id": "D",
+      "text": "The mass number decreases by four"
+     },
+     {
+      "id": "E",
+      "text": "The mass number remains unchanged"
+     }
+    ],
+    "correct_pairs": {
+     "1": [
+      "A",
+      "D"
+     ],
+     "2": [
+      "B",
+      "E"
+     ],
+     "3": [
+      "C",
+      "E"
+     ]
+    },
+    "explain": "In alpha decay, the nucleus emits two protons and two neutrons, so the atomic number decreases by two and the mass number decreases by four. In beta minus decay, a neutron becomes a proton, so the atomic number increases by one while the mass number stays the same because the total count of nucleons is unchanged. In beta plus decay, a proton becomes a neutron, so the atomic number decreases by one while the mass number again stays the same."
+   },
+   {
+    "id": "PHY70056",
+    "type": "matching",
+    "cat": "Chapter 7: Dosimetry",
+    "q": "Match each unit of radiation measurement to its correct definition.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Becquerel"
+     },
+     {
+      "id": "2",
+      "text": "Gray"
+     },
+     {
+      "id": "3",
+      "text": "Sievert"
+     },
+     {
+      "id": "4",
+      "text": "Curie"
+     },
+     {
+      "id": "5",
+      "text": "Rad"
+     },
+     {
+      "id": "6",
+      "text": "Rem"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "One decay event per second"
+     },
+     {
+      "id": "B",
+      "text": "One joule absorbed per kilogram of material"
+     },
+     {
+      "id": "C",
+      "text": "Absorbed dose multiplied by the quality factor, in SI"
+     },
+     {
+      "id": "D",
+      "text": "Three point seven times ten to the tenth decays per second"
+     },
+     {
+      "id": "E",
+      "text": "One hundredth of a joule absorbed per kilogram"
+     },
+     {
+      "id": "F",
+      "text": "The older unit equal to one hundredth of a sievert"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "The becquerel is the SI unit of activity and equals one decay event per second. The gray is the SI unit of absorbed dose and equals one joule per kilogram. The sievert is the SI unit of dose equivalent and equals the absorbed dose multiplied by the radiation weighting factor. The curie is the older unit of activity, equal to three point seven times ten to the tenth decays per second. The rad is the older unit of absorbed dose, equal to one hundredth of a joule per kilogram. The rem is the older unit of dose equivalent and equals one hundredth of a sievert."
+   },
+   {
+    "id": "PHY70057",
+    "type": "matching",
+    "cat": "Chapter 7: Photon and Nuclear Formulas",
+    "q": "Match each formula to the quantity it defines or the relationship it expresses.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "E = h × f"
+     },
+     {
+      "id": "2",
+      "text": "f = c / λ"
+     },
+     {
+      "id": "3",
+      "text": "λ = h / (m v)"
+     },
+     {
+      "id": "4",
+      "text": "h f = K_max + φ"
+     },
+     {
+      "id": "5",
+      "text": "r = R₀ A^(1/3)"
+     },
+     {
+      "id": "6",
+      "text": "T₁/₂ = 0.693 / λ"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "Relates the energy of a photon to its frequency"
+     },
+     {
+      "id": "B",
+      "text": "Relates the frequency of light to its wavelength and speed"
+     },
+     {
+      "id": "C",
+      "text": "Gives the de Broglie wavelength of a moving particle"
+     },
+     {
+      "id": "D",
+      "text": "Relates incident photon energy, work function, and maximum kinetic energy"
+     },
+     {
+      "id": "E",
+      "text": "Gives the radius of a nucleus from its mass number"
+     },
+     {
+      "id": "F",
+      "text": "Relates the half-life of a radionuclide to its decay constant"
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F"
+    },
+    "explain": "The relation E = h × f gives the energy of a single photon from its frequency. The relation f = c / λ connects the frequency of an electromagnetic wave to its wavelength and to the speed of light. The relation λ = h / (m v) gives the de Broglie wavelength of a particle of mass m moving with velocity v. The photoelectric equation h f = K_max + φ relates the incident photon energy to the work function of the metal and the maximum kinetic energy of the emitted electron. The relation r = R₀ A^(1/3) gives the radius of a nucleus from its mass number. The relation T₁/₂ = 0.693 / λ links the half-life of a radionuclide to its decay constant."
+   },
+   {
+    "id": "PHY70058",
+    "type": "mcq",
+    "cat": "Chapter 7: de Broglie Hypothesis",
+    "q": "A proton of mass 1.67 × 10⁻²⁷ kg moves at 1.3 × 10⁶ m/s. With h = 6.63 × 10⁻³⁴ J·s, what is its de Broglie wavelength?",
+    "options": [
+     "3.05 × 10⁻¹³ m",
+     "3.05 × 10⁻⁷ m",
+     "2.17 × 10⁻²¹ m",
+     "5.16 × 10⁻¹³ m"
+    ],
+    "correct": 0,
+    "explain": "The de Broglie wavelength is λ = h / (m v). The momentum is (1.67 × 10⁻²⁷) × (1.3 × 10⁶) = 2.17 × 10⁻²¹ kg·m/s. Dividing h by that momentum gives 3.05 × 10⁻¹³ m. The line 3.05 × 10⁻⁷ m drops the 10⁶ in the speed. The line 2.17 × 10⁻²¹ m is the momentum itself, not the wavelength. The line 5.16 × 10⁻¹³ m does not come from h / (m v) with these values."
+   },
+   {
+    "id": "PHY70059",
+    "type": "mcq",
+    "cat": "Chapter 7: de Broglie Hypothesis",
+    "q": "A 20 gram steel ball moves at 20 m/s. Why is its de Broglie wavelength of no practical size?",
+    "options": [
+     "λ = h / (m v) is about 1.7 × 10⁻³³ m, far below nuclear sizes.",
+     "λ = h m v is about 1.7 × 10⁻³ m, comparable to visible light.",
+     "λ = h / (m v) is about 1.7 × 10⁻¹⁰ m, comparable to an atom.",
+     "A macroscopic object has no de Broglie wavelength, because the relation applies only to electrons."
+    ],
+    "correct": 0,
+    "explain": "With m = 0.020 kg and v = 20 m/s, m v = 0.40, so λ = h / (m v) is about 1.66 × 10⁻³³ m. That is far smaller than a nucleus, so the wave character is not seen. The line λ = h m v is about 1.7 × 10⁻³ m multiplies by momentum instead of dividing. The line λ = h / (m v) is about 1.7 × 10⁻¹⁰ m would require a much smaller momentum. The line A macroscopic object has no de Broglie wavelength denies the general relation."
+   },
+   {
+    "id": "PHY70060",
+    "type": "mcq",
+    "cat": "Chapter 7: Radioactivity",
+    "q": "Uranium-238 emits one alpha particle and then one beta minus particle. What is the daughter?",
+    "options": [
+     "Protactinium-234",
+     "Thorium-234",
+     "Uranium-234",
+     "Radium-230"
+    ],
+    "correct": 0,
+    "explain": "The alpha particle takes A from 238 to 234 and Z from 92 to 90, giving thorium-234. The following beta minus decay leaves A at 234 and raises Z from 90 to 91, giving protactinium-234. The line Thorium-234 stops after the alpha particle. The line Uranium-234 would require beta minus to restore Z to 92, which it does not. The line Radium-230 would require two alpha particles."
+   },
+   {
+    "id": "PHY70061",
+    "type": "mcq",
+    "cat": "Chapter 7: Nuclear Radius",
+    "q": "What is the ratio of the radii (R1:R2) of two nuclei whose mass numbers are 27 and 64?",
+    "options": [
+     "3:4",
+     "2:3",
+     "4:3",
+     "1:2"
+    ],
+    "correct": 0,
+    "explain": "The nuclear radius is r = R0 × A^(1/3). The ratio R1/R2 = (A1/A2)^(1/3) = (27/64)^(1/3) = 3/4, so R1:R2 = 3:4. The line 2:3 uses an incorrect cube root. The line 4:3 reverses the ratio. The line 1:2 uses a different mass ratio."
+   },
+   {
+    "id": "PHY80001",
+    "type": "mcq",
+    "cat": "Chapter 8: Static Electricity",
+    "q": "Which statement correctly describes the two types of electric charge and their interaction?",
+    "options": [
+     "There is one type of charge, and all charged bodies attract each other",
+     "There are two types, and like charges repel while opposite charges attract",
+     "There are two types, and like charges attract while opposite charges repel",
+     "There is one type of charge, and all charged bodies repel each other"
+    ],
+    "correct": 1,
+    "explain": "Electric charge comes in two types, positive and negative. The fundamental rule is that like charges repel each other, while opposite charges attract each other. The options that describe only one type of charge or that reverse the attraction and repulsion rules do not match this behavior."
+   },
+   {
+    "id": "PHY80002",
+    "type": "mcq",
+    "cat": "Chapter 8: Static Electricity",
+    "q": "The SI unit of electric charge is the:",
+    "options": [
+     "Volt",
+     "Ampere",
+     "Coulomb",
+     "Ohm"
+    ],
+    "correct": 2,
+    "explain": "The SI unit of electric charge is the coulomb, abbreviated C. Typical charges in electrostatics experiments are on the order of a microcoulomb, where 1 μC equals 10⁻⁶ C. The volt is the unit of electric potential, the ampere is the unit of current, and the ohm is the unit of resistance."
+   },
+   {
+    "id": "PHY80003",
+    "type": "mcq",
+    "cat": "Chapter 8: Static Electricity",
+    "q": "Electric charge is quantized in units of the electron charge. This means the total charge Q on a body is:",
+    "options": [
+     "Q = e / n, where n is any integer",
+     "Q = n e, where n is any integer",
+     "Q = n + e, where n is any integer",
+     "Q = n - e, where n is any integer"
+    ],
+    "correct": 1,
+    "explain": "Quantization of charge means the charge on any body is an integer multiple of the elementary charge e, so Q = n e where n is a whole number. The elementary charge is the magnitude of the charge on one electron, about 1.602 × 10⁻¹⁹ C. The line Q = e / n, where n is any integer divides by n rather than multiplying. The line Q = n + e, where n is any integer adds rather than multiplies. The line Q = n - e, where n is any integer subtracts rather than multiplies."
+   },
+   {
+    "id": "PHY80004",
+    "type": "mcq",
+    "cat": "Chapter 8: Static Electricity",
+    "q": "Two million electrons are transferred to a body. What is the total charge acquired by the body? Take e = 1.602 × 10⁻¹⁹ C.",
+    "options": [
+     "3.20 × 10⁻¹³ C",
+     "3.20 × 10⁻¹² C",
+     "3.20 × 10⁻¹⁴ C",
+     "3.20 × 10⁻¹¹ C"
+    ],
+    "correct": 0,
+    "explain": "Using Q = n e, substitute n = 2 × 10⁶ and e = 1.602 × 10⁻¹⁹ C. Then Q = 2 × 10⁶ × 1.602 × 10⁻¹⁹ = 3.204 × 10⁻¹³ C. The other options place the decimal one, two, or three positions away from this value."
+   },
+   {
+    "id": "PHY80005",
+    "type": "mcq",
+    "cat": "Chapter 8: Static Electricity",
+    "q": "One billion electrons are removed from a body. What is the total charge left on the body? Take e = 1.602 × 10⁻¹⁹ C.",
+    "options": [
+     "1.602 × 10⁻¹⁰ C",
+     "1.602 × 10⁻⁹ C",
+     "1.602 × 10⁻¹¹ C",
+     "1.602 × 10⁻⁸ C"
+    ],
+    "correct": 0,
+    "explain": "Using Q = n e, substitute n = 1 × 10⁹ and e = 1.602 × 10⁻¹⁹ C. Then Q = 1 × 10⁹ × 1.602 × 10⁻¹⁹ = 1.602 × 10⁻¹⁰ C. Because electrons are removed, the body is left with a net positive charge of this magnitude. The other options place the decimal in the wrong position."
+   },
+   {
+    "id": "PHY80006",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "Coulomb's law states that the electric force between two point charges is:",
+    "options": [
+     "Directly proportional to the sum of the charges and inversely proportional to the square of the distance",
+     "Directly proportional to the product of the charges and inversely proportional to the square of the distance",
+     "Directly proportional to the product of the charges and inversely proportional to the distance between them",
+     "Inversely proportional to the product of the charges and directly proportional to the distance between them"
+    ],
+    "correct": 1,
+    "explain": "Coulomb's law states that the force between two charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them. This gives the expression F = k Q₁Q₂ / r². The line Directly proportional to the sum of the charges and inversely proportional to the square of the distance uses the sum instead of the product. The line Directly proportional to the product of the charges and inversely proportional to the distance between them leaves out the square on the distance. The line Inversely proportional to the product of the charges and directly proportional to the distance between them reverses both proportionalities."
+   },
+   {
+    "id": "PHY80007",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "Which expression correctly gives the electric force F between two point charges Q₁ and Q₂ separated by a distance r?",
+    "options": [
+     "F = k Q₁ Q₂ r²",
+     "F = k Q₁ Q₂ / r²",
+     "F = k r² / (Q₁ Q₂)",
+     "F = k (Q₁ + Q₂) / r²"
+    ],
+    "correct": 1,
+    "explain": "Coulomb's law is expressed as F = k Q₁Q₂ / r², where k is the Coulomb constant. The force is proportional to the product of the charges and inversely proportional to the square of the distance. The line F = k Q₁ Q₂ r² multiplies by r² instead of dividing. The line F = k r² / (Q₁ Q₂) inverts the whole expression. The line F = k (Q₁ + Q₂) / r² adds the charges instead of multiplying them."
+   },
+   {
+    "id": "PHY80008",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "The Coulomb constant k for air is approximately:",
+    "options": [
+     "8.998 × 10⁹ N·m²/C²",
+     "6.63 × 10⁻³⁴ N·m²/C²",
+     "1.602 × 10⁻¹⁹ N·m²/C²",
+     "3.00 × 10⁸ N·m²/C²"
+    ],
+    "correct": 0,
+    "explain": "The Coulomb constant for air is k = 8.998 × 10⁹ N·m²/C², often approximated as 9 × 10⁹ N·m²/C². The value 6.63 × 10⁻³⁴ is the Planck constant, 1.602 × 10⁻¹⁹ is the elementary charge, and 3.00 × 10⁸ is the speed of light in vacuum."
+   },
+   {
+    "id": "PHY80009",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "Two charges of -3 μC and +6 μC are placed 50 cm apart in air. What is the magnitude of the electric force between them? Take k = 9 × 10⁹ N·m²/C².",
+    "options": [
+     "0.648 N",
+     "6.48 N",
+     "0.0648 N",
+     "64.8 N"
+    ],
+    "correct": 0,
+    "explain": "Using F = k Q₁Q₂ / r², substitute Q₁ = 3 × 10⁻⁶ C, Q₂ = 6 × 10⁻⁶ C, and r = 0.5 m. Then F = 9 × 10⁹ × (3 × 10⁻⁶ × 6 × 10⁻⁶) / (0.5)² = 9 × 10⁹ × 18 × 10⁻¹² / 0.25 = 162 × 10⁻³ / 0.25 = 0.648 N. The other options shift the decimal by one or two positions."
+   },
+   {
+    "id": "PHY80010",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "The force between a 30 μC charge and a 90 μC charge is 1.8 N. How far apart are they? Take k = 9 × 10⁹ N·m²/C².",
+    "options": [
+     "3.67 m",
+     "1.84 m",
+     "0.367 m",
+     "36.7 m"
+    ],
+    "correct": 0,
+    "explain": "Rearranging F = k Q₁Q₂ / r² gives r² = k Q₁Q₂ / F. Substituting Q₁ = 30 × 10⁻⁶ C, Q₂ = 90 × 10⁻⁶ C, and F = 1.8 N gives r² = 9 × 10⁹ × 30 × 10⁻⁶ × 90 × 10⁻⁶ / 1.8 = 9 × 10⁹ × 2700 × 10⁻¹² / 1.8 = 24.3 / 1.8 = 13.5 m². Taking the square root gives r ≈ 3.67 m. The other options shift the decimal in the final result."
+   },
+   {
+    "id": "PHY80011",
+    "type": "mcq",
+    "cat": "Chapter 8: Coulomb's Law",
+    "q": "If the distance between two point charges is doubled while the charges remain unchanged, the electric force between them becomes:",
+    "options": [
+     "Twice as large",
+     "Half as large",
+     "One quarter as large",
+     "Four times as large"
+    ],
+    "correct": 2,
+    "explain": "Coulomb's law states that the force is inversely proportional to the square of the distance, F ∝ 1/r². If the distance is doubled, the force becomes F / 2² = F / 4, so the force is one quarter of its original value. The options that double or halve the force ignore the square dependence."
+   },
+   {
+    "id": "PHY80012",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Field",
+    "q": "The electric field at a point in space is defined as:",
+    "options": [
+     "The force on a small positive test charge divided by the charge on that body",
+     "The charge on a small positive test body divided by the force acting on that body",
+     "The force on a small positive test charge multiplied by the charge on that body",
+     "The charge on a small positive test body multiplied by the force acting on that body"
+    ],
+    "correct": 0,
+    "explain": "The electric field is defined as E = F / q, where F is the force on a small test charge q placed at the point of interest. The SI unit is the newton per coulomb (N/C). The field is a vector that points in the direction of the force on a positive charge. The line The charge on a small positive test body divided by the force acting on that body inverts the division. The line The force on a small positive test charge multiplied by the charge on that body multiplies the two quantities. The line The charge on a small positive test body multiplied by the force acting on that body also multiplies rather than taking the ratio."
+   },
+   {
+    "id": "PHY80013",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Field",
+    "q": "The electric field at a distance r from a point charge Q is given by:",
+    "options": [
+     "E = k Q / r²",
+     "E = k Q² / r",
+     "E = k r² / Q",
+     "E = k Q / r"
+    ],
+    "correct": 0,
+    "explain": "The electric field produced by a point charge is E = k Q / r², where k is the Coulomb constant. The field falls off with the square of the distance, just as the Coulomb force does. The line E = k Q² / r squares the charge and drops one power of r. The line E = k r² / Q inverts the expression. The line E = k Q / r leaves only one power of r in the denominator."
+   },
+   {
+    "id": "PHY80014",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Field",
+    "q": "The SI unit of electric field is:",
+    "options": [
+     "The newton (N)",
+     "The joule per coulomb (J/C)",
+     "The newton per coulomb (N/C)",
+     "The volt per meter squared (V/m²)"
+    ],
+    "correct": 2,
+    "explain": "The electric field is defined as force per unit charge, so its SI unit is the newton per coulomb, N/C. It can also be written as the volt per meter, V/m, because 1 N/C equals 1 V/m. The newton is the unit of force, the joule per coulomb is the unit of electric potential, and the volt per meter squared is not a standard unit for the field."
+   },
+   {
+    "id": "PHY80015",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Field",
+    "q": "A point charge of +5 × 10⁻⁶ C is placed in an electric field of 4 × 10⁵ N/C. What is the force on the charge?",
+    "options": [
+     "2.0 N",
+     "0.20 N",
+     "20 N",
+     "200 N"
+    ],
+    "correct": 0,
+    "explain": "The force on a charge in an electric field is F = qE. Substituting q = 5 × 10⁻⁶ C and E = 4 × 10⁵ N/C gives F = 5 × 10⁻⁶ × 4 × 10⁵ = 20 × 10⁻¹ = 2.0 N. The direction of the force is the same as the direction of the field because the charge is positive. The other options shift the decimal by one or two positions."
+   },
+   {
+    "id": "PHY80016",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Field",
+    "q": "Electric field lines around a negatively charged sphere:",
+    "options": [
+     "Radiate outward away from the sphere",
+     "Extend inward toward the sphere from every direction",
+     "Form closed circles around the sphere",
+     "Form straight parallel lines that pass through the sphere"
+    ],
+    "correct": 1,
+    "explain": "The direction of the electric field is defined as the direction of the force on a positive test charge. Around a negatively charged sphere, that force is attractive, so the field lines point inward toward the sphere. Outward-radiating lines are characteristic of a positive charge. Circular and parallel-line patterns do not represent the field of an isolated point charge."
+   },
+   {
+    "id": "PHY80017",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Potential",
+    "q": "The electric potential V at a point is defined as:",
+    "options": [
+     "The work per unit charge in bringing a test charge from infinity to that point",
+     "The work per unit charge in taking a test charge from that point to infinity",
+     "The force per unit charge on a small test charge kept at that point in space",
+     "The product of the field and the charge on a test charge kept at that point"
+    ],
+    "correct": 0,
+    "explain": "Electric potential is the work done per unit charge in bringing a small positive test charge from infinity to the point. It is expressed as V = W / q, and its SI unit is the volt, where 1 V = 1 J/C. The line The work per unit charge in taking a test charge from that point to infinity reverses the path. The line The force per unit charge on a small test charge kept at that point in space describes the electric field. The line The product of the field and the charge on a test charge kept at that point multiplies field and charge rather than giving the potential."
+   },
+   {
+    "id": "PHY80018",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Potential",
+    "q": "The electric potential at a distance r from a point charge Q is given by:",
+    "options": [
+     "V = k Q r",
+     "V = k Q / r",
+     "V = k Q / r²",
+     "V = k r / Q"
+    ],
+    "correct": 1,
+    "explain": "The electric potential from a point charge is V = k Q / r, where k is the Coulomb constant. The potential falls off as one over r, not as one over r squared. The line V = k Q r multiplies by r. The line V = k Q / r² uses the inverse-square form. The line V = k r / Q inverts the charge and distance."
+   },
+   {
+    "id": "PHY80019",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Potential",
+    "q": "A potential difference of 10 V exists between two points. How much work is required to move a charge of 2 × 10⁻³ C between the points?",
+    "options": [
+     "2.0 × 10⁻² J",
+     "2.0 × 10⁻³ J",
+     "2.0 × 10⁻¹ J",
+     "2.0 × 10⁻⁴ J"
+    ],
+    "correct": 0,
+    "explain": "Using V = W / q, rearrange to W = q V. Substituting q = 2 × 10⁻³ C and V = 10 V gives W = 2 × 10⁻³ × 10 = 2 × 10⁻² J. The other options place the decimal one or two positions away from the correct value."
+   },
+   {
+    "id": "PHY80020",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Potential",
+    "q": "A potential difference of 10 V exists between two points, and 2.0 × 10⁻² J of work is required to move a charge between them. What is the magnitude of the charge?",
+    "options": [
+     "2.0 × 10⁻³ C",
+     "2.0 × 10⁻² C",
+     "2.0 × 10⁻¹ C",
+     "2.0 × 10⁻⁴ C"
+    ],
+    "correct": 0,
+    "explain": "Rearranging V = W / q gives q = W / V. Substituting W = 2.0 × 10⁻² J and V = 10 V gives q = 2.0 × 10⁻² / 10 = 2.0 × 10⁻³ C. The other options place the decimal in the wrong position."
+   },
+   {
+    "id": "PHY80021",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Potential",
+    "q": "One volt is equivalent to:",
+    "options": [
+     "One coulomb per joule",
+     "One joule per coulomb",
+     "One joule per second",
+     "One newton per coulomb"
+    ],
+    "correct": 1,
+    "explain": "The volt is defined as one joule per coulomb, written 1 V = 1 J/C. This follows from the definition V = W / q, where W is the work in joules and q is the charge in coulombs. The line One coulomb per joule inverts the ratio. The line One joule per second is the watt. The line One newton per coulomb is the unit of electric field."
+   },
+   {
+    "id": "PHY80022",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Current",
+    "q": "Electric current is defined as:",
+    "options": [
+     "The total amount of charge that has passed a given point in a conductor",
+     "The rate of flow of electric charge through a conductor per unit time",
+     "The potential difference that exists across the two ends of a conductor",
+     "The resistance offered by a conductor to the passage of electric charge"
+    ],
+    "correct": 1,
+    "explain": "Electric current is the rate of flow of charge through a conductor, expressed as I = Q / T. If an amount of charge Q passes through a cross-section in time T, then the current is that charge divided by that time. The total charge is not the rate, the potential difference is the voltage, and the resistance is the opposition to current."
+   },
+   {
+    "id": "PHY80023",
+    "type": "mcq",
+    "cat": "Chapter 8: Electric Current",
+    "q": "A charge of 100 C passes through a point in a conductor in 1 second. What is the current?",
+    "options": [
+     "1 A",
+     "10 A",
+     "100 A",
+     "0.01 A"
+    ],
+    "correct": 2,
+    "explain": "Using I = Q / T, substitute Q = 100 C and T = 1 s. Then I = 100 / 1 = 100 A. The option 1 A uses a charge of 1 C, 10 A uses a charge of 10 C, and 0.01 A inverts the ratio."
+   },
+   {
+    "id": "PHY80024",
+    "type": "mcq",
+    "cat": "Chapter 8: Ohm's Law",
+    "q": "Ohm's law states that, at constant temperature, the current through a conductor is:",
+    "options": [
+     "Directly proportional to the potential difference across it",
+     "Inversely proportional to the potential difference across it",
+     "Independent of the potential difference across it",
+     "Proportional to the square of the potential difference"
+    ],
+    "correct": 0,
+    "explain": "Ohm's law states that the current through a conductor is directly proportional to the potential difference across it, provided the temperature is held constant. This is written as V = I R, or equivalently I = V / R. The constant of proportionality is the resistance. The other options describe inverse, absent, or squared dependence, none of which match Ohm's law."
+   },
+   {
+    "id": "PHY80025",
+    "type": "mcq",
+    "cat": "Chapter 8: Ohm's Law",
+    "q": "In a circuit, a current of 2 mA passes through a wire when connected to a 5 V battery. What is the resistance of the wire?",
+    "options": [
+     "2500 Ω",
+     "250 Ω",
+     "25 Ω",
+     "25000 Ω"
+    ],
+    "correct": 0,
+    "explain": "Using V = I R, rearrange to R = V / I. Substituting V = 5 V and I = 2 × 10⁻³ A gives R = 5 / (2 × 10⁻³) = 2500 Ω. The other options shift the decimal by one or two positions."
+   },
+   {
+    "id": "PHY80026",
+    "type": "mcq",
+    "cat": "Chapter 8: Ohm's Law",
+    "q": "How much current passes through a wire of resistance 100 Ω when it is connected to a 5.5 V battery?",
+    "options": [
+     "55 mA",
+     "5.5 mA",
+     "550 mA",
+     "0.55 mA"
+    ],
+    "correct": 0,
+    "explain": "Using I = V / R, substitute V = 5.5 V and R = 100 Ω. Then I = 5.5 / 100 = 0.055 A = 55 mA. The option 5.5 mA divides by 1000 instead of 100, 550 mA multiplies by 10, and 0.55 mA divides by 10000."
+   },
+   {
+    "id": "PHY80027",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "The resistance R of a conducting wire is proportional to its length L and inversely proportional to its area of cross-section A. Which expression correctly represents this relationship?",
+    "options": [
+     "R = ρ A / L",
+     "R = ρ L A",
+     "R = ρ L / A",
+     "R = ρ / (L A)"
+    ],
+    "correct": 2,
+    "explain": "The resistance of a wire is proportional to its length and inversely proportional to its cross-sectional area, so R = ρ L / A. The line R = ρ A / L swaps L and A. The line R = ρ L A multiplies length and area. The line R = ρ / (L A) puts both in the denominator."
+   },
+   {
+    "id": "PHY80028",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "The resistivity ρ of a material is defined as:",
+    "options": [
+     "The resistance of a piece of the material of any size and shape",
+     "The resistance of a unit cube of the material from opposite faces",
+     "The product of the resistance and the cross-sectional area of a sample",
+     "The total length of a sample divided by its resistance"
+    ],
+    "correct": 1,
+    "explain": "Resistivity is the resistance offered by a unit cube of the material from one face to the opposite face. It is an intrinsic property of the material. The line The resistance of a piece of the material of any size and shape describes resistance. The line The product of the resistance and the cross-sectional area of a sample is incomplete. The line The total length of a sample divided by its resistance is incomplete."
+   },
+   {
+    "id": "PHY80029",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "The SI unit of resistivity is the:",
+    "options": [
+     "Ohm (Ω)",
+     "Ohm-meter (Ω·m)",
+     "Ohm per meter (Ω/m)",
+     "Ohm per square meter (Ω/m²)"
+    ],
+    "correct": 1,
+    "explain": "The resistivity has SI unit ohm-meter, Ω·m, because it comes from rearranging R = ρ L / A to ρ = R A / L. The resistance is in ohms, the area in square meters, and the length in meters, so the unit becomes Ω·m²/m = Ω·m. The ohm is the unit of resistance, not resistivity."
+   },
+   {
+    "id": "PHY80030",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "Which statement correctly distinguishes resistance from resistivity?",
+    "options": [
+     "Resistance is a property of the material, and resistivity depends on the size and shape of the object",
+     "Resistance depends on the size and shape of the object, and resistivity is a property of the material",
+     "Resistance depends on the material and temperature, and resistivity is a property of the size of the object",
+     "Resistance depends on the size of the object only, and resistivity is a property of its shape only"
+    ],
+    "correct": 1,
+    "explain": "Resistance is a property of the object; it depends on the length and cross-sectional area of the particular sample. Resistivity is a property of the material; it is independent of the size and shape of the sample and depends only on the material and its temperature. The line Resistance is a property of the material, and resistivity depends on the size and shape of the object reverses these two descriptions. The other lines assign the wrong dependences to each quantity."
+   },
+   {
+    "id": "PHY80031",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "A wire has a length of 20 m, an area of cross-section of 5 × 10⁻⁶ m², and a resistance of 30 Ω. What is the resistivity of the material?",
+    "options": [
+     "7.5 × 10⁻⁶ Ω·m",
+     "7.5 × 10⁻⁵ Ω·m",
+     "7.5 × 10⁻⁷ Ω·m",
+     "7.5 × 10⁻⁴ Ω·m"
+    ],
+    "correct": 0,
+    "explain": "Rearranging R = ρ L / A gives ρ = R A / L. Substituting R = 30 Ω, A = 5 × 10⁻⁶ m², and L = 20 m gives ρ = 30 × 5 × 10⁻⁶ / 20 = 150 × 10⁻⁶ / 20 = 7.5 × 10⁻⁶ Ω·m. The other options shift the decimal by one or two positions."
+   },
+   {
+    "id": "PHY80032",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "A tungsten filament has a resistivity of 6.0 × 10⁻⁸ Ω·m, a length of 0.1 m, and a resistance of 20 Ω. What is the area of the filament?",
+    "options": [
+     "3 × 10⁻¹⁰ m²",
+     "3 × 10⁻⁹ m²",
+     "3 × 10⁻⁸ m²",
+     "3 × 10⁻¹¹ m²"
+    ],
+    "correct": 0,
+    "explain": "Rearranging R = ρ L / A gives A = ρ L / R. Substituting ρ = 6.0 × 10⁻⁸ Ω·m, L = 0.1 m, and R = 20 Ω gives A = 6.0 × 10⁻⁸ × 0.1 / 20 = 6.0 × 10⁻⁹ / 20 = 3 × 10⁻¹⁰ m². The other options shift the decimal by one or two positions."
+   },
+   {
+    "id": "PHY80033",
+    "type": "mcq",
+    "cat": "Chapter 8: Resistance and Resistivity",
+    "q": "Two wires of the same length and cross-section are made of copper and iron. When the same potential difference is applied across each, different currents flow. This difference is due to the difference in their:",
+    "options": [
+     "Length",
+     "Area of cross-section",
+     "Resistivity",
+     "Applied voltage"
+    ],
+    "correct": 2,
+    "explain": "Resistivity is the intrinsic property of a material that determines how much resistance a sample of a given size will have. Two wires of identical geometry have the same resistance only if their resistivities are equal. Copper and iron have different resistivities, so they have different resistances and different currents. Length, area, and voltage are all held the same in this comparison."
+   },
+   {
+    "id": "PHY80034",
+    "type": "mcq",
+    "cat": "Chapter 8: Current Density",
+    "q": "Current density J is defined as:",
+    "options": [
+     "The total current in a conductor",
+     "Current per unit surface area of cross-section",
+     "The product of current and surface area",
+     "The resistance per unit length of a conductor"
+    ],
+    "correct": 1,
+    "explain": "Current density is defined as the current per unit surface area of cross-section, written J = I / A, with SI unit A/m². It measures how concentrated the current is within a conductor. The line The total current in a conductor gives the total current. The line The product of current and surface area multiplies current and area. The line The resistance per unit length of a conductor describes a different quantity."
+   },
+   {
+    "id": "PHY80035",
+    "type": "mcq",
+    "cat": "Chapter 8: Current Density",
+    "q": "The relationship between current density J and electric field E in a conductor with conductivity σ is:",
+    "options": [
+     "J = σ / E",
+     "J = σ × E",
+     "J = E / σ",
+     "J = σ + E"
+    ],
+    "correct": 1,
+    "explain": "In a conductor, the current density is proportional to the electric field, with the constant of proportionality being the conductivity σ. This gives J = σ × E. Since conductivity is the reciprocal of resistivity, this relation is equivalent to E = ρ J. The line J = σ / E divides. The line J = E / σ inverts the ratio. The line J = σ + E adds the two quantities."
+   },
+   {
+    "id": "PHY80036",
+    "type": "mcq",
+    "cat": "Chapter 8: Current Density",
+    "q": "The SI unit of current density is:",
+    "options": [
+     "The ampere per unit length of the conductor, A/m",
+     "The ampere per square meter of cross-section, A/m²",
+     "The ampere per cubic meter of the conductor, A/m³",
+     "The ampere per unit of charge delivered, A/C"
+    ],
+    "correct": 1,
+    "explain": "Current density is current per unit area, so its unit is the ampere per square meter, A/m². The ampere alone is the unit of current, not current density. The other units divide by length, volume, or charge and do not match the definition J = I / A."
+   },
+   {
+    "id": "PHY80037",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "Which of the following correctly describes the parts of a neuron and their functions?",
+    "options": [
+     "Signals are received by the axon and transmitted through the dendrites",
+     "Signals are received by the dendrites, propagated along the axon, and transmitted through a synapse",
+     "Signals are received by the synapse, propagated along the dendrites, and transmitted through the axon",
+     "Signals are received by the cell body, propagated along the synapse, and transmitted through the dendrites"
+    ],
+    "correct": 1,
+    "explain": "A neuron has a main cell body, small attachments called dendrites, and a long tail called the axon. Signals are received by the dendrites, propagated along the axon, and then transmitted to another neuron or a muscle through a connection called a synapse. The other options swap these roles and therefore misassign the functions."
+   },
+   {
+    "id": "PHY80039",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "During depolarization of a neuron, which ion moves into the cell and causes the membrane potential to rise?",
+    "options": [
+     "K⁺",
+     "Cl⁻",
+     "Na⁺",
+     "Ca²⁺"
+    ],
+    "correct": 2,
+    "explain": "Depolarization is triggered when voltage-gated sodium channels open and Na⁺ ions rush into the cell. Because sodium carries a positive charge, the inside of the cell becomes less negative and eventually positive. K⁺ moves out of the cell during repolarization, Cl⁻ is a negative ion that is not the trigger, and Ca²⁺ plays a role at synapses rather than in the initial depolarization."
+   },
+   {
+    "id": "PHY80040",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "During repolarization of a neuron, which change occurs?",
+    "options": [
+     "Na⁺ channels open and Na⁺ flows into the cell",
+     "Na⁺ channels close and K⁺ moves out of the cell",
+     "K⁺ channels close and Na⁺ moves out of the cell",
+     "Both Na⁺ and K⁺ channels remain fully open"
+    ],
+    "correct": 1,
+    "explain": "Repolarization occurs when the sodium channels close, stopping the inward Na⁺ current, and the potassium channels open, allowing K⁺ to flow out of the cell. The loss of positive potassium ions restores the negative interior. The line Na⁺ channels open and Na⁺ flows into the cell describes depolarization. The line K⁺ channels close and Na⁺ moves out of the cell reverses the ion flow. The line Both Na⁺ and K⁺ channels remain fully open would prevent any return to the resting state."
+   },
+   {
+    "id": "PHY80041",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "Hyperpolarization of a neuron occurs because:",
+    "options": [
+     "Na⁺ channels open again after the action potential",
+     "K⁺ channels stay open longer, so more K⁺ leaves the cell",
+     "Cl⁻ channels close and stop the inflow of negative charge",
+     "The cell body releases a burst of positive charge"
+    ],
+    "correct": 1,
+    "explain": "Hyperpolarization happens because the potassium channels have slower kinetics than the sodium channels. They remain open a little longer than needed, so more K⁺ ions leave the cell than usual, and the membrane potential dips below the resting value. The line Na⁺ channels open again after the action potential would trigger another action potential. The line Cl⁻ channels close and stop the inflow of negative charge describes the opposite of what Cl⁻ does. The line The cell body releases a burst of positive charge is not a physiological mechanism."
+   },
+   {
+    "id": "PHY80042",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "The refractory period of a neuron is:",
+    "options": [
+     "A brief interval when a new stimulus cannot fire it, or must be much stronger",
+     "A brief interval when the neuron fires at its maximum possible rate in response",
+     "A brief interval when the resting potential becomes more positive than usual",
+     "A brief interval when both the sodium and potassium channels remain open"
+    ],
+    "correct": 0,
+    "explain": "The refractory period is a brief interval during which the cell cannot respond to a new stimulus, or can only respond to a much stronger one. This limits the maximum firing rate of the neuron and ensures that action potentials travel in one direction along the axon. Continuous firing, more positive resting potential, and permanently open channels are not descriptions of the refractory period."
+   },
+   {
+    "id": "PHY80043",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "Which of the following correctly lists the three types of gated channels in nerve membranes?",
+    "options": [
+     "Chemical gated, thermal gated, and light gated",
+     "Chemical gated, mechanical gated, and voltage gated",
+     "Voltage gated, magnetic gated, and pressure gated",
+     "Mechanical gated, chemical gated, and sound gated"
+    ],
+    "correct": 1,
+    "explain": "Nerve membranes contain three types of gated ion channels: chemically gated, mechanically gated, and voltage gated. Chemical gating responds to neurotransmitters, mechanical gating responds to physical deformation, and voltage gating responds to changes in membrane potential. The other options list channels that are not part of the standard set."
+   },
+   {
+    "id": "PHY80044",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "The myelin sheath on an axon serves to:",
+    "options": [
+     "Prevent the axon from carrying any signal",
+     "Speed up the transmission of the action potential",
+     "Increase the leakage of ions across the membrane",
+     "Convert the electrical signal into a chemical one"
+    ],
+    "correct": 1,
+    "explain": "The myelin sheath is an insulating layer that wraps around the axon and speeds up signal transmission by allowing the action potential to jump between the nodes of Ranvier in a process called saltatory conduction. It does not stop signaling, increase ion leakage, or convert the signal; conversion at the synapse is a separate process."
+   },
+   {
+    "id": "PHY80045",
+    "type": "mcq",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "The resting potential of a neuron arises mainly from:",
+    "options": [
+     "A perfectly uniform distribution of all the ions on both sides of the membrane",
+     "Ionic concentration gradients and selective permeability of the membrane to K⁺",
+     "The rapid permanent closing of all the ion channels in the membrane after firing",
+     "The complete absence of any charged particles on either side of the membrane"
+    ],
+    "correct": 1,
+    "explain": "The resting potential arises from the ionic concentration gradients across the membrane and from the membrane's selective permeability, particularly to K⁺. The sodium-potassium exchange pump maintains these gradients by pumping Na⁺ out and K⁺ in. A uniform distribution, complete closure of channels, or absence of ions would all eliminate the potential."
+   },
+   {
+    "id": "PHY80046",
+    "type": "mcq",
+    "cat": "Chapter 8: Magnetism",
+    "q": "A moving charge produces:",
+    "options": [
+     "An electric field only, with no magnetic field produced by the motion",
+     "A magnetic field only, with no electric field carried along with it",
+     "Both an electric field and a magnetic field around its path",
+     "Neither an electric field nor a magnetic field around its path"
+    ],
+    "correct": 2,
+    "explain": "A moving charge carries its electric field with it and also produces a magnetic field because of its motion. The magnetic field of a current-carrying wire and the magnetic moment of a spinning electron in an atom are both consequences of moving charge. The options that mention only one field or neither field are incomplete."
+   },
+   {
+    "id": "PHY80047",
+    "type": "mcq",
+    "cat": "Chapter 8: Magnetism",
+    "q": "The magnitude of the magnetic force on a charge q moving with velocity v through a magnetic field B is given by:",
+    "options": [
+     "F = q v B sin θ, where θ is the angle between the velocity and the magnetic field",
+     "F = q v B cos θ, where θ is the angle between the velocity and the magnetic field",
+     "F = q v B tan θ, where θ is the angle between the velocity and the magnetic field",
+     "F = q v B cot θ, where θ is the angle between the velocity and the magnetic field"
+    ],
+    "correct": 0,
+    "explain": "The magnitude of the magnetic force is F = q v B sin θ, where θ is the angle between the velocity vector and the magnetic field vector. In vector form this is written F = q v × B. The force is maximum when the velocity is perpendicular to the field and zero when they are parallel. The options using cosine, tangent, or cotangent have the wrong dependence on the angle between velocity and field."
+   },
+   {
+    "id": "PHY80048",
+    "type": "mcq",
+    "cat": "Chapter 8: Magnetism",
+    "q": "The direction of the magnetic force on a moving charged particle is:",
+    "options": [
+     "Parallel to the velocity and parallel to the magnetic field",
+     "Perpendicular to the velocity and perpendicular to the magnetic field",
+     "Parallel to the velocity and perpendicular to the magnetic field",
+     "Perpendicular to the velocity and parallel to the magnetic field"
+    ],
+    "correct": 1,
+    "explain": "The magnetic force is always perpendicular to both the velocity of the charged particle and the magnetic field, because the force is the vector cross product F = q v × B. This perpendicularity is what causes a charged particle to move in a circular or helical path in a uniform magnetic field. The other options place the force parallel to at least one of the two vectors, which contradicts the cross-product definition."
+   },
+   {
+    "id": "PHY80049",
+    "type": "mcq",
+    "cat": "Chapter 8: Magnetism",
+    "q": "The SI unit of magnetic field is the tesla, which is equivalent to:",
+    "options": [
+     "One newton per coulomb of charge placed in the field",
+     "One newton per ampere-meter of current and length",
+     "One joule per coulomb of charge moving in the field",
+     "One ampere per meter of the current-carrying conductor"
+    ],
+    "correct": 1,
+    "explain": "The tesla is defined from the magnetic force equation as 1 T = 1 N / (A·m), that is, one newton per ampere-meter. This follows from B = F / (|q| v). The newton per coulomb is the unit of electric field, the joule per coulomb is the volt, and the ampere per meter is the unit of magnetic field strength in a different context."
+   },
+   {
+    "id": "PHY80050",
+    "type": "mcq",
+    "cat": "Chapter 8: Magnetism",
+    "q": "One tesla is equal to how many gauss?",
+    "options": [
+     "10² G",
+     "10³ G",
+     "10⁴ G",
+     "10⁵ G"
+    ],
+    "correct": 2,
+    "explain": "The gauss is a non-SI unit of magnetic field. The conversion is 1 tesla = 10⁴ gauss. This means a magnetic field of 1 T is the same as 10,000 G. The other options place the power of ten one or two positions away from the correct value."
+   },
+   {
+    "id": "PHY80051",
+    "type": "mcq",
+    "cat": "Chapter 8: MRI",
+    "q": "MRI (Magnetic Resonance Imaging) produces images of the body using:",
+    "options": [
+     "Ionizing X-rays and a rotating detector",
+     "Strong magnetic fields and radio waves",
+     "High-frequency sound waves and a gel couplant",
+     "Gamma rays emitted by a radiotracer"
+    ],
+    "correct": 1,
+    "explain": "MRI uses strong magnetic fields to align hydrogen nuclei in the body, then applies radio waves to disturb the alignment. When the nuclei relax, they emit signals that are detected and converted into detailed images. X-rays and gamma rays are ionizing and belong to other imaging modalities, and sound waves are used in ultrasound."
+   },
+   {
+    "id": "PHY80052",
+    "type": "mcq",
+    "cat": "Chapter 8: MRI",
+    "q": "MRI scanners commonly operate at magnetic field strengths of:",
+    "options": [
+     "50 μT to 0.5 mT",
+     "1.5 T to 3 T",
+     "10 T to 30 T",
+     "0.5 T to 1.0 T"
+    ],
+    "correct": 1,
+    "explain": "Clinical MRI scanners use magnetic fields of about 1.5 T to 3 T, which are thousands of times stronger than Earth's magnetic field of roughly 50 μT. A refrigerator magnet produces about 0.005 T, much weaker than an MRI magnet. The other options either fall well below the clinical range or exceed practical field strengths."
+   },
+   {
+    "id": "PHY80053",
+    "type": "mcq",
+    "cat": "Chapter 8: MRI",
+    "q": "Which of the following is a key advantage of MRI over imaging methods that use ionizing radiation?",
+    "options": [
+     "It uses X-rays at low intensity",
+     "It does not use ionizing radiation",
+     "It requires no magnetic field",
+     "It produces images only of bones"
+    ],
+    "correct": 1,
+    "explain": "MRI does not use ionizing radiation, which distinguishes it from X-ray and CT imaging. This makes it safer for repeated use and for imaging sensitive tissues. MRI relies on strong magnetic fields and radio waves, not on X-rays. It provides excellent soft-tissue contrast, including brain, spinal cord, muscles, and joints, rather than only bone."
+   },
+   {
+    "id": "PHY80054",
+    "type": "mcq",
+    "cat": "Chapter 8: MRI",
+    "q": "Why are metallic objects not allowed in an MRI room?",
+    "options": [
+     "They reflect the radio waves used in imaging and create false echoes in the image",
+     "They block the hydrogen nuclei in the body from aligning with the strong field",
+     "They are attracted with great force by the strong magnetic field of the scanner",
+     "They emit gamma rays when they are placed inside the magnetic field of the scanner"
+    ],
+    "correct": 2,
+    "explain": "The magnetic field of an MRI scanner is so strong that it can pull ferromagnetic objects toward the bore with great force, which creates a serious safety hazard. This is the primary reason metal objects are forbidden in the scanner room. Reflection of radio waves, blocking of hydrogen alignment, and emission of gamma rays are not the reasons for the restriction."
+   },
+   {
+    "id": "PHY80055",
+    "type": "mcq",
+    "cat": "Chapter 8: Biomagnetism",
+    "q": "Biomagnetism refers to the fact that:",
+    "options": [
+     "The body generates weak magnetic fields from organ electrical activity",
+     "The body generates strong magnetic fields as strong as an MRI scanner",
+     "The body stores permanent magnetic material inside the cells of organs",
+     "The body produces detectable magnetic fields only while asleep at night"
+    ],
+    "correct": 0,
+    "explain": "Biomagnetism is the phenomenon in which the human body naturally generates weak magnetic fields because of the electrical activity of organs such as the brain and heart. These fields are extremely small compared with an MRI magnet. The body does not contain permanent magnets and does not produce fields only during sleep."
+   },
+   {
+    "id": "PHY80056",
+    "type": "mcq",
+    "cat": "Chapter 8: Biomagnetism",
+    "q": "Which pair correctly matches a body source of magnetic field with its measurement technique?",
+    "options": [
+     "Brain activity with magnetocardiography, and heart activity with magnetoencephalography",
+     "Brain activity with magnetoencephalography, and heart activity with magnetocardiography",
+     "Brain activity with electrocardiography, and heart activity with electromyography",
+     "Brain activity with electromyography, and heart activity with electrocardiography"
+    ],
+    "correct": 1,
+    "explain": "Brain activity produces tiny magnetic fields measured by magnetoencephalography, abbreviated MEG. Heart activity produces magnetic fields measured by magnetocardiography, abbreviated MCG. The line Brain activity with magnetocardiography, and heart activity with magnetoencephalography swaps the two techniques. The other lines refer to techniques that measure electric potentials rather than magnetic fields."
+   },
+   {
+    "id": "PHY80057",
+    "type": "matching",
+    "cat": "Chapter 8: Electricity Formulas",
+    "q": "Match each formula to the quantity it defines or the relationship it expresses.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Q = n e"
+     },
+     {
+      "id": "2",
+      "text": "F = k Q₁ Q₂ / r²"
+     },
+     {
+      "id": "3",
+      "text": "E = F / q"
+     },
+     {
+      "id": "4",
+      "text": "V = W / q"
+     },
+     {
+      "id": "5",
+      "text": "I = Q / T"
+     },
+     {
+      "id": "6",
+      "text": "V = I R"
+     },
+     {
+      "id": "7",
+      "text": "R = ρ L / A"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The quantization of charge in integer multiples of the elementary charge."
+     },
+     {
+      "id": "B",
+      "text": "The electric force between two point charges separated by a distance."
+     },
+     {
+      "id": "C",
+      "text": "The electric field as the force per unit charge."
+     },
+     {
+      "id": "D",
+      "text": "The electric potential as the work per unit charge."
+     },
+     {
+      "id": "E",
+      "text": "The electric current as the rate of flow of charge."
+     },
+     {
+      "id": "F",
+      "text": "Ohm's law, relating voltage, current, and resistance."
+     },
+     {
+      "id": "G",
+      "text": "The resistance of a wire in terms of its resistivity, length, and area."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E",
+     "6": "F",
+     "7": "G"
+    },
+    "explain": "The relation Q = n e expresses quantization of charge. Coulomb's law F = k Q₁Q₂ / r² gives the force between two point charges. The definition E = F / q gives the electric field. The definition V = W / q gives the electric potential. The relation I = Q / T gives the electric current. Ohm's law V = I R relates voltage, current, and resistance. The relation R = ρ L / A gives the resistance of a wire from its resistivity, length, and cross-sectional area."
+   },
+   {
+    "id": "PHY80058",
+    "type": "matching",
+    "cat": "Chapter 8: Nerve Conduction",
+    "q": "Match each phase of the neuronal action potential to its correct description.",
+    "leftItems": [
+     {
+      "id": "1",
+      "text": "Resting potential"
+     },
+     {
+      "id": "2",
+      "text": "Depolarization"
+     },
+     {
+      "id": "3",
+      "text": "Repolarization"
+     },
+     {
+      "id": "4",
+      "text": "Hyperpolarization"
+     },
+     {
+      "id": "5",
+      "text": "Refractory period"
+     }
+    ],
+    "rightItems": [
+     {
+      "id": "A",
+      "text": "The membrane potential is about -70 mV because of ionic gradients and selective K⁺ permeability."
+     },
+     {
+      "id": "B",
+      "text": "Voltage-gated Na⁺ channels open and Na⁺ rushes into the cell, raising the membrane potential."
+     },
+     {
+      "id": "C",
+      "text": "Na⁺ channels close and K⁺ moves out of the cell, restoring the negative interior."
+     },
+     {
+      "id": "D",
+      "text": "K⁺ channels remain open longer, so the membrane potential dips below the resting value."
+     },
+     {
+      "id": "E",
+      "text": "A brief interval during which a new action potential cannot be triggered or needs a much stronger stimulus."
+     }
+    ],
+    "correct_pairs": {
+     "1": "A",
+     "2": "B",
+     "3": "C",
+     "4": "D",
+     "5": "E"
+    },
+    "explain": "The resting potential of about -70 mV is maintained by ionic concentration gradients and selective permeability, especially to K⁺. Depolarization occurs when voltage-gated Na⁺ channels open and Na⁺ enters the cell. Repolarization occurs when Na⁺ channels close and K⁺ leaves the cell, restoring the negative interior. Hyperpolarization occurs because K⁺ channels stay open longer, letting the potential dip below the resting value. The refractory period is the interval when a new action potential cannot be triggered, or requires a much stronger stimulus."
+   },
+   {
+    "id": "PHY80060",
+    "type": "stepped",
+    "cat": "Chapter 8: Nerve Conduction",
+    "group": "channel-category-drill",
+    "groupOrder": 1,
+    "q": "Gated channels. At each step a channel type is named; choose the correct category for it, then continue.",
+    "steps": [
+     {
+      "id": "1",
+      "prompt": "Chemical gated channel. Which description fits?",
+      "options": [
+       "Opens when a neurotransmitter binds.",
+       "Opens when the membrane is stretched or deformed.",
+       "Opens when the membrane voltage changes.",
+       "Opens when the temperature rises."
+      ],
+      "correct": 0
+     },
+     {
+      "id": "2",
+      "prompt": "Mechanical gated channel. Which description fits?",
+      "options": [
+       "Opens when the membrane is stretched or deformed.",
+       "Opens when a neurotransmitter binds.",
+       "Opens when the membrane voltage changes.",
+       "Opens when light strikes the membrane."
+      ],
+      "correct": 0
+     },
+     {
+      "id": "3",
+      "prompt": "Voltage gated channel. Which description fits?",
+      "options": [
+       "Opens when the membrane voltage changes.",
+       "Opens when a neurotransmitter binds.",
+       "Opens when the membrane is stretched or deformed.",
+       "Opens when the ion concentration is equal."
+      ],
+      "correct": 0
+     }
+    ],
+    "explain": "Chemical gated channels open when a neurotransmitter binds. Mechanical gated channels open when the membrane is stretched or deformed. Voltage gated channels open when the membrane voltage changes. The other lines assign the wrong stimulus to that channel type."
+   }
+  ]
+ }
+}
