@@ -1,0 +1,1322 @@
+{
+  "id": "lecture-21-22-gastrointestinal-system",
+  "subject": "Medical Terminology",
+  "subjectId": "medical_terminology",
+  "title": "Lecture 21 and 22 - Gastrointestinal System (GIT)",
+  "formSize": 60,
+  "forms": [
+    "A"
+  ],
+  "bank": {
+    "A": [
+      {
+        "id": "MT21001",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which process breaks down food by chewing, swallowing, and mixing in digestive juices to convert some of the food into absorbable molecules?",
+        "options": [
+          "Digestion or ingestion of the food material.",
+          "Absorption or assimilation into the blood stream.",
+          "Excretion or defecation of the waste products.",
+          "Propulsion of the bolus along the muscular tube."
+        ],
+        "correct": 0,
+        "explain": "Digestion or ingestion is the process of breaking down food by chewing, swallowing, and mixing in digestive juices to convert some of the food into absorbable molecules. \"Absorption or assimilation into the blood stream\" is the passage of digestive food molecules through the walls of the intestine. \"Excretion or defecation of the waste products\" is the elimination of non-absorbable nutrients and waste. \"Propulsion of the bolus along the muscular tube\" describes movement through the esophagus, not the full breakdown process."
+      },
+      {
+        "id": "MT21002",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which process is the passage of digestive food molecules through the walls of the intestine into the blood stream to be carried to cells of the body?",
+        "options": [
+          "Absorption or assimilation of the nutrient molecules.",
+          "Digestion or ingestion of the original food mass.",
+          "Excretion or elimination of non-absorbable material.",
+          "Mastication or chewing of the solid food pieces."
+        ],
+        "correct": 0,
+        "explain": "Absorption or assimilation is the passage of digestive food molecules through the walls of the intestine into the blood stream to be carried to cells of the body. \"Digestion or ingestion of the original food mass\" is the breaking down by chewing, swallowing, and mixing. \"Excretion or elimination of non-absorbable material\" removes waste products. \"Mastication or chewing of the solid food pieces\" is only the mechanical part of digestion in the mouth."
+      },
+      {
+        "id": "MT21003",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "In the intestine, which pair of nutrients is taken away by the blood, while the third is taken by the lymph?",
+        "options": [
+          "Carbohydrates and proteins by blood, fats by lymph.",
+          "Carbohydrates and fats by blood, proteins by lymph.",
+          "Proteins and fats by blood, carbohydrates by lymph.",
+          "All three nutrients taken equally by the blood alone."
+        ],
+        "correct": 0,
+        "explain": "In the intestine, blood takes away the carbohydrates and proteins, and lymph takes away the fats. \"Carbohydrates and fats by blood, proteins by lymph\" assigns the wrong carrier to proteins and fats. \"Proteins and fats by blood, carbohydrates by lymph\" reverses the carriers. \"All three nutrients taken equally by the blood alone\" ignores the separate lymph pathway for fats."
+      },
+      {
+        "id": "MT21004",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which process is the elimination of non-absorbable nutrients and waste products from the body?",
+        "options": [
+          "Excretion, defecation, or elimination of the waste.",
+          "Digestion or ingestion of the incoming food material.",
+          "Absorption or assimilation into the circulating blood.",
+          "Secretion of digestive juices into the alimentary canal."
+        ],
+        "correct": 0,
+        "explain": "Excretion, defecation, or elimination is the elimination of non-absorbable nutrients and waste products from the body. \"Digestion or ingestion of the incoming food material\" breaks food into absorbable molecules. \"Absorption or assimilation into the circulating blood\" moves molecules through the intestinal walls. \"Secretion of digestive juices into the alimentary canal\" adds enzymes and acid, not the removal of waste."
+      },
+      {
+        "id": "MT21005",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term alimentary mean?",
+        "options": [
+          "Relating to food or nutrition or nourishment.",
+          "Relating to the blood vessels of the abdominal wall.",
+          "Relating to the nerve supply of the digestive organs.",
+          "Relating to the lymphatic drainage of the intestine."
+        ],
+        "correct": 0,
+        "explain": "Alimentary means relating to food or nutrition or nourishment. \"Relating to the blood vessels of the abdominal wall\" describes a vascular term. \"Relating to the nerve supply of the digestive organs\" describes innervation. \"Relating to the lymphatic drainage of the intestine\" describes lymph pathways, not the alimentary sense."
+      },
+      {
+        "id": "MT21006",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which structure is the cavity that receives food for digestion?",
+        "options": [
+          "The oral cavity or the mouth.",
+          "The pharynx or the throat passage.",
+          "The esophagus or the muscular tube.",
+          "The stomach or the sac-like organ."
+        ],
+        "correct": 0,
+        "explain": "The oral cavity or the mouth is the cavity that receives food for digestion. \"The pharynx or the throat passage\" is the passageway for food traveling to the esophagus and for air to the larynx. \"The esophagus or the muscular tube\" moves the bolus from the pharynx to the stomach. \"The stomach or the sac-like organ\" chemically mixes and prepares the food received from the esophagus."
+      },
+      {
+        "id": "MT21007",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which structure forms the roof of the mouth and is divided into hard and soft portions?",
+        "options": [
+          "The palate.",
+          "The uvula.",
+          "The tongue.",
+          "The frenulum."
+        ],
+        "correct": 0,
+        "explain": "The palate is the structure that forms the roof of the mouth and is divided into the hard and soft palate. \"The uvula\" is the small projection hanging from the back middle edge of the soft palate. \"The tongue\" is the muscular structure of the floor of the mouth. \"The frenulum\" is the band-like membrane that secures the tongue."
+      },
+      {
+        "id": "MT21008",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which small projection hangs from the back middle edge of the soft palate?",
+        "options": [
+          "The uvula.",
+          "The palate.",
+          "The frenulum.",
+          "The gums."
+        ],
+        "correct": 0,
+        "explain": "The uvula is the small projection hanging from the back middle edge of the soft palate. \"The palate\" is the full roof of the mouth. \"The frenulum\" is the band-like membrane securing the tongue. \"The gums\" are the tissue covering the processes of the jaws."
+      },
+      {
+        "id": "MT21009",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which muscular structure of the floor of the mouth is covered by mucous membrane and secured by a band-like membrane known as the frenulum?",
+        "options": [
+          "The tongue.",
+          "The palate.",
+          "The uvula.",
+          "The teeth."
+        ],
+        "correct": 0,
+        "explain": "The tongue is the muscular structure of the floor of the mouth covered by mucous membrane and secured by a band-like membrane known as the frenulum. \"The palate\" forms the roof of the mouth. \"The uvula\" hangs from the soft palate. \"The teeth\" are hard bony projections in the jaws for masticating food."
+      },
+      {
+        "id": "MT21010",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which tissue covers the processes of the jaws?",
+        "options": [
+          "The gums.",
+          "The tongue.",
+          "The palate.",
+          "The frenulum."
+        ],
+        "correct": 0,
+        "explain": "The gums are the tissue covering the processes of the jaws. \"The tongue\" is the muscular structure of the floor of the mouth. \"The palate\" forms the roof of the mouth. \"The frenulum\" is the band-like membrane that secures the tongue."
+      },
+      {
+        "id": "MT21011",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which hard bony projections in the jaws are used for masticating or chewing food?",
+        "options": [
+          "The teeth.",
+          "The gums.",
+          "The tongue.",
+          "The uvula."
+        ],
+        "correct": 0,
+        "explain": "The teeth are the hard bony projections in the jaws for masticating or chewing food. \"The gums\" are the tissue covering the processes of the jaws. \"The tongue\" is the muscular structure of the floor of the mouth. \"The uvula\" is the small projection hanging from the soft palate."
+      },
+      {
+        "id": "MT21012",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which structure is the throat and serves as a passageway for food traveling to the esophagus and for air traveling to the larynx?",
+        "options": [
+          "The pharynx.",
+          "The esophagus.",
+          "The stomach.",
+          "The oral cavity."
+        ],
+        "correct": 0,
+        "explain": "The pharynx is the throat and the passageway for food traveling to the esophagus and for air traveling to the larynx. \"The esophagus\" is the muscular tube that moves the bolus from the pharynx to the stomach. \"The stomach\" is the sac-like organ that chemically mixes the food. \"The oral cavity\" is the cavity that receives food for digestion."
+      },
+      {
+        "id": "MT21013",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which muscular tube moves food as a bolus from the pharynx to the stomach?",
+        "options": [
+          "The esophagus or oesophagus.",
+          "The pharynx or the throat.",
+          "The stomach or the sac.",
+          "The duodenum or the first part."
+        ],
+        "correct": 0,
+        "explain": "The esophagus or oesophagus is the muscular tube that moves food as a bolus from the pharynx to the stomach. \"The pharynx or the throat\" is the passageway before the esophagus. \"The stomach or the sac\" receives and mixes the food. \"The duodenum or the first part\" is the first segment of the small intestine after the stomach."
+      },
+      {
+        "id": "MT21014",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which sac-like organ chemically mixes and prepares food received from the esophagus, using concentrated HCL and pepsin for protein digestion, turning it into chyme?",
+        "options": [
+          "The stomach.",
+          "The esophagus.",
+          "The pharynx.",
+          "The small intestine."
+        ],
+        "correct": 0,
+        "explain": "The stomach is the sac-like organ that chemically mixes and prepares food received from the esophagus, using concentrated HCL and pepsin for protein digestion, turning it into chyme. \"The esophagus\" moves the bolus but does not chemically digest with HCL and pepsin. \"The pharynx\" is the throat passageway. \"The small intestine\" digests food received from the stomach but is not the sac that first forms chyme."
+      },
+      {
+        "id": "MT21015",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which opening or sphincter is the band or muscle ring from the esophagus to the stomach?",
+        "options": [
+          "The cardiac or esophagus sphincter.",
+          "The pyloric sphincter into the duodenum.",
+          "The ileocecal valve into the large intestine.",
+          "The anal sphincter at the end of the rectum."
+        ],
+        "correct": 0,
+        "explain": "The cardiac or esophagus sphincter is the opening or band or muscle ring from the esophagus to the stomach. \"The pyloric sphincter into the duodenum\" is the opening from the stomach into the duodenum. \"The ileocecal valve into the large intestine\" controls entry from the small intestine. \"The anal sphincter at the end of the rectum\" controls the anus."
+      },
+      {
+        "id": "MT21016",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which opening is from the stomach into the duodenum?",
+        "options": [
+          "The pyloric sphincter.",
+          "The cardiac or esophagus sphincter.",
+          "The ileocecal valve.",
+          "The anal sphincter."
+        ],
+        "correct": 0,
+        "explain": "The pyloric sphincter is the opening from the stomach into the duodenum. \"The cardiac or esophagus sphincter\" is the opening from the esophagus to the stomach. \"The ileocecal valve\" is between the ileum and the cecum. \"The anal sphincter\" is at the anus."
+      },
+      {
+        "id": "MT21017",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which smaller tubular structure digests food received from the stomach and has three parts lined with villi that absorb most of the nutrients?",
+        "options": [
+          "The small intestine.",
+          "The large intestine.",
+          "The stomach.",
+          "The esophagus."
+        ],
+        "correct": 0,
+        "explain": "The small intestine is the smaller tubular structure that digests food received from the stomach and has three parts lined with finger-like villi that absorb most of the nutrients. \"The large intestine\" receives the liquid waste, reabsorbs water, and forms feces. \"The stomach\" is the sac that forms chyme. \"The esophagus\" is the tube that delivers the bolus to the stomach."
+      },
+      {
+        "id": "MT21018",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each part of the small intestine to the meaning of its name.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Duodenum"
+          },
+          {
+            "id": "2",
+            "text": "Jejunum"
+          },
+          {
+            "id": "3",
+            "text": "Ileum"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Twelve, the first part"
+          },
+          {
+            "id": "B",
+            "text": "Empty, the second part"
+          },
+          {
+            "id": "C",
+            "text": "To roll up or twist, the third part"
+          },
+          {
+            "id": "D",
+            "text": "Blind gut or pouch, the first part of the large intestine"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C"
+        },
+        "explain": "The duodenum is the first part and its name means twelve. The jejunum is the second part and its name means empty. The ileum is the third part and its name means to roll up or twist. \"Blind gut or pouch, the first part of the large intestine\" names the cecum, which is not a part of the small intestine."
+      },
+      {
+        "id": "MT21019",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which larger tubular structure receives the liquid waste products of digestion, reabsorbs water and minerals, and forms and stores feces for defecation?",
+        "options": [
+          "The large intestine.",
+          "The small intestine.",
+          "The stomach.",
+          "The pharynx."
+        ],
+        "correct": 0,
+        "explain": "The large intestine is the larger tubular structure that receives the liquid waste products of digestion, reabsorbs water and minerals, and forms and stores feces for defecation. \"The small intestine\" digests and absorbs most nutrients via villi. \"The stomach\" forms chyme with HCL and pepsin. \"The pharynx\" is the throat passageway."
+      },
+      {
+        "id": "MT21020",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which is the first part of the large intestine, also called the blind gut or pouch?",
+        "options": [
+          "The cecum.",
+          "The colon.",
+          "The rectum.",
+          "The appendix."
+        ],
+        "correct": 0,
+        "explain": "The cecum is the first part of the large intestine and is called the blind gut or pouch. \"The colon\" is the portion extending from the cecum to the rectum. \"The rectum\" is the distal end portion of the large intestine. \"The appendix\" is the worm-like projection hanging off the cecum."
+      },
+      {
+        "id": "MT21021",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which worm-like projection of lymphatic tissue hangs off the cecum, has no digestive functions, and may help resist infection?",
+        "options": [
+          "The vermiform appendix.",
+          "The cecum pouch.",
+          "The sigmoid colon.",
+          "The ileocecal valve."
+        ],
+        "correct": 0,
+        "explain": "The vermiform appendix is the worm-like projection of lymphatic tissue hanging off the cecum with no digestive functions and may help resist infection. \"The cecum pouch\" is the first part of the large intestine itself. \"The sigmoid colon\" is a shaped portion of the colon. \"The ileocecal valve\" controls the junction between the ileum and the cecum."
+      },
+      {
+        "id": "MT21022",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which portion of the large intestine extends from the cecum to the rectum and is identified by direction or shape?",
+        "options": [
+          "The colon.",
+          "The cecum.",
+          "The rectum.",
+          "The appendix."
+        ],
+        "correct": 0,
+        "explain": "The colon is the portion of the large intestine extending from the cecum to the rectum and is identified by direction or shape. \"The cecum\" is the first blind pouch. \"The rectum\" is the distal end portion. \"The appendix\" is the worm-like projection off the cecum."
+      },
+      {
+        "id": "MT21023",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which is the distal or end portion of the large intestine?",
+        "options": [
+          "The rectum.",
+          "The cecum.",
+          "The colon.",
+          "The anus."
+        ],
+        "correct": 0,
+        "explain": "The rectum is the distal or end portion of the large intestine. \"The cecum\" is the first part. \"The colon\" extends from the cecum to the rectum. \"The anus\" is the opening of the rectum to the outside of the body."
+      },
+      {
+        "id": "MT21024",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which is the opening of the rectum to the outside of the body?",
+        "options": [
+          "The anus.",
+          "The rectum.",
+          "The cecum.",
+          "The pyloric sphincter."
+        ],
+        "correct": 0,
+        "explain": "The anus is the opening of the rectum to the outside of the body. \"The rectum\" is the distal portion of the large intestine itself. \"The cecum\" is the first part of the large intestine. \"The pyloric sphincter\" is the opening from the stomach into the duodenum."
+      },
+      {
+        "id": "MT21025",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which waste is formed by the absorption of water in the large intestine and is usually solid?",
+        "options": [
+          "Feces.",
+          "Chyme.",
+          "Bolus.",
+          "Bile juice."
+        ],
+        "correct": 0,
+        "explain": "Feces are the waste formed by the absorption of water in the large intestine and are usually solid. \"Chyme\" is the mixture prepared in the stomach. \"Bolus\" is the mass of food moved by the esophagus. \"Bile juice\" is the secretion produced by the liver."
+      },
+      {
+        "id": "MT21026",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which process is the evacuation of feces from the rectum to the anus?",
+        "options": [
+          "Defecation.",
+          "Digestion.",
+          "Absorption.",
+          "Mastication."
+        ],
+        "correct": 0,
+        "explain": "Defecation is the evacuation of feces from the rectum to the anus. \"Digestion\" is the breaking down of food. \"Absorption\" is the passage of molecules into the blood or lymph. \"Mastication\" is chewing by the teeth."
+      },
+      {
+        "id": "MT21027",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which membrane surrounds the entire abdominal cavity and consists of two layers, the parietal lining the abdominal wall and the visceral covering each organ?",
+        "options": [
+          "The peritoneum.",
+          "The mesentery.",
+          "The omentum.",
+          "The pleura."
+        ],
+        "correct": 0,
+        "explain": "The peritoneum is the membrane surrounding the entire abdominal cavity and consisting of two layers: the parietal lining the abdominal wall and the visceral covering each organ in the abdomen. \"The mesentery\" is a fold of peritoneum that supports the intestine. \"The omentum\" is a fold of peritoneum hanging from the stomach. \"The pleura\" is the membrane around the lungs."
+      },
+      {
+        "id": "MT21028",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which spaces between the parietal and visceral peritoneum contain peritoneal fluid, a clear liquid?",
+        "options": [
+          "The peritoneal cavity.",
+          "The pleural cavity.",
+          "The pericardial cavity.",
+          "The cranial cavity."
+        ],
+        "correct": 0,
+        "explain": "The peritoneal cavity is the spaces between the parietal and visceral peritoneum and it contains peritoneal fluid, a clear liquid. \"The pleural cavity\" is around the lungs. \"The pericardial cavity\" is around the heart. \"The cranial cavity\" is inside the skull."
+      },
+      {
+        "id": "MT21029",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which organ in the upper right quadrant produces bile juice that is secreted into the duodenum during digestion?",
+        "options": [
+          "The liver.",
+          "The gall bladder.",
+          "The pancreas.",
+          "The stomach."
+        ],
+        "correct": 0,
+        "explain": "The liver is the organ in the upper right quadrant that produces bile juice which is secreted into the duodenum during digestion. \"The gall bladder\" stores and concentrates the bile produced in the liver. \"The pancreas\" secretes pancreatic juice into the duodenum. \"The stomach\" mixes food with HCL and pepsin."
+      },
+      {
+        "id": "MT21030",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which receptacle stores and concentrates the bile produced in the liver?",
+        "options": [
+          "The gall bladder.",
+          "The liver.",
+          "The pancreas.",
+          "The duodenum."
+        ],
+        "correct": 0,
+        "explain": "The gall bladder is the receptacle that stores and concentrates the bile produced in the liver. \"The liver\" produces the bile juice. \"The pancreas\" secretes pancreatic juice. \"The duodenum\" receives the bile and pancreatic juice."
+      },
+      {
+        "id": "MT21031",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which ducts convey bile juice and include the hepatic duct from the liver, the cystic duct from the gall bladder, and the common bile duct formed by their union and secreted into the duodenum?",
+        "options": [
+          "The biliary ducts.",
+          "The pancreatic ducts.",
+          "The salivary ducts.",
+          "The lymphatic ducts."
+        ],
+        "correct": 0,
+        "explain": "The biliary ducts convey bile juice and include the hepatic duct from the liver, the cystic duct from the gall bladder, and the common bile duct formed by their union and secreted into the duodenum. \"The pancreatic ducts\" carry pancreatic juice. \"The salivary ducts\" carry saliva from the salivary glands. \"The lymphatic ducts\" carry lymph."
+      },
+      {
+        "id": "MT21032",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "Which gland secretes pancreatic juice into the duodenum where it mixes with bile to digest food?",
+        "options": [
+          "The pancreas.",
+          "The liver.",
+          "The gall bladder.",
+          "The salivary glands."
+        ],
+        "correct": 0,
+        "explain": "The pancreas is the gland that secretes pancreatic juice into the duodenum where it mixes with bile to digest food. \"The liver\" produces bile juice. \"The gall bladder\" stores and concentrates bile. \"The salivary glands\" produce saliva that begins digestion in the mouth."
+      },
+      {
+        "id": "MT21033",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Or/o or Stomat/o"
+          },
+          {
+            "id": "2",
+            "text": "Cheil/o or Labi/o"
+          },
+          {
+            "id": "3",
+            "text": "Gloss/o or Lingu/o"
+          },
+          {
+            "id": "4",
+            "text": "Gingiv/o"
+          },
+          {
+            "id": "5",
+            "text": "Dent/i"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Mouth"
+          },
+          {
+            "id": "B",
+            "text": "Lips"
+          },
+          {
+            "id": "C",
+            "text": "Tongue"
+          },
+          {
+            "id": "D",
+            "text": "Gum"
+          },
+          {
+            "id": "E",
+            "text": "Teeth"
+          },
+          {
+            "id": "F",
+            "text": "Pharynx"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E"
+        },
+        "explain": "Or/o and Stomat/o mean mouth. Cheil/o and Labi/o mean lips. Gloss/o and Lingu/o mean tongue. Gingiv/o means gum. Dent/i means teeth. \"Pharynx\" is denoted by Pharyng/o, which matches none of these left items."
+      },
+      {
+        "id": "MT21034",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Sial/o"
+          },
+          {
+            "id": "2",
+            "text": "Emet/o"
+          },
+          {
+            "id": "3",
+            "text": "Phag/o"
+          },
+          {
+            "id": "4",
+            "text": "Pharyng/o"
+          },
+          {
+            "id": "5",
+            "text": "Gastr/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Saliva or salivary gland"
+          },
+          {
+            "id": "B",
+            "text": "Vomiting"
+          },
+          {
+            "id": "C",
+            "text": "Eat or swallow"
+          },
+          {
+            "id": "D",
+            "text": "Pharynx"
+          },
+          {
+            "id": "E",
+            "text": "Stomach"
+          },
+          {
+            "id": "F",
+            "text": "Liver"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E"
+        },
+        "explain": "Sial/o means saliva or salivary gland. Emet/o means vomiting. Phag/o means eat or swallow. Pharyng/o means pharynx. Gastr/o means stomach. \"Liver\" is denoted by Hepat/o, which matches none of these left items."
+      },
+      {
+        "id": "MT21035",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Abdomin/o or Celi/o or Lapar/o"
+          },
+          {
+            "id": "2",
+            "text": "Pylor/o"
+          },
+          {
+            "id": "3",
+            "text": "Herni/o"
+          },
+          {
+            "id": "4",
+            "text": "Hepat/o or Hepatic/o"
+          },
+          {
+            "id": "5",
+            "text": "Bil/i or Chol/e"
+          },
+          {
+            "id": "6",
+            "text": "Enter/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Abdomen"
+          },
+          {
+            "id": "B",
+            "text": "Pylorus"
+          },
+          {
+            "id": "C",
+            "text": "Hernia"
+          },
+          {
+            "id": "D",
+            "text": "Liver"
+          },
+          {
+            "id": "E",
+            "text": "Bile"
+          },
+          {
+            "id": "F",
+            "text": "Small intestine"
+          },
+          {
+            "id": "G",
+            "text": "Pancreas"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Abdomin/o, Celi/o, and Lapar/o mean abdomen. Pylor/o means pylorus. Herni/o means hernia. Hepat/o and Hepatic/o mean liver. Bil/i and Chol/e mean bile. Enter/o means small intestine. \"Pancreas\" is denoted by Pancreat/o, which matches none of these left items."
+      },
+      {
+        "id": "MT21036",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Steat/o"
+          },
+          {
+            "id": "2",
+            "text": "Cyst/o"
+          },
+          {
+            "id": "3",
+            "text": "Lith/o"
+          },
+          {
+            "id": "4",
+            "text": "Duoden/o"
+          },
+          {
+            "id": "5",
+            "text": "Pancreat/o"
+          },
+          {
+            "id": "6",
+            "text": "Peritone/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Fat"
+          },
+          {
+            "id": "B",
+            "text": "Gall bladder or sac"
+          },
+          {
+            "id": "C",
+            "text": "Stone"
+          },
+          {
+            "id": "D",
+            "text": "Duodenum"
+          },
+          {
+            "id": "E",
+            "text": "Pancreas"
+          },
+          {
+            "id": "F",
+            "text": "Peritoneum"
+          },
+          {
+            "id": "G",
+            "text": "Colon"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Steat/o means fat. Cyst/o means gall bladder or sac. Lith/o means stone. Duoden/o means duodenum. Pancreat/o means pancreas. Peritone/o means peritoneum. \"Colon\" is denoted by Col/o or Colon/o, which matches none of these left items."
+      },
+      {
+        "id": "MT21037",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term stomatorrhagia mean?",
+        "options": [
+          "Excessive bleeding from the mouth.",
+          "Surgical repair of the lips.",
+          "Pain in the tongue.",
+          "Removal of the gum tissue."
+        ],
+        "correct": 0,
+        "explain": "Stomatorrhagia is built from Stomat/o, mouth, and -rrhagia, excessive flow or bleeding, so it means excessive bleeding from the mouth. \"Surgical repair of the lips\" is cheiloplasty. \"Pain in the tongue\" is glossodynia. \"Removal of the gum tissue\" is gingivectomy."
+      },
+      {
+        "id": "MT21038",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term dysphagia mean?",
+        "options": [
+          "Difficulty in eating or swallowing.",
+          "Fear of vomiting.",
+          "Inflammation of the salivary duct.",
+          "Surgical connection of the pharynx and esophagus."
+        ],
+        "correct": 0,
+        "explain": "Dysphagia is built from dys-, difficult, Phag/o, eat or swallow, and -ia, condition, so it means difficulty in eating or swallowing. \"Fear of vomiting\" is emetophobia. \"Inflammation of the salivary duct\" is sialoductitis. \"Surgical connection of the pharynx and esophagus\" is pharyngoesophagoplasty."
+      },
+      {
+        "id": "MT21039",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term cholelithiasis mean?",
+        "options": [
+          "Presence of stones in the bile or gall bladder.",
+          "Presence of stones in the adrenal gland or cortex.",
+          "Breakdown or dissolution of stones in the bile ducts.",
+          "Presence of fat deposits inside the gall bladder wall."
+        ],
+        "correct": 0,
+        "explain": "Cholelithiasis is built from Chol/e, bile, Lith/o, stone, and -iasis, condition, so it means presence of stones in the bile or gall bladder. \"Presence of stones in the adrenal gland or cortex\" keeps the stone sense but assigns chol/e to the adrenal cortex instead of bile. \"Breakdown or dissolution of stones in the bile ducts\" keeps the stone and bile senses but replaces the presence sense of -iasis with a dissolution sense. \"Presence of fat deposits inside the gall bladder wall\" keeps a presence sense but substitutes steat/o fat for lith/o stone."
+      },
+      {
+        "id": "MT21040",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "In the term oromandibular, which word form is correct?",
+        "options": [
+          "CF+R+S, combining form plus root plus suffix.",
+          "CF+S, combining form plus suffix only.",
+          "R+S, root plus suffix only.",
+          "P+R+S, prefix plus root plus suffix."
+        ],
+        "correct": 0,
+        "explain": "Oromandibular is built as Or/o plus mandibular, so the word form is CF+R+S. \"CF+S, combining form plus suffix only\" describes stomatorrhagia. \"R+S, root plus suffix only\" describes gingivectomy or labia. \"P+R+S, prefix plus root plus suffix\" describes dysphagia."
+      },
+      {
+        "id": "MT21041",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "si-parts-drill",
+        "groupOrder": 1,
+        "q": "This is the first part of the small intestine. Answer each step, then the next part follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this first part?",
+            "options": [
+              "Duodenum",
+              "Duodenom",
+              "Duodenim",
+              "Duodenem"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which meaning belongs to the name of this part?",
+            "options": [
+              "Twelve",
+              "Empty",
+              "To roll up or twist",
+              "Blind gut"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This first part is the duodenum. Duodenom, Duodenim, and Duodenum miss that spelling. Its name means twelve. Empty belongs to the jejunum. To roll up or twist belongs to the ileum. Blind gut belongs to the cecum."
+      },
+      {
+        "id": "MT21042",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "si-parts-drill",
+        "groupOrder": 2,
+        "q": "This is the second part of the small intestine. Answer each step, then the next part follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this second part?",
+            "options": [
+              "Jejunum",
+              "Jejunom",
+              "Jejunim",
+              "Jejenum"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which meaning belongs to the name of this part?",
+            "options": [
+              "Empty",
+              "Twelve",
+              "To roll up or twist",
+              "Blind gut"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This second part is the jejunum. Jejunom, Jejunim, and Jejenum miss that spelling. Its name means empty. Twelve belongs to the duodenum. To roll up or twist belongs to the ileum. Blind gut belongs to the cecum."
+      },
+      {
+        "id": "MT21043",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "si-parts-drill",
+        "groupOrder": 3,
+        "q": "This is the third part of the small intestine. Answer each step, then the run ends.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this third part?",
+            "options": [
+              "Ileum",
+              "Ilium",
+              "Ileom",
+              "Ilieum"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which meaning belongs to the name of this part?",
+            "options": [
+              "To roll up or twist",
+              "Twelve",
+              "Empty",
+              "Blind gut"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This third part is the ileum. Ilium, Ileom, and Ilieum miss that spelling. Its name means to roll up or twist. Twelve belongs to the duodenum. Empty belongs to the jejunum. Blind gut belongs to the cecum."
+      },
+      {
+        "id": "MT21044",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term cholecystitis mean?",
+        "options": [
+          "Inflammation of the gall bladder.",
+          "Presence of stones in the bile.",
+          "Inflammation of the liver.",
+          "Inflammation of the pancreas."
+        ],
+        "correct": 0,
+        "explain": "Cholecystitis is built from Chol/e, bile, Cyst/o, gall bladder or sac, and -itis, inflammation, so it means inflammation of the gall bladder. \"Presence of stones in the bile\" is cholelithiasis. \"Inflammation of the liver\" is hepatitis. \"Inflammation of the pancreas\" is pancreatitis."
+      },
+      {
+        "id": "MT21045",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term steatohepatitis mean?",
+        "options": [
+          "Inflammation of the liver associated with fat.",
+          "Inflammation of the gall bladder.",
+          "Tumor of the bile ducts.",
+          "Surgical connection involving the liver and intestine."
+        ],
+        "correct": 0,
+        "explain": "Steatohepatitis is built from Steat/o, fat, Hepat/o, liver, and -itis, inflammation, so it means inflammation of the liver associated with fat. \"Inflammation of the gall bladder\" is cholecystitis. \"Tumor of the bile ducts\" is cholangiocarcinoma. \"Surgical connection involving the liver and intestine\" is hepatocholangioenterostomy."
+      },
+      {
+        "id": "MT21046",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Jejun/o"
+          },
+          {
+            "id": "2",
+            "text": "Ile/o"
+          },
+          {
+            "id": "3",
+            "text": "Appendic/o"
+          },
+          {
+            "id": "4",
+            "text": "Col/o or Colon/o"
+          },
+          {
+            "id": "5",
+            "text": "Rect/o"
+          },
+          {
+            "id": "6",
+            "text": "An/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Jejunum"
+          },
+          {
+            "id": "B",
+            "text": "Ileum"
+          },
+          {
+            "id": "C",
+            "text": "Appendix"
+          },
+          {
+            "id": "D",
+            "text": "Colon"
+          },
+          {
+            "id": "E",
+            "text": "Rectum"
+          },
+          {
+            "id": "F",
+            "text": "Anus"
+          },
+          {
+            "id": "G",
+            "text": "Peritoneum"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Jejun/o means jejunum. Ile/o means ileum. Appendic/o means appendix. Col/o and Colon/o mean colon. Rect/o means rectum. An/o means anus. \"Peritoneum\" is denoted by Peritone/o, which matches none of these left items."
+      },
+      {
+        "id": "MT21047",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term cheiloplasty mean?",
+        "options": [
+          "Surgical repair of the lips.",
+          "Excessive bleeding from the mouth.",
+          "Pain in the tongue.",
+          "Removal of gum tissue."
+        ],
+        "correct": 0,
+        "explain": "Cheiloplasty is built from Cheil/o, lips, and -plasty, surgical repair, so it means surgical repair of the lips. \"Excessive bleeding from the mouth\" is stomatorrhagia. \"Pain in the tongue\" is glossodynia. \"Removal of gum tissue\" is gingivectomy."
+      },
+      {
+        "id": "MT21048",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term glossodynia mean?",
+        "options": [
+          "Pain in the tongue.",
+          "Surgical repair of the lips.",
+          "Inflammation of the salivary duct.",
+          "Fear of vomiting."
+        ],
+        "correct": 0,
+        "explain": "Glossodynia is built from Gloss/o, tongue, and -dynia, pain, so it means pain in the tongue. \"Surgical repair of the lips\" is cheiloplasty. \"Inflammation of the salivary duct\" is sialoductitis. \"Fear of vomiting\" is emetophobia."
+      },
+      {
+        "id": "MT21049",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term emetophobia mean?",
+        "options": [
+          "Exaggerated fear of vomiting.",
+          "Difficulty swallowing.",
+          "Inflammation of the gall bladder.",
+          "Presence of gallstones."
+        ],
+        "correct": 0,
+        "explain": "Emetophobia is built from Emet/o, vomiting, and Phob/o or -phobia, exaggerated fear, so it means exaggerated fear of vomiting. \"Difficulty swallowing\" is dysphagia. \"Inflammation of the gall bladder\" is cholecystitis. \"Presence of gallstones\" is cholelithiasis."
+      },
+      {
+        "id": "MT21050",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term pylorostenosis mean?",
+        "options": [
+          "Narrowing of the pylorus.",
+          "Surgical repair of a hernia.",
+          "Inflammation of the pancreas.",
+          "Surgical opening of the liver."
+        ],
+        "correct": 0,
+        "explain": "Pylorostenosis is built from Pylor/o, pylorus, and -stenosis, narrowing, so it means narrowing of the pylorus. \"Surgical repair of a hernia\" is hernioplasty. \"Inflammation of the pancreas\" is pancreatitis. \"Surgical opening of the liver\" is hepaticotomy."
+      },
+      {
+        "id": "MT21051",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term hernioplasty mean?",
+        "options": [
+          "Surgical repair of a hernia.",
+          "Narrowing of the pylorus.",
+          "Inflammation of the liver with fat.",
+          "Hernia of the spinal cord and meninges."
+        ],
+        "correct": 0,
+        "explain": "Hernioplasty is built from Herni/o, hernia, and -plasty, surgical repair, so it means surgical repair of a hernia. \"Narrowing of the pylorus\" is pylorostenosis. \"Inflammation of the liver with fat\" is steatohepatitis. \"Hernia of the spinal cord and meninges\" is myelomeningocele, from another system."
+      },
+      {
+        "id": "MT21052",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term biliuria mean?",
+        "options": [
+          "Bile in the urine.",
+          "Inflammation of the bile ducts.",
+          "Tumor of the bile duct.",
+          "Stone in the bile."
+        ],
+        "correct": 0,
+        "explain": "Biliuria is built from Bil/i, bile, and -uria, urine condition, so it means bile in the urine. \"Inflammation of the bile ducts\" would use cholangitis. \"Tumor of the bile duct\" is cholangiocarcinoma. \"Stone in the bile\" is cholelithiasis."
+      },
+      {
+        "id": "MT21053",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term pancreatitis mean?",
+        "options": [
+          "Inflammation of the pancreas.",
+          "Inflammation of the gall bladder.",
+          "Inflammation of the liver.",
+          "Surgical connection of the pancreas and duodenum."
+        ],
+        "correct": 0,
+        "explain": "Pancreatitis is built from Pancreat/o, pancreas, and -itis, inflammation, so it means inflammation of the pancreas. \"Inflammation of the gall bladder\" is cholecystitis. \"Inflammation of the liver\" is hepatitis. \"Surgical connection of the pancreas and duodenum\" is pancreaticoduodenostomy."
+      },
+      {
+        "id": "MT21054",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term appendicolith mean?",
+        "options": [
+          "A stone in the appendix.",
+          "Inflammation of the appendix.",
+          "Hernia of the appendix.",
+          "Removal of the appendix."
+        ],
+        "correct": 0,
+        "explain": "Appendicolith is built from Appendic/o, appendix, and Lith/o, stone, so it means a stone in the appendix. \"Inflammation of the appendix\" is appendicitis. \"Hernia of the appendix\" is not a standard term from the forms. \"Removal of the appendix\" is appendectomy."
+      },
+      {
+        "id": "MT21055",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term colonorrhagia mean?",
+        "options": [
+          "Excessive bleeding from the colon.",
+          "Inflammation of the colon.",
+          "Narrowing of the colon.",
+          "Surgical repair of the colon."
+        ],
+        "correct": 0,
+        "explain": "Colonorrhagia is built from Col/o or Colon/o, colon, and -rrhagia, excessive bleeding, so it means excessive bleeding from the colon. \"Inflammation of the colon\" is colitis. \"Narrowing of the colon\" is colonostenosis. \"Surgical repair of the colon\" is colonoplasty."
+      },
+      {
+        "id": "MT21056",
+        "type": "mcq",
+        "cat": "MT_lec21-22",
+        "q": "What does the term rectitis mean?",
+        "options": [
+          "Inflammation of the rectum.",
+          "Inflammation of the anus.",
+          "Surgical repair of the rectum.",
+          "Opening of the rectum to the outside."
+        ],
+        "correct": 0,
+        "explain": "Rectitis is built from Rect/o, rectum, and -itis, inflammation, so it means inflammation of the rectum. \"Inflammation of the anus\" is anitis. \"Surgical repair of the rectum\" is rectoplasty. \"Opening of the rectum to the outside\" describes the anus itself."
+      },
+      {
+        "id": "MT21057",
+        "type": "matching",
+        "cat": "MT_lec21-22",
+        "q": "Match each built term to the meaning it carries.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Stomatorrhagia"
+          },
+          {
+            "id": "2",
+            "text": "Dysphagia"
+          },
+          {
+            "id": "3",
+            "text": "Cholelithiasis"
+          },
+          {
+            "id": "4",
+            "text": "Cholecystitis"
+          },
+          {
+            "id": "5",
+            "text": "Steatohepatitis"
+          },
+          {
+            "id": "6",
+            "text": "Pylorostenosis"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Excessive bleeding from the mouth"
+          },
+          {
+            "id": "B",
+            "text": "Difficulty eating or swallowing"
+          },
+          {
+            "id": "C",
+            "text": "Presence of stones in the bile"
+          },
+          {
+            "id": "D",
+            "text": "Inflammation of the gall bladder"
+          },
+          {
+            "id": "E",
+            "text": "Inflammation of the liver associated with fat"
+          },
+          {
+            "id": "F",
+            "text": "Narrowing of the pylorus"
+          },
+          {
+            "id": "G",
+            "text": "Surgical repair of the lips"
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Stomatorrhagia means excessive bleeding from the mouth. Dysphagia means difficulty eating or swallowing. Cholelithiasis means presence of stones in the bile. Cholecystitis means inflammation of the gall bladder. Steatohepatitis means inflammation of the liver associated with fat. Pylorostenosis means narrowing of the pylorus. \"Surgical repair of the lips\" is cheiloplasty and matches none of these left terms."
+      },
+      {
+        "id": "MT21058",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "accessory-drill",
+        "groupOrder": 1,
+        "q": "This organ in the upper right quadrant produces bile juice secreted into the duodenum. Answer each step, then the next accessory follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this organ?",
+            "options": [
+              "Liver",
+              "Livar",
+              "Liverr",
+              "Leiver"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form names this organ?",
+            "options": [
+              "Hepat/o or Hepatic/o",
+              "Chol/e or Bil/i",
+              "Pancreat/o",
+              "Cyst/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This organ is the liver. Livar, Liverr, and Leiver miss that spelling. Its combining forms are Hepat/o and Hepatic/o. Chol/e and Bil/i name bile. Pancreat/o names the pancreas. Cyst/o names the gall bladder or a sac."
+      },
+      {
+        "id": "MT21059",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "accessory-drill",
+        "groupOrder": 2,
+        "q": "This receptacle stores and concentrates the bile produced by the liver. Answer each step, then the next accessory follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this receptacle?",
+            "options": [
+              "Gall bladder",
+              "Gallblader",
+              "Gall blader",
+              "Gallbladdr"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form can name this receptacle?",
+            "options": [
+              "Cyst/o",
+              "Hepat/o",
+              "Chol/e",
+              "Lith/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This receptacle is the gall bladder. Gallblader, Gall blader, and Gallblader miss that spelling. Its combining form is Cyst/o. Hepat/o names the liver. Chol/e names bile. Lith/o names stone."
+      },
+      {
+        "id": "MT21060",
+        "type": "stepped",
+        "cat": "MT_lec21-22",
+        "group": "accessory-drill",
+        "groupOrder": 3,
+        "q": "This gland secretes pancreatic juice into the duodenum where it mixes with bile. Answer each step, then the run ends.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this gland?",
+            "options": [
+              "Pancreas",
+              "Pancras",
+              "Pancreass",
+              "Pankreas"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form names this gland?",
+            "options": [
+              "Pancreat/o",
+              "Hepat/o",
+              "Cyst/o",
+              "Enter/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This gland is the pancreas. Pancras and Pancreass miss that spelling. Its combining form is Pancreat/o. Hepat/o names the liver. Cyst/o names the gall bladder. Enter/o names the small intestine."
+      }
+    ]
+  }
+}

@@ -1,0 +1,574 @@
+{
+ "title": "Picture Study",
+ "note": "Medical Terminology Only In Finals pictures, built with /workspace/study-images/work (cfg.py, build.py); image paths point at the portal copies.",
+ "chapters": [
+  {
+   "lecture": "lec21-22",
+   "cat": "MT_lec21-22",
+   "images": [
+    {
+     "id": "large-intestine",
+     "title": "The Large Intestine",
+     "caption": "The large intestine starts at the cecum (the blind pouch), where the ileum joins it through the ileocecal valve. The worm-like appendix hangs from the cecum. The colon (Col/o, Colon/o) runs up (ascending), across (transverse), down (descending) and through the S-shaped sigmoid colon to the rectum (Rect/o) and anus (An/o).",
+     "alt": "Front view of the large intestine: the ileum entering the cecum at the ileocecal valve, the appendix, the ascending, transverse, descending and sigmoid colon, the rectum and the anus, with a small body outline showing where it sits.",
+     "kind": "labeled-diagram",
+     "credit": "Blausen.com staff (2014), \"Medical gallery of Blausen Medical 2014\", WikiJournal of Medicine, via Wikimedia Commons",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blausen_0604_LargeIntestine2.png",
+     "labeled": "banks/medterm/study/lec21-22/large-intestine-labeled.png",
+     "blank": "banks/medterm/study/lec21-22/large-intestine-blank.png",
+     "width": 1200,
+     "height": 960,
+     "labels": [
+      {
+       "id": "large-intestine-L1",
+       "answer": "Transverse Colon",
+       "accept": [],
+       "x": 55.17,
+       "y": 10.21,
+       "w": 21.17,
+       "h": 2.6
+      },
+      {
+       "id": "large-intestine-L2",
+       "answer": "Ascending Colon",
+       "accept": [],
+       "x": 26.75,
+       "y": 35.31,
+       "w": 12.0,
+       "h": 5.62
+      },
+      {
+       "id": "large-intestine-L3",
+       "answer": "Descending Colon",
+       "accept": [],
+       "x": 86.5,
+       "y": 35.31,
+       "w": 13.17,
+       "h": 5.62
+      },
+      {
+       "id": "large-intestine-L4",
+       "answer": "Ileum",
+       "accept": [],
+       "x": 27.33,
+       "y": 48.65,
+       "w": 6.33,
+       "h": 3.23
+      },
+      {
+       "id": "large-intestine-L5",
+       "answer": "Ileocecal Valve",
+       "accept": [
+        "Ileocaecal Valve"
+       ],
+       "x": 27.33,
+       "y": 58.02,
+       "w": 16.42,
+       "h": 3.12
+      },
+      {
+       "id": "large-intestine-L6",
+       "answer": "Cecum",
+       "accept": [
+        "Caecum"
+       ],
+       "x": 39.92,
+       "y": 66.35,
+       "w": 8.0,
+       "h": 3.12
+      },
+      {
+       "id": "large-intestine-L7",
+       "answer": "Appendix",
+       "accept": [
+        "Vermiform Appendix"
+       ],
+       "x": 48.58,
+       "y": 71.88,
+       "w": 10.67,
+       "h": 3.54
+      },
+      {
+       "id": "large-intestine-L8",
+       "answer": "Sigmoid Colon",
+       "accept": [],
+       "x": 82.33,
+       "y": 71.35,
+       "w": 16.25,
+       "h": 2.6
+      },
+      {
+       "id": "large-intestine-L9",
+       "answer": "Rectum",
+       "accept": [],
+       "x": 82.75,
+       "y": 79.38,
+       "w": 8.5,
+       "h": 3.12
+      },
+      {
+       "id": "large-intestine-L10",
+       "answer": "Anus",
+       "accept": [],
+       "x": 75.75,
+       "y": 86.56,
+       "w": 6.0,
+       "h": 3.12
+      }
+     ]
+    },
+    {
+     "id": "bile-ducts",
+     "title": "Liver, Gallbladder and Bile Ducts",
+     "caption": "The liver (Hepat/o) makes bile (Bil/i, Chol/e). The gallbladder stores it and sends it down the cystic duct, which joins the hepatic duct to form the common bile duct into the duodenum. The pancreas (Pancreat/o) adds its juice through the pancreatic duct.",
+     "alt": "The liver with its bile ducts, the gallbladder, the cystic duct and common bile duct, and the pancreas with the pancreatic duct, drawn over the esophagus, stomach and small intestine.",
+     "kind": "labeled-diagram",
+     "credit": "Pueblo.gsa.gov (original), Pixelsquid (SVG), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Digestive_system_showing_bile_duct.svg",
+     "labeled": "banks/medterm/study/lec21-22/bile-ducts-labeled.png",
+     "blank": "banks/medterm/study/lec21-22/bile-ducts-blank.png",
+     "width": 1100,
+     "height": 814,
+     "labels": [
+      {
+       "id": "bile-ducts-L1",
+       "answer": "Liver",
+       "accept": [],
+       "x": 5.82,
+       "y": 7.37,
+       "w": 7.09,
+       "h": 3.81
+      },
+      {
+       "id": "bile-ducts-L2",
+       "answer": "Gallbladder",
+       "accept": [
+        "Gall Bladder"
+       ],
+       "x": 3.09,
+       "y": 34.77,
+       "w": 16.73,
+       "h": 3.93
+      },
+      {
+       "id": "bile-ducts-L3",
+       "answer": "Cystic Duct",
+       "accept": [],
+       "x": 5.64,
+       "y": 64.74,
+       "w": 15.55,
+       "h": 4.91
+      },
+      {
+       "id": "bile-ducts-L4",
+       "answer": "Common Bile Duct",
+       "accept": [
+        "Bile Duct"
+       ],
+       "x": 52.64,
+       "y": 38.7,
+       "w": 13.18,
+       "h": 8.85
+      },
+      {
+       "id": "bile-ducts-L5",
+       "answer": "Pancreas",
+       "accept": [],
+       "x": 75.0,
+       "y": 50.74,
+       "w": 13.0,
+       "h": 3.69
+      },
+      {
+       "id": "bile-ducts-L6",
+       "answer": "Pancreatic Duct",
+       "accept": [],
+       "x": 3.91,
+       "y": 83.91,
+       "w": 21.91,
+       "h": 4.05
+      },
+      {
+       "id": "bile-ducts-L7",
+       "answer": "Esophagus",
+       "accept": [
+        "Oesophagus"
+       ],
+       "x": 54.64,
+       "y": 2.21,
+       "w": 17.64,
+       "h": 4.91
+      },
+      {
+       "id": "bile-ducts-L8",
+       "answer": "Stomach",
+       "accept": [],
+       "x": 68.82,
+       "y": 19.29,
+       "w": 14.55,
+       "h": 4.55
+      },
+      {
+       "id": "bile-ducts-L9",
+       "answer": "Small Intestine",
+       "accept": [
+        "Duodenum"
+       ],
+       "x": 46.73,
+       "y": 91.4,
+       "w": 22.91,
+       "h": 4.67
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec23-24",
+   "cat": "MT_lec23-24",
+   "images": [
+    {
+     "id": "kidney-anatomy",
+     "title": "Kidney Anatomy",
+     "caption": "Nephr/o and Ren/o mean kidney. The outer cortex (bark) holds the nephrons, the medulla holds the renal pyramids, and urine drains into the renal pelvis (Pyel/o) and down the ureter (Ureter/o). The renal artery, renal vein and ureter pass through the hilum.",
+     "alt": "A kidney cut open showing the renal cortex, renal medulla with its pyramids, columns, papillae and calyces, the renal pelvis and ureter, and the renal artery and vein at the hilum, with a small body outline showing where the kidneys sit.",
+     "kind": "labeled-diagram",
+     "credit": "Blausen.com staff (2014), \"Medical gallery of Blausen Medical 2014\", WikiJournal of Medicine, via Wikimedia Commons",
+     "license": "CC BY 3.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blausen_0592_KidneyAnatomy_01.png",
+     "labeled": "banks/medterm/study/lec23-24/kidney-anatomy-labeled.png",
+     "blank": "banks/medterm/study/lec23-24/kidney-anatomy-blank.png",
+     "width": 1200,
+     "height": 900,
+     "labels": [
+      {
+       "id": "kidney-anatomy-L1",
+       "answer": "Renal Cortex",
+       "accept": [
+        "Cortex"
+       ],
+       "x": 68.75,
+       "y": 2.22,
+       "w": 17.58,
+       "h": 4.0
+      },
+      {
+       "id": "kidney-anatomy-L2",
+       "answer": "Renal Medulla",
+       "accept": [
+        "Medulla"
+       ],
+       "x": 77.33,
+       "y": 13.11,
+       "w": 19.83,
+       "h": 4.22
+      },
+      {
+       "id": "kidney-anatomy-L3",
+       "answer": "Hilum",
+       "accept": [
+        "Renal Hilum"
+       ],
+       "x": 33.33,
+       "y": 10.78,
+       "w": 8.33,
+       "h": 4.11
+      },
+      {
+       "id": "kidney-anatomy-L4",
+       "answer": "Renal Artery",
+       "accept": [],
+       "x": 26.08,
+       "y": 24.22,
+       "w": 17.08,
+       "h": 4.78
+      },
+      {
+       "id": "kidney-anatomy-L5",
+       "answer": "Renal Vein",
+       "accept": [],
+       "x": 27.5,
+       "y": 31.44,
+       "w": 14.75,
+       "h": 4.11
+      },
+      {
+       "id": "kidney-anatomy-L6",
+       "answer": "Renal Pyramids",
+       "accept": [
+        "Renal Pyramid",
+        "Pyramids"
+       ],
+       "x": 85.17,
+       "y": 33.22,
+       "w": 12.83,
+       "h": 9.0
+      },
+      {
+       "id": "kidney-anatomy-L7",
+       "answer": "Renal Pelvis",
+       "accept": [],
+       "x": 26.83,
+       "y": 53.11,
+       "w": 16.92,
+       "h": 5.56
+      },
+      {
+       "id": "kidney-anatomy-L8",
+       "answer": "Ureter",
+       "accept": [],
+       "x": 29.83,
+       "y": 63.56,
+       "w": 8.92,
+       "h": 4.78
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec25-26",
+   "cat": "MT_lec25-26",
+   "images": [
+    {
+     "id": "male-reproductive",
+     "title": "Male Reproductive System",
+     "caption": "Sperm (Sperm/o, Spermat/o) are made in the testis (Orchi/o, Orchid/o, Test/o), mature in the epididymis (Epididym/o), and travel up the vas deferens (Vas/o) to the ejaculatory duct and urethra. The seminal vesicle, prostate gland (Prostat/o) and bulbourethral gland add fluid to make semen.",
+     "alt": "Side view of the male pelvis cut down the middle, showing the urinary bladder, vas deferens, seminal vesicle, ejaculatory duct, prostate gland, bulbourethral gland, urethra, penis with glans and external urethral orifice, epididymis, testis and scrotum.",
+     "kind": "labeled-diagram",
+     "credit": "Wumingbai, via Wikimedia Commons",
+     "license": "CC BY-SA 4.0",
+     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Human_male_reproductive_system_en.svg",
+     "labeled": "banks/medterm/study/lec25-26/male-reproductive-labeled.png",
+     "blank": "banks/medterm/study/lec25-26/male-reproductive-blank.png",
+     "width": 1200,
+     "height": 604,
+     "labels": [
+      {
+       "id": "male-reproductive-L1",
+       "answer": "Vas Deferens",
+       "accept": [
+        "Ductus Deferens",
+        "Vas"
+       ],
+       "x": 12.25,
+       "y": 16.23,
+       "w": 12.75,
+       "h": 4.3
+      },
+      {
+       "id": "male-reproductive-L2",
+       "answer": "Urinary Bladder",
+       "accept": [
+        "Bladder"
+       ],
+       "x": 10.42,
+       "y": 25.17,
+       "w": 14.75,
+       "h": 5.13
+      },
+      {
+       "id": "male-reproductive-L3",
+       "answer": "Seminal Vesicle",
+       "accept": [
+        "Seminal Vesicles"
+       ],
+       "x": 81.58,
+       "y": 31.79,
+       "w": 15.0,
+       "h": 4.3
+      },
+      {
+       "id": "male-reproductive-L4",
+       "answer": "Ejaculatory Duct",
+       "accept": [],
+       "x": 81.33,
+       "y": 38.91,
+       "w": 15.58,
+       "h": 5.13
+      },
+      {
+       "id": "male-reproductive-L5",
+       "answer": "Prostate Gland",
+       "accept": [
+        "Prostate"
+       ],
+       "x": 81.5,
+       "y": 44.04,
+       "w": 13.92,
+       "h": 5.13
+      },
+      {
+       "id": "male-reproductive-L6",
+       "answer": "Bulbourethral Gland",
+       "accept": [
+        "Cowper's Gland",
+        "Cowper Gland",
+        "Bulbourethral Glands"
+       ],
+       "x": 81.42,
+       "y": 50.33,
+       "w": 15.75,
+       "h": 10.6
+      },
+      {
+       "id": "male-reproductive-L7",
+       "answer": "Epididymis",
+       "accept": [],
+       "x": 81.67,
+       "y": 65.56,
+       "w": 10.58,
+       "h": 5.3
+      },
+      {
+       "id": "male-reproductive-L8",
+       "answer": "Testis",
+       "accept": [
+        "Testicle",
+        "Testes"
+       ],
+       "x": 81.67,
+       "y": 73.01,
+       "w": 6.33,
+       "h": 4.47
+      },
+      {
+       "id": "male-reproductive-L9",
+       "answer": "Scrotum",
+       "accept": [],
+       "x": 81.5,
+       "y": 81.95,
+       "w": 9.08,
+       "h": 4.14
+      },
+      {
+       "id": "male-reproductive-L10",
+       "answer": "Urethra",
+       "accept": [],
+       "x": 13.75,
+       "y": 67.72,
+       "w": 8.17,
+       "h": 4.47
+      },
+      {
+       "id": "male-reproductive-L11",
+       "answer": "Glans Penis",
+       "accept": [
+        "Glans"
+       ],
+       "x": 9.42,
+       "y": 74.01,
+       "w": 12.58,
+       "h": 5.3
+      },
+      {
+       "id": "male-reproductive-L12",
+       "answer": "External Urethral Orifice",
+       "accept": [
+        "Urinary Meatus",
+        "Meatus",
+        "Urethral Meatus"
+       ],
+       "x": 4.0,
+       "y": 82.45,
+       "w": 18.17,
+       "h": 9.93
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lecture": "lec27-28",
+   "cat": "MT_lec27-28",
+   "images": [
+    {
+     "id": "female-reproductive",
+     "title": "Female Reproductive System",
+     "caption": "The ovaries (Ovari/o, Oophor/o) make eggs and female hormones. The fallopian (uterine) tubes (Salping/o) carry the egg to the uterus (Hyster/o, Metr/o, Uter/o). The cervix (Cervic/o) joins the uterus to the vagina (Vagin/o, Colp/o), and the vulva (Vulv/o) is the external genitalia.",
+     "alt": "Front view of the female pelvis showing the two ovaries, the fallopian tubes, the uterus, the cervix, the vagina and the vulva, set between the hip bones.",
+     "kind": "labeled-diagram",
+     "credit": "CDC (original), Mysid (SVG), via Wikimedia Commons",
+     "license": "Public domain",
+     "licenseUrl": "",
+     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scheme_female_reproductive_system-en.svg",
+     "labeled": "banks/medterm/study/lec27-28/female-reproductive-labeled.png",
+     "blank": "banks/medterm/study/lec27-28/female-reproductive-blank.png",
+     "width": 1100,
+     "height": 648,
+     "labels": [
+      {
+       "id": "female-reproductive-L1",
+       "answer": "Fallopian Tubes",
+       "accept": [
+        "Fallopian Tube",
+        "Uterine Tubes",
+        "Uterine Tube",
+        "Oviducts"
+       ],
+       "x": 34.0,
+       "y": 2.78,
+       "w": 31.82,
+       "h": 8.49
+      },
+      {
+       "id": "female-reproductive-L2",
+       "answer": "Ovaries",
+       "accept": [
+        "Ovary"
+       ],
+       "x": 41.73,
+       "y": 12.04,
+       "w": 16.36,
+       "h": 6.94
+      },
+      {
+       "id": "female-reproductive-L3",
+       "answer": "Uterus",
+       "accept": [
+        "Womb"
+       ],
+       "x": 42.91,
+       "y": 20.68,
+       "w": 13.82,
+       "h": 6.64
+      },
+      {
+       "id": "female-reproductive-L4",
+       "answer": "Cervix",
+       "accept": [],
+       "x": 32.45,
+       "y": 50.77,
+       "w": 12.27,
+       "h": 6.33
+      },
+      {
+       "id": "female-reproductive-L5",
+       "answer": "Vagina",
+       "accept": [],
+       "x": 27.64,
+       "y": 63.27,
+       "w": 14.82,
+       "h": 8.49
+      },
+      {
+       "id": "female-reproductive-L6",
+       "answer": "Vulva",
+       "accept": [],
+       "x": 28.36,
+       "y": 88.27,
+       "w": 12.18,
+       "h": 6.94
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

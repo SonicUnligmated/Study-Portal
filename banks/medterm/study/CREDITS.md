@@ -37,6 +37,18 @@ Every new image in this folder comes from Wikimedia Commons. Each has two versio
 - **MT_lec11 single-bone images (21):** these are `../bone-assets/img/*.png`, with credits in `/workspace/bone-assets/CREDITS.md`. They are BodyParts3D/Anatomography (CC BY-SA 2.1 JP), except the patella (Patrick J. Lynch, CC BY 2.5). They have no labeled version and no hotspots; each has one answer.
 
 
+## Only In Finals pictures (Lectures 21–28)
+
+These are listed in `study-images-oif.json`. Same method: a labeled and a blank version; the blank hides only the labels the lectures cover (other printed labels stay).
+
+| Lecture | File id | Source | Author | License | Changes |
+|---|---|---|---|---|---|
+| lec21-22 | large-intestine | https://commons.wikimedia.org/wiki/File:Blausen_0604_LargeIntestine2.png | Blausen.com staff (2014), "Medical gallery of Blausen Medical 2014", WikiJournal of Medicine | CC BY 3.0 | Resized; 10 labels covered in the blank version. |
+| lec21-22 | bile-ducts | https://commons.wikimedia.org/wiki/File:Digestive_system_showing_bile_duct.svg | Pueblo.gsa.gov (original), Pixelsquid (SVG) | Public domain | Rendered from SVG; 9 labels removed in the blank version. |
+| lec23-24 | kidney-anatomy | https://commons.wikimedia.org/wiki/File:Blausen_0592_KidneyAnatomy_01.png | Blausen.com staff (2014), "Medical gallery of Blausen Medical 2014", WikiJournal of Medicine | CC BY 3.0 | Resized; 8 labels covered in the blank version. |
+| lec25-26 | male-reproductive | https://commons.wikimedia.org/wiki/File:Human_male_reproductive_system_en.svg | Wumingbai | CC BY-SA 4.0 | Rendered from SVG; fixed the label typo "suspensonary" → "suspensory"; 12 labels removed in the blank version. |
+| lec27-28 | female-reproductive | https://commons.wikimedia.org/wiki/File:Scheme_female_reproductive_system-en.svg | CDC (original), Mysid (SVG) | Public domain | Rendered from SVG; 6 labels removed in the blank version. |
+
 ## Portal paths
 
 New images are copied to `banks/medterm/study/<lecture>/`. The Lectures 12 & 13 blank heart pictures reuse `banks/medterm/img/mt12-label-1…5.png` (credits in `banks/medterm/img/CREDITS.md`; the labeled versions are in `banks/medterm/study/lec12-13/`), and the Lecture 11 bone pictures reuse `banks/medterm/img/bones/` (credits in `banks/medterm/img/bones/CREDITS.md`).

@@ -402,10 +402,43 @@
         {
           "id": "medterm-oif",
           "title": "Only In Finals",
-          "subtitle": "Coming soon",
-          "bank": null,
-          "locked": true,
-          "hidden": true
+          "subtitle": "4 lecture sets · 232 questions · choice, linking & stepped · picture study",
+          "draft": true,
+          "locked": false,
+          "lectures": [
+            {
+              "id": "lec21-22",
+              "title": "Lectures 21 & 22 – Gastrointestinal System",
+              "bank": "banks/medterm/oif/lecture-21-22.json",
+              "status": "ready",
+              "draft": true
+            },
+            {
+              "id": "lec23-24",
+              "title": "Lectures 23 & 24 – Urinary System",
+              "bank": "banks/medterm/oif/lecture-23-24.json",
+              "status": "ready",
+              "draft": true
+            },
+            {
+              "id": "lec25-26",
+              "title": "Lectures 25 & 26 – Male Reproductive System",
+              "bank": "banks/medterm/oif/lecture-25-26.json",
+              "status": "ready",
+              "draft": true
+            },
+            {
+              "id": "lec27-28",
+              "title": "Lectures 27 & 28 – Female Reproductive System",
+              "bank": "banks/medterm/oif/lecture-27-28.json",
+              "status": "ready",
+              "draft": true
+            }
+          ],
+          "study": {
+            "title": "Picture Study",
+            "images": "banks/medterm/study/study-images-oif.json"
+          }
         },
         {
           "id": "medterm-finals",

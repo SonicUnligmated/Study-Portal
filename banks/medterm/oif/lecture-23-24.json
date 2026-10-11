@@ -1,0 +1,1293 @@
+{
+  "id": "lecture-23-24---urinary-system",
+  "subject": "Medical Terminology",
+  "subjectId": "medical_terminology",
+  "title": "Lecture 23 and 24 - Urinary System",
+  "formSize": 63,
+  "forms": [
+    "A"
+  ],
+  "bank": {
+    "A": [
+      {
+        "id": "MT23001",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "system-overview",
+        "groupOrder": 1,
+        "q": "The urinary system and the kidneys. Answer each step, then continue.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "What does the urinary system do?",
+            "options": [
+              "Secretes and eliminates urine",
+              "Moves air and exchanges gases",
+              "Filters lymph and houses immune cells",
+              "Pumps blood under pressure to the tissues"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "What is the shape of the kidneys?",
+            "options": [
+              "Bean-shaped",
+              "Flat and sheet-like",
+              "Paired sacs",
+              "Spherical and hollow"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "Where do the kidneys sit?",
+            "options": [
+              "At the back of the abdominal wall behind the peritoneum",
+              "At the front of the abdominal wall within the peritoneum",
+              "Inside the pelvic cavity as storage sacs",
+              "Attached to the anterior abdominal muscles"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "The urinary system secretes and eliminates urine. Moving air and exchanging gases is the respiratory system. Filtering lymph and housing immune cells is the lymphatic system. Pumping blood under pressure is the cardiovascular system. The kidneys are bean-shaped. Flat and sheet-like, paired sacs, and spherical and hollow do not match their form. They sit at the back of the abdominal wall behind the peritoneum. The front of the wall within the peritoneum, the pelvic cavity, and the anterior muscles are the wrong locations."
+      },
+      {
+        "id": "MT23002",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "The kidneys keep the internal environment stable by regulating water, sodium, and potassium. Which pairing of an element to the effect of its imbalance is correct?",
+        "options": [
+          "Excess sodium is removed to lower blood pressure, while potassium is conserved in order to raise blood pressure.",
+          "Excess water is retained to raise blood volume, while a sodium deficit makes the heart beat faster.",
+          "Excess sodium raises blood pressure, while potassium is required for proper muscle and heart function.",
+          "Excess potassium raises blood pressure, while sodium is required for proper muscle and heart function."
+        ],
+        "correct": 2,
+        "explain": "Too much sodium in the blood raises blood pressure, and potassium is the mineral that lets muscles and the heart work properly. The line that removes excess sodium to lower pressure and conserves potassium to raise pressure reverses the sodium effect and invents a blood-pressure role for potassium. The line that retains excess water and links a sodium deficit to a faster heart misstates water handling and attaches heart rate to sodium. The line that raises pressure with excess potassium and assigns muscle and heart function to sodium swaps the two mineral roles."
+      },
+      {
+        "id": "MT23003",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which statement correctly distinguishes the outer region, the inner region, and the indented opening of the kidney?",
+        "options": [
+          "The cortex is the lighter outer layer holding the nephrons, the medulla is the inner layer of pyramids that collects urine, and the hilum is the notch where vessels and the ureter connect.",
+          "The medulla is the lighter outer layer holding the nephrons, the cortex is the inner layer of pyramids that collects urine, and the hilum is the notch where vessels and the ureter connect.",
+          "The hilum is the lighter outer layer holding the nephrons, the cortex is the inner layer of pyramids that collects urine, and the medulla is the notch where vessels and the ureter connect.",
+          "The cortex is the lighter outer layer holding the nephrons, the medulla is the inner layer of pyramids that collects urine, and the hilum is the capillary cluster inside each nephron."
+        ],
+        "correct": 0,
+        "explain": "The cortex is the lighter outer zone that contains the nephrons, the medulla is the deeper zone of pyramid-shaped masses that gathers urine toward the center, and the hilum is the indented notch where the renal vessels and the ureter meet the kidney. The line that calls the medulla the lighter outer layer and the cortex the inner pyramids swaps the two regions. The line that calls the hilum the outer layer and the medulla the notch further misplaces the opening. The line that keeps the cortex and medulla right but defines the hilum as the capillary cluster inside each nephron confuses the notch with the glomerulus."
+      },
+      {
+        "id": "MT23004",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Within the nephron, which structure is the cup-like sac that surrounds the ball-shaped cluster of capillaries?",
+        "options": [
+          "The renal tubule, the long collecting stem that carries the filtrate onward.",
+          "The glomerulus, the ball-shaped cluster of capillaries itself.",
+          "The nephron, the microscopic functional unit taken as a whole.",
+          "The Bowman capsule, the cup-like sac that encloses the glomerulus."
+        ],
+        "correct": 3,
+        "explain": "The Bowman capsule is the cup-like sac that caps and surrounds the glomerulus. The line that names the glomerulus itself identifies the cluster being surrounded rather than the surrounding sac. The line that names the renal tubule identifies the elongated stem of the unit. The line that names the nephron identifies the entire functional unit rather than the cup around the capillary knot."
+      },
+      {
+        "id": "MT23005",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which sequence correctly follows the path of urine from its formation to its exit from the body?",
+        "options": [
+          "Kidney, ureter, renal pelvis, urethra, bladder.",
+          "Kidney, renal pelvis, bladder, ureter, urethra.",
+          "Kidney, renal pelvis, ureter, bladder, urethra.",
+          "Renal pelvis, kidney, ureter, urethra, bladder."
+        ],
+        "correct": 2,
+        "explain": "Urine formed in the kidney drains into the renal pelvis, passes down the ureter to the urinary bladder for storage, and leaves the body through the urethra. The sequence that places the ureter before the pelvis and the urethra before the bladder reverses two pairs. The sequence that places the bladder before the ureter stores the urine before it has left the kidney. The sequence that starts at the pelvis ahead of the kidney and misorders the exit begins downstream of the organ that forms the urine."
+      },
+      {
+        "id": "MT23006",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Urea is filtered from the blood by the kidneys and excreted in urine. In which organ is urea formed?",
+        "options": [
+          "In the glomerulus, as a by-product of capillary filtration.",
+          "In the liver, as a waste product later cleared by the kidneys.",
+          "In the urinary bladder, as urine is stored and concentrated.",
+          "In the renal tubule, as filtrate is modified during reabsorption."
+        ],
+        "correct": 1,
+        "explain": "Urea is a waste product formed in the liver and then filtered out of the blood by the kidneys for excretion. The line that places formation in the glomerulus locates production inside the filtering capillary knot that only handles the finished product. The line that places formation in the urinary bladder locates production inside the storage sac. The line that places formation in the renal tubule locates production inside the stem that modifies filtrate but does not synthesize urea."
+      },
+      {
+        "id": "MT23007",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which statement about the composition of urine is correct?",
+        "options": [
+          "It is about 5% water and 95% dissolved waste products.",
+          "It is about 50% water and 50% protein and sugar.",
+          "It is about 70% water and 30% urea and salts.",
+          "It is about 95% water and 5% waste products."
+        ],
+        "correct": 3,
+        "explain": "Urine is roughly 95% water with about 5% waste products. The line that reverses the two proportions inverts the major and minor fractions. The line that invents an equal split and names protein and sugar as the normal solutes misstates both the ratio and the ordinary solutes. The line that gives 70% water and 30% urea and salts understates the water fraction."
+      },
+      {
+        "id": "MT23008",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which set consists entirely of pairs in which both spellings carry the same meaning?",
+        "options": [
+          "Cyst/o with Vesic/o; Ureter/o with Urethr/o; Nephr/o with Ren/o.",
+          "Cyst/o with Vesic/o; Gluc/o with Glyc/o; Nephr/o with Ren/o.",
+          "Py/o with Lith/o; Gluc/o with Glyc/o; Meat/o with Pyel/o.",
+          "Albumin/o with Bacteri/o; Dips/o with Ket/o; Ur/o with Urin/o."
+        ],
+        "correct": 1,
+        "explain": "Cyst/o and Vesic/o both mean bladder or sac, Gluc/o and Glyc/o both mean sugar or glucose, and Nephr/o and Ren/o both mean kidney. The set that pairs Ureter/o with Urethr/o joins two different conduits. The set that pairs Py/o with Lith/o and Meat/o with Pyel/o joins pus with stone and the opening with the pelvis. The set that pairs Albumin/o with Bacteri/o and Dips/o with Ket/o joins protein with bacteria and thirst with ketone bodies."
+      },
+      {
+        "id": "MT23009",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "All of the following combining forms denote a substance that may appear in urine EXCEPT:",
+        "options": [
+          "Albumin/o.",
+          "Gluc/o.",
+          "Ket/o.",
+          "Meat/o."
+        ],
+        "correct": 3,
+        "explain": "Meat/o denotes the urethral opening, a structure rather than a substance. Albumin/o names protein, Gluc/o names sugar, and Ket/o names ketone bodies, each of which is a material that can show up in urine."
+      },
+      {
+        "id": "MT23010",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which ordered triple names, respectively, the tube from kidney to bladder, the duct from bladder to the exterior, and the external opening of that duct?",
+        "options": [
+          "Urethr/o, Ureter/o, Meat/o.",
+          "Meat/o, Urethr/o, Ureter/o.",
+          "Ureter/o, Urethr/o, Meat/o.",
+          "Cyst/o, Pyel/o, Ureter/o."
+        ],
+        "correct": 2,
+        "explain": "Ureter/o is the tube from kidney to bladder, Urethr/o is the duct from bladder to outside, and Meat/o is the external opening of that duct. The triple that begins with Urethr/o swaps the two conduits. The triple that begins with Meat/o starts with the opening. The triple that substitutes Cyst/o and Pyel/o replaces the duct and opening with the bladder and pelvis forms."
+      },
+      {
+        "id": "MT23011",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In pyonephrolithiasis, which pairing of element to meaning is correct?",
+        "options": [
+          "py = stone, lith = pus, nephro = kidney.",
+          "py = pus, lith = stone, nephro = kidney.",
+          "py = kidney, lith = pus, nephro = stone.",
+          "py = pus, lith = kidney, nephro = stone."
+        ],
+        "correct": 1,
+        "explain": "In pyonephrolithiasis the element py means pus, lith means stone, and nephro means kidney, describing pus and stone associated with the kidney. The other three pairings permute these three senses among the three elements."
+      },
+      {
+        "id": "MT23012",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In nephropyelography, which pairing of element to meaning is correct?",
+        "options": [
+          "nephro = kidney, pyel = renal pelvis.",
+          "nephro = renal pelvis, pyel = kidney.",
+          "nephro = ureter, pyel = kidney.",
+          "nephro = kidney, pyel = urethral opening."
+        ],
+        "correct": 0,
+        "explain": "In nephropyelography the element nephro means kidney and pyel means the renal pelvis, so the term is imaging of the kidney and its pelvis. The pairing that swaps the two reverses kidney and pelvis. The pairing that misglosses nephro as the ureter assigns the tube sense. The pairing that misglosses pyel as the urethral opening assigns the Meat/o sense."
+      },
+      {
+        "id": "MT23013",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In glycosuria (written glycouria on the slides), which pairing of element to meaning is correct?",
+        "options": [
+          "gluc or glyc = protein, uria = urine.",
+          "gluc or glyc = urine, uria = sugar.",
+          "gluc or glyc = ketone bodies, uria = urine.",
+          "gluc or glyc = sugar, uria = urine."
+        ],
+        "correct": 3,
+        "explain": "In glycosuria (glucosuria) the element gluc or glyc means sugar and the element uria means urine, so the term denotes sugar in the urine. The pairing that misglosses the sugar element as protein assigns the Albumin/o sense. The pairing that swaps sugar and urine between the two elements reverses the parts. The pairing that misglosses the sugar element as ketone bodies assigns the Ket/o sense."
+      },
+      {
+        "id": "MT23014",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Ketonuria, the appearance of ketone bodies in urine, arises most directly from which situation?",
+        "options": [
+          "An excess of glucose available for the cells to burn as fuel.",
+          "The burning of fat for energy when glucose is not available.",
+          "The retention of extra water by the renal tubules.",
+          "The breakdown of dietary protein into urea in the liver."
+        ],
+        "correct": 1,
+        "explain": "Ketone bodies are waste produced when the body burns fat for energy because glucose is not available, so their appearance in urine follows that situation; high urinary ketones are the hallmark of diabetic ketoacidosis. The line that states an excess of glucose available describes the opposite condition that suppresses ketone formation. The line that concerns retention of extra water describes water handling. The line that describes the breakdown of dietary protein into urea describes urea formation, which does not yield ketone bodies."
+      },
+      {
+        "id": "MT23015",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structures pass through the indented opening, the hilum, of the kidney?",
+        "options": [
+          "The renal artery, the renal vein, and the ureter.",
+          "The renal artery, the renal vein, and the urethra.",
+          "The glomerulus, the Bowman capsule, and the renal tubule.",
+          "The renal pelvis, the urinary bladder, and the urethra."
+        ],
+        "correct": 0,
+        "explain": "The hilum is the entry and exit point where the renal artery and renal vein meet the kidney and the ureter leaves it. The line that substitutes the urethra for the ureter replaces the kidney-to-bladder tube with the bladder-to-exterior duct. The line that lists the glomerulus, Bowman capsule, and renal tubule names the internal parts of a nephron rather than structures at the notch. The line that lists the renal pelvis, urinary bladder, and urethra names downstream organs that do not traverse the hilum."
+      },
+      {
+        "id": "MT23016",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "nephron-identity",
+        "groupOrder": 1,
+        "q": "This is the microscopic functional unit of the kidney. Answer each step, then continue.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "What is this structure?",
+            "options": [
+              "The microscopic filtering unit that forms urine",
+              "The ball-shaped capillary cluster inside each unit",
+              "The cup-like sac that encloses that cluster",
+              "The funnel-shaped basin at the kidney center"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Approximately how many of these microscopic filtering units are present in each kidney?",
+            "options": [
+              "900,000 to 1 million",
+              "100,000 to 200,000",
+              "5 million to 10 million",
+              "50,000 to 100,000"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "What does this unit do?",
+            "options": [
+              "Filters blood plasma and forms urine",
+              "Stores urine until it is released",
+              "Carries urine from kidney to bladder",
+              "Lets urine leave the body"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the microscopic filtering unit that forms urine. The ball-shaped capillary cluster is the glomerulus. The cup-like sac is the Bowman capsule. The funnel-shaped basin is the renal pelvis. Each kidney holds approximately 900,000 to 1 million of these units. The other ranges are far too low or far too high. The unit filters blood plasma and forms urine. Storage belongs to the bladder, transport from kidney to bladder belongs to the ureter, and exit from the body belongs to the urethra."
+      },
+      {
+        "id": "MT23017",
+        "type": "matching",
+        "cat": "MT_lec23-24",
+        "q": "Match each region or part of the kidney and nephron to the description of its position or role.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Cortex"
+          },
+          {
+            "id": "2",
+            "text": "Medulla"
+          },
+          {
+            "id": "3",
+            "text": "Hilum"
+          },
+          {
+            "id": "4",
+            "text": "Glomerulus"
+          },
+          {
+            "id": "5",
+            "text": "Bowman capsule"
+          },
+          {
+            "id": "6",
+            "text": "Renal tubule"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "The notch serving as the entry and exit point for the kidney's vessels and draining tube."
+          },
+          {
+            "id": "B",
+            "text": "The lighter outer zone that holds the filtering units and resembles the bark of the organ."
+          },
+          {
+            "id": "C",
+            "text": "The deeper zone built from pyramid-shaped masses that gather urine toward the center."
+          },
+          {
+            "id": "D",
+            "text": "The tiny knot of capillaries housed within each filtering unit."
+          },
+          {
+            "id": "E",
+            "text": "The short cup that caps and encloses that knot of capillaries."
+          },
+          {
+            "id": "F",
+            "text": "The elongated stem of the filtering unit that collects and modifies the filtrate."
+          }
+        ],
+        "correct_pairs": {
+          "1": "B",
+          "2": "C",
+          "3": "A",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "The cortex is the lighter outer zone containing the nephrons, the word itself meaning bark. The medulla is the deeper zone of renal pyramids that collects urine toward the center. The hilum is the indented notch where the renal vessels and the ureter connect. The glomerulus is the ball-shaped capillary knot inside each nephron, the Bowman capsule is the cup that surrounds that knot, and the renal tubule is the long collecting stem of the unit. The descriptions are phrased without the name of the part so that each match rests on recalling position and role."
+      },
+      {
+        "id": "MT23018",
+        "type": "matching",
+        "cat": "MT_lec23-24",
+        "q": "Match each organ or fluid of the urinary tract to the description of its role.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Renal pelvis"
+          },
+          {
+            "id": "2",
+            "text": "Ureter"
+          },
+          {
+            "id": "3",
+            "text": "Urinary bladder"
+          },
+          {
+            "id": "4",
+            "text": "Urethra"
+          },
+          {
+            "id": "5",
+            "text": "Urine"
+          },
+          {
+            "id": "6",
+            "text": "Urea"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "The thin paired tubes that carry urine from each kidney down to the storage sac."
+          },
+          {
+            "id": "B",
+            "text": "The funnel-shaped basin at the kidney's center through which urine drains into those tubes."
+          },
+          {
+            "id": "C",
+            "text": "The muscular reservoir that holds urine temporarily before release."
+          },
+          {
+            "id": "D",
+            "text": "The duct that lets stored urine leave the body during voiding."
+          },
+          {
+            "id": "E",
+            "text": "The liquid waste of the body, about 95% water."
+          },
+          {
+            "id": "F",
+            "text": "The nitrogenous waste made in the liver and cleared into that liquid."
+          }
+        ],
+        "correct_pairs": {
+          "1": "B",
+          "2": "A",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "The renal pelvis is the expanded basin at the kidney center that funnels urine into the ureters, the paired tubes that carry it to the bladder, the muscular sac that stores it, and the urethra, the duct that releases it during urination. Urine is the liquid waste, about 95% water, and urea is the nitrogenous waste formed in the liver and excreted in it. The right-hand entries avoid naming the left-hand term so each pair must be resolved by function."
+      },
+      {
+        "id": "MT23019",
+        "type": "matching",
+        "cat": "MT_lec23-24",
+        "q": "Match each urinary combining form to the structure it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Cyst/o, Vesic/o"
+          },
+          {
+            "id": "2",
+            "text": "Glomerul/o"
+          },
+          {
+            "id": "3",
+            "text": "Ureter/o"
+          },
+          {
+            "id": "4",
+            "text": "Urethr/o"
+          },
+          {
+            "id": "5",
+            "text": "Meat/o"
+          },
+          {
+            "id": "6",
+            "text": "Nephr/o, Ren/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "The organ that filters blood and forms urine, given by two interchangeable roots."
+          },
+          {
+            "id": "B",
+            "text": "The bladder or any sac-like cavity, expressed by two spellings."
+          },
+          {
+            "id": "C",
+            "text": "The knot of capillaries inside the filtering unit, as a combining form."
+          },
+          {
+            "id": "D",
+            "text": "The tube conducting urine from the kidney to the bladder."
+          },
+          {
+            "id": "E",
+            "text": "The duct conducting urine from the bladder to the outside."
+          },
+          {
+            "id": "F",
+            "text": "The external mouth of that duct, the outer canal or passage."
+          }
+        ],
+        "correct_pairs": {
+          "1": "B",
+          "2": "C",
+          "3": "D",
+          "4": "E",
+          "5": "F",
+          "6": "A"
+        },
+        "explain": "Cyst/o and Vesic/o are the two spellings for the bladder or a sac, Nephr/o and Ren/o the two for the kidney, Glomerul/o for the capillary knot of the nephron, Ureter/o for the tube from kidney to bladder, Urethr/o for the duct from bladder to outside, and Meat/o for the external opening of that duct. The three conduits and the opening are confusable, so the descriptions fix each by its endpoints, and the synonym bundles are noted so the two spellings are recognized as one meaning."
+      },
+      {
+        "id": "MT23020",
+        "type": "matching",
+        "cat": "MT_lec23-24",
+        "q": "Match each urinary combining form to the substance or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Albumin/o"
+          },
+          {
+            "id": "2",
+            "text": "Bacteri/o"
+          },
+          {
+            "id": "3",
+            "text": "Dips/o"
+          },
+          {
+            "id": "4",
+            "text": "Gluc/o, Glyc/o"
+          },
+          {
+            "id": "5",
+            "text": "Ket/o, Keton/o"
+          },
+          {
+            "id": "6",
+            "text": "Ur/o, Urin/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Sugar or glucose, expressed by two spellings."
+          },
+          {
+            "id": "B",
+            "text": "A protein, whose presence in urine signals a filtering problem."
+          },
+          {
+            "id": "C",
+            "text": "Thirst, the drive to drink."
+          },
+          {
+            "id": "D",
+            "text": "Microbes, single-celled organisms."
+          },
+          {
+            "id": "E",
+            "text": "Waste bodies from fat burning when sugar is scarce."
+          },
+          {
+            "id": "F",
+            "text": "The liquid waste itself, named by two spellings."
+          }
+        ],
+        "correct_pairs": {
+          "1": "B",
+          "2": "D",
+          "3": "C",
+          "4": "A",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Albumin/o means protein, Bacteri/o means bacteria, Dips/o means thirst, Gluc/o and Glyc/o are the two spellings for sugar or glucose, Ket/o and Keton/o mean ketone bodies, and Ur/o and Urin/o are the two spellings for urine. The ketone entry is given by its physiological source, fat burning when glucose is unavailable, and the protein entry notes that albumin in urine reflects a filtration fault."
+      },
+      {
+        "id": "MT23021",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "The kidneys keep the body's internal environment stable by controlling water and minerals in the blood. What is this process called?",
+        "options": [
+          "Homeostasis.",
+          "Hemostasis.",
+          "Osmosis.",
+          "Metabolism."
+        ],
+        "correct": 0,
+        "explain": "Homeostasis is the process by which the kidneys keep the internal environment stable by controlling water and minerals in the blood. Hemostasis is the stopping of bleeding, osmosis is the movement of water across a membrane, and metabolism is the sum of chemical reactions in the body."
+      },
+      {
+        "id": "MT23022",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In which region of the body are the kidneys located?",
+        "options": [
+          "The cervical region.",
+          "The cranial cavity.",
+          "The lumbar region.",
+          "The thoracic cavity."
+        ],
+        "correct": 2,
+        "explain": "The kidneys are two structures located on each side of the lumbar region. The cervical region is the neck, the cranial cavity houses the brain, and the thoracic cavity contains the heart and lungs."
+      },
+      {
+        "id": "MT23023",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "The cortex is the outer part of the kidney. Which literal meaning does the word cortex carry?",
+        "options": [
+          "Stone.",
+          "Bark.",
+          "Basin.",
+          "Nest."
+        ],
+        "correct": 1,
+        "explain": "Cortex means bark, describing the outer layer of the kidney that resembles the bark of a tree. Stone is denoted by Lith/o, basin describes the renal pelvis, and nest is not related to any urinary structure."
+      },
+      {
+        "id": "MT23024",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structures are pyramid-shaped and help collect and send urine toward the center of the kidney?",
+        "options": [
+          "The renal cortex.",
+          "The renal pelvis.",
+          "The renal hilum.",
+          "The renal pyramids."
+        ],
+        "correct": 3,
+        "explain": "The renal pyramids are the pyramid-shaped parts of the medulla that help collect and send urine toward the center of the kidney. The renal cortex is the lighter outer layer, the renal pelvis is the funnel-shaped basin, and the renal hilum is the indented notch where vessels and the ureter connect."
+      },
+      {
+        "id": "MT23025",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Approximately how many nephrons are present in each kidney?",
+        "options": [
+          "900,000 to 1 million.",
+          "100,000 to 200,000.",
+          "5 million to 10 million.",
+          "50,000 to 100,000."
+        ],
+        "correct": 0,
+        "explain": "Each kidney contains approximately 900,000 to 1 million nephrons, the microscopic functional units that filter blood plasma and form urine. The other ranges are far too low or far too high and do not reflect the actual count."
+      },
+      {
+        "id": "MT23026",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structure is the expanded basin-like or funnel-shaped area through which urine travels into the ureter?",
+        "options": [
+          "The renal medulla.",
+          "The renal cortex.",
+          "The renal pelvis.",
+          "The renal hilum."
+        ],
+        "correct": 2,
+        "explain": "The renal pelvis is the expanded basin-like or funnel-shaped area through which urine travels into the ureter. The renal medulla is the inner layer of pyramids, the renal cortex is the lighter outer layer, and the renal hilum is the indented notch where vessels and the ureter connect."
+      },
+      {
+        "id": "MT23027",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structure is a muscular sac and a temporary storage reservoir for urine?",
+        "options": [
+          "The ureter.",
+          "The urinary bladder.",
+          "The urethra.",
+          "The renal pelvis."
+        ],
+        "correct": 1,
+        "explain": "The urinary bladder is the muscular sac and temporary storage reservoir for urine. The ureter is the tube that carries urine from the kidney to the bladder, the urethra is the duct that lets urine leave the bladder, and the renal pelvis is the funnel-shaped basin at the kidney center."
+      },
+      {
+        "id": "MT23028",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which duct lets urine leave the bladder to the exterior of the body during urination?",
+        "options": [
+          "The ureter.",
+          "The renal pelvis.",
+          "The collecting duct.",
+          "The urethra."
+        ],
+        "correct": 3,
+        "explain": "The urethra is the duct that lets urine leave the bladder to the exterior of the body during urination. The ureter carries urine from the kidney to the bladder, the renal pelvis is the basin at the kidney center, and the collecting duct carries urine within the kidney."
+      },
+      {
+        "id": "MT23029",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What is the act of urine leaving the bladder to the exterior of the body called?",
+        "options": [
+          "Urination.",
+          "Filtration.",
+          "Secretion.",
+          "Reabsorption."
+        ],
+        "correct": 0,
+        "explain": "Urination is the act of urine leaving the bladder to the exterior of the body. Filtration is the process by which the glomerulus filters blood plasma, secretion is the release of substances into the filtrate, and reabsorption is the return of substances from the filtrate to the blood."
+      },
+      {
+        "id": "MT23030",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In urine, which substance makes up approximately 2% of the total volume?",
+        "options": [
+          "Creatinine.",
+          "Dissolved salts.",
+          "Urea.",
+          "Ammonia."
+        ],
+        "correct": 2,
+        "explain": "Urea makes up approximately 2% of urine volume. Creatinine, ammonia, and uric acid together make up about 0.2%, and dissolved salts and other ions make up about 2.8%. Water makes up the remaining 95%."
+      },
+      {
+        "id": "MT23031",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structure is the muscular layer of the urinary bladder that contracts during urination?",
+        "options": [
+          "The rugae.",
+          "The detrusor muscle.",
+          "The ureter orifice.",
+          "The bladder neck."
+        ],
+        "correct": 1,
+        "explain": "The detrusor muscle is the muscular layer of the urinary bladder that contracts during urination. The rugae are folds in the bladder wall that allow it to expand, the ureter orifices are the openings where the ureters enter the bladder, and the bladder neck is the narrow region where the bladder meets the urethra."
+      },
+      {
+        "id": "MT23032",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which sequence correctly lists the three parts of the male urethra in order from the bladder to the exterior?",
+        "options": [
+          "Prostatic, membranous, spongy.",
+          "Membranous, prostatic, spongy.",
+          "Spongy, membranous, prostatic.",
+          "Prostatic, spongy, membranous."
+        ],
+        "correct": 0,
+        "explain": "The male urethra passes through the prostate as the prostatic urethra, then through the urogenital diaphragm as the membranous urethra, and finally through the penis as the spongy urethra. The other sequences reverse or scramble these three segments."
+      },
+      {
+        "id": "MT23033",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "In the female, which structure is the space that contains the openings of the urethra and vagina?",
+        "options": [
+          "The vestibule.",
+          "The bladder neck.",
+          "The external urethral orifice.",
+          "The detrusor muscle."
+        ],
+        "correct": 0,
+        "explain": "The vestibule is the space that contains the openings of the urethra and vagina in the female. The bladder neck is the narrow region where the bladder meets the urethra, the external urethral orifice is the opening itself, and the detrusor muscle is the muscular layer of the bladder."
+      },
+      {
+        "id": "MT23034",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structure is the network of capillaries inside the Bowman capsule where blood filtration begins?",
+        "options": [
+          "The collecting duct.",
+          "The renal tubule.",
+          "The glomerular capillaries.",
+          "The efferent arteriole."
+        ],
+        "correct": 2,
+        "explain": "The glomerular capillaries are the network of capillaries inside the Bowman capsule where blood filtration begins. The collecting duct carries urine toward the renal pelvis, the renal tubule is the elongated stem of the nephron, and the efferent arteriole carries blood away from the glomerulus after filtration."
+      },
+      {
+        "id": "MT23035",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which vessel brings blood into the glomerulus for filtration?",
+        "options": [
+          "The efferent arteriole.",
+          "The afferent arteriole.",
+          "The renal vein.",
+          "The renal artery."
+        ],
+        "correct": 1,
+        "explain": "The afferent arteriole brings blood into the glomerulus for filtration. The efferent arteriole carries blood away from the glomerulus, the renal vein carries filtered blood out of the kidney, and the renal artery brings unfiltered blood into the kidney."
+      },
+      {
+        "id": "MT23036",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which vessel carries blood away from the glomerulus after filtration?",
+        "options": [
+          "The afferent arteriole.",
+          "The renal artery.",
+          "The efferent arteriole.",
+          "The renal vein."
+        ],
+        "correct": 2,
+        "explain": "The efferent arteriole carries blood away from the glomerulus after filtration. The afferent arteriole brings blood into the glomerulus, the renal artery brings unfiltered blood into the kidney, and the renal vein carries filtered blood out of the kidney."
+      },
+      {
+        "id": "MT23037",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which structure collects urine from the renal tubules and carries it toward the renal pelvis?",
+        "options": [
+          "The Bowman capsule.",
+          "The glomerulus.",
+          "The afferent arteriole.",
+          "The collecting duct."
+        ],
+        "correct": 3,
+        "explain": "The collecting duct collects urine from the renal tubules and carries it toward the renal pelvis. The Bowman capsule surrounds the glomerulus, the glomerulus is the capillary cluster that filters blood, and the afferent arteriole brings blood into the glomerulus."
+      },
+      {
+        "id": "MT23038",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does albuminuria mean?",
+        "options": [
+          "Protein in the urine.",
+          "Sugar in the urine.",
+          "Bacteria in the urine.",
+          "Blood in the urine."
+        ],
+        "correct": 0,
+        "explain": "Albuminuria means protein in the urine, built from Albumin/o (protein) and -uria (urine condition). Sugar in the urine is glycosuria, bacteria in the urine is bacteriuria, and blood in the urine is hematuria."
+      },
+      {
+        "id": "MT23039",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does bacterioscopist mean?",
+        "options": [
+          "A specialist who examines the bladder.",
+          "A specialist who examines the kidney.",
+          "A specialist who examines urine.",
+          "A specialist who examines bacteria."
+        ],
+        "correct": 3,
+        "explain": "Bacterioscopist means a specialist who examines bacteria, built from Bacteri/o (bacteria) and -scopist (one who examines). A specialist who examines the bladder would use Cyst/o, the kidney would use Nephr/o or Ren/o, and urine would use Ur/o or Urin/o."
+      },
+      {
+        "id": "MT23040",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does cystochromoscopy mean?",
+        "options": [
+          "Visual examination of the bladder with color.",
+          "Visual examination of the kidney with color.",
+          "Visual examination of the ureter with color.",
+          "Visual examination of the urethra with color."
+        ],
+        "correct": 0,
+        "explain": "Cystochromoscopy means visual examination of the bladder with color, built from Cyst/o (bladder), chrom/o (color), and -scopy (visual examination). The kidney would use Nephr/o, the ureter would use Ureter/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23041",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does vesicoureteral mean?",
+        "options": [
+          "Pertaining to the kidney and ureter.",
+          "Pertaining to the bladder and urethra.",
+          "Pertaining to the bladder and ureter.",
+          "Pertaining to the kidney and bladder."
+        ],
+        "correct": 2,
+        "explain": "Vesicoureteral means pertaining to the bladder and ureter, built from Vesic/o (bladder) and ureter/o (ureter) with -al (pertaining to). The kidney would use Nephr/o or Ren/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23042",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does dipsosis mean?",
+        "options": [
+          "Abnormal urination.",
+          "Abnormal thirst.",
+          "Abnormal sugar in the urine.",
+          "Abnormal protein in the urine."
+        ],
+        "correct": 1,
+        "explain": "Dipsosis means abnormal thirst, built from Dips/o (thirst) and -osis (abnormal condition). Abnormal urination would use Ur/o, sugar in the urine would use Gluc/o or Glyc/o, and protein in the urine would use Albumin/o."
+      },
+      {
+        "id": "MT23043",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does glomerulonephritis mean?",
+        "options": [
+          "Inflammation of the bladder and ureter.",
+          "Inflammation of the renal pelvis.",
+          "Inflammation of the urethra.",
+          "Inflammation of the glomeruli and kidney."
+        ],
+        "correct": 3,
+        "explain": "Glomerulonephritis means inflammation of the glomeruli and kidney, built from Glomerul/o (glomerulus), Nephr/o (kidney), and -itis (inflammation). The bladder and ureter would use Cyst/o and Ureter/o, the renal pelvis would use Pyel/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23044",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does nephrocarcinoma mean?",
+        "options": [
+          "Cancerous tumor of the kidney.",
+          "Cancerous tumor of the bladder.",
+          "Cancerous tumor of the ureter.",
+          "Cancerous tumor of the urethra."
+        ],
+        "correct": 0,
+        "explain": "Nephrocarcinoma means a cancerous tumor of the kidney, built from Nephr/o (kidney), carcin/o (cancer), and -oma (tumor). The bladder would use Cyst/o, the ureter would use Ureter/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23045",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does renopathy mean?",
+        "options": [
+          "Disease of the bladder.",
+          "Disease of the ureter.",
+          "Disease of the kidney.",
+          "Disease of the urethra."
+        ],
+        "correct": 2,
+        "explain": "Renopathy means disease of the kidney, built from Ren/o (kidney) and -pathy (disease). The bladder would use Cyst/o, the ureter would use Ureter/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23046",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does lithocystotomy mean?",
+        "options": [
+          "Incision into the kidney to remove a stone.",
+          "Incision into the bladder to remove a stone.",
+          "Incision into the ureter to remove a stone.",
+          "Incision into the urethra to remove a stone."
+        ],
+        "correct": 1,
+        "explain": "Lithocystotomy means incision into the bladder to remove a stone, built from Lith/o (stone), Cyst/o (bladder), and -tomy (incision). The kidney would use Nephr/o, the ureter would use Ureter/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23047",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does ureterostomy mean?",
+        "options": [
+          "Surgical creation of an opening in the kidney.",
+          "Surgical creation of an opening in the bladder.",
+          "Surgical creation of an opening in the urethra.",
+          "Surgical creation of an opening in the ureter."
+        ],
+        "correct": 3,
+        "explain": "Ureterostomy means surgical creation of an opening in the ureter, built from Ureter/o (ureter) and -stomy (surgical opening). The kidney would use Nephr/o, the bladder would use Cyst/o, and the urethra would use Urethr/o."
+      },
+      {
+        "id": "MT23048",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does urethrodynia mean?",
+        "options": [
+          "Pain in the urethra.",
+          "Pain in the ureter.",
+          "Pain in the bladder.",
+          "Pain in the kidney."
+        ],
+        "correct": 0,
+        "explain": "Urethrodynia means pain in the urethra, built from Urethr/o (urethra) and -dynia (pain). The ureter would use Ureter/o, the bladder would use Cyst/o, and the kidney would use Nephr/o."
+      },
+      {
+        "id": "MT23049",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does urocyanogen mean?",
+        "options": [
+          "A red pigment in the urine.",
+          "A yellow pigment in the urine.",
+          "A blue-green pigment in the urine.",
+          "A clear urine sample."
+        ],
+        "correct": 2,
+        "explain": "Urocyanogen means a blue-green pigment in the urine, built from Ur/o (urine), cyan/o (blue), and -gen (producing). The other colors do not correspond to the cyan element in the term."
+      },
+      {
+        "id": "MT23050",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does urinogenital mean?",
+        "options": [
+          "Pertaining to the urine and blood.",
+          "Pertaining to the urinary and genital systems.",
+          "Pertaining to the kidney and liver.",
+          "Pertaining to the bladder and intestine."
+        ],
+        "correct": 1,
+        "explain": "Urinogenital means pertaining to the urinary and genital systems, built from Urin/o (urine) and genit/o (genital) with -al (pertaining to). The other options pair structures that are not named by these forms."
+      },
+      {
+        "id": "MT23051",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does meatorrhaphy mean?",
+        "options": [
+          "Surgical repair of the gallbladder.",
+          "Surgical repair of the bladder.",
+          "Surgical repair of the pancreas.",
+          "Surgical repair of the urethral opening."
+        ],
+        "correct": 3,
+        "explain": "Meatorrhaphy means surgical repair of the urethral opening, built from Meat/o (urethral opening) and -rrhaphy (surgical repair). Surgical repair of the gallbladder would use a cholecyst- form. Surgical repair of the bladder would use Cyst/o. Surgical repair of the pancreas would use Pancreat/o."
+      },
+      {
+        "id": "MT23052",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "Which pairing correctly matches the combining form to its meaning?",
+        "options": [
+          "Py/o = pus, and Lith/o = stone.",
+          "Py/o = stone, and Lith/o = pus.",
+          "Py/o = fever, and Lith/o = pus.",
+          "Py/o = pus, and Lith/o = urine."
+        ],
+        "correct": 0,
+        "explain": "Py/o means pus and Lith/o means stone. The pairing that swaps the two meanings reverses pus and stone. The pairing that assigns fever to Py/o invents a sense. The pairing that assigns urine to Lith/o assigns the Ur/o sense."
+      },
+      {
+        "id": "MT23053",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does the combining form Pyel/o mean?",
+        "options": [
+          "Renal pelvis.",
+          "Urethral opening.",
+          "Ureter.",
+          "Urinary bladder."
+        ],
+        "correct": 0,
+        "explain": "Pyel/o means the renal pelvis, the funnel-shaped basin at the kidney center. Urethral opening is Meat/o, ureter is Ureter/o, and urinary bladder is Cyst/o or Vesic/o."
+      },
+      {
+        "id": "MT23054",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does anuria mean?",
+        "options": [
+          "Absence of urine output.",
+          "Excessive urine output.",
+          "Scanty urine output.",
+          "Painful urination."
+        ],
+        "correct": 0,
+        "explain": "Anuria means absence of urine output, built from an- (without) and -uria (urine condition). Excessive urine output is polyuria, scanty urine output is oliguria, and painful urination is dysuria."
+      },
+      {
+        "id": "MT23055",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does oliguria mean?",
+        "options": [
+          "Scanty urine output.",
+          "Absence of urine output.",
+          "Excessive urine output.",
+          "Blood in the urine."
+        ],
+        "correct": 0,
+        "explain": "Oliguria means scanty urine output, built from olig/o (few or scanty) and -uria (urine condition). Absence of urine output is anuria, excessive urine output is polyuria, and blood in the urine is hematuria."
+      },
+      {
+        "id": "MT23056",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does polyuria mean?",
+        "options": [
+          "Excessive urine output.",
+          "Scanty urine output.",
+          "Absence of urine output.",
+          "Pus in the urine."
+        ],
+        "correct": 0,
+        "explain": "Polyuria means excessive urine output, built from poly- (many or much) and -uria (urine condition). Scanty urine output is oliguria, absence of urine output is anuria, and pus in the urine is pyuria."
+      },
+      {
+        "id": "MT23057",
+        "type": "mcq",
+        "cat": "MT_lec23-24",
+        "q": "What does dysuria mean?",
+        "options": [
+          "Painful or difficult urination.",
+          "Excessive urine output.",
+          "Blood in the urine.",
+          "Protein in the urine."
+        ],
+        "correct": 0,
+        "explain": "Dysuria means painful or difficult urination, built from dys- (painful or difficult) and -uria (urine condition). Excessive urine output is polyuria, blood in the urine is hematuria, and protein in the urine is albuminuria."
+      },
+      {
+        "id": "MT23058",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "kidney-region-drill",
+        "groupOrder": 1,
+        "q": "This lighter outer zone of the kidney holds the filtering units and resembles the bark of the organ. Answer each step, then the next region follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this zone?",
+            "options": [
+              "Cortex",
+              "Corteks",
+              "Cortix",
+              "Cortexe"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which literal meaning does this word carry?",
+            "options": [
+              "Bark",
+              "Stone",
+              "Basin",
+              "Nest"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This lighter outer zone is the cortex. Corteks, Cortix, and Cortexe miss that spelling. The word means bark. Stone is Lith/o, basin describes the renal pelvis, and nest is unrelated."
+      },
+      {
+        "id": "MT23059",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "kidney-region-drill",
+        "groupOrder": 2,
+        "q": "This deeper zone is built from pyramid-shaped masses that gather urine toward the center of the kidney. Answer each step, then the next region follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this zone?",
+            "options": [
+              "Medulla",
+              "Medula",
+              "Medullaa",
+              "Medull"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which structures inside this zone collect and send urine inward?",
+            "options": [
+              "Renal pyramids",
+              "Renal cortex layers",
+              "Hilum notches",
+              "Glomerular knots"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This deeper zone is the medulla. Medula drops a letter, and the other lines repeat the correct spelling as a near-miss frame. The pyramid-shaped masses inside it are the renal pyramids. Renal cortex layers are the outer zone, hilum notches are the entry points, and glomerular knots are the capillary clusters of the nephrons."
+      },
+      {
+        "id": "MT23060",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "kidney-region-drill",
+        "groupOrder": 3,
+        "q": "This indented notch is the entry and exit point for the kidney's vessels and draining tube. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this notch?",
+            "options": [
+              "Hilum",
+              "Hilium",
+              "Hylum",
+              "Hilumm"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which structures pass through this notch?",
+            "options": [
+              "Renal artery, renal vein, and ureter",
+              "Renal artery, renal vein, and urethra",
+              "Glomerulus, Bowman capsule, and tubule",
+              "Renal pelvis, bladder, and urethra"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This indented notch is the hilum. Hilium, Hylum, and Hilumm miss that spelling. The renal artery, renal vein, and ureter pass through it. The line that substitutes the urethra replaces the kidney-to-bladder tube. The line that lists the glomerulus, Bowman capsule, and tubule names internal nephron parts. The line that lists the renal pelvis, bladder, and urethra names downstream structures."
+      },
+      {
+        "id": "MT23061",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "nephron-drill",
+        "groupOrder": 1,
+        "q": "This is the ball-shaped cluster of capillaries inside each filtering unit. Answer each step, then the next part follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this cluster?",
+            "options": [
+              "Glomerulus",
+              "Glomerulas",
+              "Glomerolus",
+              "Glommerulus"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which structure surrounds this cluster?",
+            "options": [
+              "Bowman capsule",
+              "Renal tubule",
+              "Collecting duct",
+              "Renal pelvis"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This ball-shaped cluster is the glomerulus. Glomerulas, Glomerolus, and Glommerulus miss that spelling. The Bowman capsule surrounds it. The renal tubule is the elongated stem, the collecting duct carries urine onward, and the renal pelvis is the basin at the kidney center."
+      },
+      {
+        "id": "MT23062",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "nephron-drill",
+        "groupOrder": 2,
+        "q": "This is the cup-like sac that encloses the ball-shaped capillary cluster. Answer each step, then the next part follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this sac?",
+            "options": [
+              "Bowman capsule",
+              "Bowmen capsule",
+              "Bowman capsul",
+              "Bowmann capsule"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which vessel brings blood into the cluster it encloses?",
+            "options": [
+              "Afferent arteriole",
+              "Efferent arteriole",
+              "Renal vein",
+              "Renal artery"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This cup-like sac is the Bowman capsule. Bowmen capsule, Bowman capsul, and Bowmann capsule miss that spelling. The afferent arteriole brings blood into the glomerulus it encloses. The efferent arteriole carries blood away, the renal vein leaves the kidney, and the renal artery enters the kidney."
+      },
+      {
+        "id": "MT23063",
+        "type": "stepped",
+        "cat": "MT_lec23-24",
+        "group": "male-urethra-drill",
+        "groupOrder": 1,
+        "q": "The male urethra has three named segments in order from the bladder to the exterior. Answer each step, then the next segment follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the first segment after the bladder?",
+            "options": [
+              "Prostatic",
+              "Membranous",
+              "Spongy",
+              "Vestibular"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which is the middle segment?",
+            "options": [
+              "Membranous",
+              "Spongy",
+              "Vestibular",
+              "Prostatik"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "Which is the final segment through the penis?",
+            "options": [
+              "Spongy",
+              "Vestibular",
+              "Membranouss",
+              "Prostatik"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "The first segment after the bladder is the prostatic urethra. The middle segment is the membranous urethra. The final segment through the penis is the spongy urethra. Vestibular names a female space. Prostatik and Membranouss are spelling misses of the excluded segments."
+      }
+    ]
+  }
+}

@@ -1,0 +1,1267 @@
+{
+  "id": "lecture-27-28---female-reproductive-system",
+  "subject": "Medical Terminology",
+  "subjectId": "medical_terminology",
+  "title": "Lecture 27 and 28 - Female Reproductive System",
+  "formSize": 59,
+  "forms": [
+    "A"
+  ],
+  "bank": {
+    "A": [
+      {
+        "id": "MT27001",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly describes the functions of the female reproductive system?",
+        "options": [
+          "It produces sperm and male sex hormones, filters the blood continuously, and removes waste products from the body through the urinary tract.",
+          "It digests food in the stomach, absorbs nutrients from the intestine, and eliminates solid waste products from the intestinal tract.",
+          "It produces egg and female sex hormones, undergoes a menstrual cycle from puberty to menopause, and supports reproduction, pregnancy, and childbirth.",
+          "It pumps blood under pressure through the vessels, exchanges gases in the lungs, and regulates body temperature continuously throughout the day."
+        ],
+        "correct": 2,
+        "explain": "The female reproductive system produces egg and female sex hormones, undergoes a menstrual cycle from puberty to menopause, and supports reproduction, pregnancy, and childbirth. The statement It produces sperm and male sex hormones, filters the blood continuously, and removes waste products from the body through the urinary tract assigns male reproductive and urinary functions. The statement It digests food in the stomach, absorbs nutrients from the intestine, and eliminates solid waste products from the intestinal tract assigns digestive functions. The statement It pumps blood under pressure through the vessels, exchanges gases in the lungs, and regulates body temperature continuously throughout the day assigns cardiovascular and respiratory functions."
+      },
+      {
+        "id": "MT27002",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly describes the ovaries?",
+        "options": [
+          "A pair of hollow muscular ducts located between the ovaries and uterus that provide a passageway for sperm.",
+          "Two glands on each side of the pelvic cavity that produce female sex hormones and ova.",
+          "A pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy.",
+          "The external genitalia of the female, with skin folds that protect the openings of the urethra and vagina."
+        ],
+        "correct": 1,
+        "explain": "The ovaries are two glands on each side of the pelvic cavity that produce female sex hormones and ova. The statement A pair of hollow muscular ducts located between the ovaries and uterus that provide a passageway for sperm describes the uterine tubes. The statement A pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy describes the uterus. The statement The external genitalia of the female, with skin folds that protect the openings of the urethra and vagina describes the vulva."
+      },
+      {
+        "id": "MT27003",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which structure is a pair of hollow muscular ducts located between the ovaries and uterus, providing a passageway for sperm to the fertilized egg?",
+        "options": [
+          "Uterus",
+          "Cervix",
+          "Vagina",
+          "Uterine tubes"
+        ],
+        "correct": 3,
+        "explain": "The uterine tubes, also called fallopian tubes, oviducts, or salpinx, are a pair of hollow muscular ducts located between the ovaries and uterus that provide a passageway for sperm to the fertilized egg. Uterus is the pear-shaped organ, Cervix connects the uterus to the vagina, and Vagina is the tubular passageway to the outside."
+      },
+      {
+        "id": "MT27004",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which organ is pear-shaped and plays a critical role in menstruation, fertility, and pregnancy?",
+        "options": [
+          "Uterus",
+          "Ovary",
+          "Cervix",
+          "Vagina"
+        ],
+        "correct": 0,
+        "explain": "The uterus is the pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy. Ovary produces eggs and hormones, Cervix connects the uterus to the vagina, and Vagina is the birth canal."
+      },
+      {
+        "id": "MT27005",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which structure connects the main body of the uterus to the vagina?",
+        "options": [
+          "Vulva",
+          "Uterine tube",
+          "Cervix",
+          "Ovary"
+        ],
+        "correct": 2,
+        "explain": "The cervix connects the main body of the uterus to the vagina. Vulva is the external genitalia, Uterine tube carries the egg, and Ovary produces eggs and hormones."
+      },
+      {
+        "id": "MT27006",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly describes the vagina?",
+        "options": [
+          "The external genitalia of the female, with skin folds that protect the openings of the urethra and vagina.",
+          "A tubular passageway from the cervix to the outside of the body that receives sperm, serves as the birth canal, and expels menstrual products.",
+          "A pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy.",
+          "A pair of hollow muscular ducts located between the ovaries and uterus."
+        ],
+        "correct": 1,
+        "explain": "The vagina is the tubular passageway from the cervix to the outside of the body. It receives sperm, serves as the birth canal, and expels menstrual products. The statement The external genitalia of the female, with skin folds that protect the openings of the urethra and vagina describes the vulva. The statement A pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy describes the uterus. The statement A pair of hollow muscular ducts located between the ovaries and uterus describes the uterine tubes."
+      },
+      {
+        "id": "MT27007",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which structure is the external genitalia of the female, with skin folds that protect the openings of the urethra and vagina?",
+        "options": [
+          "Cervix",
+          "Vagina",
+          "Mammary glands",
+          "Vulva"
+        ],
+        "correct": 3,
+        "explain": "The vulva is the external genitalia of the female, and its skin folds protect the openings of the urethra and vagina. Cervix connects the uterus to the vagina, Vagina is the internal canal, and Mammary glands produce milk."
+      },
+      {
+        "id": "MT27008",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly describes the mammary glands?",
+        "options": [
+          "Two glands in the female breasts that are capable of producing milk and are regulated by the endocrine system.",
+          "Two glands on each side of the pelvic cavity that produce female sex hormones and ova.",
+          "A temporary vascular organ that connects the baby to the uterus during pregnancy.",
+          "A pair of hollow muscular ducts located between the ovaries and uterus."
+        ],
+        "correct": 0,
+        "explain": "The mammary glands are two glands in the female breasts that are capable of producing milk and are regulated by the endocrine system. The statement Two glands on each side of the pelvic cavity that produce female sex hormones and ova describes the ovaries. The statement A temporary vascular organ that connects the baby to the uterus during pregnancy describes the placenta. The statement A pair of hollow muscular ducts located between the ovaries and uterus describes the uterine tubes."
+      },
+      {
+        "id": "MT27009",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly distinguishes an embryo from a fetus?",
+        "options": [
+          "An embryo is the developing organism from the 9th week to birth, and a fetus is from zygote day 1 to the 8th week.",
+          "An embryo is the developing organism from zygote day 1 to the 8th week, and a fetus is from the 9th week to birth.",
+          "An embryo is the temporary vascular organ that connects the baby to the uterus, and a fetus is the umbilical cord.",
+          "An embryo is the milk-producing gland in the breast, and a fetus is the external genitalia."
+        ],
+        "correct": 1,
+        "explain": "An embryo is the developing organism from zygote day 1 to the 8th week, and a fetus is the developing organism from the 9th week to birth. The statement An embryo is the developing organism from the 9th week to birth, and a fetus is from zygote day 1 to the 8th week reverses the two periods. The statement An embryo is the temporary vascular organ that connects the baby to the uterus, and a fetus is the umbilical cord confuses them with the placenta and umbilical cord. The statement An embryo is the milk-producing gland in the breast, and a fetus is the external genitalia confuses them with the mammary gland and vulva."
+      },
+      {
+        "id": "MT27010",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which statement correctly describes the placenta?",
+        "options": [
+          "A permanent organ that produces sperm and female sex hormones throughout life, filters the blood continuously, and removes waste products from the body through the urinary tract.",
+          "A pair of glands in the female breasts that produce milk and are regulated by the endocrine system throughout the reproductive years and support infant nutrition after birth.",
+          "A temporary vascular organ that connects the baby to the uterus via the umbilical cord, provides oxygen and nutrients, removes carbon dioxide and wastes, produces hormones, passes immunity, and protects the baby.",
+          "A tubular passageway from the cervix to the outside of the body that expels menstrual products, receives sperm during intercourse, and serves as the birth canal during delivery."
+        ],
+        "correct": 2,
+        "explain": "The placenta is a temporary vascular organ that connects the baby to the uterus via the umbilical cord. It provides oxygen and nutrients, removes carbon dioxide and wastes, produces hormones to help the baby grow, passes immunity, and protects the baby. The statement A permanent organ that produces sperm and female sex hormones throughout life, filters the blood continuously, and removes waste products from the body through the urinary tract calls it permanent and assigns wrong production and filtration. The statement A pair of glands in the female breasts that produce milk and are regulated by the endocrine system throughout the reproductive years and support infant nutrition after birth describes the mammary glands. The statement A tubular passageway from the cervix to the outside of the body that expels menstrual products, receives sperm during intercourse, and serves as the birth canal during delivery describes the vagina."
+      },
+      {
+        "id": "MT27011",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "The placenta connects the baby to the uterus via which structure?",
+        "options": [
+          "The cervix",
+          "The umbilical cord",
+          "The fallopian tube",
+          "The vagina"
+        ],
+        "correct": 1,
+        "explain": "The placenta connects the baby to the uterus via the umbilical cord. The cervix connects the uterus to the vagina, the fallopian tube carries the egg, and the vagina is the birth canal."
+      },
+      {
+        "id": "MT27012",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which two hormones are the female sex hormones produced by the ovaries?",
+        "options": [
+          "Estrogen and progesterone",
+          "Testosterone and estrogen",
+          "Progesterone and testosterone",
+          "Estrogen and insulin"
+        ],
+        "correct": 0,
+        "explain": "The ovaries produce the female sex hormones estrogen and progesterone. Testosterone is a male sex hormone, and insulin is a pancreatic hormone that regulates blood sugar."
+      },
+      {
+        "id": "MT27013",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "The menstrual cycle begins at puberty and ends with menopause. What term denotes the first menstrual period?",
+        "options": [
+          "Menopause",
+          "Menarche",
+          "Menstruation",
+          "Ovulation"
+        ],
+        "correct": 1,
+        "explain": "Menarche denotes the first menstrual period, which marks the beginning of the menstrual cycle at puberty. Menopause is the cessation of menstruation, menstruation is the periodic shedding itself, and ovulation is the release of the egg from the ovary."
+      },
+      {
+        "id": "MT27014",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "The embryo is the developing organism from zygote day 1 to the 8th week. What is a zygote?",
+        "options": [
+          "A mature egg released from the ovary.",
+          "A fertilized egg formed by the union of sperm and ovum.",
+          "A developing organism from the 9th week to birth.",
+          "A temporary vascular organ that connects the baby to the uterus."
+        ],
+        "correct": 1,
+        "explain": "A zygote is the fertilized egg formed by the union of sperm and ovum, and it is the starting point of the embryo. A mature egg released from the ovary is an ovum, the developing organism from the 9th week to birth is a fetus, and the temporary vascular organ is the placenta."
+      },
+      {
+        "id": "MT27015",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which set lists the parts of the uterine tube in order from the ovary to the uterus?",
+        "options": [
+          "Isthmus, ampulla, infundibulum",
+          "Infundibulum, ampulla, isthmus",
+          "Ampulla, infundibulum, isthmus",
+          "Infundibulum, isthmus, ampulla"
+        ],
+        "correct": 1,
+        "explain": "The uterine tube runs from the ovary to the uterus in the order infundibulum, ampulla, isthmus. The infundibulum is the funnel-shaped opening nearest the ovary, the ampulla is the wider middle portion, and the isthmus is the narrow portion that joins the uterus. The set Isthmus, ampulla, infundibulum reverses the order. The set Ampulla, infundibulum, isthmus scrambles the middle and start. The set Infundibulum, isthmus, ampulla places the narrow part before the wide middle."
+      },
+      {
+        "id": "MT27016",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What happens to the uterus during pregnancy?",
+        "options": [
+          "It expands to accommodate the growing fetus.",
+          "It shrinks to a smaller size.",
+          "It remains unchanged in size.",
+          "It moves to the pelvic cavity."
+        ],
+        "correct": 0,
+        "explain": "During pregnancy the uterus expands to accommodate the growing fetus. The line It shrinks to a smaller size reverses the change. The line It remains unchanged in size denies the expansion. The line It moves to the pelvic cavity invents a relocation."
+      },
+      {
+        "id": "MT27017",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which set consists entirely of combining forms that mean uterus?",
+        "options": [
+          "Hyster/o, Metr/o, Uter/o",
+          "Cervic/o, Vagin/o, Colp/o",
+          "Vulv/o, Gynec/o, Lact/o",
+          "Mast/o, Mamm/o, Men/o"
+        ],
+        "correct": 0,
+        "explain": "Hyster/o, Metr/o, and Uter/o are the combining forms that mean uterus. The set Cervic/o, Vagin/o, Colp/o contains forms for cervix and vagina. The set Vulv/o, Gynec/o, Lact/o contains forms for vulva, woman, and milk. The set Mast/o, Mamm/o, Men/o contains forms for breast and menstruation."
+      },
+      {
+        "id": "MT27018",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which pair consists of two combining forms that both mean vagina?",
+        "options": [
+          "Cervic/o and Vulv/o",
+          "Mast/o and Mamm/o",
+          "Vagin/o and Colp/o",
+          "Ovari/o and Oophor/o"
+        ],
+        "correct": 2,
+        "explain": "Vagin/o and Colp/o are the two combining forms that mean vagina. Cervic/o means cervix or neck and Vulv/o means vulva. Mast/o and Mamm/o mean breast. Ovari/o and Oophor/o mean ovary."
+      },
+      {
+        "id": "MT27019",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which pair consists of two combining forms that both mean ovary?",
+        "options": [
+          "Ovari/o and Oophor/o",
+          "Salping/o and Toc/o",
+          "Men/o and Lact/o",
+          "Hyster/o and Metr/o"
+        ],
+        "correct": 0,
+        "explain": "Ovari/o and Oophor/o are the two combining forms that mean ovary. Salping/o means fallopian tube and Toc/o means childbirth. Men/o means menstruation and Lact/o means milk. Hyster/o and Metr/o both mean uterus."
+      },
+      {
+        "id": "MT27020",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which pair consists of two combining forms that both mean breast?",
+        "options": [
+          "Mast/o and Mamm/o",
+          "Men/o and Lact/o",
+          "Vagin/o and Colp/o",
+          "Ovari/o and Oophor/o"
+        ],
+        "correct": 0,
+        "explain": "Mast/o and Mamm/o are the two combining forms that mean breast. Men/o means menstruation and Lact/o means milk. Vagin/o and Colp/o mean vagina. Ovari/o and Oophor/o mean ovary."
+      },
+      {
+        "id": "MT27021",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which set consists entirely of combining forms or roots that mean egg?",
+        "options": [
+          "Ov/i, Ov/o, Oo-",
+          "Salping/o, Toc/o, Men/o",
+          "Mast/o, Mamm/o, Lact/o",
+          "Hyster/o, Metr/o, Uter/o"
+        ],
+        "correct": 0,
+        "explain": "Ov/i, Ov/o, and Oo- all mean egg. The set Salping/o, Toc/o, Men/o contains forms for fallopian tube, childbirth, and menstruation. The set Mast/o, Mamm/o, Lact/o contains forms for breast and milk. The set Hyster/o, Metr/o, Uter/o contains forms for uterus."
+      },
+      {
+        "id": "MT27022",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Salping/o mean?",
+        "options": [
+          "Uterus",
+          "Ovary",
+          "Fallopian tube",
+          "Vagina"
+        ],
+        "correct": 2,
+        "explain": "Salping/o means fallopian tube or salpinx. Uterus is denoted by Hyster/o, Metr/o, or Uter/o. Ovary is denoted by Ovari/o or Oophor/o. Vagina is denoted by Vagin/o or Colp/o."
+      },
+      {
+        "id": "MT27023",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Toc/o mean?",
+        "options": [
+          "Milk",
+          "Childbirth",
+          "Breast",
+          "Menstruation"
+        ],
+        "correct": 1,
+        "explain": "Toc/o means childbirth, that is, uterine contractions. Milk is Lact/o, breast is Mast/o or Mamm/o, and menstruation is Men/o."
+      },
+      {
+        "id": "MT27024",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Cervic/o mean?",
+        "options": [
+          "Neck or cervix",
+          "Vulva",
+          "Ovary",
+          "Uterus"
+        ],
+        "correct": 0,
+        "explain": "Cervic/o means neck or cervix. Vulva is Vulv/o, ovary is Ovari/o or Oophor/o, and uterus is Hyster/o, Metr/o, or Uter/o."
+      },
+      {
+        "id": "MT27025",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Gynec/o mean?",
+        "options": [
+          "Woman",
+          "Egg",
+          "Breast",
+          "Childbirth"
+        ],
+        "correct": 0,
+        "explain": "Gynec/o means woman. Egg is Ov/i, Ov/o, or Oo-. Breast is Mast/o or Mamm/o. Childbirth is Toc/o."
+      },
+      {
+        "id": "MT27026",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Men/o mean?",
+        "options": [
+          "Menstruation",
+          "Milk",
+          "Vagina",
+          "Uterus"
+        ],
+        "correct": 0,
+        "explain": "Men/o means menstruation. Milk is Lact/o, vagina is Vagin/o or Colp/o, and uterus is Hyster/o, Metr/o, or Uter/o."
+      },
+      {
+        "id": "MT27027",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does the combining form Lact/o mean?",
+        "options": [
+          "Egg",
+          "Milk",
+          "Breast",
+          "Ovary"
+        ],
+        "correct": 1,
+        "explain": "Lact/o means milk. Egg is Ov/i, Ov/o, or Oo-. Breast is Mast/o or Mamm/o. Ovary is Ovari/o or Oophor/o."
+      },
+      {
+        "id": "MT27028",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "In hydrosalpinx, which pairing of element to meaning is correct?",
+        "options": [
+          "hydr = fallopian tube, salping = water",
+          "hydr = pus, salping = ovary",
+          "hydr = water, salping = uterus",
+          "hydr = water, salping = fallopian tube"
+        ],
+        "correct": 3,
+        "explain": "In hydrosalpinx, hydr means water and salping means fallopian tube, so the term denotes a water-filled fallopian tube. The pairing hydr = fallopian tube, salping = water swaps the two. The pairing hydr = pus, salping = ovary assigns pus and ovary. The pairing hydr = water, salping = uterus assigns uterus instead of the tube."
+      },
+      {
+        "id": "MT27029",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Oogenesis is tagged R+S while Ovogenesis is tagged CF+S. Which statement explains the difference?",
+        "options": [
+          "Oo- is a combining form, so it keeps the linking vowel before the suffix; Ov/o is a root, so it stands bare.",
+          "Oo- is a root, so it is tagged R; Ov/o is a combining form, so it is tagged CF.",
+          "Both Oo- and Ov/o are roots, but Oogenesis drops the suffix under the same-vowel rule.",
+          "The difference comes from the suffix: -genesis begins with a vowel in Oogenesis and with a consonant in Ovogenesis."
+        ],
+        "correct": 1,
+        "explain": "Oo- is a root meaning egg, so Oogenesis is tagged R+S. Ov/o is a combining form meaning egg, so Ovogenesis is tagged CF+S. The tag records whether the first element is a root or a combining form. The statement Oo- is a combining form, so it keeps the linking vowel before the suffix; Ov/o is a root, so it stands bare reverses the two classifications. The statement Both Oo- and Ov/o are roots, but Oogenesis drops the suffix under the same-vowel rule misapplies the rule. The statement The difference comes from the suffix: -genesis begins with a vowel in Oogenesis and with a consonant in Ovogenesis attributes the difference to the suffix."
+      },
+      {
+        "id": "MT27030",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which term means surgical removal of the ovary and uterus?",
+        "options": [
+          "Hysterocolposcope",
+          "Vulvovaginoplasty",
+          "Oophorohysterectomy",
+          "Cardiotocography"
+        ],
+        "correct": 2,
+        "explain": "Oophorohysterectomy is built from Oophor/o (ovary) and hyster/o (uterus) with the suffix -ectomy (surgical removal), so it means surgical removal of the ovary and uterus. Hysterocolposcope is an instrument for examining the uterus and vagina. Vulvovaginoplasty is surgical repair of the vulva and vagina. Cardiotocography is recording of fetal heart rate and uterine contractions."
+      },
+      {
+        "id": "MT27031",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "In cardiotocography, which element refers to childbirth, that is, uterine contractions?",
+        "options": [
+          "toc",
+          "cardi",
+          "graphy",
+          "hyster"
+        ],
+        "correct": 0,
+        "explain": "In cardiotocography, toc refers to childbirth, that is, uterine contractions. Cardi refers to the heart. Graphy refers to the process of recording. Hyster refers to the uterus."
+      },
+      {
+        "id": "MT27032",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does cervicography mean?",
+        "options": [
+          "Process of recording the neck of the uterus.",
+          "Process of recording the sheath-like canal.",
+          "Process of examining the neck of the uterus.",
+          "Process of repairing the neck of the uterus."
+        ],
+        "correct": 0,
+        "explain": "Cervicography is the process of recording the cervix, the neck of the uterus. Process of recording the sheath-like canal would name the vagina. Process of examining the neck of the uterus would use a -scopy form. Process of repairing the neck of the uterus would use a -plasty form."
+      },
+      {
+        "id": "MT27033",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does vaginodynia mean?",
+        "options": [
+          "Process of recording the vagina.",
+          "Pain in the vagina.",
+          "Hernia of the uterus.",
+          "Discharge of milk."
+        ],
+        "correct": 1,
+        "explain": "Vaginodynia is pain in the vagina. Process of recording the vagina would be vaginography. Hernia of the uterus is uterocele. Discharge of milk is lactorrhea."
+      },
+      {
+        "id": "MT27034",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does uterocele mean?",
+        "options": [
+          "Hernia of the uterus.",
+          "Pain in the uterus.",
+          "Surgical removal of the uterus.",
+          "Discharge from the uterus."
+        ],
+        "correct": 0,
+        "explain": "Uterocele is a hernia of the uterus. Pain in the uterus would be metrodynia or uterodynia. Surgical removal of the uterus is hysterectomy. Discharge from the uterus would use a different suffix."
+      },
+      {
+        "id": "MT27035",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does lactorrhea mean?",
+        "options": [
+          "Formation of milk.",
+          "Discharge of milk.",
+          "Pain in the breast.",
+          "Surgical repair of the breast."
+        ],
+        "correct": 1,
+        "explain": "Lactorrhea is a discharge of milk. Formation of milk would be lactogenesis. Pain in the breast is mastodynia. Surgical repair of the breast is mastoplasty."
+      },
+      {
+        "id": "MT27036",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does mastadenoma mean?",
+        "options": [
+          "A malignant tumor of the breast.",
+          "A benign tumor of the breast.",
+          "Pain in the breast.",
+          "Discharge from the breast."
+        ],
+        "correct": 1,
+        "explain": "Mastadenoma is a benign tumor of the breast, built from Mast/o (breast), aden (gland), and -oma (tumor). A malignant tumor would be mastocarcinoma. Pain in the breast is mastodynia. Discharge from the breast is mastorrhea."
+      },
+      {
+        "id": "MT27037",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does menopause mean?",
+        "options": [
+          "The first menstrual period.",
+          "The cessation of menstruation.",
+          "Pain during menstruation.",
+          "Excessive menstrual flow."
+        ],
+        "correct": 1,
+        "explain": "Menopause is the cessation of menstruation, marking the end of the menstrual cycle. The first menstrual period is menarche. Pain during menstruation is dysmenorrhea. Excessive menstrual flow is menorrhagia."
+      },
+      {
+        "id": "MT27038",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does mammogram mean?",
+        "options": [
+          "A record of the breast.",
+          "A tumor of the breast.",
+          "Pain in the breast.",
+          "Discharge from the breast."
+        ],
+        "correct": 0,
+        "explain": "Mammogram is a record of the breast, built from Mamm/o (breast) and -gram (record). A tumor of the breast is mastadenoma. Pain in the breast is mastodynia. Discharge from the breast is mastorrhea."
+      },
+      {
+        "id": "MT27039",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does hysterocolposcope mean?",
+        "options": [
+          "An instrument for examining the uterus and vagina.",
+          "An instrument for examining the ovary and tube.",
+          "Surgical removal of the uterus and vagina.",
+          "A record of the uterus and vagina."
+        ],
+        "correct": 0,
+        "explain": "Hysterocolposcope is an instrument for examining the uterus and vagina, built from Hyster/o (uterus), colp/o (vagina), and -scope (instrument for examining). An instrument for examining the ovary and tube would use different combining forms. Surgical removal would use -ectomy. A record would use -gram."
+      },
+      {
+        "id": "MT27040",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does gynecopathy mean?",
+        "options": [
+          "Disease of women.",
+          "Pain in women.",
+          "Surgical repair of women.",
+          "A specialist in women."
+        ],
+        "correct": 0,
+        "explain": "Gynecopathy is a disease of women, built from Gynec/o (woman) and -pathy (disease). Pain would use -dynia. Surgical repair would use -plasty. A specialist would use -logist."
+      },
+      {
+        "id": "MT27041",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does vulvovaginoplasty mean?",
+        "options": [
+          "Surgical repair of the vulva and vagina.",
+          "Surgical incision into the vulva and vagina.",
+          "Surgical fixation of the vulva and vagina.",
+          "Surgical puncture of the vulva and vagina."
+        ],
+        "correct": 0,
+        "explain": "Vulvovaginoplasty is surgical repair of the vulva and vagina, built from Vulv/o (vulva), vagin/o (vagina), and -plasty (surgical repair). Surgical incision would use -tomy. Surgical fixation would use -pexy. Surgical puncture would use -centesis."
+      },
+      {
+        "id": "MT27042",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does metrolymphangitis mean?",
+        "options": [
+          "Inflammation of the uterus and surrounding vessels and lymphatics.",
+          "Inflammation of the ovary and surrounding vessels and lymphatics.",
+          "Inflammation of the vagina and surrounding vessels and lymphatics.",
+          "Inflammation of the bladder and surrounding vessels and lymphatics."
+        ],
+        "correct": 0,
+        "explain": "Metrolymphangitis is inflammation of the uterus and surrounding vessels and lymphatics, built from Metr/o (uterus), lymph, ang (vessel), and -itis (inflammation). The lines that name the ovary, the vagina, or the bladder assign the inflammation to the wrong structure."
+      },
+      {
+        "id": "MT27043",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What does colpohyperplasia mean?",
+        "options": [
+          "Abnormal enlargement of the vagina.",
+          "Inflammation of the vagina.",
+          "Pain in the vagina.",
+          "Surgical repair of the vagina."
+        ],
+        "correct": 0,
+        "explain": "Colpohyperplasia is abnormal enlargement of the vagina, built from Colp/o (vagina), hyper- (excessive), and -plasia (formation or growth). Inflammation would use -itis. Pain would use -dynia. Surgical repair would use -plasty."
+      },
+      {
+        "id": "MT27044",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "In the female reproductive system, what is the vestibule?",
+        "options": [
+          "The space between the labia minora that contains the openings of the urethra and vagina.",
+          "The external genitalia as a whole that includes the labia and the clitoris.",
+          "The canal from the cervix to the outside that receives sperm and serves as the birth canal.",
+          "The pear-shaped organ of pregnancy that expands to hold the growing fetus."
+        ],
+        "correct": 0,
+        "explain": "The vestibule is the space between the labia minora that contains the openings of the urethra and vagina. The external genitalia as a whole that includes the labia and the clitoris is the vulva. The canal from the cervix to the outside that receives sperm and serves as the birth canal is the vagina. The pear-shaped organ of pregnancy that expands to hold the growing fetus is the uterus."
+      },
+      {
+        "id": "MT27045",
+        "type": "matching",
+        "cat": "MT_lec27-28",
+        "q": "Match each structure of the female reproductive system to its function.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Ovary"
+          },
+          {
+            "id": "2",
+            "text": "Uterine tube"
+          },
+          {
+            "id": "3",
+            "text": "Uterus"
+          },
+          {
+            "id": "4",
+            "text": "Cervix"
+          },
+          {
+            "id": "5",
+            "text": "Vagina"
+          },
+          {
+            "id": "6",
+            "text": "Vulva"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Two glands on each side of the pelvic cavity that produce female sex hormones and ova."
+          },
+          {
+            "id": "B",
+            "text": "A pair of hollow muscular ducts located between the ovaries and uterus that provide a passageway for sperm."
+          },
+          {
+            "id": "C",
+            "text": "A pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy."
+          },
+          {
+            "id": "D",
+            "text": "The structure that connects the main body of the uterus to the vagina."
+          },
+          {
+            "id": "E",
+            "text": "A tubular passageway from the cervix to the outside that receives sperm, serves as the birth canal, and expels menstrual products."
+          },
+          {
+            "id": "F",
+            "text": "The external genitalia of the female, with skin folds that protect the openings of the urethra and vagina."
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "The ovary is the paired gland that produces female sex hormones and ova. The uterine tube is the pair of hollow muscular ducts between the ovary and uterus that provides a passageway for sperm. The uterus is the pear-shaped organ of menstruation, fertility, and pregnancy. The cervix connects the uterus to the vagina. The vagina is the tubular passageway that receives sperm, serves as the birth canal, and expels menstrual products. The vulva is the external genitalia with skin folds that protect the urethral and vaginal openings."
+      },
+      {
+        "id": "MT27046",
+        "type": "matching",
+        "cat": "MT_lec27-28",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Cervic/o"
+          },
+          {
+            "id": "2",
+            "text": "Vagin/o, Colp/o"
+          },
+          {
+            "id": "3",
+            "text": "Vulv/o"
+          },
+          {
+            "id": "4",
+            "text": "Gynec/o"
+          },
+          {
+            "id": "5",
+            "text": "Hyster/o, Metr/o, Uter/o"
+          },
+          {
+            "id": "6",
+            "text": "Lact/o"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "The neck of an organ, especially the lower part of the uterus."
+          },
+          {
+            "id": "B",
+            "text": "The sheath-like canal."
+          },
+          {
+            "id": "C",
+            "text": "The external genitalia."
+          },
+          {
+            "id": "D",
+            "text": "Woman."
+          },
+          {
+            "id": "E",
+            "text": "The womb."
+          },
+          {
+            "id": "F",
+            "text": "Milk."
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Cervic/o denotes the neck, especially the cervix. Vagin/o and Colp/o both denote the vagina, the sheath-like canal. Vulv/o denotes the vulva, the external genitalia. Gynec/o denotes a woman. Hyster/o, Metr/o, and Uter/o all denote the uterus, the womb. Lact/o denotes milk."
+      },
+      {
+        "id": "MT27047",
+        "type": "matching",
+        "cat": "MT_lec27-28",
+        "q": "Match each combining form to the structure or idea it denotes.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Mast/o, Mamm/o"
+          },
+          {
+            "id": "2",
+            "text": "Men/o"
+          },
+          {
+            "id": "3",
+            "text": "Ovari/o, Oophor/o"
+          },
+          {
+            "id": "4",
+            "text": "Salping/o"
+          },
+          {
+            "id": "5",
+            "text": "Toc/o"
+          },
+          {
+            "id": "6",
+            "text": "Ov/i, Ov/o, Oo-"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Breast."
+          },
+          {
+            "id": "B",
+            "text": "The periodic shedding of the uterine lining."
+          },
+          {
+            "id": "C",
+            "text": "The female gonad."
+          },
+          {
+            "id": "D",
+            "text": "The fallopian tube."
+          },
+          {
+            "id": "E",
+            "text": "Childbirth, that is, uterine contractions."
+          },
+          {
+            "id": "F",
+            "text": "The female reproductive cell."
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Mast/o and Mamm/o both denote the breast. Men/o denotes menstruation, the periodic shedding of the uterine lining. Ovari/o and Oophor/o both denote the ovary, the female gonad. Salping/o denotes the salpinx, or fallopian tube. Toc/o denotes childbirth, that is, uterine contractions. Ov/i, Ov/o, and Oo- denote the egg, the female reproductive cell."
+      },
+      {
+        "id": "MT27048",
+        "type": "matching",
+        "cat": "MT_lec27-28",
+        "q": "Match each term to its meaning.",
+        "leftItems": [
+          {
+            "id": "1",
+            "text": "Cervicography"
+          },
+          {
+            "id": "2",
+            "text": "Vaginodynia"
+          },
+          {
+            "id": "3",
+            "text": "Vulvovaginoplasty"
+          },
+          {
+            "id": "4",
+            "text": "Gynecopathy"
+          },
+          {
+            "id": "5",
+            "text": "Uterocele"
+          },
+          {
+            "id": "6",
+            "text": "Lactorrhea"
+          }
+        ],
+        "rightItems": [
+          {
+            "id": "A",
+            "text": "Process of recording the neck of the uterus."
+          },
+          {
+            "id": "B",
+            "text": "Pain in the sheath-like canal."
+          },
+          {
+            "id": "C",
+            "text": "Surgical repair of the external genitalia and the sheath-like canal."
+          },
+          {
+            "id": "D",
+            "text": "Disease of women."
+          },
+          {
+            "id": "E",
+            "text": "Hernia of the womb."
+          },
+          {
+            "id": "F",
+            "text": "Discharge of milk."
+          }
+        ],
+        "correct_pairs": {
+          "1": "A",
+          "2": "B",
+          "3": "C",
+          "4": "D",
+          "5": "E",
+          "6": "F"
+        },
+        "explain": "Cervicography is the process of recording the neck of the uterus. Vaginodynia is pain in the vagina. Vulvovaginoplasty is surgical repair of the vulva and vagina. Gynecopathy is a disease of women. Uterocele is a hernia of the uterus. Lactorrhea is a discharge of milk."
+      },
+      {
+        "id": "MT27049",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 1,
+        "q": "These are two glands on each side of the pelvic cavity that produce female sex hormones and ova. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Ovary",
+              "Ovairy",
+              "Ovariy",
+              "Ovarry"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which pair of combining forms both denote this structure?",
+            "options": [
+              "Ovari/o and Oophor/o",
+              "Vagin/o and Colp/o",
+              "Mast/o and Mamm/o",
+              "Hyster/o and Metr/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the ovary. Ovairy, Ovariy, and Ovarry miss that spelling. Ovari/o and Oophor/o both mean ovary. Vagin/o and Colp/o mean vagina. Mast/o and Mamm/o mean breast. Hyster/o and Metr/o mean uterus."
+      },
+      {
+        "id": "MT27050",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 2,
+        "q": "This is a pair of hollow muscular ducts located between the ovaries and uterus that provide a passageway for sperm to the fertilized egg. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Uterine tube",
+              "Uterin tube",
+              "Uterine tub",
+              "Utrine tube"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form denotes this structure?",
+            "options": [
+              "Salping/o",
+              "Hyster/o",
+              "Oophor/o",
+              "Colp/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the uterine tube. Uterin tube, Uterine tub, and Utrine tube misspell it. Salping/o means fallopian tube or salpinx. Hyster/o means uterus. Oophor/o means ovary. Colp/o means vagina."
+      },
+      {
+        "id": "MT27051",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 3,
+        "q": "This is a pear-shaped organ that plays a critical role in menstruation, fertility, and pregnancy. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Uterus",
+              "Uteris",
+              "Uteruss",
+              "Uterius"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which set of combining forms all denote this structure?",
+            "options": [
+              "Hyster/o, Metr/o, Uter/o",
+              "Cervic/o, Vagin/o, Colp/o",
+              "Ovari/o, Oophor/o, Salping/o",
+              "Mast/o, Mamm/o, Lact/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the uterus. Uteris and Uteruss miss that spelling. Hyster/o, Metr/o, and Uter/o all mean uterus. Cervic/o, Vagin/o, and Colp/o mean cervix and vagina. Ovari/o, Oophor/o, and Salping/o mean ovary and tube. Mast/o, Mamm/o, and Lact/o mean breast and milk."
+      },
+      {
+        "id": "MT27052",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 4,
+        "q": "This structure connects the main body of the uterus to the vagina. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Cervix",
+              "Cerviks",
+              "Cervixx",
+              "Cervixs"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form denotes this structure?",
+            "options": [
+              "Cervic/o",
+              "Vagin/o",
+              "Vulv/o",
+              "Uter/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the cervix. Cerviks and Cervixx miss that spelling. Cervic/o means neck or cervix. Vagin/o means vagina. Vulv/o means vulva. Uter/o means uterus."
+      },
+      {
+        "id": "MT27053",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 5,
+        "q": "This is a tubular passageway from the cervix to the outside of the body that receives sperm, serves as the birth canal, and expels menstrual products. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Vagina",
+              "Vaginaa",
+              "Vaginna",
+              "Vagyna"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which pair of combining forms both denote this structure?",
+            "options": [
+              "Vagin/o and Colp/o",
+              "Cervic/o and Vulv/o",
+              "Mast/o and Mamm/o",
+              "Ovari/o and Oophor/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the vagina. Vaginaa, Vaginna, and Vagyna miss that spelling. Vagin/o and Colp/o both mean vagina. Cervic/o means cervix and Vulv/o means vulva. Mast/o and Mamm/o mean breast. Ovari/o and Oophor/o mean ovary."
+      },
+      {
+        "id": "MT27054",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "female-structure-drill",
+        "groupOrder": 6,
+        "q": "This is the external genitalia of the female, with skin folds that protect the openings of the urethra and vagina. Answer each step, then the next structure follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the correct spelling of this structure?",
+            "options": [
+              "Vulva",
+              "Vulvaa",
+              "Vulvva",
+              "Vulve"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which combining form denotes this structure?",
+            "options": [
+              "Vulv/o",
+              "Vagin/o",
+              "Cervic/o",
+              "Gynec/o"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "This structure is the vulva. Vulvaa, Vulvva, and Vulve miss that spelling. Vulv/o means vulva. Vagin/o means vagina. Cervic/o means cervix. Gynec/o means woman."
+      },
+      {
+        "id": "MT27055",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "tube-part-drill",
+        "groupOrder": 1,
+        "q": "The uterine tube has three named parts in order from the ovary to the uterus. Answer each step, then the next part follows.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which is the funnel-shaped opening nearest the ovary?",
+            "options": [
+              "Infundibulum",
+              "Ampulla",
+              "Isthmus",
+              "Infundibullum"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Which is the wider middle portion?",
+            "options": [
+              "Ampulla",
+              "Isthmus",
+              "Infundibulum",
+              "Ampula"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "Which is the narrow portion that joins the uterus?",
+            "options": [
+              "Isthmus",
+              "Infundibulum",
+              "Ampulla",
+              "Isthmuss"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "The funnel-shaped opening nearest the ovary is the infundibulum. The wider middle portion is the ampulla. The narrow portion that joins the uterus is the isthmus. Infundibullum, Ampula, and Isthmuss are spelling misses."
+      },
+      {
+        "id": "MT27056",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "Which structure is the temporary vascular organ that connects the baby to the uterus via the umbilical cord, provides oxygen and nutrients, removes carbon dioxide and wastes, produces hormones, passes immunity, and protects the baby?",
+        "options": [
+          "Placenta",
+          "Umbilical cord",
+          "Amnion",
+          "Chorion"
+        ],
+        "correct": 0,
+        "explain": "The placenta is the temporary vascular organ that connects the baby to the uterus via the umbilical cord and performs those functions. The umbilical cord is the connecting structure itself. Amnion and chorion are membranes surrounding the embryo, not the organ described."
+      },
+      {
+        "id": "MT27057",
+        "type": "mcq",
+        "cat": "MT_lec27-28",
+        "q": "What term denotes the cessation of menstruation, marking the end of the menstrual cycle?",
+        "options": [
+          "Menopause",
+          "Menarche",
+          "Menstruation",
+          "Ovulation"
+        ],
+        "correct": 0,
+        "explain": "Menopause is the cessation of menstruation. Menarche is the first menstrual period. Menstruation is the periodic shedding itself. Ovulation is the release of the egg from the ovary."
+      },
+      {
+        "id": "MT27060",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "structure-property-drill",
+        "groupOrder": 1,
+        "q": "This structure is a passageway. Answer each step, then continue.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which phrase correctly starts its description?",
+            "options": [
+              "A tubular passageway from the cervix",
+              "A muscular duct from the ovary",
+              "A pear-shaped organ from the pelvis",
+              "A skin fold from the vulva"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "Where does it lead?",
+            "options": [
+              "to the outside of the body",
+              "to the uterus",
+              "to the ovary",
+              "to the urethra"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "What does it receive and serve as?",
+            "options": [
+              "receives sperm and serves as the birth canal",
+              "carries the egg and stores hormones",
+              "produces ova and expands in pregnancy",
+              "protects openings and produces estrogen"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "4",
+            "prompt": "What else does it expel?",
+            "options": [
+              "menstrual products",
+              "filtered blood",
+              "milk",
+              "fertility hormones"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "The vagina is a tubular passageway from the cervix to the outside of the body. It receives sperm, serves as the birth canal, and expels menstrual products. The lines that name a muscular duct from the ovary, a pear-shaped organ, or a skin fold identify other structures. The lines that assign egg carriage, hormone storage, ova production, milk production, or estrogen production belong to other organs."
+      },
+      {
+        "id": "MT27061",
+        "type": "stepped",
+        "cat": "MT_lec27-28",
+        "group": "structure-property-drill",
+        "groupOrder": 2,
+        "q": "These glands produce milk. Answer each step, then continue.",
+        "steps": [
+          {
+            "id": "1",
+            "prompt": "Which phrase correctly starts their description?",
+            "options": [
+              "Two glands in the female breasts",
+              "Two glands on each side of the pelvic cavity",
+              "A temporary vascular organ",
+              "A pair of hollow muscular ducts"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "2",
+            "prompt": "What are they capable of producing?",
+            "options": [
+              "milk",
+              "female sex hormones and ova",
+              "a connection to the uterus",
+              "a passageway for sperm"
+            ],
+            "correct": 0
+          },
+          {
+            "id": "3",
+            "prompt": "What regulates them?",
+            "options": [
+              "the endocrine system",
+              "the urinary system",
+              "the digestive system",
+              "the cardiovascular system"
+            ],
+            "correct": 0
+          }
+        ],
+        "explain": "The mammary glands are two glands in the female breasts that are capable of producing milk and are regulated by the endocrine system. The lines that place them in the pelvic cavity, call them a temporary vascular organ, or call them hollow muscular ducts name the ovaries, placenta, or uterine tubes. The lines that assign ova production, a pregnancy connection, or a sperm passageway belong to other structures. The urinary, digestive, and cardiovascular systems do not regulate milk production."
+      }
+    ]
+  }
+}

@@ -656,3 +656,12 @@ Progress is saved under the file path (`medterm/pt2/lecture-11` etc.), so the mi
   (distractors replaced); explanations of PHY70030 / 70034 / 70035 belonged to other
   questions (rewritten); PHY60020 / 60023 called an opaque cornea a cataract; PHY70058
   wrong distractor reasoning; PHY70041 C-14 ratio (about 1 : 10¹², slides say 10¹³).
+- Medical Terminology **Only In Finals** (`banks/medterm/oif/lecture-21-22.json` … `lecture-27-28.json`,
+  progress keys `medterm/oif/lecture-…`): Lectures 21–28 finals banks (GIT 60, urinary 63, male
+  reproductive 50, female reproductive 59 = 232 questions; 186 choice, 19 linking, 27 stepped), one
+  lecture card each, Draft on the card and on every lecture set. Picture Study in
+  `banks/medterm/study/study-images-oif.json` (5 pictures, 45 labels; credits in
+  `banks/medterm/study/CREDITS.md`). Ids MT21001–MT27061 are unique portal-wide (no renames); the
+  bank categories were set to `MT_lec21-22` … `MT_lec27-28`. Fixes made on import: MT25050 (two
+  identical "Azoospermia" options), MT27050 ("Uterine tubes" offered as a wrong spelling),
+  MT21018 (cut-off linking choice), MT23013 (glycouria → glycosuria).
